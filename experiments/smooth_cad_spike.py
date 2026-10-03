@@ -208,7 +208,9 @@ def _solid_state(shape: cq.Shape, point: gp_Pnt, tolerance: float = 1e-7) -> str
     return str(classifier.State())
 
 
-def sample_sidewall_normal_rays(shape: cq.Shape) -> dict[str, Any]:
+def sample_sidewall_normal_rays(
+    shape: cq.Shape, *, reference_kind: str = "canonical STEP"
+) -> dict[str, Any]:
     """Sample actual outer revolved faces and ray to the next trimmed solid face."""
     u_steps, v_steps = WALL_SAMPLE_GRID
     ray_intersector = IntCurvesFace_ShapeIntersector()
@@ -312,7 +314,7 @@ def sample_sidewall_normal_rays(shape: cq.Shape) -> dict[str, Any]:
         )
     distances = [record["ray_inner_hit_distance_mm"] for record in records]
     return {
-        "method": "canonical STEP face UV samples; BRepClass_FaceClassifier trim inclusion; BRepGProp_Face normals; BRepClass3d solid inside/outside orientation; IntCurvesFace_ShapeIntersector first inward boundary hit",
+        "method": f"{reference_kind} face UV samples; BRepClass_FaceClassifier trim inclusion; BRepGProp_Face normals; BRepClass3d solid inside/outside orientation; IntCurvesFace_ShapeIntersector first inward boundary hit",
         "sampling_grid_per_revolution_face": {"azimuth": u_steps, "meridian": v_steps},
         "candidate_outer_side_samples": candidate_count,
         "measured_sample_count": len(records),
@@ -328,7 +330,9 @@ def sample_sidewall_normal_rays(shape: cq.Shape) -> dict[str, Any]:
     }
 
 
-def measure_floor_thickness(shape: cq.Shape) -> dict[str, Any]:
+def measure_floor_thickness(
+    shape: cq.Shape, *, reference_kind: str = "canonical STEP"
+) -> dict[str, Any]:
     planar = [face for face in shape.Faces() if face.geomType() == "PLANE"]
     bottom = [face for face in planar if abs(face.Center().z) < 1e-4]
     floor = [face for face in planar if face.Center().z > 0.25 and face.Center().z < 10.0]
@@ -344,13 +348,13 @@ def measure_floor_thickness(shape: cq.Shape) -> dict[str, Any]:
         return {"status": "UNKNOWN", "reason": "no_finite_positive_face_distance"}
     distance, outer_area, inner_area, outer_z, inner_z = min(candidates)
     return {
-        "status": "MEASURED_FROM_CANONICAL_STEP_PLANAR_FACES",
+        "status": f"MEASURED_FROM_{reference_kind.upper().replace(' ', '_')}_PLANAR_FACES",
         "distance_mm": distance,
         "outer_face_area_mm2": float(outer_area),
         "inner_face_area_mm2": float(inner_area),
         "outer_face_center_z_mm": float(outer_z),
         "inner_face_center_z_mm": float(inner_z),
-        "method": "OCC trimmed-face distance between canonical STEP planar underside and cavity-floor faces",
+        "method": f"OCC trimmed-face distance between {reference_kind} planar underside and cavity-floor faces",
         "scope": "actual CAD floor face separation; not global solid minimum wall",
     }
 
