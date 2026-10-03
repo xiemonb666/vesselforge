@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vesselforge-core"
+version = "0.1.1"
+description = "Parametric CAD prototypes and forge.asset.v1 packages for RelicWeave"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "cadquery>=2.8,<2.9",
+  "numpy>=2.0,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.2,<9"]
+
+[project.scripts]
+vesselforge = "vesselforge.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vesselforge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
