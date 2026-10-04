@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 
+import numpy as np
 import pytest
 
 from vesselforge.profile_catalog import (
@@ -109,6 +110,12 @@ def test_profile_math_rejects_a_self_intersecting_generator_line() -> None:
 def test_parameter_limits_fail_closed(family: str, overrides: dict[str, object], message: str) -> None:
     with pytest.raises(ValueError, match=message):
         build_profile(family, **overrides)
+
+
+@pytest.mark.parametrize("boolean_value", (np.bool_(True), np.bool_(False)))
+def test_numpy_boolean_is_rejected_as_bowl_wall_declaration(boolean_value: np.bool_) -> None:
+    with pytest.raises(ValueError, match="finite number"):
+        build_profile("bowl", wall_thickness_declaration_mm=boolean_value)
 
 
 def test_family_specific_parameters_are_rejected_for_other_forms() -> None:

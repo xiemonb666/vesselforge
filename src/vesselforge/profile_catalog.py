@@ -21,6 +21,8 @@ from dataclasses import dataclass
 from math import isfinite
 from typing import Any, Literal
 
+import numpy as np
+
 
 ProfileFamily = Literal["bowl", "beaker", "jar"]
 PointRZ = tuple[float, float]
@@ -115,7 +117,7 @@ class VesselProfile:
 
 
 def _finite_number(name: str, value: object) -> float:
-    if isinstance(value, bool):
+    if isinstance(value, (bool, np.bool_)):
         raise ValueError(f"{name} must be a finite number; received {value!r}")
     try:
         number = float(value)  # type: ignore[arg-type]
