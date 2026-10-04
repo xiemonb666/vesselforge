@@ -1,0 +1,311 @@
+{
+  "catalog_title": "真实器物参考目录（2026-10-04）",
+  "created_date": "2026-10-04",
+  "purpose": "为VesselForge/PG-Frag/A12到RelicWeave的碎片到历史邻片候选服务提供可核对的对象级参考；不作为完整历史真实性或复原认证数据集。",
+  "evidence_contract": {
+    "FACT_FROM_SOURCE": "藏品页直接记载的名称、年代、地域、材料、工艺、尺寸、纹饰和制作描述。",
+    "VISUAL_INFERENCE": "由来源尺寸做的粗比例计算或受馆藏照片视角限制的宽泛外观判断；不等同于测量。",
+    "GENERATOR_SUGGESTION": "面向检索或参数化生成的建议，不是关于原器的事实。",
+    "UNKNOWN": "所查记录未提供，保持未知；不得由单张照片估算精确壁厚、曲率、表面法向或力学参数。"
+  },
+  "source_method": {
+    "source_type": "The Metropolitan Museum of Art official collection records",
+    "records_reviewed": 5,
+    "open_access_status": "Each object page displays a Public Domain label and states that Open Access data and public-domain images are available for unrestricted commercial and noncommercial use without permission or fee.",
+    "image_handling": "No image, CAD, scan, or derivative mesh was downloaded or embedded. Image-entry counts are page metadata only; no calibrated orthographic coverage is claimed.",
+    "materials_literature": "No object-specific material paper was used because these collection pages provide no matching laboratory measurements. General ceramics properties were not imputed to individual objects."
+  },
+  "records": [
+    {
+      "record_id": "met-1971-27",
+      "official_title": "Bowl",
+      "collection_id": "1971.27",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/452209",
+      "date_or_period": "early 11th century",
+      "geography": "Attributed to Egypt",
+      "medium_and_technique": "Earthenware; luster-painted",
+      "dimensions_as_published": [
+        {
+          "name": "height",
+          "value": 6.7,
+          "unit": "cm",
+          "source_display": "H. 2 5/8 in. (6.7 cm)"
+        },
+        {
+          "name": "diameter",
+          "value": 24.9,
+          "unit": "cm",
+          "source_display": "Diam. 9 13/16 in. (24.9 cm)"
+        }
+      ],
+      "decoration_and_surface_evidence": [
+        "The Met says luster painting was widely used to decorate Egyptian pottery during the Fatimid period.",
+        "The Met describes scrolls and dots filling the voids on this plate; the formal object title is Bowl."
+      ],
+      "color_evidence": {
+        "source_wording": "The medium names luster-painted, but no instrumental color values are given.",
+        "photo_only_color_claim": "No precise hue or reflectance is recorded."
+      },
+      "image_and_rights": {
+        "public_domain_badge": true,
+        "rights_statement": "The object page displays Public Domain and states Open Access data and public-domain images may be used for unrestricted commercial and noncommercial use without permission or fee.",
+        "image_entries_listed": 2,
+        "view_labels_or_scale": "No camera-angle labels or metric scale are supplied by the page."
+      },
+      "fact_from_source": [
+        "Title Bowl; early 11th century; attributed to Egypt.",
+        "Earthenware; luster-painted; height 6.7 cm; diameter 24.9 cm.",
+        "The curatorial text mentions Fatimid luster painting and Abbasid scroll-and-dot decoration."
+      ],
+      "visual_inference": [
+        "Reported height divided by diameter is approximately 0.27, a coarse shallow-envelope clue only; it is not a profile measurement.",
+        "Still photographs do not establish exact color, reflectance, luster thickness, or calibrated curvature."
+      ],
+      "generator_suggestion": [
+        "Use as a shallow-bowl candidate with a source-linked luster-painted/scroll/dot surface vocabulary.",
+        "Keep shape and decoration confidence separate; pattern evidence alone does not establish the historical vessel family."
+      ],
+      "unknowns": [
+        "Wall thickness, foot/base profile, full inside/outside contour, local curvature, composition, firing conditions, strength, and instrument-measured color/gloss."
+      ]
+    },
+    {
+      "record_id": "met-50-61-8",
+      "official_title": "Beaker",
+      "collection_id": "50.61.8",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52532",
+      "date_or_period": "Neolithic period, Longshan culture (c.3000–c.1900 BCE)",
+      "geography": "China",
+      "medium_and_technique": "Burnished black earthenware",
+      "dimensions_as_published": [
+        {
+          "name": "height",
+          "value": 18.6,
+          "unit": "cm",
+          "source_display": "H. 7 5/16 in. (18.6 cm)"
+        },
+        {
+          "name": "top_diameter",
+          "value": 14.9,
+          "unit": "cm",
+          "source_display": "Diam. (at top) 5 7/8 in. (14.9 cm)"
+        }
+      ],
+      "decoration_and_surface_evidence": [
+        "The medium identifies burnished black earthenware.",
+        "No additional decoration or exact profile is described in the reviewed object record."
+      ],
+      "color_evidence": {
+        "source_wording": "Black is in the museum medium description.",
+        "photo_only_color_claim": "No instrumental color or roughness values are supplied."
+      },
+      "image_and_rights": {
+        "public_domain_badge": true,
+        "rights_statement": "The object page displays Public Domain and states Open Access data and public-domain images may be used for unrestricted commercial and noncommercial use without permission or fee.",
+        "image_entries_listed": 2,
+        "view_labels_or_scale": "No camera-angle labels or metric scale are supplied by the page."
+      },
+      "fact_from_source": [
+        "Title Beaker; Neolithic Longshan culture; China.",
+        "Burnished black earthenware; height 18.6 cm; top diameter 14.9 cm."
+      ],
+      "visual_inference": [
+        "Height divided by top diameter is approximately 1.25, so the listed vertical extent exceeds the opening width; no side profile follows from this ratio.",
+        "Black and burnished are curatorial material terms, not measured RGB, reflectance, or roughness."
+      ],
+      "generator_suggestion": [
+        "Store height and top diameter as a coarse envelope for a beaker candidate; keep burnished-black surface metadata separate.",
+        "Do not interpolate a foot or wall profile from only these two dimensions."
+      ],
+      "unknowns": [
+        "Rim section, bottom dimensions, complete profile, wall thickness, clay composition, firing conditions, roughness, gloss, and mechanical properties."
+      ]
+    },
+    {
+      "record_id": "met-1975-268-184",
+      "official_title": "Jar",
+      "collection_id": "1975.268.184",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50165",
+      "date_or_period": "Late Jōmon period (ca. 2500–1000 BCE)",
+      "geography": "Japan",
+      "medium_and_technique": "Earthenware with incised decoration",
+      "dimensions_as_published": [
+        {
+          "name": "height",
+          "value": 20,
+          "unit": "cm",
+          "source_display": "H. 7 7/8 in. (20 cm)"
+        },
+        {
+          "name": "diameter",
+          "value": 16.5,
+          "unit": "cm",
+          "source_display": "Diam. 6 1/2 in. (16.5 cm)"
+        }
+      ],
+      "decoration_and_surface_evidence": [
+        "The Met describes a small bulbous-shaped bottle with a narrow neck.",
+        "The surface has incised decoration and an unusual applied red pigment.",
+        "The shoulders and lower section each have a set of apertures for threading a suspension cord.",
+        "The curatorial text calls the walls thin but supplies no wall-thickness value."
+      ],
+      "color_evidence": {
+        "source_wording": "The curatorial text explicitly mentions red pigment.",
+        "photo_only_color_claim": "No measured pigment color or material analysis is supplied."
+      },
+      "image_and_rights": {
+        "public_domain_badge": true,
+        "rights_statement": "The object page displays Public Domain and states Open Access data and public-domain images may be used for unrestricted commercial and noncommercial use without permission or fee.",
+        "image_entries_listed": 3,
+        "view_labels_or_scale": "No camera-angle labels or metric scale are supplied by the page."
+      },
+      "fact_from_source": [
+        "Title Jar; Late Jōmon; Japan; earthenware with incised decoration.",
+        "Height 20 cm and diameter 16.5 cm.",
+        "Curatorial text describes bulbous body, narrow neck, incised decoration, red pigment, two sets of suspension apertures, and qualitatively thin walls."
+      ],
+      "visual_inference": [
+        "The words bulbous and narrow-neck are curatorial descriptions, not a digitized curve.",
+        "Red is a curatorial pigment description, not a calibrated photo color."
+      ],
+      "generator_suggestion": [
+        "Expose bulbous body, narrow neck, paired aperture zones, and incised-surface tags as separately selectable candidate features.",
+        "Treat thin-wall wording as qualitative only; never emit a millimeter value without measurement."
+      ],
+      "unknowns": [
+        "Numerical wall thickness, neck opening, aperture diameter/coordinates, base diameter, full profile, incision spacing/depth, pigment/clay composition, firing settings, and mechanical properties."
+      ]
+    },
+    {
+      "record_id": "met-36-20-25",
+      "official_title": "Ewer",
+      "collection_id": "36.20.25",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/449058",
+      "date_or_period": "12th–13th century",
+      "geography": "Excavated in Iran, Nishapur",
+      "medium_and_technique": "Earthenware; molded decoration, unglazed",
+      "dimensions_as_published": [
+        {
+          "name": "height",
+          "value": 27.9,
+          "unit": "cm",
+          "source_display": "H. 11 in. (27.9 cm)"
+        },
+        {
+          "name": "diameter_unspecified_location",
+          "value": 14.6,
+          "unit": "cm",
+          "source_display": "Diam. 5 3/4 in. (14.6 cm)"
+        }
+      ],
+      "decoration_and_surface_evidence": [
+        "The body is cast from two hemispherical molds stamped with impressions; the impressions create raised repeating patterns.",
+        "The halves are joined using wet clay; a smoothed clay band visibly marks the center join.",
+        "The neck and handle are wheel-thrown and attached after joining the molded body.",
+        "The record does not describe spout geometry."
+      ],
+      "color_evidence": {
+        "source_wording": "The record describes unglazed earthenware but does not name a body color.",
+        "photo_only_color_claim": "No precise hue or reflectance is recorded."
+      },
+      "image_and_rights": {
+        "public_domain_badge": true,
+        "rights_statement": "The object page displays Public Domain and states Open Access data and public-domain images may be used for unrestricted commercial and noncommercial use without permission or fee.",
+        "image_entries_listed": 4,
+        "view_labels_or_scale": "No camera-angle labels or metric scale are supplied by the page."
+      },
+      "fact_from_source": [
+        "Title Ewer; 12th–13th century; excavated in Nishapur, Iran.",
+        "Earthenware; molded decoration, unglazed; height 27.9 cm; one diameter 14.6 cm with location unspecified.",
+        "Curatorial text details the molded two-part body, raised repeated impressions, joined seam, separately wheel-thrown neck, and handle."
+      ],
+      "visual_inference": [
+        "The source describes a visible smoothed central seam; seam relief size and mold pattern depth remain unmeasured.",
+        "The listed diameter's measurement location is unspecified, so it does not define the body or rim profile."
+      ],
+      "generator_suggestion": [
+        "Consider a handled ewer/pitcher candidate branch when shard evidence supports a neck, handle, or pouring form.",
+        "Represent molded relief and construction seam as separate optional evidence-backed features.",
+        "Do not invent a spout contour from the title alone."
+      ],
+      "unknowns": [
+        "Spout form, handle section, complete body curve, diameter location, seam thickness, relief height/pitch, wall thickness, clay composition, firing conditions, and mechanical properties."
+      ]
+    },
+    {
+      "record_id": "met-36-20-47",
+      "official_title": "Jar",
+      "collection_id": "36.20.47",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/449078",
+      "date_or_period": "13th century",
+      "geography": "Probably from Iran, Nishapur",
+      "medium_and_technique": "Earthenware; decorated in black under turquoise glaze",
+      "dimensions_as_published": [
+        {
+          "name": "height",
+          "value": 13.3,
+          "unit": "cm",
+          "source_display": "H. 5 1/4 in. (13.3 cm)"
+        },
+        {
+          "name": "diameter_unspecified_location",
+          "value": 15.2,
+          "unit": "cm",
+          "source_display": "Diam. 6 in. (15.2 cm)"
+        }
+      ],
+      "decoration_and_surface_evidence": [
+        "The medium field places black decoration under a turquoise glaze.",
+        "The record does not describe the motif or its layout."
+      ],
+      "color_evidence": {
+        "source_wording": "Black and turquoise are the museum medium descriptor.",
+        "photo_only_color_claim": "No calibrated color values are supplied."
+      },
+      "image_and_rights": {
+        "public_domain_badge": true,
+        "rights_statement": "The object page displays Public Domain and states Open Access data and public-domain images may be used for unrestricted commercial and noncommercial use without permission or fee.",
+        "image_entries_listed": 5,
+        "view_labels_or_scale": "No camera-angle labels or metric scale are supplied by the page."
+      },
+      "fact_from_source": [
+        "Title Jar; 13th century; probably from Iran, Nishapur.",
+        "Earthenware decorated in black under turquoise glaze; height 13.3 cm; diameter 15.2 cm."
+      ],
+      "visual_inference": [
+        "Height divided by the listed diameter is approximately 0.88, but the measurement location is unspecified, so it is only a coarse retrieval cue.",
+        "Color names come from the museum record; photograph pixels are not used as exact color samples."
+      ],
+      "generator_suggestion": [
+        "Keep black decoration and turquoise glaze as separate source-linked surface-layer candidates.",
+        "Do not invent motif layout, glaze thickness, or precise gloss from this material field."
+      ],
+      "unknowns": [
+        "Motif content/position, glaze thickness, rim/base dimensions, complete contour, wall thickness, material chemistry, firing conditions, calibrated color, and mechanical properties."
+      ]
+    }
+  ],
+  "cross_record_generator_rules": [
+    "Bowl, beaker, and jar are retrieval candidates, not historical-identity labels.",
+    "Separate morphology, manufacture/decoration technique, and finish/color into distinct evidence fields.",
+    "Preserve source record identifiers on every suggested feature; retain UNKNOWN for unsupported dimensions.",
+    "Do not infer exact thickness, curvature, surface normals, material chemistry, or mechanical properties from still photographs.",
+    "Only suggest historical motifs when fragment or query evidence supports them; do not blend regional styles into an unverified composite."
+  ],
+  "missing_evidence_for_higher_fidelity": [
+    "Calibrated multi-view photography or a museum/archaeology photogrammetry or structured-light mesh with scale, coordinate system, registration, and damage masks.",
+    "Cross-section or CT data for wall thickness and interior/exterior constraints.",
+    "Object-specific material analyses or laboratory reports for composition, glaze thickness, porosity, elastic modulus, flexural strength, or fracture toughness."
+  ],
+  "review": {
+    "status": "Static source-reference consistency review passed: JSON parsed; all 5 collection IDs, source URLs, and Markdown title links matched.",
+    "no_production_or_research_ledger_changes": true,
+    "no_git_or_image_or_cad_changes": true
+  }
+}
+

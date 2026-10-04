@@ -4,3 +4,9 @@
 /tests/test_ornament_fields.py -text
 /src/vesselforge/wall_reference.py -text
 /tests/test_wall_reference.py -text
+
+/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.md -text
+/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.json -text
+
+/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.md -text
+/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.json -text
