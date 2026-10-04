@@ -1,0 +1,6 @@
+--- fixture_once_check_original_bd4511b5.py
++++ fixture_once_check_run02.py
+@@
+         prototype = importlib.util.module_from_spec(spec)
++        sys.modules[spec.name] = prototype
+         spec.loader.exec_module(prototype)
