@@ -13,6 +13,11 @@ import cadquery as cq
 import numpy as np
 
 from .appearance import PALE_SLIP, make_recipe, per_face_band_coverage, surface_fields
+from .brep_identity import (
+    BREP_FACE_BOUNDS_POLICY_ID,
+    brep_bounds_mm,
+    brep_face_bounds_policy_record,
+)
 from .geometry import (
     VesselSpec,
     build_components,
@@ -146,14 +151,20 @@ def create_asset_package(
     curvature = profile_curvature_metrics(spec)
     mesh_step_metrics = sampled_mesh_to_cad_metrics(canonical, vertices, faces, triangle_sources)
     mesh_step_deviation = mesh_step_metrics["max_sampled_deviation_mm"]
-    bounds = canonical.BoundingBox()
-    construction_bounds = constructed_shape.BoundingBox()
+    bounds = brep_bounds_mm(canonical)
+    construction_bounds = brep_bounds_mm(constructed_shape)
+    bounds_dimensions = (bounds[1] - bounds[0], bounds[3] - bounds[2], bounds[5] - bounds[4])
+    construction_bounds_dimensions = (
+        construction_bounds[1] - construction_bounds[0],
+        construction_bounds[3] - construction_bounds[2],
+        construction_bounds[5] - construction_bounds[4],
+    )
     body_volume = float(canonical.Volume())
     construction_volume = float(constructed_shape.Volume())
     round_trip_bbox_delta_mm = {
-        "x": float(abs(construction_bounds.xlen - bounds.xlen)),
-        "y": float(abs(construction_bounds.ylen - bounds.ylen)),
-        "z": float(abs(construction_bounds.zlen - bounds.zlen)),
+        "x": float(abs(construction_bounds_dimensions[0] - bounds_dimensions[0])),
+        "y": float(abs(construction_bounds_dimensions[1] - bounds_dimensions[1])),
+        "z": float(abs(construction_bounds_dimensions[2] - bounds_dimensions[2])),
     }
     round_trip_volume_delta_mm3 = float(abs(construction_volume - body_volume))
     round_trip_volume_relative_delta = round_trip_volume_delta_mm3 / max(abs(construction_volume), 1e-12)
@@ -169,6 +180,7 @@ def create_asset_package(
         "absolute_volume_delta_mm3": round_trip_volume_delta_mm3,
         "relative_volume_delta": round_trip_volume_relative_delta,
         "bbox_axis_delta_mm": round_trip_bbox_delta_mm,
+        "bbox_policy_id": BREP_FACE_BOUNDS_POLICY_ID,
         "acceptance_limits": {"relative_volume_delta_max": 0.001, "bbox_axis_delta_mm_max": 0.05},
         "canonical_asset_entity": "STEP-imported solid used for delivered surface mesh, triangle lineage, fields, and sampled trimmed-surface QA",
     }
@@ -217,7 +229,11 @@ def create_asset_package(
         "measurements": {
             "solid_volume_mm3": body_volume,
             "step_round_trip": round_trip,
-            "bbox_mm": {"x": float(bounds.xlen), "y": float(bounds.ylen), "z": float(bounds.zlen)},
+            "bbox_mm": {
+                "x": float(bounds_dimensions[0]),
+                "y": float(bounds_dimensions[1]),
+                "z": float(bounds_dimensions[2]),
+            },
             "solid_count": len(canonical.Solids()),
             "shell_count": len(canonical.Shells()),
             "step_solid_count": len(canonical.Solids()),
@@ -308,6 +324,7 @@ def create_asset_package(
                 "face_semantics_report": face_semantics_rel,
                 "face_semantics_classifier": CLASSIFIER_VERSION,
                 "canonical_step_sha256": canonical_step_sha256,
+                "brep_face_bounds_policy": brep_face_bounds_policy_record(),
                 "tessellation": {"linear_chord_deflection_mm": spec.tessellation_linear_mm, "angular_tolerance_rad": spec.tessellation_angular_rad},
                 "data_dictionary": dictionary_rel,
                 "mesh_lineage_npz": lineage_rel,
@@ -317,11 +334,7 @@ def create_asset_package(
                         "geom_type": face.geomType(),
                         "center_mm": [float(value) for value in face.Center().toTuple()],
                         "area_mm2": float(face.Area()),
-                        "bbox_mm": [
-                            float(face.BoundingBox().xmin), float(face.BoundingBox().xmax),
-                            float(face.BoundingBox().ymin), float(face.BoundingBox().ymax),
-                            float(face.BoundingBox().zmin), float(face.BoundingBox().zmax),
-                        ],
+                        "bbox_mm": list(brep_bounds_mm(face)),
                     }
                         for index, face in enumerate(canonical.Faces())
                 ],

@@ -1,0 +1,19 @@
+{
+  "freeze_id": "surface_ornament_refinement_20261005_source_review_v1",
+  "freeze_date": "2026-10-05",
+  "hash_algorithm": "SHA-256",
+  "execution_status_at_freeze": "NOT_RUN: no candidate generation, Python execution, rendering, CAD, tests, solver, GPU, or Git work",
+  "new_authored_files": {
+    "refinement_prototype.py": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "candidate_cases.json": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "CHECK_PLAN.md": "16bbd58d17b8a5ffaf605ba515555cde455a968548c0cd19b64bfc3db6443575",
+    "SCOPE_DIFF.md": "a044c7fe1a0c8eedafba0fe9ab3b149bab7bed08fa76bd5900a1f670e8e69c33"
+  },
+  "read_only_parent": {
+    "fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "surface_mapping_prototype_sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+    "run02_checker_sha256": "e0f185d01ffa7b7f9239ece90617852aebc418693cef46dcdebb6121f37b75ae",
+    "run02_png_sha256": "3cf1026178613a74cecc5d177139c6ec25e0134deb682ad61d312eed6bd5ac17"
+  },
+  "scope": "Additive isolated NumPy source and finite-check plan for two local resolution variants of the same analytic fixture. No production, frozen prototype, baseline, raw output, or Git file changed."
+}

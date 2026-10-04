@@ -1,0 +1,107 @@
+{
+  "freeze_id": "surface_ornament_refinement_20261005_source_review_v1",
+  "status": "SOURCE_ONLY_NOT_GENERATED_OR_RUN",
+  "hash_algorithm": "SHA-256",
+  "immutable_source": {
+    "fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "related_sha256": {
+      "artifact_sha256.json": "50deccebca5ca3a2e3b14a52aae7ab844f5ee288050f56e1e7faa4eab25ad6fb",
+      "checks.json": "f6ad9aa2d81af863d786eff516fa3a89aaa3e308184f3219aa5c888404e7a114",
+      "source_parameter_hashes.json": "eb6a4e80148c75d034c802de7cd1fb78863421eb79871d8ea64ec41a6fe93512",
+      "fixture_parameters.json": "fece3edddf14571d4bfcbe85b2f980465aabaaac753ac9fd56866dc241751612",
+      "geometry_metrics.json": "b8c11f14c6bf0ecf2134337d7c39adb3c09bccc7bdddad9b6aec597356ead71f",
+      "surface_ornament_fixture.png": "3cf1026178613a74cecc5d177139c6ec25e0134deb682ad61d312eed6bd5ac17"
+    },
+    "prototype_sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+    "run02_checker_sha256": "e0f185d01ffa7b7f9239ece90617852aebc418693cef46dcdebb6121f37b75ae",
+    "fixture_parameters_sha256": "702285e2b311ea3ad7a17e6212d06ab8041faf58cca76e8e4a8a016d7e42c66e",
+    "fixture_result_directory": "vesselforge/tmp/review_20261004/surface_ornament_route/run02",
+    "fixture_arrays_role": "READ_ONLY_COARSE_BASELINE"
+  },
+  "fixed_fixture": {
+    "outer_radius_mm": 20.0,
+    "wall_declaration_mm": 3.0,
+    "height_mm": 24.0,
+    "floor_mm": 2.0,
+    "around": 128,
+    "side_rows": 25,
+    "baseline_vertex_count": 6402,
+    "baseline_face_count": 12800,
+    "baseline_euler_characteristic": 2,
+    "baseline_signed_volume_mm3": 10200.291910056922,
+    "baseline_maximum_outer_chart_edge_mm": 1.4013666739272455,
+    "baseline_maximum_outer_displaced_3d_edge_mm": 1.4414763440066487
+  },
+  "field": {
+    "repeat_count": 8,
+    "center_z_mm": 13.0,
+    "circumferential_half_width_mm": 2.7,
+    "vertical_half_height_mm": 2.1,
+    "raised_height_mm": 0.45,
+    "base_linear_rgb": [
+      0.66,
+      0.49,
+      0.34
+    ],
+    "pigment_linear_rgb": [
+      0.095,
+      0.032,
+      0.018
+    ],
+    "field_definition": "run02 frozen elliptical smoothstep; unchanged continuous height and linear-light color blend",
+    "display_encoding": "standard linear-RGB to sRGB transfer",
+    "material_or_pbr_calibration": "UNKNOWN"
+  },
+  "refinement": {
+    "method": "local conforming red-green triangle edge bisection with shared-edge midpoint IDs",
+    "maximum_face_count_budget": 200000,
+    "maximum_refinement_rounds": 32,
+    "budget_exhaustion_result": "UNKNOWN_AND_STOP; DO_NOT_CHANGE_DENSITY_OR_THRESHOLD",
+    "rest_surface": "same analytic R=20 mm cylinder",
+    "displaced_surface": "X1(theta,z)=X0(theta,z)+h(theta,z)*e_r(theta)",
+    "refined_region": "all triangles intersecting the motif support plus a 1.5x elliptical transition band",
+    "t_junctions": "FORBIDDEN; all incident faces split on each shared marked edge",
+    "theta_seam": "periodic shortest-angle chart; midpoint IDs deduplicated by shared topological edge",
+    "baseline_ids_and_coordinates": "all run02 vertex IDs and both XYZ arrays retained as an unchanged prefix",
+    "new_vertex_lineage": "source baseline triangle ID plus per-face barycentric corner coordinates and canonical per-vertex owner",
+    "automatic_density_escalation": "FORBIDDEN"
+  },
+  "acceptance": {
+    "baseline_coordinate_prefix": "bitwise equal to run02 arrays",
+    "baseline_height_and_linear_rgb_absolute_tolerance": 1e-12,
+    "new_analytic_coordinate_absolute_tolerance_mm": 1e-12,
+    "lineage_chart_reconstruction_tolerance_mm": 1e-9,
+    "lineage_barycentric_tolerance": 1e-12,
+    "seam_uniqueness": "no duplicate outer rest coordinates rounded to 1e-12 mm; seam samples present",
+    "finite_geometry_probe_target_mm": 0.02,
+    "finite_geometry_probes": "each outer relief triangle barycenter and all three edge midpoints compared to continuous X1",
+    "geometry_gate_scope": "finite fixture probes only; not a certified maximum, Hausdorff bound, or global error guarantee",
+    "normal_angle": "record RMS, p95, max at barycenters and edge midpoints; no acceptance threshold set",
+    "edge_metrics": "actual maximum chart and displaced 3D edge lengths overall and within support plus transition; report ratios to 0.45 mm amplitude",
+    "topology": "closed two-manifold, consistent winding, one component, Euler characteristic 2, positive volume, no duplicate/repeated/zero-area faces",
+    "density_fail_behavior": "mark FAIL and stop before attempting the next finer candidate",
+    "candidate_language": "one analytic sample at two mesh resolutions; no independent samples, fracture labels, ground truth, or training data"
+  },
+  "candidates": [
+    {
+      "case_id": "local_a_0p50mm",
+      "maximum_chart_edge_mm_in_support_and_transition": 0.5,
+      "proposed_max_edge_over_relief_amplitude": 1.1111111111111112,
+      "status": "PROPOSED_NOT_MEASURED"
+    },
+    {
+      "case_id": "local_b_0p25mm",
+      "maximum_chart_edge_mm_in_support_and_transition": 0.25,
+      "proposed_max_edge_over_relief_amplitude": 0.5555555555555556,
+      "status": "PROPOSED_NOT_MEASURED"
+    }
+  ],
+  "explicit_nonclaims": {
+    "real_vessel_match": "NOT_VALIDATED",
+    "physics_qualification": "UNKNOWN",
+    "global_minimum_normal_wall_thickness": "UNKNOWN",
+    "curved_profile_behavior": "NOT_ASSESSED",
+    "self_intersection_or_general_offset_validity": "NOT_ASSESSED",
+    "color_reflectance_glaze_brdf_and_display_device_calibration": "UNKNOWN"
+  }
+}
