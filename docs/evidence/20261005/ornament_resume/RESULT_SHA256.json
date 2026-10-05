@@ -1,0 +1,19 @@
+{
+  "state": "RUN_OUTPUTS",
+  "run_status": "PASS_ALL_CANDIDATES",
+  "run_exit_code": 0,
+  "files": {
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/execution_argv.json": "236ac97443c2155632ec436e53c4e470cb53df50c5e33f126eba631fbd02f5fd",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/exit_code.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/run_receipt.json": "fcbc60fa0de7974bdf125a75aed725a58db3af6c813a5f9858dd09fc7e70af84",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/run_status.json": "fcbc60fa0de7974bdf125a75aed725a58db3af6c813a5f9858dd09fc7e70af84",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/stdout.txt": "e583d0ce68ab087ffe9d76e71e62162320ff963ccdf24bc769b8223f9f0f7690",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_a_0p50mm/candidate_arrays.npz": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_a_0p50mm/checks.json": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_a_0p50mm/flat_triangle_visual.png": "2931af31de62f710034b1d01b298357a444a3fe283231ac301e83500108ba1a0",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/flat_triangle_visual.png": "0cbf8d44c6e19075be91882e7f95ce5fb82ff35e6b935ba98c24712c97dba565"
+  }
+}

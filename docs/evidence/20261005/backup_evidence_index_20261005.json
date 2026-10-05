@@ -1,0 +1,145 @@
+{
+  "schema": "shardforge.backup-evidence-index.v1",
+  "repository": "vesselforge",
+  "branch": "backup/forge-work-20261003",
+  "source_snapshot_commit": "8da9b538e2588fe51418588cb6301c258cd5363f",
+  "remote_head_before": "8da9b538e2588fe51418588cb6301c258cd5363f",
+  "copy_plan_sha256": "fb2eff29c6205f728331132ffd7ec5c795049b8a35f944209c19c31f99431558",
+  "created_utc": "2026-10-05T04:46:31Z",
+  "entries": [
+    {
+      "source_path": "vesselforge/tmp/review_20261005/geometry_resume/targeted_pytest_receipt.json",
+      "destination": "vesselforge/docs/evidence/20261005/geometry_resume/targeted_pytest_receipt.json",
+      "bytes": 2287,
+      "sha256": "f414b8fc112c514f9b4d0a738ace1fd2bc955c55cb01592fb7623eddaa743eea",
+      "category": "pytest_receipt",
+      "source_status": "frozen/root-reviewed",
+      "notes": "Root reported 57 targeted tests PASS; source hashes are pinned in the receipt."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/geometry_resume/targeted_pytest.junit.xml",
+      "destination": "vesselforge/docs/evidence/20261005/geometry_resume/targeted_pytest.junit.xml",
+      "bytes": 9277,
+      "sha256": "a38b907be6d68ded885e48ca9821dd727fe6de57243086dc6ac4ab412f2673a0",
+      "category": "junit_xml",
+      "source_status": "frozen/root-reviewed",
+      "notes": "Targeted BREP identity and wall-mesh binding regression evidence."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/geometry_resume/migration_execution_receipt.json",
+      "destination": "vesselforge/docs/evidence/20261005/geometry_resume/migration_execution_receipt.json",
+      "bytes": 26915,
+      "sha256": "70917d5e3d32535a24b4ca145dcce16eb695914f8dedb274e621e5f2bdbb3b53",
+      "category": "execution_receipt",
+      "source_status": "frozen; uncertainty retained",
+      "notes": "Two-site migration copy completed, but wrapper exit code was not captured; preserve this UNKNOWN."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/geometry_resume/migration_binding_result.json",
+      "destination": "vesselforge/docs/evidence/20261005/geometry_resume/migration_binding_result.json",
+      "bytes": 9614,
+      "sha256": "4c20e462f1acedb81ab9a1ecdd9d19a4d97359ae2d5a28456b127593d971f860",
+      "category": "binding_report",
+      "source_status": "frozen/root-reviewed",
+      "notes": "Reports the two frozen parent-site bindings; not global wall-thickness or physical qualification."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/geometry_resume/report.md",
+      "destination": "vesselforge/docs/evidence/20261005/geometry_resume/report.md",
+      "bytes": 3495,
+      "sha256": "800b6fad2dabff141e1eafeaee4041e18d5f1b3de3cde832bb36c8cff4dec588",
+      "category": "short_report",
+      "source_status": "frozen/root-reviewed",
+      "notes": "Summary for the bounded migration evidence, including the uncaptured outer wrapper status."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/run_receipt.json",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/run_receipt.json",
+      "bytes": 802,
+      "sha256": "fcbc60fa0de7974bdf125a75aed725a58db3af6c813a5f9858dd09fc7e70af84",
+      "category": "run_receipt",
+      "source_status": "frozen/completed",
+      "notes": "PASS_ALL_CANDIDATES applies only to two local-resolution variants on one analytic fixture."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_a_0p50mm/checks.json",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/local_a_0p50mm_checks.json",
+      "bytes": 6103,
+      "sha256": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+      "category": "checks_json",
+      "source_status": "frozen/completed",
+      "notes": "Finite-probe gate passed; not a certified global error bound."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/local_b_0p25mm_checks.json",
+      "bytes": 6110,
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "category": "checks_json",
+      "source_status": "frozen/completed",
+      "notes": "Finite-probe gate passed; normal-angle gate remains report-only."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/POST_RUN_SHA256.json",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/POST_RUN_SHA256.json",
+      "bytes": 3122,
+      "sha256": "b72ce4af2296a70b153a90aad19c6b226eed5092b2c1f28f453fcb8a640a5aad",
+      "category": "sha_receipt",
+      "source_status": "frozen/completed",
+      "notes": "Hashes for the run outputs; raw arrays remain excluded."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/RESULT_SHA256.json",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/RESULT_SHA256.json",
+      "bytes": 2149,
+      "sha256": "7630817c816dde8363f2660b10b77cc6a9368ef002ec4546caed7fdbf71e11ea",
+      "category": "sha_receipt",
+      "source_status": "frozen/completed",
+      "notes": "Result hash index; raw arrays remain excluded."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_a_0p50mm/flat_triangle_visual.png",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/local_a_0p50mm_flat_triangle_visual.png",
+      "bytes": 512146,
+      "sha256": "2931af31de62f710034b1d01b298357a444a3fe283231ac301e83500108ba1a0",
+      "category": "result_png",
+      "source_status": "frozen/completed",
+      "notes": "Actual local A image; visible quality defects remain."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/flat_triangle_visual.png",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/local_b_0p25mm_flat_triangle_visual.png",
+      "bytes": 675966,
+      "sha256": "0cbf8d44c6e19075be91882e7f95ce5fb82ff35e6b935ba98c24712c97dba565",
+      "category": "result_png",
+      "source_status": "frozen/completed",
+      "notes": "Actual local B image; detail panel has crowded labels and transition facets."
+    },
+    {
+      "source_path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/surface_ornament_fixture.png",
+      "destination": "vesselforge/docs/evidence/20261005/ornament_resume/run02_surface_ornament_fixture.png",
+      "bytes": 238410,
+      "sha256": "3cf1026178613a74cecc5d177139c6ec25e0134deb682ad61d312eed6bd5ac17",
+      "category": "baseline_png",
+      "source_status": "historical/frozen",
+      "notes": "Actual coarse run02 baseline image; local refinement does not qualify a high-quality real-vessel result."
+    }
+  ],
+  "attributes": {
+    "path": ".gitattributes",
+    "old_bytes": 501,
+    "old_sha256": "d538216eb4976fa444a3eb3dafca86ccfe2e1150531fabd7c16a9792a0af4a43",
+    "bytes": 534,
+    "sha256": "f80b2aacfd17b4440791ee63387cc3a3a34f9485b84da4d49361d4dcd07cd5be",
+    "appended_rule": "/docs/evidence/20261005/** -text"
+  },
+  "known_results_and_limits": [
+    {
+      "repo": "vesselforge",
+      "status": "TARGETED_TESTS_PASS_AND_LOCAL_REFINEMENT_ONLY",
+      "note": "Root reported 57 targeted tests PASS. Migration binding covers only two frozen parent sites while outer wrapper exit remains UNKNOWN. Ornament local probes pass fixed gates but are finite samples; normal-angle acceptance has no owner limit; images show crowded labels/transition facets; no high-quality vessel or physics claim."
+    }
+  ],
+  "additional_limits": [],
+  "note": "Evidence copies are byte-identical to their pinned tmp sources; raw large/native data and active writer files are excluded."
+}

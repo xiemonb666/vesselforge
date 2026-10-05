@@ -1,0 +1,27 @@
+{
+  "state": "POST_RUN",
+  "captured_utc": "2026-10-04T19:16:12.7163131Z",
+  "comparison": "only explicitly pinned baseline/source inputs above; no recursive inventory and no Git command",
+  "unchanged": true,
+  "changed_pinned_paths": [],
+  "files": {
+    "vesselforge/experiments/surface_ornament_route_20261004/surface_mapping_prototype.py": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+    "vesselforge/experiments/surface_ornament_route_20261004/fixture_once_check_run02.py": "e0f185d01ffa7b7f9239ece90617852aebc418693cef46dcdebb6121f37b75ae",
+    "vesselforge/experiments/surface_ornament_route_20261004/REFINEMENT_ERROR_CONTROL_DRAFT.md": "1a13425e5cf8e066063a8385d6754eff28ff2516e435285903b73043c81cc4c3",
+    "vesselforge/experiments/surface_ornament_route_20261004/RUN02_REVIEW_AND_QUALITY_GAP.md": "9e3b09b468ee1a170bffdca5fe10f1d02d38d8571bc9d203c5253f1a767fc19c",
+    "vesselforge/experiments/smooth_surface_route_20261004/route_source_draft.py": "359dc041b521799c39a08ed1f2a680a192eecc234fd8e47845511cae58048d8e",
+    "vesselforge/experiments/smooth_surface_route_20261004/LOCAL_FIXTURE_CHECK_PLAN.md": "646fe9ac60146ee14058107e6d1163f6eede9603ce9eb1d4cf7961de0608a54c",
+    "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "vesselforge/experiments/surface_ornament_refinement_20261005/CHECK_PLAN.md": "16bbd58d17b8a5ffaf605ba515555cde455a968548c0cd19b64bfc3db6443575",
+    "vesselforge/experiments/surface_ornament_refinement_20261005/SCOPE_DIFF.md": "a044c7fe1a0c8eedafba0fe9ab3b149bab7bed08fa76bd5900a1f670e8e69c33",
+    "vesselforge/experiments/surface_ornament_refinement_20261005/FREEZE_MANIFEST.json": "2c40059921e341c8586cfaa063fda69d6f061453c8917fdc0512e72637cc790a",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_parameters.json": "fece3edddf14571d4bfcbe85b2f980465aabaaac753ac9fd56866dc241751612",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/source_parameter_hashes.json": "eb6a4e80148c75d034c802de7cd1fb78863421eb79871d8ea64ec41a6fe93512",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/geometry_metrics.json": "b8c11f14c6bf0ecf2134337d7c39adb3c09bccc7bdddad9b6aec597356ead71f",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/checks.json": "f6ad9aa2d81af863d786eff516fa3a89aaa3e308184f3219aa5c888404e7a114",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/artifact_sha256.json": "50deccebca5ca3a2e3b14a52aae7ab844f5ee288050f56e1e7faa4eab25ad6fb",
+    "vesselforge/tmp/review_20261004/surface_ornament_route/run02/surface_ornament_fixture.png": "3cf1026178613a74cecc5d177139c6ec25e0134deb682ad61d312eed6bd5ac17"
+  }
+}
