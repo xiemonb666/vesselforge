@@ -1,0 +1,147 @@
+{
+  "candidate_id": "global_two_cap_mesh_candidate_owner_fix_20261005",
+  "status": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "schema": "isolated_v2_global_two_planar_cap_patches",
+  "quarantine": {
+    "status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+    "legacy_reader_compatibility": "UNKNOWN",
+    "standard_v1_source_face_aliases": "OMITTED; schema-v1 readers fail closed with missing-key behavior",
+    "production_integration": false
+  },
+  "pinned_inputs": {
+    "baseline_fixture_npz_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_npz_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "ornament_case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "prewrite_budget_audit_sha256": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1"
+  },
+  "predecessor": {
+    "freeze_sha256": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+    "failed_run_directory": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_two_cap",
+    "failure": "UNKNOWN_OR_FAIL: barycentric coordinates escaped their source simplex",
+    "scope_of_fix": "raw signed barycentrics are used for each-parent containment testing; accepted parents still pass the existing strict tolerance/cleanup"
+  },
+  "owner_lookup_regression": {
+    "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/owner_lookup_toy_check.py",
+    "result_path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/owner_fix_two_parent_toy_check.json",
+    "fixtures": "two adjacent planar parent triangles with ascending source IDs",
+    "assertions": [
+      "point outside first parent but inside second selects second parent",
+      "shared-boundary point deterministically selects first actual parent",
+      "point outside both parents fails closed"
+    ],
+    "mesh_generation_invoked": false
+  },
+  "scope": {
+    "modified_physical_surface_ids": ["bottom_exterior_z0", "interior_floor_z2"],
+    "bottom_exterior_z0": {
+      "plane_z_mm": 0.0,
+      "pinned_radius_mm": 20.0,
+      "material_orientation": "outward_-z",
+      "source_face_count": 128,
+      "unchanged_interface_vertex_count": 128,
+      "source_face_identity": "exact baseline face indices selected from pinned z=0/R20 planar triangles and mapped into local-B by source_face_ids"
+    },
+    "interior_floor_z2": {
+      "plane_z_mm": 2.0,
+      "pinned_radius_mm": 17.0,
+      "material_orientation": "inward_+z",
+      "source_face_count": 128,
+      "unchanged_interface_vertex_count": 128,
+      "source_face_identity": "exact baseline face indices selected from pinned z=2/R17 planar triangles and mapped into local-B by source_face_ids"
+    },
+    "preservation": [
+      "all preexisting rest and relief vertices bitwise",
+      "all noncap face connectivity, order, parent face identity, and source-corner barycentrics bitwise",
+      "all existing outer surface field/color arrays bitwise",
+      "the frozen patterned baseline outer color table bitwise"
+    ],
+    "no_shape_or_topology_scope_expansion": true
+  },
+  "fixed_meshing_parameters": {
+    "interior_point_pattern": "deterministic row-major triangular lattice",
+    "spacing_mm": 1.0,
+    "boundary_margin_mm": 0.4,
+    "boundary_vertices_per_cap": 128,
+    "retained_center_vertex_per_cap": true,
+    "triangulator": "SciPy Delaunay with Qbb Qc Qz Q12, each planar cap independently",
+    "automatic_density_escalation": false,
+    "quality_parameter_tuning": false
+  },
+  "prewrite_audit": {
+    "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/prewrite_budget_audit.json",
+    "status": "PREWRITE_AUDIT_PASS",
+    "triangulation_or_candidate_mesh_computed": false,
+    "new_lattice_vertices": {"bottom_exterior_z0": 1392, "interior_floor_z2": 1002, "total": 2394},
+    "Euler_disk_faces": {"bottom_exterior_z0": 2912, "interior_floor_z2": 2132, "predicted_total": 41876},
+    "independent_untouched_noncap_relief_quality": {
+      "face_count": 36832,
+      "minimum_Q": 0.23846327269365253,
+      "minimum_Q_baseline_source_face_id": 3752,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 8.001372197112254,
+      "maximum_aspect_baseline_source_face_id": 2838
+    },
+    "input_global_relief_quality": {
+      "minimum_Q": 0.08488545669419832,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626
+    },
+    "interpretation": "The unchanged noncap minimum-Q and maximum-aspect bounds do not block robust global improvement if both cap targets pass. The noncap aggregate is named noncap; no body/support subregion is inferred."
+  },
+  "fixed_budgets": {
+    "maximum_total_new_vertices": 2500,
+    "maximum_total_output_faces": 45000,
+    "maximum_cross_parent_patch_records_across_both_caps": 15000,
+    "maximum_cross_parent_patch_polygon_vertices_across_both_caps": 60000,
+    "maximum_parent_patches_on_any_output_face": 128,
+    "maximum_generation_and_checks_wall_clock_seconds": 120,
+    "vertex_and_face_budgets_preflight_pass": true,
+    "exact_patch_overlay_count": "NOT_COMPUTED_BEFORE_GENERATION; source fails closed before NPZ save if any frozen aggregate/per-face patch budget is exceeded"
+  },
+  "lineage": {
+    "new_vertex_lineage": "each lattice vertex has one deterministic actual baseline cap parent face plus source-face barycentrics, independently checked by rest and relief reconstruction",
+    "output_face_lineage": "each remeshed face stores source-face/output-face barycentrics for every positive-area source-triangle intersection polygon",
+    "coverage": "per-output-face patch areas sum to output face area within 1e-9 mm2 or relative 1e-10",
+    "nonoverlap": "pairwise patch intersections at or below 1e-10 mm2",
+    "single_parent_fields": "explicitly v2-prefixed fields only when one actual source face contains the full output face",
+    "cross_parent_fields": "v2 status=2, legacy single-parent sentinel -1 and NaN; complete CSR patch lineage remains authoritative"
+  },
+  "colors": {
+    "existing_outer_color_arrays": "preserved bitwise",
+    "outer_base_linear_rgb_provenance": "must match the patterned baseline outer_color_linear_rgb table bitwise; not treated as one constant pigment",
+    "planar_cap_field": "frozen unornamented base_linear_rgb at source position; stored samples and sRGB conversion independently checked",
+    "outer_continuous_field_gate": "saved local-B and candidate finite samples, plus corner samples, compared at the frozen 1e-12 tolerance"
+  },
+  "quality_gates": {
+    "minimum_cap_Q_each_surface": 0.35,
+    "maximum_cap_aspect_each_surface": 5.0,
+    "global_minimum_Q_gain": "candidate minus local-B must exceed 64*float64_epsilon*max(1,|before|,|after|)",
+    "global_maximum_aspect_reduction": "local-B minus candidate must exceed 64*float64_epsilon*max(1,|before|,|after|)",
+    "independent_noncap_quality": "recomputed from relief triangles and required to remain exactly unchanged",
+    "meaning": "geometric triangle metrics only; not tetrahedron quality, solver quality, or mechanics h"
+  },
+  "prepared_review_outputs": {
+    "output_directory": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run02_owner_fix",
+    "pngs": ["global_equal_aspect_actual_mesh.png", "two_caps_equal_aspect_actual_mesh.png"],
+    "generated": false
+  },
+  "parent_runner": {
+    "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/run_candidate_owner_fix_once.py",
+    "source_freeze_path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/SOURCE_FREEZE_owner_fix.json",
+    "fixed_run_directory": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run02_owner_fix",
+    "hard_total_wall_clock_seconds": 120,
+    "reserved_cleanup_seconds": 12,
+    "combined_child_stdout_stderr_retention_cap_bytes": 20971520,
+    "child_process_tree_termination_on_timeout": true,
+    "records_actual_child_return_code_and_elapsed_time": true,
+    "refuses_existing_run_directory": true,
+    "required_invocation_switch": "--root-approved-run",
+    "automatic_retry": false
+  },
+  "execution_authorization": {
+    "candidate_generation_invoked": false,
+    "focused_checks_invoked": false,
+    "cad_or_solver_invoked": false,
+    "requires_root_review_before_one_bounded_run": true
+  }
+}

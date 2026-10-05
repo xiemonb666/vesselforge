@@ -1,0 +1,39 @@
+{
+  "actual_argv": [
+    "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/owner_lookup_toy_check.py"
+  ],
+  "candidate_main_invoked": false,
+  "check_id": "global_two_cap_owner_fix_two_parent_toy_v1",
+  "elapsed_seconds": 0.019079399993643165,
+  "finished_at_utc": "2026-10-05T12:22:39.963775+00:00",
+  "mesh_generation_invoked": false,
+  "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "result": {
+    "checks": {
+      "first_parent_raw_coordinates_show_outside": true,
+      "later_containing_parent_is_selected": true,
+      "point_outside_all_parents_fails_closed": true,
+      "shared_boundary_uses_first_actual_parent": true
+    },
+    "first_parent_raw_barycentric_for_inside_second": [
+      -0.5,
+      1.25,
+      0.25
+    ],
+    "inside_second_barycentric": [
+      0.25,
+      0.5,
+      0.25
+    ],
+    "inside_second_parent_id": 1,
+    "outside_all_rejection": "no pinned toy_adjacent_parent_pair parent owns lattice point [2.2, 1.0]",
+    "passed": true,
+    "shared_boundary_barycentric": [
+      0.0,
+      0.5,
+      0.5
+    ],
+    "shared_boundary_parent_id": 0
+  },
+  "status": "PASS"
+}
