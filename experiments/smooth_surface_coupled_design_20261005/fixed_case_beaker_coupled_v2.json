@@ -1,0 +1,451 @@
+{
+  "schema": "vesselforge.smooth_surface_coupled_design.fixed_case/0.1.0",
+  "candidate_id": "beaker-coupled-fairing-math-v2",
+  "status": "PURE_MATH_PROTOTYPE_ONLY_NOT_CAD_VALIDATED",
+  "scope": "One fixed coupled analytic beaker profile; real style, native geometry, material, manufacture, and reusable family range are unknown.",
+  "units": {
+    "length": "mm",
+    "coordinate_order": [
+      "radius",
+      "z"
+    ],
+    "derivatives": "mm per local parameter; second derivatives mm per local parameter squared"
+  },
+  "identity_and_limits": {
+    "representative_family_label": "beaker",
+    "real_vessel_style": "UNKNOWN_NOT_REFERENCE_MATCHED",
+    "physical_or_material_qualification": "NOT_VALIDATED",
+    "global_self_intersection": "UNKNOWN_PENDING_NATIVE_CAD",
+    "global_minimum_normal_wall": "UNKNOWN",
+    "radial_wall_setting_mm": 2.5,
+    "radial_wall_semantics": "2.5 mm paired radial control gap through the shoulder; not normal wall thickness. A separate rim transition increases the endpoint gap to 3.5 mm.",
+    "rim_radial_gap_mm": 3.5,
+    "rim_gap_semantics": "local thickened rim endpoint gap from 2.5 mm at shoulder to 3.5 mm at mouth; style and functional suitability unknown"
+  },
+  "nominal_case": {
+    "height_mm": 110.0,
+    "max_outer_radius_mm": 42.0,
+    "clear_mouth_diameter_mm": 68.0,
+    "outer_mouth_radius_mm": 37.5,
+    "inner_mouth_radius_mm": 34.0,
+    "base_thickness_mm": 4.5,
+    "outer_underside_radius_mm": 12.0,
+    "outer_side_root_rz_mm": [
+      20.0,
+      10.0
+    ],
+    "height_semantics": "rim_endpoint_z_mm; lip crest is higher and full geometry height/bbox is not validated"
+  },
+  "curve_definition": {
+    "degree": 5,
+    "basis": "piecewise quintic Hermite data converted to exact degree-5 Bezier control nets",
+    "station_second_derivative_rz": [
+      0.0,
+      0.0
+    ],
+    "outside_underside_parameter_width": 3.0,
+    "outer_base_fairing_parameter_widths": [
+      0.5,
+      0.4,
+      0.3
+    ],
+    "outer_side_parameter_widths": [
+      0.5,
+      0.75,
+      0.75,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "lip_parameter_width": 1.0,
+    "inner_side_pairing": "side spans before the last shoulder-to-rim span use exact 2.5 mm radial endpoint/control gap; the last span uses a degree-5 C2 endpoint fit from 2.5 mm at shoulder to 3.5 mm at rim; no claim of normal offset",
+    "inner_floor_parameter_width": 2.5,
+    "axis_closure_parameter_width": 1.125,
+    "axis_joins": "expected revolution-axis singularities; excluded from non-axis C2 and normal-ray checks"
+  },
+  "base_fairing_stations": [
+    {
+      "name": "underside_tangent",
+      "point_rz_mm": [
+        12.0,
+        0.0
+      ],
+      "d1_rz_per_parameter": [
+        4.0,
+        0.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "base_transition_1",
+      "point_rz_mm": [
+        15.0,
+        1.5
+      ],
+      "d1_rz_per_parameter": [
+        4.0,
+        3.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "base_transition_2",
+      "point_rz_mm": [
+        18.0,
+        6.5
+      ],
+      "d1_rz_per_parameter": [
+        8.0,
+        14.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "shared_wall_root",
+      "point_rz_mm": [
+        20.0,
+        10.0
+      ],
+      "d1_rz_per_parameter": [
+        8.0,
+        14.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "outer_side_stations": [
+    {
+      "name": "root",
+      "point_rz_mm": [
+        20.0,
+        10.0
+      ],
+      "d1_rz_per_parameter": [
+        8.0,
+        14.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "lower_body_transition",
+      "point_rz_mm": [
+        24.0,
+        17.0
+      ],
+      "d1_rz_per_parameter": [
+        5.0,
+        8.75
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "lower_body",
+      "point_rz_mm": [
+        30.0,
+        30.0
+      ],
+      "d1_rz_per_parameter": [
+        10.0,
+        17.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "body_1",
+      "point_rz_mm": [
+        38.0,
+        50.0
+      ],
+      "d1_rz_per_parameter": [
+        8.0,
+        20.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "body_2",
+      "point_rz_mm": [
+        42.0,
+        70.0
+      ],
+      "d1_rz_per_parameter": [
+        0.0,
+        12.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "shoulder",
+      "point_rz_mm": [
+        39.0,
+        96.0
+      ],
+      "d1_rz_per_parameter": [
+        -3.5,
+        12.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "rim_outer",
+      "point_rz_mm": [
+        37.5,
+        110.0
+      ],
+      "d1_rz_per_parameter": [
+        0.0,
+        7.0
+      ],
+      "d2_rz_per_parameter2": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "lip_bridge": {
+    "start_rz_mm": [
+      37.5,
+      110.0
+    ],
+    "end_rz_mm": [
+      34.0,
+      110.0
+    ],
+    "start_d1_rz_per_parameter": [
+      0.0,
+      7.0
+    ],
+    "end_d1_rz_per_parameter": [
+      0.0,
+      -7.0
+    ],
+    "start_d2_rz_per_parameter2": [
+      0.0,
+      0.0
+    ],
+    "end_d2_rz_per_parameter2": [
+      0.0,
+      0.0
+    ],
+    "tangent_scale_mm_per_parameter": 7.0,
+    "height_reference_mm": 110.0,
+    "radial_gap_mm": 3.5
+  },
+  "parameter_bounds_for_this_candidate_only": {
+    "shared_outer_wall_root_rz_mm": {
+      "fixed": [
+        20.0,
+        10.0
+      ],
+      "range_mm": [
+        [
+          20.0,
+          20.0
+        ],
+        [
+          10.0,
+          10.0
+        ]
+      ]
+    },
+    "outer_base_transition_1_rz_mm": {
+      "fixed": [
+        15.0,
+        1.5
+      ],
+      "range_mm": [
+        [
+          15.0,
+          15.0
+        ],
+        [
+          1.5,
+          1.5
+        ]
+      ]
+    },
+    "outer_base_transition_2_rz_mm": {
+      "fixed": [
+        18.0,
+        6.5
+      ],
+      "range_mm": [
+        [
+          18.0,
+          18.0
+        ],
+        [
+          6.5,
+          6.5
+        ]
+      ]
+    },
+    "lower_body_transition_rz_mm": {
+      "fixed": [
+        24.0,
+        17.0
+      ],
+      "range_mm": [
+        [
+          24.0,
+          24.0
+        ],
+        [
+          17.0,
+          17.0
+        ]
+      ]
+    },
+    "inner_base_transition_rz_mm": {
+      "fixed": [
+        13.75,
+        7.5
+      ],
+      "range_mm": [
+        [
+          13.75,
+          13.75
+        ],
+        [
+          7.5,
+          7.5
+        ]
+      ]
+    },
+    "inner_floor_tangent_rz_mm": {
+      "fixed": [
+        10.0,
+        4.5
+      ],
+      "range_mm": [
+        [
+          10.0,
+          10.0
+        ],
+        [
+          4.5,
+          4.5
+        ]
+      ]
+    },
+    "side_radial_control_gap_mm": {
+      "fixed": 2.5,
+      "candidate_bound_mm": [
+        2.5,
+        2.5
+      ]
+    },
+    "thickened_rim_radial_endpoint_gap_mm": {
+      "fixed": 3.5,
+      "candidate_bound_mm": [
+        3.5,
+        3.5
+      ],
+      "motivation": "greater than 2.5 mm half-turn feasibility lower limit for a 1.25 mm convex-lip sample design target; this is not a style claim"
+    },
+    "lip_vertical_tangent_scale_mm_per_parameter": {
+      "fixed": 7.0,
+      "candidate_bound_mm": [
+        7.0,
+        7.0
+      ]
+    },
+    "fixed_candidate_values_are_not_auto_optimized": true,
+    "bound_scope": "frozen single beaker candidate; not a reusable family or manufacturing range"
+  },
+  "acceptance_constraints": {
+    "non_axis_meridian_c2": "all adjoining position, first derivative, and second derivative errors <= 1e-10 in their respective mm/parameter units",
+    "side_and_base_control_polygon": "outer radius and z monotonic in each declared segment direction; all paired inner radii > 0",
+    "lip_control_polygon": "radius non-increasing; all z poles >= 110 mm; one symmetric z crest is expected from the sign pattern",
+    "sampled_curvature_design_target": "finite 1001-sample minimum radius >= 1.25 mm for outer/inner base fairings, first two lower-body spans, and lip; sample target only, never a whole-span bound",
+    "paired_radial_setting": "exact 2.5 mm radial control-pole separation before the shoulder-to-rim transition; the paired shoulder-to-rim spans vary from 2.5 mm to 3.5 mm with identical z poles and C2 endpoint jets; lip endpoint radial gap is 3.5 mm. These are radial gaps, not normal thickness.",
+    "finite_meridian_normal_probe": "at 101 fixed parameter samples per eligible outer base/side span, the inward generator normal ray must have one isolated positive first intersection with inner side/floor; report each finite distance, misses, and ambiguous roots; do not call sample min a global minimum",
+    "classifier_unknown_diagnostic": "keep classifier tolerance fixed at 1e-7 mm; future boundary-offset probes are diagnostic and may not promote UNKNOWN by tolerance relaxation",
+    "sampled_minimum_curvature_radius_target_mm": 1.25,
+    "lip_convexity": "compute exact Bernstein signs for r' z'' - z' r''; state convex/no-inflection only if exact same-sign coefficients establish it",
+    "normal_thickness_scope": "101 fixed meridian-generator rays per eligible outer base/side span; preserve unknowns and all raw hits; candidate inner-boundary distance is not native material interval or a global normal-wall minimum"
+  },
+  "inner_base_fairing": {
+    "stations": [
+      {
+        "name": "inner_wall_root",
+        "point_rz_mm": [
+          17.5,
+          10.0
+        ],
+        "d1_rz_per_parameter": [
+          -8.0,
+          -14.0
+        ],
+        "d2_rz_per_parameter2": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "inner_base_transition",
+        "point_rz_mm": [
+          13.75,
+          7.5
+        ],
+        "d1_rz_per_parameter": [
+          -6.0,
+          -5.0
+        ],
+        "d2_rz_per_parameter2": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "inner_floor_tangent",
+        "point_rz_mm": [
+          10.0,
+          4.5
+        ],
+        "d1_rz_per_parameter": [
+          -4.0,
+          0.0
+        ],
+        "d2_rz_per_parameter2": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "parameter_widths": [
+      0.3,
+      0.5
+    ]
+  }
+}

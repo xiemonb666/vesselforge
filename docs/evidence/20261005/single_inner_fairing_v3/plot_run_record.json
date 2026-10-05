@@ -1,0 +1,43 @@
+{
+  "candidate_id": "beaker-single-inner-fairing-math-v1",
+  "command": "\"C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe\" \"-B\" \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_single_inner_fairing_20261005\\plot_single_inner_fairing_section.py\" \"--report\" \"C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\math_diagnostics.json\" \"--output-dir\" \"C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\plot\"",
+  "argv": [
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_single_inner_fairing_20261005\\plot_single_inner_fairing_section.py",
+    "--report",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\math_diagnostics.json",
+    "--output-dir",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\plot"
+  ],
+  "runtime_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "fixed_curvature_samples_per_span": 1001,
+  "fixed_normal_ray_samples_per_span": 101,
+  "started_utc": "2026-10-05T05:20:33.5556227Z",
+  "ended_utc": "2026-10-05T05:20:34.3619487Z",
+  "wall_time_seconds": 0.805,
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "exit_code": 0,
+  "all_7_frozen_sha256_pre": {
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/DESIGN_NOTE.md": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225",
+    "vesselforge/experiments/smooth_surface_coupled_design_20261005/fixed_case_beaker_coupled_v2.json": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/fixed_case_beaker_single_inner_fairing_v1.json": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/single_inner_fairing_math.py": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/plot_single_inner_fairing_section.py": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84",
+    "tmp/review_20261005/smooth_single_inner_fairing/REVIEW_AND_EXECUTION_BUDGET.md": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191",
+    "vesselforge/experiments/smooth_surface_coupled_design_20261005/coupled_profile_math.py": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b"
+  },
+  "all_7_frozen_sha256_post": {
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/DESIGN_NOTE.md": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225",
+    "vesselforge/experiments/smooth_surface_coupled_design_20261005/fixed_case_beaker_coupled_v2.json": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/fixed_case_beaker_single_inner_fairing_v1.json": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/single_inner_fairing_math.py": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8",
+    "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/plot_single_inner_fairing_section.py": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84",
+    "tmp/review_20261005/smooth_single_inner_fairing/REVIEW_AND_EXECUTION_BUDGET.md": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191",
+    "vesselforge/experiments/smooth_surface_coupled_design_20261005/coupled_profile_math.py": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b"
+  },
+  "diagnostic_json": "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\math_diagnostics.json",
+  "output_dir": "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\plot",
+  "stdout": "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\plot.stdout.txt",
+  "stderr": "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\plot.stderr.txt"
+}

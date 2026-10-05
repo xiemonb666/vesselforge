@@ -1,0 +1,1 @@
+{"candidate_id": "beaker-single-inner-fairing-math-v1", "status": "PURE_MATH_TARGETS_MET_FINITE_ONLY_WITH_EXACT_INNER_BASE_CERTIFICATE", "output": "C:\\Users\\xiemo\\Desktop\\ShardForge\\tmp\\review_20261005\\smooth_single_inner_fairing\\frozen_run\\math_diagnostics.json"}
