@@ -1,0 +1,46 @@
+{
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\native_cad_wall_probe_20261005\\normal_wall_probe.v2.py"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_utc": "2026-10-05T11:34:24.4397259Z",
+  "finished_utc": "2026-10-05T11:34:29.5820749Z",
+  "elapsed_seconds": 5.137,
+  "actual_rc": 0,
+  "hashes_before": {
+    "adapter_sha256": "ed035c69a2a70416ce99fd2bea0f36badcf4381f368a6b14230f86ceb70ea921",
+    "step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "run_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8"
+  },
+  "hashes_after": {
+    "adapter_sha256": "ed035c69a2a70416ce99fd2bea0f36badcf4381f368a6b14230f86ceb70ea921",
+    "step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "run_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8"
+  },
+  "source_hashes_unchanged": true,
+  "worker_status": "SUCCESS_FINITE_PROBES_GLOBAL_UNKNOWN",
+  "render_status": "SUCCESS",
+  "render_status_record": {
+    "status": "SUCCESS",
+    "elapsed_seconds": 0.766,
+    "section_png": "normal_wall_probe_section_y0.png",
+    "rays_png": "normal_wall_probe_rays_3d.png",
+    "section_png_sha256": "e22b8c734a6b361f144f97d66c3a28cf67dda24a9e1cd0a3aa98ac03253c0bee",
+    "rays_png_sha256": "b52a454045ee9bbb7fd56ef79742e0b2ff0e52f2ee0f23c81c523ec605a53076"
+  },
+  "step_import_started": true,
+  "step_import_completed": true,
+  "normal_ray_calls_started": 20,
+  "ray_candidate_count": 20,
+  "total_raw_hits": 20,
+  "finite_summary": {
+    "ray_count": 20,
+    "measured_local_interval_count": 20,
+    "unknown_count": 0
+  },
+  "section_png_sha256": "e22b8c734a6b361f144f97d66c3a28cf67dda24a9e1cd0a3aa98ac03253c0bee",
+  "rays_png_sha256": "b52a454045ee9bbb7fd56ef79742e0b2ff0e52f2ee0f23c81c523ec605a53076",
+  "captured_process_output": "{\"status\": \"FINITE_PROBES_COMPLETE_GLOBAL_UNKNOWN\", \"failure\": null, \"brep_counts\": {\"solids\": 1, \"shells\": 1, \"faces\": 19, \"edges\": 37}, \"ray_candidate_count\": 20, \"total_raw_hits\": 20, \"finite_summary\": {\"ray_count\": 20, \"measured_local_interval_count\": 20, \"unknown_count\": 0}, \"render_status\": {\"status\": \"SUCCESS\", \"elapsed_seconds\": 0.766, \"section_png\": \"normal_wall_probe_section_y0.png\", \"rays_png\": \"normal_wall_probe_rays_3d.png\", \"section_png_sha256\": \"e22b8c734a6b361f144f97d66c3a28cf67dda24a9e1cd0a3aa98ac03253c0bee\", \"rays_png_sha256\": \"b52a454045ee9bbb7fd56ef79742e0b2ff0e52f2ee0f23c81c523ec605a53076\"}}\r\n"
+}
