@@ -1,0 +1,17 @@
+{
+  "actual_saved_candidate_mesh": true,
+  "images": [
+    {
+      "bytes": 577455,
+      "path": "global_equal_aspect_actual_mesh.png",
+      "sha256": "8fbdf431b34e50fc47ed270241848104025e58a7aeef38df5a508408987d165c"
+    },
+    {
+      "bytes": 581352,
+      "path": "two_caps_equal_aspect_actual_mesh.png",
+      "sha256": "c028f79a6279d27d2fb9d2d8ae9c83554e8499cb643981e12d654dfe8f6eb7f1"
+    }
+  ],
+  "render_elapsed_seconds": 1.1605609999969602,
+  "status": "RENDER_PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "catalog_native_adapter": {
+    "path": "vesselforge\\experiments\\catalog_native_adapter_20261006\\catalog_native_adapter.py",
+    "sha256": "ac34e4415395a42d83029dc8492eca3862ab1f16bc1edeede54c953a6ac4cf53"
+  },
+  "existing_smooth_native_adapter": {
+    "path": "vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\native_adapter.py",
+    "sha256": "7d745f48111d24b38a288714b580c0eefe55415b2998351bf6144fa1cf4dab76"
+  },
+  "geometry": {
+    "path": "vesselforge\\src\\vesselforge\\geometry.py",
+    "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+  },
+  "profile_catalog": {
+    "path": "vesselforge\\src\\vesselforge\\profile_catalog.py",
+    "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f"
+  },
+  "vesselforge_python_runtime": {
+    "path": "third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+  }
+}

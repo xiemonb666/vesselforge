@@ -1,0 +1,226 @@
+{
+  "checks": {
+    "candidate_counts": {
+      "faces": 41876,
+      "vertices": 20940
+    },
+    "candidate_global_quality_relief": {
+      "face_count": 41876,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 8.001372197112254,
+      "maximum_edge_mm": 3.1335426884730335,
+      "minimum_Q": 0.23846327269365253,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "zero_area_face_count": 0
+    },
+    "candidate_id": "global_two_cap_mesh_candidate_owner_fix_20261005",
+    "cap_quality_relief": {
+      "bottom_exterior_z0": {
+        "face_count": 2912,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 2.8688104625143938,
+        "maximum_edge_mm": 1.4404914720215474,
+        "minimum_Q": 0.6407401783487409,
+        "minimum_altitude_mm": 0.4065812940016269,
+        "surface_id": "bottom_exterior_z0",
+        "zero_area_face_count": 0
+      },
+      "interior_floor_z2": {
+        "face_count": 2132,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 3.016106207658969,
+        "maximum_edge_mm": 1.4876388392291495,
+        "minimum_Q": 0.6641514599012024,
+        "minimum_altitude_mm": 0.3789382708135126,
+        "surface_id": "interior_floor_z2",
+        "zero_area_face_count": 0
+      }
+    },
+    "checks": {
+      "actual_two_cap_source_fans_and_physical_surface_ids": true,
+      "all_cross_parent_patches_cover_without_overlap": true,
+      "all_new_vertex_lineage_reconstructs": true,
+      "all_preexisting_rest_relief_vertices_bitwise": true,
+      "baseline_patterned_outer_color_table_bitwise": true,
+      "baseline_rest_relief_prefix_bitwise": true,
+      "both_cap_aspect_at_most_5": true,
+      "both_cap_minimum_Q_at_least_0p35": true,
+      "closed_oriented_sphere_topology": true,
+      "fixed_aggregate_patch_budgets": true,
+      "fixed_total_vertex_and_face_budgets": true,
+      "global_maximum_aspect_improves_above_float_resolution": true,
+      "global_minimum_Q_improves_above_float_resolution": true,
+      "noncap_barycentric_identity": true,
+      "noncap_connectivity_identity": true,
+      "noncap_face_source_identity": true,
+      "outer_continuous_field_samples_unchanged": true,
+      "outer_corner_color_matches_continuous_field": true,
+      "outer_surface_field_and_color_arrays_bitwise": true,
+      "schema_v2_quarantine_no_v1_aliases": true,
+      "serialized_global_patch_counts_and_tolerances_match_readback": true,
+      "two_128_vertex_boundary_cycles_preserved": true,
+      "two_cap_chart_and_linear_srgb_samples_verified": true,
+      "two_parent_owner_lookup_raw_signed_barycentric_regression": true,
+      "untouched_noncap_quality_unchanged": true
+    },
+    "cross_parent_lineage": {
+      "maximum_parent_patches_per_output_face": 22,
+      "output_chart_reconstruction_max_residual_mm": 7.895083119518377e-15,
+      "patch_area_coverage_max_residual_mm2": 3.552713678800501e-14,
+      "patch_cover_and_no_overlap_pass": true,
+      "patch_pairwise_overlap_max_area_mm2": 0.0,
+      "patch_polygon_vertex_count": 53624,
+      "patch_record_count": 14812,
+      "source_chart_reconstruction_max_residual_mm": 5.915561660197963e-14
+    },
+    "focused_check_count": 25,
+    "focused_check_pass_count": 25,
+    "focused_checks_pass": true,
+    "input_counts": {
+      "faces": 37088,
+      "vertices": 18546
+    },
+    "input_global_quality_relief": {
+      "face_count": 37088,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+      "maximum_edge_mm": 20.000000000000004,
+      "minimum_Q": 0.08488545669419832,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "zero_area_face_count": 0
+    },
+    "interpretation": "geometric triangle quality only; no tetrahedral, solver, mechanical-h, fracture, or physical-match claim",
+    "legacy_reader_compatibility": "UNKNOWN; standard schema-v1 source_face_ids and face_corner_barycentric_to_source keys are omitted",
+    "local_b_recorded_run_status": "UNKNOWN",
+    "new_vertex_lineage": {
+      "all_new_vertices_reconstructed": true,
+      "new_vertex_count": 2394,
+      "relief_xyz_max_residual_mm": 5.4722170975016705e-14,
+      "rest_xyz_max_residual_mm": 5.4722170975016705e-14
+    },
+    "outer_field_candidate": {
+      "finite_outer_color_max_abs_linear_rgb_error": 0.00529058349530287,
+      "finite_outer_relief_max_abs_error_mm": 0.004213739067055411,
+      "finite_outer_sample_count": 213024,
+      "finite_samples_per_outer_triangle": 7,
+      "outer_triangle_count": 30432,
+      "outer_vertex_count": 15344,
+      "per_corner_color_max_abs_linear_rgb_error": 0.0,
+      "per_corner_relief_max_abs_error_mm": 0.0
+    },
+    "outer_field_local_b": {
+      "finite_outer_color_max_abs_linear_rgb_error": 0.00529058349530287,
+      "finite_outer_relief_max_abs_error_mm": 0.004213739067055411,
+      "finite_outer_sample_count": 213024,
+      "finite_samples_per_outer_triangle": 7,
+      "outer_triangle_count": 30432,
+      "outer_vertex_count": 15344,
+      "per_corner_color_max_abs_linear_rgb_error": 0.0,
+      "per_corner_relief_max_abs_error_mm": 0.0
+    },
+    "outer_field_sample_error_delta": {
+      "linear_rgb": 0.0,
+      "relief_mm": 0.0
+    },
+    "owner_lookup_two_parent_toy_regression": {
+      "checks": {
+        "first_parent_raw_coordinates_show_outside": true,
+        "later_containing_parent_is_selected": true,
+        "point_outside_all_parents_fails_closed": true,
+        "shared_boundary_uses_first_actual_parent": true
+      },
+      "first_parent_raw_barycentric_for_inside_second": [
+        -0.5,
+        1.25,
+        0.25
+      ],
+      "inside_second_barycentric": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "inside_second_parent_id": 1,
+      "outside_all_rejection": "no pinned toy_adjacent_parent_pair parent owns lattice point [2.2, 1.0]",
+      "passed": true,
+      "shared_boundary_barycentric": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "shared_boundary_parent_id": 0
+    },
+    "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+    "recorded_local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "robust_global_quality_gate": {
+      "maximum_aspect_reduction": 12.378644049984008,
+      "maximum_aspect_resolution_tolerance": 2.8961744998094135e-13,
+      "minimum_Q_gain": 0.1535778159994542,
+      "minimum_Q_resolution_tolerance": 1.4210854715202004e-14,
+      "required_float64_ulps": 64.0
+    },
+    "schema": "isolated_v2_global_two_planar_cap_patches",
+    "surface_ids": [
+      "bottom_exterior_z0",
+      "interior_floor_z2"
+    ],
+    "topology": {
+      "boundary_edge_count": 0,
+      "connected_component_count": 1,
+      "duplicate_face_count_unoriented": 0,
+      "euler_characteristic": 2,
+      "face_count": 41876,
+      "inconsistent_winding_edge_count": 0,
+      "non_two_incidence_edge_count": 0,
+      "positive_signed_volume": true,
+      "repeated_vertex_face_count": 0,
+      "signed_volume_mm3": 10202.175145733465,
+      "unique_undirected_edge_count": 62814,
+      "used_vertex_count": 20940,
+      "vertex_count": 20940,
+      "zero_area_face_count_threshold_1e-12_mm2": 0
+    },
+    "untouched_noncap_candidate_quality_relief": {
+      "face_count": 36832,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 8.001372197112254,
+      "maximum_edge_mm": 3.1335426884730335,
+      "minimum_Q": 0.23846327269365253,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "zero_area_face_count": 0
+    },
+    "untouched_noncap_input_quality_relief": {
+      "face_count": 36832,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 8.001372197112254,
+      "maximum_edge_mm": 3.1335426884730335,
+      "minimum_Q": 0.23846327269365253,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "zero_area_face_count": 0
+    }
+  },
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "generation_invoked": false,
+  "input_sha256": {
+    "baseline_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+  },
+  "numerical_status": "NUMERICAL_CHECK_PASS",
+  "original_run02_failure": "TypeError while serializing returned focused checks",
+  "original_run02_status": "UNKNOWN_OR_FAIL",
+  "readback_id": "ownerfix_saved_npz_readback_recovery_v3",
+  "saved_candidate_npz_sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be",
+  "source_sha256": {
+    "READBACK_RECOVERY_CONTRACT.json": "fa53ff51c62470328971746f75da89458fe79db2736861ebd61776dcf0bba148",
+    "READBACK_RECOVERY_CONTRACT_v3.json": "d9c5614be62c1f2542bfb2a52e00a5809bb7560871d341009f5ccd45d677c627",
+    "READBACK_RECOVERY_FREEZE.json": "ef56020ef80eb4676a5aef7eedc4f5139090171f640c91a7f1f5e11e6e68667b",
+    "READBACK_RECOVERY_REVIEW.md": "54ebb7b4fc4c04d2d0f9d9dd8b15a556f50ddb3e89e1c624ff038f008eebddea",
+    "READBACK_RECOVERY_REVIEW_v3.md": "112aa90fe6db9232ff3ca70766dcf7af9c1bb76129ce8fcc12d4675ff3a23d90",
+    "SOURCE_FREEZE_owner_fix.json": "29beabbda63c8e6c6ca08234fb0f529da67227a475edb8b1cc664923801c9df6",
+    "candidate_owner_fix.py": "e79e7f9ce1661e0d2c3b649b222c2875d144e280701a9e953b7fc8bddde185a4",
+    "focused_checks_owner_fix.py": "271306ae2200de7538fe96525abb83ffb83116542ec4a71652f8e93afecad4e3",
+    "focused_checks_recovery_v1.py": "9ab834341c8f7af2d5b4b3f4a48f9dfd9e5777bb5bc30e6413a63187261cbe83",
+    "readback_recovery_worker_v1.py": "75dfc6a34f0e27709e25c80057669fd31e977716f04b3dfceadd282208d22164",
+    "readback_recovery_worker_v3.py": "44bf03177e12f5a3a34ffe22ac0219f9068155285df8a6f3e4cf6b12db29a49b",
+    "run02_owner_fix_failure_cause_append.md": "e4dde433ceae8e9cf104d77c290503fbfa50fa9e294fc51dd43323ab3f4253ad",
+    "run_readback_recovery_once.ps1": "7a93b1ea894a412c65b2717b95efbe5a9bd601cac745d1742eac8651da6841f6",
+    "run_readback_recovery_once_v3.ps1": "68a21be4c295d076256543663a51ed8673e608138f6c76b1ef7558451fa4c726",
+    "run_readback_recovery_supervisor_v3.ps1": "933c13231844929112f4e95e3a81777965f7982804bd53bb7baeb6d2dc63790b"
+  }
+}

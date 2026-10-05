@@ -1,0 +1,104 @@
+{
+  "review_id": "two_cap_saved_npz_recovery_v2_independent_static_review_20261006",
+  "review_type": "read-only source/freeze/receipt review; no NPZ loading, focused checks, rendering, mesh generation, CAD, solver, or Git",
+  "freeze_id": "ownerfix_saved_npz_readback_recovery_v2",
+  "freeze_sha256": "a6a3694567130fc57f041ff57f7a5266a6a59a5ac61685a021499f77fbcc479c",
+  "decision": "BLOCKED_V2_INNER_RUNNER_PIN_CARDINALITY_GUARD_REJECTS_VALID_MAPS_BEFORE_WORKER",
+  "primary_blocker": {
+    "id": "BLOCK-01",
+    "file": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/run_readback_recovery_once_v2.ps1",
+    "line": 118,
+    "expression": "$pathMap.Actual.Count -ne $pathMap.Expected.PSObject.Properties.Count",
+    "evidence": {
+      "probe_owner": "root, PowerShell 7.6.5 native microprobe",
+      "observed": "$obj.PSObject.Properties.Count yielded [1,1] for two properties; comparison (2 -ne ...Count) was true",
+      "freeze_map_cardinalities": {
+        "source": 15,
+        "inputs": 5,
+        "history": 10
+      },
+      "source_loop": "run_readback_recovery_once_v2.ps1:108-120",
+      "recovery_root_created_after_guard": "run_readback_recovery_once_v2.ps1:125-131",
+      "worker_launch_after_recovery_root": "run_readback_recovery_once_v2.ps1:133-136",
+      "effect": "Valid hash maps pass item-by-item comparisons but fail the property-count guard; inner runner catches the error and exits before creating recovery output or launching worker."
+    },
+    "reviewer_reran_probe": false,
+    "suggested_narrow_fix": "Materialize the expected property collection and compare a scalar count, e.g. an explicit array/Measure-Object count; preserve the per-key exact hash checks."
+  },
+  "pin_validation": {
+    "all_freeze_source_hashes_match": true,
+    "all_five_input_hashes_match": true,
+    "requested_freeze_hash_matches": true,
+    "saved_candidate_npz_path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run02_owner_fix/candidate_arrays.npz",
+    "saved_candidate_npz_expected_sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be",
+    "saved_candidate_npz_actual_sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be",
+    "npz_loaded_or_arrays_inspected": false
+  },
+  "readback_static_review": {
+    "only_existing_saved_npz_read": true,
+    "candidate_generation_called": false,
+    "focused_checks_call_count": 1,
+    "saved_candidate_npz_load_count": 1,
+    "candidate_owner_fix_import_role": "only used by the frozen focused checker’s owner-lookup toy regression; candidate main is not invoked",
+    "cad_or_solver": false,
+    "numerical_report_written_before_render": true,
+    "numerical_status_separate_from_render_status": true,
+    "exit_zero_condition": "numerical checks pass, render passes, and pins remain unchanged",
+    "original_run_status_rewritten": false
+  },
+  "boolean_json_fix": {
+    "comparison_basis": "focused_checks_owner_fix.py versus focused_checks_recovery_v1.py",
+    "changes": [
+      "q_tol is explicitly materialized as Python float",
+      "ar_tol is explicitly materialized as Python float",
+      "global_q_pass is explicitly materialized as Python bool",
+      "global_ar_pass is explicitly materialized as Python bool"
+    ],
+    "threshold_formula_unchanged": "64 * float64_epsilon * max(1, abs(before), abs(after))",
+    "meaning": "type materialization for strict JSON serialization; numeric inequalities and thresholds unchanged",
+    "terminology_note": "Scaled float64-epsilon threshold; not a claim of 64 local ULPs."
+  },
+  "status_and_artifact_review": {
+    "worker_readback_checks_precede_render": true,
+    "render_status_is_separate_json": true,
+    "worker_nonzero_on_numeric_or_render_failure": true,
+    "inner_runner_propagates_worker_rc_unless_timeout_pin_drift_or_cap_overrides": true,
+    "supervisor_propagates_inner_rc_unless_timeout_or_final_cap_overrides": true,
+    "artifact_scope": "full recovery output root including logs, worker artifacts, and inner runner receipt; outer supervisor writes no artifact file",
+    "final_receipt_accounting": "predicted UTF-8 byte count with fixed-width fields, post-write rescans, mismatch/cap states",
+    "cap_bytes": 20971520,
+    "cap_is_filesystem_quota": false,
+    "cap_semantics": "overages are detected, reported, and return code 125; a transiently oversized partial artifact can remain",
+    "render_failure_label_note": "Numerical recovery label follows numerical status, while render status and overall nonzero exit report rendering failure."
+  },
+  "timing_review": {
+    "nominal_supervisor_ms": 60000,
+    "inner_deadline_ms": 55000,
+    "cleanup_wait_ms": 3000,
+    "nominal_remaining_ms": 2000,
+    "standalone_hard_wall_proven_by_powershell_source": false,
+    "reason": "The supervisor's own synchronous tree/hash/process operations are not interrupted by its elapsed-time check.",
+    "external_watchdog_required": true,
+    "root_said_external_watchdog_will_be_used": true
+  },
+  "reviewer_execution": {
+    "candidate_npz_hash_only": true,
+    "npz_loaded": false,
+    "recovery_worker_run": false,
+    "focused_checks_run": false,
+    "render_run": false,
+    "mesh_generation_run": false,
+    "cad_or_solver_run": false,
+    "powershell_probe_run_by_reviewer": false
+  },
+  "source_hashes_sha256": {
+    "READBACK_RECOVERY_FREEZE_v2.json": "a6a3694567130fc57f041ff57f7a5266a6a59a5ac61685a021499f77fbcc479c",
+    "readback_recovery_worker_v2.py": "6fbffd473a1724fdff5cfb2e17f6ef2f8a4e7718f589caf28ad349952499d552",
+    "run_readback_recovery_once_v2.ps1": "5670c6755c2a535c8e3ac2650a7c572e6125b70ce91af9330aac9365e955cecc",
+    "run_readback_recovery_supervisor_v2.ps1": "3d7cf4457e0c202308f1420cacb2a3453cb0b22a2f24672ec4c29535819b5681",
+    "focused_checks_recovery_v1.py": "9ab834341c8f7af2d5b4b3f4a48f9dfd9e5777bb5bc30e6413a63187261cbe83",
+    "READBACK_RECOVERY_CONTRACT_v2.json": "4722dc4d4548d7ddb4b606ef8fcc37294ba9480a3f6a8f1d74c46ccf00053641"
+  },
+  "preserved_prior_reports": true
+}
+
