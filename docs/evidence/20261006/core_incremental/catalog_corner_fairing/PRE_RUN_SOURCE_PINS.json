@@ -1,0 +1,14 @@
+{
+  "corner_fairing_source": {
+    "path": "vesselforge\\experiments\\catalog_corner_fairing_20261006\\catalog_corner_fairing.py",
+    "sha256": "6c1e94150d769158c757469141aab23796b005421d3878b150271d375086d534"
+  },
+  "profile_catalog": {
+    "path": "vesselforge\\src\\vesselforge\\profile_catalog.py",
+    "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f"
+  },
+  "python_runtime": {
+    "path": "third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+  }
+}

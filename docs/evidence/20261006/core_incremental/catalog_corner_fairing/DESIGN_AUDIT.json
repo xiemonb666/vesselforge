@@ -1,0 +1,3410 @@
+{
+  "all_source_pins_unchanged": true,
+  "cad_imported": false,
+  "cases": {
+    "bowl": {
+      "bounded_geometry_checks": {
+        "all_control_poles_within_local_adjacent_segment_hull": true,
+        "contour_sample_vertices_outer_plus_inner": 95,
+        "curve_parameter_evaluations": 90,
+        "faired_sampled_section_signed_area_mm2": 331.5209297054938,
+        "original_section_signed_area_mm2": 331.20000000000016,
+        "sampled_section_area_change_mm2": 0.3209297054936542,
+        "shortest_original_closed_material_section_segment_mm": 3.0,
+        "simple_nonselfintersecting_checks": {
+          "closed_material_section": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          },
+          "inner_profile": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          },
+          "outer_profile": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          }
+        },
+        "wall_distance_interpretation": "bounded 2D sampled contour-pair distance only; not normal thickness or a global minimum-wall proof",
+        "wall_side_sampled_pair_distance_delta_mm": -6.661338147750939e-16,
+        "wall_side_sampled_polyline_pair_distance_after_mm": 1.0252291892601124,
+        "wall_side_sampled_polyline_pair_distance_before_mm": 1.025229189260113
+      },
+      "catalog_parameters_unchanged": {
+        "base_thickness_declaration_mm": 6.0,
+        "height_mm": 90.0,
+        "max_radius_mm": 60.0,
+        "mouth_diameter_mm": 108.0,
+        "wall_thickness_declaration_mm": 3.0
+      },
+      "catalog_schema": "vesselforge.profile_catalog/0.1.0",
+      "catalog_wall_and_base_declarations": {
+        "base": "inside floor datum is base_thickness_declaration_mm above the outside floor datum; not a full-solid minimum-wall measurement",
+        "wall": "constant radial meridian offset at corresponding control heights; not a global normal minimum or measured material thickness"
+      },
+      "corner_treatment": {
+        "inner_profile": [
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              0.0,
+              6.0
+            ],
+            "profile_side": "inner",
+            "reason": "inside axis/floor endpoint at declared base z; preserve axis and floor datum",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 0
+          },
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              54.0,
+              90.0
+            ],
+            "profile_side": "inner",
+            "reason": "inside lip endpoint; preserve total height and clear mouth radius",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 6
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                8.975999999999999,
+                6.0
+              ],
+              [
+                9.281999999999998,
+                6.0
+              ],
+              [
+                9.588,
+                6.0
+              ],
+              [
+                10.775153575174922,
+                6.209146754609063
+              ],
+              [
+                11.062730362762384,
+                6.313720131913594
+              ],
+              [
+                11.350307150349845,
+                6.418293509218126
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.30135900268762694,
+              0.30135900268762866,
+              1.2054360107505109,
+              0.30135900268762744,
+              0.30135900268762755
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.5067950134381347,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              2.5541949674187017e-16
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              -7.131481376552017e-15
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 7.977643828442582,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.1253502940849169,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 10.2,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              10.2,
+              6.0
+            ],
+            "outgoing_segment_length_mm": 14.04563989286355,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 18.11269155047977,
+            "signed_turn_deg": 19.983106521899977,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.224,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 1
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                21.816,
+                10.223999999999998
+              ],
+              [
+                22.212,
+                10.367999999999999
+              ],
+              [
+                22.607999999999997,
+                10.511999999999999
+              ],
+              [
+                23.945232735369125,
+                11.442595723827896
+              ],
+              [
+                24.217849103053688,
+                11.763893585741846
+              ],
+              [
+                24.49046547073825,
+                12.085191447655795
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.4072928760233211,
+              0.40729287602331815,
+              1.6291715040932822,
+              0.40729287602332054,
+              0.40729287602332054
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.0364643801165907,
+            "endpoint_cross_numerator_mm2": [
+              5.115907697472726e-16,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              5.4704661388812815e-15,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 5.915539755769027,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.16904628170654545,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 14.04563989286355,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              23.4,
+              10.799999999999999
+            ],
+            "outgoing_segment_length_mm": 25.966902010058885,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 24.532850587526834,
+            "signed_turn_deg": 29.70279331760274,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.6854767871436258,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 2
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                38.184,
+                28.224
+              ],
+              [
+                38.687999999999995,
+                28.818
+              ],
+              [
+                39.192,
+                29.412
+              ],
+              [
+                40.92292944975553,
+                31.98013804044239
+              ],
+              [
+                41.2843941746333,
+                32.670207060663586
+              ],
+              [
+                41.64585889951107,
+                33.36027608088478
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.7742516449287609,
+              0.774251644928762,
+              3.0970065797150426,
+              0.7742516449287624,
+              0.7742516449287624
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.871258224643804,
+            "endpoint_cross_numerator_mm2": [
+              6.011191544530448e-15,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -1.0172468939348236e-14,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.1018885618349468,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.32238424432902324,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 25.966902010058885,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              40.199999999999996,
+              30.6
+            ],
+            "outgoing_segment_length_mm": 28.447847018711272,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 46.486887946599,
+            "signed_turn_deg": 12.668124796758597,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 3.116028241207066,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 3
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                52.18070403605735,
+                53.47225315974585
+              ],
+              [
+                52.48552802704301,
+                54.054189869809385
+              ],
+              [
+                52.79035201802868,
+                54.63612657987292
+              ],
+              [
+                53.616,
+                57.096
+              ],
+              [
+                53.724000000000004,
+                57.74399999999999
+              ],
+              [
+                53.832,
+                58.391999999999996
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.6486848152792016,
+              0.6486848152792039,
+              2.594739261116806,
+              0.6486848152791991,
+              0.6486848152792035
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.2434240763959954,
+            "endpoint_cross_numerator_mm2": [
+              4.134909020077782e-15,
+              5.371703082346359e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -1.1667615068782347e-14,
+              -1.5157519433747823e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.7050537254280558,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.26990161927664547,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 28.447847018711272,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              53.4,
+              55.8
+            ],
+            "outgoing_segment_length_mm": 21.8979451090736,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 38.97642321501808,
+            "signed_turn_deg": 18.183653155713067,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.627753413088832,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 4
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                56.74448018006742,
+                75.86688108040453
+              ],
+              [
+                56.80836013505056,
+                76.2501608103034
+              ],
+              [
+                56.87224009003371,
+                76.63344054020227
+              ],
+              [
+                56.82,
+                78.156
+              ],
+              [
+                56.730000000000004,
+                78.534
+              ],
+              [
+                56.64,
+                78.912
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.38086384834563564,
+              0.3808638483456354,
+              1.5234553933825226,
+              0.38086384834563264,
+              0.3808638483456329
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.9043192417281631,
+            "endpoint_cross_numerator_mm2": [
+              2.72336627843738e-15,
+              2.6858515411731795e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -3.71363872821927e-14,
+              -3.662482854591021e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 6.315751824923506,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.1583342771724745,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 21.8979451090736,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              57.0,
+              77.4
+            ],
+            "outgoing_segment_length_mm": 12.952219886953737,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 22.903643097229235,
+            "signed_turn_deg": 22.85481996177672,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.5542663864344484,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 5
+          }
+        ],
+        "outer_profile": [
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              0.0,
+              0.0
+            ],
+            "profile_side": "outer",
+            "reason": "outside axis/bottom endpoint at z=0; preserve axis and bottom datum",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 0
+          },
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              57.0,
+              90.0
+            ],
+            "profile_side": "outer",
+            "reason": "outer lip endpoint; preserve total height and outer lip radius",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 7
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                12.479999999999999,
+                0.0
+              ],
+              [
+                12.659999999999998,
+                0.0
+              ],
+              [
+                12.839999999999998,
+                0.0
+              ],
+              [
+                13.2,
+                0.36
+              ],
+              [
+                13.2,
+                0.54
+              ],
+              [
+                13.2,
+                0.72
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.12727922061357835,
+              0.12727922061357835,
+              0.5091168824543151,
+              0.12727922061357858,
+              0.1272792206135785
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 0.6363961030678917,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 19.876159799998245,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.050311529493744976,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 13.2,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              13.2,
+              0.0
+            ],
+            "outgoing_segment_length_mm": 6.0,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 8.049844718999264,
+            "signed_turn_deg": 90.0,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 0.72,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 1
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                13.2,
+                5.28
+              ],
+              [
+                13.2,
+                5.46
+              ],
+              [
+                13.2,
+                5.640000000000001
+              ],
+              [
+                13.538325632455836,
+                6.1230275027112135
+              ],
+              [
+                13.707488448683755,
+                6.18454125406682
+              ],
+              [
+                13.876651264911674,
+                6.246055005422427
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.14743214582310243,
+              0.14743214582310316,
+              0.5897285832924096,
+              0.14743214582310288,
+              0.14743214582310288
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 0.7371607291155122,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 16.716470933652154,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.059821238823015356,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 6.0,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              13.2,
+              6.0
+            ],
+            "outgoing_segment_length_mm": 14.04563989286355,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 9.083829610379885,
+            "signed_turn_deg": -70.01689347810003,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 0.72,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 2
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                24.816,
+                10.223999999999998
+              ],
+              [
+                25.212,
+                10.367999999999999
+              ],
+              [
+                25.607999999999997,
+                10.511999999999999
+              ],
+              [
+                26.945232735369125,
+                11.442595723827896
+              ],
+              [
+                27.217849103053688,
+                11.763893585741846
+              ],
+              [
+                27.49046547073825,
+                12.085191447655795
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.4072928760233211,
+              0.40729287602331815,
+              1.6291715040932822,
+              0.40729287602332054,
+              0.40729287602332054
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.0364643801165907,
+            "endpoint_cross_numerator_mm2": [
+              5.115907697472726e-16,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              5.4704661388812815e-15,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 5.915539755769027,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.16904628170654545,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 14.04563989286355,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              26.4,
+              10.799999999999999
+            ],
+            "outgoing_segment_length_mm": 25.966902010058885,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 24.532850587526834,
+            "signed_turn_deg": 29.70279331760274,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.6854767871436258,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 3
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                41.184,
+                28.224
+              ],
+              [
+                41.687999999999995,
+                28.818
+              ],
+              [
+                42.192,
+                29.412
+              ],
+              [
+                43.92292944975553,
+                31.98013804044239
+              ],
+              [
+                44.2843941746333,
+                32.670207060663586
+              ],
+              [
+                44.64585889951107,
+                33.36027608088478
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.7742516449287609,
+              0.774251644928762,
+              3.0970065797150426,
+              0.7742516449287624,
+              0.7742516449287624
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.871258224643804,
+            "endpoint_cross_numerator_mm2": [
+              6.011191544530448e-15,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -1.0172468939348236e-14,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.1018885618349468,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.32238424432902324,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 25.966902010058885,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              43.199999999999996,
+              30.6
+            ],
+            "outgoing_segment_length_mm": 28.447847018711272,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 46.486887946599,
+            "signed_turn_deg": 12.668124796758597,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 3.116028241207066,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 4
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                55.18070403605735,
+                53.47225315974585
+              ],
+              [
+                55.48552802704301,
+                54.054189869809385
+              ],
+              [
+                55.79035201802868,
+                54.63612657987292
+              ],
+              [
+                56.616,
+                57.096
+              ],
+              [
+                56.724000000000004,
+                57.74399999999999
+              ],
+              [
+                56.832,
+                58.391999999999996
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.6486848152792016,
+              0.6486848152792039,
+              2.594739261116806,
+              0.6486848152791991,
+              0.6486848152792035
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.2434240763959954,
+            "endpoint_cross_numerator_mm2": [
+              4.134909020077782e-15,
+              5.371703082346359e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -1.1667615068782347e-14,
+              -1.5157519433747823e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.7050537254280558,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.26990161927664547,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 28.447847018711272,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              56.4,
+              55.8
+            ],
+            "outgoing_segment_length_mm": 21.8979451090736,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 38.97642321501808,
+            "signed_turn_deg": 18.183653155713067,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.627753413088832,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 5
+          },
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_POLYLINE_CORNER",
+            "incoming_segment_length_mm": 21.8979451090736,
+            "original_corner_rz_mm": [
+              60.0,
+              77.4
+            ],
+            "outgoing_segment_length_mm": 12.952219886953737,
+            "profile_side": "outer",
+            "reason": "unique maximum-radius apex retained to preserve max_radius_mm; this corner remains sharp",
+            "signed_turn_deg": 22.85481996177672,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 6
+          }
+        ],
+        "quintic_controls_define_endpoint_tangent_and_zero_curvature": true,
+        "retained_sharp_corner_count": 5
+      },
+      "curvature_checks": {
+        "all_endpoint_curvatures_zero_within_tolerance_per_mm": true,
+        "all_quintics_analytically_regular_for_all_parameters": true,
+        "all_quintics_have_finite_control_polygon_curvature_upper_bounds": true,
+        "all_sampled_bezier_parameters_regular": true,
+        "endpoint_curvature_tolerance_per_mm": 1e-08,
+        "geometric_C2_scope": "each fairied join has matching tangent and zero geometric curvature; regular-curve arc-length reparameterization gives C2 at those joins",
+        "largest_quintic_curvature_upper_bound_per_mm": 19.876159799998245,
+        "maximum_sampled_curvature_per_mm": 1.9188762435018285,
+        "minimum_sampled_curvature_radius_mm": 0.5211383503164659,
+        "per_corner_global_curvature_upper_bounds_per_mm": [
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 19.876159799998245,
+            "vertex_index": 1
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 16.716470933652154,
+            "vertex_index": 2
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 5.915539755769027,
+            "vertex_index": 3
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 3.1018885618349468,
+            "vertex_index": 4
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 3.7050537254280558,
+            "vertex_index": 5
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 7.977643828442582,
+            "vertex_index": 1
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 5.915539755769027,
+            "vertex_index": 2
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 3.1018885618349468,
+            "vertex_index": 3
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 3.7050537254280558,
+            "vertex_index": 4
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 6.315751824923506,
+            "vertex_index": 5
+          }
+        ],
+        "regularity_and_curvature_sampled_at_each_quintic_parameter_grid": [
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 1.9188762435018285,
+            "minimum_sampled_curvature_radius_mm": 0.5211383503164659,
+            "minimum_sampled_speed_mm_per_unit_parameter": 0.8999999999999986,
+            "profile_vertex_index": 1,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 1.5742564798194192,
+            "minimum_sampled_curvature_radius_mm": 0.635220507470745,
+            "minimum_sampled_speed_mm_per_unit_parameter": 0.8999999999999986,
+            "profile_vertex_index": 2,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              5.4704661388812815e-15,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.2938085939152322,
+            "minimum_sampled_curvature_radius_mm": 3.4035764123649623,
+            "minimum_sampled_speed_mm_per_unit_parameter": 2.1068459839295337,
+            "profile_vertex_index": 3,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -1.0172468939348236e-14,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.06788615726643006,
+            "minimum_sampled_curvature_radius_mm": 14.73054360810762,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.8950353015088295,
+            "profile_vertex_index": 4,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -1.1667615068782347e-14,
+              -1.5157519433747823e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.11551716083068743,
+            "minimum_sampled_curvature_radius_mm": 8.656722454126898,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.2846917663610378,
+            "profile_vertex_index": 5,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              -7.131481376552017e-15
+            ],
+            "maximum_sampled_curvature_per_mm": 0.2725060040067246,
+            "minimum_sampled_curvature_radius_mm": 3.669643917186218,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.5299999999999958,
+            "profile_vertex_index": 1,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              5.4704661388812815e-15,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.2938085939152322,
+            "minimum_sampled_curvature_radius_mm": 3.4035764123649623,
+            "minimum_sampled_speed_mm_per_unit_parameter": 2.1068459839295337,
+            "profile_vertex_index": 2,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -1.0172468939348236e-14,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.06788615726643006,
+            "minimum_sampled_curvature_radius_mm": 14.73054360810762,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.8950353015088295,
+            "profile_vertex_index": 3,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -1.1667615068782347e-14,
+              -1.5157519433747823e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.11551716083068743,
+            "minimum_sampled_curvature_radius_mm": 8.656722454126898,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.2846917663610378,
+            "profile_vertex_index": 4,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -3.71363872821927e-14,
+              -3.662482854591021e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.24537900884559843,
+            "minimum_sampled_curvature_radius_mm": 4.07532822267302,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.9428329830430657,
+            "profile_vertex_index": 5,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          }
+        ],
+        "remaining_straight_spans_regular_with_exact_zero_curvature": true,
+        "shared_parameter_C2": "NOT_CLAIMED; parameter speed is not matched between independent line and Bezier spans",
+        "straight_span_curvature_per_mm": 0.0,
+        "whole_profile_C2": "NOT_CLAIMED; protected semantic corners remain angular"
+      },
+      "faired_inner_sampled_profile_mm": [
+        [
+          0.0,
+          6.0
+        ],
+        [
+          8.975999999999999,
+          6.0
+        ],
+        [
+          9.181373691457601,
+          6.003475354244526
+        ],
+        [
+          9.449407308942897,
+          6.023386038479236
+        ],
+        [
+          9.790838325639633,
+          6.0655721796715145
+        ],
+        [
+          10.17754670987222,
+          6.127448803589898
+        ],
+        [
+          10.56211861317317,
+          6.201452467112687
+        ],
+        [
+          10.897410058350593,
+          6.278487890536579
+        ],
+        [
+          11.156110627555611,
+          6.351374589885278
+        ],
+        [
+          11.350307150349845,
+          6.418293509218126
+        ],
+        [
+          21.816,
+          10.223999999999998
+        ],
+        [
+          22.078469580823008,
+          10.326826824085211
+        ],
+        [
+          22.40638393378883,
+          10.488368369510052
+        ],
+        [
+          22.808079483240196,
+          10.724063329124323
+        ],
+        [
+          23.24962619811556,
+          11.016081769207624
+        ],
+        [
+          23.676864508364503,
+          11.32866087442987
+        ],
+        [
+          24.03744222136309,
+          11.623440692811853
+        ],
+        [
+          24.302851438329267,
+          11.874799880685776
+        ],
+        [
+          24.49046547073825,
+          12.085191447655795
+        ],
+        [
+          38.184,
+          28.224
+        ],
+        [
+          38.518534029705556,
+          28.627047826019925
+        ],
+        [
+          38.938640060543946,
+          29.172449028936185
+        ],
+        [
+          39.455737783876444,
+          29.888409367629546
+        ],
+        [
+          40.02628513344477,
+          30.717084118394585
+        ],
+        [
+          40.58030312371549,
+          31.556899685713592
+        ],
+        [
+          41.049900688224284,
+          32.30487521303047
+        ],
+        [
+          41.39779951792043,
+          32.898944193524606
+        ],
+        [
+          41.64585889951107,
+          33.36027608088478
+        ],
+        [
+          52.18070403605735,
+          53.47225315974585
+        ],
+        [
+          52.37935718141192,
+          53.86618330114362
+        ],
+        [
+          52.61237985994346,
+          54.39516659341478
+        ],
+        [
+          52.88050114651581,
+          55.085269200965556
+        ],
+        [
+          53.160120760986224,
+          55.880514634610066
+        ],
+        [
+          53.41691532767388,
+          56.68342121637953
+        ],
+        [
+          53.619444634828405,
+          57.39553954433149
+        ],
+        [
+          53.75275789409841,
+          57.95798995735903
+        ],
+        [
+          53.832,
+          58.391999999999996
+        ],
+        [
+          56.74448018006742,
+          75.86688108040453
+        ],
+        [
+          56.782367410781575,
+          76.1247129485762
+        ],
+        [
+          56.80975523707125,
+          76.46382634430253
+        ],
+        [
+          56.820506220754666,
+          76.89866433868818
+        ],
+        [
+          56.8124588048643,
+          77.39356532918576
+        ],
+        [
+          56.78656642349125,
+          77.88785404631861
+        ],
+        [
+          56.74603661162975,
+          78.32093256040349
+        ],
+        [
+          56.695470115021465,
+          78.65737128827332
+        ],
+        [
+          56.64,
+          78.912
+        ],
+        [
+          54.0,
+          90.0
+        ]
+      ],
+      "faired_outer_sampled_profile_mm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          12.479999999999999,
+          0.0
+        ],
+        [
+          12.595186157226562,
+          0.0059820556640625
+        ],
+        [
+          12.720644531249999,
+          0.04025390625
+        ],
+        [
+          12.853244018554685,
+          0.1128680419921875
+        ],
+        [
+          12.980624999999998,
+          0.219375
+        ],
+        [
+          13.087131958007813,
+          0.3467559814453125
+        ],
+        [
+          13.15974609375,
+          0.47935546875
+        ],
+        [
+          13.194017944335936,
+          0.6048138427734375
+        ],
+        [
+          13.2,
+          0.72
+        ],
+        [
+          13.2,
+          5.28
+        ],
+        [
+          13.205621896572028,
+          5.397230483252755
+        ],
+        [
+          13.23783035636347,
+          5.53440102447308
+        ],
+        [
+          13.306072643586273,
+          5.691815888949697
+        ],
+        [
+          13.406167182277775,
+          5.8555948844646455
+        ],
+        [
+          13.525878990917583,
+          6.00563340925057
+        ],
+        [
+          13.650495117044466,
+          6.123562499947988
+        ],
+        [
+          13.768400071873245,
+          6.200708879562573
+        ],
+        [
+          13.876651264911674,
+          6.246055005422427
+        ],
+        [
+          24.816,
+          10.223999999999998
+        ],
+        [
+          25.078469580823008,
+          10.326826824085211
+        ],
+        [
+          25.40638393378883,
+          10.488368369510052
+        ],
+        [
+          25.808079483240196,
+          10.724063329124323
+        ],
+        [
+          26.24962619811556,
+          11.016081769207624
+        ],
+        [
+          26.676864508364503,
+          11.32866087442987
+        ],
+        [
+          27.03744222136309,
+          11.623440692811853
+        ],
+        [
+          27.302851438329267,
+          11.874799880685776
+        ],
+        [
+          27.49046547073825,
+          12.085191447655795
+        ],
+        [
+          41.184,
+          28.224
+        ],
+        [
+          41.518534029705556,
+          28.627047826019925
+        ],
+        [
+          41.938640060543946,
+          29.172449028936185
+        ],
+        [
+          42.455737783876444,
+          29.888409367629546
+        ],
+        [
+          43.02628513344477,
+          30.717084118394585
+        ],
+        [
+          43.58030312371549,
+          31.556899685713592
+        ],
+        [
+          44.049900688224284,
+          32.30487521303047
+        ],
+        [
+          44.39779951792043,
+          32.898944193524606
+        ],
+        [
+          44.64585889951107,
+          33.36027608088478
+        ],
+        [
+          55.18070403605735,
+          53.47225315974585
+        ],
+        [
+          55.37935718141192,
+          53.86618330114362
+        ],
+        [
+          55.61237985994346,
+          54.39516659341478
+        ],
+        [
+          55.88050114651581,
+          55.085269200965556
+        ],
+        [
+          56.160120760986224,
+          55.880514634610066
+        ],
+        [
+          56.41691532767388,
+          56.68342121637953
+        ],
+        [
+          56.619444634828405,
+          57.39553954433149
+        ],
+        [
+          56.75275789409841,
+          57.95798995735903
+        ],
+        [
+          56.832,
+          58.391999999999996
+        ],
+        [
+          60.0,
+          77.4
+        ],
+        [
+          57.0,
+          90.0
+        ]
+      ],
+      "fairing_policy": {
+        "control_fractions_on_each_trimmed_ray": [
+          0.25,
+          0.5
+        ],
+        "curve_parameter_subdivisions_per_quintic": 8,
+        "maximum_combined_adjacent_trim_fraction": 0.25,
+        "minimum_original_segment_mm": 2.0,
+        "near_reversal_rejection_degrees": 170.0,
+        "near_straight_skip_degrees": 2.0,
+        "protected_corner_policy": "preserve open-profile axis/floor endpoints and both lip endpoints; retain a unique bowl max-radius apex so declared extrema remain exact",
+        "total_curve_parameter_sample_cap_across_both_candidates": 256,
+        "trim_distance": "0.12 times the shorter adjacent segment length at each selected corner",
+        "trim_scale": 0.12
+      },
+      "family": "bowl",
+      "fracture_training_eligibility": "NOT_APPROVED_PENDING_ROOT_REVIEW_AND_FUTURE_NATIVE_VALIDATION",
+      "frame": "right-handed Z-up; profile points are (radius_mm,z_mm)",
+      "native_cad": "NOT_RUN_BY_DESIGN",
+      "original_inner_profile_mm": [
+        [
+          0.0,
+          6.0
+        ],
+        [
+          10.2,
+          6.0
+        ],
+        [
+          23.4,
+          10.799999999999999
+        ],
+        [
+          40.199999999999996,
+          30.6
+        ],
+        [
+          53.4,
+          55.8
+        ],
+        [
+          57.0,
+          77.4
+        ],
+        [
+          54.0,
+          90.0
+        ]
+      ],
+      "original_outer_profile_mm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          13.2,
+          0.0
+        ],
+        [
+          13.2,
+          6.0
+        ],
+        [
+          26.4,
+          10.799999999999999
+        ],
+        [
+          43.199999999999996,
+          30.6
+        ],
+        [
+          56.4,
+          55.8
+        ],
+        [
+          60.0,
+          77.4
+        ],
+        [
+          57.0,
+          90.0
+        ]
+      ],
+      "parameter_ranges_mm": {
+        "base_thickness_declaration_mm": {
+          "max": 15.0,
+          "min": 0.5,
+          "unit": "mm"
+        },
+        "height_mm": {
+          "max": 240.0,
+          "min": 30.0,
+          "unit": "mm"
+        },
+        "max_radius_mm": {
+          "max": 120.0,
+          "min": 12.0,
+          "unit": "mm"
+        },
+        "mouth_diameter_mm": {
+          "max": 220.0,
+          "min": 10.0,
+          "unit": "mm"
+        },
+        "wall_thickness_declaration_mm": {
+          "max": 10.0,
+          "min": 0.5,
+          "unit": "mm"
+        }
+      },
+      "parameter_sources": {
+        "base_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "height_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "max_radius_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "mouth_diameter_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "wall_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel."
+      },
+      "protected_vertices": {
+        "inner": {
+          "0": "inside axis/floor endpoint at declared base z; preserve axis and floor datum",
+          "6": "inside lip endpoint; preserve total height and clear mouth radius"
+        },
+        "outer": {
+          "0": "outside axis/bottom endpoint at z=0; preserve axis and bottom datum",
+          "6": "unique maximum-radius apex retained to preserve max_radius_mm; this corner remains sharp",
+          "7": "outer lip endpoint; preserve total height and outer lip radius"
+        }
+      },
+      "semantic_invariants": {
+        "axis_radius_mm": 0.0,
+        "catalog_parameter_targets_match": true,
+        "inner_floor_z_mm": 6.0,
+        "maximum_outer_radius_mm": 60.0,
+        "mouth_clear_inside_diameter_mm": 108.0,
+        "outer_bottom_z_mm": 0.0,
+        "realized_wall_or_global_normal_minimum": "UNKNOWN_NOT_MEASURED; outer and inner profiles are faired independently",
+        "total_height_mm": 90.0,
+        "wall_declaration_preserved_as_profile_metadata": 3.0
+      },
+      "status": "PASS_BOUNDED_MATH_DEFAULT_CASE_ONLY",
+      "step_export": "NOT_RUN_BY_DESIGN",
+      "units": "mm",
+      "unknowns": [
+        "minimum global normal wall after independent inner/outer fairing",
+        "local and global wall-thickness effects near each fairied corner",
+        "stress concentration and fracture response at retained axis/lip/bowl-apex sharp corners",
+        "self-intersection or curvature extrema between the bounded sample parameters (sample checks are not a global certificate)",
+        "real-vessel/style correspondence and manufacturing feasibility",
+        "native BRep, STEP, shell topology, mesh, material, solver, and fracture qualification"
+      ]
+    },
+    "jar": {
+      "bounded_geometry_checks": {
+        "all_control_poles_within_local_adjacent_segment_hull": true,
+        "contour_sample_vertices_outer_plus_inner": 121,
+        "curve_parameter_evaluations": 117,
+        "faired_sampled_section_signed_area_mm2": 414.91853360981855,
+        "original_section_signed_area_mm2": 414.78,
+        "sampled_section_area_change_mm2": 0.13853360981858032,
+        "shortest_original_closed_material_section_segment_mm": 3.0,
+        "simple_nonselfintersecting_checks": {
+          "closed_material_section": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          },
+          "inner_profile": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          },
+          "outer_profile": {
+            "crossing_edge_indices": [],
+            "reason": null,
+            "simple": true
+          }
+        },
+        "wall_distance_interpretation": "bounded 2D sampled contour-pair distance only; not normal thickness or a global minimum-wall proof",
+        "wall_side_sampled_pair_distance_delta_mm": -6.661338147750939e-16,
+        "wall_side_sampled_polyline_pair_distance_after_mm": 1.3906412354939424,
+        "wall_side_sampled_polyline_pair_distance_before_mm": 1.390641235493943
+      },
+      "catalog_parameters_unchanged": {
+        "base_thickness_declaration_mm": 5.5,
+        "height_mm": 120.0,
+        "max_radius_mm": 54.0,
+        "mouth_diameter_mm": 46.0,
+        "neck_height_mm": 18.0,
+        "shoulder_height_mm": 28.0,
+        "wall_thickness_declaration_mm": 3.0
+      },
+      "catalog_schema": "vesselforge.profile_catalog/0.1.0",
+      "catalog_wall_and_base_declarations": {
+        "base": "inside floor datum is base_thickness_declaration_mm above the outside floor datum; not a full-solid minimum-wall measurement",
+        "wall": "constant radial meridian offset at corresponding control heights; not a global normal minimum or measured material thickness"
+      },
+      "corner_treatment": {
+        "inner_profile": [
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              0.0,
+              5.5
+            ],
+            "profile_side": "inner",
+            "reason": "inside axis/floor endpoint at declared base z; preserve axis and floor datum",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 0
+          },
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              23.0,
+              120.0
+            ],
+            "profile_side": "inner",
+            "reason": "inside lip endpoint; preserve total height and clear mouth radius",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 7
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                8.7648,
+                5.5
+              ],
+              [
+                9.0636,
+                5.5
+              ],
+              [
+                9.3624,
+                5.5
+              ],
+              [
+                10.489516801485353,
+                5.777015734110393
+              ],
+              [
+                10.75427520222803,
+                5.91552360116559
+              ],
+              [
+                11.019033602970707,
+                6.054031468220787
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.290164823972438,
+              0.290164823972438,
+              1.1606592958897517,
+              0.2901648239724378,
+              0.29016482397243804
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.450824119862189,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              2.351526979739632e-16
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              -7.051770560428237e-15
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 8.29887118583427,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.12049831568743308,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 9.959999999999999,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              9.959999999999999,
+              5.5
+            ],
+            "outgoing_segment_length_mm": 24.377243486497814,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 17.468216171866516,
+            "signed_turn_deg": 27.61623192662174,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.1951999999999998,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 1
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                28.968000000000004,
+                15.444
+              ],
+              [
+                29.616000000000003,
+                15.783000000000001
+              ],
+              [
+                30.264000000000003,
+                16.122
+              ],
+              [
+                32.480614022996065,
+                17.936560522217363
+              ],
+              [
+                32.940921034494096,
+                18.504840783326042
+              ],
+              [
+                33.40122804599213,
+                19.073121044434725
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.7161532489511471,
+              0.716153248951146,
+              2.8646129958045874,
+              0.7161532489511455,
+              0.7161532489511477
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.5807662447557274,
+            "endpoint_cross_numerator_mm2": [
+              1.1510792319313617e-15,
+              1.635339016196835e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -2.354385940016419e-15,
+              -3.34487764185783e-15
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.3591965136302924,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.2976902351328346,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 24.377243486497814,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              31.560000000000002,
+              16.8
+            ],
+            "outgoing_segment_length_mm": 30.88549173965019,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 43.07123777123788,
+            "signed_turn_deg": 23.376295521257234,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.9252692183797375,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 2
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                49.39875108944728,
+                38.82314949314479
+              ],
+              [
+                49.79906331708546,
+                39.31736211985859
+              ],
+              [
+                50.199375544723644,
+                39.8115747465724
+              ],
+              [
+                51.0,
+                42.072
+              ],
+              [
+                51.0,
+                42.708
+              ],
+              [
+                51.0,
+                43.344
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.5995061428334074,
+              0.5995061428334074,
+              2.3980245713336252,
+              0.599506142833403,
+              0.5995061428334097
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.9975307141670147,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 4.031099711253111,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.24807126383116412,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 30.88549173965019,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              51.0,
+              40.800000000000004
+            ],
+            "outgoing_segment_length_mm": 21.199999999999996,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 36.22019835594453,
+            "signed_turn_deg": 39.00747255212103,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.5439999999999996,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 3
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                51.0,
+                60.46952995455644
+              ],
+              [
+                51.0,
+                60.852147465917334
+              ],
+              [
+                51.0,
+                61.23476497727822
+              ],
+              [
+                50.7408,
+                62.72
+              ],
+              [
+                50.611200000000004,
+                63.08
+              ],
+              [
+                50.4816,
+                63.44
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.3769207238199588,
+              0.3769207238199518,
+              1.5076828952798298,
+              0.3769207238199554,
+              0.3769207238199566
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.8846036190997588,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              2.5579538487363566e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -0.0,
+              -3.653323779374764e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 6.378151376689162,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.15678524088575183,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 21.199999999999996,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              51.0,
+              62.0
+            ],
+            "outgoing_segment_length_mm": 12.753917045362966,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 22.653476698817762,
+            "signed_turn_deg": 19.798876354524932,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.5304700454435558,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 4
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                47.1984,
+                72.56
+              ],
+              [
+                47.068799999999996,
+                72.92
+              ],
+              [
+                46.9392,
+                73.28
+              ],
+              [
+                46.185852062420906,
+                74.58429654781311
+              ],
+              [
+                45.93877809363136,
+                74.87644482171967
+              ],
+              [
+                45.69170412484181,
+                75.16859309562624
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.3765569843738717,
+              0.37655698437386814,
+              1.5062279374954737,
+              0.37655698437387125,
+              0.3765569843738748
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.8827849218693407,
+            "endpoint_cross_numerator_mm2": [
+              2.5579538487363566e-15,
+              2.0758383378915994e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -3.653323779374764e-14,
+              -2.9647562115725165e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 6.385016434754344,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.15661666813524402,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 12.753917045362966,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              46.68,
+              74.0
+            ],
+            "outgoing_segment_length_mm": 36.67072947188261,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 22.634111070204934,
+            "signed_turn_deg": 20.42280202181029,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.5304700454435558,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 5
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                24.394812722207188,
+                100.35072820009285
+              ],
+              [
+                24.04610954165539,
+                100.76304615006963
+              ],
+              [
+                23.697406361103592,
+                101.17536410004642
+              ],
+              [
+                23.0,
+                103.08
+              ],
+              [
+                23.0,
+                103.61999999999999
+              ],
+              [
+                23.0,
+                104.16
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.5070757798334753,
+              0.5070757798334887,
+              2.0283031193339225,
+              0.5070757798334733,
+              0.5070757798334866
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.5353788991673665,
+            "endpoint_cross_numerator_mm2": [
+              4.9553702375504534e-15,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -2.5175889028860273e-14,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 4.768144484319058,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.2097251883387109,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 36.67072947188261,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              23.0,
+              102.0
+            ],
+            "outgoing_segment_length_mm": 18.0,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "inner",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 30.650329668373104,
+            "signed_turn_deg": -40.22167837633522,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.16,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 6
+          }
+        ],
+        "outer_profile": [
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              0.0,
+              0.0
+            ],
+            "profile_side": "outer",
+            "reason": "outside axis/bottom endpoint at z=0; preserve axis and bottom datum",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 0
+          },
+          {
+            "curvature_status": "UNDEFINED_AT_RETAINED_SECTION_CLOSURE_JOIN",
+            "original_corner_rz_mm": [
+              26.0,
+              120.0
+            ],
+            "profile_side": "outer",
+            "reason": "outer lip endpoint; preserve total height and outer lip radius",
+            "signed_turn_deg": null,
+            "status": "PROTECTED_SHARP_CORNER",
+            "vertex_index": 8
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                12.299999999999999,
+                0.0
+              ],
+              [
+                12.464999999999998,
+                0.0
+              ],
+              [
+                12.629999999999999,
+                0.0
+              ],
+              [
+                12.959999999999999,
+                0.32999999999999996
+              ],
+              [
+                12.959999999999999,
+                0.49499999999999994
+              ],
+              [
+                12.959999999999999,
+                0.6599999999999999
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.11667261889577973,
+              0.11667261889578098,
+              0.4666904755831214,
+              0.11667261889578032,
+              0.11667261889578032
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 0.5833630944788987,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 21.683083418180008,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.04611890203593268,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 12.959999999999999,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              12.959999999999999,
+              0.0
+            ],
+            "outgoing_segment_length_mm": 5.5,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 7.379024325749307,
+            "signed_turn_deg": 90.0,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 0.6599999999999999,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 1
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                12.959999999999999,
+                4.84
+              ],
+              [
+                12.959999999999999,
+                5.005
+              ],
+              [
+                12.959999999999999,
+                5.17
+              ],
+              [
+                13.25240385624191,
+                5.652970535904333
+              ],
+              [
+                13.398605784362868,
+                5.7294558038565
+              ],
+              [
+                13.544807712483824,
+                5.805941071808667
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.14114720899137104,
+              0.14114720899137104,
+              0.564588835965483,
+              0.14114720899137181,
+              0.1411472089913709
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 0.7057360449568545,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              1.358651288401927e-16
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              -2.4196143934586613e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 17.346320141850654,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.057649114729950525,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 5.5,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              12.959999999999999,
+              5.5
+            ],
+            "outgoing_segment_length_mm": 24.377243486497814,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 8.639566582842665,
+            "signed_turn_deg": -62.38376807337826,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 0.6599999999999999,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 2
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                31.968000000000004,
+                15.444
+              ],
+              [
+                32.61600000000001,
+                15.783000000000001
+              ],
+              [
+                33.264,
+                16.122
+              ],
+              [
+                35.480614022996065,
+                17.936560522217363
+              ],
+              [
+                35.940921034494096,
+                18.504840783326042
+              ],
+              [
+                36.40122804599213,
+                19.073121044434725
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.71615324895115,
+              0.7161532489511433,
+              2.8646129958045874,
+              0.7161532489511455,
+              0.7161532489511477
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 3.5807662447557167,
+            "endpoint_cross_numerator_mm2": [
+              1.2576606422953745e-15,
+              1.635339016196835e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              2.5723846381660496e-15,
+              -3.34487764185783e-15
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 3.3591965136303155,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.29769023513283255,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 24.377243486497814,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              34.56,
+              16.8
+            ],
+            "outgoing_segment_length_mm": 30.88549173965019,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 43.071237771237925,
+            "signed_turn_deg": 23.376295521257234,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.9252692183797375,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 3
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                52.39875108944728,
+                38.82314949314479
+              ],
+              [
+                52.79906331708546,
+                39.31736211985859
+              ],
+              [
+                53.199375544723644,
+                39.8115747465724
+              ],
+              [
+                54.0,
+                42.072
+              ],
+              [
+                54.0,
+                42.708
+              ],
+              [
+                54.0,
+                43.344
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.5995061428334074,
+              0.5995061428334074,
+              2.3980245713336252,
+              0.599506142833403,
+              0.5995061428334097
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.9975307141670147,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 4.031099711253111,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.24807126383116412,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 30.88549173965019,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              54.0,
+              40.800000000000004
+            ],
+            "outgoing_segment_length_mm": 21.199999999999996,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 36.22019835594453,
+            "signed_turn_deg": 39.00747255212103,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.5439999999999996,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 4
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                54.0,
+                60.46952995455644
+              ],
+              [
+                54.0,
+                60.852147465917334
+              ],
+              [
+                54.0,
+                61.23476497727822
+              ],
+              [
+                53.7408,
+                62.72
+              ],
+              [
+                53.611200000000004,
+                63.08
+              ],
+              [
+                53.4816,
+                63.44
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.3769207238199588,
+              0.3769207238199518,
+              1.5076828952798298,
+              0.3769207238199554,
+              0.3769207238199566
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.8846036190997588,
+            "endpoint_cross_numerator_mm2": [
+              0.0,
+              2.5579538487363566e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -0.0,
+              -3.653323779374764e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 6.378151376689162,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.15678524088575183,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 21.199999999999996,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              54.0,
+              62.0
+            ],
+            "outgoing_segment_length_mm": 12.753917045362966,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 22.653476698817762,
+            "signed_turn_deg": 19.798876354524932,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.5304700454435558,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 5
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                50.1984,
+                72.56
+              ],
+              [
+                50.068799999999996,
+                72.92
+              ],
+              [
+                49.9392,
+                73.28
+              ],
+              [
+                49.185852062420906,
+                74.58429654781311
+              ],
+              [
+                48.93877809363136,
+                74.87644482171967
+              ],
+              [
+                48.69170412484181,
+                75.16859309562624
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.3765569843738717,
+              0.37655698437386814,
+              1.5062279374954737,
+              0.37655698437387125,
+              0.3765569843738748
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 1.8827849218693407,
+            "endpoint_cross_numerator_mm2": [
+              2.5579538487363566e-15,
+              2.0758383378915994e-15
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -3.653323779374764e-14,
+              -2.9647562115725165e-14
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 6.385016434754344,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.15661666813524402,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 12.753917045362966,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              49.68,
+              74.0
+            ],
+            "outgoing_segment_length_mm": 36.67072947188261,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 22.634111070204934,
+            "signed_turn_deg": 20.42280202181029,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 1.5304700454435558,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 6
+          },
+          {
+            "all_controls_on_trimmed_adjacent_segments": true,
+            "control_points_rz_mm": [
+              [
+                27.394812722207188,
+                100.35072820009285
+              ],
+              [
+                27.04610954165539,
+                100.76304615006963
+              ],
+              [
+                26.697406361103592,
+                101.17536410004642
+              ],
+              [
+                26.0,
+                103.08
+              ],
+              [
+                26.0,
+                103.61999999999999
+              ],
+              [
+                26.0,
+                104.16
+              ]
+            ],
+            "control_polygon_tangent_bisector_projections_mm": [
+              0.5070757798334753,
+              0.5070757798334887,
+              2.0283031193339225,
+              0.5070757798334733,
+              0.5070757798334866
+            ],
+            "curve_within_adjacent_local_convex_hull_by_bezier_hull_property": true,
+            "derivative_speed_lower_bound_mm_per_unit_parameter": 2.5353788991673665,
+            "endpoint_cross_numerator_mm2": [
+              4.9553702375504534e-15,
+              0.0
+            ],
+            "endpoint_signed_curvature_per_mm": [
+              -2.5175889028860273e-14,
+              0.0
+            ],
+            "first_endpoint_tangent_matches_incoming_line": true,
+            "geometric_C2_join_by_tangent_and_zero_curvature": true,
+            "global_curvature_upper_bound_per_mm": 4.768144484319058,
+            "global_minimum_curvature_radius_lower_bound_mm": 0.2097251883387109,
+            "global_regular_for_all_parameters_by_positive_derivative_projection": true,
+            "incoming_segment_length_mm": 36.67072947188261,
+            "last_endpoint_tangent_matches_outgoing_line": true,
+            "original_corner_rz_mm": [
+              26.0,
+              102.0
+            ],
+            "outgoing_segment_length_mm": 18.0,
+            "parametric_C2_in_shared_span_parameters": "NOT_CLAIMED; neighboring line and Bezier parameter speeds are not matched",
+            "profile_side": "outer",
+            "second_derivative_norm_upper_bound_mm_per_unit_parameter2": 30.650329668373104,
+            "signed_turn_deg": -40.22167837633522,
+            "status": "QUINTIC_FAIRING",
+            "trim_distance_mm_each_side": 2.16,
+            "trim_scale_of_shorter_adjacent_segment": 0.12,
+            "vertex_index": 7
+          }
+        ],
+        "quintic_controls_define_endpoint_tangent_and_zero_curvature": true,
+        "retained_sharp_corner_count": 4
+      },
+      "curvature_checks": {
+        "all_endpoint_curvatures_zero_within_tolerance_per_mm": true,
+        "all_quintics_analytically_regular_for_all_parameters": true,
+        "all_quintics_have_finite_control_polygon_curvature_upper_bounds": true,
+        "all_sampled_bezier_parameters_regular": true,
+        "endpoint_curvature_tolerance_per_mm": 1e-08,
+        "geometric_C2_scope": "each fairied join has matching tangent and zero geometric curvature; regular-curve arc-length reparameterization gives C2 at those joins",
+        "largest_quintic_curvature_upper_bound_per_mm": 21.683083418180008,
+        "maximum_sampled_curvature_per_mm": 2.093319538365627,
+        "minimum_sampled_curvature_radius_mm": 0.47771015445676135,
+        "per_corner_global_curvature_upper_bounds_per_mm": [
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 21.683083418180008,
+            "vertex_index": 1
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 17.346320141850654,
+            "vertex_index": 2
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 3.3591965136303155,
+            "vertex_index": 3
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 4.031099711253111,
+            "vertex_index": 4
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 6.378151376689162,
+            "vertex_index": 5
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 6.385016434754344,
+            "vertex_index": 6
+          },
+          {
+            "profile_side": "outer",
+            "upper_bound_per_mm": 4.768144484319058,
+            "vertex_index": 7
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 8.29887118583427,
+            "vertex_index": 1
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 3.3591965136302924,
+            "vertex_index": 2
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 4.031099711253111,
+            "vertex_index": 3
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 6.378151376689162,
+            "vertex_index": 4
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 6.385016434754344,
+            "vertex_index": 5
+          },
+          {
+            "profile_side": "inner",
+            "upper_bound_per_mm": 4.768144484319058,
+            "vertex_index": 6
+          }
+        ],
+        "regularity_and_curvature_sampled_at_each_quintic_parameter_grid": [
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 2.093319538365627,
+            "minimum_sampled_curvature_radius_mm": 0.47771015445676135,
+            "minimum_sampled_speed_mm_per_unit_parameter": 0.8249999999999957,
+            "profile_vertex_index": 1,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              -2.4196143934586613e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 1.547030807507212,
+            "minimum_sampled_curvature_radius_mm": 0.6463995384884009,
+            "minimum_sampled_speed_mm_per_unit_parameter": 0.8249999999999982,
+            "profile_vertex_index": 2,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              2.5723846381660496e-15,
+              -3.34487764185783e-15
+            ],
+            "maximum_sampled_curvature_per_mm": 0.1333435282576964,
+            "minimum_sampled_curvature_radius_mm": 7.499426579349429,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.6565865229746763,
+            "profile_vertex_index": 3,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.2550567227231539,
+            "minimum_sampled_curvature_radius_mm": 3.9206964996779545,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.180000000000003,
+            "profile_vertex_index": 4,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -0.0,
+              -3.653323779374764e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.21593165399427464,
+            "minimum_sampled_curvature_radius_mm": 4.631094985390677,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.913087556804448,
+            "profile_vertex_index": 5,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -3.653323779374764e-14,
+              -2.9647562115725165e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.22272551761642304,
+            "minimum_sampled_curvature_radius_mm": 4.489831298639952,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.913087556804448,
+            "profile_vertex_index": 6,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -2.5175889028860273e-14,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.3096224692969422,
+            "minimum_sampled_curvature_radius_mm": 3.2297397610409018,
+            "minimum_sampled_speed_mm_per_unit_parameter": 2.6999999999999793,
+            "profile_vertex_index": 7,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              -7.051770560428237e-15
+            ],
+            "maximum_sampled_curvature_per_mm": 0.3853519719515849,
+            "minimum_sampled_curvature_radius_mm": 2.5950301874298924,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.4939999999999998,
+            "profile_vertex_index": 1,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -2.354385940016419e-15,
+              -3.34487764185783e-15
+            ],
+            "maximum_sampled_curvature_per_mm": 0.13334352825769627,
+            "minimum_sampled_curvature_radius_mm": 7.499426579349436,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.6565865229746715,
+            "profile_vertex_index": 2,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              0.0,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.2550567227231539,
+            "minimum_sampled_curvature_radius_mm": 3.9206964996779545,
+            "minimum_sampled_speed_mm_per_unit_parameter": 3.180000000000003,
+            "profile_vertex_index": 3,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -0.0,
+              -3.653323779374764e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.21593165399427464,
+            "minimum_sampled_curvature_radius_mm": 4.631094985390677,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.913087556804448,
+            "profile_vertex_index": 4,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -3.653323779374764e-14,
+              -2.9647562115725165e-14
+            ],
+            "maximum_sampled_curvature_per_mm": 0.22272551761642304,
+            "minimum_sampled_curvature_radius_mm": 4.489831298639952,
+            "minimum_sampled_speed_mm_per_unit_parameter": 1.913087556804448,
+            "profile_vertex_index": 5,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          },
+          {
+            "endpoint_curvature_per_mm": [
+              -2.5175889028860273e-14,
+              0.0
+            ],
+            "maximum_sampled_curvature_per_mm": 0.3096224692969422,
+            "minimum_sampled_curvature_radius_mm": 3.2297397610409018,
+            "minimum_sampled_speed_mm_per_unit_parameter": 2.6999999999999793,
+            "profile_vertex_index": 6,
+            "regular_at_all_sampled_parameters": true,
+            "sample_count_including_endpoints": 9
+          }
+        ],
+        "remaining_straight_spans_regular_with_exact_zero_curvature": true,
+        "shared_parameter_C2": "NOT_CLAIMED; parameter speed is not matched between independent line and Bezier spans",
+        "straight_span_curvature_per_mm": 0.0,
+        "whole_profile_C2": "NOT_CLAIMED; protected semantic corners remain angular"
+      },
+      "faired_inner_sampled_profile_mm": [
+        [
+          0.0,
+          5.5
+        ],
+        [
+          8.7648,
+          5.5
+        ],
+        [
+          8.96480790705593,
+          5.504603120947971
+        ],
+        [
+          9.223478587666087,
+          5.53097490386293
+        ],
+        [
+          9.55040041687194,
+          5.586850620861301
+        ],
+        [
+          9.918511800905137,
+          5.668806462973521
+        ],
+        [
+          10.28267548971196,
+          5.766824618770119
+        ],
+        [
+          10.598252889477811,
+          5.8688583529878136
+        ],
+        [
+          10.839678375151701,
+          5.965397085155589
+        ],
+        [
+          11.019033602970707,
+          6.054031468220787
+        ],
+        [
+          28.968000000000004,
+          15.444
+        ],
+        [
+          29.39796784471196,
+          15.67981995252525
+        ],
+        [
+          29.93726006409478,
+          16.024299980267468
+        ],
+        [
+          30.600311528480535,
+          16.503280014801028
+        ],
+        [
+          31.331249170263227,
+          17.079435318226206
+        ],
+        [
+          32.04042065737345,
+          17.68217951911882
+        ],
+        [
+          32.64092306675306,
+          18.237567648479857
+        ],
+        [
+          33.085131557829826,
+          18.69819917568509
+        ],
+        [
+          33.40122804599213,
+          19.073121044434725
+        ],
+        [
+          49.39875108944728,
+          38.82314949314479
+        ],
+        [
+          49.65492012940532,
+          39.16054416384675
+        ],
+        [
+          49.93393413596746,
+          39.62609977241354
+        ],
+        [
+          50.22882967011535,
+          40.246738279379
+        ],
+        [
+          50.51211947256597,
+          40.972803361192554
+        ],
+        [
+          50.74898634822749,
+          41.71531107052343
+        ],
+        [
+          50.91047705065513,
+          42.38320049656498
+        ],
+        [
+          50.986696166507016,
+          42.92058442533901
+        ],
+        [
+          51.0,
+          43.344
+        ],
+        [
+          51.0,
+          60.46952995455644
+        ],
+        [
+          50.99569291992188,
+          60.72633984822485
+        ],
+        [
+          50.971017187499996,
+          61.06156449855357
+        ],
+        [
+          50.91873500976562,
+          61.488653246928216
+        ],
+        [
+          50.84205,
+          61.972434908028916
+        ],
+        [
+          50.750335693359375,
+          62.453593688783805
+        ],
+        [
+          50.654864062499996,
+          62.873145107322614
+        ],
+        [
+          50.56453403320313,
+          63.19691191193018
+        ],
+        [
+          50.4816,
+          63.44
+        ],
+        [
+          47.1984,
+          72.56
+        ],
+        [
+          47.10725479882776,
+          72.80008146576796
+        ],
+        [
+          46.96988209096406,
+          73.10662300266074
+        ],
+        [
+          46.774737889504436,
+          73.48967805737178
+        ],
+        [
+          46.53682860053774,
+          73.91730570882362
+        ],
+        [
+          46.28529623169433,
+          74.33706481293797
+        ],
+        [
+          46.051003600694244,
+          74.69750814740544
+        ],
+        [
+          45.8541195438954,
+          74.9696765564555
+        ],
+        [
+          45.69170412484181,
+          75.16859309562624
+        ],
+        [
+          24.394812722207188,
+          100.35072820009285
+        ],
+        [
+          24.171669503426955,
+          100.63252614604816
+        ],
+        [
+          23.928626536489013,
+          101.02272358438799
+        ],
+        [
+          23.671749520029667,
+          101.54430570702254
+        ],
+        [
+          23.4249820012975,
+          102.15561249846577
+        ],
+        [
+          23.21865247347405,
+          102.78172616826865
+        ],
+        [
+          23.077981472994495,
+          103.34585858345247
+        ],
+        [
+          23.011588676868314,
+          103.80073870094222
+        ],
+        [
+          23.0,
+          104.16
+        ],
+        [
+          23.0,
+          120.0
+        ]
+      ],
+      "faired_outer_sampled_profile_mm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          12.299999999999999,
+          0.0
+        ],
+        [
+          12.405587310791015,
+          0.005483551025390624
+        ],
+        [
+          12.520590820312497,
+          0.03689941406249999
+        ],
+        [
+          12.642140350341798,
+          0.10346237182617186
+        ],
+        [
+          12.758906249999999,
+          0.20109375
+        ],
+        [
+          12.856537628173827,
+          0.31785964965820307
+        ],
+        [
+          12.923100585937497,
+          0.43940917968749993
+        ],
+        [
+          12.954516448974609,
+          0.5544126892089843
+        ],
+        [
+          12.959999999999999,
+          0.6599999999999999
+        ],
+        [
+          12.959999999999999,
+          4.84
+        ],
+        [
+          12.964858822623404,
+          4.9481291948486295
+        ],
+        [
+          12.992695548378611,
+          5.07769543589946
+        ],
+        [
+          13.051675140902748,
+          5.23010003053629
+        ],
+        [
+          13.138183599897413,
+          5.392122670316703
+        ],
+        [
+          13.241646628193216,
+          5.543880540145279
+        ],
+        [
+          13.349348298814302,
+          5.666787427446835
+        ],
+        [
+          13.451249722042895,
+          5.751512831339642
+        ],
+        [
+          13.544807712483824,
+          5.805941071808667
+        ],
+        [
+          31.968000000000004,
+          15.444
+        ],
+        [
+          32.39796784471196,
+          15.67981995252525
+        ],
+        [
+          32.93726006409478,
+          16.024299980267468
+        ],
+        [
+          33.60031152848054,
+          16.503280014801028
+        ],
+        [
+          34.331249170263234,
+          17.079435318226206
+        ],
+        [
+          35.04042065737345,
+          17.68217951911882
+        ],
+        [
+          35.64092306675306,
+          18.237567648479857
+        ],
+        [
+          36.085131557829826,
+          18.69819917568509
+        ],
+        [
+          36.40122804599213,
+          19.073121044434725
+        ],
+        [
+          52.39875108944728,
+          38.82314949314479
+        ],
+        [
+          52.65492012940532,
+          39.16054416384675
+        ],
+        [
+          52.93393413596746,
+          39.62609977241354
+        ],
+        [
+          53.22882967011535,
+          40.246738279379
+        ],
+        [
+          53.51211947256597,
+          40.972803361192554
+        ],
+        [
+          53.74898634822749,
+          41.71531107052343
+        ],
+        [
+          53.91047705065513,
+          42.38320049656498
+        ],
+        [
+          53.986696166507016,
+          42.92058442533901
+        ],
+        [
+          54.0,
+          43.344
+        ],
+        [
+          54.0,
+          60.46952995455644
+        ],
+        [
+          53.99569291992188,
+          60.72633984822485
+        ],
+        [
+          53.971017187499996,
+          61.06156449855357
+        ],
+        [
+          53.91873500976562,
+          61.488653246928216
+        ],
+        [
+          53.84205,
+          61.972434908028916
+        ],
+        [
+          53.750335693359375,
+          62.453593688783805
+        ],
+        [
+          53.654864062499996,
+          62.873145107322614
+        ],
+        [
+          53.56453403320313,
+          63.19691191193018
+        ],
+        [
+          53.4816,
+          63.44
+        ],
+        [
+          50.1984,
+          72.56
+        ],
+        [
+          50.10725479882776,
+          72.80008146576796
+        ],
+        [
+          49.96988209096406,
+          73.10662300266074
+        ],
+        [
+          49.774737889504436,
+          73.48967805737178
+        ],
+        [
+          49.53682860053774,
+          73.91730570882362
+        ],
+        [
+          49.28529623169433,
+          74.33706481293797
+        ],
+        [
+          49.051003600694244,
+          74.69750814740544
+        ],
+        [
+          48.8541195438954,
+          74.9696765564555
+        ],
+        [
+          48.69170412484181,
+          75.16859309562624
+        ],
+        [
+          27.394812722207188,
+          100.35072820009285
+        ],
+        [
+          27.171669503426955,
+          100.63252614604816
+        ],
+        [
+          26.928626536489013,
+          101.02272358438799
+        ],
+        [
+          26.671749520029667,
+          101.54430570702254
+        ],
+        [
+          26.4249820012975,
+          102.15561249846577
+        ],
+        [
+          26.21865247347405,
+          102.78172616826865
+        ],
+        [
+          26.077981472994495,
+          103.34585858345247
+        ],
+        [
+          26.011588676868314,
+          103.80073870094222
+        ],
+        [
+          26.0,
+          104.16
+        ],
+        [
+          26.0,
+          120.0
+        ]
+      ],
+      "fairing_policy": {
+        "control_fractions_on_each_trimmed_ray": [
+          0.25,
+          0.5
+        ],
+        "curve_parameter_subdivisions_per_quintic": 8,
+        "maximum_combined_adjacent_trim_fraction": 0.25,
+        "minimum_original_segment_mm": 2.0,
+        "near_reversal_rejection_degrees": 170.0,
+        "near_straight_skip_degrees": 2.0,
+        "protected_corner_policy": "preserve open-profile axis/floor endpoints and both lip endpoints; retain a unique bowl max-radius apex so declared extrema remain exact",
+        "total_curve_parameter_sample_cap_across_both_candidates": 256,
+        "trim_distance": "0.12 times the shorter adjacent segment length at each selected corner",
+        "trim_scale": 0.12
+      },
+      "family": "jar",
+      "fracture_training_eligibility": "NOT_APPROVED_PENDING_ROOT_REVIEW_AND_FUTURE_NATIVE_VALIDATION",
+      "frame": "right-handed Z-up; profile points are (radius_mm,z_mm)",
+      "native_cad": "NOT_RUN_BY_DESIGN",
+      "original_inner_profile_mm": [
+        [
+          0.0,
+          5.5
+        ],
+        [
+          9.959999999999999,
+          5.5
+        ],
+        [
+          31.560000000000002,
+          16.8
+        ],
+        [
+          51.0,
+          40.800000000000004
+        ],
+        [
+          51.0,
+          62.0
+        ],
+        [
+          46.68,
+          74.0
+        ],
+        [
+          23.0,
+          102.0
+        ],
+        [
+          23.0,
+          120.0
+        ]
+      ],
+      "original_outer_profile_mm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          12.959999999999999,
+          0.0
+        ],
+        [
+          12.959999999999999,
+          5.5
+        ],
+        [
+          34.56,
+          16.8
+        ],
+        [
+          54.0,
+          40.800000000000004
+        ],
+        [
+          54.0,
+          62.0
+        ],
+        [
+          49.68,
+          74.0
+        ],
+        [
+          26.0,
+          102.0
+        ],
+        [
+          26.0,
+          120.0
+        ]
+      ],
+      "parameter_ranges_mm": {
+        "base_thickness_declaration_mm": {
+          "max": 15.0,
+          "min": 0.5,
+          "unit": "mm"
+        },
+        "height_mm": {
+          "max": 240.0,
+          "min": 30.0,
+          "unit": "mm"
+        },
+        "max_radius_mm": {
+          "max": 120.0,
+          "min": 12.0,
+          "unit": "mm"
+        },
+        "mouth_diameter_mm": {
+          "max": 220.0,
+          "min": 10.0,
+          "unit": "mm"
+        },
+        "neck_height_mm": {
+          "max": 60.0,
+          "min": 4.0,
+          "unit": "mm"
+        },
+        "shoulder_height_mm": {
+          "max": 90.0,
+          "min": 6.0,
+          "unit": "mm"
+        },
+        "wall_thickness_declaration_mm": {
+          "max": 10.0,
+          "min": 0.5,
+          "unit": "mm"
+        }
+      },
+      "parameter_sources": {
+        "base_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "height_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "max_radius_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "mouth_diameter_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "neck_height_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "shoulder_height_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+        "wall_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel."
+      },
+      "protected_vertices": {
+        "inner": {
+          "0": "inside axis/floor endpoint at declared base z; preserve axis and floor datum",
+          "7": "inside lip endpoint; preserve total height and clear mouth radius"
+        },
+        "outer": {
+          "0": "outside axis/bottom endpoint at z=0; preserve axis and bottom datum",
+          "8": "outer lip endpoint; preserve total height and outer lip radius"
+        }
+      },
+      "semantic_invariants": {
+        "axis_radius_mm": 0.0,
+        "catalog_parameter_targets_match": true,
+        "inner_floor_z_mm": 5.5,
+        "maximum_outer_radius_mm": 54.0,
+        "mouth_clear_inside_diameter_mm": 46.0,
+        "outer_bottom_z_mm": 0.0,
+        "realized_wall_or_global_normal_minimum": "UNKNOWN_NOT_MEASURED; outer and inner profiles are faired independently",
+        "total_height_mm": 120.0,
+        "wall_declaration_preserved_as_profile_metadata": 3.0
+      },
+      "status": "PASS_BOUNDED_MATH_DEFAULT_CASE_ONLY",
+      "step_export": "NOT_RUN_BY_DESIGN",
+      "units": "mm",
+      "unknowns": [
+        "minimum global normal wall after independent inner/outer fairing",
+        "local and global wall-thickness effects near each fairied corner",
+        "stress concentration and fracture response at retained axis/lip/bowl-apex sharp corners",
+        "self-intersection or curvature extrema between the bounded sample parameters (sample checks are not a global certificate)",
+        "real-vessel/style correspondence and manufacturing feasibility",
+        "native BRep, STEP, shell topology, mesh, material, solver, and fracture qualification"
+      ]
+    }
+  },
+  "families": [
+    "bowl",
+    "jar"
+  ],
+  "fracture_training_eligibility": "NOT_APPROVED_PENDING_ROOT_REVIEW_AND_FUTURE_NATIVE_VALIDATION",
+  "native_cad_or_step_started": false,
+  "profile_plot": {
+    "bytes": 164328,
+    "native_CAD_used": false,
+    "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\catalog_corner_fairing_20261006\\catalog_corner_fairing_profile_plot.png",
+    "source": "catalog profiles plus sampled pure-Python quintic fairing"
+  },
+  "sample_cap": {
+    "all_families_combined": true,
+    "contour_sample_vertices_used": 216,
+    "curve_parameter_evaluations_used": 207,
+    "limit": 256
+  },
+  "schema": "vesselforge.catalog_corner_fairing.source_only_design/1",
+  "source_pins_after": {
+    "corner_fairing_source": {
+      "path": "vesselforge\\experiments\\catalog_corner_fairing_20261006\\catalog_corner_fairing.py",
+      "sha256": "6c1e94150d769158c757469141aab23796b005421d3878b150271d375086d534"
+    },
+    "profile_catalog": {
+      "path": "vesselforge\\src\\vesselforge\\profile_catalog.py",
+      "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f"
+    },
+    "python_runtime": {
+      "path": "third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+    }
+  },
+  "source_pins_before": {
+    "corner_fairing_source": {
+      "path": "vesselforge\\experiments\\catalog_corner_fairing_20261006\\catalog_corner_fairing.py",
+      "sha256": "6c1e94150d769158c757469141aab23796b005421d3878b150271d375086d534"
+    },
+    "profile_catalog": {
+      "path": "vesselforge\\src\\vesselforge\\profile_catalog.py",
+      "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f"
+    },
+    "python_runtime": {
+      "path": "third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+    }
+  },
+  "status": "PASS_BOUNDED_MATH_DESIGN_ONLY",
+  "step_exported": false,
+  "wall_seconds": 0.953
+}

@@ -1,0 +1,340 @@
+{
+  "independent_recheck": {
+    "cases": [
+      {
+        "all_sampled_curvatures_below_control_bound": true,
+        "corners": [
+          {
+            "bound_to_sampled_ratio": 10.358229128797541,
+            "endpoint_cross_max_mm2": 0.0,
+            "minimum_control_projection_mm": 0.12727922061357835,
+            "sampled_max_per_mm": 1.9188762435018285,
+            "sampled_min_radius_mm": 0.5211383503164659,
+            "side": "outer",
+            "turn_deg": 90.0,
+            "upper_bound_per_mm": 19.876159799998245,
+            "vertex_index": 1
+          },
+          {
+            "bound_to_sampled_ratio": 10.618645149594478,
+            "endpoint_cross_max_mm2": 0.0,
+            "minimum_control_projection_mm": 0.14743214582310243,
+            "sampled_max_per_mm": 1.5742564798194192,
+            "sampled_min_radius_mm": 0.635220507470745,
+            "side": "outer",
+            "turn_deg": -70.01689347810003,
+            "upper_bound_per_mm": 16.716470933652154,
+            "vertex_index": 2
+          },
+          {
+            "bound_to_sampled_ratio": 20.13399157914265,
+            "endpoint_cross_max_mm2": 5.115907697472726e-16,
+            "minimum_control_projection_mm": 0.40729287602331815,
+            "sampled_max_per_mm": 0.2938085939152322,
+            "sampled_min_radius_mm": 3.4035764123649623,
+            "side": "outer",
+            "turn_deg": 29.70279331760274,
+            "upper_bound_per_mm": 5.915539755769027,
+            "vertex_index": 3
+          },
+          {
+            "bound_to_sampled_ratio": 45.69250472759991,
+            "endpoint_cross_max_mm2": 6.011191544530448e-15,
+            "minimum_control_projection_mm": 0.7742516449287609,
+            "sampled_max_per_mm": 0.06788615726643006,
+            "sampled_min_radius_mm": 14.73054360810762,
+            "side": "outer",
+            "turn_deg": 12.668124796758597,
+            "upper_bound_per_mm": 3.1018885618349468,
+            "vertex_index": 4
+          },
+          {
+            "bound_to_sampled_ratio": 32.073621778659565,
+            "endpoint_cross_max_mm2": 5.371703082346359e-15,
+            "minimum_control_projection_mm": 0.6486848152791991,
+            "sampled_max_per_mm": 0.11551716083068743,
+            "sampled_min_radius_mm": 8.656722454126898,
+            "side": "outer",
+            "turn_deg": 18.183653155713067,
+            "upper_bound_per_mm": 3.7050537254280558,
+            "vertex_index": 5
+          },
+          {
+            "bound_to_sampled_ratio": 29.275112148522492,
+            "endpoint_cross_max_mm2": 2.5541949674187017e-16,
+            "minimum_control_projection_mm": 0.30135900268762694,
+            "sampled_max_per_mm": 0.2725060040067246,
+            "sampled_min_radius_mm": 3.669643917186218,
+            "side": "inner",
+            "turn_deg": 19.983106521899977,
+            "upper_bound_per_mm": 7.977643828442582,
+            "vertex_index": 1
+          },
+          {
+            "bound_to_sampled_ratio": 20.13399157914265,
+            "endpoint_cross_max_mm2": 5.115907697472726e-16,
+            "minimum_control_projection_mm": 0.40729287602331815,
+            "sampled_max_per_mm": 0.2938085939152322,
+            "sampled_min_radius_mm": 3.4035764123649623,
+            "side": "inner",
+            "turn_deg": 29.70279331760274,
+            "upper_bound_per_mm": 5.915539755769027,
+            "vertex_index": 2
+          },
+          {
+            "bound_to_sampled_ratio": 45.69250472759991,
+            "endpoint_cross_max_mm2": 6.011191544530448e-15,
+            "minimum_control_projection_mm": 0.7742516449287609,
+            "sampled_max_per_mm": 0.06788615726643006,
+            "sampled_min_radius_mm": 14.73054360810762,
+            "side": "inner",
+            "turn_deg": 12.668124796758597,
+            "upper_bound_per_mm": 3.1018885618349468,
+            "vertex_index": 3
+          },
+          {
+            "bound_to_sampled_ratio": 32.073621778659565,
+            "endpoint_cross_max_mm2": 5.371703082346359e-15,
+            "minimum_control_projection_mm": 0.6486848152791991,
+            "sampled_max_per_mm": 0.11551716083068743,
+            "sampled_min_radius_mm": 8.656722454126898,
+            "side": "inner",
+            "turn_deg": 18.183653155713067,
+            "upper_bound_per_mm": 3.7050537254280558,
+            "vertex_index": 4
+          },
+          {
+            "bound_to_sampled_ratio": 25.738761659509397,
+            "endpoint_cross_max_mm2": 2.72336627843738e-15,
+            "minimum_control_projection_mm": 0.38086384834563264,
+            "sampled_max_per_mm": 0.24537900884559843,
+            "sampled_min_radius_mm": 4.07532822267302,
+            "side": "inner",
+            "turn_deg": 22.85481996177672,
+            "upper_bound_per_mm": 6.315751824923506,
+            "vertex_index": 5
+          }
+        ],
+        "family": "bowl",
+        "largest_bound_corner": {
+          "bound_to_sampled_ratio": 10.358229128797541,
+          "endpoint_cross_max_mm2": 0.0,
+          "minimum_control_projection_mm": 0.12727922061357835,
+          "sampled_max_per_mm": 1.9188762435018285,
+          "sampled_min_radius_mm": 0.5211383503164659,
+          "side": "outer",
+          "turn_deg": 90.0,
+          "upper_bound_per_mm": 19.876159799998245,
+          "vertex_index": 1
+        },
+        "max_sampled_curvature_per_mm": 1.9188762435018285,
+        "quintic_count": 10,
+        "recomputed_curve_parameter_samples": 90,
+        "semantic_targets": {
+          "clear_inside_mouth_diameter_mm": 108.0,
+          "inner_endpoints_unchanged": true,
+          "inner_floor_z_mm": 6.0,
+          "maximum_outer_radius_mm": 60.0,
+          "outer_bottom_z_mm": 0.0,
+          "outer_endpoints_unchanged": true,
+          "targets_expected": {
+            "base": 6.0,
+            "height": 90.0,
+            "mouth": 108.0,
+            "radius": 60.0
+          },
+          "total_height_mm": 90.0
+        }
+      },
+      {
+        "all_sampled_curvatures_below_control_bound": true,
+        "corners": [
+          {
+            "bound_to_sampled_ratio": 10.358229128797612,
+            "endpoint_cross_max_mm2": 0.0,
+            "minimum_control_projection_mm": 0.11667261889577973,
+            "sampled_max_per_mm": 2.093319538365627,
+            "sampled_min_radius_mm": 0.47771015445676135,
+            "side": "outer",
+            "turn_deg": 90.0,
+            "upper_bound_per_mm": 21.683083418180008,
+            "vertex_index": 1
+          },
+          {
+            "bound_to_sampled_ratio": 11.212653334164317,
+            "endpoint_cross_max_mm2": 1.358651288401927e-16,
+            "minimum_control_projection_mm": 0.1411472089913709,
+            "sampled_max_per_mm": 1.547030807507212,
+            "sampled_min_radius_mm": 0.6463995384884009,
+            "side": "outer",
+            "turn_deg": -62.38376807337826,
+            "upper_bound_per_mm": 17.346320141850654,
+            "vertex_index": 2
+          },
+          {
+            "bound_to_sampled_ratio": 25.19204761957712,
+            "endpoint_cross_max_mm2": 1.635339016196835e-15,
+            "minimum_control_projection_mm": 0.7161532489511433,
+            "sampled_max_per_mm": 0.1333435282576964,
+            "sampled_min_radius_mm": 7.499426579349429,
+            "side": "outer",
+            "turn_deg": 23.376295521257234,
+            "upper_bound_per_mm": 3.3591965136303155,
+            "vertex_index": 3
+          },
+          {
+            "bound_to_sampled_ratio": 15.804718527762883,
+            "endpoint_cross_max_mm2": 0.0,
+            "minimum_control_projection_mm": 0.599506142833403,
+            "sampled_max_per_mm": 0.2550567227231539,
+            "sampled_min_radius_mm": 3.9206964996779545,
+            "side": "outer",
+            "turn_deg": 39.00747255212103,
+            "upper_bound_per_mm": 4.031099711253111,
+            "vertex_index": 4
+          },
+          {
+            "bound_to_sampled_ratio": 29.537824856647823,
+            "endpoint_cross_max_mm2": 2.5579538487363566e-15,
+            "minimum_control_projection_mm": 0.3769207238199518,
+            "sampled_max_per_mm": 0.21593165399427464,
+            "sampled_min_radius_mm": 4.631094985390677,
+            "side": "outer",
+            "turn_deg": 19.798876354524932,
+            "upper_bound_per_mm": 6.378151376689162,
+            "vertex_index": 5
+          },
+          {
+            "bound_to_sampled_ratio": 28.667646631090527,
+            "endpoint_cross_max_mm2": 2.5579538487363566e-15,
+            "minimum_control_projection_mm": 0.37655698437386814,
+            "sampled_max_per_mm": 0.22272551761642304,
+            "sampled_min_radius_mm": 4.489831298639952,
+            "side": "outer",
+            "turn_deg": 20.42280202181029,
+            "upper_bound_per_mm": 6.385016434754344,
+            "vertex_index": 6
+          },
+          {
+            "bound_to_sampled_ratio": 15.399865827393128,
+            "endpoint_cross_max_mm2": 4.9553702375504534e-15,
+            "minimum_control_projection_mm": 0.5070757798334733,
+            "sampled_max_per_mm": 0.3096224692969422,
+            "sampled_min_radius_mm": 3.2297397610409018,
+            "side": "outer",
+            "turn_deg": -40.22167837633522,
+            "upper_bound_per_mm": 4.768144484319058,
+            "vertex_index": 7
+          },
+          {
+            "bound_to_sampled_ratio": 21.535821248832043,
+            "endpoint_cross_max_mm2": 2.351526979739632e-16,
+            "minimum_control_projection_mm": 0.2901648239724378,
+            "sampled_max_per_mm": 0.3853519719515849,
+            "sampled_min_radius_mm": 2.5950301874298924,
+            "side": "inner",
+            "turn_deg": 27.61623192662174,
+            "upper_bound_per_mm": 8.29887118583427,
+            "vertex_index": 1
+          },
+          {
+            "bound_to_sampled_ratio": 25.192047619576975,
+            "endpoint_cross_max_mm2": 1.635339016196835e-15,
+            "minimum_control_projection_mm": 0.7161532489511455,
+            "sampled_max_per_mm": 0.13334352825769627,
+            "sampled_min_radius_mm": 7.499426579349436,
+            "side": "inner",
+            "turn_deg": 23.376295521257234,
+            "upper_bound_per_mm": 3.3591965136302924,
+            "vertex_index": 2
+          },
+          {
+            "bound_to_sampled_ratio": 15.804718527762883,
+            "endpoint_cross_max_mm2": 0.0,
+            "minimum_control_projection_mm": 0.599506142833403,
+            "sampled_max_per_mm": 0.2550567227231539,
+            "sampled_min_radius_mm": 3.9206964996779545,
+            "side": "inner",
+            "turn_deg": 39.00747255212103,
+            "upper_bound_per_mm": 4.031099711253111,
+            "vertex_index": 3
+          },
+          {
+            "bound_to_sampled_ratio": 29.537824856647823,
+            "endpoint_cross_max_mm2": 2.5579538487363566e-15,
+            "minimum_control_projection_mm": 0.3769207238199518,
+            "sampled_max_per_mm": 0.21593165399427464,
+            "sampled_min_radius_mm": 4.631094985390677,
+            "side": "inner",
+            "turn_deg": 19.798876354524932,
+            "upper_bound_per_mm": 6.378151376689162,
+            "vertex_index": 4
+          },
+          {
+            "bound_to_sampled_ratio": 28.667646631090527,
+            "endpoint_cross_max_mm2": 2.5579538487363566e-15,
+            "minimum_control_projection_mm": 0.37655698437386814,
+            "sampled_max_per_mm": 0.22272551761642304,
+            "sampled_min_radius_mm": 4.489831298639952,
+            "side": "inner",
+            "turn_deg": 20.42280202181029,
+            "upper_bound_per_mm": 6.385016434754344,
+            "vertex_index": 5
+          },
+          {
+            "bound_to_sampled_ratio": 15.399865827393128,
+            "endpoint_cross_max_mm2": 4.9553702375504534e-15,
+            "minimum_control_projection_mm": 0.5070757798334733,
+            "sampled_max_per_mm": 0.3096224692969422,
+            "sampled_min_radius_mm": 3.2297397610409018,
+            "side": "inner",
+            "turn_deg": -40.22167837633522,
+            "upper_bound_per_mm": 4.768144484319058,
+            "vertex_index": 6
+          }
+        ],
+        "family": "jar",
+        "largest_bound_corner": {
+          "bound_to_sampled_ratio": 10.358229128797612,
+          "endpoint_cross_max_mm2": 0.0,
+          "minimum_control_projection_mm": 0.11667261889577973,
+          "sampled_max_per_mm": 2.093319538365627,
+          "sampled_min_radius_mm": 0.47771015445676135,
+          "side": "outer",
+          "turn_deg": 90.0,
+          "upper_bound_per_mm": 21.683083418180008,
+          "vertex_index": 1
+        },
+        "max_sampled_curvature_per_mm": 2.093319538365627,
+        "quintic_count": 13,
+        "recomputed_curve_parameter_samples": 117,
+        "semantic_targets": {
+          "clear_inside_mouth_diameter_mm": 46.0,
+          "inner_endpoints_unchanged": true,
+          "inner_floor_z_mm": 5.5,
+          "maximum_outer_radius_mm": 54.0,
+          "outer_bottom_z_mm": 0.0,
+          "outer_endpoints_unchanged": true,
+          "targets_expected": {
+            "base": 5.5,
+            "height": 120.0,
+            "mouth": 46.0,
+            "radius": 54.0
+          },
+          "total_height_mm": 120.0
+        }
+      }
+    ],
+    "curve_parameter_samples": 207,
+    "method": "pure Python direct evaluation of saved control points plus control-polygon algebra; no candidate module imported; no geometry rebuilt",
+    "noncad_samples_cap": 256,
+    "quintics": 23
+  },
+  "input_audit_status": "PASS_BOUNDED_MATH_DESIGN_ONLY",
+  "no_physical_stress_or_global_normal_wall_claim": true,
+  "saved_audit_cap": 256,
+  "saved_audit_contour_vertices": 216,
+  "saved_audit_curve_parameter_evaluations": 207,
+  "single_saved_audit_count_interpretation": "one source execution combined across bowl and jar; not per-case and not multiplied across separate reviews"
+}
+

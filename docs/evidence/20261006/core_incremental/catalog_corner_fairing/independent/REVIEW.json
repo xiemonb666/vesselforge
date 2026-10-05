@@ -1,0 +1,87 @@
+{
+  "review_id": "catalog_corner_fairing_independent_review_20261006",
+  "decision": "NARROW_STATIC_AND_CONTROL_POINT_RECHECK_PASS_PHYSICAL_QUALIFICATION_UNKNOWN",
+  "source_hashes_sha256": {
+    "candidate": "6c1e94150d769158c757469141aab23796b005421d3878b150271d375086d534",
+    "profile_catalog": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+    "design_note": "5f7b95e1cfe7e79c6006fa0e682c5b75df6d4cf1caf8791dfa0c1832534b32b5",
+    "design_audit": "e36bb07ea07469671babda8e35c11fcf5a4a15b1d624ed2a16eaf44a3f57cf7e",
+    "profile_plot": "6427145d9e63a94c986170783f17d91a4b126224ec93b148c6545fcc7e864c0f",
+    "python_runtime": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+  },
+  "existing_saved_audit": {
+    "path": "vesselforge/tmp/review_20261006/catalog_corner_fairing_20261006/DESIGN_AUDIT.json",
+    "status": "PASS_BOUNDED_MATH_DESIGN_ONLY",
+    "wall_seconds": 0.953,
+    "pre_post_pins_match": true,
+    "actual_source_catalog_runtime_hashes_match_pins": true,
+    "curve_parameter_evaluations": 207,
+    "contour_vertices": 216,
+    "cap": 256,
+    "count_scope": "one persisted audit: bowl 90 plus jar 117"
+  },
+  "independent_saved_control_recheck": {
+    "method": "pure Python algebra on saved control points; no candidate import, geometry build, CAD, or solver",
+    "quintics": 23,
+    "curve_parameter_samples": 207,
+    "values_per_curve": 9,
+    "all_endpoint_tangents_match": true,
+    "all_endpoint_curvatures_zero": true,
+    "all_controls_on_adjacent_trimmed_segments": true,
+    "all_control_bisector_projections_positive": true,
+    "recomputed_global_curvature_bounds_match_saved_report": true,
+    "sampled_curvatures_below_bounds": true,
+    "separate_record_from_saved_audit": true,
+    "evaluations_across_both_records": 414
+  },
+  "curvature_findings": {
+    "bowl": {
+      "side": "outer",
+      "vertex_index": 1,
+      "turn_deg": 90.0,
+      "upper_bound_per_mm": 19.876159799998245,
+      "sampled_max_per_mm": 1.9188762435018285,
+      "bound_to_sample_ratio": 10.358229128797541,
+      "radius_lower_bound_mm": 0.050311044326
+    },
+    "jar": {
+      "side": "outer",
+      "vertex_index": 1,
+      "turn_deg": 90.0,
+      "upper_bound_per_mm": 21.683083418180008,
+      "sampled_max_per_mm": 2.093319538365627,
+      "bound_to_sample_ratio": 10.358229128797612,
+      "radius_lower_bound_mm": 0.046119488
+    }
+  },
+  "semantics": {
+    "bowl": "base 6 mm; clear mouth 108 mm; height 90 mm; max radius 60 mm",
+    "jar": "base 5.5 mm; clear mouth 46 mm; height 120 mm; max radius 54 mm",
+    "axis_and_profile_endpoints_preserved": true,
+    "wall_declaration_is_metadata": true,
+    "global_normal_minimum_wall": "UNKNOWN",
+    "stress_and_fracture": "UNKNOWN",
+    "protected_sharp_corners": "axis/floor closure, both lips, bowl max-radius apex"
+  },
+  "limitations": {
+    "self_intersection_check": "sampled polyline only",
+    "wall_distance": "finite 2D sampled polyline pair distance; not normal thickness",
+    "geometry_samples": "between-sample self-intersection and curvature extrema remain unknown",
+    "cad_step_solver": "not run by this review",
+    "source_budget": "30 s elapsed check is post hoc, not a hard watchdog",
+    "historical_invocations": "persisted single audit is evidenced; unrecorded earlier invocations unknown"
+  },
+  "reviewer_actions": {
+    "saved_png_viewed": true,
+    "candidate_or_author_runner_run": false,
+    "cad_or_solver_run": false,
+    "production_modified": false,
+    "author_files_modified": false
+  },
+  "owned_files": [
+    "REVIEW.md",
+    "REVIEW.json",
+    "INDEPENDENT_ALGEBRA_CHECK.json",
+    "independent_control_check.py"
+  ]
+}
