@@ -1,0 +1,71 @@
+{
+  "state": "executed_once_success_no_retry",
+  "source_script": "vesselforge/tmp/review_20261005/native_cad_visual_20261005/native_cad_visual.py",
+  "source_script_sha256": "424cf8d9f3a99fcbe6f26c964ad5e19e5ce208f4699770d0c7c4e41d26695a4e",
+  "source_step": "vesselforge/experiments/smooth_surface_native_adapter_20261005/tmp/runs/single_inner_native_01/candidate.step",
+  "source_step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+  "run_receipt": "vesselforge/experiments/smooth_surface_native_adapter_20261005/tmp/runs/single_inner_native_01/run_receipt.json",
+  "run_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8",
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\native_cad_visual_20261005\\native_cad_visual.py"
+  ],
+  "actual_rc": 0,
+  "elapsed_seconds": 4.436,
+  "preflight": {
+    "stdlib_ast_parse": "PASS",
+    "step_import_call_sites": 1,
+    "tessellation_call_sites": 1
+  },
+  "execution": {
+    "step_import_completed": true,
+    "solver_runs": 0,
+    "normal_rays": 0,
+    "brep_counts": {
+      "solids": 1,
+      "shells": 1,
+      "faces": 19,
+      "edges": 37
+    },
+    "tessellation": {
+      "deflection_mm": 0.25,
+      "angle_rad": 0.25,
+      "vertices": 3070,
+      "triangles": 4064,
+      "visualization_only": true
+    },
+    "section_plane": "y=0",
+    "section_normal": [
+      0,
+      1,
+      0
+    ],
+    "section_edge_count": 38,
+    "section_sample_count": 3838,
+    "hashes_unchanged": true
+  },
+  "outputs": {
+    "png": "vesselforge/tmp/review_20261005/native_cad_visual_20261005/native_cad_visual_2panel.png",
+    "png_sha256": "fb26da06b83b3b56d40f36eaae4c4406693d4faa3b4c513c8b1d5f8935dd9478",
+    "data": "vesselforge/tmp/review_20261005/native_cad_visual_20261005/native_cad_visual_data.json",
+    "data_sha256": "85a62cca8dc369a5415e74e44e6190e57b5cbc3f74512ea44fcd72a26bedbb63",
+    "run_manifest": "vesselforge/tmp/review_20261005/native_cad_visual_20261005/native_cad_visual_run_manifest.json",
+    "run_manifest_sha256": "83ddc568ab87902ed66f28db2cc6b0e3b8242be6e3f16176b5ae15ab7e347dfa",
+    "parent_execution_receipt": "vesselforge/tmp/review_20261005/native_cad_visual_20261005/parent_execution_receipt.json"
+  },
+  "limits": {
+    "max_vertices": 100000,
+    "max_faces": 200000,
+    "worker_wall_seconds": 60,
+    "deflection_mm": 0.25,
+    "angle_rad": 0.25
+  },
+  "scope": {
+    "only_write_directory": "vesselforge/tmp/review_20261005/native_cad_visual_20261005",
+    "fracture_mesh": false,
+    "solver_runs": 0,
+    "normal_rays": 0,
+    "quality_promotion": false
+  }
+}

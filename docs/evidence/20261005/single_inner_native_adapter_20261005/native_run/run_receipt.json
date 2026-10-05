@@ -1,0 +1,753 @@
+{
+  "adapter_sha256_after": "7d745f48111d24b38a288714b580c0eefe55415b2998351bf6144fa1cf4dab76",
+  "adapter_sha256_before": "7d745f48111d24b38a288714b580c0eefe55415b2998351bf6144fa1cf4dab76",
+  "budget": {
+    "mesh_generations": 0,
+    "native_body_builds": 1,
+    "normal_rays": 0,
+    "retries": 0,
+    "solver_runs": 0,
+    "step_exports": 1,
+    "step_imports": 1
+  },
+  "curve_construction": "exact degree-5 Bezier control poles passed directly to CadQuery Edge.makeBezier; no fitting/interpolation",
+  "exact_meridian_orientation_area_twice": "3673109/5250",
+  "exact_non_axis_c2_rows": [
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_underside -> outer_base_fairing:0",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_base_fairing:0 -> outer_base_fairing:1",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_base_fairing:1 -> outer_base_fairing:2",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_base_fairing:2 -> outer_side:0",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:0 -> outer_side:1",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:1 -> outer_side:2",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:2 -> outer_side:3",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:3 -> outer_side:4",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:4 -> outer_side:5",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "outer_side:5 -> rounded_lip_bridge",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "rounded_lip_bridge -> inner_side:5:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:5:reversed -> inner_side:4:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:4:reversed -> inner_side:3:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:3:reversed -> inner_side:2:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:2:reversed -> inner_side:1:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:1:reversed -> inner_side:0:reversed",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_side:0:reversed -> inner_base_fairing:0",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    },
+    {
+      "d1_error_exact_mm_per_parameter": "0",
+      "d2_error_exact_mm_per_parameter2": "0",
+      "join": "inner_base_fairing:0 -> inner_floor",
+      "pass_exact_rational": true,
+      "position_error_exact_mm": "0"
+    }
+  ],
+  "freeze_manifest_sha256": "35fe13502da52b67ae3d7a15ce1b7566f050ab339f04cd9708c7ee56b7ed82f4",
+  "frozen_file_sha256_after": {
+    "candidate_case": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0",
+    "design_note": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225",
+    "freeze_manifest": "35fe13502da52b67ae3d7a15ce1b7566f050ab339f04cd9708c7ee56b7ed82f4",
+    "math_diagnostics_report": "88b09514619fa62e1df1afb4954d4be14275b3907fad76ba13749c066933b550",
+    "parent_case": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391",
+    "parent_math_source": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b",
+    "plot_source": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84",
+    "review_budget": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191",
+    "wrapper_source": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8"
+  },
+  "frozen_file_sha256_before": {
+    "candidate_case": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0",
+    "design_note": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225",
+    "freeze_manifest": "35fe13502da52b67ae3d7a15ce1b7566f050ab339f04cd9708c7ee56b7ed82f4",
+    "math_diagnostics_report": "88b09514619fa62e1df1afb4954d4be14275b3907fad76ba13749c066933b550",
+    "parent_case": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391",
+    "parent_math_source": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b",
+    "plot_source": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84",
+    "review_budget": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191",
+    "wrapper_source": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8"
+  },
+  "full_section_simple_nonselfintersection_proved": false,
+  "global_minimum_normal_wall_status": "UNKNOWN",
+  "identity_tolerance_mm": 1e-07,
+  "inner_base_sampled_curvature_minimum_mm": 3.3776689379016305,
+  "inner_base_sampled_curvature_target_mm": 1.25,
+  "math_diagnostics_report_sha256": "88b09514619fa62e1df1afb4954d4be14275b3907fad76ba13749c066933b550",
+  "math_review_status": "PURE_MATH_TARGETS_MET_FINITE_ONLY_WITH_EXACT_INNER_BASE_CERTIFICATE",
+  "native_step": {
+    "all_shells_closed": true,
+    "cadquery_version": "2.8.0",
+    "face_inventory_checker": "vesselforge.wall_mesh_binding._check_face_inventory",
+    "face_inventory_status": "PASS_AT_1E-7_MM",
+    "geometry_only_bounds_policy": {
+      "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+      "bounds_order": [
+        "xmin",
+        "xmax",
+        "ymin",
+        "ymax",
+        "zmin",
+        "zmax"
+      ],
+      "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+      "units": "mm",
+      "use_shape_tolerance": false,
+      "use_triangulation": false
+    },
+    "global_self_intersection_status": "UNKNOWN_NOT_ESTABLISHED_BY_TOPOLOGY_OR_STEP_ROUNDTRIP",
+    "identity_tolerance_mm": 1e-07,
+    "max_step_bbox_delta_mm": 0.0,
+    "native_bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+      -42.0000001,
+      42.0000001,
+      -42.0000001,
+      42.0000001,
+      -1e-07,
+      112.1875001
+    ],
+    "native_face_count": 19,
+    "nominal_rim_z_is_bbox_max": false,
+    "normal_wall_status": "UNKNOWN_NOT_RUN_NO_APPROVED_PRODUCTION_BREP_RAY_CHECKER",
+    "ocp_module_version": "7.9.3.1",
+    "physics_status": "NOT_ASSESSED",
+    "radial_control_gap_is_normal_wall_thickness": false,
+    "shell_count": 1,
+    "solid_count": 1,
+    "step_bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+      -42.0000001,
+      42.0000001,
+      -42.0000001,
+      42.0000001,
+      -1e-07,
+      112.1875001
+    ],
+    "step_bytes": 57660,
+    "step_face_count": 19,
+    "step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "wall_mesh_binding_status": "NOT_RUN_NO_FORGE_ASSET_OR_PARENT_MESH_PACKAGE"
+  },
+  "normal_wall_status": "UNKNOWN_NOT_RUN_NO_APPROVED_PRODUCTION_BREP_RAY_CHECKER",
+  "regular_c2_scope": "frozen math source exact non-axis joins only; revolution-axis singular joins are excluded from regular-C2 claims",
+  "required_exact_monotonicity_report": {
+    "all_adjoining_section_positions_exact": true,
+    "all_outer_side_base_monotone_exact": true,
+    "control_polygon_derivative_sign_scope": "exact rational Bezier derivative control signs; nonnegative Bernstein basis on [0,1] implies the stated per-coordinate monotonicity for each whole span",
+    "inner_base_fairing": {
+      "monotone_exact": true,
+      "span_checks": [
+        {
+          "control_poles_mm": [
+            [
+              17.5,
+              10.0
+            ],
+            [
+              16.22,
+              7.76
+            ],
+            [
+              14.94,
+              5.52
+            ],
+            [
+              11.28,
+              4.5
+            ],
+            [
+              10.64,
+              4.5
+            ],
+            [
+              10.0,
+              4.5
+            ]
+          ],
+          "radius_nonincreasing_exact": true,
+          "span": "inner_base_fairing:0",
+          "z_nondecreasing_in_traversal_exact": true
+        }
+      ]
+    },
+    "inner_side_control_gap_at_each_pole_exact_mm": [
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "5/2",
+      "7/2",
+      "7/2",
+      "7/2"
+    ],
+    "inner_side_control_radii_positive_exact": true,
+    "lip": {
+      "convex_no_inflection_proved_by_exact_same_sign_bernstein_coefficients": true,
+      "curvature_numerator_bernstein_coefficients_exact": [
+        "0",
+        "210",
+        "210",
+        "84",
+        "84",
+        "210",
+        "210",
+        "0"
+      ],
+      "curvature_numerator_bernstein_signs_exact": [
+        "0",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "0"
+      ],
+      "endpoint_radial_gap_exact_mm": "7/2",
+      "endpoint_radial_gap_matches_declared_exact": true,
+      "endpoint_speeds_nonzero_exact": true,
+      "exact_symmetric_z_crest_is_unique_max": true,
+      "exact_symmetric_z_crest_mm": "1795/16",
+      "nonzero_z_derivative_sign_variations_exact": 1,
+      "radius_controls_mm": [
+        37.5,
+        37.5,
+        37.5,
+        34.0,
+        34.0,
+        34.0
+      ],
+      "radius_derivative_control_signs_exact": [
+        "0",
+        "0",
+        "-",
+        "0",
+        "0"
+      ],
+      "radius_derivative_strictly_negative_on_open_interval_by_bernstein_basis": true,
+      "radius_nonincreasing_exact": true,
+      "regular_convex_one_turn_proved_exact": true,
+      "span": "rounded_lip_bridge",
+      "symmetric_control_net_has_z_crest_at_t_0_5": true,
+      "z_controls_above_rim_exact": true,
+      "z_controls_mm": [
+        110.0,
+        111.4,
+        112.8,
+        112.8,
+        111.4,
+        110.0
+      ],
+      "z_derivative_signs_exact": [
+        "+",
+        "+",
+        "0",
+        "-",
+        "-"
+      ]
+    },
+    "paired_control_gap_is_normal_thickness": false,
+    "paired_side_control_gap_exact_mm_before_rim_transition": "5/2",
+    "paired_z_controls_identical_exact": true,
+    "rim_gap_transition_matches_declared_exact": true,
+    "section_closed_endpoint_exact": true,
+    "signed_section_area_exact_mm2": "3673109/10500",
+    "signed_section_area_positive_exact": true,
+    "simple_nonselfintersecting_section_proved": false,
+    "span_checks": [
+      {
+        "radius_controls_mm": [
+          0.0,
+          2.4,
+          4.8,
+          7.2,
+          9.6,
+          12.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_underside",
+        "z_controls_mm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          12.0,
+          12.4,
+          12.8,
+          14.2,
+          14.6,
+          15.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_base_fairing:0",
+        "z_controls_mm": [
+          0.0,
+          0.0,
+          0.0,
+          0.9,
+          1.2,
+          1.5
+        ],
+        "z_derivative_pole_signs_exact": [
+          "0",
+          "0",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          15.0,
+          15.32,
+          15.64,
+          16.72,
+          17.36,
+          18.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_base_fairing:1",
+        "z_controls_mm": [
+          1.5,
+          1.74,
+          1.98,
+          4.26,
+          5.38,
+          6.5
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          18.0,
+          18.48,
+          18.96,
+          19.04,
+          19.52,
+          20.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_base_fairing:2",
+        "z_controls_mm": [
+          6.5,
+          7.34,
+          8.18,
+          8.32,
+          9.16,
+          10.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          20.0,
+          20.8,
+          21.6,
+          23.0,
+          23.5,
+          24.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_side:0",
+        "z_controls_mm": [
+          10.0,
+          11.4,
+          12.8,
+          15.25,
+          16.125,
+          17.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          24.0,
+          24.75,
+          25.5,
+          27.0,
+          28.5,
+          30.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_side:1",
+        "z_controls_mm": [
+          17.0,
+          18.3125,
+          19.625,
+          24.9,
+          27.45,
+          30.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          30.0,
+          31.5,
+          33.0,
+          35.6,
+          36.8,
+          38.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_side:2",
+        "z_controls_mm": [
+          30.0,
+          32.55,
+          35.1,
+          44.0,
+          47.0,
+          50.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          38.0,
+          39.6,
+          41.2,
+          42.0,
+          42.0,
+          42.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "0",
+          "0"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nondecreasing",
+        "span": "outer_side:3",
+        "z_controls_mm": [
+          50.0,
+          54.0,
+          58.0,
+          65.2,
+          67.6,
+          70.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          42.0,
+          42.0,
+          42.0,
+          40.4,
+          39.7,
+          39.0
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "0",
+          "0",
+          "-",
+          "-",
+          "-"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nonincreasing",
+        "span": "outer_side:4",
+        "z_controls_mm": [
+          70.0,
+          72.4,
+          74.8,
+          91.2,
+          93.6,
+          96.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      },
+      {
+        "radius_controls_mm": [
+          39.0,
+          38.3,
+          37.6,
+          37.5,
+          37.5,
+          37.5
+        ],
+        "radius_derivative_pole_signs_exact": [
+          "-",
+          "-",
+          "-",
+          "0",
+          "0"
+        ],
+        "radius_monotone_exact": true,
+        "radius_pole_direction": "nonincreasing",
+        "span": "outer_side:5",
+        "z_controls_mm": [
+          96.0,
+          98.4,
+          100.8,
+          107.2,
+          108.6,
+          110.0
+        ],
+        "z_derivative_pole_signs_exact": [
+          "+",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "z_nondecreasing_exact": true
+      }
+    ],
+    "upper_shoulder_to_rim_endpoint_gaps_exact_mm": [
+      "5/2",
+      "7/2"
+    ]
+  },
+  "revolve_axis": "global Z, via Workplane XZ local Y axis",
+  "root_review_record_path": "vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\tmp\\ROOT_NATIVE_CAD_REVIEW_20261005.json",
+  "root_review_record_sha256": "4be5467f4ba6cad657e4de2eda20d772a9d69fab809aa22d4d294f5a5bd76b4b",
+  "run_id": "single_inner_native_01",
+  "schema": "vesselforge.native_adapter.run_receipt/1",
+  "status": "PASS_NATIVE_TOPOLOGY_STEP_AND_FACE_IDENTITY_ONLY",
+  "units": "mm"
+}

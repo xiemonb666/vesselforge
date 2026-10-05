@@ -1,0 +1,77 @@
+{
+  "schema": "vesselforge.native_adapter.frozen_inputs/1",
+  "status": "FROZEN_INPUTS_MATH_ACCEPTED_WAITING_FOR_ROOT_REVIEW",
+  "freeze_manifest_path": "tmp/review_20261005/smooth_single_inner_fairing/FROZEN_SHA256.txt",
+  "freeze_manifest_sha256": "35fe13502da52b67ae3d7a15ce1b7566f050ab339f04cd9708c7ee56b7ed82f4",
+  "frozen_files": [
+    {
+      "role": "candidate_case",
+      "path": "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/fixed_case_beaker_single_inner_fairing_v1.json",
+      "sha256": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0"
+    },
+    {
+      "role": "wrapper_source",
+      "path": "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/single_inner_fairing_math.py",
+      "sha256": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8"
+    },
+    {
+      "role": "plot_source",
+      "path": "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/plot_single_inner_fairing_section.py",
+      "sha256": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84"
+    },
+    {
+      "role": "design_note",
+      "path": "vesselforge/experiments/smooth_surface_single_inner_fairing_20261005/DESIGN_NOTE.md",
+      "sha256": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225"
+    },
+    {
+      "role": "review_budget",
+      "path": "tmp/review_20261005/smooth_single_inner_fairing/REVIEW_AND_EXECUTION_BUDGET.md",
+      "sha256": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191"
+    },
+    {
+      "role": "parent_math_source",
+      "path": "vesselforge/experiments/smooth_surface_coupled_design_20261005/coupled_profile_math.py",
+      "sha256": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b"
+    },
+    {
+      "role": "parent_case",
+      "path": "vesselforge/experiments/smooth_surface_coupled_design_20261005/fixed_case_beaker_coupled_v2.json",
+      "sha256": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391"
+    }
+  ],
+  "math_diagnostics_report_path": "tmp/review_20261005/smooth_single_inner_fairing/frozen_run/math_diagnostics.json",
+  "math_diagnostics_report_sha256": "88b09514619fa62e1df1afb4954d4be14275b3907fad76ba13749c066933b550",
+  "api": {
+    "case_loader": "load_case",
+    "builder": "profile.build_model",
+    "ordered_section_key": "ordered_section",
+    "controls_attribute": "controls",
+    "exact_c2_report": "profile._exact_c2_report",
+    "monotonicity_report": "profile._monotonicity_report",
+    "signed_area_twice": "profile._exact_section_signed_area_twice"
+  },
+  "required_true_report_paths": [
+    "all_outer_side_base_monotone_exact",
+    "lip.regular_convex_one_turn_proved_exact",
+    "inner_side_control_radii_positive_exact",
+    "paired_z_controls_identical_exact",
+    "rim_gap_transition_matches_declared_exact",
+    "inner_base_fairing.monotone_exact"
+  ],
+  "expected_sampled_curvature_target_mm": 1.25,
+  "accepted_math_scope": {
+    "math_diagnostics_status": "PURE_MATH_TARGETS_MET_FINITE_ONLY_WITH_EXACT_INNER_BASE_CERTIFICATE",
+    "inner_base_minimum_sampled_curvature_radius_mm": 3.3776689379016305,
+    "inner_base_exact_regular_convex_arc": true,
+    "full_section_simple_nonselfintersection_proved": false,
+    "normal_wall_status": "UNKNOWN",
+    "style_material_physics_status": "NOT_VALIDATED",
+    "cad_step_status": "NOT_RUN"
+  },
+  "native_cad_status": "NOT_AUTHORIZED_PENDING_ROOT_ADAPTER_REVIEW",
+  "native_normal_rays": 0,
+  "mesh_generations": 0,
+  "solver_runs": 0,
+  "retries": 0
+}

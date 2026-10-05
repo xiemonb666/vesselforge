@@ -1,0 +1,54 @@
+{
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\native_cad_visual_20261005\\native_cad_visual.py"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_utc": "2026-10-05T10:05:38.6228725Z",
+  "finished_utc": "2026-10-05T10:05:43.0633475Z",
+  "elapsed_seconds": 4.436,
+  "actual_rc": 0,
+  "hashes_before": {
+    "script_sha256": "424cf8d9f3a99fcbe6f26c964ad5e19e5ce208f4699770d0c7c4e41d26695a4e",
+    "step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "run_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8"
+  },
+  "hashes_after": {
+    "script_sha256": "424cf8d9f3a99fcbe6f26c964ad5e19e5ce208f4699770d0c7c4e41d26695a4e",
+    "step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "run_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8"
+  },
+  "source_hashes_unchanged": true,
+  "worker_status": "success",
+  "worker_actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\native_cad_visual_20261005\\native_cad_visual.py"
+  ],
+  "worker_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\native_cad_visual_20261005\\native_cad_visual.py",
+    "--worker"
+  ],
+  "step_import_started": true,
+  "step_import_completed": true,
+  "brep_counts": {
+    "solids": 1,
+    "shells": 1,
+    "faces": 19,
+    "edges": 37
+  },
+  "tessellation": {
+    "deflection_mm": 0.25,
+    "angle_rad": 0.25,
+    "vertices": 3070,
+    "triangles": 4064,
+    "visualization_only": true
+  },
+  "section_counts": {
+    "edges": 38,
+    "samples": 3838
+  },
+  "png_sha256": "fb26da06b83b3b56d40f36eaae4c4406693d4faa3b4c513c8b1d5f8935dd9478",
+  "captured_process_output": "{\"worker_status\": \"success\", \"failure\": null, \"brep_counts\": {\"solids\": 1, \"shells\": 1, \"faces\": 19, \"edges\": 37}, \"tessellation\": {\"deflection_mm\": 0.25, \"angle_rad\": 0.25, \"vertices\": 3070, \"triangles\": 4064, \"visualization_only\": true}}\r\n"
+}
