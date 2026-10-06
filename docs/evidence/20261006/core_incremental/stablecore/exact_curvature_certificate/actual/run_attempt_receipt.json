@@ -1,0 +1,27 @@
+{
+  "source_sha256": "bf6838f11ac4cb9422236242431ebcf0c4237c37a9329937da9322615092d97d",
+  "case_sha256": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+  "prior_profile_sha256": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951",
+  "prior_diagnostic_sha256": "eb60138fc559d5a06ab2b4febf82fdc6654e6bbeab84f05f847c65934ffbbd4f",
+  "pre_run_pins": {
+    "source": "bf6838f11ac4cb9422236242431ebcf0c4237c37a9329937da9322615092d97d",
+    "case": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "priorProfile": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951",
+    "priorDiagnostic": "eb60138fc559d5a06ab2b4febf82fdc6654e6bbeab84f05f847c65934ffbbd4f"
+  },
+  "post_run_pins": {
+    "source": "bf6838f11ac4cb9422236242431ebcf0c4237c37a9329937da9322615092d97d",
+    "case": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "priorProfile": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951",
+    "priorDiagnostic": "eb60138fc559d5a06ab2b4febf82fdc6654e6bbeab84f05f847c65934ffbbd4f"
+  },
+  "actual_return_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.235,
+  "stdout_file": "run_stdout.txt",
+  "stderr_file": "run_stderr.txt",
+  "certificate_file": "exact_curvature_certificate.json",
+  "certificate_bytes": 191724,
+  "certificate_sha256": "b08a550d14e59ed9945408bafc42a921692f1ef7f9c4540dc77f8a364ede8bde",
+  "output_within_8_mib": true
+}
