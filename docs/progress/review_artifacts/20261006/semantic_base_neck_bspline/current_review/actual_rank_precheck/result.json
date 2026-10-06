@@ -1,0 +1,370 @@
+{
+  "all_four_current_systems_consistent_full_row_rank": true,
+  "archived_10_12_case_sha256": "77ea80492af5092cf41f60cb7d10c5458c95197d74efc68def349f9824629824",
+  "cad_or_render": "NOT_RUN",
+  "call_allowlist": [
+    "basis_row",
+    "_rank"
+  ],
+  "current_case_sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+  "current_cases": {
+    "bowl": {
+      "r": {
+        "consistent_full_row_rank": true,
+        "coordinate": "r",
+        "free_control_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "inconsistent": false,
+        "rank_A": 3,
+        "rank_augmented": 3,
+        "reduced_matrix_exact": [
+          [
+            "1/16",
+            "175/432",
+            "355/864",
+            "163/1440",
+            "1/120",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/120",
+            "13/60",
+            "11/20"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/2",
+            "-5",
+            "0"
+          ]
+        ],
+        "reduced_rhs_exact": [
+          "24",
+          "1887/40",
+          "-627/2"
+        ],
+        "row_count": 3,
+        "row_names": [
+          "foot_radius",
+          "apex_radius",
+          "apex_vertical_tangent"
+        ]
+      },
+      "z": {
+        "consistent_full_row_rank": true,
+        "coordinate": "z",
+        "free_control_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "inconsistent": false,
+        "rank_A": 3,
+        "rank_augmented": 3,
+        "reduced_matrix_exact": [
+          [
+            "0",
+            "0",
+            "1/120",
+            "13/60",
+            "11/20",
+            "13/60",
+            "1/120",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/120",
+            "163/1440",
+            "355/864",
+            "175/432",
+            "1/16",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "reduced_rhs_exact": [
+          "387/5",
+          "86",
+          "90"
+        ],
+        "row_count": 3,
+        "row_names": [
+          "apex_height",
+          "neck_start_height",
+          "mouth_datum_height"
+        ]
+      }
+    },
+    "jar": {
+      "r": {
+        "consistent_full_row_rank": true,
+        "coordinate": "r",
+        "free_control_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "inconsistent": false,
+        "rank_A": 3,
+        "rank_augmented": 3,
+        "reduced_matrix_exact": [
+          [
+            "1/16",
+            "175/432",
+            "355/864",
+            "163/1440",
+            "1/120",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/120",
+            "13/60",
+            "11/20",
+            "13/60",
+            "1/120"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/2",
+            "-5",
+            "0",
+            "5",
+            "1/2"
+          ]
+        ],
+        "reduced_rhs_exact": [
+          "18",
+          "54",
+          "0"
+        ],
+        "row_count": 3,
+        "row_names": [
+          "foot_radius",
+          "apex_radius",
+          "apex_vertical_tangent"
+        ]
+      },
+      "z": {
+        "consistent_full_row_rank": true,
+        "coordinate": "z",
+        "free_control_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "inconsistent": false,
+        "rank_A": 3,
+        "rank_augmented": 3,
+        "reduced_matrix_exact": [
+          [
+            "1/120",
+            "13/60",
+            "11/20",
+            "13/60",
+            "1/120",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/120",
+            "163/1440",
+            "355/864",
+            "175/432",
+            "1/16",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "reduced_rhs_exact": [
+          "62",
+          "102",
+          "120"
+        ],
+        "row_count": 3,
+        "row_names": [
+          "apex_height",
+          "neck_start_height",
+          "mouth_datum_height"
+        ]
+      }
+    }
+  },
+  "curve_extraction_or_evaluation": "NOT_RUN",
+  "hessian": "NOT_COMPUTED",
+  "historical_bowl_10_12_infeasible_witness": true,
+  "historical_bowl_10_12_radial_system": {
+    "consistent_full_row_rank": false,
+    "coordinate": "r",
+    "free_control_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "inconsistent": true,
+    "rank_A": 2,
+    "rank_augmented": 3,
+    "reduced_matrix_exact": [
+      [
+        "1/16",
+        "175/432",
+        "355/864",
+        "163/1440",
+        "1/120",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/120"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2"
+      ]
+    ],
+    "reduced_rhs_exact": [
+      "24",
+      "139/40",
+      "-57/2"
+    ],
+    "row_count": 3,
+    "row_names": [
+      "foot_radius",
+      "apex_radius",
+      "apex_vertical_tangent"
+    ]
+  },
+  "kkt": "NOT_FORMED_OR_SOLVED",
+  "scope": "exact Fraction rank of fixed-pole-reduced equalities only",
+  "source_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+}

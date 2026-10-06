@@ -1,0 +1,104 @@
+{
+  "schema": "vesselforge.semantic_base_neck_bspline.fixed_cases.v1",
+  "phase": "source_only_exact_affine_minimum_jerk_not_run",
+  "units": "mm",
+  "curve": {
+    "degree": 5,
+    "control_count": 17,
+    "weights": "all exact 1",
+    "parameter_domain": ["0", "1"],
+    "internal_knots": ["1/12", "2/12", "3/12", "4/12", "5/12", "6/12", "7/12", "8/12", "9/12", "10/12", "11/12"],
+    "endpoint_multiplicity": 6,
+    "internal_multiplicity": 1,
+    "knot_vector_length": 23,
+    "bezier_spans": 12,
+    "internal_continuity": "C4"
+  },
+  "pole_rules": {
+    "axis": "Q0.r = 0",
+    "flat_exterior_base": "Q0.z through Q5.z = 0; span 0 is exactly z=0",
+    "cylindrical_neck": "Q11.r through Q16.r equal the mouth radius; span 11 is exactly cylindrical",
+    "free_poles_are_selected_only_by_exact_minimum_jerk": true
+  },
+  "curvature_screen": {
+    "minimum_radius_mm": "9",
+    "scope": "all non-flat body and shoulder spans, no relaxation",
+    "eligible_span_indices_zero_based": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "excluded_span_indices_zero_based": [0, 11],
+    "exclusion_condition": "span 0 and 11 must first be exactly proved flat-base and cylindrical-neck, and still pass exact regularity checks",
+    "wall_semantics": "R>=9 mm is an engineering meridian-curvature screen; catalog radial 3 mm is not normal wall thickness",
+    "exclusion_semantics": "flat-base and constant-radius-neck exclusions concern meridian curvature only; they do not imply zero circumferential surface curvature"
+  },
+  "cases": {
+    "bowl": {
+      "family": "bowl",
+      "max_outer_radius_mm": "60",
+      "mouth_r_mm": "57",
+      "mouth_z_mm": "90",
+      "accepted_candidate_total_crest_target_mm": "92",
+      "total_height_status": "UNBUILT_LIP_TARGET_NOT_VERIFIED",
+      "foot": {"u": "1/12", "rz_mm": ["24", "0"], "kind": "engineering_seed_not_archaeology_validated"},
+      "apex": {"u": "8/12", "rz_mm": ["60", "77.4"]},
+      "neck_start": {"u": "11/12", "rz_mm": ["57", "86"]},
+      "mouth": {"u": "1", "rz_mm": ["57", "90"]},
+      "features": [
+        {"name": "axis_bottom", "u": "0", "rz_mm": ["0", "0"]},
+        {"name": "flat_base_foot", "u": "1/12", "rz_mm": ["24", "0"]},
+        {"name": "max_radius_apex", "u": "8/12", "rz_mm": ["60", "77.4"]},
+        {"name": "neck_start", "u": "11/12", "rz_mm": ["57", "86"]},
+        {"name": "mouth", "u": "1", "rz_mm": ["57", "90"]}
+      ],
+      "fixed_poles": {
+        "r": {"0": "0", "11": "57", "12": "57", "13": "57", "14": "57", "15": "57", "16": "57"},
+        "z": {"0": "0", "1": "0", "2": "0", "3": "0", "4": "0", "5": "0"}
+      },
+      "linear_equalities": [
+        {"name": "foot_radius", "coordinate": "r", "u": "1/12", "order": 0, "rhs": "24"},
+        {"name": "apex_radius", "coordinate": "r", "u": "8/12", "order": 0, "rhs": "60"},
+        {"name": "apex_vertical_tangent", "coordinate": "r", "u": "8/12", "order": 1, "rhs": "0"},
+        {"name": "apex_height", "coordinate": "z", "u": "8/12", "order": 0, "rhs": "77.4"},
+        {"name": "neck_start_height", "coordinate": "z", "u": "11/12", "order": 0, "rhs": "86"},
+        {"name": "mouth_datum_height", "coordinate": "z", "u": "1", "order": 0, "rhs": "90"}
+      ],
+      "curvature_screen_span_indices_zero_based": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    "jar": {
+      "family": "jar",
+      "max_outer_radius_mm": "54",
+      "mouth_r_mm": "26",
+      "mouth_z_mm": "120",
+      "accepted_candidate_total_crest_target_mm": "122",
+      "total_height_status": "UNBUILT_LIP_TARGET_NOT_VERIFIED",
+      "foot": {"u": "1/12", "rz_mm": ["18", "0"], "kind": "engineering_seed_not_archaeology_validated"},
+      "apex": {"u": "6/12", "rz_mm": ["54", "62"]},
+      "neck_start": {"u": "11/12", "rz_mm": ["26", "102"]},
+      "mouth": {"u": "1", "rz_mm": ["26", "120"]},
+      "features": [
+        {"name": "axis_bottom", "u": "0", "rz_mm": ["0", "0"]},
+        {"name": "flat_base_foot", "u": "1/12", "rz_mm": ["18", "0"]},
+        {"name": "max_radius_apex", "u": "6/12", "rz_mm": ["54", "62"]},
+        {"name": "neck_start", "u": "11/12", "rz_mm": ["26", "102"]},
+        {"name": "mouth", "u": "1", "rz_mm": ["26", "120"]}
+      ],
+      "fixed_poles": {
+        "r": {"0": "0", "11": "26", "12": "26", "13": "26", "14": "26", "15": "26", "16": "26"},
+        "z": {"0": "0", "1": "0", "2": "0", "3": "0", "4": "0", "5": "0"}
+      },
+      "linear_equalities": [
+        {"name": "foot_radius", "coordinate": "r", "u": "1/12", "order": 0, "rhs": "18"},
+        {"name": "apex_radius", "coordinate": "r", "u": "6/12", "order": 0, "rhs": "54"},
+        {"name": "apex_vertical_tangent", "coordinate": "r", "u": "6/12", "order": 1, "rhs": "0"},
+        {"name": "apex_height", "coordinate": "z", "u": "6/12", "order": 0, "rhs": "62"},
+        {"name": "neck_start_height", "coordinate": "z", "u": "11/12", "order": 0, "rhs": "102"},
+        {"name": "mouth_datum_height", "coordinate": "z", "u": "1", "order": 0, "rhs": "120"}
+      ],
+      "curvature_screen_span_indices_zero_based": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    }
+  },
+  "not_claimed": [
+    "No exact controls or feasible solution have been computed.",
+    "Foot radii are engineering seed targets, not archaeological or style validation.",
+    "No inner profile, lip, normal offset, global wall, CAD, STEP, mesh, or solver result is supplied.",
+    "A 9 mm radius certificate is required on every non-flat body/shoulder span; mixed Bernstein signs must remain UNKNOWN unless an endpoint is a point counterexample."
+  ]
+}

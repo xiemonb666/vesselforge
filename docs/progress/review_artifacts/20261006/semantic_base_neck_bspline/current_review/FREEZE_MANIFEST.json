@@ -1,0 +1,58 @@
+{
+  "schema": "vesselforge.semantic_base_neck_bspline.freeze.v2",
+  "status": "RANK_PREFLIGHT_PASS_EXACT_CANDIDATE_RUN_AUTHORIZED",
+  "scope": {
+    "experiment": "vesselforge/experiments/semantic_base_neck_bspline_20261006",
+    "review": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006"
+  },
+  "pins_sha256": {
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "cae09164146bb486cc8ad128c0759499d3d3ab519aac318dec26d04fcbcccacb",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "5e4123acd5c5b95844852d774f5c38da395b6dc9e8c50abed07768c06d419945",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "131a6652706ac5d6c72df66497d15bbf340284e9a3989db83df9a5655a6baf62"
+  },
+  "auxiliary_source_sha256": {
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/exact_equality_rank_precheck.py": "2599d4ce7f236d48414fc61837d48e2278e81e62793d3a6ae3fe5f2172a505d2"
+  },
+  "preserved_prior_freeze": {
+    "directory": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/prior_10_12_freeze",
+    "original_manifest_sha256": "fb1cdc4511fa7e0d3178010b07e5b660f3d198218de8dfa94c78e1c5c280cf14",
+    "original_case_sha256": "77ea80492af5092cf41f60cb7d10c5458c95197d74efc68def349f9824629824",
+    "infeasibility_note": "prior_10_12_freeze/BOWL_10_12_INFEASIBILITY.md"
+  },
+  "precheck": {
+    "scope": "basis_row and exact _rank only; no Hessian, KKT, curve, CAD, or render",
+    "current_system_ranks": {
+      "bowl_r": [3, 3],
+      "bowl_z": [3, 3],
+      "jar_r": [3, 3],
+      "jar_z": [3, 3]
+    },
+    "historical_bowl_10_12_radial_rank_A_and_augmented": [2, 3],
+    "exit_code": 0,
+    "elapsed_ms": 130.923,
+    "result_path": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_rank_precheck/result.json",
+    "result_sha256": "7a752371fdd8360a15fe7859dc1ce755be6792444fb49629873985db73b89447",
+    "receipt_path": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_rank_precheck_receipt.json",
+    "receipt_sha256": "5c94bcde01cfc9b69deda957f7160c78741fef24df3fe370f7d211a74b729f51"
+  },
+  "static_checks": {
+    "driver_and_precheck_ast_parse": "PASS",
+    "case_json_parse_and_literal_key_schema": "PASS",
+    "prior_freeze_all_five_pins": "PASS",
+    "current_bowl_apex_u": "8/12",
+    "jar_apex_u": "6/12",
+    "meridian_radius_screen_mm": "9",
+    "driver_physical_lines": 400
+  },
+  "execution_state": {
+    "exact_equality_rank_precheck": "PASS",
+    "hessian": "NOT_COMPUTED",
+    "fraction_kkt_solves": "AUTHORIZED_ONCE_PENDING_PIN_RECHECK",
+    "curve_or_curvature_diagnostics": "NOT_RUN",
+    "cad_or_geometry_kernel": "NOT_RUN",
+    "png_or_other_render": "NOT_RUN",
+    "candidate_outputs_exist": false
+  }
+}
