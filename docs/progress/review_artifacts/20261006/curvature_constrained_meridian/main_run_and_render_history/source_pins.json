@@ -1,0 +1,55 @@
+{
+  "schema": "vesselforge.curvature_constrained_meridian.source_pins.v1",
+  "phase": "source_only_no_optimizer_or_curve_run",
+  "output_root": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006",
+  "implementation": {
+    "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/curvature_constrained_meridian.py",
+    "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce",
+    "source_lines": 450
+  },
+  "frozen_inputs": {
+    "driver_path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+    "driver_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "fixed_cases_path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json",
+    "fixed_cases_sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+    "actual_seed_path": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/minimum_jerk_candidate/semantic_minimum_jerk_result.json",
+    "actual_seed_sha256": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+    "design_cases_path": "vesselforge/experiments/curvature_constrained_meridian_20261006/design_cases.json",
+    "design_cases_sha256": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb"
+  },
+  "design_case_change": {
+    "bowl_apex_z_mm": {"frozen_seed_datum": "77.4", "engineering_design_datum": "72"},
+    "jar": "unchanged",
+    "reason": "R9 necessary pairwise height bound blocks the frozen bowl datum: D=3, H=8.6, H^2=73.96 < 99. The explicit 72 mm datum gives H=14 and H^2=196 >= 99.",
+    "historical_measurement_changed": false
+  },
+  "environment_metadata": {
+    "scipy_distribution_version": "1.18.1",
+    "metadata_source": "third_party/vesselforge-runtime/venv/Lib/site-packages",
+    "metadata_only_checked": true,
+    "scipy_imported_or_called_in_this_review": false
+  },
+  "resource_plan": {
+    "decision_source": "root engineering budget; user authorization is for local small test only",
+    "optimizer": "lazy scipy.optimize.minimize(method=SLSQP)",
+    "families": ["bowl", "jar"],
+    "calls_per_family_max": 1,
+    "iterations_per_call_max": 80,
+    "finite_difference_step_mm": 0.0001,
+    "shared_deadline_seconds": 60,
+    "serialized_result_limit_bytes": 8388608,
+    "actual_optimizer_run": false
+  },
+  "seed_geometry_summary": {
+    "bowl_r9": {"proved": 5, "exact_endpoint_counterexamples": 4, "unknown": 1},
+    "jar_r9": {"proved": 8, "exact_endpoint_counterexamples": 0, "unknown": 2},
+    "all_other_reported_geometry_gates_pass": true
+  },
+  "promoted_candidate_claims": [
+    "geometry_engineering_candidate_only",
+    "not_physics_ready",
+    "not_style_calibrated",
+    "novelty_unconfirmed",
+    "meridian_curvature_only"
+  ]
+}

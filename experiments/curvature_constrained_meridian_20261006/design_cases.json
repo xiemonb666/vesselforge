@@ -1,0 +1,323 @@
+{
+  "schema": "vesselforge.curvature_constrained_meridian.design_cases.v1",
+  "phase": "source_only_no_optimizer_run",
+  "source_fixed_case_sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+  "variant": {
+    "name": "bowl_apex_72_engineering_default",
+    "changed_field": "bowl.apex.rz_mm[1] and matching feature/equality rows",
+    "from": "77.4",
+    "to": "72",
+    "reason": "The frozen 77.4 mm bowl datum is incompatible with the necessary R9 pairwise height bound for D=3 mm (H=8.6 mm gives H^2=73.96 < 99 mm^2). The proposed 72 mm datum gives H=14 mm and H^2=196 mm^2 >= 99 mm^2.",
+    "meaning": "engineering seed correction only; not a claim that a historical measurement changed or that feasibility is certified"
+  },
+  "cases": {
+    "bowl": {
+      "family": "bowl",
+      "max_outer_radius_mm": "60",
+      "mouth_r_mm": "57",
+      "mouth_z_mm": "90",
+      "accepted_candidate_total_crest_target_mm": "92",
+      "total_height_status": "UNBUILT_LIP_TARGET_NOT_VERIFIED",
+      "foot": {
+        "u": "1/12",
+        "rz_mm": [
+          "24",
+          "0"
+        ],
+        "kind": "engineering_seed_not_archaeology_validated"
+      },
+      "apex": {
+        "u": "8/12",
+        "rz_mm": [
+          "60",
+          "72"
+        ]
+      },
+      "neck_start": {
+        "u": "11/12",
+        "rz_mm": [
+          "57",
+          "86"
+        ]
+      },
+      "mouth": {
+        "u": "1",
+        "rz_mm": [
+          "57",
+          "90"
+        ]
+      },
+      "features": [
+        {
+          "name": "axis_bottom",
+          "u": "0",
+          "rz_mm": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "flat_base_foot",
+          "u": "1/12",
+          "rz_mm": [
+            "24",
+            "0"
+          ]
+        },
+        {
+          "name": "max_radius_apex",
+          "u": "8/12",
+          "rz_mm": [
+            "60",
+            "72"
+          ]
+        },
+        {
+          "name": "neck_start",
+          "u": "11/12",
+          "rz_mm": [
+            "57",
+            "86"
+          ]
+        },
+        {
+          "name": "mouth",
+          "u": "1",
+          "rz_mm": [
+            "57",
+            "90"
+          ]
+        }
+      ],
+      "fixed_poles": {
+        "r": {
+          "0": "0",
+          "11": "57",
+          "12": "57",
+          "13": "57",
+          "14": "57",
+          "15": "57",
+          "16": "57"
+        },
+        "z": {
+          "0": "0",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "0",
+          "5": "0"
+        }
+      },
+      "linear_equalities": [
+        {
+          "name": "foot_radius",
+          "coordinate": "r",
+          "u": "1/12",
+          "order": 0,
+          "rhs": "24"
+        },
+        {
+          "name": "apex_radius",
+          "coordinate": "r",
+          "u": "8/12",
+          "order": 0,
+          "rhs": "60"
+        },
+        {
+          "name": "apex_vertical_tangent",
+          "coordinate": "r",
+          "u": "8/12",
+          "order": 1,
+          "rhs": "0"
+        },
+        {
+          "name": "apex_height",
+          "coordinate": "z",
+          "u": "8/12",
+          "order": 0,
+          "rhs": "72"
+        },
+        {
+          "name": "neck_start_height",
+          "coordinate": "z",
+          "u": "11/12",
+          "order": 0,
+          "rhs": "86"
+        },
+        {
+          "name": "mouth_datum_height",
+          "coordinate": "z",
+          "u": "1",
+          "order": 0,
+          "rhs": "90"
+        }
+      ],
+      "curvature_screen_span_indices_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "jar": {
+      "family": "jar",
+      "max_outer_radius_mm": "54",
+      "mouth_r_mm": "26",
+      "mouth_z_mm": "120",
+      "accepted_candidate_total_crest_target_mm": "122",
+      "total_height_status": "UNBUILT_LIP_TARGET_NOT_VERIFIED",
+      "foot": {
+        "u": "1/12",
+        "rz_mm": [
+          "18",
+          "0"
+        ],
+        "kind": "engineering_seed_not_archaeology_validated"
+      },
+      "apex": {
+        "u": "6/12",
+        "rz_mm": [
+          "54",
+          "62"
+        ]
+      },
+      "neck_start": {
+        "u": "11/12",
+        "rz_mm": [
+          "26",
+          "102"
+        ]
+      },
+      "mouth": {
+        "u": "1",
+        "rz_mm": [
+          "26",
+          "120"
+        ]
+      },
+      "features": [
+        {
+          "name": "axis_bottom",
+          "u": "0",
+          "rz_mm": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "flat_base_foot",
+          "u": "1/12",
+          "rz_mm": [
+            "18",
+            "0"
+          ]
+        },
+        {
+          "name": "max_radius_apex",
+          "u": "6/12",
+          "rz_mm": [
+            "54",
+            "62"
+          ]
+        },
+        {
+          "name": "neck_start",
+          "u": "11/12",
+          "rz_mm": [
+            "26",
+            "102"
+          ]
+        },
+        {
+          "name": "mouth",
+          "u": "1",
+          "rz_mm": [
+            "26",
+            "120"
+          ]
+        }
+      ],
+      "fixed_poles": {
+        "r": {
+          "0": "0",
+          "11": "26",
+          "12": "26",
+          "13": "26",
+          "14": "26",
+          "15": "26",
+          "16": "26"
+        },
+        "z": {
+          "0": "0",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "0",
+          "5": "0"
+        }
+      },
+      "linear_equalities": [
+        {
+          "name": "foot_radius",
+          "coordinate": "r",
+          "u": "1/12",
+          "order": 0,
+          "rhs": "18"
+        },
+        {
+          "name": "apex_radius",
+          "coordinate": "r",
+          "u": "6/12",
+          "order": 0,
+          "rhs": "54"
+        },
+        {
+          "name": "apex_vertical_tangent",
+          "coordinate": "r",
+          "u": "6/12",
+          "order": 1,
+          "rhs": "0"
+        },
+        {
+          "name": "apex_height",
+          "coordinate": "z",
+          "u": "6/12",
+          "order": 0,
+          "rhs": "62"
+        },
+        {
+          "name": "neck_start_height",
+          "coordinate": "z",
+          "u": "11/12",
+          "order": 0,
+          "rhs": "102"
+        },
+        {
+          "name": "mouth_datum_height",
+          "coordinate": "z",
+          "u": "1",
+          "order": 0,
+          "rhs": "120"
+        }
+      ],
+      "curvature_screen_span_indices_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  }
+}

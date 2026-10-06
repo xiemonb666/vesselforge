@@ -1,0 +1,7 @@
+argv=['C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\curvature_constrained_saved_independent\\audit_saved_candidate.py', '--root-go']
+python=C:\Users\xiemo\Desktop\ShardForge\third_party\vesselforge-runtime\venv\Scripts\python.exe
+result_sha256=839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185
+reader_sha256=183a4f552fd786227ecceeac2165f75f3a8baa1ea0015875e74d79a15ea210ac
+elapsed_seconds=0.1559999999590218
+exit_code=0
+summary={'bowl': ('EXACT_R9_COUNTEREXAMPLE', 'NOT_CONVERGED_NO_OPTIMUM_CLAIM', True), 'jar': ('GEOMETRY_SCREENS_PROVED', 'NOT_CONVERGED_NO_OPTIMUM_CLAIM', True)}

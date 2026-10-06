@@ -1,0 +1,20 @@
+argv=C:\Users\xiemo\Desktop\ShardForge\third_party\vesselforge-runtime\venv\Scripts\python.exe -B C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261006\curvature_constrained_saved_independent\audit_saved_candidate.py --root-go
+return_code=0
+elapsed_seconds=0.2684732
+--- pre-run pins ---
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261006\curvature_constrained_meridian_20261006\curvature_constrained_meridian_result.json 839C461CDF0DCAE93F362EE7D80D0446CF52B6B1E1F04ED18842E17527673185
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\curvature_constrained_meridian_20261006\curvature_constrained_meridian.py 96875BB6592A6FD57CEEF4DC326C35FAEB3F96DE16607FAA816C7D3FED1E08CE
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\semantic_base_neck_bspline_20261006\semantic_base_neck_driver.py 038974CBBE3965F7F03F1AD0199D0ABA00B56294840E411CA9A21FBDE42466A3
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\semantic_base_neck_bspline_20261006\fixed_cases.json 4E18DBEAECBF13A54A87B3F1409E1C0F7FE54C3606122A01880689D9E3A6A83C
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\curvature_constrained_meridian_20261006\design_cases.json D1BB74BFC90DE5937884854FD4E5E62C4DBF01F33E2F1F7BE5DBF931EE35C8EB
+--- post-run pins ---
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261006\curvature_constrained_meridian_20261006\curvature_constrained_meridian_result.json 839C461CDF0DCAE93F362EE7D80D0446CF52B6B1E1F04ED18842E17527673185
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\curvature_constrained_meridian_20261006\curvature_constrained_meridian.py 96875BB6592A6FD57CEEF4DC326C35FAEB3F96DE16607FAA816C7D3FED1E08CE
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\semantic_base_neck_bspline_20261006\semantic_base_neck_driver.py 038974CBBE3965F7F03F1AD0199D0ABA00B56294840E411CA9A21FBDE42466A3
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\semantic_base_neck_bspline_20261006\fixed_cases.json 4E18DBEAECBF13A54A87B3F1409E1C0F7FE54C3606122A01880689D9E3A6A83C
+C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\curvature_constrained_meridian_20261006\design_cases.json D1BB74BFC90DE5937884854FD4E5E62C4DBF01F33E2F1F7BE5DBF931EE35C8EB
+--- stdout ---
+{"bowl": ["EXACT_R9_COUNTEREXAMPLE", "NOT_CONVERGED_NO_OPTIMUM_CLAIM", true], "jar": ["GEOMETRY_SCREENS_PROVED", "NOT_CONVERGED_NO_OPTIMUM_CLAIM", true]}
+
+--- stderr ---
+
