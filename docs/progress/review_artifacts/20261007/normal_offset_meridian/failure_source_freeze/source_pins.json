@@ -1,0 +1,134 @@
+{
+  "schema": "vesselforge.normal_offset_meridian.source_pins.v1",
+  "state": "SOURCE_ONLY_READY_AWAITING_ROOT_GO",
+  "scope": {
+    "owned_directories": [
+      "vesselforge/experiments/normal_offset_meridian_20261006",
+      "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006"
+    ],
+    "candidate": "jar engineering candidate only",
+    "allowed_success_status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+    "not_physics_ready": true
+  },
+  "files": {
+    "source": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+      "line_count": 216
+    },
+    "readme": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/README.md",
+      "sha256": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef"
+    },
+    "false_case": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/case_false.json",
+      "sha256": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319"
+    },
+    "runner": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/run_normal_offset_meridian.py",
+      "sha256": "a4307e15c461813669232ca4055a0a9f42b0f60f009070cff9e5b713781f7fb8",
+      "line_count": 178
+    }
+  },
+  "inputs": {
+    "saved_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "expected_sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    "frozen_driver": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "expected_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    },
+    "independent_audit": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    }
+  },
+  "upstream_parent_reported_evidence": {
+    "jar_side_R9": "all spans pass",
+    "regularity": "12 pass",
+    "C4": "11 pass",
+    "features": "5 pass",
+    "optimization_80_iterations": "not converged; does not invalidate geometric feasibility",
+    "independently_recomputed_here": false
+  },
+  "certificate_contract": {
+    "offset_t_mm": "3",
+    "true_inward_normal_offset": "(r-t*zprime/v, z+t*rprime/v)",
+    "v": "sqrt(rprime^2+zprime^2)",
+    "signed_curvature": "(rprime*zsecond-zprime*rsecond)/v^3",
+    "offset_derivative": "(1-t*kappa)*(rprime,zprime)",
+    "side_curvature_factor_lower_bound": "2/3 from pinned R9",
+    "straight_base_neck_curvature": "0",
+    "radius_numerator": "Q=r^2*(rprime^2+zprime^2)-t^2*zprime^2",
+    "degree_5_Q_bernstein_count": 19,
+    "shared_subdivision_node_limit": 64,
+    "subdivision_depth_limit": 6,
+    "mixed_bernstein_semantics": "UNKNOWN unless exact subdivision proves nonnegative; never false FAIL",
+    "endpoint_negative_semantics": "exact counterexample",
+    "display_samples_per_span": 25,
+    "display_samples_are_certificate": false
+  },
+  "remaining_unknowns": [
+    "global minimum wall thickness",
+    "normal-strip global injectivity",
+    "lip closure",
+    "revolved-surface self-intersection",
+    "native B-rep",
+    "material",
+    "physics"
+  ],
+  "execution_this_pass": {
+    "saved_result_schema_and_evidence_metadata_inspected": true,
+    "saved_result_control_coordinates_printed_or_used": false,
+    "npz_read": false,
+    "curve_driver_invoked": false,
+    "certificate_invoked": false,
+    "display_samples_computed": false,
+    "render_invoked": false,
+    "CAD_invoked": false,
+    "runner_executed": false,
+    "AST_parse_only": true,
+    "JSON_parse_and_hash_checks_only": true
+  },
+  "run_plan": {
+    "execution_authorized_now": false,
+    "requires_root_GO_after_review": true,
+    "one_shot": true,
+    "retry_permitted": false,
+    "outer_limit_seconds": 15,
+    "aggregate_output_limit_bytes": 4194304,
+    "aggregate_output_components": [
+      "result JSON",
+      "receipt JSON",
+      "one-shot lock",
+      "raw stdout bytes",
+      "raw stderr bytes"
+    ],
+    "result_reserve_bytes": 4128768,
+    "expected_span_count": 12,
+    "bezier_degree": 5,
+    "exact_Boehm_knot_insertions": 44,
+    "jar_study": {
+      "certificate_calls": 1,
+      "shared_node_limit": 64,
+      "depth_limit": 6,
+      "primitive_nonnegative_calls": 37
+    },
+    "false_fixtures": {
+      "calls": 2,
+      "node_limit_each": 8,
+      "depth_limit_each": 6,
+      "budgets_independent_of_jar_study": true
+    },
+    "true_normal_display": {
+      "calls": 12,
+      "samples_per_span": 25,
+      "is_certificate": false
+    },
+    "render_in_runner": false,
+    "CAD_in_runner": false
+  }
+}
