@@ -1,0 +1,159 @@
+{
+  "schema": "vesselforge.whole_body_c3_profiles.fixed_cases.v1",
+  "phase": "source_design_only_not_executed",
+  "units": "mm",
+  "degree": 7,
+  "construction": {
+    "parameter": "Each span has a positive parameter length h_mm in a shared global s coordinate measured in mm; s is not assumed to be arc length.",
+    "endpoint_jets": "Every semantic station shares position, d1, d2, and d3 across adjacent spans.",
+    "default_endpoint_acceleration": ["0", "0"],
+    "default_endpoint_jerk": ["0", "0"],
+    "control_order": ["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7"],
+    "exact_control_constructor": "profile_design.py:degree7_controls"
+  },
+  "wall_semantics": {
+    "catalog_declaration_mm": "3",
+    "declared_meaning": "constant radial meridian offset in the catalog source; not measured material thickness",
+    "candidate_reuse": "A 3 mm inward Euclidean normal offset is proposed only on the side-wall spans listed per case, above the inner-base fairing.",
+    "normal_direction": "For the outer side traversed toward increasing z, n_in=(-T_z,T_r) with T=C'/|C'|.",
+    "local_regular_offset_condition": "A proof must establish 1 - t*kappa > 0; the conservative certificate uses |t*kappa| < 1 on every complete offset span.",
+    "global_minimum_wall": "UNKNOWN until nonlocal intersections and full-section distances are separately bounded.",
+    "base_transition_and_lip_wall": "Not covered by the 3 mm side-wall normal-offset claim."
+  },
+  "curvature_targets": {
+    "body_and_shoulder_minimum_radius_mm": "9",
+    "body_and_shoulder_basis": "3 times the catalog-declared 3 mm radial reference, adopted as an engineering geometry screen only",
+    "base_and_inner_base_fairing_minimum_radius_mm": {
+      "bowl": "9",
+      "jar": "8.25"
+    },
+    "base_target_basis": "1.5 times the catalog base-thickness declaration; an engineering screen, not material or archaeological calibration",
+    "lip_cap": "separate closure region; finite curvature and local pole bounds will be reported, with no side-wall radius target transferred to it"
+  },
+  "cases": {
+    "bowl": {
+      "catalog_defaults": {
+        "height_mm": "90",
+        "max_radius_mm": "60",
+        "clear_mouth_diameter_mm": "108",
+        "radial_wall_declaration_mm": "3",
+        "base_thickness_declaration_mm": "6"
+      },
+      "fixed_features": {
+        "outer_max_radius_apex_rz_mm": ["60", "77.4"],
+        "outer_mouth_join_rz_mm": ["57", "90"],
+        "inner_clear_mouth_join_rz_mm": ["54", "90"],
+        "mouth_plane_z_mm": "90",
+        "base_floor_axis_z_mm": "6",
+        "body_station_source_points_rz_mm": [
+          ["13.2", "6"],
+          ["26.4", "10.8"],
+          ["43.2", "30.6"],
+          ["56.4", "55.8"]
+        ]
+      },
+      "outer_stations": {
+        "axis_bottom": {"rz_mm": ["0", "0"], "d1": ["1", "0"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "base_join": {"rz_mm": ["13.2", "6"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "lower_body": {"rz_mm": ["26.4", "10.8"], "d1": ["1", "1.25"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "mid_body": {"rz_mm": ["43.2", "30.6"], "d1": ["1", "1.5"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "upper_body": {"rz_mm": ["56.4", "55.8"], "d1": ["1", "2.5"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "fixed_apex": {"rz_mm": ["60", "77.4"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "outer_mouth": {"rz_mm": ["57", "90"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "rim_crest": {"rz_mm": ["55.5", "92"], "d1": ["-1", "0"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "inner_mouth": {"rz_mm": ["54", "90"], "d1": ["0", "-1"], "d2": ["0", "0"], "d3": ["0", "0"]}
+      },
+      "outer_spans": [
+        {"semantic": "outer_base_round", "from": "axis_bottom", "to": "base_join", "h_mm": "12", "region": "base", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_base_to_lower_body", "from": "base_join", "to": "lower_body", "h_mm": "4", "region": "base_transition", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_lower_body", "from": "lower_body", "to": "mid_body", "h_mm": "8", "region": "body", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_mid_body", "from": "mid_body", "to": "upper_body", "h_mm": "8", "region": "body", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_apex_in", "from": "upper_body", "to": "fixed_apex", "h_mm": "8", "region": "body_apex", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_apex_out_to_mouth", "from": "fixed_apex", "to": "outer_mouth", "h_mm": "8", "region": "body_to_rim", "projection_w": ["0", "1"], "projection_norm_upper": "1"},
+        {"semantic": "rim_outer_quadrant", "from": "outer_mouth", "to": "rim_crest", "h_mm": "3.5", "region": "lip_closure", "projection_w": ["-1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "rim_inner_quadrant", "from": "rim_crest", "to": "inner_mouth", "h_mm": "3.5", "region": "lip_closure", "projection_w": ["-1", "-1"], "projection_norm_upper": "3/2"}
+      ],
+      "normal_offset_side_spans": ["outer_lower_body", "outer_mid_body", "outer_apex_in", "outer_apex_out_to_mouth"],
+      "inner_base_fairing": {
+        "from_rz_mm": ["0", "6"],
+        "from_d1": ["1", "0"],
+        "to": "inward_normal_offset_at_lower_body",
+        "to_position_exact": ["132/5 - 15/sqrt(41)", "54/5 + 12/sqrt(41)"],
+        "to_d1": ["1", "1.25"],
+        "to_d2": ["0", "0"],
+        "to_d3": ["0", "0"],
+        "h_mm": "8",
+        "region": "base_and_inner_base_fairing",
+        "construction_status": "SOURCE_ONLY_NOT_CONSTRUCTED; exact endpoint contains sqrt(41) and is not supported by the current Fraction-only pole constructor"
+      },
+      "candidate_bbox_height_mm": "92",
+      "rim_height_semantics": "Catalog height 90 mm is retained as the mouth/body junction datum only. Candidate total bounding-box height is the fixed lip crest at z=92 mm."
+    },
+    "jar": {
+      "catalog_defaults": {
+        "height_mm": "120",
+        "max_radius_mm": "54",
+        "clear_mouth_diameter_mm": "46",
+        "radial_wall_declaration_mm": "3",
+        "base_thickness_declaration_mm": "5.5",
+        "neck_height_mm": "18",
+        "shoulder_height_mm": "28"
+      },
+      "fixed_features": {
+        "outer_max_radius_apex_rz_mm": ["54", "62"],
+        "outer_mouth_join_rz_mm": ["26", "120"],
+        "inner_clear_mouth_join_rz_mm": ["23", "120"],
+        "mouth_plane_z_mm": "120",
+        "base_floor_axis_z_mm": "5.5",
+        "retained_neck_station_rz_mm": ["26", "102"],
+        "retained_shoulder_stations_rz_mm": [
+          ["49.68", "74"],
+          ["26", "102"]
+        ],
+        "removed_artificial_max_radius_plateau_lower_station_rz_mm": ["54", "40.8"]
+      },
+      "outer_stations": {
+        "axis_bottom": {"rz_mm": ["0", "0"], "d1": ["1", "0"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "base_join": {"rz_mm": ["12.96", "5.5"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "lower_body": {"rz_mm": ["34.56", "16.8"], "d1": ["1", "0.65"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "fixed_apex": {"rz_mm": ["54", "62"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "shoulder_bottom": {"rz_mm": ["49.68", "74"], "d1": ["-0.36", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "shoulder_top_neck": {"rz_mm": ["26", "102"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "outer_mouth": {"rz_mm": ["26", "120"], "d1": ["0", "1"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "rim_crest": {"rz_mm": ["24.5", "122"], "d1": ["-1", "0"], "d2": ["0", "0"], "d3": ["0", "0"]},
+        "inner_mouth": {"rz_mm": ["23", "120"], "d1": ["0", "-1"], "d2": ["0", "0"], "d3": ["0", "0"]}
+      },
+      "outer_spans": [
+        {"semantic": "outer_base_round", "from": "axis_bottom", "to": "base_join", "h_mm": "12", "region": "base", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_base_to_body", "from": "base_join", "to": "lower_body", "h_mm": "8", "region": "base_transition", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_body_to_apex", "from": "lower_body", "to": "fixed_apex", "h_mm": "8", "region": "body_apex", "projection_w": ["1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "outer_apex_to_shoulder", "from": "fixed_apex", "to": "shoulder_bottom", "h_mm": "8", "region": "body_shoulder", "projection_w": ["0", "1"], "projection_norm_upper": "1"},
+        {"semantic": "outer_shoulder", "from": "shoulder_bottom", "to": "shoulder_top_neck", "h_mm": "8", "region": "shoulder", "projection_w": ["0", "1"], "projection_norm_upper": "1"},
+        {"semantic": "outer_neck", "from": "shoulder_top_neck", "to": "outer_mouth", "h_mm": "18", "region": "neck", "projection_w": ["0", "1"], "projection_norm_upper": "1"},
+        {"semantic": "rim_outer_quadrant", "from": "outer_mouth", "to": "rim_crest", "h_mm": "3.5", "region": "lip_closure", "projection_w": ["-1", "1"], "projection_norm_upper": "3/2"},
+        {"semantic": "rim_inner_quadrant", "from": "rim_crest", "to": "inner_mouth", "h_mm": "3.5", "region": "lip_closure", "projection_w": ["-1", "-1"], "projection_norm_upper": "3/2"}
+      ],
+      "normal_offset_side_spans": ["outer_body_to_apex", "outer_apex_to_shoulder", "outer_shoulder", "outer_neck"],
+      "inner_base_fairing": {
+        "from_rz_mm": ["0", "5.5"],
+        "from_d1": ["1", "0"],
+        "to": "inward_normal_offset_at_lower_body",
+        "to_position_exact": ["864/25 - 39/sqrt(569)", "84/5 + 60/sqrt(569)"],
+        "to_d1": ["1", "0.65"],
+        "to_d2": ["0", "0"],
+        "to_d3": ["0", "0"],
+        "h_mm": "8",
+        "region": "base_and_inner_base_fairing",
+        "construction_status": "SOURCE_ONLY_NOT_CONSTRUCTED; exact endpoint contains sqrt(569) and is not supported by the current Fraction-only pole constructor"
+      },
+      "candidate_bbox_height_mm": "122",
+      "rim_height_semantics": "Catalog height 120 mm is retained as the mouth/body junction datum only. Candidate total bounding-box height is the fixed lip crest at z=122 mm."
+    }
+  },
+  "not_claimed": [
+    "No physical, archaeological, material, training, or real-vessel qualification.",
+    "No global minimum wall thickness or nonlocal nonintersection certificate.",
+    "No claim that finite curvature samples prove a full-span curvature bound.",
+    "No CAD/native/STEP/solver result or measured render."
+  ]
+}

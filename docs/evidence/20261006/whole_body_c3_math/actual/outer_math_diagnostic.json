@@ -1,0 +1,2075 @@
+{
+  "cad_step_solver_status": "NOT_RUN",
+  "cases": {
+    "bowl": {
+      "cad_or_native_geometry_status": "NOT_RUN",
+      "candidate_bbox_height_mm": "92",
+      "catalog_height_role": "mouth/body datum only",
+      "family": "bowl",
+      "fixed_features": {
+        "base_floor_axis_z_mm": "6",
+        "body_station_source_points_rz_mm": [
+          [
+            "13.2",
+            "6"
+          ],
+          [
+            "26.4",
+            "10.8"
+          ],
+          [
+            "43.2",
+            "30.6"
+          ],
+          [
+            "56.4",
+            "55.8"
+          ]
+        ],
+        "inner_clear_mouth_join_rz_mm": [
+          "54",
+          "90"
+        ],
+        "mouth_plane_z_mm": "90",
+        "outer_max_radius_apex_rz_mm": [
+          "60",
+          "77.4"
+        ],
+        "outer_mouth_join_rz_mm": [
+          "57",
+          "90"
+        ]
+      },
+      "global_minimum_wall_status": "UNKNOWN",
+      "inner_profile_status": "NOT_CONSTRUCTED_SOURCE_ONLY",
+      "normal_offset_point_probe_count": 8,
+      "normal_offset_point_probes": [
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            26.76829127402211,
+            15.916411910815912
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.7508690544926303,
+            0.6604511056886371
+          ],
+          "outer_rz_mm": [
+            29.0208984375,
+            13.93505859375
+          ],
+          "sampled_offset_tangent_factor": 1.022563585745795,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": -0.007521195248598391,
+          "span": "outer_lower_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            32.571033765210565,
+            22.364161732165687
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.7429887449298113,
+            0.6693039107218961
+          ],
+          "outer_rz_mm": [
+            34.8,
+            20.35625
+          ],
+          "sampled_offset_tangent_factor": 0.9954575558430759,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.0015141480523080373,
+          "span": "outer_lower_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            38.24737760173303,
+            28.880869562234757
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.7772413202556576,
+            0.6292026144949194
+          ],
+          "outer_rz_mm": [
+            40.5791015625,
+            26.99326171875
+          ],
+          "sampled_offset_tangent_factor": 0.9499811651120933,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.01667294496263558,
+          "span": "outer_lower_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "3/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            42.99483169121577,
+            35.84994200191485
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.8573542800114091,
+            0.5147267610549486
+          ],
+          "outer_rz_mm": [
+            45.56689453125,
+            34.30576171875
+          ],
+          "sampled_offset_tangent_factor": 0.9689954948432576,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.010334835052247452,
+          "span": "outer_mid_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            47.156240371530004,
+            43.24293336475034
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.8812532094899966,
+            0.4726444549167802
+          ],
+          "outer_rz_mm": [
+            49.8,
+            41.825
+          ],
+          "sampled_offset_tangent_factor": 0.9873429413445379,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.0042190195518206994,
+          "span": "outer_mid_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            51.310415726664004,
+            51.467265762972765
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9075632473619979,
+            0.41991541057425485
+          ],
+          "outer_rz_mm": [
+            54.03310546875,
+            50.20751953125
+          ],
+          "sampled_offset_tangent_factor": 0.968148040386679,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.01061731987110698,
+          "span": "outer_mid_body",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "3/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            56.59049757240621,
+            68.96704106404017
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.994834142531266,
+            0.1015136880133945
+          ],
+          "outer_rz_mm": [
+            59.575,
+            68.6625
+          ],
+          "sampled_offset_tangent_factor": 0.959990384199964,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.013336538600011993,
+          "span": "outer_apex_in",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            55.68033497336344,
+            82.67555422907668
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9398883422121854,
+            -0.3414819236411054
+          ],
+          "outer_rz_mm": [
+            58.5,
+            83.7
+          ],
+          "sampled_offset_tangent_factor": 1.0,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": -0.0,
+          "span": "outer_apex_out_to_mouth",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        }
+      ],
+      "outer_span_count": 8,
+      "profile_parameter_evaluation_count": 64,
+      "scope": "fixed rational outer spans only",
+      "shared_c3_jet_status": "EXACT_RATIONAL_SOURCE_JETS_MATCHED",
+      "spans": [
+        {
+          "control_hull_rz_mm": {
+            "r_max": "66/5",
+            "r_min": "0",
+            "z_max": "6",
+            "z_min": "0"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "1392147/4194304",
+              "determinant_abs_upper": "1392147/524288",
+              "min_projection": "3",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "35389440/108845083",
+              "determinant_abs_upper": "4995/512",
+              "min_projection": "4773/1024",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "1591/512",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2409643008/5151156835",
+              "determinant_abs_upper": "101186181/7208960",
+              "min_projection": "4773/1024",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "1591/512",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "6617619/4194304",
+              "determinant_abs_upper": "6617619/524288",
+              "min_projection": "3",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "6617619/4194304",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.7769112238219498,
+              0.010454827495346326
+            ],
+            [
+              4.0702399267554945,
+              0.13790172462154374
+            ],
+            [
+              7.074598897689617,
+              0.5659376620285765
+            ],
+            [
+              10.136382921110373,
+              1.4230805191714337
+            ],
+            [
+              12.282528052572847,
+              2.709330296050115
+            ],
+            [
+              13.116464835473073,
+              4.296169113209632
+            ],
+            [
+              13.2,
+              6.0
+            ]
+          ],
+          "region": "base",
+          "semantic": "outer_base_round",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "132/5",
+            "r_min": "66/5",
+            "z_max": "54/5",
+            "z_min": "6"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "611413029/33554432",
+              "determinant_abs_upper": "22644927/4194304",
+              "min_projection": "1",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2/3",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2349092896768/6734339585655",
+              "determinant_abs_upper": "322598817/57671680",
+              "min_projection": "30987/8192",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "10329/4096",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "639554503901184/3289471996692365",
+              "determinant_abs_upper": "361438047/57671680",
+              "min_projection": "39107/8192",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "39107/12288",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "946131/524288",
+              "determinant_abs_upper": "25545537/4194304",
+              "min_projection": "9/4",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "3/2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "611413029/33554432",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              13.2,
+              6.0
+            ],
+            [
+              13.317165466769799,
+              6.5753448210961665
+            ],
+            [
+              14.458632032571463,
+              7.186831045859172
+            ],
+            [
+              17.273924980237826,
+              7.8655171618239725
+            ],
+            [
+              20.989081080162176,
+              8.600234353276027
+            ],
+            [
+              24.090445307652423,
+              9.3504382891968
+            ],
+            [
+              25.718375846798526,
+              10.083540507295915
+            ],
+            [
+              26.4,
+              10.8
+            ]
+          ],
+          "region": "base_transition",
+          "semantic": "outer_base_to_lower_body",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "216/5",
+            "r_min": "132/5",
+            "z_max": "153/5",
+            "z_min": "54/5"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "66375/1048576",
+              "determinant_abs_upper": "1792125/1048576",
+              "min_projection": "9/2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "3",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "68268458880/7544851789849",
+              "determinant_abs_upper": "19753605/11534336",
+              "min_projection": "8819/1024",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "8819/1536",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1267977728/59228984375",
+              "determinant_abs_upper": "66866013/14417920",
+              "min_projection": "9225/1024",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "3075/512",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "124053201/1048576000",
+              "determinant_abs_upper": "4594563/1048576",
+              "min_projection": "5",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "10/3",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "124053201/1048576000",
+          "normal_offset_status": "BOUND_PROVES_LOCAL_OFFSET_REGULARITY",
+          "profile_samples_rz_mm": [
+            [
+              26.4,
+              10.8
+            ],
+            [
+              27.632177554784633,
+              12.319634311748143
+            ],
+            [
+              29.63852233581003,
+              14.632934528008859
+            ],
+            [
+              32.88129071584605,
+              18.23275651666033
+            ],
+            [
+              36.71870928415395,
+              22.49874651353967
+            ],
+            [
+              39.96147766418997,
+              26.241604142103085
+            ],
+            [
+              41.96782244521537,
+              28.79813634503602
+            ],
+            [
+              43.2,
+              30.6
+            ]
+          ],
+          "region": "body",
+          "semantic": "outer_lower_body",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "282/5",
+            "r_min": "216/5",
+            "z_max": "279/5",
+            "z_min": "153/5"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "35142903/524288000",
+              "determinant_abs_upper": "1301589/524288",
+              "min_projection": "5",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "10/3",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2057011200/83281698863",
+              "determinant_abs_upper": "2325/512",
+              "min_projection": "4367/512",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "4367/768",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "26891592192/1528024853729",
+              "determinant_abs_upper": "1945283/360448",
+              "min_projection": "5179/512",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "5179/768",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "66495735/1438646272",
+              "determinant_abs_upper": "2462805/524288",
+              "min_projection": "7",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "14/3",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "BOUND_PROVES_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "35142903/524288000",
+          "normal_offset_status": "BOUND_PROVES_LOCAL_OFFSET_REGULARITY",
+          "profile_samples_rz_mm": [
+            [
+              43.2,
+              30.6
+            ],
+            [
+              44.39563738626884,
+              32.41463602993408
+            ],
+            [
+              46.048737224407226,
+              35.11662341857074
+            ],
+            [
+              48.43245100741552,
+              39.31162817242087
+            ],
+            [
+              51.16754899258448,
+              44.41438394837914
+            ],
+            [
+              53.551262775592775,
+              49.18153126187703
+            ],
+            [
+              55.204362613731156,
+              52.85644659720258
+            ],
+            [
+              56.4,
+              55.8
+            ]
+          ],
+          "region": "body",
+          "semantic": "outer_mid_body",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "60",
+            "r_min": "282/5",
+            "z_max": "387/5",
+            "z_min": "279/5"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "260622603/2877292544",
+              "determinant_abs_upper": "9652689/1048576",
+              "min_projection": "7",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "14/3",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1997180803584/31893678422045",
+              "determinant_abs_upper": "144471991/14417920",
+              "min_projection": "8339/1024",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "8339/1536",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "22029926400/78347809639",
+              "determinant_abs_upper": "6225/1024",
+              "min_projection": "4279/1024",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "4279/1536",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "25476363/67108864",
+              "determinant_abs_upper": "943569/1048576",
+              "min_projection": "2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "4/3",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "25476363/67108864",
+          "normal_offset_status": "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1",
+          "profile_samples_rz_mm": [
+            [
+              56.4,
+              55.8
+            ],
+            [
+              57.53182723913627,
+              58.72382838540307
+            ],
+            [
+              58.55047034581072,
+              62.199263669292314
+            ],
+            [
+              59.31251968628232,
+              66.44193029386443
+            ],
+            [
+              59.761468192917675,
+              70.76905152493555
+            ],
+            [
+              59.9513749737415,
+              74.15350431003603
+            ],
+            [
+              59.99709013372708,
+              76.16954767389196
+            ],
+            [
+              60.0,
+              77.4
+            ]
+          ],
+          "region": "body_apex",
+          "semantic": "outer_apex_in",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "60",
+            "r_min": "57",
+            "z_max": "90",
+            "z_min": "387/5"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "2835/8192",
+              "determinant_abs_upper": "2835/1024",
+              "min_projection": "2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2160435658752/21686096815009",
+              "determinant_abs_upper": "32193/11264",
+              "min_projection": "12539/4096",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "12539/4096",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2160435658752/21686096815009",
+              "determinant_abs_upper": "32193/11264",
+              "min_projection": "12539/4096",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "12539/4096",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2835/8192",
+              "determinant_abs_upper": "2835/1024",
+              "min_projection": "2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "2835/8192",
+          "normal_offset_status": "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1",
+          "profile_samples_rz_mm": [
+            [
+              60.0,
+              77.4
+            ],
+            [
+              59.96954985957017,
+              78.58954735818287
+            ],
+            [
+              59.675179073830996,
+              80.18377303917343
+            ],
+            [
+              58.959300242974564,
+              82.42431105601044
+            ],
+            [
+              58.040699757025436,
+              84.97568894398957
+            ],
+            [
+              57.324820926169004,
+              87.21622696082657
+            ],
+            [
+              57.03045014042983,
+              88.81045264181712
+            ],
+            [
+              57.0,
+              90.0
+            ]
+          ],
+          "region": "body_to_rim",
+          "semantic": "outer_apex_out_to_mouth",
+          "strict_projection_w": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "57",
+            "r_min": "111/2",
+            "z_max": "92",
+            "z_min": "90"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "3645/7168",
+              "determinant_abs_upper": "6615/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "405/224",
+              "determinant_abs_upper": "735/2048",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2239785/1103872",
+              "determinant_abs_upper": "580685/1441792",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "10935/7168",
+              "determinant_abs_upper": "19845/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": null,
+          "curvature_target_status": "REPORT_ONLY_NO_RADIUS_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "2239785/1103872",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              57.0,
+              90.0
+            ],
+            [
+              56.99948818701634,
+              90.49948818701634
+            ],
+            [
+              56.986847074166135,
+              90.98684707416614
+            ],
+            [
+              56.921659828327115,
+              91.42165982832712
+            ],
+            [
+              56.748209868822876,
+              91.74820986882288
+            ],
+            [
+              56.43271025313797,
+              91.93271025313797
+            ],
+            [
+              55.99441316361137,
+              91.99441316361137
+            ],
+            [
+              55.5,
+              92.0
+            ]
+          ],
+          "region": "lip_closure",
+          "semantic": "rim_outer_quadrant",
+          "strict_projection_w": [
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "111/2",
+            "r_min": "54",
+            "z_max": "92",
+            "z_min": "90"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "10935/7168",
+              "determinant_abs_upper": "19845/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2239785/1103872",
+              "determinant_abs_upper": "580685/1441792",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "405/224",
+              "determinant_abs_upper": "735/2048",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "3645/7168",
+              "determinant_abs_upper": "6615/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": null,
+          "curvature_target_status": "REPORT_ONLY_NO_RADIUS_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "2239785/1103872",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              55.5,
+              92.0
+            ],
+            [
+              55.00558683638863,
+              91.99441316361137
+            ],
+            [
+              54.56728974686203,
+              91.93271025313797
+            ],
+            [
+              54.251790131177124,
+              91.74820986882288
+            ],
+            [
+              54.078340171672885,
+              91.42165982832712
+            ],
+            [
+              54.013152925833865,
+              90.98684707416614
+            ],
+            [
+              54.00051181298366,
+              90.49948818701634
+            ],
+            [
+              54.0,
+              90.0
+            ]
+          ],
+          "region": "lip_closure",
+          "semantic": "rim_inner_quadrant",
+          "strict_projection_w": [
+            "-1",
+            "-1"
+          ]
+        }
+      ]
+    },
+    "jar": {
+      "cad_or_native_geometry_status": "NOT_RUN",
+      "candidate_bbox_height_mm": "122",
+      "catalog_height_role": "mouth/body datum only",
+      "family": "jar",
+      "fixed_features": {
+        "base_floor_axis_z_mm": "5.5",
+        "inner_clear_mouth_join_rz_mm": [
+          "23",
+          "120"
+        ],
+        "mouth_plane_z_mm": "120",
+        "outer_max_radius_apex_rz_mm": [
+          "54",
+          "62"
+        ],
+        "outer_mouth_join_rz_mm": [
+          "26",
+          "120"
+        ],
+        "removed_artificial_max_radius_plateau_lower_station_rz_mm": [
+          "54",
+          "40.8"
+        ],
+        "retained_neck_station_rz_mm": [
+          "26",
+          "102"
+        ],
+        "retained_shoulder_stations_rz_mm": [
+          [
+            "49.68",
+            "74"
+          ],
+          [
+            "26",
+            "102"
+          ]
+        ]
+      },
+      "global_minimum_wall_status": "UNKNOWN",
+      "inner_profile_status": "NOT_CONSTRUCTED_SOURCE_ONLY",
+      "normal_offset_point_probe_count": 8,
+      "normal_offset_point_probes": [
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            34.93223036424166,
+            22.2295336466751
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.8868411806694464,
+            0.4620743666000336
+          ],
+          "outer_rz_mm": [
+            37.59275390625,
+            20.843310546875
+          ],
+          "sampled_offset_tangent_factor": 0.9449482419457771,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.018350586018074298,
+          "span": "outer_body_to_apex",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            42.88407252430601,
+            40.0685155954342
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9236424918979959,
+            0.3832551984780645
+          ],
+          "outer_rz_mm": [
+            45.655,
+            38.91875
+          ],
+          "sampled_offset_tangent_factor": 0.9951002291294673,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.0016332569568442486,
+          "span": "outer_body_to_apex",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            50.02057336254779,
+            58.282184082609724
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9444638270674013,
+            0.32861539732824147
+          ],
+          "outer_rz_mm": [
+            52.85396484375,
+            57.296337890625
+          ],
+          "sampled_offset_tangent_factor": 0.9672896944801357,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.010903435173288106,
+          "span": "outer_body_to_apex",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "3/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            50.86792572157841,
+            63.54687561513375
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9694935094738648,
+            -0.24511698245541697
+          ],
+          "outer_rz_mm": [
+            53.77640625,
+            64.2822265625
+          ],
+          "sampled_offset_tangent_factor": 0.6633335156563138,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.11222216144789537,
+          "span": "outer_apex_to_shoulder",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            49.611693159426736,
+            66.74158836143063
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9077689468577548,
+            -0.4194705461897924
+          ],
+          "outer_rz_mm": [
+            52.335,
+            68.0
+          ],
+          "sampled_offset_tangent_factor": 0.956807199988793,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.014397600003735645,
+          "span": "outer_apex_to_shoulder",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            47.84517198691323,
+            70.49085680581472
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.9125468376955915,
+            -0.40897221056176364
+          ],
+          "outer_rz_mm": [
+            50.5828125,
+            71.7177734375
+          ],
+          "sampled_offset_tangent_factor": 1.0832267667261153,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": -0.0277422555753718,
+          "span": "outer_apex_to_shoulder",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "3/4"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            35.189388314176675,
+            85.9135345054514
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -0.7185372286077736,
+            -0.6954884981828673
+          ],
+          "outer_rz_mm": [
+            37.345,
+            88.0
+          ],
+          "sampled_offset_tangent_factor": 1.0022440996086397,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": -0.0007480332028798641,
+          "span": "outer_shoulder",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        },
+        {
+          "candidate_offset_distance_mm": 3.0,
+          "candidate_offset_point_rz_mm": [
+            23.0,
+            111.0
+          ],
+          "interpretation": "one local point probe; not an inner curve, wall certificate, or global minimum",
+          "inward_unit_normal_rz": [
+            -1.0,
+            0.0
+          ],
+          "outer_rz_mm": [
+            26.0,
+            111.0
+          ],
+          "sampled_offset_tangent_factor": 1.0,
+          "sampled_offset_tangent_factor_status": "FINITE_POSITIVE_TANGENT_FACTOR_AT_PROBE",
+          "sampled_signed_curvature_per_mm": 0.0,
+          "span": "outer_neck",
+          "status": "FINITE_POINT_PROBE_ONLY",
+          "t": "1/2"
+        }
+      ],
+      "outer_span_count": 8,
+      "profile_parameter_evaluation_count": 64,
+      "scope": "fixed rational outer spans only",
+      "shared_c3_jet_status": "EXACT_RATIONAL_SOURCE_JETS_MATCHED",
+      "spans": [
+        {
+          "control_hull_rz_mm": {
+            "r_max": "324/25",
+            "r_min": "0",
+            "z_max": "11/2",
+            "z_min": "0"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "40562289/167772160",
+              "determinant_abs_upper": "40562289/20971520",
+              "min_projection": "3",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2132803584000/6228320798017",
+              "determinant_abs_upper": "37629/4096",
+              "min_projection": "183927/40960",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "61309/20480",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1286749056860160/2534926564792919",
+              "determinant_abs_upper": "3926846487/288358400",
+              "min_projection": "183927/40960",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "61309/20480",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "257129073/167772160",
+              "determinant_abs_upper": "257129073/20971520",
+              "min_projection": "3",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "33/4",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "257129073/167772160",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.7744752125875638,
+              0.005379804090375366
+            ],
+            [
+              4.044254252661974,
+              0.08376490359337642
+            ],
+            [
+              6.991342917127581,
+              0.3924877025243369
+            ],
+            [
+              9.979638901672407,
+              1.0965304786756733
+            ],
+            [
+              12.068513726666367,
+              2.2634671170782825
+            ],
+            [
+              12.878900846707458,
+              3.801244136614603
+            ],
+            [
+              12.96,
+              5.5
+            ]
+          ],
+          "region": "base",
+          "semantic": "outer_base_round",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "864/25",
+            "r_min": "324/25",
+            "z_max": "84/5",
+            "z_min": "11/2"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "4977370701/671088640",
+              "determinant_abs_upper": "184347063/10485760",
+              "min_projection": "2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "4/3",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1763414529146880/10799599450209559",
+              "determinant_abs_upper": "2690757033/144179200",
+              "min_projection": "298167/40960",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "99389/20480",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1726211948544000/39439754798396471",
+              "determinant_abs_upper": "15243/2048",
+              "min_projection": "340391/40960",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "340391/61440",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "14272512525/30704402432",
+              "determinant_abs_upper": "570900501/115343360",
+              "min_projection": "33/10",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "11/5",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "33/4",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "4977370701/671088640",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              12.96,
+              5.5
+            ],
+            [
+              13.145610708851875,
+              6.688122903114956
+            ],
+            [
+              14.95755058327252,
+              8.2624233343007
+            ],
+            [
+              19.442730349234953,
+              10.42694892677128
+            ],
+            [
+              25.403281771565055,
+              12.808946830948718
+            ],
+            [
+              30.460604097175253,
+              14.77322252754258
+            ],
+            [
+              33.24547191828478,
+              16.006998177387217
+            ],
+            [
+              34.56,
+              16.8
+            ]
+          ],
+          "region": "base_transition",
+          "semantic": "outer_base_to_body",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "54",
+            "r_min": "864/25",
+            "z_max": "62",
+            "z_min": "84/5"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "7488165285/2791309312",
+              "determinant_abs_upper": "1497633057/52428800",
+              "min_projection": "33/10",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "11/5",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "9967143363231744/361012620959072093",
+              "determinant_abs_upper": "22531338983/720896000",
+              "min_projection": "320167/20480",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "320167/30720",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "1049502941184/39623189449765",
+              "determinant_abs_upper": "250221/10240",
+              "min_projection": "59811/4096",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "19937/2048",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "23291318907/3355443200",
+              "determinant_abs_upper": "862641441/52428800",
+              "min_projection": "2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "4/3",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "23291318907/3355443200",
+          "normal_offset_status": "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1",
+          "profile_samples_rz_mm": [
+            [
+              34.56,
+              16.8
+            ],
+            [
+              35.85260398060575,
+              17.937088409469816
+            ],
+            [
+              38.42552483598306,
+              22.497253938167162
+            ],
+            [
+              42.96741440337663,
+              32.55096042343873
+            ],
+            [
+              48.266573475823364,
+              45.313143818841276
+            ],
+            [
+              52.236320483569166,
+              55.56710019998956
+            ],
+            [
+              53.8363133922576,
+              60.46779051002801
+            ],
+            [
+              54.0,
+              62.0
+            ]
+          ],
+          "region": "body_apex",
+          "semantic": "outer_body_to_apex",
+          "strict_projection_w": [
+            "1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "54",
+            "r_min": "1242/25",
+            "z_max": "74",
+            "z_min": "62"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "4030641/10485760",
+              "determinant_abs_upper": "4030641/1310720",
+              "min_projection": "2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "88370528256/670286016425",
+              "determinant_abs_upper": "5393709/1638400",
+              "min_projection": "2993/1024",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "2993/1024",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "7587495936/134057203285",
+              "determinant_abs_upper": "1809/1280",
+              "min_projection": "2993/1024",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "2993/1024",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "13472163/115343360",
+              "determinant_abs_upper": "13472163/14417920",
+              "min_projection": "2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "4030641/10485760",
+          "normal_offset_status": "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1",
+          "profile_samples_rz_mm": [
+            [
+              54.0,
+              62.0
+            ],
+            [
+              53.968258706588486,
+              63.183457330096914
+            ],
+            [
+              53.655075496968585,
+              64.71880885393962
+            ],
+            [
+              52.86510319436872,
+              66.81617110460535
+            ],
+            [
+              51.777532442143276,
+              69.18382889539465
+            ],
+            [
+              50.78158881807022,
+              71.28119114606038
+            ],
+            [
+              50.11815154764232,
+              72.81654266990309
+            ],
+            [
+              49.68,
+              74.0
+            ]
+          ],
+          "region": "body_shoulder",
+          "semantic": "outer_apex_to_shoulder",
+          "strict_projection_w": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "1242/25",
+            "r_min": "26",
+            "z_max": "102",
+            "z_min": "74"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "3489615/2097152",
+              "determinant_abs_upper": "3489615/262144",
+              "min_projection": "2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "803221549056/17088577655435",
+              "determinant_abs_upper": "196099011/14417920",
+              "min_projection": "6773/1024",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "6773/1024",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "6510464385024/85442888277175",
+              "determinant_abs_upper": "397367211/18022400",
+              "min_projection": "6773/1024",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "6773/1024",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "27645813/10485760",
+              "determinant_abs_upper": "27645813/1310720",
+              "min_projection": "2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "27645813/10485760",
+          "normal_offset_status": "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1",
+          "profile_samples_rz_mm": [
+            [
+              49.68,
+              74.0
+            ],
+            [
+              49.0453435461172,
+              75.34585807905599
+            ],
+            [
+              46.48223347171915,
+              78.45118712684098
+            ],
+            [
+              40.86648512585256,
+              84.36656980874102
+            ],
+            [
+              33.85087923763544,
+              91.63343019125898
+            ],
+            [
+              28.441102213242054,
+              97.54881287315902
+            ],
+            [
+              26.22824619965199,
+              100.65414192094401
+            ],
+            [
+              26.0,
+              102.0
+            ]
+          ],
+          "region": "shoulder",
+          "semantic": "outer_shoulder",
+          "strict_projection_w": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "26",
+            "r_min": "26",
+            "z_max": "120",
+            "z_min": "102"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "0",
+              "determinant_abs_upper": "0",
+              "min_projection": "9/2",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "9/2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "0",
+              "determinant_abs_upper": "0",
+              "min_projection": "9/2",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "9/2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "0",
+              "determinant_abs_upper": "0",
+              "min_projection": "9/2",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "9/2",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "0",
+              "determinant_abs_upper": "0",
+              "min_projection": "9/2",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "9/2",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": "9",
+          "curvature_target_status": "BOUND_PROVES_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "0",
+          "normal_offset_status": "BOUND_PROVES_LOCAL_OFFSET_REGULARITY",
+          "profile_samples_rz_mm": [
+            [
+              26.0,
+              102.0
+            ],
+            [
+              26.0,
+              104.57142857142857
+            ],
+            [
+              26.0,
+              107.14285714285714
+            ],
+            [
+              26.0,
+              109.71428571428571
+            ],
+            [
+              26.0,
+              112.28571428571429
+            ],
+            [
+              26.0,
+              114.85714285714286
+            ],
+            [
+              26.0,
+              117.42857142857143
+            ],
+            [
+              26.0,
+              120.0
+            ]
+          ],
+          "region": "neck",
+          "semantic": "outer_neck",
+          "strict_projection_w": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "26",
+            "r_min": "49/2",
+            "z_max": "122",
+            "z_min": "120"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "3645/7168",
+              "determinant_abs_upper": "6615/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "405/224",
+              "determinant_abs_upper": "735/2048",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2239785/1103872",
+              "determinant_abs_upper": "580685/1441792",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "10935/7168",
+              "determinant_abs_upper": "19845/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": null,
+          "curvature_target_status": "REPORT_ONLY_NO_RADIUS_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "2239785/1103872",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              26.0,
+              120.0
+            ],
+            [
+              25.999488187016343,
+              120.49948818701634
+            ],
+            [
+              25.986847074166132,
+              120.98684707416614
+            ],
+            [
+              25.92165982832712,
+              121.42165982832712
+            ],
+            [
+              25.74820986882288,
+              121.74820986882288
+            ],
+            [
+              25.432710253137966,
+              121.93271025313797
+            ],
+            [
+              24.994413163611373,
+              121.99441316361137
+            ],
+            [
+              24.5,
+              122.0
+            ]
+          ],
+          "region": "lip_closure",
+          "semantic": "rim_outer_quadrant",
+          "strict_projection_w": [
+            "-1",
+            "1"
+          ]
+        },
+        {
+          "control_hull_rz_mm": {
+            "r_max": "49/2",
+            "r_min": "23",
+            "z_max": "122",
+            "z_min": "120"
+          },
+          "control_pole_count": 8,
+          "curvature_intervals": [
+            {
+              "curvature_upper_per_mm": "10935/7168",
+              "determinant_abs_upper": "19845/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "0",
+                "1/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "2239785/1103872",
+              "determinant_abs_upper": "580685/1441792",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/4",
+                "1/2"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "405/224",
+              "determinant_abs_upper": "735/2048",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "1/2",
+                "3/4"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            },
+            {
+              "curvature_upper_per_mm": "3645/7168",
+              "determinant_abs_upper": "6615/65536",
+              "min_projection": "7/8",
+              "parameter_interval": [
+                "3/4",
+                "1"
+              ],
+              "speed_lower_local_parameter": "7/12",
+              "status": "RATIONAL_BOUND"
+            }
+          ],
+          "curvature_target_radius_mm": null,
+          "curvature_target_status": "REPORT_ONLY_NO_RADIUS_TARGET",
+          "feature_hull_status": "BOUND_WITHIN_CASE_RADIAL_AND_HEIGHT_LIMITS",
+          "full_span_curvature_upper_per_mm": "2239785/1103872",
+          "normal_offset_status": "NOT_A_NORMAL_OFFSET_SPAN",
+          "profile_samples_rz_mm": [
+            [
+              24.5,
+              122.0
+            ],
+            [
+              24.005586836388627,
+              121.99441316361137
+            ],
+            [
+              23.567289746862034,
+              121.93271025313797
+            ],
+            [
+              23.25179013117712,
+              121.74820986882288
+            ],
+            [
+              23.07834017167288,
+              121.42165982832712
+            ],
+            [
+              23.013152925833868,
+              120.98684707416614
+            ],
+            [
+              23.000511812983657,
+              120.49948818701634
+            ],
+            [
+              23.0,
+              120.0
+            ]
+          ],
+          "region": "lip_closure",
+          "semantic": "rim_inner_quadrant",
+          "strict_projection_w": [
+            "-1",
+            "-1"
+          ]
+        }
+      ]
+    }
+  },
+  "global_minimum_wall_status": "UNKNOWN",
+  "inner_profile_status": "NOT_CONSTRUCTED_SOURCE_ONLY",
+  "phase": "requires_root_READY_before_call",
+  "sample_budget": {
+    "ceiling": 256,
+    "fixed_normal_offset_point_probes": 16,
+    "fixed_outer_spans": 16,
+    "fixed_profile_parameters": 128,
+    "total": 144
+  },
+  "source_sha256": {
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\whole_body_c2_profiles_20261006\\diagnostic_driver_source_only.py": "d1d327f298dad639e0529edf45d4a5d4c6a6fe6b7cf7ac2773a3fcd48adb66a7",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\whole_body_c2_profiles_20261006\\fixed_cases.json": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\whole_body_c2_profiles_20261006\\profile_design.py": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951"
+  },
+  "status": "PURE_MATH_OUTER_PROFILE_ONLY"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "vesselforge.whole_body_c3_readback_execution_receipt.v1",
+  "run": "run03",
+  "status": "COMPLETED",
+  "argv": [
+    "-B",
+    "vesselforge/tmp/review_20261006/whole_body_c3_independent/audit_saved_output.py"
+  ],
+  "runtime": "third_party/vesselforge-runtime/venv/Scripts/python.exe",
+  "exit_code": 0,
+  "elapsed_ms": 94.796,
+  "stdout_path": "vesselforge/tmp/review_20261006/whole_body_c3_independent/readback_run03_stdout.txt",
+  "stdout_bytes": 626,
+  "stderr_path": "vesselforge/tmp/review_20261006/whole_body_c3_independent/readback_run03_stderr.txt",
+  "stderr_bytes": 0,
+  "worker_source_sha256": "a9dca7c268405d6799890d68acfe1e8c62167a1067d9afe66d601181c1eca8cc",
+  "input_json_sha256": "eb60138fc559d5a06ab2b4febf82fdc6654e6bbeab84f05f847c65934ffbbd4f",
+  "input_png_sha256": "118fae2c92c679fcd45409462ed6638d6d4043711ae8995513e6fe7813d58eda",
+  "curve_constructor": "NOT_CALLED",
+  "sampling": "NOT_CALLED",
+  "cad": "NOT_CALLED",
+  "solver": "NOT_CALLED"
+}

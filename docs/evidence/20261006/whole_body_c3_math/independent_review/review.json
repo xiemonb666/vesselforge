@@ -1,0 +1,52 @@
+{
+  "schema": "vesselforge.whole_body_c3_independent_review.v1",
+  "status": "BLOCKED_OUTPUT_ROOT_ESCAPES_WORKSPACE",
+  "scope": "read-only static source/design review; no curve construction, sampling, plot, CAD, STEP, or solver",
+  "freeze_sha256": "6233665f3aff3b38f646db6562bfca8bf1e24c26ee02d4afd9d7325f3bcb0ab2",
+  "pins_verified": {
+    "profile_design.py": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951",
+    "fixed_cases.json": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "DESIGN_PROPOSAL.md": "8b5c8b7e78c8d2e245f9ade1498e3dd3c5f69b0a7a82eaf593e3ea49b1b7dbbf",
+    "CONTROL_HULL_DESIGN.md": "9fab758e2bc43926f6fe2e82b8ee6b65e4d3fdbaebbca8da84e29f5feb0f4a2b",
+    "diagnostic_driver_source_only.py": "1ef8df70e7f6a8de24f5149603481b63a2f085f948c22193a10ff4c01b5d45c8",
+    "REVIEW_PLAN.md": "734be4d98d9aabc3e30e3385506a64b28cf31a376dd34e91d1b1e6538376811e",
+    "FREEZE_MANIFEST.json": "6233665f3aff3b38f646db6562bfca8bf1e24c26ee02d4afd9d7325f3bcb0ab2"
+  },
+  "blocking_finding": {
+    "file": "vesselforge/experiments/whole_body_c2_profiles_20261006/diagnostic_driver_source_only.py",
+    "line": 25,
+    "expression": "REPO_ROOT = HERE.parents[3]",
+    "actual_parent_index": 3,
+    "workspace_root_parent_index": 2,
+    "effect": "OUTPUT_ROOT resolves under Desktop\\tmp rather than ShardForge\\tmp and therefore escapes the workspace/pinned plan output path",
+    "required_action": "correct the root depth and issue a new freeze"
+  },
+  "math_review": {
+    "degree7_endpoint_jet_formula": "STATICALLY_ACCEPTED",
+    "shared_global_s_c3_contract": "STATICALLY_ACCEPTED_IF_REGULAR; no regularity results evaluated",
+    "jet_units": {
+      "position": "mm",
+      "d1": "dimensionless",
+      "d2": "1/mm",
+      "d3": "1/mm^2"
+    },
+    "general_parameter_curvature_and_offset_identities": "CORRECTED_AND_STATICALLY_ACCEPTED",
+    "strict_projection_plus_bernstein_curvature_bound_algorithm": "STATICALLY_ACCEPTED_AS_A_SUFFICIENT_METHOD; no poles or bounds evaluated",
+    "normal_offset": "3 mm Euclidean inward normal proposed only on listed outer side spans; full-span regularity is unproven",
+    "global_minimum_wall": "UNKNOWN",
+    "global_section_nonintersection": "UNKNOWN",
+    "inner_spans": "NOT_CONSTRUCTED_SOURCE_ONLY"
+  },
+  "fixed_budget": {
+    "outer_spans": 16,
+    "profile_sites": 128,
+    "pointwise_offset_probes": 16,
+    "total": 144,
+    "ceiling": 256
+  },
+  "height_semantics": {
+    "catalog_mouth_body_datums_mm": {"bowl": 90, "jar": 120},
+    "candidate_crest_bbox_heights_mm": {"bowl": 92, "jar": 122}
+  },
+  "execution": "NOT_RUN"
+}

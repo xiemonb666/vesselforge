@@ -1,0 +1,256 @@
+{
+  "schema": "vesselforge.whole_body_c3_saved_readback.v1",
+  "status": "PASS_SAVED_JSON_INTERNAL_ARITHMETIC_WITH_POINT_COUNTEREXAMPLE",
+  "input_sha256": {
+    "vesselforge\\experiments\\whole_body_c2_profiles_20261006\\fixed_cases.json": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "vesselforge\\experiments\\whole_body_c2_profiles_20261006\\diagnostic_driver_source_only.py": "d1d327f298dad639e0529edf45d4a5d4c6a6fe6b7cf7ac2773a3fcd48adb66a7",
+    "tmp\\review_20261006\\whole_body_c2_profiles_20261006\\FREEZE_MANIFEST.json": "4905c92d580aadd0b92d861d88fb49ab2d57ce680fbdf314ad1b47f8b8be775d",
+    "tmp\\review_20261006\\whole_body_c2_profiles_20261006\\fixed_outer_trial\\outer_math_diagnostic.json": "eb60138fc559d5a06ab2b4febf82fdc6654e6bbeab84f05f847c65934ffbbd4f",
+    "tmp\\review_20261006\\whole_body_c2_profiles_20261006\\fixed_outer_trial\\outer_profiles_equal_rz.png": "118fae2c92c679fcd45409462ed6638d6d4043711ae8995513e6fe7813d58eda"
+  },
+  "original_execution_receipt": {
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "elapsed_seconds": "2.147634",
+    "stdout_bytes": 0,
+    "stderr_bytes": 0,
+    "pre_post_source_pins_equal": true
+  },
+  "saved_output_status": {
+    "top_level": "PURE_MATH_OUTER_PROFILE_ONLY",
+    "global_minimum_wall": "UNKNOWN",
+    "inner_profile": "NOT_CONSTRUCTED_SOURCE_ONLY",
+    "cad_step_solver": "NOT_RUN"
+  },
+  "counts": {
+    "hull_pass_spans": 16,
+    "curvature_rational_intervals": 64,
+    "curvature_interval_statuses": {
+      "RATIONAL_BOUND": 64
+    },
+    "curvature_target_statuses": {
+      "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED": 10,
+      "BOUND_PROVES_TARGET": 2,
+      "REPORT_ONLY_NO_RADIUS_TARGET": 4
+    },
+    "side_span_offset_bound_statuses": {
+      "NOT_A_NORMAL_OFFSET_SPAN": 8,
+      "BOUND_PROVES_LOCAL_OFFSET_REGULARITY": 3,
+      "UNKNOWN_BOUND_DOES_NOT_PROVE_ABS_3KAPPA_LT_1": 5
+    },
+    "not_a_normal_offset_span_count": 8,
+    "designated_side_span_count": 8,
+    "side_span_offset_bound_pass_count": 3,
+    "side_span_offset_bound_unknown_count": 5,
+    "point_probes": 16,
+    "positive_point_tangent_factors": 16,
+    "outer_profile_sites": 128,
+    "total_fixed_evaluations": 144
+  },
+  "per_case": {
+    "bowl": {
+      "outer_spans": 8,
+      "profile_sites": 64,
+      "point_probes": 8,
+      "probes": [
+        {
+          "span": "outer_lower_body",
+          "t": "1/4",
+          "saved_curvature_per_mm": "-7521195248598391/1000000000000000000",
+          "saved_tangent_factor": "204512717149159/200000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_lower_body",
+          "t": "1/2",
+          "saved_curvature_per_mm": "15141480523080373/10000000000000000000",
+          "saved_tangent_factor": "9954575558430759/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_lower_body",
+          "t": "3/4",
+          "saved_curvature_per_mm": "833647248131779/50000000000000000",
+          "saved_tangent_factor": "9499811651120933/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_mid_body",
+          "t": "1/4",
+          "saved_curvature_per_mm": "2583708763061863/250000000000000000",
+          "saved_tangent_factor": "151405546069259/156250000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_mid_body",
+          "t": "1/2",
+          "saved_curvature_per_mm": "21095097759103497/5000000000000000000",
+          "saved_tangent_factor": "9873429413445379/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_mid_body",
+          "t": "3/4",
+          "saved_curvature_per_mm": "530865993555349/50000000000000000",
+          "saved_tangent_factor": "968148040386679/1000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_apex_in",
+          "t": "1/2",
+          "saved_curvature_per_mm": "13336538600011993/1000000000000000000",
+          "saved_tangent_factor": "239997596049991/250000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_apex_out_to_mouth",
+          "t": "1/2",
+          "saved_curvature_per_mm": "0",
+          "saved_tangent_factor": "1",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        }
+      ]
+    },
+    "jar": {
+      "outer_spans": 8,
+      "profile_sites": 64,
+      "point_probes": 8,
+      "probes": [
+        {
+          "span": "outer_body_to_apex",
+          "t": "1/4",
+          "saved_curvature_per_mm": "9175293009037149/500000000000000000",
+          "saved_tangent_factor": "9449482419457771/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_body_to_apex",
+          "t": "1/2",
+          "saved_curvature_per_mm": "8166284784221243/5000000000000000000",
+          "saved_tangent_factor": "9951002291294673/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_body_to_apex",
+          "t": "3/4",
+          "saved_curvature_per_mm": "5451717586644053/500000000000000000",
+          "saved_tangent_factor": "9672896944801357/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_apex_to_shoulder",
+          "t": "1/4",
+          "saved_curvature_per_mm": "11222216144789537/100000000000000000",
+          "saved_tangent_factor": "3316667578281569/5000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_apex_to_shoulder",
+          "t": "1/2",
+          "saved_curvature_per_mm": "2879520000747129/200000000000000000",
+          "saved_tangent_factor": "956807199988793/1000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_apex_to_shoulder",
+          "t": "3/4",
+          "saved_curvature_per_mm": "-138711277876859/5000000000000000",
+          "saved_tangent_factor": "10832267667261153/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_shoulder",
+          "t": "1/2",
+          "saved_curvature_per_mm": "-7480332028798641/10000000000000000000",
+          "saved_tangent_factor": "10022440996086397/10000000000000000",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        },
+        {
+          "span": "outer_neck",
+          "t": "1/2",
+          "saved_curvature_per_mm": "0",
+          "saved_tangent_factor": "1",
+          "factor_identity_verified": true,
+          "normal_unit_verified": true,
+          "distance_mm": "3"
+        }
+      ]
+    }
+  },
+  "point_counterexample": {
+    "family": "jar",
+    "span": "outer_apex_to_shoulder",
+    "t": "1/4",
+    "saved_kappa_per_mm": "11222216144789537/100000000000000000",
+    "radius_target_mm": "9",
+    "local_radius_from_saved_probe_mm": "8.910895914834958",
+    "comparison": "KAPPA_EXCEEDS_1_OVER_9; SAVED_POINT_COUNTEREXAMPLE_TO_9_MM_RADIUS_FLOOR",
+    "saved_span_target_status": "UNKNOWN_BOUND_TOO_LOOSE_OR_TARGET_NOT_PROVED",
+    "saved_offset_factor": "0.6633335156563138",
+    "scope": "pointwise counterexample only; does not bound the complete span or prove global wall behavior"
+  },
+  "interpretation": [
+    "All 16 hull and 64 rational-interval statuses agree with the saved check structure; no curve was reconstructed in this readback.",
+    "The eight listed offset spans split into three full-span bounds that prove local regularity and five UNKNOWN bounds.",
+    "All 16 saved point factors are positive and internally satisfy factor=1-3*kappa; point probes cannot prove span-wide regularity.",
+    "The jar outer_apex_to_shoulder t=1/4 saved probe has curvature greater than 1/9 per mm, directly contradicting its 9 mm minimum-radius target at that point, although the span-level saved status is UNKNOWN.",
+    "Global minimum wall, section self-intersection, and physical qualification remain UNKNOWN; the inner profile is unconstructed."
+  ],
+  "png_visual_readback": {
+    "sha256": "118fae2c92c679fcd45409462ed6638d6d4043711ae8995513e6fe7813d58eda",
+    "observation": "equal-scale two-panel bowl/jar outer meridian plot; labels readable; math-source visualization only; no inner profile or CAD evidence"
+  },
+  "reviewer_execution_history": [
+    {
+      "run": "run01",
+      "exit_code": 1,
+      "elapsed_ms": 89.05,
+      "reason": "reviewer gate mistakenly applied the side-span count to all spans, including non-offset spans; no candidate conclusion follows"
+    },
+    {
+      "run": "run02",
+      "exit_code": 1,
+      "elapsed_ms": 87.431,
+      "reason": "all saved-data assertions completed; report serialization failed on Decimal receipt metadata"
+    },
+    {
+      "run": "run03",
+      "exit_code": 0,
+      "elapsed_ms": 94.796,
+      "stdout_bytes": 626,
+      "stderr_bytes": 0,
+      "status": "COMPLETED"
+    }
+  ],
+  "execution": "READ_ONLY_SAVED_JSON_AND_SOURCE_METADATA; NO_CURVE_CONSTRUCTOR; NO_SAMPLING; NO_CAD; NO_SOLVER"
+}
