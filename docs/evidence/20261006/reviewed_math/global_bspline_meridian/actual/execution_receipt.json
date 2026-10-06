@@ -1,0 +1,39 @@
+{
+  "schema": "vesselforge.global_bspline_meridian.minimum_jerk_execution_receipt.v1",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import sys,json; sys.path.insert(0,r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_bspline_meridian_20261006\"); from bspline_minimum_jerk_driver import run_fixed_minimum_jerk_source_plan; r=run_fixed_minimum_jerk_source_plan(root_ready=True); s={n:{\"control_point_count\":len(c[\"control_points_rz_mm\"]),\"equalities_exact\":c[\"all_nine_equalities_exact\"],\"strict_inequality_statuses\":[x[\"strict_status\"] for x in c[\"strict_linear_inequalities\"]],\"all_C4\":c[\"geometry\"][\"all_C4\"],\"hull_certificate_statuses\":[x[\"hull_certificate_status\"] for x in c[\"geometry\"][\"spans\"]],\"radius_statuses\":{k:[x[\"radius_screens\"][k][\"status\"] for x in c[\"geometry\"][\"spans\"]] for k in (\"body_shoulder\",\"base_turn_unassigned\")}} for n,c in r[\"cases\"].items()}; print(json.dumps({\"status\":r[\"status\"],\"families\":s},separators=(\",\",\":\")))"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "runtime": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "root_ready": true,
+  "timeout_seconds": 10,
+  "json_byte_limit": 8388608,
+  "started": true,
+  "timed_out": false,
+  "elapsed_ms": 208.764,
+  "exit_code": 0,
+  "stdout": "{\"status\":\"EXACT_RATIONAL_MINIMUM_JERK_RESULTS_REQUIRE_REVIEW\",\"families\":{\"bowl\":{\"control_point_count\":11,\"equalities_exact\":true,\"strict_inequality_statuses\":[\"PASS\",\"PASS\",\"PASS\",\"PASS\"],\"all_C4\":true,\"hull_certificate_statuses\":[\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\"],\"radius_statuses\":{\"body_shoulder\":[\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\"],\"base_turn_unassigned\":[\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\"]}},\"jar\":{\"control_point_count\":11,\"equalities_exact\":true,\"strict_inequality_statuses\":[\"PASS\",\"PASS\",\"PASS\",\"PASS\"],\"all_C4\":true,\"hull_certificate_statuses\":[\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\",\"PROVED_BY_CONTROL_HULL\"],\"radius_statuses\":{\"body_shoulder\":[\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\"],\"base_turn_unassigned\":[\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"PROVED_RADIUS_SCREEN_ON_CLOSED_SPAN\",\"POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT\"]}}}}\r\n",
+  "stderr": "",
+  "pre_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "post_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "source_or_case_pin_changes": [],
+  "output_json": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_exact_result.json",
+  "output_json_bytes": 129016,
+  "output_json_sha256": "06c714ff30e8f36c60e586e07670510d539b844ec434772a5d93b749612a6f65",
+  "output_within_8mib": true
+}
