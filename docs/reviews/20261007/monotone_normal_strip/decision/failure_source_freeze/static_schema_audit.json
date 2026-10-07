@@ -1,0 +1,666 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.static_schema_audit.v1",
+  "source_hash": "96951a1fa9b188ee5e192f9a05b23f11152a196c37e4824b002737b4b76cfad0",
+  "source_pins_snapshot_hash": "fbc4c051a8a94e914623e64964604cbcc6d9479c5fe9d9287a5c427b531920a8",
+  "case_hash": "9e7b9e7945a14b3dd45517c75a672607cf0923cdac5c723ab614fa0162fc127b",
+  "source_executed": false,
+  "run_saved_certificate_called": false,
+  "fraction_geometry_calculation_performed": false,
+  "input_hashes_match_pins": {
+    "normal_offset_result": true,
+    "outer_candidate_result": true,
+    "independent_audit": true,
+    "independent_saved_offset_stdout": true,
+    "normal_offset_run_receipt": true,
+    "frozen_driver": true,
+    "normal_offset_kernel": true,
+    "constrained_source": true,
+    "design_cases": true,
+    "fixed_cases": true
+  },
+  "ast_field_access_inventory": {
+    "count": 121,
+    "missing": [],
+    "conditional_kind_specific_paths": [
+      {
+        "path": "checks.r_nonnegative",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 12,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.zprime_nonnegative",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 12,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.Q_nonnegative",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 12,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.regular_tangent_v_positive",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 12,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.flat_base_rprime_nonnegative",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 1,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.z_strictly_increasing",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 10,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.curvature_factor_lower_bound",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 10,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.flat_base_zprime_zero",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 1,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.flat_base_r_monotone",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 1,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.straight_curvature_factor",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 2,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.straight_neck_rprime_zero",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 1,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      },
+      {
+        "path": "checks.straight_neck_z_monotone",
+        "present": true,
+        "conditional_by_span_kind": true,
+        "matching_objects": 1,
+        "root_objects": 12,
+        "detail": "present in applicable check map(s)"
+      }
+    ]
+  },
+  "pre_fix_scope_assertion_evaluated_from_ast": {
+    "passed": false,
+    "actual_top_scope": "jar_meridian_2d_only",
+    "actual_study_scope": "jar_meridian_2d_curve_only",
+    "reason": "one chained equality reused the curve-only literal for both distinct scope fields"
+  },
+  "literal_checks": [
+    {
+      "label": "offset.status",
+      "pass": true,
+      "actual": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+      "expected": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE"
+    },
+    {
+      "label": "offset.study_certificate_status",
+      "pass": true,
+      "actual": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+      "expected": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE"
+    },
+    {
+      "label": "offset.study.status",
+      "pass": true,
+      "actual": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+      "expected": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE"
+    },
+    {
+      "label": "offset.scope",
+      "pass": true,
+      "actual": "jar_meridian_2d_only",
+      "expected": "jar_meridian_2d_only"
+    },
+    {
+      "label": "offset.study.scope",
+      "pass": true,
+      "actual": "jar_meridian_2d_curve_only",
+      "expected": "jar_meridian_2d_curve_only"
+    },
+    {
+      "label": "offset.normal_strip_global_injectivity",
+      "pass": true,
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN"
+    },
+    {
+      "label": "offset.global_wall_status",
+      "pass": true,
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN"
+    },
+    {
+      "label": "upstream.sides_R9_pass",
+      "pass": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "label": "upstream.spans_regular_pass",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "upstream.C4_joins_pass",
+      "pass": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "label": "upstream.features_pass",
+      "pass": true,
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "upstream.upstream_r9_all_side_spans_pass",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "upstream.upstream_regular_all_spans_pass",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "audit.status",
+      "pass": true,
+      "actual": "PASS_RECONSTRUCTION",
+      "expected": "PASS_RECONSTRUCTION"
+    },
+    {
+      "label": "stdout.status",
+      "pass": true,
+      "actual": "INDEPENDENT_SAVED_OFFSET_AUDIT_PASS",
+      "expected": "INDEPENDENT_SAVED_OFFSET_AUDIT_PASS"
+    },
+    {
+      "label": "stdout.inputs_unchanged",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "stdout.span_count",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "stdout.joins_checked",
+      "pass": true,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "label": "stdout.result_sha256",
+      "pass": true,
+      "actual": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+      "expected": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    {
+      "label": "stdout.outer_result_sha256",
+      "pass": true,
+      "actual": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "expected": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    {
+      "label": "stdout.audit_sha256",
+      "pass": true,
+      "actual": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+      "expected": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    {
+      "label": "stdout.receipt_sha256",
+      "pass": true,
+      "actual": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d",
+      "expected": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d"
+    },
+    {
+      "label": "stdout.global_wall",
+      "pass": true,
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN"
+    },
+    {
+      "label": "stdout.normal_strip_global_injectivity",
+      "pass": true,
+      "actual": "UNKNOWN",
+      "expected": "UNKNOWN"
+    },
+    {
+      "label": "audit_binds.outer_candidate_result",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "audit_binds.frozen_driver",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "audit_binds.constrained_source",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "audit_binds.design_cases",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "audit_binds.fixed_cases",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.family",
+      "pass": true,
+      "actual": "jar",
+      "expected": "jar"
+    },
+    {
+      "label": "outer.all_spans_regular_proved",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.all_C4",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.all_hulls_proved",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.all_features_exact",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.all_strict_point_checks_pass",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "outer.global_normal_wall",
+      "pass": true,
+      "actual": "UNKNOWN_NOT_COMPUTED",
+      "expected": "UNKNOWN_NOT_COMPUTED"
+    },
+    {
+      "label": "outer.inner_profile",
+      "pass": true,
+      "actual": "NOT_CONSTRUCTED",
+      "expected": "NOT_CONSTRUCTED"
+    },
+    {
+      "label": "outer.straight_meridian_exclusions_proved",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "label": "case.offset_t_mm",
+      "pass": true,
+      "actual": "3/1",
+      "expected": "3/1"
+    },
+    {
+      "label": "contract.side_radius_bound_mm",
+      "pass": true,
+      "actual": "9/1",
+      "expected": "9/1"
+    },
+    {
+      "label": "contract.side_lambda_lower_bound",
+      "pass": true,
+      "actual": "2/3",
+      "expected": "2/3"
+    },
+    {
+      "label": "contract.normal_radius_polynomial_degree",
+      "pass": true,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "label": "contract.normal_radius_coefficient_count",
+      "pass": true,
+      "actual": 19,
+      "expected": 19
+    },
+    {
+      "label": "contract.r9_polynomial_degree",
+      "pass": true,
+      "actual": 24,
+      "expected": 24
+    },
+    {
+      "label": "contract.r9_coefficient_count",
+      "pass": true,
+      "actual": 25,
+      "expected": 25
+    },
+    {
+      "label": "case.span_count",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "case.break_count",
+      "pass": true,
+      "actual": 13,
+      "expected": 13
+    },
+    {
+      "label": "case.span_kind_count",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "case.rprime_sign_span_count",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "case.zprime_sign_span_count",
+      "pass": true,
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "fixture.nonmonotone.expected",
+      "pass": true,
+      "actual": "UNKNOWN_GATE_ONLY",
+      "expected": "UNKNOWN_GATE_ONLY"
+    },
+    {
+      "label": "fixture.positive.expected",
+      "pass": true,
+      "actual": "PASS_ANALYTIC",
+      "expected": "PASS_ANALYTIC"
+    }
+  ],
+  "per_span_static_schema": [
+    {
+      "index": 0,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "base_status_literals": true,
+      "base_extra_leaf_pass": true,
+      "outer_base_exclusion": true
+    },
+    {
+      "index": 1,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 2,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 3,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 4,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 5,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 6,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 7,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 8,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 9,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 10,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "side_status_literals": true,
+      "P_R_coefficient_count_25": true,
+      "expected_pole_sign_entries_present": true
+    },
+    {
+      "index": 11,
+      "offset_span_index_matches": true,
+      "outer_span_index_matches": true,
+      "kind_matches_case": true,
+      "controls_shape_6x2": true,
+      "coordinate_pole_lengths_6": true,
+      "Q_coefficient_count_19": true,
+      "offset_base_check_keys": true,
+      "leaf_statuses_pass": true,
+      "outer_regular_metadata": true,
+      "neck_status_literals": true,
+      "outer_neck_exclusion": true
+    }
+  ],
+  "saved_join_static_schema": {
+    "count_11": true,
+    "all_saved_exact_C4": true,
+    "case_break_locations_count": true
+  },
+  "required_endpoint_key_presence": {
+    "outer_axis_start_r": true,
+    "base_z": true,
+    "base_side_seam_r": true,
+    "base_side_seam_z": true,
+    "mouth_r": true,
+    "mouth_z": true,
+    "inner_mouth_r_after_3mm_normal": true
+  },
+  "raw_endpoint_values": {
+    "outer_axis_start_r": "0/1",
+    "base_z": "0/1",
+    "base_side_seam_r": "18/1",
+    "base_side_seam_z": "0/1",
+    "mouth_r": "26/1",
+    "mouth_z": "120/1"
+  },
+  "raw_endpoint_text_matches": {
+    "outer_axis_start_r": true,
+    "base_z": true,
+    "base_side_seam_r": true,
+    "base_side_seam_z": true,
+    "mouth_r": true,
+    "mouth_z": true
+  },
+  "failure_capture_status": {
+    "global_minimum_euclidean_wall": "UNKNOWN",
+    "native_brep": "UNKNOWN",
+    "reason": "unexpected local-offset result scope",
+    "status": "UNKNOWN"
+  },
+  "not_checked_by_static_audit": [
+    "exact pole signs",
+    "exact local R9 coefficient equality",
+    "actual-control C4 jet equality",
+    "fixed-slice theorem"
+  ]
+}

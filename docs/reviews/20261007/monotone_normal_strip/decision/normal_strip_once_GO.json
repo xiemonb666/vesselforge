@@ -1,0 +1,18 @@
+{
+  "authorization": "ROOT_20261007_MONOTONE_NORMAL_STRIP_ONCE",
+  "global_minimum_euclidean_wall": "UNKNOWN",
+  "material": "UNKNOWN",
+  "native_brep": "UNKNOWN",
+  "output_tree_bytes": 20003,
+  "output_tree_limit_bytes": 4194304,
+  "receipt_path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_01/receipt.json",
+  "receipt_sha256": "65c0b5e5509ae454b26fb5f163ff3a942de1f73a5ed132858c2a42dcf536b7db",
+  "result_status": "UNKNOWN",
+  "return_code": 0,
+  "root_ready_argument": true,
+  "schema": "vesselforge.monotone_normal_strip.root_go_record.v1",
+  "source_pins_state": "SOURCE_ONLY_READY_AWAITING_ROOT_GO",
+  "source_pins_were_modified": false,
+  "timed_out": false,
+  "verifier_call_count": 1
+}

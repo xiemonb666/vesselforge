@@ -1,0 +1,92 @@
+{
+  "schema": "vesselforge.monotone_normal_strip_decision.v1",
+  "state": "PROOF_DESIGN_ONLY_ROOT_DECISION_REQUIRED",
+  "candidate": "actual jar outer meridian with exact 3 mm inward normal offset",
+  "execution": {
+    "geometry_or_curve_computed": false,
+    "author_code_imported": false,
+    "optimizer_or_cad_run": false,
+    "tests_run": false,
+    "read_scope": "saved exact JSON metadata and frozen source mathematics only"
+  },
+  "pins": {
+    "normal_offset_json": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+      "status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+      "spans": 12,
+      "global_strip": "UNKNOWN",
+      "global_wall": "UNKNOWN"
+    },
+    "curvature_json": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "side_R9": "10/10 proved",
+      "regular_spans": "12/12 proved",
+      "C4_joins": "11/11 proved",
+      "global_normal_wall": "UNKNOWN_NOT_COMPUTED"
+    },
+    "frozen_driver_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "normal_offset_kernel_sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114"
+  },
+  "exact_derivative_pole_signs": {
+    "definition": "sign of degree-scaled consecutive rational Bezier differences divided by positive span width",
+    "span_0_flat_base": {"z_prime": "00000", "r_prime": "+++++"},
+    "span_1_first_side": {"z_prime": "0000+", "r_prime": "+++++"},
+    "spans_2_to_4_side": {"z_prime": "+++++", "r_prime": "+++++"},
+    "span_5_side": {"z_prime": "+++++", "r_prime": "++++0"},
+    "span_6_side": {"z_prime": "+++++", "r_prime": "0----"},
+    "spans_7_to_9_side": {"z_prime": "+++++", "r_prime": "-----"},
+    "span_10_side": {"z_prime": "+++++", "r_prime": "-0000"},
+    "span_11_straight_neck": {"z_prime": "+++++", "r_prime": "00000"},
+    "deduction": "All side/neck z' Bernstein poles are nonnegative with at least one positive per span, hence z'>0 on every open span. Base z'=0 identically and r'>0."
+  },
+  "proof": {
+    "map": "F(u,s)=(r-s*z'/v,z+s*r'/v), v=sqrt(r'^2+z'^2)",
+    "local_factor": "lambda=1-s*kappa>=2/3 on side and 1 on straight base/neck",
+    "fixed_depth_height_derivative": "Z_u=lambda*z'>=0; strictly positive on side/neck open spans",
+    "base_exception": "F=(r,z_base+s); fixed height gives one depth and strictly increasing radius",
+    "fixed_height_radius_derivative": "dR/ds|Z=-v/z'<0 on side/neck where z'>0",
+    "connected_depth_range": "z_base+s<=Z<=z_mouth; exact saved endpoint predicate z_mouth-z_base>3 mm",
+    "seams": "exact C4 at u=1/12 and u=11/12; zero z' at the base-side endpoint handled by continuity",
+    "conclusion_if_premises_hold": "F is injective on the complete meridian rectangle; compactness gives a Jordan image boundary"
+  },
+  "endpoint_and_claim_gates": {
+    "outer_start_r_zero": true,
+    "terminal_neck_radius_gt_3mm": true,
+    "base_to_mouth_height_gap_gt_3mm": true,
+    "axis_revolution": "2D strip remains injective; angular orbit collapses, so a deliberate cap/vertex is required",
+    "top_fiber": "F(u_top,s)=(r_mouth-s,z_mouth); closed-mother proof requires actual lip to equal this fiber or a separate closure proof",
+    "minimum_euclidean_wall": "UNKNOWN until complete closed-boundary nearest-foot/corner checks",
+    "native_brep": "UNKNOWN until axis/lip/base sewing and kernel validity check"
+  },
+  "minimal_checker": {
+    "primary_work": "12 spans x 5 exact Fraction differences plus existing exact C4/local-factor/regularity flags and endpoint predicates",
+    "2d_cell_pair_search_required": false,
+    "fallback_if_sign_vector_mixed": "exact 1D Bernstein subdivision, proposed maximum depth 8 and 64 total leaves",
+    "unresolved_or_extra_flat_span": "UNKNOWN, not geometry failure"
+  },
+  "fixtures": [
+    {
+      "id": "positive_base_side_neck_strip",
+      "expected": "injectivity proof closes when there is exactly one radial flat base, strictly rising side/neck, correct seams and endpoint fibers"
+    },
+    {
+      "id": "nonlocal_facing_branch_collision",
+      "expected": "exact distinct-parameter collision despite lambda>=2/3; monotonicity gate rejects the proof and collision is reported"
+    },
+    {
+      "id": "mixed_bernstein_positive_polynomial",
+      "expected": "UNKNOWN until exact 1D subdivision proves positivity; mixed coefficients alone are not a counterexample"
+    }
+  ],
+  "comparison": {
+    "monotone_route": "preferred for this candidate; exact one-dimensional sign and endpoint checks replace broad 2D pair search",
+    "jordan_interval_route": "more general fallback for nonmonotone z, extra plateaus, or non-normal closure patches",
+    "neither_route_proves_without_extra_work": [
+      "minimum Euclidean wall against lip/base/cap endpoints",
+      "native closed B-rep validity",
+      "material or physics readiness"
+    ]
+  }
+}

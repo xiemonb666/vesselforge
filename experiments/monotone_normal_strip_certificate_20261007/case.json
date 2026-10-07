@@ -1,0 +1,49 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.case.v1",
+  "candidate": "jar saved outer meridian, degree-5 exact Bezier spans",
+  "offset_t_mm": "3/1",
+  "span_count": 12,
+  "expected_span_kinds": ["flat_base", "side", "side", "side", "side", "side", "side", "side", "side", "side", "side", "straight_neck"],
+  "expected_breaks": ["0/1", "1/12", "1/6", "1/4", "1/3", "5/12", "1/2", "7/12", "2/3", "3/4", "5/6", "11/12", "1/1"],
+  "expected_derivative_pole_signs": {
+    "rprime": ["+++++", "+++++", "+++++", "+++++", "+++++", "++++0", "0----", "-----", "-----", "-----", "-0000", "00000"],
+    "zprime": ["00000", "0000+", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++"]
+  },
+  "required_exact_endpoints_mm": {
+    "outer_axis_start_r": "0/1",
+    "base_z": "0/1",
+    "base_side_seam_r": "18/1",
+    "base_side_seam_z": "0/1",
+    "mouth_r": "26/1",
+    "mouth_z": "120/1",
+    "inner_mouth_r_after_3mm_normal": "23/1"
+  },
+  "local_certificate_contract": {
+    "side_radius_bound_mm": "9/1",
+    "side_lambda_lower_bound": "2/3",
+    "straight_base_neck_curvature": "0/1",
+    "normal_radius_polynomial_degree": 18,
+    "normal_radius_coefficient_count": 19,
+    "r9_polynomial_degree": 24,
+    "r9_coefficient_count": 25
+  },
+  "fixtures": {
+    "positive_straight_vertical": {
+      "radius_mm": "4/1",
+      "height_per_global_u_mm": "1/1",
+      "expected": "PASS_ANALYTIC",
+      "scope": "single synthetic line lemma only"
+    },
+    "nonmonotone_z_gate": {
+      "zprime_bernstein_coefficients": ["1/1", "-1/1"],
+      "expected": "UNKNOWN_GATE_ONLY",
+      "scope": "gate fixture only; not a full profile and not a self-intersection claim"
+    }
+  },
+  "claim_limits": {
+    "actual_cad_lip_asserted": false,
+    "global_minimum_euclidean_wall": "UNKNOWN",
+    "native_brep": "UNKNOWN",
+    "physics": "UNKNOWN"
+  }
+}

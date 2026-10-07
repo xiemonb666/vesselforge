@@ -1,0 +1,11 @@
+--- vesselforge/tmp/review_20261007/monotone_normal_strip_decision/failure_source_freeze/monotone_normal_strip_certificate.pre_scope_alias_fix.py
++++ vesselforge/experiments/monotone_normal_strip_certificate_20261007/monotone_normal_strip_certificate.py
+@@ -112,7 +112,7 @@
+     outer = json.loads(data["outer_result"].decode("utf-8"))["families"]["jar"]["exact_geometry_certificate"]
+     audit = json.loads(data["independent_audit"].decode("utf-8"))
+     stdout = json.loads(data["independent_stdout"].decode("utf-8"))
+-    _need(offset["status"] == offset["study_certificate_status"] == offset["study"]["status"] == "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE" and offset["scope"] == offset["study"]["scope"] == "jar_meridian_2d_only", "unexpected local-offset result scope")
++    _need(offset["status"] == offset["study_certificate_status"] == offset["study"]["status"] == "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE" and offset["scope"] == "jar_meridian_2d_only" and offset["study"]["scope"] == "jar_meridian_2d_curve_only", "unexpected local-offset result scope")
+     _need(offset["normal_strip_global_injectivity"] == "UNKNOWN" and offset["global_wall_status"] == "UNKNOWN", "saved local result has unexpected global claim")
+     upstream = offset["upstream_evidence"]
+     _need(upstream["sides_R9_pass"] == 10 and upstream["spans_regular_pass"] == 12 and upstream["C4_joins_pass"] == 11 and upstream["features_pass"] == 5, "pinned outer evidence counts mismatch")

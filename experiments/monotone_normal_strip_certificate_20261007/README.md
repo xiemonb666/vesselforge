@@ -1,0 +1,11 @@
+# Monotone normal-strip certificate — source only
+
+This is an inert, standard-library-only verifier for the fixed-height proof on the pinned jar meridian. It consumes saved exact JSON and source hashes; it does not import the curve author, optimization, CAD, or normal-offset modules, rebuild Bezier spans, or generate geometry.
+
+The theorem is candidate-specific. On the side and neck, exact nonnegative nonzero Bernstein poles prove `z'(u)>0` in each open span. For each side span, the verifier reconstructs `(r'^2+z'^2)^3-81*(r'z''-z'r'')^2` from the saved controls using exact rational Bernstein products, then matches all 25 coefficients to `h^6` times the frozen driver's global-u R9 coefficients. It also recomputes both endpoint jets through order four after dividing local derivatives by `h^k` at every actual-control join. The pinned curvature certificate gives `lambda=1-s*kappa>=2/3` for `0<=s<=3`; hence `Z_u=lambda*z'>0`. Along a fixed-height branch, exact differentiation gives `dR/ds|Z=-v/z'<0`. The unique flat base is handled separately: `F=(r,z_base+s)` with strictly increasing `r`. Exact endpoint values make the allowed depth range connected, and C4 seams preserve continuity. These facts prove injectivity of the complete 2D meridian map, conditional on the pinned R9/regularity premises and the mathematical endpoint normal fibers.
+
+The top edge reported by the verifier is the normal fiber from `(26,120)` to `(23,120)` in the meridian plane. This is a mathematical domain edge only; it does not assert that an actual CAD lip uses that edge. The axis edge is a valid 2D segment but collapses under revolution and needs deliberate cap/vertex topology.
+
+The output must keep global minimum Euclidean wall thickness, native B-rep, material, style, and physics as `UNKNOWN`. A nonmonotone-z gate returns `UNKNOWN_GATE_ONLY`; it is not an exact geometry failure. The optional analytic straight-vertical fixture checks only the single-span lemma.
+
+No run is enabled by default. `run_saved_certificate()` refuses to read files unless called with `root_ready=True` after separate root authorization. Importing the module is inert. Future execution is one-shot, read-only, bounded to 13 seconds and a 4 MiB serialized summary; it writes no result or marker. This source-only handoff itself did not call the verifier.
