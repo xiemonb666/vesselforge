@@ -1,0 +1,72 @@
+{
+  "freeze_id": "global_mesh_quality_candidate_20261005_v2bugfix",
+  "revision_tag": "v2bugfix",
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "state": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "status": "SOURCE_ONLY_V2BUGFIX_NOT_RUN",
+  "schema_version": 2,
+  "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+  "legacy_reader_compatibility": "UNKNOWN",
+  "parent_source_freeze_sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+  "run01_failure": {
+    "status": "UNKNOWN_OR_FAIL",
+    "receipt_sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+    "execution_record_sha256": "ae789cfcafe3fb9609e1f32cfffe4909743983b032d1a60492303d1d73af3268",
+    "source_snapshot_manifest_sha256": "b53d5ed3c45b6adaaacbd05c73d6f0332fe1f34dc812dfa052811e483df5c7da",
+    "color_diagnostic_record_sha256": "da86d166dc43d098f9000d928c73ddb8a2e9e787f722f0ff4c7c5b712b1ecbc9",
+    "candidate_arrays_written": false,
+    "focused_checks_written": false,
+    "actual_pngs_written": false
+  },
+  "color_provenance_fix": "Require local-B outer_base_linear_rgb shape, dtype, and byte identity with frozen baseline outer_color_linear_rgb. Keep pointwise continuous outer_color_linear_rgb and sRGB sample checks unchanged.",
+  "immutable_inputs": {
+    "run02_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_arrays_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "ornament_case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1"
+  },
+  "source_files": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "bytes": 34531
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+      "sha256": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+      "bytes": 7654
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+      "sha256": "645b7e29821a8a0c6287521984febf9f1f515775ec60a6246132d7b5a8f1a2af",
+      "bytes": 6880
+    }
+  ],
+  "preserved_run01_source_snapshot": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run01_failure/source_snapshot/",
+  "next_generation_directory": "UNASSIGNED_PENDING_ROOT_APPROVAL; MUST DIFFER FROM RUN01_FAILURE_DIRECTORY",
+  "fixed_parameters": {
+    "floor_grid_spacing_mm": 1.0,
+    "boundary_margin_mm": 0.4,
+    "boundary_vertex_count": 128,
+    "random_jitter": false,
+    "minimum_floor_Q": 0.35,
+    "maximum_floor_aspect": 5.0
+  },
+  "fixed_budgets": {
+    "new_vertices_max": 2500,
+    "output_faces_max": 45000,
+    "patch_records_max": 15000,
+    "patch_vertices_max": 60000,
+    "per_output_face_patches_max": 128,
+    "generation_wall_clock_seconds_max": 120,
+    "focused_checks_wall_clock_seconds_max": 120
+  },
+  "no_candidate_execution_before_root_review": true,
+  "note": "No generation retry is included in this source revision. The earlier run01 failure, source snapshot, and read-only color diagnosis are preserved separately."
+}

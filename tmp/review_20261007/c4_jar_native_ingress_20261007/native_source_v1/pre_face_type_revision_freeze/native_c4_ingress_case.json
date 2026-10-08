@@ -1,0 +1,123 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.case/1.0",
+  "status": "SOURCE_ONLY_WAITING_FOR_ROOT_REVIEW",
+  "execution_authorized": false,
+  "candidate_scope": "one pinned C4 jar meridian, one native revolved B-rep, one STEP export and one STEP import",
+  "candidate_claim": "native geometry and roundtrip diagnostics only; global wall, lip qualification, physics, and production readiness remain UNKNOWN",
+  "inputs": {
+    "outer_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    "independent_audit": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    "normal_offset_result": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    "normal_strip_result": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf"
+    },
+    "global_wall_result": {
+      "path": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/run01_capture/result.json",
+      "sha256": "2ed29f2581c49304581c36dfdf8fdda9d02b193c8078629202bc82bcefe727f0"
+    }
+  },
+  "geometry_source": {
+    "family": "jar",
+    "control_field": "families.jar.control_points_rz_mm",
+    "pole_count": 17,
+    "coordinate_encoding": "exact rational strings parsed as Fraction; convert to float only when filling OCP point/array values",
+    "degree": 5,
+    "weights": "17 exact unit weights",
+    "knots": "open uniform u in [0,1]; knot j/12 for j=0..12",
+    "multiplicities": [6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6],
+    "spans": 12,
+    "required_saved_evidence": {
+      "candidate_status": "GEOMETRY_ENGINEERING_CANDIDATE_ONLY",
+      "all_C4": true,
+      "C4_join_count": 11,
+      "regular_span_count": 12,
+      "side_R9_spans": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "independent_audit_status": "PASS_RECONSTRUCTION"
+    }
+  },
+  "native_route": {
+    "offset_api": "OCP.Geom.Geom_OffsetCurve(outer, +3.0, gp_Dir(0,1,0), False)",
+    "offset_sign_basis": "V=+Y and OCCT 7.9.3 T.Crossed(V) gives inward (-zprime,rprime) in (r,z)",
+    "retry_sign_flip_or_fit": false,
+    "outer_trim_roles": {
+      "outer_base": ["0", "1/12"],
+      "outer_side": ["1/12", "11/12"],
+      "outer_neck": ["11/12", "1"]
+    },
+    "inner_trim_roles_reversed": {
+      "inner_neck": ["11/12", "1"],
+      "inner_side": ["1/12", "11/12"],
+      "inner_base": ["0", "1/12"]
+    },
+    "lip_edge_rz_mm": [[26, 120], [23, 120]],
+    "axis_closure_rz_mm": [[0, 3], [0, 0]],
+    "section_plane": "global XZ; oriented plane normal -Y to match the outer-to-lip-to-inner-to-axis wire order",
+    "revolve_axis": "global +Z through origin",
+    "revolve_angle_radians": "2*pi",
+    "explicit_healing_or_autofix": false
+  },
+  "native_gates": {
+    "solids": 1,
+    "shells": 1,
+    "all_shells_closed": true,
+    "shape_valid": true,
+    "positive_signed_volume_mm3": true,
+    "finite_positive_surface_area_mm2": true,
+    "face_count": 7,
+    "semantic_face_roles": ["outer_base", "outer_side", "outer_neck", "inner_base", "inner_side", "inner_neck", "lip"],
+    "all_faces_valid_and_positive_area": true,
+    "axis_degenerate_edge": "record BRepPrimAPI_MakeRevol degeneracy/history; allow the section axis edge only if the complete solid and every face pass the gates above"
+  },
+  "finite_diagnostics": {
+    "stations_per_span": 13,
+    "total_station_evaluations": 156,
+    "method": "at identical exact global-u parameters, compare the analytic 3 mm normal target from outer D1 against the native Geom_OffsetCurve value and compare tangent directions",
+    "offset_target_residual_mm_max": 0.000001,
+    "endpoint_closure_mm_max": 0.000001,
+    "normal_deviation_degrees_max": 0.001,
+    "proof_scope": "finite kernel diagnostics only; no global native B-rep Hausdorff or wall proof"
+  },
+  "step_roundtrip": {
+    "export_count": 1,
+    "import_count": 1,
+    "exchange_units": "MM",
+    "bbox_per_bound_abs_delta_mm_max": 0.0000001,
+    "area_relative_delta_max": 0.00000001,
+    "volume_relative_delta_max": 0.00000001,
+    "required_face_role_inventory": "one unique geometric role for each of the seven native roles; roles arise from Generated(edge) history pre-export and geometry-based classification post-import, never face index",
+    "type_conversion": "record actual pre/post edge-curve and face-surface categories; type conversion is reported explicitly",
+    "claim_limit": "matching bounds/area/volume/role metrics do not prove full geometric equality"
+  },
+  "run_budget": {
+    "outer_wall_seconds": 60,
+    "worker_timeout_seconds": 55,
+    "persisted_output_limit_bytes_exclusive": 20971520,
+    "builds": 1,
+    "step_exports": 1,
+    "step_imports": 1,
+    "retry_count": 0,
+    "optimizer": false,
+    "mesh": false,
+    "solver": false,
+    "renderer": false,
+    "production_changes": false
+  },
+  "claim_limits": {
+    "ideal_2d_meridian_curve_pair_minimum": "EXACTLY_3_MM; scope is the pinned ideal curve pair only",
+    "native_global_minimum_wall": "UNKNOWN",
+    "normal_strip_to_native_brep_transfer": "UNKNOWN",
+    "lip_qualification": "UNKNOWN",
+    "revolved_surface_self_intersection_global_proof": "UNKNOWN",
+    "physics": "UNKNOWN"
+  }
+}

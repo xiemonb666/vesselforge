@@ -1,0 +1,22 @@
+{
+  "task": "VesselForge ornament_fields targeted pytest",
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tests\\test_ornament_fields.py"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "source_test_sha256_before": {
+    "test_sha256": "d9418859a219ade52eec2aa0586523dfea69692de20dc01f2e673995cdbba596",
+    "source_sha256": "c9d0f28af1f1681fb3e47217d2cfb823097b8199f0a075ce64ebf70572f2594c"
+  },
+  "source_test_sha256_after": {
+    "test_sha256": "d9418859a219ade52eec2aa0586523dfea69692de20dc01f2e673995cdbba596",
+    "source_sha256": "c9d0f28af1f1681fb3e47217d2cfb823097b8199f0a075ce64ebf70572f2594c"
+  },
+  "stdout_stderr": "....                                                                     [100%]\n4 passed in 1.62s",
+  "exit_code": 0
+}

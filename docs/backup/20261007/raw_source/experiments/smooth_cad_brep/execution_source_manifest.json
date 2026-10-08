@@ -1,0 +1,139 @@
+{
+  "actual_execution": {
+    "builder": {
+      "actual_source_path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/build_brep_candidate.py",
+      "exact_retained_copy": {
+        "bytes": 30933,
+        "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/build_brep_candidate.py",
+        "sha256": "dfdb781ca0549c0914b34c5c974455a2502d6f9215a731fa2475e15546f10019"
+      },
+      "historical_argv": [
+        "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+        "C:\\Users\\xiemo\\Desktop\\ShardForge\\relicweave-synlab\\tmp\\review_20261004\\implementation\\vf_brep_persistence\\native_brep_persistence\\build_brep_candidate.py"
+      ],
+      "historical_exit_code": 2,
+      "source_copy_is_byte_identical": true
+    },
+    "helper_fidelity_note": "The retained helper snapshot is the final helper after the trimmed-face diagnostic was appended. The original pre-build helper bytes were not preserved; portable helper source contains the build, projection, and preview code needed for future reproduction.",
+    "historical_report_source_hashes": {
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_physical_profile.py": "671783be3e17828ec5158fdfd57a4322bcf62e9ddb02f7f16162590a790f3761",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_physical_profile_report.json": "f362868b817996949a6281684db12f7d78c278cf0ccbfeaca81422b50741bf22",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_planar_offset.py": "049a9729910c88c44784114b424f9ff2b7da3c0b153211b37fb5def237902d49",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_planar_offset_report.json": "9dea4dab1db23ebb81025fe7ca9155b73e63e9cf8447a13461aa8e6b0803fefe",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_step_roundtrip_diagnostics.json": "d48180842576daa679e107d401d71e898d5e5cefde4f3b02784e4fd149b8dd2a",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_step_roundtrip_diagnostics.log": "8a344f8ce6b89a884fa3a48e6c9a89809b28a734c709d82a0ec0bf014f8e31ff",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate2_native_2d_offset_wall4/candidate2_step_roundtrip_diagnostics.py": "64d4f345d3ef3aa12ed8b39a16e32dc2479aba8029ce3893b6e6adc8b7e11061",
+      "relicweave-synlab/tmp/review_20261003/implementation/vf/smooth_cad/candidate_default_wall4/smooth_cad_spike_report.json": "d81606972c6453c4312b1b83b9e8d60d6603bc34ed3e4b6030ecd6c975b2687a",
+      "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/build_brep_candidate.py": "dfdb781ca0549c0914b34c5c974455a2502d6f9215a731fa2475e15546f10019",
+      "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/diagnose_initial_mesh.py": "2aab2a436c5a3c8ec947fa9bcbe2353134da7261ead270840c01278678cf8ffb",
+      "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/finalize_report.py": "241369b7acda71a91886e3453f11f3bf6fba472676bc4ec2f33df6cfc84f7bef",
+      "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/refine_native_brep_mesh.py": "3d50d6937b8dae527d6c190f2b13e8835784d02cf8fb8b0e819d8ebeb02ba09a",
+      "third_party/vesselforge-runtime/venv/Scripts/python.exe": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+      "vesselforge/experiments/brep_persistence_helper.py": "e88b691385d374a4469be903a43bdf848134d2b7312961be1bc382cbb54e5ec7",
+      "vesselforge/experiments/smooth_cad_spike.py": "a505817d38184b256ff3c2ce2a513560be79486dc4534187a431e3cc01be4661",
+      "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    "single_reloaded_brep_remesh": {
+      "actual_source_path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/refine_native_brep_mesh.py",
+      "exact_retained_execution_artifact": {
+        "bytes": 18061,
+        "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/refine_native_brep_mesh.executed.cpython-312.pyc",
+        "sha256": "e92dea73939732ead3f55b2864b749178ef65dadd4b958ae2c4061d749fd60e9"
+      },
+      "fidelity_note": "The Python source received a label-only wording edit after execution. The pre-run Python 3.12 bytecode cache is retained as the exact executed code artifact; the readable post-run .py copy is not presented as byte-identical historical source.",
+      "historical_argv": [
+        "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+        "C:\\Users\\xiemo\\Desktop\\ShardForge\\relicweave-synlab\\tmp\\review_20261004\\implementation\\vf_brep_persistence\\native_brep_persistence\\refine_native_brep_mesh.py"
+      ],
+      "historical_exit_code": 0,
+      "pyc_compiled_source_size_bytes": 14954,
+      "pyc_source_mtime_epoch_seconds": 1791051827,
+      "readable_post_run_source": {
+        "bytes": 15043,
+        "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/refine_native_brep_mesh.postrun_label_corrected.py",
+        "sha256": "3d50d6937b8dae527d6c190f2b13e8835784d02cf8fb8b0e819d8ebeb02ba09a"
+      }
+    }
+  },
+  "decision": "NOT_PROMOTED; forge.asset.v1 remains canonical STEP",
+  "generated_utc": "2026-10-03T18:56:30.679452+00:00",
+  "key_evidence_artifacts": [
+    {
+      "bytes": 244975,
+      "path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/brep_candidate_report.json",
+      "sha256": "6549b15e71382818f7c2c310dfc845c722e99ba72f689a5bb9c7afcf442956f4"
+    },
+    {
+      "bytes": 13403,
+      "path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/geometry/smooth_body.brep",
+      "sha256": "eb2fbf11776b291b1ca7a7d12d19d448ff03ed0a01717f88d5ec808434852e1f"
+    },
+    {
+      "bytes": 521711,
+      "path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/renders/native_brep_and_half_section.png",
+      "sha256": "82218d3d6da2d9e8d4bdd83b95d6d5feb1803517130917379efcbd111a4d19bd"
+    },
+    {
+      "bytes": 7586,
+      "path": "relicweave-synlab/tmp/review_20261004/implementation/vf_brep_persistence/native_brep_persistence/source_and_artifact_sha256.json",
+      "sha256": "034110b85203086cbefbd0778e1acafb2bf01b3a80e42646894a958caa13facd"
+    }
+  ],
+  "manifest_excludes_its_own_hash": true,
+  "portable_source_files_not_executed_for_candidate": [
+    {
+      "bytes": 11180,
+      "path": "vesselforge/experiments/smooth_cad_brep/build_brep_candidate.py",
+      "sha256": "33686a7c6b82d85e3ae0bb16f960e98e89d3198af52ee3576aa5756d5a77acc7"
+    },
+    {
+      "bytes": 20715,
+      "path": "vesselforge/experiments/smooth_cad_brep/refine_native_brep_mesh.py",
+      "sha256": "3f46b67bfacf9b198841541e81b697ace76a2aa6a1e7d495a53de9b24f4cc04c"
+    },
+    {
+      "bytes": 12738,
+      "path": "vesselforge/experiments/smooth_cad_brep/brep_persistence_helper.py",
+      "sha256": "e88b691385d374a4469be903a43bdf848134d2b7312961be1bc382cbb54e5ec7"
+    },
+    {
+      "bytes": 27819,
+      "path": "vesselforge/experiments/smooth_cad_brep/accepted_profile_definition.py",
+      "sha256": "671783be3e17828ec5158fdfd57a4322bcf62e9ddb02f7f16162590a790f3761"
+    },
+    {
+      "bytes": 5647,
+      "path": "vesselforge/experiments/smooth_cad_brep/README.md",
+      "sha256": "1cce3d32b1ec0107a4aa51db9a4369affb12ffce36549f8cb1b2ef7734f6c518"
+    }
+  ],
+  "purpose": "Hashes distinguish actual executed evidence, exact retained execution artifacts, and portable tracked sources.",
+  "retained_source_files": [
+    {
+      "bytes": 30933,
+      "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/build_brep_candidate.py",
+      "sha256": "dfdb781ca0549c0914b34c5c974455a2502d6f9215a731fa2475e15546f10019"
+    },
+    {
+      "bytes": 18061,
+      "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/refine_native_brep_mesh.executed.cpython-312.pyc",
+      "sha256": "e92dea73939732ead3f55b2864b749178ef65dadd4b958ae2c4061d749fd60e9"
+    },
+    {
+      "bytes": 15043,
+      "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/refine_native_brep_mesh.postrun_label_corrected.py",
+      "sha256": "3d50d6937b8dae527d6c190f2b13e8835784d02cf8fb8b0e819d8ebeb02ba09a"
+    },
+    {
+      "bytes": 12738,
+      "path": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/brep_persistence_helper.final.py",
+      "sha256": "e88b691385d374a4469be903a43bdf848134d2b7312961be1bc382cbb54e5ec7"
+    }
+  ],
+  "static_validation": {
+    "ast_parse": "PASS",
+    "portable_geometry_code_executed": false,
+    "python_files": 7
+  },
+  "status": "BREP_CANDIDATE"
+}

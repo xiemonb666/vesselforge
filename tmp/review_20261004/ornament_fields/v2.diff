@@ -1,0 +1,247 @@
+--- v1/vesselforge/src/vesselforge/ornament_fields.py
++++ v2/vesselforge/src/vesselforge/ornament_fields.py
+@@ -92,6 +92,9 @@
+             raise ValueError("raised fields require positive relief_amplitude_mm")
+         if self.effect == "engraved" and relief >= 0.0:
+             raise ValueError("engraved fields require negative relief_amplitude_mm")
++        object.__setattr__(self, "strength", strength)
++        object.__setattr__(self, "pigment_opacity", opacity)
++        object.__setattr__(self, "relief_amplitude_mm", relief)
+ 
+     def _intrinsic_coverage(self, xyz: np.ndarray) -> np.ndarray:
+         raise NotImplementedError
+@@ -333,7 +336,7 @@
+ 
+ @dataclass(frozen=True)
+ class WallThicknessEvidence:
+-    """Optional local wall map; trust must be explicitly supplied by its caller."""
++    """Caller-supplied wall map; ``trusted`` is an assertion, not authentication."""
+ 
+     thickness_mm: np.ndarray | None = None
+     source: str | None = None
+@@ -347,6 +350,64 @@
+     wall_thickness_status: str
+     reason: str
+     minimum_residual_wall_mm: float | None = None
++    wall_evidence_independently_authenticated: bool = False
++
++
++def _field_evaluation_error(
++    field_spec: OrnamentFieldSpec,
++    evaluation: FieldEvaluation,
++) -> str | None:
++    if not isinstance(field_spec, (GeometricRingBand, WavingBand, RepeatedMotif)):
++        return "field specification has an unsupported type"
++    if not isinstance(evaluation, FieldEvaluation):
++        return "evaluation is not a FieldEvaluation"
++    if evaluation.field_id != field_spec.field_id:
++        return "evaluation field_id does not match the field specification"
++    if evaluation.effect != field_spec.effect:
++        return "evaluation effect does not match the field specification"
++    if evaluation.coordinate_frame != REST_COORDINATE_FRAME:
++        return "evaluation coordinate frame is not the source-mother rest frame"
++    try:
++        height = np.asarray(evaluation.relief_height_mm, dtype=np.float64)
++        region_mask = np.asarray(evaluation.region_mask)
++    except (TypeError, ValueError, OverflowError):
++        return "evaluation height or region mask cannot be interpreted"
++    if region_mask.dtype.kind != "b" or region_mask.shape != height.shape:
++        return "evaluation region mask must be boolean and match the height shape"
++    if not np.isfinite(height).all():
++        return "evaluation height contains a non-finite value"
++    if np.any(height[~region_mask] != 0.0):
++        return "evaluation has nonzero height outside its ornament region"
++    amplitude = float(field_spec.relief_amplitude_mm)
++    amplitude_tolerance = max(1e-12, abs(amplitude) * 1e-12)
++    if field_spec.effect == "paint":
++        if np.any(height != 0.0):
++            return "paint evaluation must have exactly zero height"
++    elif field_spec.effect == "raised":
++        if np.any(height < 0.0) or np.any(height > amplitude + amplitude_tolerance):
++            return "raised evaluation height has an invalid sign or exceeds its declared amplitude"
++    elif field_spec.effect == "engraved":
++        if np.any(height > 0.0) or np.any(height < amplitude - amplitude_tolerance):
++            return "engraved evaluation height has an invalid sign or exceeds its declared amplitude"
++    return None
++
++
++def _rejected_evaluation(reason: str) -> GeometryQualification:
++    return GeometryQualification(
++        status="REJECTED_INVALID_FIELD_EVALUATION",
++        geometry_qualified=False,
++        wall_thickness_status="UNKNOWN",
++        reason=reason,
++    )
++
++
++def _rejected_wall_map(reason: str) -> GeometryQualification:
++    return GeometryQualification(
++        status="REJECTED_INVALID_WALL_THICKNESS_MAP",
++        geometry_qualified=False,
++        wall_thickness_status="UNKNOWN",
++        reason=reason,
++    )
+ 
+ 
+ def qualify_geometry_field(
+@@ -364,6 +425,9 @@
+     minimum = _finite_scalar("minimum_residual_wall_mm", minimum_residual_wall_mm)
+     if minimum < 0.0:
+         raise ValueError("minimum_residual_wall_mm must be non-negative")
++    invalid_evaluation = _field_evaluation_error(field_spec, evaluation)
++    if invalid_evaluation is not None:
++        return _rejected_evaluation(invalid_evaluation)
+     if field_spec.effect == "paint":
+         return GeometryQualification(
+             status="NO_GEOMETRIC_EFFECT",
+@@ -378,9 +442,16 @@
+             wall_thickness_status="NOT_REQUIRED_FOR_RAISED_FIELD",
+             reason="positive scalar height is available, but no CAD or mesh geometry was generated",
+         )
++    if wall_thickness is not None and not isinstance(wall_thickness, WallThicknessEvidence):
++        return _rejected_wall_map("wall-thickness evidence has an unsupported type")
++    trusted_flag = (
++        isinstance(wall_thickness.trusted, (bool, np.bool_)) and bool(wall_thickness.trusted)
++        if wall_thickness is not None
++        else False
++    )
+     if (
+         wall_thickness is None
+-        or not wall_thickness.trusted
++        or not trusted_flag
+         or not isinstance(wall_thickness.source, str)
+         or not wall_thickness.source.strip()
+         or wall_thickness.thickness_mm is None
+@@ -392,33 +463,37 @@
+             reason="engraving cannot be qualified without a trusted, sourced wall-thickness map",
+         )
+ 
+-    thickness = np.asarray(wall_thickness.thickness_mm, dtype=np.float64)
+-    if thickness.shape != evaluation.relief_height_mm.shape:
+-        raise ValueError("wall-thickness map shape must match evaluated field coordinates")
++    try:
++        thickness = np.asarray(wall_thickness.thickness_mm, dtype=np.float64)
++    except (TypeError, ValueError, OverflowError):
++        return _rejected_wall_map("caller-supplied wall-thickness map cannot be interpreted")
++    height = np.asarray(evaluation.relief_height_mm, dtype=np.float64)
++    active = np.asarray(evaluation.region_mask, dtype=bool)
++    if thickness.shape != height.shape:
++        return _rejected_wall_map("caller-supplied wall-thickness map shape does not match evaluated coordinates")
+     if not np.isfinite(thickness).all() or np.any(thickness <= 0.0):
+-        raise ValueError("trusted wall-thickness map values must be finite and positive")
+-    active = evaluation.region_mask
++        return _rejected_wall_map("caller-supplied wall-thickness map must be finite and positive")
+     if not np.any(active):
+         return GeometryQualification(
+             status="NO_ACTIVE_ENGRAVED_REGION",
+             geometry_qualified=False,
+-            wall_thickness_status="TRUSTED_MAP_PROVIDED",
++            wall_thickness_status="CALLER_ASSERTED_TRUSTED_MAP_NOT_INDEPENDENTLY_AUTHENTICATED",
+             reason="the engraved scalar field is inactive at the supplied coordinates",
+         )
+-    residual = thickness[active] + evaluation.relief_height_mm[active]
++    residual = thickness[active] + height[active]
+     residual_min = float(np.min(residual))
+     if residual_min < minimum:
+         return GeometryQualification(
+             status="REJECTED_INSUFFICIENT_RESIDUAL_WALL",
+             geometry_qualified=False,
+-            wall_thickness_status="TRUSTED_MAP_PROVIDED",
+-            reason="the supplied map leaves less residual wall than the requested minimum",
++            wall_thickness_status="CALLER_ASSERTED_TRUSTED_MAP_NOT_INDEPENDENTLY_AUTHENTICATED",
++            reason="the caller-supplied map leaves less residual wall than requested; its source was not independently authenticated",
+             minimum_residual_wall_mm=residual_min,
+         )
+     return GeometryQualification(
+         status="WALL_PREREQUISITE_PASS_HEIGHT_FIELD_ONLY",
+         geometry_qualified=False,
+-        wall_thickness_status="TRUSTED_MAP_PROVIDED",
+-        reason="wall prerequisite passes, but the scalar height field has not been converted to geometry",
++        wall_thickness_status="CALLER_ASSERTED_TRUSTED_MAP_NOT_INDEPENDENTLY_AUTHENTICATED",
++        reason="the caller-supplied wall prerequisite passes, but it was not independently authenticated and the scalar height field has not been converted to geometry",
+         minimum_residual_wall_mm=residual_min,
+     )
+--- v1/vesselforge/tests/test_ornament_fields.py
++++ v2/vesselforge/tests/test_ornament_fields.py
+@@ -19,20 +19,21 @@
+ 
+ 
+ def test_angular_periodicity_closes_the_theta_seam_for_each_field_family() -> None:
+-    theta = 0.37
+-    coordinate_pairs = np.stack([_xyz(theta, 24.0), _xyz(theta + 2.0 * np.pi, 24.0)])
++    theta_epsilon = 1e-9
++    coordinate_pairs = np.stack([_xyz(-np.pi + theta_epsilon, 24.0),
++                                  _xyz(np.pi - theta_epsilon, 24.0)])
+     fields = (
+         GeometricRingBand(field_id="ring", center_z_mm=24.0, width_mm=2.5),
+         WavingBand(field_id="wave", center_z_mm=24.0, width_mm=3.0, path_amplitude_mm=1.5,
+-                   repeat_count=7, phase_rad=0.23),
++                   repeat_count=7, phase_rad=0.0),
+         RepeatedMotif(field_id="motif", center_z_mm=24.0, z_pitch_mm=5.0,
+-                      angular_repeats=13, angular_phase_rad=0.1),
++                      angular_repeats=13, angular_phase_rad=np.pi),
+     )
+     for field_spec in fields:
+         evaluated = evaluate_ornament_field(coordinate_pairs, field_spec)
+-        np.testing.assert_allclose(evaluated.region_weight[0], evaluated.region_weight[1], atol=1e-12)
+-        np.testing.assert_allclose(evaluated.relief_height_mm[0], evaluated.relief_height_mm[1], atol=1e-12)
+-        np.testing.assert_allclose(evaluated.pigment_opacity[0], evaluated.pigment_opacity[1], atol=1e-12)
++        np.testing.assert_allclose(evaluated.region_weight[0], evaluated.region_weight[1], atol=1e-7)
++        np.testing.assert_allclose(evaluated.relief_height_mm[0], evaluated.relief_height_mm[1], atol=1e-7)
++        np.testing.assert_allclose(evaluated.pigment_opacity[0], evaluated.pigment_opacity[1], atol=1e-7)
+ 
+ 
+ def test_fields_are_finite_and_keep_colors_in_linear_rgb_domain() -> None:
+@@ -84,11 +85,51 @@
+     assert gate.wall_thickness_status == "UNKNOWN"
+     assert gate.geometry_qualified is False
+ 
+-    trusted = WallThicknessEvidence(thickness_mm=np.asarray(2.0), source="fixture wall map", trusted=True)
++    trusted = WallThicknessEvidence(thickness_mm=np.asarray(2.0), source="fixture wall map",
++                                    trusted=np.bool_(True))
+     safe_gate = qualify_geometry_field(engraved, engraved_result, wall_thickness=trusted,
+                                        minimum_residual_wall_mm=1.0)
+     assert safe_gate.status == "WALL_PREREQUISITE_PASS_HEIGHT_FIELD_ONLY"
+     assert safe_gate.geometry_qualified is False
++    assert safe_gate.wall_thickness_status == "CALLER_ASSERTED_TRUSTED_MAP_NOT_INDEPENDENTLY_AUTHENTICATED"
++    assert safe_gate.wall_evidence_independently_authenticated is False
++
++
++def test_untrusted_string_and_nonfinite_evaluation_cannot_pass_engraving_gate() -> None:
++    xyz = np.asarray([_xyz(0.0, 20.0)])
++    engraved = GeometricRingBand(effect="engraved", relief_amplitude_mm=-0.5,
++                                 center_z_mm=20.0, width_mm=4.0)
++    valid_evaluation = evaluate_ornament_field(xyz, engraved)
++
++    string_false = WallThicknessEvidence(thickness_mm=np.asarray([2.0]), source="claimed map",
++                                         trusted="false")
++    rejected_untrusted = qualify_geometry_field(engraved, valid_evaluation,
++                                                wall_thickness=string_false)
++    assert rejected_untrusted.status == "REJECTED_UNKNOWN_WALL_THICKNESS"
++    assert rejected_untrusted.wall_thickness_status == "UNKNOWN"
++    assert rejected_untrusted.geometry_qualified is False
++
++    valid_evaluation.relief_height_mm[0] = np.nan
++    claimed_trusted = WallThicknessEvidence(thickness_mm=np.asarray([2.0]), source="claimed map",
++                                            trusted=True)
++    rejected_nan = qualify_geometry_field(engraved, valid_evaluation,
++                                          wall_thickness=claimed_trusted)
++    assert rejected_nan.status == "REJECTED_INVALID_FIELD_EVALUATION"
++    assert rejected_nan.wall_thickness_status == "UNKNOWN"
++    assert rejected_nan.geometry_qualified is False
++
++
++def test_numeric_string_controls_are_normalized_before_field_evaluation() -> None:
++    xyz = _xyz(0.0, 20.0)
++    field_spec = GeometricRingBand(field_id="normalized", effect="raised",
++                                   relief_amplitude_mm="0.8", strength="0.5",
++                                   pigment_opacity="0.25", center_z_mm=20.0, width_mm=4.0)
++    result = evaluate_ornament_field(xyz, field_spec)
++    assert field_spec.strength == 0.5
++    assert field_spec.pigment_opacity == 0.25
++    assert field_spec.relief_amplitude_mm == 0.8
++    assert float(result.relief_height_mm) == 0.4
++    assert float(result.pigment_opacity) == 0.125
+ 
+ 
+ def test_effect_mode_and_amplitude_must_agree() -> None:

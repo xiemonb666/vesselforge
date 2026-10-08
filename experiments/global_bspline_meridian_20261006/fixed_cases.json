@@ -1,0 +1,101 @@
+{
+  "schema": "vesselforge.global_bspline_meridian.fixed_cases.v1",
+  "phase": "source_design_only_minimum_jerk_driver_not_run",
+  "units": "mm",
+  "curve_scope": "outer-body meridian from axis-bottom to outer mouth; no lip closure, inner wall, or material section",
+  "curve_model": {
+    "degree": 5,
+    "rational_weights": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+    "weight_policy": "fixed exact positive rationals; unit weights preserve a linear control-point constraint system",
+    "parameter_domain": ["0", "1"],
+    "internal_knots": ["1/6", "1/3", "1/2", "2/3", "5/6"],
+    "knot_multiplicity": "six at each clamped endpoint; one at every internal knot",
+    "full_knot_vector": ["0", "0", "0", "0", "0", "0", "1/6", "1/3", "1/2", "2/3", "5/6", "1", "1", "1", "1", "1", "1"],
+    "control_point_count": 11,
+    "continuity_at_internal_knots": "C4; curvature is not constrained to zero at any internal knot",
+    "shape_parameterization": "the deterministic candidate is the unique minimum of the declared exact integral of squared third derivative subject to nine fixed equalities; no control values are pre-guessed"
+  },
+  "engineering_screens": {
+    "body_and_shoulder_minimum_curvature_radius_mm": "9",
+    "target_basis": "3 times the catalog 3 mm radial declaration; a fixed engineering geometry screen, not material or archaeological calibration",
+    "candidate_normal_offset_mm": "3",
+    "catalog_wall_semantics": "radial declaration only; not measured normal thickness",
+    "local_signed_offset_condition": "1 - 3*kappa > 0 at every regular point on a proposed offset span",
+    "conservative_sufficient_offset_condition": "|3*kappa| < 1; this is sufficient, not necessary when signed curvature is negative",
+    "outer_base_turn_minimum_curvature_radius_mm": {
+      "bowl": "9",
+      "jar": "33/4"
+    },
+    "base_target_basis": "1.5 times catalog base-thickness declaration; engineering geometry screen only, not material or archaeological calibration",
+    "global_minimum_wall": "UNKNOWN_PENDING_GLOBAL_REACH_AND_SECTION_SEPARATION",
+    "inner_curve": "NOT_CONSTRUCTED"
+  },
+  "cases": {
+    "bowl": {
+      "family": "bowl",
+      "accepted_candidate_total_height_mm": "92",
+      "total_height_status": "ACCEPTED_CREST_TARGET_NOT_VERIFIED_LIP_NOT_CONSTRUCTED",
+      "fixed_dimensions": {
+        "max_outer_radius_mm": "60",
+        "apex_z_mm": "77.4",
+        "outer_mouth_r_mm": "57",
+        "mouth_datum_z_mm": "90",
+        "clear_mouth_diameter_mm": "108",
+        "clear_mouth_radius_mm": "54",
+        "catalog_radial_wall_mm": "3",
+        "catalog_base_thickness_mm": "6"
+      },
+      "curvature_targets": {
+        "body_and_shoulder_radius_mm": "9",
+        "outer_base_turn_radius_mm": "9",
+        "base_turn_parameter_interval": "NOT_FIXED; root review needed because outer foot-turn point is free"
+      },
+      "fixed_feature_constraints": [
+        {"name": "axis_bottom", "u": "0", "rz_mm": ["0", "0"]},
+        {"name": "max_radius_apex", "u": "5/6", "rz_mm": ["60", "77.4"]},
+        {"name": "outer_mouth", "u": "1", "rz_mm": ["57", "90"]}
+      ],
+      "apex_feature": "max_radius_apex",
+      "outer_foot_turn_height_mm": "FREE_DESIGN_VARIABLE_NOT_SET_TO_BASE_THICKNESS",
+      "legacy_intermediate_stations": "not interpolation constraints; may move to satisfy the retained curvature screen",
+      "total_bounding_height_mm": "NOT_CONSTRUCTED_OR_VERIFIED"
+    },
+    "jar": {
+      "family": "jar",
+      "accepted_candidate_total_height_mm": "122",
+      "total_height_status": "ACCEPTED_CREST_TARGET_NOT_VERIFIED_LIP_NOT_CONSTRUCTED",
+      "fixed_dimensions": {
+        "max_outer_radius_mm": "54",
+        "apex_z_mm": "62",
+        "outer_mouth_r_mm": "26",
+        "mouth_datum_z_mm": "120",
+        "clear_mouth_diameter_mm": "46",
+        "clear_mouth_radius_mm": "23",
+        "catalog_radial_wall_mm": "3",
+        "catalog_base_thickness_mm": "5.5",
+        "nominal_neck_height_mm": "18",
+        "nominal_shoulder_height_mm": "28"
+      },
+      "curvature_targets": {
+        "body_and_shoulder_radius_mm": "9",
+        "outer_base_turn_radius_mm": "33/4",
+        "base_turn_parameter_interval": "NOT_FIXED; root review needed because outer foot-turn point is free"
+      },
+      "fixed_feature_constraints": [
+        {"name": "axis_bottom", "u": "0", "rz_mm": ["0", "0"]},
+        {"name": "max_radius_apex", "u": "1/2", "rz_mm": ["54", "62"]},
+        {"name": "outer_mouth", "u": "1", "rz_mm": ["26", "120"]}
+      ],
+      "apex_feature": "max_radius_apex",
+      "outer_foot_turn_height_mm": "FREE_DESIGN_VARIABLE_NOT_SET_TO_BASE_THICKNESS",
+      "legacy_intermediate_stations": "not interpolation constraints; plateau station (54,40.8) is deleted",
+      "total_bounding_height_mm": "NOT_CONSTRUCTED_OR_VERIFIED"
+    }
+  },
+  "not_claimed": [
+    "No control points or feasible solution are supplied.",
+    "No 9 mm curvature, monotonicity, hull, offset, or global-wall certificate is supplied.",
+    "Accepted candidate crest heights are 92/122 mm total; 90/120 mm remain mouth/body datums. This source-only outer profile does not construct or verify a lip or total bounding box.",
+    "No CAD, STEP, mesh, solver, style match, material calibration, or real-vessel qualification."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.actual_result_independent_addendum.v1",
+  "status": "SAVED_2D_STRIP_RESULT_ACCEPTED_WITH_EXPLICIT_SCOPE",
+  "artifacts": {
+    "result": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+      "bytes": 4355,
+      "status": "GLOBAL_MERIDIAN_STRIP_INJECTIVITY_PROVED_CONDITIONAL"
+    },
+    "receipt": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/receipt.json",
+      "sha256": "3ec65b5f54581a5371c2e95eefe87a1a0e83a682965746f6167a780fe3aeb806",
+      "bytes": 10296,
+      "return_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.125,
+      "pre_hash_count": 16,
+      "post_hash_count": 16,
+      "pre_equals_post": true,
+      "source_pins_state_unchanged": true
+    },
+    "capture_tree": {
+      "file_count": 4,
+      "files": [
+        {"name": "receipt.json", "bytes": 10296},
+        {"name": "result.json", "bytes": 4355},
+        {"name": "stderr.bin", "bytes": 0},
+        {"name": "stdout.bin", "bytes": 4355}
+      ],
+      "bytes": 19006,
+      "receipt_output_tree_bytes": 29025,
+      "parent_directory_additional_files": [
+        {"name": "capture_supervisor_02_after_scope_fix.py", "bytes": 8138},
+        {"name": "invoke_once_02_after_scope_fix.py", "bytes": 1048},
+        {"name": "normal_strip_once_GO_02_after_scope_fix.json", "bytes": 833}
+      ],
+      "parent_additional_bytes": 10019
+    },
+    "source": {
+      "path": "vesselforge/experiments/monotone_normal_strip_certificate_20261007/monotone_normal_strip_certificate.py",
+      "sha256": "ae1d34351e113bf08f4de287468b38d5035f4bf1c75f98e3fb84d7b361c851ce",
+      "declared_by_current_pins": true
+    },
+    "case_sha256": "9e7b9e7945a14b3dd45517c75a672607cf0923cdac5c723ab614fa0162fc127b",
+    "current_source_pins_sha256": "bdfbf05dd6bf7d3a8f4e6d7ebf4c90831f53726adc935c1061e372caeb7106ae",
+    "superseded_source_pins_sha256": "0963a6e285186583ef3d6ce072f5cca8bacd9da90e3dbf7e85518713de5bd0fe"
+  },
+  "saved_result_review": {
+    "scope": "pinned actual 2D meridian F over 12 spans and 0<=s<=3 mm",
+    "side_r9_span_count": 10,
+    "each_r9_bernstein_coefficient_count": 25,
+    "all_r9_nonnegative": true,
+    "local_global_r9_binding": "local coefficients equal h^6 times global coefficients",
+    "span_count": 12,
+    "c4_join_count": 11,
+    "c4_orders_per_join": [0, 1, 2, 3, 4],
+    "endpoint_fibers": {
+      "axis": ["(0,0)", "(0,3)"],
+      "base_side_seam": ["(18,0)", "(18,3)"],
+      "mouth": ["(26,120)", "(23,120)"],
+      "lip": "mathematical domain edge only; no actual CAD lip claim"
+    },
+    "fixed_height_identity": "dR/ds|Z=-v/zprime<0 where zprime>0",
+    "local_factor": "lambda>=2/3 on side; lambda=1 on straight base/neck",
+    "global_minimum_euclidean_wall": "UNKNOWN",
+    "native_brep": "UNKNOWN",
+    "physics": "UNKNOWN",
+    "radius_nonnegative_provenance": "saved Q coefficient leaf is checked, but Q is not reconstructed from current controls by this source"
+  },
+  "review_actions": {
+    "result_or_receipt_modified": false,
+    "saved_certificate_rerun": false,
+    "curve_or_cad_or_solver_called": false,
+    "old_review_overwritten": false
+  }
+}

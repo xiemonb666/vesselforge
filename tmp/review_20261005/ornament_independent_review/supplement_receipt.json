@@ -1,0 +1,29 @@
+{
+  "status": "READ_ONLY_SUPPLEMENT_COMPLETE",
+  "baseline_file": "vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run02\\fixture_arrays.npz",
+  "expected_baseline_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+  "actual_baseline_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+  "baseline_hash_verified_before_npz_load": true,
+  "cases": [
+    "local_a_0p50mm",
+    "local_b_0p25mm"
+  ],
+  "candidate_sha256": {
+    "local_a_0p50mm": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+    "local_b_0p25mm": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf"
+  },
+  "checks_sha256": {
+    "local_a_0p50mm": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+    "local_b_0p25mm": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8"
+  },
+  "generated_outputs": [
+    "supplement_report.md",
+    "supplement_metrics.json",
+    "supplement_receipt.json",
+    "supplement_input_sha256.json",
+    "supplement_artifacts_sha256.json",
+    "lineage_geometry_supplement.py"
+  ],
+  "production_source_or_candidate_modified": false,
+  "generation_or_cad_run": false
+}

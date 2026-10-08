@@ -1,0 +1,57 @@
+{
+  "status": "FAILURE",
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\normal_offset_meridian_20261006\\run_normal_offset_meridian.py",
+    "--worker"
+  ],
+  "user_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\normal_offset_meridian_20261006\\run_normal_offset_meridian.py",
+    "--root-go"
+  ],
+  "actual_rc": 2,
+  "elapsed_seconds": 0.078,
+  "outer_limit_seconds": 15.0,
+  "output_limit_bytes_total": 4194304,
+  "result_limit_bytes_reserved": 4128768,
+  "hashes_before": {
+    "source": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+    "readme": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef",
+    "false_case": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319",
+    "runner": "a4307e15c461813669232ca4055a0a9f42b0f60f009070cff9e5b713781f7fb8",
+    "saved_result": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+    "frozen_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "independent_audit": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+    "source_pins": "ceb90fed65893f865d978679ca72945a0fe7957eb9e9ffa2ca8a24268b1d09a3"
+  },
+  "hashes_after": {
+    "source": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+    "readme": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef",
+    "false_case": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319",
+    "runner": "a4307e15c461813669232ca4055a0a9f42b0f60f009070cff9e5b713781f7fb8",
+    "saved_result": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+    "frozen_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "independent_audit": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+    "source_pins": "ceb90fed65893f865d978679ca72945a0fe7957eb9e9ffa2ca8a24268b1d09a3"
+  },
+  "inputs_unchanged": true,
+  "result_sha256": null,
+  "captured_stdout": {
+    "file": "normal_offset_meridian_stdout.bin",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": ""
+  },
+  "captured_stderr": {
+    "file": "normal_offset_meridian_stderr.bin",
+    "bytes": 83,
+    "sha256": "e470e18eddab907f89c2c3f3b5fea6ebddd35dab89982ce2293d8ed6f728abdc",
+    "summary": "{\"error\": \"ValueError\", \"detail\": \"Bernstein degrees must match before addition\"}\r\n"
+  },
+  "runner_error": null,
+  "retry_permitted": false,
+  "budget_status": "WITHIN_LIMIT",
+  "total_persisted_bytes_status": "EXACT_FIXED_POINT",
+  "total_persisted_bytes": 2890
+}

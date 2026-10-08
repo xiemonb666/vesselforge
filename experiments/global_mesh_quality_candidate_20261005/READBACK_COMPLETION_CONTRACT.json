@@ -1,0 +1,60 @@
+{
+  "contract_id": "global_mesh_quality_run02_saved_npz_readback_completion_v1",
+  "state": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "execution_authorized": false,
+  "purpose": "Complete the read-only focused checks and actual mesh renders for the already saved run02 candidate after preserving its original failed receipt.",
+  "completion_label_on_success": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "completion_label_on_discrepancy": "RECOVERED_READBACK_WITH_DISCREPANCY",
+  "original_run02_status": "UNKNOWN_OR_FAIL; immutable and never relabeled PASS",
+  "original_run02_receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "saved_candidate_npz_sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "pre_readback_snapshot": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/",
+  "pre_readback_snapshot_manifest_sha256": "b29535c353d75d929502b7d4ba683dd7feed8ae046a1e94f0e23060f3a9ebac8",
+  "source_fix": {
+    "file": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+    "exact_constant": "COLOR_FINITE_SAMPLE_TOL = 1e-12",
+    "reason": "focused_checks.py used this name without defining it; candidate.py already pins the same fixed 1e-12 value.",
+    "threshold_relaxed": false,
+    "other_checker_logic_changed": false
+  },
+  "adapter": "vesselforge/experiments/global_mesh_quality_candidate_20261005/readback_completion_adapter.py",
+  "execution_adapter": "vesselforge/experiments/global_mesh_quality_candidate_20261005/execute_readback_completion.ps1",
+  "output_directory": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/completion_review",
+  "immutable_inputs": {
+    "baseline_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_arrays_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "ornament_case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "v2bugfix_candidate_source_sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+    "v2bugfix_source_freeze_sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+    "vesselforge_python_sha256": "2b83f3f84ea2f51132fa1faa73815be54126a799521de85ff6ea70627cde6da7"
+  },
+  "readback_only": {
+    "candidate_generation": false,
+    "candidate_main_invoked": false,
+    "cad": false,
+    "solver": false,
+    "original_run02_receipt_write": false,
+    "mesh_or_parameter_changes": false,
+    "automatic_retry": false
+  },
+  "fixed_review_targets": {
+    "floor_minimum_Q_at_least": 0.35,
+    "floor_maximum_aspect_at_most": 5.0,
+    "global_minimum_Q_strictly_greater_than_input": true,
+    "global_maximum_aspect_strictly_less_than_input": true,
+    "geometry_triangle_quality_does_not_imply_tet_quality_or_solver_h": true
+  },
+  "execution_cap_seconds": 120,
+  "expected_outputs": [
+    "checks.json",
+    "completion_manifest.json",
+    "readback_receipt.json",
+    "execution_receipt.json",
+    "runner_stdout.txt",
+    "runner_stderr.txt",
+    "global_equal_aspect_actual_mesh.png",
+    "floor_equal_aspect_actual_mesh.png"
+  ]
+}

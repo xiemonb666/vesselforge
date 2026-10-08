@@ -1,0 +1,107 @@
+{
+  "schema": "vesselforge.smooth_surface_coupled_design.fixed_case/0.1.0",
+  "candidate_id": "beaker-coupled-fairing-math-v1",
+  "status": "PURE_MATH_PROTOTYPE_ONLY_NOT_CAD_VALIDATED",
+  "scope": "One fixed analytic beaker profile; no style match, material qualification, manufacture claim, or family-domain claim.",
+  "units": {
+    "length": "mm",
+    "coordinate_order": ["radius", "z"],
+    "derivatives": "mm per local parameter; second derivatives mm per local parameter squared"
+  },
+  "identity_and_limits": {
+    "representative_family_label": "beaker",
+    "real_vessel_style": "UNKNOWN_NOT_REFERENCE_MATCHED",
+    "physical_or_material_qualification": "NOT_VALIDATED",
+    "global_self_intersection": "UNKNOWN_PENDING_NATIVE_CAD",
+    "global_minimum_normal_wall": "UNKNOWN",
+    "radial_wall_setting_mm": 2.5,
+    "radial_wall_semantics": "paired side Bezier control nets differ by exactly 2.5 mm in radius at unchanged z; this is not normal wall thickness"
+  },
+  "nominal_case": {
+    "height_mm": 110.0,
+    "max_outer_radius_mm": 42.0,
+    "clear_mouth_diameter_mm": 70.0,
+    "outer_mouth_radius_mm": 37.5,
+    "inner_mouth_radius_mm": 35.0,
+    "base_thickness_mm": 4.5,
+    "outer_underside_radius_mm": 12.0,
+    "outer_side_root_rz_mm": [16.0, 4.5]
+  },
+  "curve_definition": {
+    "degree": 5,
+    "basis": "piecewise quintic Hermite data converted to exact degree-5 Bezier control nets",
+    "station_second_derivative_rz": [0.0, 0.0],
+    "outside_underside_parameter_width": 3.0,
+    "outer_base_fairing_parameter_widths": [0.5, 0.5],
+    "outer_side_parameter_widths": [0.75, 0.75, 1.0, 1.0, 1.0, 1.0],
+    "lip_parameter_width": 1.0,
+    "inner_side_pairing": "each outer side control pole [r,z] maps to [r-2.5,z]; same span width and local parameter",
+    "inner_floor_parameter_width": 3.375,
+    "axis_closure_parameter_width": 1.125,
+    "axis_joins": "expected revolution-axis singularities; excluded from non-axis C2 and normal-ray checks"
+  },
+  "base_fairing_stations": [
+    {
+      "name": "underside_tangent",
+      "point_rz_mm": [12.0, 0.0],
+      "d1_rz_per_parameter": [4.0, 0.0],
+      "d2_rz_per_parameter2": [0.0, 0.0]
+    },
+    {
+      "name": "base_transition",
+      "point_rz_mm": [14.0, 1.5],
+      "d1_rz_per_parameter": [4.0, 3.0],
+      "d2_rz_per_parameter2": [0.0, 0.0]
+    },
+    {
+      "name": "shared_wall_root",
+      "point_rz_mm": [16.0, 4.5],
+      "d1_rz_per_parameter": [4.0, 0.0],
+      "d2_rz_per_parameter2": [0.0, 0.0]
+    }
+  ],
+  "outer_side_stations": [
+    {"name": "root", "point_rz_mm": [16.0, 4.5], "d1_rz_per_parameter": [4.0, 0.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "lower_body_transition", "point_rz_mm": [20.0, 10.0], "d1_rz_per_parameter": [7.0, 8.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "lower_body", "point_rz_mm": [27.0, 20.0], "d1_rz_per_parameter": [12.0, 18.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "body_1", "point_rz_mm": [38.0, 43.0], "d1_rz_per_parameter": [8.0, 22.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "body_2", "point_rz_mm": [42.0, 70.0], "d1_rz_per_parameter": [0.0, 12.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "shoulder", "point_rz_mm": [39.0, 96.0], "d1_rz_per_parameter": [-3.5, 12.0], "d2_rz_per_parameter2": [0.0, 0.0]},
+    {"name": "rim_outer", "point_rz_mm": [37.5, 110.0], "d1_rz_per_parameter": [0.0, 5.0], "d2_rz_per_parameter2": [0.0, 0.0]}
+  ],
+  "lip_bridge": {
+    "start_rz_mm": [37.5, 110.0],
+    "end_rz_mm": [35.0, 110.0],
+    "start_d1_rz_per_parameter": [0.0, 5.0],
+    "end_d1_rz_per_parameter": [0.0, -5.0],
+    "start_d2_rz_per_parameter2": [0.0, 0.0],
+    "end_d2_rz_per_parameter2": [0.0, 0.0],
+    "tangent_scale_mm_per_parameter": 5.0,
+    "height_reference_mm": 110.0,
+    "radial_gap_mm": 2.5
+  },
+  "parameter_bounds_for_this_candidate_only": {
+    "base_transition_r_mm": [13.5, 14.5],
+    "base_transition_z_mm": [1.0, 2.0],
+    "base_transition_d1_r_mm_per_parameter": [3.0, 5.0],
+    "base_transition_d1_z_mm_per_parameter": [2.0, 4.0],
+    "base_span_parameter_width": [0.4, 0.6],
+    "lower_body_transition_r_mm": [19.0, 21.0],
+    "lower_body_transition_z_mm": [8.5, 11.5],
+    "lower_body_transition_d1_r_mm_per_parameter": [5.5, 8.0],
+    "lower_body_transition_d1_z_mm_per_parameter": [6.0, 10.0],
+    "lower_body_span_parameter_width": [0.65, 0.85],
+    "lip_tangent_scale_mm_per_parameter": [4.0, 6.0],
+    "fixed_candidate_values_are_not_auto_optimized": true,
+    "bound_scope": "bounded design space for this one analytic beaker candidate only; not a reusable family range"
+  },
+  "acceptance_constraints": {
+    "non_axis_meridian_c2": "all adjoining position, first derivative, and second derivative errors <= 1e-10 in their respective mm/parameter units",
+    "side_and_base_control_polygon": "outer radius and z monotonic in each declared segment direction; all paired inner radii > 0",
+    "lip_control_polygon": "radius non-increasing; all z poles >= 110 mm; one symmetric z crest is expected from the sign pattern",
+    "sampled_curvature_design_target": "uniform 1001 samples per span: min radius >= 1.25 mm for base/lower-body fairing and >= 1.25 mm for lip; sample target only, not a whole-span bound or normal-thickness claim",
+    "paired_radial_setting": "exact 2.5 mm control-pole radial separation on each side span; mouth and lip endpoint radial gap exactly 2.5 mm",
+    "finite_meridian_normal_probe": "at 101 fixed parameter samples per eligible outer base/side span, the inward generator normal ray must have one isolated positive first intersection with inner side/floor; report each finite distance, misses, and ambiguous roots; do not call sample min a global minimum",
+    "classifier_unknown_diagnostic": "keep classifier tolerance fixed at 1e-7 mm; future boundary-offset probes are diagnostic and may not promote UNKNOWN by tolerance relaxation"
+  }
+}

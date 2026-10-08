@@ -1,0 +1,79 @@
+{
+  "schema": "vesselforge.c4_native_final_source_review/1.0",
+  "source_review_status": "ACCEPTED",
+  "go_for_cad_or_step_execution": false,
+  "execution_authorized_flags": {
+    "case": false,
+    "source_pins": false
+  },
+  "reviewed_hashes": {
+    "native_c4_ingress.py": "361dac93245b10baa5d331e8d66f808b3bb0af317b8f4ac8d0f13de7acaf7f6e",
+    "native_input_gate.py": "45ee34ab7963c2d8886bd21be6844a0d171adb8257ee3665bd91a182aa4d44e4",
+    "capture_once.py": "f06787c7dd358149f701abaa14bdbfa58c6251ab73c9bc1c417542f2744b886a",
+    "native_c4_ingress_case.json": "c440df8ff8d7cd0ec3f6d67d6ce8b566f783974bdf14cd27aafdf6203cba96be",
+    "source_pins.json": "33f727be1fc4f31b84f894ac6f34c98235036fdc46ada255b87b6bf41a98bc04"
+  },
+  "freeze_comparison": {
+    "baseline": "native_source_v1/pre_face_type_revision_freeze",
+    "native_input_gate_byte_identical": true,
+    "final_revision_diffed_against_baseline": [
+      "native_c4_ingress.py",
+      "capture_once.py",
+      "native_c4_ingress_case.json",
+      "source_pins.json"
+    ]
+  },
+  "pin_audit": {
+    "counts": {
+      "source_files": 4,
+      "inputs": 5,
+      "preserved_files": 2,
+      "tooling": 9
+    },
+    "total_records": 20,
+    "json_keys_unique": true,
+    "all_referenced_file_hashes_match": true,
+    "future_output_directory": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/native_source_v1/run01_root_go",
+    "future_output_directory_exists": false
+  },
+  "source_findings": [
+    {
+      "id": "FINAL-01",
+      "status": "RESOLVED",
+      "detail": "Native face-role assignment uses Generated(source_edge) history, a unique IsSame body-face inventory, and source-derived bbox signatures; adaptor surface types are report-only."
+    },
+    {
+      "id": "FINAL-02",
+      "status": "RESOLVED",
+      "detail": "Post-STEP roles require one unique native bbox-plus-area fingerprint match per face and role, using the case-declared tolerances."
+    },
+    {
+      "id": "FINAL-03",
+      "status": "RESOLVED",
+      "detail": "Axis generated shape kind is checked with ShapeType() == TopAbs_FACE; degeneracy and history are recorded through declared MakeRevol APIs."
+    },
+    {
+      "id": "FINAL-04",
+      "status": "RESOLVED",
+      "detail": "Capture computes a dynamic child timeout under the 60-second outer budget, preserving a four-second post-child reserve and rejecting zero remaining child time or recorded overruns."
+    }
+  ],
+  "runtime_status": {
+    "ocp_imported": false,
+    "provider_imported": false,
+    "cad_constructed": false,
+    "step_exported": false,
+    "step_imported": false,
+    "tests_run": false,
+    "native_brep_result": "UNKNOWN",
+    "step_roundtrip_result": "UNKNOWN",
+    "global_native_wall": "UNKNOWN",
+    "full_geometry_equality": "UNKNOWN"
+  },
+  "matched_stub_wheel": {
+    "version": "7.9.3.1.1",
+    "sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359",
+    "review_mode": "static archive reads; not installed or imported"
+  },
+  "remaining_source_blockers": []
+}

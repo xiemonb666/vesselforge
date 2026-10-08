@@ -1,0 +1,40 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.api_inspection_receipt/0.1",
+  "status": "CAPTURE_WRAPPER_EXCEPTION_CHILD_STATE_UNKNOWN",
+  "authorization": "ROOT_API_SOURCE_INSPECTION_ONLY",
+  "target_argv": [
+    "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "-B",
+    "C:/Users/xiemo/Desktop/ShardForge/vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/inspect_ocp_api.py"
+  ],
+  "invocation_started": true,
+  "invocation_count": 1,
+  "wait_limit_milliseconds": 5000,
+  "process_id": null,
+  "process_elapsed_milliseconds": null,
+  "timed_out": "UNKNOWN_WRAPPER_DID_NOT_PERSIST_WAIT_STATE",
+  "return_code": null,
+  "source_pins_path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/source_pins.json",
+  "source_pins_sha256": "a2a16747a987074657526fe8e124ce94b3934ca2bda9f5e7274f179ab2bd73a4",
+  "source_pins_match_before": true,
+  "source_pins_match_after": true,
+  "stdout": {
+    "bytes": 0,
+    "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/stdout.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "bytes": 0,
+    "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/stderr.bin",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "wrapper_error_path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/wrapper_error.txt",
+  "wrapper_error_sha256": "34570fa7da20b396e07384eb13e870fc84cb994570bec620c2c2a41527af1f08",
+  "wrapper_exception": "Get-FileHash could not read stdout.bin because another process held it; receipt writer was never reached.",
+  "report_available": false,
+  "api_signature_status": "UNKNOWN_NO_REPORT",
+  "geometry_constructed": false,
+  "cad_operations_run": false,
+  "solver_run": false,
+  "retry_performed": false
+}

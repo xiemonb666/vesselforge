@@ -1,0 +1,31 @@
+{
+  "schema": "vf.geometry_resume.test_source_freeze.v1",
+  "frozen_at_utc": "2026-10-04T19:05:11.8703552Z",
+  "runtime_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "runtime_exe_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "source_and_test_files": [
+    {
+      "path": "src\\vesselforge\\brep_identity.py",
+      "sha256": "a59d0056f4d0ff7bb7bf7932750c33dab773ddc0792f3cfe4bae707bfea53c3a"
+    },
+    {
+      "path": "src\\vesselforge\\asset.py",
+      "sha256": "015c863f3b3215b60a08a6cb36605b3582b846348abd37dd2f7ed1bca0c32804"
+    },
+    {
+      "path": "src\\vesselforge\\wall_mesh_binding.py",
+      "sha256": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0"
+    },
+    {
+      "path": "tests\\test_brep_identity.py",
+      "sha256": "15e007278abe080b9548459f328b8444249c143c6561decf6924c4b8f0b92297"
+    },
+    {
+      "path": "tests\\test_wall_mesh_binding.py",
+      "sha256": "dbb1baefa6dc2a4ea1b62b30fe22c6e22fbc6c51d1739afcae37fae92ad2b2f2"
+    }
+  ],
+  "test_command": "python.exe -B -m pytest -p no:cacheprovider --junitxml=<review-dir>/targeted_pytest.junit.xml tests/test_brep_identity.py tests/test_wall_mesh_binding.py",
+  "status": "FROZEN_BEFORE_AUTHORIZED_SINGLE_TARGETED_PYTEST",
+  "note": "An earlier runtime-path preflight failed before pytest was invoked; corrected path here."
+}

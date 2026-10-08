@@ -1,0 +1,102 @@
+--- v2/wall_reference.py
++++ v3/wall_reference.py
+@@ -215,7 +215,7 @@
+             continue
+         if not _number(sample.get("u")) or not _number(sample.get("v")):
+             errors.append(f"SOURCE_FACE_{expected_index}_WALL_UV_SAMPLE_INVALID")
+-        norm = math.sqrt(sum(float(component) ** 2 for component in normal))
++        norm = math.hypot(*(float(component) for component in normal))
+         if not math.isfinite(norm) or abs(norm - 1.0) > _NORMAL_TOLERANCE:
+             errors.append(f"SOURCE_FACE_{expected_index}_WALL_NORMAL_NOT_UNIT_LENGTH")
+         axis_offset = evidence.get("axis_offset_from_global_z_mm")
+@@ -460,8 +460,8 @@
+             errors.append(f"STATION_{station_number}_DIRECTION_NONFINITE_OR_INVALID")
+         if not _finite_vector(position) or not _finite_vector(normal):
+             continue
+-        norm = math.sqrt(sum(float(component) ** 2 for component in normal))
+-        if abs(norm - 1.0) > _NORMAL_TOLERANCE:
++        norm = math.hypot(*(float(component) for component in normal))
++        if not math.isfinite(norm) or abs(norm - 1.0) > _NORMAL_TOLERANCE:
+             errors.append(f"STATION_{station_number}_DIRECTION_NOT_UNIT_LENGTH")
+ 
+         evidence = station.get("source_classification_evidence")
+--- v2/test_wall_reference.py
++++ v3/test_wall_reference.py
+@@ -49,6 +49,52 @@
+     return record, source_hash
+ 
+ 
++def _semantic_report_from_reference(record):
++    source = record["source_semantics"]
++    station_by_index = {
++        station["source_wall_face_index_zero_based"]: station
++        for station in record["stations"]
++    }
++    rows = []
++    for face_index in range(source["canonical_step_face_count"]):
++        station = station_by_index.get(face_index)
++        if station is None:
++            region_name, region_code = ("natural_rim", 3) if face_index == 2 else ("base", 4)
++            rows.append(
++                {
++                    "face_index_zero_based": face_index,
++                    "status": "CLASSIFIED",
++                    "region_code": region_code,
++                    "region_name": region_name,
++                    "classifier_version": source["classifier"],
++                    "canonical_step_sha256": source["canonical_step_sha256"],
++                }
++            )
++            continue
++        evidence = station["source_classification_evidence"]
++        rows.append(
++            {
++                "face_index_zero_based": face_index,
++                "status": "CLASSIFIED",
++                "region_code": 1 if station["wall_role"] == "outer" else 2,
++                "region_name": evidence["region_name"],
++                "classifier_version": evidence["classifier_version"],
++                "canonical_step_sha256": evidence["canonical_step_sha256"],
++                "classification_basis": evidence["classification_basis"],
++                "classification_evidence": copy.deepcopy(evidence["classification_evidence"]),
++                "interior_sample": copy.deepcopy(evidence["interior_sample"]),
++            }
++        )
++    return {
++        "schema": source["schema"],
++        "status": source["status"],
++        "classifier": source["classifier"],
++        "canonical_step_sha256": source["canonical_step_sha256"],
++        "canonical_step_face_count": source["canonical_step_face_count"],
++        "faces": rows,
++    }
++
++
+ def test_analytic_hollow_cylinder_records_both_material_outward_wall_directions(analytic_hollow_cylinder_reference):
+     record, source_hash = analytic_hollow_cylinder_reference
+     assert record["status"] == "MOTHER_SOURCE_ONLY"
+@@ -148,3 +194,24 @@
+     assert result["status"] == "UNKNOWN"
+     assert error in result["errors"]
+ 
++
++def test_finite_huge_normal_returns_unknown_for_source_and_persisted_record(analytic_hollow_cylinder_reference):
++    record, source_hash = analytic_hollow_cylinder_reference
++    source_semantics = _semantic_report_from_reference(record)
++    source_semantics["faces"][0]["interior_sample"]["oriented_outward_normal"] = [1e308, 0.0, 0.0]
++    built = build_wall_reference(
++        source_semantics,
++        source_geometry_sha256=source_hash,
++        units={"length": "mm", "time": "s", "mass": "kg"},
++        frame="right_handed_z_up",
++        source_scope="analytic_fixture_mother",
++    )
++    assert built["status"] == "UNKNOWN"
++    assert "SOURCE_FACE_0_WALL_NORMAL_NOT_UNIT_LENGTH" in built["unknown_reasons"]
++
++    altered = copy.deepcopy(record)
++    altered["stations"][0]["outward_from_material"] = [1e308, 0.0, 0.0]
++    validated = validate_wall_reference(altered, expected_source_geometry_sha256=source_hash)
++    assert validated["status"] == "UNKNOWN"
++    assert "STATION_0_DIRECTION_NOT_UNIT_LENGTH" in validated["errors"]
++

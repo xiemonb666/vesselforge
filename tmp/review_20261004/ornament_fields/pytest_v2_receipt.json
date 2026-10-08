@@ -1,0 +1,28 @@
+{
+  "task": "Reviewed VesselForge ornament_fields v2 targeted pytest",
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_ornament_fields.py",
+    "--junitxml=C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\pytest_v2.junit.xml"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge",
+  "source_test_sha256_before": {
+    "source_sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+    "test_sha256": "7cec79dfce6a867d70dbfc786d3d04b38b3cece47be2f6d6fc20f3987bafc022"
+  },
+  "source_test_sha256_after": {
+    "source_sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+    "test_sha256": "7cec79dfce6a867d70dbfc786d3d04b38b3cece47be2f6d6fc20f3987bafc022"
+  },
+  "stdout_file": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\pytest_v2.stdout.txt",
+  "stdout": "......                                                                   [100%]\n- generated xml file: C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\pytest_v2.junit.xml -\n6 passed in 1.57s\n",
+  "stderr_file": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\pytest_v2.stderr.txt",
+  "stderr": "",
+  "junit_xml": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\pytest_v2.junit.xml",
+  "junit_xml_sha256": "6034972f5cad99a1d6f406134b63c40f2ed1214099559ef7228e3f17c08e7575",
+  "exit_code": 0
+}

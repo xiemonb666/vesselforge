@@ -1,0 +1,96 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.api_inspection_source_pins/0.1",
+  "state": "PREPARED_ONE_READ_NO_IMPORT_YET",
+  "authorization": "ROOT_API_SOURCE_INSPECTION_ONLY",
+  "allowed_scope": "import installed OCP classes and inspect docs/signatures; no constructors, geometry objects, CAD operations, solvers, renders, or tests",
+  "target_command": [
+    "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "-B",
+    "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/inspect_ocp_api.py"
+  ],
+  "target_timeout_seconds": 5,
+  "maximum_persisted_output_bytes": 204800,
+  "requested_classes": [
+    "Geom_BSplineCurve",
+    "Geom_OffsetCurve",
+    "BRepBuilderAPI_MakeEdge",
+    "BRepBuilderAPI_MakeFace",
+    "BRepPrimAPI_MakeRevol",
+    "GeomAPI_ProjectPointOnCurve"
+  ],
+  "official_occt_source_version": "Open-Cascade-SAS/OCCT tag V7_9_3",
+  "files": [
+    {
+      "name": "design",
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/DESIGN.md",
+      "sha256": "f2beb8c624986e6fc803e82397dc4a8723d7fbff0204ad6ed3bd0322817188fa",
+      "bytes": 7534
+    },
+    {
+      "name": "case_draft",
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/CASE_DRAFT.json",
+      "sha256": "62027a35c8d08a6214f7e504a1f5f9820ec4df5c83d885c192b8ffbda50151c5",
+      "bytes": 5582
+    },
+    {
+      "name": "static_references",
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/STATIC_REFERENCES.json",
+      "sha256": "c532b682a8e09e7f6f6426681f6d33598dca512d0db2cf52a830d00aa1dcc1ed",
+      "bytes": 7698
+    },
+    {
+      "name": "outer_result",
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "bytes": 491496
+    },
+    {
+      "name": "normal_offset_result",
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+      "bytes": 435804
+    },
+    {
+      "name": "strip_result",
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+      "bytes": 4355
+    },
+    {
+      "name": "inspector",
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/inspect_ocp_api.py",
+      "sha256": "e41928c3e0d91b817e997d4d98110f29a8b8ca49087daa6007af70180f1efb8e",
+      "bytes": 3400
+    },
+    {
+      "name": "primary_source_evidence",
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/PRIMARY_SOURCE_EVIDENCE.json",
+      "sha256": "c1a7d2ac6ed917d9bd218270b0af68eeed184a7d830ae6781b74e4267a40016a",
+      "bytes": 2273
+    },
+    {
+      "name": "cadquery_metadata",
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery-2.8.0.dist-info/METADATA",
+      "sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae",
+      "bytes": 14420
+    },
+    {
+      "name": "cadquery_ocp_metadata",
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+      "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6",
+      "bytes": 855
+    },
+    {
+      "name": "ocp_geom_reexport",
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/Geom/__init__.py",
+      "sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba",
+      "bytes": 26
+    },
+    {
+      "name": "ocp_brep_offset_api_reexport",
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepOffsetAPI/__init__.py",
+      "sha256": "44ae22db58356b0750f1f1739f92b48045424e4519b6d96caa4fddecdbdd32cf",
+      "bytes": 35
+    }
+  ]
+}

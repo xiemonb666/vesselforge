@@ -1,0 +1,75 @@
+{
+  "schema": "vesselforge.normal_offset_meridian.failed_source_freeze.v1",
+  "state": "PRESERVED_FAILURE_NO_RETRY",
+  "runner_executed_once": true,
+  "actual_rc": 2,
+  "runner_status": "FAILURE",
+  "failure_detail": "{\"error\": \"ValueError\", \"detail\": \"Bernstein degrees must match before addition\"}",
+  "attempt_output_components_bytes": {
+    "normal_offset_meridian_result.json": 0,
+    "normal_offset_meridian_stdout.bin": 0,
+    "normal_offset_meridian_stderr.bin": 83,
+    "normal_offset_meridian_once.lock": 25,
+    "normal_offset_meridian_run_receipt.json": 2782
+  },
+  "attempt_output_total_bytes": 2890,
+  "attempt_total_matches_receipt": true,
+  "attempt_total_receipt_bytes": 2890,
+  "snapshot_files": {
+    "normal_offset_meridian_certificate.py": {
+      "original_path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/normal_offset_meridian_certificate.py",
+      "bytes": 9847,
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114"
+    },
+    "run_normal_offset_meridian.py": {
+      "original_path": "vesselforge/experiments/normal_offset_meridian_20261006/run_normal_offset_meridian.py",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/run_normal_offset_meridian.py",
+      "bytes": 14652,
+      "sha256": "a4307e15c461813669232ca4055a0a9f42b0f60f009070cff9e5b713781f7fb8"
+    },
+    "README.md": {
+      "original_path": "vesselforge/experiments/normal_offset_meridian_20261006/README.md",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/README.md",
+      "bytes": 4553,
+      "sha256": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef"
+    },
+    "case_false.json": {
+      "original_path": "vesselforge/experiments/normal_offset_meridian_20261006/case_false.json",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/case_false.json",
+      "bytes": 1674,
+      "sha256": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319"
+    },
+    "source_pins.json": {
+      "original_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/source_pins.json",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/source_pins.json",
+      "bytes": 5137,
+      "sha256": "ceb90fed65893f865d978679ca72945a0fe7957eb9e9ffa2ca8a24268b1d09a3"
+    },
+    "normal_offset_meridian_run_receipt.json": {
+      "original_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_run_receipt.json",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/normal_offset_meridian_run_receipt.json",
+      "bytes": 2782,
+      "sha256": "f43b82f22a51fc3acd979df9f99b1d110932ab6d05ad571c7581dda300541083"
+    },
+    "normal_offset_meridian_stdout.bin": {
+      "original_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_stdout.bin",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/normal_offset_meridian_stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal_offset_meridian_stderr.bin": {
+      "original_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_stderr.bin",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/normal_offset_meridian_stderr.bin",
+      "bytes": 83,
+      "sha256": "e470e18eddab907f89c2c3f3b5fea6ebddd35dab89982ce2293d8ed6f728abdc"
+    },
+    "normal_offset_meridian_once.lock": {
+      "original_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_once.lock",
+      "snapshot_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/normal_offset_meridian_once.lock",
+      "bytes": 25,
+      "sha256": "d4d8e4969b36964e6cd8a2b86f4a795504431173778110eba5ddcf5256aa82c6"
+    }
+  },
+  "result_file_present": false
+}

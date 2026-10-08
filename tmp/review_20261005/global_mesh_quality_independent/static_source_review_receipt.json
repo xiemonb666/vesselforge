@@ -1,0 +1,25 @@
+{
+  "review_id": "global_mesh_quality_independent_static_source_review_20261005",
+  "review_date": "2026-10-05",
+  "status": "BLOCKED_ON_OLD_READER_REJECTION_OR_QUARANTINE",
+  "scope": "Read-only static review of candidate.py, focused_checks.py, and candidate_contract.json",
+  "generation_invoked": false,
+  "cad_invoked": false,
+  "visualization_generated": false,
+  "files_written_outside_reviewer_directory": false,
+  "frozen_source_sha256": {
+    "candidate.py": "c77a82c9503275aab746e0a092fcedca1e5985de091e9053d5401073f5cb7a7c",
+    "focused_checks.py": "9e0dc06422938124dfe63588cb7f07739b6ead950132066f9327a718260be11f",
+    "candidate_contract.json": "b952251d1995fd29e65aa3c18b19ae7c341827eb52e402af0581dbc2d3febc95"
+  },
+  "blocking_finding": "Schema-v2 metadata and sentinel fields are written and checked, but no existing Python reader in vesselforge was found that rejects schema v2 before consuming source_face_ids / face_corner_barycentric_to_source. The artifact is isolated under tmp and candidate code does not invoke a legacy reader; compatibility remains unproven if passed to one.",
+  "core_source_review": {
+    "single_parent_face_keeps_legacy_mapping": "implemented by full-patch coverage condition",
+    "cross_parent_face_uses_explicit_patch_overlay": "implemented",
+    "patches_cover_without_positive_area_overlap": "implemented and readback checked",
+    "actual_xyz_global_quality": "implemented for every mesh face",
+    "whole_mesh_topology_and_volume": "implemented",
+    "mechanics_or_physical_fragment_claim": "explicitly disclaimed"
+  },
+  "report": "static_source_review.md"
+}

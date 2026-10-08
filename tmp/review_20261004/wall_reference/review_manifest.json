@@ -1,0 +1,31 @@
+{
+  "test_argv": "third_party/vesselforge-runtime/venv/Scripts/python.exe -m pytest -s -vv vesselforge/tests/test_wall_reference.py",
+  "exit_code": 0,
+  "output_path": "pytest_output.txt",
+  "output_sha256": "272637a3aa11e33fee8370dec2ccc9d4f9ec7cdf402d871024a5383acf0168ae",
+  "output_bytes": 6009,
+  "before_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "exists": false,
+      "sha256": null
+    }
+  ],
+  "after_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "exists": true,
+      "sha256": "ceeeeec791ed1264bd73a2c0e9dd250ab39aa213a97f75725bf2e6eab91c3461"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "exists": true,
+      "sha256": "12f68d858a43158851b36a37e814fca92b15114cb9509ac8777b75cb1700e410"
+    }
+  ]
+}

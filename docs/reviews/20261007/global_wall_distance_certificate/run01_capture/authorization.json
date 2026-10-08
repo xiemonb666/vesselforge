@@ -1,0 +1,19 @@
+{
+  "schema": "vesselforge.global_wall_distance.root_go_record.v1",
+  "decision": "GO",
+  "authorization": "ROOT_20261007_GLOBAL_WALL_DISTANCE_RUN01",
+  "case_sha256": "1d521dfa7ee65a7c1807b72bb12b5eb1e02a7e7c9dbb58038d875beb22ee2b88",
+  "source_pins_sha256": "b32b3d02e770188aae4cc88f7bf068ec59fda1069049272fc7c5b9569358bf56",
+  "invoke_once_sha256": "4ce609a689a392da0517c277955642501c2a754af2255de470dd30c13b67339f",
+  "capture_once_sha256": "29a43d8eb4f992ee85b814f534fb1b12a76e1b00014061b43d52b4b6ed4c441e",
+  "root_ready_argument": true,
+  "call_count_authorized": 1,
+  "source_path": "vesselforge/experiments/global_wall_distance_certificate_20261007/global_wall_distance_certificate.py",
+  "source_sha256": "2466306decc0af17d47c71d8e66b110aa77255f8f9279b94180a86ee7029886d",
+  "actual_independent_review_path": "vesselforge/tmp/review_20261007/global_wall_distance_independent/REVIEW.md",
+  "actual_independent_review_sha256": "059567f8d3fd5912e6020100b5bf122849439290321bdcbbc531a9c002f060c6",
+  "actual_independent_review_json_path": "vesselforge/tmp/review_20261007/global_wall_distance_independent/review.json",
+  "actual_independent_review_json_sha256": "a73c4cfa30fbaab1a2284a97c9979f0ec340a4484b5363404d0651d9a9a9b6e9",
+  "author_pins_review_is_author_source_review": true,
+  "note": "author_pins_review_is_author_source_review"
+}

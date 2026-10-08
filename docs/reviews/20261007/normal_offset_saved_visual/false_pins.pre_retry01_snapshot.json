@@ -1,0 +1,35 @@
+{
+  "schema": "vesselforge.normal_offset_saved_visual.false_pins.v1",
+  "state": "SOURCE_ONLY_WAITING_FOR_ROOT_RESULT_SHA",
+  "renderer": {"path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/render_saved_local_normal_offset.py", "sha256": "3aa1b890b665ec2e2c7ae6b064de67131bac708318fc374403c5ca94b7ccf786"},
+  "inputs": {
+    "normal_offset_result": {"path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_result.json", "sha256": null, "required_action": "Root fills actual successful saved-result SHA before any render"},
+    "curvature_result": {"path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json", "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"},
+    "frozen_driver": {"path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py", "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"}
+  },
+  "last_observed_normal_offset_attempt": {
+    "receipt_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_run_receipt.json",
+    "receipt_sha256": "f43b82f22a51fc3acd979df9f99b1d110932ab6d05ad571c7581dda300541083",
+    "status": "FAILURE",
+    "actual_rc": 2,
+    "result_exists": false,
+    "stderr_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_stderr.bin",
+    "stderr_sha256": "e470e18eddab907f89c2c3f3b5fea6ebddd35dab89982ce2293d8ed6f728abdc",
+    "detail": "ValueError: Bernstein degrees must match before addition",
+    "retry_permitted": false
+  },
+  "visual_contract": {
+    "families": ["jar"],
+    "outer": "Pinned saved exact outer Bezier controls; de Casteljau at 25 samples per span",
+    "inner": "Saved true_normal_display_25 samples only; no normal-offset recomputation",
+    "spans": 12,
+    "samples_per_span": 25,
+    "coordinates": "same r(mm)/z(mm) axes with equal aspect",
+    "scope": "local 2D meridian candidate only",
+    "global_wall": "UNKNOWN",
+    "normal_strip_global_injectivity": "UNKNOWN",
+    "lip_native_3d_physics": "UNKNOWN",
+    "source_only_no_mpl_geometry_kernel_or_render": true
+  },
+  "output": {"path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/normal_offset_local_2d_preview.png", "render_budget_seconds": 15, "max_bytes": 2097152, "source_phase_rendered": false}
+}

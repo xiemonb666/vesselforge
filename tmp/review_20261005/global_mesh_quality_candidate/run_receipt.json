@@ -1,0 +1,19 @@
+{
+  "automatic_retry": false,
+  "candidate_count": 1,
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "elapsed_seconds": 2.0152110001072288,
+  "error": "local-B base colors disagree with the frozen continuous field",
+  "error_type": "CandidateUnknown",
+  "finished_at_utc": "2026-10-05T09:51:38.310814+00:00",
+  "generation_invoked": true,
+  "input_sha256": {
+    "baseline_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "refinement_source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+  },
+  "started_at_utc": "2026-10-05T09:51:36.295533+00:00",
+  "status": "UNKNOWN_OR_FAIL"
+}

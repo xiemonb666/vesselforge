@@ -1,0 +1,28 @@
+{
+  "review_state": "V2_DIFF_FROZEN_AWAITING_ROOT_REVIEW",
+  "before_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "ceeeeec791ed1264bd73a2c0e9dd250ab39aa213a97f75725bf2e6eab91c3461"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "12f68d858a43158851b36a37e814fca92b15114cb9509ac8777b75cb1700e410"
+    }
+  ],
+  "after_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "8f3f6bd4177bd334bbe06fca1fe11ab81ddcd8da7a3c973b95c2ebd22b904c4a"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "2ed53950d5417374bb1c1a8085f35e83866d6650d80b80bc33c16a010add8288"
+    }
+  ],
+  "diff_path": "v2.diff",
+  "diff_sha256": "8d4dc49143a4ab519c7686694a347ab3c5b1a278cc0b4f7203d835772eee4f41",
+  "diff_bytes": 6071,
+  "pytest": "NOT_RUN_PENDING_ROOT_APPROVAL",
+  "cad_solver_git": "NOT_RUN"
+}

@@ -1,0 +1,9 @@
+# v5 compact wall-reference semantics fix
+
+The preserved v4 one-shot fixture exported/imported the analytic tube and wrote the surface, lineage, face-semantics, wall-reference, and asset-manifest files. Binding stopped with `WALL_REFERENCE_SEMANTICS_FILE_MISMATCH` before a binding report existed. The full v4 execution receipt and artifact hashes remain under `v4_run/`; exact copies of the v4 helper, test, freeze, receipts, logs, JUnit, and failure inventory remain under `v4_frozen/`.
+
+The producer in `wall_reference.py` stores a deliberately compact `source_semantics` object, not the whole face-semantics report. The v5 helper now constructs that exact producer projection from the full face-semantics record: its five scalar fields plus an ordered `wall_face_inventory` containing only body_outer/body_inner face indices and outer/inner roles. It requires exact canonical JSON equality, so altered or omitted scalars, altered/missing inventory entries, and unexpected extra fields are rejected. Full file-byte hashes, backend checks, canonical STEP reclassification, face identity/order checks, and station re-evaluation remain independent checks.
+
+The v5 tests use a deterministic four-face source-semantics fixture and the actual `build_wall_reference` producer. They verify exact projection equivalence and fail-closed behavior for each scalar changed or omitted, inventory index/role changes, inventory omission, and extra compact fields. They do not create or import CAD geometry.
+
+No tests or CAD/STEP operations have been run for v5. After source review, a later gate can reuse the already-generated v4 STEP, NPZ, semantics, and wall-reference bytes, verify their recorded hashes, and invoke binding once into a new output directory. That retry should not reconstruct or export the analytic asset.

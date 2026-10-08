@@ -1,0 +1,56 @@
+{
+  "run": "run3",
+  "test": "vesselforge/tests/test_wall_reference.py",
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "actual_argv": {
+    "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "argv": [
+      "-m",
+      "pytest",
+      "-s",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--junitxml=C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_reference\\v3_review\\run3\\test_wall_reference.junit.xml",
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tests\\test_wall_reference.py"
+    ],
+    "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+  },
+  "exit_code": 0,
+  "before_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "d0ef04896cbfafbdf45677912607c0cc632f2d65fde2edeb99c65bf45b14aa1d"
+    }
+  ],
+  "after_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "d0ef04896cbfafbdf45677912607c0cc632f2d65fde2edeb99c65bf45b14aa1d"
+    }
+  ],
+  "stdout": {
+    "path": "stdout.txt",
+    "sha256": "be15e6e83eea210af1037dd1fe25bcf67f9e36e77199432aae80096b5706ce06",
+    "bytes": 4901
+  },
+  "stderr": {
+    "path": "stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "junit": {
+    "path": "test_wall_reference.junit.xml",
+    "exists": true,
+    "sha256": "b96d5613f301968b2979e4ec52e1cb05d108051b847386d30168912309a3dd5b",
+    "bytes": 2003
+  }
+}

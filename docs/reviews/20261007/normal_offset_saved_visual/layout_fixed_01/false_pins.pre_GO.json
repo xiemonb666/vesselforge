@@ -1,0 +1,150 @@
+{
+  "schema": "vesselforge.normal_offset_saved_visual.false_pins.v1",
+  "state": "SOURCE_READY_AWAITING_LAYOUT_RENDER_GO",
+  "renderer": {
+    "path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/layout_fixed_01/render_saved_local_normal_offset.py",
+    "sha256": "f00a162fcc8540b81478af6f2349ee5062ae31235c7e5f3dedf0dc45549bcbca"
+  },
+  "inputs": {
+    "normal_offset_result": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    "curvature_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    "frozen_driver": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    }
+  },
+  "successful_saved_run": {
+    "receipt_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_run_receipt.json",
+    "receipt_sha256": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d",
+    "status": "COMPLETE",
+    "actual_rc": 0,
+    "elapsed_seconds": 0.187,
+    "span_count": 12,
+    "display_samples_per_span": 25,
+    "global_wall_status": "UNKNOWN",
+    "normal_strip_global_injectivity": "UNKNOWN",
+    "study_status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+    "nodes_used": 37,
+    "primitive_nonnegative_calls": 37,
+    "display_sample_rows": 300,
+    "false_fixture_checks": "PASS"
+  },
+  "prior_failed_attempt_preserved": {
+    "receipt_path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/normal_offset_meridian_run_receipt.json",
+    "receipt_sha256": "f43b82f22a51fc3acd979df9f99b1d110932ab6d05ad571c7581dda300541083",
+    "status": "FAILURE",
+    "actual_rc": 2,
+    "detail": "ValueError: Bernstein degrees must match before addition",
+    "retry_permitted": false
+  },
+  "result_metadata_read_only_contract_check": {
+    "top_level_schema_field": null,
+    "status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+    "scope": "jar_meridian_2d_only",
+    "span_count": 12,
+    "all_spans_have_six_2d_saved_bezier_controls": true,
+    "all_spans_have_25_finite_true_normal_display_rows": true,
+    "global_wall_status": "UNKNOWN",
+    "normal_strip_global_injectivity": "UNKNOWN"
+  },
+  "visual_contract": {
+    "families": [
+      "jar"
+    ],
+    "outer": "Pinned saved exact Bezier controls from curvature result, re-read at 25 de Casteljau display points per span",
+    "inner": "Saved true_normal_display_25 samples only; no normal-offset recomputation",
+    "spans": 12,
+    "samples_per_span": 25,
+    "coordinates": "same r(mm)/z(mm) axes with equal aspect",
+    "scope": "local 2D meridian candidate only",
+    "global_wall": "UNKNOWN",
+    "normal_strip_global_injectivity": "UNKNOWN",
+    "lip_native_3d_physics": "UNKNOWN",
+    "fills_or_solid_geometry": false
+  },
+  "render_authorization": {
+    "root_render_only_go_received": false,
+    "required_before_execution": true,
+    "one_png": true,
+    "outer_limit_seconds": 15,
+    "maximum_output_bytes": 2097152,
+    "output_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/layout_fixed_01/normal_offset_local_2d_preview.png",
+    "one_shot": true
+  },
+  "source_phase": {
+    "AST_parse_only": true,
+    "JSON_metadata_and_SHA_only": true,
+    "control_coordinate_values_printed_or_used": false,
+    "matplotlib_imported_or_called": false,
+    "normal_offset_kernel_invoked": false,
+    "geometry_or_render_executed": false,
+    "runner_AST_parse_only": true,
+    "runner_invoked": false,
+    "layout_revision_only": true,
+    "render_invoked": false,
+    "layout_fix_renderer_ast_parse_only": true
+  },
+  "preserved_snapshots": {
+    "renderer": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/render_saved_local_normal_offset.pre_retry01_snapshot.py",
+      "sha256": "3aa1b890b665ec2e2c7ae6b064de67131bac708318fc374403c5ca94b7ccf786"
+    },
+    "false_pins": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/false_pins.pre_retry01_snapshot.json",
+      "sha256": "16ff475882b4adc1aebd0ee77882996b547c9b632426795c38d73b691936e8ac"
+    }
+  },
+  "runner": {
+    "path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/layout_fixed_01/run_saved_visual_once.py",
+    "sha256": "8b5da0e25a04dd86c201b56bcd847bfe248c1c71d1d125f53147d9913d8c5377"
+  },
+  "runner_contract": {
+    "deadline_seconds": 15,
+    "deadline_includes_preflight": true,
+    "max_total_capture_bytes": 2097152,
+    "total_includes": [
+      "PNG",
+      "raw stdout",
+      "raw stderr",
+      "render_started.json",
+      "render_receipt.json"
+    ],
+    "receipt_bytes": "newline-inclusive UTF-8 JSON byte length at a fixed point, max 10 iterations",
+    "fixed_point_failure": "UNKNOWN_FIXED_POINT_NOT_PASS",
+    "capture_overflow_returncode": 126,
+    "input_pin_change_returncode": 125,
+    "deadline_overrun_returncode": 124,
+    "exclusive_create_for_start_and_raw_captures_and_receipt": true
+  },
+  "preserved_pre_runner_fix": {
+    "runner_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/run_saved_visual_once.pre_budget_fix.py",
+    "runner_sha256": "4494492cc491e2d80ca63b270162f5852214dd4863c10e2f583ca5969b0746fe",
+    "false_pins_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/false_pins.pre_budget_fix.json",
+    "false_pins_sha256": "ac2224f90afd0853d63e6b0d2c7701d53a1426b9a5b65e2a21f16ee633bf3b36"
+  },
+  "preserved_pre_render_go": {
+    "path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/false_pins.pre_render_go.json",
+    "sha256": "4da0dd0e0c42e5487ad72bd90795bf5b0c74b5ad55c8d72d0196dbbef9e79701"
+  },
+  "layout_revision": {
+    "purpose": "Move legend to a dedicated row above the r/z axes so neck endpoint remains unobscured",
+    "numeric_inputs_unchanged": true,
+    "saved_outer_sampling_unchanged": true,
+    "saved_inner_300_samples_unchanged": true,
+    "aspect": "equal r/z units retained",
+    "prior_renderer_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/render_saved_local_normal_offset.py",
+    "prior_renderer_sha256": "b19b1ae570340ac9c8fce5717e241b76407d02c16dcc612dd22dc05e0a4209e6",
+    "prior_png_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/normal_offset_local_2d_preview.png",
+    "prior_png_sha256": "a748dbf7833b777cee4359d2ff06d4e58f4efa304c7c6eb049a3a01da244f5dc",
+    "prior_go_pins_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/false_pins.json",
+    "prior_go_pins_sha256": "1bf50d2233ab3f80599db96a70249a92a31229244362007c514d68e893f5f10d",
+    "prior_receipt_path": "vesselforge/tmp/review_20261006/normal_offset_saved_visual/render_receipt.json",
+    "prior_receipt_sha256": "c2a70ffed1d252dbd74538ffba6b96c29147dacf49c24833e1a272b99411d8a8"
+  }
+}

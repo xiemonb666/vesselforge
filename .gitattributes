@@ -11,3 +11,5 @@
 /docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.md -text
 /docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.json -text
 /docs/evidence/20261005/** -text
+
+/docs/backup/20261007/raw_source/** -text

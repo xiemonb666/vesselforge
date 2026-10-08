@@ -1,0 +1,369 @@
+{
+  "schema": "vesselforge.ocp_stubs_download_receipt/0.1",
+  "status": "DOWNLOADED_RC0",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "download",
+    "--no-deps",
+    "--no-index",
+    "--only-binary=:all:",
+    "--no-cache-dir",
+    "--quiet",
+    "--dest",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\stubs_7_9_3_1_1",
+    "https://files.pythonhosted.org/packages/6c/de/2a93a7cd47226bdd802674e8a040235ef1a1a4433bbf4d220e21253fe31e/cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl"
+  ],
+  "timeout_seconds": 25.0,
+  "elapsed_seconds": 1.9839999999385327,
+  "returncode": 0,
+  "exception_type": null,
+  "download_only": true,
+  "installation_performed": false,
+  "OCP_imported": false,
+  "CAD_or_geometry_run": false,
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "logs_total_bytes": 0,
+  "logs_cap_bytes": 204800,
+  "logs_within_cap": true,
+  "source_pins_pre": {
+    "files": [
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery-2.8.0.dist-info/METADATA",
+        "exists": true,
+        "bytes": 14420,
+        "sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae",
+        "expected_sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+        "exists": true,
+        "bytes": 855,
+        "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6",
+        "expected_sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp_proxy-7.9.3.1.1.dist-info/METADATA",
+        "exists": true,
+        "bytes": 5160,
+        "sha256": "0d4b627a0e56e43560ab6e392f3e5e9631aeff345febc1df814a6c8387d3ee31",
+        "expected_sha256": "0d4b627a0e56e43560ab6e392f3e5e9631aeff345febc1df814a6c8387d3ee31"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/vtk-9.6.2.dist-info/METADATA",
+        "exists": true,
+        "bytes": 5724,
+        "sha256": "a4ff84472150d5c5dfee5f7419da3f4e56d514ebdbea92c062e84b6d843a6c63",
+        "expected_sha256": "a4ff84472150d5c5dfee5f7419da3f4e56d514ebdbea92c062e84b6d843a6c63"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/Geom/__init__.py",
+        "exists": true,
+        "bytes": 26,
+        "sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba",
+        "expected_sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/GeomAPI/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "6c7c8d7cf047670010ae217c8a854dc8f7512ce6195761350c5e31fab7acf7cd",
+        "expected_sha256": "6c7c8d7cf047670010ae217c8a854dc8f7512ce6195761350c5e31fab7acf7cd"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepBuilderAPI/__init__.py",
+        "exists": true,
+        "bytes": 36,
+        "sha256": "061c6a111200b5f95fc6f665bd9248e12a7029c5d5268203ab9692766adfa594",
+        "expected_sha256": "061c6a111200b5f95fc6f665bd9248e12a7029c5d5268203ab9692766adfa594"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepPrimAPI/__init__.py",
+        "exists": true,
+        "bytes": 33,
+        "sha256": "69f701995fa6bc495566eb9d53983f7154df7d7a7b8147b0b24b07fc194a130e",
+        "expected_sha256": "69f701995fa6bc495566eb9d53983f7154df7d7a7b8147b0b24b07fc194a130e"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TopoDS/__init__.py",
+        "exists": true,
+        "bytes": 318,
+        "sha256": "efdaf37a3f177048df89ad745026110b2220b527c78a920d4f16cbd895e4892f",
+        "expected_sha256": "efdaf37a3f177048df89ad745026110b2220b527c78a920d4f16cbd895e4892f"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Scripts/python.exe",
+        "exists": true,
+        "bytes": 275432,
+        "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+        "expected_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/nurbs.py",
+        "exists": true,
+        "bytes": 53221,
+        "sha256": "0464ac65ae0aac9e5519ea9e405fbeb3c96751c5450e3ced811601fb5a62a47e",
+        "expected_sha256": "0464ac65ae0aac9e5519ea9e405fbeb3c96751c5450e3ced811601fb5a62a47e"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/importers/dxf.py",
+        "exists": true,
+        "bytes": 5456,
+        "sha256": "e7f4f8e8e76d4e8bce1de18ac398fe7e16103ba6dcef9554b8dfae7c7ba7db60",
+        "expected_sha256": "e7f4f8e8e76d4e8bce1de18ac398fe7e16103ba6dcef9554b8dfae7c7ba7db60"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/shapes.py",
+        "exists": true,
+        "bytes": 228103,
+        "sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94",
+        "expected_sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/importers/__init__.py",
+        "exists": true,
+        "bytes": 4365,
+        "sha256": "f4f9605e824c59398d78c313bc0ee6d857e9f8ad45604fa3f67341aa59512934",
+        "expected_sha256": "f4f9605e824c59398d78c313bc0ee6d857e9f8ad45604fa3f67341aa59512934"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/__init__.py",
+        "exists": true,
+        "bytes": 983,
+        "sha256": "a6e58c0a863a4ed8fb619344b704d2cae2fb58a91fa7e00a6612272076eae930",
+        "expected_sha256": "a6e58c0a863a4ed8fb619344b704d2cae2fb58a91fa7e00a6612272076eae930"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/gp/__init__.py",
+        "exists": true,
+        "bytes": 24,
+        "sha256": "e57429ca14b9c6cc1a04de68dadefc6705e41c2d98b25d583ef6a6fad919718b",
+        "expected_sha256": "e57429ca14b9c6cc1a04de68dadefc6705e41c2d98b25d583ef6a6fad919718b"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TColgp/__init__.py",
+        "exists": true,
+        "bytes": 28,
+        "sha256": "23077b73d94d87d8d8f83390241a745c585f915559da394f5ecac2157de0f0bf",
+        "expected_sha256": "23077b73d94d87d8d8f83390241a745c585f915559da394f5ecac2157de0f0bf"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TColStd/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "5a7d3803ff96d2239075d3a5912ce299dacc5e556612064661d3a14bd7c1572a",
+        "expected_sha256": "5a7d3803ff96d2239075d3a5912ce299dacc5e556612064661d3a14bd7c1572a"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/GeomAbs/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "e244c0c87943fbb483e8547c256138c61c2a50f7f70c0152f2887c1d24e2b9c9",
+        "expected_sha256": "e244c0c87943fbb483e8547c256138c61c2a50f7f70c0152f2887c1d24e2b9c9"
+      },
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/STUB_WHEEL_SOURCE_EVIDENCE.json",
+        "exists": true,
+        "bytes": 1458,
+        "sha256": "11bf1df66f0b00eb037d3750f0468b4b177c43da667b561454283113c2db85f7",
+        "expected_sha256": "11bf1df66f0b00eb037d3750f0468b4b177c43da667b561454283113c2db85f7"
+      },
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/LOCAL_BINDING_SOURCE_SCAN.md",
+        "exists": true,
+        "bytes": 4785,
+        "sha256": "1cbc8d8c6e7991d5cd62b8fc3c63cb974f56868c0493ce11f7a6195054f535ae",
+        "expected_sha256": "1cbc8d8c6e7991d5cd62b8fc3c63cb974f56868c0493ce11f7a6195054f535ae"
+      }
+    ],
+    "programs": [
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/download_matching_stubs.py",
+        "exists": true,
+        "bytes": 6459,
+        "sha256": "85b1b2d09be11004b9e24e3013f8103cdd0afa0fb6f25c014f69ad4602739955",
+        "expected_sha256": "85b1b2d09be11004b9e24e3013f8103cdd0afa0fb6f25c014f69ad4602739955"
+      }
+    ],
+    "pins_file_sha256": "ede5093193c1637a98205967436c279d21dccceeb2e8318ecdd20aa398a10408"
+  },
+  "source_pins_post": {
+    "files": [
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery-2.8.0.dist-info/METADATA",
+        "exists": true,
+        "bytes": 14420,
+        "sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae",
+        "expected_sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+        "exists": true,
+        "bytes": 855,
+        "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6",
+        "expected_sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp_proxy-7.9.3.1.1.dist-info/METADATA",
+        "exists": true,
+        "bytes": 5160,
+        "sha256": "0d4b627a0e56e43560ab6e392f3e5e9631aeff345febc1df814a6c8387d3ee31",
+        "expected_sha256": "0d4b627a0e56e43560ab6e392f3e5e9631aeff345febc1df814a6c8387d3ee31"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/vtk-9.6.2.dist-info/METADATA",
+        "exists": true,
+        "bytes": 5724,
+        "sha256": "a4ff84472150d5c5dfee5f7419da3f4e56d514ebdbea92c062e84b6d843a6c63",
+        "expected_sha256": "a4ff84472150d5c5dfee5f7419da3f4e56d514ebdbea92c062e84b6d843a6c63"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/Geom/__init__.py",
+        "exists": true,
+        "bytes": 26,
+        "sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba",
+        "expected_sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/GeomAPI/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "6c7c8d7cf047670010ae217c8a854dc8f7512ce6195761350c5e31fab7acf7cd",
+        "expected_sha256": "6c7c8d7cf047670010ae217c8a854dc8f7512ce6195761350c5e31fab7acf7cd"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepBuilderAPI/__init__.py",
+        "exists": true,
+        "bytes": 36,
+        "sha256": "061c6a111200b5f95fc6f665bd9248e12a7029c5d5268203ab9692766adfa594",
+        "expected_sha256": "061c6a111200b5f95fc6f665bd9248e12a7029c5d5268203ab9692766adfa594"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepPrimAPI/__init__.py",
+        "exists": true,
+        "bytes": 33,
+        "sha256": "69f701995fa6bc495566eb9d53983f7154df7d7a7b8147b0b24b07fc194a130e",
+        "expected_sha256": "69f701995fa6bc495566eb9d53983f7154df7d7a7b8147b0b24b07fc194a130e"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TopoDS/__init__.py",
+        "exists": true,
+        "bytes": 318,
+        "sha256": "efdaf37a3f177048df89ad745026110b2220b527c78a920d4f16cbd895e4892f",
+        "expected_sha256": "efdaf37a3f177048df89ad745026110b2220b527c78a920d4f16cbd895e4892f"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Scripts/python.exe",
+        "exists": true,
+        "bytes": 275432,
+        "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+        "expected_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/nurbs.py",
+        "exists": true,
+        "bytes": 53221,
+        "sha256": "0464ac65ae0aac9e5519ea9e405fbeb3c96751c5450e3ced811601fb5a62a47e",
+        "expected_sha256": "0464ac65ae0aac9e5519ea9e405fbeb3c96751c5450e3ced811601fb5a62a47e"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/importers/dxf.py",
+        "exists": true,
+        "bytes": 5456,
+        "sha256": "e7f4f8e8e76d4e8bce1de18ac398fe7e16103ba6dcef9554b8dfae7c7ba7db60",
+        "expected_sha256": "e7f4f8e8e76d4e8bce1de18ac398fe7e16103ba6dcef9554b8dfae7c7ba7db60"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/shapes.py",
+        "exists": true,
+        "bytes": 228103,
+        "sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94",
+        "expected_sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/importers/__init__.py",
+        "exists": true,
+        "bytes": 4365,
+        "sha256": "f4f9605e824c59398d78c313bc0ee6d857e9f8ad45604fa3f67341aa59512934",
+        "expected_sha256": "f4f9605e824c59398d78c313bc0ee6d857e9f8ad45604fa3f67341aa59512934"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/__init__.py",
+        "exists": true,
+        "bytes": 983,
+        "sha256": "a6e58c0a863a4ed8fb619344b704d2cae2fb58a91fa7e00a6612272076eae930",
+        "expected_sha256": "a6e58c0a863a4ed8fb619344b704d2cae2fb58a91fa7e00a6612272076eae930"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/gp/__init__.py",
+        "exists": true,
+        "bytes": 24,
+        "sha256": "e57429ca14b9c6cc1a04de68dadefc6705e41c2d98b25d583ef6a6fad919718b",
+        "expected_sha256": "e57429ca14b9c6cc1a04de68dadefc6705e41c2d98b25d583ef6a6fad919718b"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TColgp/__init__.py",
+        "exists": true,
+        "bytes": 28,
+        "sha256": "23077b73d94d87d8d8f83390241a745c585f915559da394f5ecac2157de0f0bf",
+        "expected_sha256": "23077b73d94d87d8d8f83390241a745c585f915559da394f5ecac2157de0f0bf"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/TColStd/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "5a7d3803ff96d2239075d3a5912ce299dacc5e556612064661d3a14bd7c1572a",
+        "expected_sha256": "5a7d3803ff96d2239075d3a5912ce299dacc5e556612064661d3a14bd7c1572a"
+      },
+      {
+        "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/GeomAbs/__init__.py",
+        "exists": true,
+        "bytes": 29,
+        "sha256": "e244c0c87943fbb483e8547c256138c61c2a50f7f70c0152f2887c1d24e2b9c9",
+        "expected_sha256": "e244c0c87943fbb483e8547c256138c61c2a50f7f70c0152f2887c1d24e2b9c9"
+      },
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/STUB_WHEEL_SOURCE_EVIDENCE.json",
+        "exists": true,
+        "bytes": 1458,
+        "sha256": "11bf1df66f0b00eb037d3750f0468b4b177c43da667b561454283113c2db85f7",
+        "expected_sha256": "11bf1df66f0b00eb037d3750f0468b4b177c43da667b561454283113c2db85f7"
+      },
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/LOCAL_BINDING_SOURCE_SCAN.md",
+        "exists": true,
+        "bytes": 4785,
+        "sha256": "1cbc8d8c6e7991d5cd62b8fc3c63cb974f56868c0493ce11f7a6195054f535ae",
+        "expected_sha256": "1cbc8d8c6e7991d5cd62b8fc3c63cb974f56868c0493ce11f7a6195054f535ae"
+      }
+    ],
+    "programs": [
+      {
+        "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/download_matching_stubs.py",
+        "exists": true,
+        "bytes": 6459,
+        "sha256": "85b1b2d09be11004b9e24e3013f8103cdd0afa0fb6f25c014f69ad4602739955",
+        "expected_sha256": "85b1b2d09be11004b9e24e3013f8103cdd0afa0fb6f25c014f69ad4602739955"
+      }
+    ],
+    "pins_file_sha256": "ede5093193c1637a98205967436c279d21dccceeb2e8318ecdd20aa398a10408"
+  },
+  "runtime_metadata_unchanged": true,
+  "wheel": {
+    "filename": "cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl",
+    "exists": true,
+    "bytes": 2899849,
+    "actual_sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359",
+    "expected_sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359",
+    "hash_matches": true
+  },
+  "receipt_count_status": "EXACT_FIXED_POINT",
+  "receipt_bytes": 17325,
+  "total_persisted_bytes": 2930605,
+  "fixed_point_iterations": 3
+}

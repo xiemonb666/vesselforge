@@ -1,0 +1,37 @@
+{
+  "schema": "vesselforge.global_bspline_meridian.minimum_jerk_render_receipt.v1",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import json,pathlib,hashlib,math,matplotlib; matplotlib.use(\"Agg\"); import matplotlib.pyplot as plt; root=pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\"); out=pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_outer_profiles.png\"); data=json.loads(pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_exact_result.json\").read_text(encoding=\"utf-8\")); cases=json.loads((root/\"vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json\").read_text(encoding=\"utf-8\"))[\"cases\"]; fig,axes=plt.subplots(1,2,figsize=(12,6),constrained_layout=True); [(lambda ax,fam,c: (lambda pts: (ax.plot([-p[0] for p in pts],[p[1] for p in pts],color=\"#315b7d\",linewidth=1.8,label=\"outer-body meridian; mirrored for section\"),ax.plot([p[0] for p in pts],[p[1] for p in pts],color=\"#315b7d\",linewidth=1.8),ax.scatter([-float(c[\"fixed_dimensions\"][\"max_outer_radius_mm\"]),float(c[\"fixed_dimensions\"][\"max_outer_radius_mm\"])],[float(c[\"fixed_dimensions\"][\"apex_z_mm\"])]*2,color=\"#c45a3c\",s=24,zorder=3,label=\"fixed max-radius apex\"),ax.scatter([-float(c[\"fixed_dimensions\"][\"outer_mouth_r_mm\"]),float(c[\"fixed_dimensions\"][\"outer_mouth_r_mm\"])],[float(c[\"fixed_dimensions\"][\"mouth_datum_z_mm\"])]*2,color=\"#4a8a63\",s=20,zorder=3,label=\"mouth/body datum\"),ax.set_title(fam.title()+\" — outer body; accepted crest \"+c[\"accepted_candidate_total_height_mm\"]+\" mm not built\"),ax.set_xlabel(\"signed radius r (mm)\"),ax.set_ylabel(\"height z (mm)\"),ax.set_aspect(\"equal\",adjustable=\"box\"),ax.grid(True,alpha=0.22),ax.legend(loc=\"lower center\",fontsize=8),ax.set_xlim(-1.12*float(c[\"fixed_dimensions\"][\"max_outer_radius_mm\"]),1.12*float(c[\"fixed_dimensions\"][\"max_outer_radius_mm\"])),ax.set_ylim(-1,1.05*float(c[\"fixed_dimensions\"][\"mouth_datum_z_mm\"]))))([(sum(math.comb(5,i)*(j/200)**i*(1-j/200)**(5-i)*float(s[\"bezier_poles_rz_mm\"][i][a]) for i in range(6)) for a in range(2)) for s in data[\"cases\"][fam][\"geometry\"][\"spans\"] for j in range(201)]))(ax,fam,cases[fam]) for ax,fam in zip(axes,(\"bowl\",\"jar\"))]; fig.suptitle(\"Frozen minimum-jerk controls · sampled only for display; exact certificates are in JSON\"); fig.savefig(out,dpi=160); plt.close(fig); print(json.dumps({\"png\":str(out),\"png_bytes\":out.stat().st_size,\"png_sha256\":hashlib.sha256(out.read_bytes()).hexdigest(),\"source_json_sha256\":hashlib.sha256(pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_exact_result.json\").read_bytes()).hexdigest(),\"display_samples_per_span\":201,\"render_only_no_control_solve\":True},separators=(\",\",\":\")))"
+  ],
+  "runtime": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "root_ready_math_result_reused": true,
+  "render_only": true,
+  "input_result_json_sha256": "06c714ff30e8f36c60e586e07670510d539b844ec434772a5d93b749612a6f65",
+  "elapsed_ms": 514.772,
+  "timed_out": false,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"<string>\", line 1, in <lambda>\r\n  File \"<string>\", line 1, in <lambda>\r\nTypeError: 'generator' object is not subscriptable\r\n",
+  "pre_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "post_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "source_or_case_pin_changes": [],
+  "png_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_outer_profiles.png",
+  "png_bytes": null,
+  "png_sha256": null,
+  "controls_recomputed": false
+}

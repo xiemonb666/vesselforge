@@ -1,0 +1,123 @@
+{
+  "freeze_id": "surface_ornament_route_20261004_v3_r2_semantics",
+  "freeze_date": "2026-10-04",
+  "hash_algorithm": "SHA-256",
+  "execution_status": "NOT_RUN: no Python, CAD, tests, solver, GPU, or Git work",
+  "read_only_inputs": [
+    {
+      "path": "vesselforge/src/vesselforge/ornament_fields.py",
+      "sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/profile_catalog.py",
+      "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/ornament_fields/plot_fields.py",
+      "sha256": "0a9e9e6cce930acc30525f2f39fee454542a465f2dde9de26379fce2f1fd3c63",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.md",
+      "sha256": "11f98e5b1566856abbed281b784c0e09f6918cdfe3764689044de4efed5245c2",
+      "role": "read_only_reference"
+    }
+  ],
+  "current_artifacts": [
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/DESIGN.md",
+      "sha256": "206cc1f4bad3bd67cfdbe3390f85b7afd923f7311b40374138e90e4adeb4db55",
+      "role": "current_authored_artifact"
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/PLAN.md",
+      "sha256": "249835ae95d784b7278e1cf5335fa4205df4ecdaa1bf775b684a17ff029059e7",
+      "role": "current_authored_artifact"
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/surface_mapping_prototype.py",
+      "sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+      "role": "current_authored_artifact"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/REVIEW.md",
+      "sha256": "1eb55f1a9692f6d3b30bb2d1eaa11811ea3e78c066ee2301efaf2a75c2ab679b",
+      "role": "current_authored_artifact"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/SCOPE_DIFF.md",
+      "sha256": "6e57d35f357adf355b769b6d9952e8b09071894618486c3ccfc903550fc04754",
+      "role": "current_authored_artifact"
+    }
+  ],
+  "preserved_snapshots": [
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/DESIGN.md",
+      "sha256": "9aa580a9ac61c6ecf97a7bdb3483116321c34bb3bf48d3dde20c6a9fc0acd2f2",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/PLAN.md",
+      "sha256": "3c853a62708b001787ef4113ff844512f5cfda9474db3a66dad2eceb10cea1b6",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/FREEZE_MANIFEST.json",
+      "sha256": "ae498f6697abdb6f2f288240af4e667bff006024591c3c0148b1c2293bd0361e",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/SHA256SUMS.txt",
+      "sha256": "4028541c80d8f800f074e9b828756731a141f2ddbd0f16e17d6539ea19ae3330",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/REVIEW.md",
+      "sha256": "f671d711bfcd826d21307db1493df1b185e9fdbaa347f5ba947d2a75e0e8939d",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/rejected_scope_v1/REJECTED_SCOPE_DRIFT.md",
+      "sha256": "d7ab6ce28e790f15f3fe6f9b91a5e72a8d6b2af79fe80e53f10f96bc9f040a16",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/DESIGN.md",
+      "sha256": "eeda99ca2064d5093fda84ba6184ce5df00426a9d23c899ebc1206a0c4988eea",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/PLAN.md",
+      "sha256": "a64d44165a18f72cac2377b917c4a52ae02d824c11c039c798cf51e308965fcc",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/FREEZE_MANIFEST.json",
+      "sha256": "5b7217765840e0e0d1895f9bc24e03536f0cd8dcc3a494ebf06c98da5a3e178c",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/SHA256SUMS.txt",
+      "sha256": "8e60062cb4930a2d23e00c14a72ff840b120ae4c3f23a3216f06e517f9fd1cb8",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/REVIEW.md",
+      "sha256": "84180b40f4431b4803513d381fc8cf4b7b2245af759d64deb75eb2aba2ce8289",
+      "role": "preserved_scope_snapshot"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/ownedtmp/pre_r2_semantics_v2/PRESERVED_V2.md",
+      "sha256": "7a1b13c62672a24f2896679ab28dde605c54ae2fe37d9b3cc6efc1a3fb37149d",
+      "role": "preserved_scope_snapshot"
+    }
+  ],
+  "scope_note": "Current route is VF -> PG-Frag -> A12 -> RelicWeave. R2 is original pre-degradation adjacency; qualified native synthetic lineage may establish synthetic/native R2. Mapping/color/normal-displacement math and prototype are unchanged from v2."
+}

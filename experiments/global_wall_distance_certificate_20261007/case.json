@@ -1,0 +1,19 @@
+{
+  "schema": "global_wall_distance_case_v1",
+  "outer_sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+  "offset_sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+  "monostrip_sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+  "monostrip_case_sha256": "9e7b9e7945a14b3dd45517c75a672607cf0923cdac5c723ab614fa0162fc127b",
+  "depth_mm": "3",
+  "extended_depth_mm": "6",
+  "span_kinds": ["flat_base", "side", "side", "side", "side", "side", "side", "side", "side", "side", "side", "straight_neck"],
+  "derivative_signs": {
+    "rprime": ["+++++", "+++++", "+++++", "+++++", "+++++", "++++0", "0----", "-----", "-----", "-----", "-0000", "00000"],
+    "zprime": ["00000", "0000+", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++", "+++++"]
+  },
+  "endpoints_mm": {
+    "axis_r": "0", "base_z": "0", "base_seam_r": "18",
+    "apex_r": "54", "apex_z": "62", "neck_r": "26", "neck_z": "102",
+    "mouth_r": "26", "mouth_z": "120"
+  }
+}

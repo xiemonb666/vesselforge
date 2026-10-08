@@ -1,0 +1,27 @@
+{
+  "schema": "vesselforge.global_wall_distance.outer_execution_addendum.v1",
+  "authorization": "ROOT_20261007_GLOBAL_WALL_DISTANCE_RUN01",
+  "outer_tool_call": {
+    "tool": "functions.exec -> exec_command",
+    "reported_wall_time_seconds": 0.3490668,
+    "exit_code": 0,
+    "session_id": null,
+    "shell": "powershell",
+    "requested_working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+    "powershell_argv": null,
+    "powershell_argv_unavailable_reason": "The exec_command result retained its wall time, exit code, shell, working directory, and command text, but did not expose the launched PowerShell process argv; it is not reconstructed here.",
+    "command_text": "& 'C:\\Users\\xiemo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe' -B 'vesselforge\\tmp\\review_20261007\\global_wall_distance_certificate_20261007\\capture_once.py'"
+  },
+  "known_capture_invocation": {
+    "runtime": "C:\\Users\\xiemo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "flag": "-B",
+    "script": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/capture_once.py",
+    "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+  },
+  "supervisor_internal_elapsed_seconds": 0.14,
+  "timing_note": "The reported outer wall time covers the original exec_command invocation. The supervisor's internal elapsed time is a separate self-measurement, not a substitute for or addition to the outer wall time.",
+  "captured_return_code": 0,
+  "captured_status": "MERIDIAN_CURVE_PAIR_MINIMUM_EXACTLY_3_MM",
+  "stdout_sha256": "2ed29f2581c49304581c36dfdf8fdda9d02b193c8078629202bc82bcefe727f0",
+  "receipt_sha256": "722f85de881745371bd051f02c5b1646a88c29e9b6e3ff780521bc8bac35a319"
+}

@@ -1,0 +1,143 @@
+{
+  "execution_id": "global_two_cap_owner_fix_run02_outer_supervision_v1",
+  "status": "PARENT_RUNNER_NONZERO_OR_UNKNOWN",
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_two_cap_mesh_candidate_20261005\\run_candidate_owner_fix_once.py",
+    "--root-approved-run"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_at_utc": "2026-10-05T16:51:29.2082378Z",
+  "completed_at_utc": "2026-10-05T16:52:04.4003624Z",
+  "outer_hard_total_cap_ms_including_cleanup_and_recording": 120000,
+  "normal_wait_limit_ms_reserving_cleanup": 115000,
+  "process_wait_method": "System.Diagnostics.Process.WaitForExit(timeout), followed by Process.Kill(true) or taskkill /T /F fallback",
+  "elapsed_ms_including_postchecks_before_receipt_write": 35421,
+  "cleanup_tree_kill_issued": false,
+  "outer_timeout_triggered": false,
+  "run02_artifact_cap_bytes": 20971520,
+  "run02_artifact_cap_triggered_while_running": false,
+  "run02_artifact_bytes_at_last_poll": 1480485,
+  "run02_post_run_artifact_bytes": 1485811,
+  "run02_post_run_over_20_mib": false,
+  "run02_artifacts": [
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix\\candidate_arrays.npz",
+      "bytes": 1478723,
+      "sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix\\parent_runner_combined_output.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix\\parent_runner_receipt.json",
+      "bytes": 5326,
+      "sha256": "78b4e6a98319e0c21b627da99fb11c082284c1d828a20de5640bc5715650f26f"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix\\run_receipt.json",
+      "bytes": 1762,
+      "sha256": "89302f1f8c5aa95cb104c31a409bc20333425eb151e0cca12295147e3e2fa0d4"
+    }
+  ],
+  "runner_process_id": 123420,
+  "parent_runner_process_return_code": 1,
+  "parent_runner_receipt_status": "CHILD_NONZERO_EXIT",
+  "candidate_child_return_code": 2,
+  "candidate_run_receipt_status": "UNKNOWN_OR_FAIL",
+  "candidate_run_receipt_error": "Object of type bool is not JSON serializable",
+  "source_freeze_sha256_expected": "29beabbda63c8e6c6ca08234fb0f529da67227a475edb8b1cc664923801c9df6",
+  "source_freeze_sha256_before": "29beabbda63c8e6c6ca08234fb0f529da67227a475edb8b1cc664923801c9df6",
+  "source_freeze_sha256_after": "29beabbda63c8e6c6ca08234fb0f529da67227a475edb8b1cc664923801c9df6",
+  "source_hashes_before": {
+    "candidate_owner_fix.py": "e79e7f9ce1661e0d2c3b649b222c2875d144e280701a9e953b7fc8bddde185a4",
+    "focused_checks_owner_fix.py": "271306ae2200de7538fe96525abb83ffb83116542ec4a71652f8e93afecad4e3",
+    "candidate_contract_owner_fix.json": "81e60e51f3c1732ab389cdbf97ed7179082b913c3a6cef380bd05485d885a15a",
+    "SOURCE_REVIEW_owner_fix.md": "6f80ccf763629d7a9e619930f27d47028ab57e460dcdbc2a63847d92bd936760",
+    "run_candidate_owner_fix_once.py": "5615cda65fe1ac1a0bdc5210444ff843f5dead25acecd7015fc51d3ae835449f",
+    "owner_lookup_toy_check.py": "579062c68de79d94f174cdb0130856f73f8c3171637657298021712ca1b861c7",
+    "run01_failure_snapshot_before_owner_fix.json": "6147032b20e2a6987dbe6cd54329b32b2a0f76462611602907d5aa03743fe90b",
+    "owner_fix_two_parent_toy_check.json": "9c25c6b2758f6c88a5518eb317f3e11c05b3ab86f8f1a7445d25b9c6815ffe7e",
+    "prewrite_budget_audit.py": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+    "prewrite_budget_audit.json": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1"
+  },
+  "source_hashes_after": {
+    "candidate_owner_fix.py": "e79e7f9ce1661e0d2c3b649b222c2875d144e280701a9e953b7fc8bddde185a4",
+    "focused_checks_owner_fix.py": "271306ae2200de7538fe96525abb83ffb83116542ec4a71652f8e93afecad4e3",
+    "candidate_contract_owner_fix.json": "81e60e51f3c1732ab389cdbf97ed7179082b913c3a6cef380bd05485d885a15a",
+    "SOURCE_REVIEW_owner_fix.md": "6f80ccf763629d7a9e619930f27d47028ab57e460dcdbc2a63847d92bd936760",
+    "run_candidate_owner_fix_once.py": "5615cda65fe1ac1a0bdc5210444ff843f5dead25acecd7015fc51d3ae835449f",
+    "owner_lookup_toy_check.py": "579062c68de79d94f174cdb0130856f73f8c3171637657298021712ca1b861c7",
+    "run01_failure_snapshot_before_owner_fix.json": "6147032b20e2a6987dbe6cd54329b32b2a0f76462611602907d5aa03743fe90b",
+    "owner_fix_two_parent_toy_check.json": "9c25c6b2758f6c88a5518eb317f3e11c05b3ab86f8f1a7445d25b9c6815ffe7e",
+    "prewrite_budget_audit.py": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+    "prewrite_budget_audit.json": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1"
+  },
+  "pinned_input_hashes_before": {
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_candidate_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "ornament_case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "ornament_refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "baseline_fixture_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974"
+  },
+  "pinned_input_hashes_after": {
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_candidate_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "ornament_case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "ornament_refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "baseline_fixture_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974"
+  },
+  "old_source_freeze_sha256_before": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+  "old_source_freeze_sha256_after": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+  "history_snapshot_sha256_before": "6147032b20e2a6987dbe6cd54329b32b2a0f76462611602907d5aa03743fe90b",
+  "history_snapshot_sha256_after": "6147032b20e2a6987dbe6cd54329b32b2a0f76462611602907d5aa03743fe90b",
+  "old_run01_tree_before": [
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_combined_output.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_receipt.json",
+      "bytes": 4510,
+      "sha256": "98a8585612e7ba7227b04978daf3868ccf89bfbf861bcd452f01743396f59a0e"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\run_receipt.json",
+      "bytes": 1757,
+      "sha256": "34eec1b7328dd52854c91efd09f02886d10c4e0b66b2fbba1bf68d2a77e5a2d6"
+    }
+  ],
+  "old_run01_tree_after": [
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_combined_output.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_receipt.json",
+      "bytes": 4510,
+      "sha256": "98a8585612e7ba7227b04978daf3868ccf89bfbf861bcd452f01743396f59a0e"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\run_receipt.json",
+      "bytes": 1757,
+      "sha256": "34eec1b7328dd52854c91efd09f02886d10c4e0b66b2fbba1bf68d2a77e5a2d6"
+    }
+  ],
+  "old_run01_tree_unchanged": true,
+  "all_owner_fix_source_pins_unchanged": true,
+  "all_pinned_inputs_unchanged": true,
+  "all_historical_hashes_unchanged": true,
+  "preserved_old_run02_candidate_npz_sha256_before": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "preserved_old_run02_candidate_npz_sha256_after": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "preserved_old_run02_candidate_npz_unchanged": true,
+  "vf_python_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "runner_stdout_path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix_outer_stdout.log",
+  "runner_stdout_bytes": 0,
+  "runner_stderr_path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run02_owner_fix_outer_stderr.log",
+  "runner_stderr_bytes": 0
+}

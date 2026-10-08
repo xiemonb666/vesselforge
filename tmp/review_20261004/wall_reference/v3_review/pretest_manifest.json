@@ -1,0 +1,28 @@
+{
+  "state": "V3_FIX_FROZEN_PRETEST",
+  "before_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "8f3f6bd4177bd334bbe06fca1fe11ab81ddcd8da7a3c973b95c2ebd22b904c4a"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "2ed53950d5417374bb1c1a8085f35e83866d6650d80b80bc33c16a010add8288"
+    }
+  ],
+  "after_sha256": [
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_reference.py",
+      "sha256": "d0ef04896cbfafbdf45677912607c0cc632f2d65fde2edeb99c65bf45b14aa1d"
+    }
+  ],
+  "diff_path": "v3.diff",
+  "diff_sha256": "32c0aa4a94b78100e61db8d9eac0c0c6a761dbd986808c97f47e724d4b3d2234",
+  "diff_bytes": 4856,
+  "pytest": "NOT_RUN_YET",
+  "run3": "PENDING"
+}

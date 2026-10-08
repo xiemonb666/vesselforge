@@ -1,0 +1,76 @@
+{
+  "contract_id": "ownerfix_saved_npz_readback_recovery_v1",
+  "status": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "purpose": "Recover the focused saved-NPZ readback and actual-mesh PNGs for the already-generated owner-fix candidate after the original checks report failed to serialize.",
+  "original_run": {
+    "relative_directory": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run02_owner_fix",
+    "status": "UNKNOWN_OR_FAIL",
+    "parent_return_code": 1,
+    "candidate_return_code": 2,
+    "saved_candidate_npz_sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be",
+    "failure": "TypeError: Object of type bool is not JSON serializable",
+    "failure_receipt_sha256": "89302f1f8c5aa95cb104c31a409bc20333425eb151e0cca12295147e3e2fa0d4"
+  },
+  "recovery_inputs": {
+    "saved_candidate_npz": {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run02_owner_fix/candidate_arrays.npz",
+      "sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be"
+    },
+    "baseline_npz": {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974"
+    },
+    "local_b_npz": {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf"
+    },
+    "local_b_checks": {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8"
+    },
+    "refinement_source": {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+    },
+    "case_freeze": {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1"
+    }
+  },
+  "failure_diagnosis": {
+    "failing_operation": "json.dumps(checks, indent=2, sort_keys=True, allow_nan=False)",
+    "source_location": "candidate_owner_fix.py:724 after run_focused_checks returns",
+    "numpy_boolean_paths": [
+      "checks.global_minimum_Q_improves_above_float_resolution",
+      "checks.global_maximum_aspect_improves_above_float_resolution"
+    ],
+    "native_scalar_fix": "Explicit float materialization for the two unchanged float64 tolerances and bool materialization for the two unchanged comparison results at their producer; strict JSON and allow_nan=False remain."
+  },
+  "execution_scope": {
+    "candidate_geometry_generation": false,
+    "cad": false,
+    "solver": false,
+    "candidate_main_import_or_call": false,
+    "candidate_source_imported_by_toy_regression_only": true,
+    "saved_npz_readback_calls": 1,
+    "focused_checks_calls": 1,
+    "automatic_retry": false,
+    "quality_or_tolerance_changes": false,
+    "write_primary_checks_json_before_render": true,
+    "render_actual_saved_mesh_pngs": [
+      "global_equal_aspect_actual_mesh.png",
+      "two_caps_equal_aspect_actual_mesh.png"
+    ],
+    "numerical_status_separate_from_render_status": true,
+    "fixed_output_root": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/recovery_readback_ownerfix_v1"
+  },
+  "execution_limits": {
+    "outer_hard_total_ms_including_cleanup_and_receipt": 60000,
+    "child_wait_deadline_ms": 50000,
+    "termination_cleanup_wait_ms": 3000,
+    "all_artifact_cap_bytes": 20971520,
+    "output_directory_must_be_new": true,
+    "root_approval_flag_required": "--root-approved-readback"
+  },
+  "interpretation_limit": "A successful result recovers candidate geometric-triangle readback only. Tet, physical, mechanical-h, solver, and R2 status remain unknown; the original run02 failure receipt remains unchanged and failed."
+}

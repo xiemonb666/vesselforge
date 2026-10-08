@@ -1,0 +1,43 @@
+--- v2/profile_catalog.py
++++ v3/profile_catalog.py
+@@ -20,6 +20,8 @@
+ from dataclasses import dataclass
+ from math import isfinite
+ from typing import Any, Literal
++
++import numpy as np
+ 
+ 
+ ProfileFamily = Literal["bowl", "beaker", "jar"]
+@@ -115,7 +117,7 @@
+ 
+ 
+ def _finite_number(name: str, value: object) -> float:
+-    if isinstance(value, bool):
++    if isinstance(value, (bool, np.bool_)):
+         raise ValueError(f"{name} must be a finite number; received {value!r}")
+     try:
+         number = float(value)  # type: ignore[arg-type]
+--- v2/test_profile_catalog.py
++++ v3/test_profile_catalog.py
+@@ -2,6 +2,7 @@
+ 
+ import json
+ 
++import numpy as np
+ import pytest
+ 
+ from vesselforge.profile_catalog import (
+@@ -111,6 +112,12 @@
+         build_profile(family, **overrides)
+ 
+ 
++@pytest.mark.parametrize("boolean_value", (np.bool_(True), np.bool_(False)))
++def test_numpy_boolean_is_rejected_as_bowl_wall_declaration(boolean_value: np.bool_) -> None:
++    with pytest.raises(ValueError, match="finite number"):
++        build_profile("bowl", wall_thickness_declaration_mm=boolean_value)
++
++
+ def test_family_specific_parameters_are_rejected_for_other_forms() -> None:
+     with pytest.raises(ValueError, match="unsupported bowl parameters"):
+         build_profile("bowl", neck_height_mm=12.0)

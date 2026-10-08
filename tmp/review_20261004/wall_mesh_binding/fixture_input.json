@@ -1,0 +1,43 @@
+{
+  "schema": "vf.wall-mesh-binding-fixture-input.v1",
+  "fixture_id": "analytic_hollow_cylinder_20261004",
+  "geometry": {
+    "construction": "one native CadQuery/OCP nested-wire extrusion; no Boolean",
+    "outer_radius_mm": 10.0,
+    "inner_radius_mm": 8.0,
+    "height_mm": 10.0,
+    "analytic_radial_wall_thickness_mm": 2.0,
+    "axis": "global +Z",
+    "frame": "right_handed_z_up",
+    "units": "mm"
+  },
+  "tessellation": {
+    "linear_chord_deflection_mm": 0.05,
+    "angular_tolerance_rad": 0.08,
+    "weld_tolerance_rule": "min(1e-5_mm, linear_chord_deflection_mm*1e-4)"
+  },
+  "execution_budget": {
+    "step_export_count": 1,
+    "step_import_count": 1,
+    "mesh_shape_call_count": 1,
+    "native_wire_extrusion_count": 1,
+    "boolean_count": 0,
+    "solver_count": 0,
+    "pytest_count": 0
+  },
+  "station_expectations": {
+    "source": "build_wall_reference from the same reimported canonical face-semantics record",
+    "requested_roles": ["outer", "inner"],
+    "outer_material_outward_radial_sign": "positive",
+    "inner_material_outward_radial_sign": "negative",
+    "mother_mesh_binding": "all generated wall-reference stations must bind or the result is UNKNOWN",
+    "thickness_oracle_scope": "analytic input radius difference only; this stage does not query wall intervals"
+  },
+  "nonclaims": {
+    "global_minimum_wall": "UNVERIFIED",
+    "material_qualification": "UNKNOWN",
+    "physics_qualification": "UNKNOWN",
+    "fragment_lineage": "UNIMPLEMENTED",
+    "a12_integration": "UNIMPLEMENTED"
+  }
+}

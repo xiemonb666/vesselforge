@@ -1,0 +1,14 @@
+{
+  "claim": "saved-controls geometry preview only; no optimizer, CAD, field, or physical claim",
+  "display_points_per_span": 25,
+  "driver_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+  "families": [
+    "bowl",
+    "jar"
+  ],
+  "implementation_sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce",
+  "matplotlib_version": "3.11.2",
+  "result_sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+  "schema": "geometry_only_render.v1",
+  "spans_per_family": 12
+}

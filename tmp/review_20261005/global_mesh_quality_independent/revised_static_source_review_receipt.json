@@ -1,0 +1,28 @@
+{
+  "review_id": "global_mesh_quality_independent_final_static_source_review_20261005",
+  "review_date": "2026-10-05",
+  "status": "NO_STATIC_BLOCKER_FOR_ONE_BOUNDED_GENERATION_ATTEMPT",
+  "source_freeze_sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+  "frozen_source_sha256": {
+    "candidate.py": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+    "focused_checks.py": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+    "candidate_contract.json": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+    "SOURCE_REVIEW.md": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5"
+  },
+  "per_output_face_patch_cap": 128,
+  "per_output_face_cap_matches_frozen_parent_fan": true,
+  "global_budgets_unchanged": {
+    "patch_records_max": 15000,
+    "patch_polygon_vertices_max": 60000,
+    "wall_clock_seconds_max": 120
+  },
+  "schema_v1_face_lineage_keys_omitted_from_candidate_npz_source": true,
+  "legacy_reader_compatibility": "UNKNOWN",
+  "lineage_csr_vertex_color_and_outer_delta_gates_present": true,
+  "generation_invoked": false,
+  "tests_invoked": false,
+  "cad_invoked": false,
+  "solver_invoked": false,
+  "candidate_output_directory_empty": true,
+  "report": "revised_static_source_review.md"
+}

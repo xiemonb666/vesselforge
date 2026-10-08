@@ -1,0 +1,56 @@
+{
+  "freeze_id": "surface_ornament_route_20261004",
+  "freeze_date": "2026-10-04",
+  "hash_algorithm": "SHA-256",
+  "execution_status": "NOT_RUN: no Python, CAD, tests, solver, or GPU execution",
+  "read_only_inputs": [
+    {
+      "path": "vesselforge/src/vesselforge/ornament_fields.py",
+      "sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/profile_catalog.py",
+      "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/ornament_fields/plot_fields.py",
+      "sha256": "0a9e9e6cce930acc30525f2f39fee454542a465f2dde9de26379fce2f1fd3c63",
+      "role": "read_only_reference"
+    },
+    {
+      "path": "vesselforge/docs/references/REAL_VESSEL_REFERENCE_CATALOG_20261004.md",
+      "sha256": "11f98e5b1566856abbed281b784c0e09f6918cdfe3764689044de4efed5245c2",
+      "role": "read_only_reference"
+    }
+  ],
+  "authored_artifacts": [
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/DESIGN.md",
+      "sha256": "9aa580a9ac61c6ecf97a7bdb3483116321c34bb3bf48d3dde20c6a9fc0acd2f2",
+      "role": "authored_unexecuted_artifact"
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/PLAN.md",
+      "sha256": "3c853a62708b001787ef4113ff844512f5cfda9474db3a66dad2eceb10cea1b6",
+      "role": "authored_unexecuted_artifact"
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_route_20261004/surface_mapping_prototype.py",
+      "sha256": "cf31c7943b7f3cab300f468c63c08350dcb20ba330bcf1170de1e5f05df6cfeb",
+      "role": "authored_unexecuted_artifact"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/REVIEW.md",
+      "sha256": "f671d711bfcd826d21307db1493df1b185e9fdbaa347f5ba947d2a75e0e8939d",
+      "role": "authored_unexecuted_artifact"
+    }
+  ],
+  "scope_note": "Hashes identify the exact inputs consulted and proposal artifacts; no source package or tests were modified."
+}

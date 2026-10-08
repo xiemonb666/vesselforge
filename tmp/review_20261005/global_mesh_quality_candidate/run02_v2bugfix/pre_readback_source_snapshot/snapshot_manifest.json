@@ -1,0 +1,19 @@
+{
+  "purpose": "Preserve the exact pre-readback-fix checker and v2bugfix source freeze before a narrow readback-only checker correction.",
+  "created_at_utc": "2026-10-05T10:18:21.9523765+00:00",
+  "files": [
+    {
+      "source": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "snapshot": "focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "source": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_FREEZE.json",
+      "snapshot": "SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "bytes": 3750
+    }
+  ],
+  "run02_receipt_untouched": true
+}

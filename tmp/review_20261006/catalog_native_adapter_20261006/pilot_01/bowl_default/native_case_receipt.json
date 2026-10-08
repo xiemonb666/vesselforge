@@ -1,0 +1,840 @@
+{
+  "cadquery_version": "2.8.0",
+  "catalog_profile": {
+    "closed_material_section_mm": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        13.2,
+        0.0
+      ],
+      [
+        13.2,
+        6.0
+      ],
+      [
+        26.4,
+        10.799999999999999
+      ],
+      [
+        43.199999999999996,
+        30.6
+      ],
+      [
+        56.4,
+        55.8
+      ],
+      [
+        60.0,
+        77.4
+      ],
+      [
+        57.0,
+        90.0
+      ],
+      [
+        54.0,
+        90.0
+      ],
+      [
+        57.0,
+        77.4
+      ],
+      [
+        53.4,
+        55.8
+      ],
+      [
+        40.199999999999996,
+        30.6
+      ],
+      [
+        23.4,
+        10.799999999999999
+      ],
+      [
+        10.2,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ]
+    ],
+    "family": "bowl",
+    "geometry_only_qualification": {
+      "base_declaration_interpretation": "inside floor datum is base_thickness_declaration_mm above the outside floor datum; not a full-solid minimum-wall measurement",
+      "material_or_physical_qualification": "NOT_VALIDATED",
+      "real_vessel_match": "NOT_VALIDATED",
+      "scope": "analytic rotational generator profile; no CAD solid, mesh, or physical validation is implied",
+      "self_intersection_check": "finite 2D segment-intersection check on both profiles and the closed material meridian outline",
+      "signed_meridian_area_mm2": 331.20000000000016,
+      "source": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+      "status": "GEOMETRY_ONLY_CANDIDATE",
+      "wall_declaration_interpretation": "constant radial meridian offset at corresponding control heights; not a global normal minimum or measured material thickness"
+    },
+    "inner_profile_mm": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        10.2,
+        6.0
+      ],
+      [
+        23.4,
+        10.799999999999999
+      ],
+      [
+        40.199999999999996,
+        30.6
+      ],
+      [
+        53.4,
+        55.8
+      ],
+      [
+        57.0,
+        77.4
+      ],
+      [
+        54.0,
+        90.0
+      ]
+    ],
+    "outer_profile_mm": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        13.2,
+        0.0
+      ],
+      [
+        13.2,
+        6.0
+      ],
+      [
+        26.4,
+        10.799999999999999
+      ],
+      [
+        43.199999999999996,
+        30.6
+      ],
+      [
+        56.4,
+        55.8
+      ],
+      [
+        60.0,
+        77.4
+      ],
+      [
+        57.0,
+        90.0
+      ]
+    ],
+    "parameter_ranges_mm": {
+      "base_thickness_declaration_mm": {
+        "max": 15.0,
+        "min": 0.5,
+        "unit": "mm"
+      },
+      "height_mm": {
+        "max": 240.0,
+        "min": 30.0,
+        "unit": "mm"
+      },
+      "max_radius_mm": {
+        "max": 120.0,
+        "min": 12.0,
+        "unit": "mm"
+      },
+      "mouth_diameter_mm": {
+        "max": 220.0,
+        "min": 10.0,
+        "unit": "mm"
+      },
+      "wall_thickness_declaration_mm": {
+        "max": 10.0,
+        "min": 0.5,
+        "unit": "mm"
+      }
+    },
+    "parameter_sources": {
+      "base_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+      "height_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+      "max_radius_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+      "mouth_diameter_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel.",
+      "wall_thickness_declaration_mm": "Analytic starter envelope chosen for this geometry-only prototype; not measured from a real or archaeological vessel."
+    },
+    "parameters": {
+      "base_thickness_declaration_mm": 6.0,
+      "height_mm": 90.0,
+      "max_radius_mm": 60.0,
+      "mouth_diameter_mm": 108.0,
+      "wall_thickness_declaration_mm": 3.0
+    },
+    "schema": "vesselforge.profile_catalog/0.1.0",
+    "units": {
+      "length": "mm"
+    }
+  },
+  "catalog_profile_sha256": "6e45d8d8308d15f628b85929eef805d2e1270a1b984b1d63c4906dcd9fb695b2",
+  "catalog_schema": "vesselforge.profile_catalog/0.1.0",
+  "construction": "closed_material_section_mm passed to CadQuery Workplane(XZ).polyline().close().revolve(360); no fitting or smoothing",
+  "coordinate_frame": "right-handed global Z-up; catalog (radius_mm,z_mm) mapped to the CadQuery XZ workplane and revolved about global Z",
+  "elapsed_seconds": 2.656,
+  "family": "bowl",
+  "finished_utc": "2026-10-05T17:53:54Z",
+  "material_or_physical_qualification": "NOT_VALIDATED",
+  "native_brep": {
+    "all_shells_closed": true,
+    "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+      -60.0,
+      60.0,
+      -60.0,
+      60.0,
+      0.0,
+      90.0
+    ],
+    "cavity_probe_is_inside_solid": false,
+    "cavity_probe_point_mm": [
+      0.0,
+      0.0,
+      48.0
+    ],
+    "expected_bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+      -60.0,
+      60.0,
+      -60.0,
+      60.0,
+      0.0,
+      90.0
+    ],
+    "face_inventory": [
+      {
+        "area_mm2": 547.3911039614854,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -13.2,
+          13.2,
+          -13.2,
+          13.2,
+          0.0,
+          0.0
+        ],
+        "center_mm": [
+          -5.329070518200751e-15,
+          -1.631181670707301e-15,
+          0.0
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "PLANE",
+        "index_zero_based": 0
+      },
+      {
+        "area_mm2": 497.6282763286232,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -13.2,
+          13.2,
+          -13.2,
+          13.2,
+          0.0,
+          6.0
+        ],
+        "center_mm": [
+          -1.7763568394002505e-15,
+          -5.298791708438248e-16,
+          3.0000000000000004
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CYLINDER",
+        "index_zero_based": 1
+      },
+      {
+        "area_mm2": 1747.3768924545589,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -26.4,
+          26.4,
+          -26.4,
+          26.4,
+          6.0,
+          10.799999999999999
+        ],
+        "center_mm": [
+          -3.552713678800501e-15,
+          -2.2113343703865963e-16,
+          8.666666666666666
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 2
+      },
+      {
+        "area_mm2": 5677.789029953575,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -43.199999999999996,
+          43.199999999999996,
+          -43.199999999999996,
+          43.199999999999996,
+          10.799999999999999,
+          30.6
+        ],
+        "center_mm": [
+          -7.105427357601002e-15,
+          -1.0448219556458006e-16,
+          21.496551724137934
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 3
+      },
+      {
+        "area_mm2": 8901.406101561191,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -56.4,
+          56.4,
+          -56.4,
+          56.4,
+          30.6,
+          55.8
+        ],
+        "center_mm": [
+          0.0,
+          -2.1624825981654653e-16,
+          43.75662650602409
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 4
+      },
+      {
+        "area_mm2": 8007.670893465217,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -60.0,
+          60.0,
+          -60.0,
+          60.0,
+          55.8,
+          77.4
+        ],
+        "center_mm": [
+          -1.4210854715202004e-14,
+          3.4336794576035766e-16,
+          66.71134020618557
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 5
+      },
+      {
+        "area_mm2": 4760.800064810417,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -60.0,
+          60.0,
+          -60.0,
+          60.0,
+          77.4,
+          90.0
+        ],
+        "center_mm": [
+          7.105427357601002e-15,
+          -1.0096387164112536e-15,
+          83.64615384615385
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 6
+      },
+      {
+        "area_mm2": 1046.150353645402,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -57.0,
+          57.0,
+          -57.0,
+          57.0,
+          90.0,
+          90.0
+        ],
+        "center_mm": [
+          -2.1316282072803006e-14,
+          -3.840771544649187e-14,
+          90.0
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "PLANE",
+        "index_zero_based": 7
+      },
+      {
+        "area_mm2": 4516.6564717432175,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -57.0,
+          57.0,
+          -57.0,
+          57.0,
+          77.4,
+          90.0
+        ],
+        "center_mm": [
+          7.105427357601002e-15,
+          -1.6183250935527052e-15,
+          83.64324324324325
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 8
+      },
+      {
+        "area_mm2": 7594.9043525649495,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -57.0,
+          57.0,
+          -57.0,
+          57.0,
+          55.8,
+          77.4
+        ],
+        "center_mm": [
+          0.0,
+          -1.438060620664831e-15,
+          66.71739130434783
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 9
+      },
+      {
+        "area_mm2": 8365.176818334614,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -53.4,
+          53.4,
+          -53.4,
+          53.4,
+          30.6,
+          55.8
+        ],
+        "center_mm": [
+          7.105427357601002e-15,
+          -1.2252781885019088e-15,
+          43.792307692307695
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 10
+      },
+      {
+        "area_mm2": 5188.324458405853,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -40.199999999999996,
+          40.199999999999996,
+          -40.199999999999996,
+          40.199999999999996,
+          10.799999999999997,
+          30.6
+        ],
+        "center_mm": [
+          0.0,
+          -8.728168432587682e-18,
+          21.571698113207546
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 11
+      },
+      {
+        "area_mm2": 1482.622817840232,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -23.4,
+          23.4,
+          -23.4,
+          23.4,
+          6.0,
+          10.799999999999999
+        ],
+        "center_mm": [
+          3.552713678800501e-15,
+          -6.814985084194599e-17,
+          8.714285714285714
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "CONE",
+        "index_zero_based": 12
+      },
+      {
+        "area_mm2": 326.851299679482,
+        "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+          -10.2,
+          10.2,
+          -10.2,
+          10.2,
+          6.0,
+          6.0
+        ],
+        "center_mm": [
+          -3.552713678800501e-15,
+          -6.445354737347123e-16,
+          6.0
+        ],
+        "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+        "geom_type": "PLANE",
+        "index_zero_based": 13
+      }
+    ],
+    "is_valid": true,
+    "max_bbox_parameter_delta_mm": 0.0,
+    "phase": "NATIVE_REVOLVE",
+    "shell_count": 1,
+    "solid_count": 1,
+    "volume_mm3": 76934.46249376034,
+    "wall_material_probe_is_inside_solid": true,
+    "wall_material_probe_point_mm": [
+      33.3,
+      0.0,
+      20.7
+    ]
+  },
+  "native_brep_visual": {
+    "bytes": 343127,
+    "display_tessellation_is_deliverable_mesh": false,
+    "display_tessellation_triangle_count": 3490,
+    "display_tessellation_vertex_count": 2814,
+    "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\catalog_native_adapter_20261006\\pilot_01\\bowl_default\\native_brep_section_and_3d.png",
+    "section_edge_count": 26,
+    "section_plane": "global y=0 plane through global Z revolve axis",
+    "source_shape": "STEP-roundtripped CadQuery/OCP BRep"
+  },
+  "normal_wall_status": "UNKNOWN_NOT_CHECKED; catalog wall declaration is a constant radial meridian offset, not a measured or global normal minimum",
+  "ocp_version": "7.9.3.1",
+  "pure_adapter_validation": {
+    "native_input": "closed_material_section_mm passed as an unchanged polyline; no curve fitting or smoothing",
+    "section_edge_count": 15,
+    "section_points_count": 15,
+    "section_signed_area_mm2": 331.20000000000016
+  },
+  "real_vessel_match": "NOT_VALIDATED",
+  "retry_count": 0,
+  "schema": "vesselforge.catalog_native_adapter.case_receipt/1",
+  "smoothness_claim": "NOT_CLAIMED; input is a piecewise-linear profile",
+  "started_utc": "2026-10-05T17:53:51Z",
+  "status": "PASS_NATIVE_CAD_STEP_AND_CAVITY_CHECK_ONLY",
+  "step": {
+    "bytes": 31197,
+    "geometry_identity_status": "PASS_BBOX_AND_VOLUME_TOLERANCE_ONLY",
+    "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\catalog_native_adapter_20261006\\pilot_01\\bowl_default\\candidate.step",
+    "roundtrip": {
+      "all_shells_closed": true,
+      "bbox_delta_from_native_mm": 0.0,
+      "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+        -60.0,
+        60.0,
+        -60.0,
+        60.0,
+        0.0,
+        90.0
+      ],
+      "cavity_probe_is_inside_solid": false,
+      "cavity_probe_point_mm": [
+        0.0,
+        0.0,
+        48.0
+      ],
+      "expected_bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+        -60.0,
+        60.0,
+        -60.0,
+        60.0,
+        0.0,
+        90.0
+      ],
+      "face_inventory": [
+        {
+          "area_mm2": 547.3911039614853,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -13.2,
+            13.2,
+            -13.2,
+            13.2,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            -5.329070518200751e-15,
+            -4.791596157702699e-16,
+            0.0
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "PLANE",
+          "index_zero_based": 0
+        },
+        {
+          "area_mm2": 497.6282763285904,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -13.2,
+            13.2,
+            -13.2,
+            13.2,
+            0.0,
+            6.0
+          ],
+          "center_mm": [
+            -8.72191208145523e-13,
+            -5.298791710238034e-16,
+            3.0
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CYLINDER",
+          "index_zero_based": 1
+        },
+        {
+          "area_mm2": 1747.376892454446,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -26.4,
+            26.4,
+            -26.4,
+            26.4,
+            6.0,
+            10.800000000005639
+          ],
+          "center_mm": [
+            -1.3571366253017914e-12,
+            -3.7953646987243813e-16,
+            8.666666666666591
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 2
+        },
+        {
+          "area_mm2": 5677.789029952472,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -43.2,
+            43.2,
+            -43.2,
+            43.2,
+            10.8,
+            30.6000000000035
+          ],
+          "center_mm": [
+            -2.3376856006507296e-12,
+            -1.0687491808404112e-16,
+            21.496551724141717
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 3
+        },
+        {
+          "area_mm2": 8901.406101559533,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -56.4,
+            56.400000000011694,
+            -56.4,
+            56.4,
+            30.6,
+            55.8
+          ],
+          "center_mm": [
+            -3.282707439211663e-12,
+            -7.825065903284402e-16,
+            43.75662650602694
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 4
+        },
+        {
+          "area_mm2": 8007.670893465246,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -60.0,
+            60.0,
+            -60.0,
+            60.0,
+            55.8,
+            77.40000000000119
+          ],
+          "center_mm": [
+            -3.82982534574694e-12,
+            -9.537999286983647e-18,
+            66.71134020618513
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 5
+        },
+        {
+          "area_mm2": 4760.800064810053,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -60.0,
+            60.0,
+            -60.0,
+            60.0,
+            77.4,
+            90.0
+          ],
+          "center_mm": [
+            -3.851141627819743e-12,
+            -2.567746585158722e-15,
+            83.64615384615368
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 6
+        },
+        {
+          "area_mm2": 1046.150353645402,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -57.0,
+            57.0,
+            -57.0,
+            57.0,
+            90.0,
+            90.0
+          ],
+          "center_mm": [
+            -2.1316282072803006e-14,
+            -3.840771544649187e-14,
+            90.0
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "PLANE",
+          "index_zero_based": 7
+        },
+        {
+          "area_mm2": 4516.656471743565,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -57.0,
+            57.00000000000058,
+            -57.0,
+            57.0,
+            77.4,
+            90.0
+          ],
+          "center_mm": [
+            3.652189661806915e-12,
+            -1.2462503501648015e-15,
+            83.64324324324338
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 8
+        },
+        {
+          "area_mm2": 7594.904352564895,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -57.0,
+            57.0,
+            -57.0,
+            57.0,
+            55.79999999999882,
+            77.4
+          ],
+          "center_mm": [
+            3.645084234449314e-12,
+            1.6914810936772187e-15,
+            66.71739130434877
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 9
+        },
+        {
+          "area_mm2": 8365.176818336238,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -53.4,
+            53.4,
+            -53.4,
+            53.4,
+            30.6,
+            55.8
+          ],
+          "center_mm": [
+            3.112177182629239e-12,
+            1.422176716373282e-15,
+            43.79230769230408
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 10
+        },
+        {
+          "area_mm2": 5188.324458406928,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -40.2,
+            40.2,
+            -40.2,
+            40.2,
+            10.799999999996501,
+            30.6
+          ],
+          "center_mm": [
+            2.142286348316702e-12,
+            1.145135698355346e-15,
+            21.571698113203496
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 11
+        },
+        {
+          "area_mm2": 1482.6228178403271,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -23.4,
+            23.4,
+            -23.4,
+            23.4,
+            5.999999999994362,
+            10.8
+          ],
+          "center_mm": [
+            1.1581846592889633e-12,
+            2.926313292213262e-16,
+            8.714285714285777
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "CONE",
+          "index_zero_based": 12
+        },
+        {
+          "area_mm2": 326.851299679482,
+          "bbox_mm_xmin_xmax_ymin_ymax_zmin_zmax": [
+            -10.2,
+            10.2,
+            -10.2,
+            10.2,
+            6.0,
+            6.0
+          ],
+          "center_mm": [
+            -3.552713678800501e-15,
+            -6.445354737347123e-16,
+            6.0
+          ],
+          "face_source_scope": "native OCC 360-degree revolution of the catalog meridian section; per-section-edge face correspondence is not asserted",
+          "geom_type": "PLANE",
+          "index_zero_based": 13
+        }
+      ],
+      "is_valid": true,
+      "max_bbox_parameter_delta_mm": 0.0,
+      "phase": "STEP_ROUNDTRIP",
+      "shell_count": 1,
+      "solid_count": 1,
+      "volume_delta_from_native_mm3": 8.482311386615038e-08,
+      "volume_delta_limit_mm3": 0.007693446249376033,
+      "volume_mm3": 76934.46249367551,
+      "wall_material_probe_is_inside_solid": true,
+      "wall_material_probe_point_mm": [
+        33.3,
+        0.0,
+        20.7
+      ]
+    },
+    "sha256": "dcff94f7823f482c28bdc9c7e44c24a05755ebd9ebd7b05e99b663fab288ce81"
+  },
+  "units": "mm"
+}

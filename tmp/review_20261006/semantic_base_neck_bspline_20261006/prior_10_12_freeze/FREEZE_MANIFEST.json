@@ -1,0 +1,32 @@
+{
+  "schema": "vesselforge.semantic_base_neck_bspline.freeze.v1",
+  "status": "SOURCE_READY_PENDING_ROOT_REVIEW",
+  "scope": {
+    "experiment": "vesselforge/experiments/semantic_base_neck_bspline_20261006",
+    "review": "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006"
+  },
+  "pins_sha256": {
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "77ea80492af5092cf41f60cb7d10c5458c95197d74efc68def349f9824629824",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "6ceb1326282f2db2828c2475dedf326287522ee4257e3150fe343631eeb91b42",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "914d858318d8aac9f6e2930d93a97eef4eafbfa4d5083636f2f181831c34cf75",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "0f3183ac2ab8398cfe56a4bab093302d2047621f01e4b472d7e58387f13a4490"
+  },
+  "static_checks": {
+    "driver_ast_parse": "PASS",
+    "fixed_cases_json_parse": "PASS",
+    "driver_literal_case_key_schema": "PASS",
+    "equalities_and_features_key_schema": "PASS",
+    "driver_physical_lines": 400
+  },
+  "execution_state": {
+    "basis_extraction": "NOT_RUN",
+    "hessian": "NOT_RUN",
+    "fraction_kkt_solves": "NOT_RUN",
+    "curve_or_curvature_diagnostics": "NOT_RUN",
+    "cad_or_geometry_kernel": "NOT_RUN",
+    "png_or_other_render": "NOT_RUN",
+    "candidate_outputs_exist": false
+  },
+  "manifest_self_hash": "not_recorded"
+}

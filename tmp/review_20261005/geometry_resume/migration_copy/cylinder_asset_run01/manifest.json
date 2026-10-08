@@ -1,0 +1,293 @@
+{
+  "fields": {
+    "surface_fields_npz": "fields/surface_fields.npz"
+  },
+  "files": {
+    "fields/surface_fields.npz": {
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    "geometry/mesh_lineage.npz": {
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    "geometry/solid.step": {
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    "geometry/surface.npz": {
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    "metadata/face_semantics.json": {
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    "metadata/wall_reference.json": {
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    "validation/geometry.json": {
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  },
+  "frame": "right_handed_z_up",
+  "geometry": {
+    "solid_step": "geometry/solid.step",
+    "surface_npz": "geometry/surface.npz"
+  },
+  "material": {
+    "calibration_status": "UNVALIDATED_PROTOTYPE",
+    "id": "analytic-fixture-unvalidated-material",
+    "mechanics": {
+      "E_pa": 5000000000.0,
+      "Gc_j_m2": 45.0,
+      "nu": 0.25,
+      "rho_kg_m3": 2100.0
+    }
+  },
+  "ornament": {
+    "kind": "painted",
+    "recipe": {
+      "geometry_relief_mm": 0.0,
+      "historical_style_validation": "NOT_VALIDATED",
+      "material_binding_id": "analytic-fixture-unvalidated-material",
+      "target_region_codes": [
+        1,
+        2
+      ]
+    }
+  },
+  "provenance": {
+    "backend": "CadQuery/OpenCascade",
+    "backend_version": "2.8.0",
+    "identity_migration": {
+      "classification": "migration_copy; not retroactive success of original v4 run",
+      "mesh_generated": false,
+      "migration_id": "vf-mig-20261005-v4-brep-bounds-policy-v1",
+      "operation": "copied_asset_recompute_brep_identity_then_wall_mesh_bind",
+      "original_v4_run_rewritten_or_requalified": false,
+      "performed_at_utc": "2026-10-04T23:43:48.157325+00:00",
+      "preserved_payload_sha256": {
+        "fields/surface_fields.npz": {
+          "bytes": 5320,
+          "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+        },
+        "geometry/mesh_lineage.npz": {
+          "bytes": 280,
+          "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+        },
+        "geometry/solid.step": {
+          "bytes": 9412,
+          "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+        },
+        "geometry/surface.npz": {
+          "bytes": 9722,
+          "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+        },
+        "metadata/face_semantics.json": {
+          "bytes": 5709,
+          "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+        },
+        "metadata/wall_reference.json": {
+          "bytes": 4717,
+          "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+        },
+        "validation/geometry.json": {
+          "bytes": 320,
+          "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+        }
+      },
+      "recomputed_fields": [
+        "provenance.spec.brep_face_bounds_policy",
+        "provenance.spec.brep_face_inventory[*].index_zero_based",
+        "provenance.spec.brep_face_inventory[*].geom_type",
+        "provenance.spec.brep_face_inventory[*].center_mm",
+        "provenance.spec.brep_face_inventory[*].area_mm2",
+        "provenance.spec.brep_face_inventory[*].bbox_mm"
+      ],
+      "schema": "vf.asset-identity-migration.v1",
+      "source_asset_relative_path": "tmp/review_20261004/wall_mesh_binding/v4_run/cylinder_asset_run01",
+      "source_bounds_policy_present": false,
+      "source_canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "source_manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+      "source_payload_files": {
+        "fields/surface_fields.npz": {
+          "bytes": 5320,
+          "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+        },
+        "geometry/mesh_lineage.npz": {
+          "bytes": 280,
+          "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+        },
+        "geometry/solid.step": {
+          "bytes": 9412,
+          "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+        },
+        "geometry/surface.npz": {
+          "bytes": 9722,
+          "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+        },
+        "metadata/face_semantics.json": {
+          "bytes": 5709,
+          "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+        },
+        "metadata/wall_reference.json": {
+          "bytes": 4717,
+          "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+        },
+        "validation/geometry.json": {
+          "bytes": 320,
+          "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+        }
+      },
+      "source_producer": {
+        "backend": "CadQuery/OpenCascade",
+        "backend_version": "2.8.0",
+        "name": "wall_mesh_binding tiny analytic fixture runner",
+        "version": "review-only"
+      },
+      "step_exported": false,
+      "target_bounds_policy": {
+        "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+        "bounds_order": [
+          "xmin",
+          "xmax",
+          "ymin",
+          "ymax",
+          "zmin",
+          "zmax"
+        ],
+        "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+        "units": "mm",
+        "use_shape_tolerance": false,
+        "use_triangulation": false
+      },
+      "target_bounds_policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1"
+    },
+    "producer": "wall_mesh_binding tiny analytic fixture runner",
+    "spec": {
+      "brep_face_bounds_policy": {
+        "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+        "bounds_order": [
+          "xmin",
+          "xmax",
+          "ymin",
+          "ymax",
+          "zmin",
+          "zmax"
+        ],
+        "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+        "units": "mm",
+        "use_shape_tolerance": false,
+        "use_triangulation": false
+      },
+      "brep_face_inventory": [
+        {
+          "area_mm2": 628.318530718,
+          "bbox_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "center_mm": [
+            6.608047442568932e-13,
+            -2.3800406090401796e-16,
+            5.0
+          ],
+          "geom_type": "CYLINDER",
+          "index_zero_based": 0
+        },
+        {
+          "area_mm2": 502.6548245744,
+          "bbox_mm": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "center_mm": [
+            5.266898028821743e-13,
+            -4.531965080989408e-16,
+            4.999999999999999
+          ],
+          "geom_type": "CYLINDER",
+          "index_zero_based": 1
+        },
+        {
+          "area_mm2": 113.09733552923257,
+          "bbox_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            5.329070518200751e-15,
+            -2.109423746787797e-15,
+            0.0
+          ],
+          "geom_type": "PLANE",
+          "index_zero_based": 2
+        },
+        {
+          "area_mm2": 113.09733552923257,
+          "bbox_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "center_mm": [
+            5.329070518200751e-15,
+            -2.109423746787797e-15,
+            10.000000000000002
+          ],
+          "geom_type": "PLANE",
+          "index_zero_based": 3
+        }
+      ],
+      "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "face_semantics_classifier": "vf.canonical-step-face-semantics/1.0.0",
+      "face_semantics_report": "metadata/face_semantics.json",
+      "mesh_lineage_npz": "geometry/mesh_lineage.npz",
+      "parameters": {
+        "body_height_mm": 10.0,
+        "body_width_mm": 20.0,
+        "handle_high_z_mm": 8.0,
+        "handle_low_z_mm": 2.0,
+        "handle_outreach_mm": 15.0,
+        "handle_radius_mm": 1.0,
+        "tessellation_angular_rad": 0.08,
+        "tessellation_linear_mm": 0.05,
+        "wall_mm": 2.0
+      },
+      "tessellation": {
+        "angular_tolerance_rad": 0.08,
+        "linear_chord_deflection_mm": 0.05
+      }
+    },
+    "version": "review-only"
+  },
+  "schema": "forge.asset.v1",
+  "units": {
+    "length": "mm",
+    "mass": "kg",
+    "time": "s"
+  },
+  "validation": {
+    "report": "validation/geometry.json",
+    "scope": "geometry_only",
+    "status": "PASS"
+  }
+}

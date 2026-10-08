@@ -1,0 +1,59 @@
+{
+  "contract_id": "ownerfix_saved_npz_readback_recovery_v3",
+  "status": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "root_coordinator_switch": "-RootApprovedReadback",
+  "purpose": "One read-only recovery of the already-saved run02_owner_fix NPZ, with the original failed run and v1 recovery package preserved byte-for-byte.",
+  "original_run": {
+    "status": "UNKNOWN_OR_FAIL",
+    "parent_return_code": 1,
+    "candidate_return_code": 2,
+    "saved_candidate_npz_sha256": "f505831ba0b3ae58c3846f227750e62c902f0f79c250fc3c9b8a5fb748fab7be",
+    "failure_receipt_sha256": "89302f1f8c5aa95cb104c31a409bc20333425eb151e0cca12295147e3e2fa0d4"
+  },
+  "checker": {
+    "source": "focused_checks_recovery_v1.py",
+    "algorithm_changes": false,
+    "producer_fix": "Retain the same numeric comparisons; materialize only the two NumPy float64 tolerances as Python float and their NumPy boolean comparisons as Python bool.",
+    "strict_json_allow_nan_false": true
+  },
+  "entry_and_process_bounds": {
+    "supervisor_entry": "run_readback_recovery_supervisor_v3.ps1 -RootApprovedReadback",
+    "inner_runner_entry": "run_readback_recovery_once_v3.ps1 -RootApprovedReadback",
+    "inner_runner_passes_worker_switch": "--root-approved-readback",
+    "supervisor_inner_runner_wait_deadline_ms": 55000,
+    "supervisor_tree_cleanup_wait_ms": 3000,
+    "supervisor_elapsed_overrun_is_reported": true,
+    "external_outer_harness_required_for_60000ms_total_cap": true,
+    "external_outer_harness_hard_wall_ms": 60000,
+    "external_outer_harness_status": "REQUIRED_FOR_ANY_FUTURE_EXECUTION; SOURCE_REVIEW_ONLY",
+    "worker_wait_deadline_ms": 50000,
+    "worker_tree_cleanup_wait_ms": 3000,
+    "all_output_tree_artifact_cap_bytes": 20971520,
+    "fresh_output_required": true,
+    "automatic_retry": false
+  },
+  "artifact_accounting": {
+    "count_while_worker_active": "The inner runner polls the full recovery output tree and kills the worker if the current file-byte total exceeds 20 MiB.",
+    "count_after_worker_before_runner_receipt": "Recorded separately with its artifact manifest.",
+    "count_including_final_runner_receipt": "The inner runner calculates exact UTF-8 receipt byte length, writes a fixed-width final count/status/return-code receipt, then rescans the full tree. A post-receipt cap excess sets status ARTIFACT_CAP_EXCEEDED and return code 125 in the same fixed-width receipt and process exit.",
+    "outer_supervisor_count": "The v3 supervisor polls and measures the complete output tree, reports elapsed overrun, and returns a cap failure when an observed tree total exceeds 20 MiB. An independent outer execution harness is required to enforce a hard 60-second wall limit across the supervisor post-exit observations."
+  },
+  "readback_behavior": {
+    "candidate_geometry_generation": false,
+    "cad": false,
+    "solver": false,
+    "focused_checks_calls": 1,
+    "saved_candidate_npz_readback_calls": 1,
+    "primary_checks_json_written_before_render": true,
+    "render_pngs": [
+      "global_equal_aspect_actual_mesh.png",
+      "two_caps_equal_aspect_actual_mesh.png"
+    ],
+    "numerical_status_separate_from_render_status": true,
+    "completion_label_if_all_gates_pass": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+    "completion_label_on_discrepancy": "DISCREPANCY",
+    "original_run02_status_is_rewritten": false
+  },
+  "fixed_output_root": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/recovery_readback_ownerfix_v3",
+  "interpretation_limit": "Geometric triangle readback only. Tetrahedral/full-tet, physical, mechanical-h, solver and R2 conclusions remain unknown."
+}

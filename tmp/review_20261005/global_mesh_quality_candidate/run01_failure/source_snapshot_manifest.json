@@ -1,0 +1,83 @@
+{
+  "run_id": "run01_failure",
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "source_freeze_sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+  "captured_before_source_fix": true,
+  "source_snapshot": [
+    {
+      "name": "candidate.py",
+      "sha256_before": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "sha256_snapshot": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "bytes": 33917,
+      "exact_copy": true
+    },
+    {
+      "name": "focused_checks.py",
+      "sha256_before": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "sha256_snapshot": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948,
+      "exact_copy": true
+    },
+    {
+      "name": "candidate_contract.json",
+      "sha256_before": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "sha256_snapshot": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "bytes": 6810,
+      "exact_copy": true
+    },
+    {
+      "name": "SOURCE_REVIEW.md",
+      "sha256_before": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "sha256_snapshot": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "bytes": 5009,
+      "exact_copy": true
+    },
+    {
+      "name": "SOURCE_FREEZE.json",
+      "sha256_before": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+      "sha256_snapshot": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+      "bytes": 2711,
+      "exact_copy": true
+    }
+  ],
+  "copied_failure_outputs": [
+    {
+      "name": "color_diagnostic_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "color_diagnostic_stdout.txt",
+      "sha256": "2c27bea4a074e2ad24b3ad6ff0c3eb2fe63077a369eea82f5c063b3fc85d24dc",
+      "bytes": 1544
+    },
+    {
+      "name": "diagnostic_attempt_01_stderr.txt",
+      "sha256": "81c53785131505b33546ee8636a87528b0a8b0c734c7aa01a8ce5935374e6dd2",
+      "bytes": 2535
+    },
+    {
+      "name": "diagnostic_attempt_01_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "generation_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "generation_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "run_receipt.json",
+      "sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+      "bytes": 955
+    }
+  ],
+  "original_root_run_receipt_sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+  "candidate_arrays_present": false,
+  "original_run_receipt_left_in_place": true
+}

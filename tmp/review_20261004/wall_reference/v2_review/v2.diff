@@ -1,0 +1,132 @@
+--- v1/wall_reference.py
++++ v2/wall_reference.py
+@@ -10,6 +10,7 @@
+ import math
+ import re
+ from collections.abc import Mapping
++from numbers import Real
+ from typing import Any
+ 
+ 
+@@ -44,7 +45,7 @@
+ 
+ 
+ def _number(value: Any) -> bool:
+-    if isinstance(value, bool) or not isinstance(value, (int, float)):
++    if isinstance(value, bool) or not isinstance(value, Real):
+         return False
+     try:
+         return math.isfinite(float(value))
+@@ -524,29 +525,48 @@
+     if not isinstance(coverage, Mapping):
+         errors.append("WALL_REFERENCE_COVERAGE_MISSING")
+     else:
+-        if coverage.get("station_count") != len(stations):
++        count_fields = (
++            "canonical_step_face_count",
++            "semantics_row_count",
++            "unknown_or_pending_face_count",
++            "explicit_body_outer_face_count",
++            "explicit_body_inner_face_count",
++            "station_count",
++        )
++        valid_counts: dict[str, int] = {}
++        for key in count_fields:
++            value = coverage.get(key)
++            if isinstance(value, bool) or not isinstance(value, int) or value < 0:
++                errors.append(f"WALL_REFERENCE_COVERAGE_{key.upper()}_INVALID")
++            else:
++                valid_counts[key] = value
++        if valid_counts.get("station_count") != len(stations):
+             errors.append("WALL_REFERENCE_COVERAGE_STATION_COUNT_MISMATCH")
+-        if coverage.get("explicit_body_outer_face_count") != role_counts["outer"]:
++        if valid_counts.get("explicit_body_outer_face_count") != role_counts["outer"]:
+             errors.append("WALL_REFERENCE_COVERAGE_OUTER_COUNT_MISMATCH")
+-        if coverage.get("explicit_body_inner_face_count") != role_counts["inner"]:
++        if valid_counts.get("explicit_body_inner_face_count") != role_counts["inner"]:
+             errors.append("WALL_REFERENCE_COVERAGE_INNER_COUNT_MISMATCH")
+-        if coverage.get("wall_face_station_coverage_fraction") != 1.0:
+-            errors.append("WALL_REFERENCE_COVERAGE_FRACTION_INVALID")
+-        source_face_count = coverage.get("canonical_step_face_count")
++        source_face_count = valid_counts.get("canonical_step_face_count")
++        if source_face_count is not None and source_face_count < 1:
++            errors.append("WALL_REFERENCE_COVERAGE_SOURCE_FACE_COUNT_MUST_BE_POSITIVE")
+         if (
+-            not isinstance(source_face_count, int)
+-            or isinstance(source_face_count, bool)
+-            or source_face_count < 1
+-            or coverage.get("semantics_row_count") != source_face_count
+-            or coverage.get("unknown_or_pending_face_count") != 0
++            source_face_count is None
++            or valid_counts.get("semantics_row_count") != source_face_count
++            or valid_counts.get("unknown_or_pending_face_count") != 0
+         ):
+             errors.append("WALL_REFERENCE_SOURCE_COVERAGE_INCOMPLETE")
++
++        fraction = coverage.get("wall_face_station_coverage_fraction")
++        if not _number(fraction) or not 0.0 <= float(fraction) <= 1.0:
++            errors.append("WALL_REFERENCE_COVERAGE_FRACTION_INVALID")
++
+         if isinstance(source_semantics, Mapping):
+             if source_semantics.get("canonical_step_face_count") != source_face_count:
+                 errors.append("WALL_REFERENCE_SOURCE_FACE_COUNT_MISMATCH")
+             inventory = source_semantics.get("wall_face_inventory")
+             if not isinstance(inventory, list):
+                 errors.append("WALL_REFERENCE_WALL_FACE_INVENTORY_MISSING")
++                expected_inventory = set()
+             else:
+                 expected_inventory: set[tuple[int, str]] = set()
+                 for item in inventory:
+@@ -561,6 +581,7 @@
+                         or index < 0
+                         or not isinstance(role, str)
+                         or role not in {"outer", "inner"}
++                        or (source_face_count is not None and index >= source_face_count)
+                     ):
+                         errors.append("WALL_REFERENCE_WALL_FACE_INVENTORY_INVALID")
+                         continue
+@@ -575,6 +596,13 @@
+                 }
+                 if expected_inventory != actual_inventory or len(expected_inventory) != len(inventory):
+                     errors.append("WALL_REFERENCE_STATION_INVENTORY_MISMATCH")
++                expected_fraction = (
++                    len(expected_inventory.intersection(actual_inventory)) / len(expected_inventory)
++                    if expected_inventory
++                    else 0.0
++                )
++                if _number(fraction) and float(fraction) != expected_fraction:
++                    errors.append("WALL_REFERENCE_COVERAGE_FRACTION_MISMATCH")
+ 
+     return {"status": "VALID" if not errors else "UNKNOWN", "errors": sorted(set(errors))}
+ 
+--- v1/test_wall_reference.py
++++ v2/test_wall_reference.py
+@@ -123,3 +123,28 @@
+     assert result["stations"] == []
+     assert "SOURCE_SEMANTICS_SCHEMA_UNSUPPORTED" in result["unknown_reasons"]
+ 
++
++@pytest.mark.parametrize(
++    ("field", "value", "error"),
++    [
++        (
++            "explicit_body_outer_face_count",
++            True,
++            "WALL_REFERENCE_COVERAGE_EXPLICIT_BODY_OUTER_FACE_COUNT_INVALID",
++        ),
++        (
++            "unknown_or_pending_face_count",
++            False,
++            "WALL_REFERENCE_COVERAGE_UNKNOWN_OR_PENDING_FACE_COUNT_INVALID",
++        ),
++        ("wall_face_station_coverage_fraction", True, "WALL_REFERENCE_COVERAGE_FRACTION_INVALID"),
++    ],
++)
++def test_coverage_rejects_booleans_as_counts_or_fraction(analytic_hollow_cylinder_reference, field, value, error):
++    record, _source_hash = analytic_hollow_cylinder_reference
++    altered = copy.deepcopy(record)
++    altered["coverage"][field] = value
++    result = validate_wall_reference(altered)
++    assert result["status"] == "UNKNOWN"
++    assert error in result["errors"]
++

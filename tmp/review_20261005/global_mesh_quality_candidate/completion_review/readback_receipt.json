@@ -1,0 +1,20 @@
+{
+  "automatic_retry": false,
+  "cad_or_solver_invoked": false,
+  "candidate_generation_invoked": false,
+  "candidate_main_invoked": false,
+  "checks_sha256": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173",
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "completion_manifest_sha256": "e76c6538dd303bbbd6e05185059966d634b43e3827d31882d0ad1d25a51d2932",
+  "elapsed_seconds": 5.7643027999438345,
+  "execution_cap_seconds": 120.0,
+  "finished_at_utc": "2026-10-05T10:31:10.744797+00:00",
+  "focused_checks_pass": true,
+  "original_run02_receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "original_run02_receipt_sha256_after": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "run_id": "run02_v2bugfix",
+  "saved_candidate_sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "saved_candidate_sha256_after": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "started_at_utc": "2026-10-05T10:31:04.982801+00:00",
+  "status": "READBACK_COMPLETE"
+}

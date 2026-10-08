@@ -1,0 +1,38 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\exact_equality_rank_precheck.py"
+  ],
+  "runtime": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "exit_code": 0,
+  "elapsed_ms": 130.923,
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_rank_precheck_stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_rank_precheck_stderr.txt",
+  "stdout_sha256": "7a752371fdd8360a15fe7859dc1ce755be6792444fb49629873985db73b89447",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_rank_precheck\\result.json",
+  "result_sha256": "7a752371fdd8360a15fe7859dc1ce755be6792444fb49629873985db73b89447",
+  "source_pre_sha256": {
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/prior_10_12_freeze/fixed_cases.json": "77ea80492af5092cf41f60cb7d10c5458c95197d74efc68def349f9824629824",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "8e5715185fe5f0ac90ecc5c9f147a595ceee313351879399cb99b7974c06d693",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "6c401dcd90fc549ab9fc49b7fa46f9d4d9ac0b90ec8be6d36fa1945ce68f9e95",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/prior_10_12_freeze/FREEZE_MANIFEST.json": "fb1cdc4511fa7e0d3178010b07e5b660f3d198218de8dfa94c78e1c5c280cf14",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/exact_equality_rank_precheck.py": "2599d4ce7f236d48414fc61837d48e2278e81e62793d3a6ae3fe5f2172a505d2",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "3bcdc51c322e11478ae58b54afcc2540ed289dc44c119edbcbb52a63be8ac13c"
+  },
+  "source_post_sha256": {
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/prior_10_12_freeze/fixed_cases.json": "77ea80492af5092cf41f60cb7d10c5458c95197d74efc68def349f9824629824",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "8e5715185fe5f0ac90ecc5c9f147a595ceee313351879399cb99b7974c06d693",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "6c401dcd90fc549ab9fc49b7fa46f9d4d9ac0b90ec8be6d36fa1945ce68f9e95",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/prior_10_12_freeze/FREEZE_MANIFEST.json": "fb1cdc4511fa7e0d3178010b07e5b660f3d198218de8dfa94c78e1c5c280cf14",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/exact_equality_rank_precheck.py": "2599d4ce7f236d48414fc61837d48e2278e81e62793d3a6ae3fe5f2172a505d2",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "3bcdc51c322e11478ae58b54afcc2540ed289dc44c119edbcbb52a63be8ac13c"
+  },
+  "source_unchanged": true
+}

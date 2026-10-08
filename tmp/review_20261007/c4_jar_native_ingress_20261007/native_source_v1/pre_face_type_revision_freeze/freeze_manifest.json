@@ -1,0 +1,41 @@
+{
+  "freeze": "pre_face_type_revision_freeze",
+  "created_utc": "2026-10-07T03:01:01Z",
+  "files": [
+    {
+      "name": "native_c4_ingress.py",
+      "source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\c4_jar_native_ingress_20261007\\native_c4_ingress.py",
+      "frozen": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\pre_face_type_revision_freeze\\native_c4_ingress.py",
+      "bytes": 24796,
+      "sha256": "b7f0550a0c0b60b557f8190e25c1b827a7a8b550fcc37b3cea0cc9cbc2d9fc04"
+    },
+    {
+      "name": "native_input_gate.py",
+      "source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\c4_jar_native_ingress_20261007\\native_input_gate.py",
+      "frozen": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\pre_face_type_revision_freeze\\native_input_gate.py",
+      "bytes": 7746,
+      "sha256": "45ee34ab7963c2d8886bd21be6844a0d171adb8257ee3665bd91a182aa4d44e4"
+    },
+    {
+      "name": "capture_once.py",
+      "source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\c4_jar_native_ingress_20261007\\capture_once.py",
+      "frozen": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\pre_face_type_revision_freeze\\capture_once.py",
+      "bytes": 8260,
+      "sha256": "7ea52a08da1900825fe950ee05bf8fadeecc5b98c1192d60e29366ddb639f4c4"
+    },
+    {
+      "name": "native_c4_ingress_case.json",
+      "source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\c4_jar_native_ingress_20261007\\native_c4_ingress_case.json",
+      "frozen": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\pre_face_type_revision_freeze\\native_c4_ingress_case.json",
+      "bytes": 5724,
+      "sha256": "38fd2a65f8769dab9c994ba0ad270fba0340475a1c9a2be33a867c676f26eb8f"
+    },
+    {
+      "name": "source_pins.json",
+      "source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\source_pins.json",
+      "frozen": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261007\\c4_jar_native_ingress_20261007\\native_source_v1\\pre_face_type_revision_freeze\\source_pins.json",
+      "bytes": 5667,
+      "sha256": "330f6695491a9e9edd925bce02557251424ef8ac0d5a3689dfb1a6984409c1f0"
+    }
+  ]
+}

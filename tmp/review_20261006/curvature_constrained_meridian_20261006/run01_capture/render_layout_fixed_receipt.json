@@ -1,0 +1,81 @@
+{
+  "command": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_saved_candidates_layout_fixed.py"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "elapsed_seconds": 0.7190000000409782,
+  "exception": null,
+  "outputs": {
+    "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_only_saved_layout_fixed_01\\render_manifest.json": {
+      "bytes": 543,
+      "sha256": "3ecec1548617aed1261fe3e766f5972a260d385241c44d00990594d3013c6c7c"
+    },
+    "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_only_saved_layout_fixed_01\\saved_meridian_geometry_preview.png": {
+      "bytes": 148614,
+      "sha256": "73714e1782cf3831926f40c3406eeef64cf733e6cc40a00b6467db9c05320ea3"
+    }
+  },
+  "post_pins": {
+    "driver": {
+      "bytes": 21048,
+      "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    },
+    "implementation": {
+      "bytes": 25753,
+      "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian.py",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "layout_renderer": {
+      "bytes": 7189,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_saved_candidates_layout_fixed.py",
+      "sha256": "171eb4dd6149fbc86196cc31589ca7553e3330e7866ca46e039f75bb22eaacdd"
+    },
+    "original_renderer": {
+      "bytes": 6722,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_saved_candidates.py",
+      "sha256": "32f7e4f30a20e8c0f815393ef00ff660618193ab501dce4c034fe35e250de3a0"
+    },
+    "result": {
+      "bytes": 491496,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    }
+  },
+  "pre_pins": {
+    "driver": {
+      "bytes": 21048,
+      "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    },
+    "implementation": {
+      "bytes": 25753,
+      "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian.py",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "layout_renderer": {
+      "bytes": 7189,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_saved_candidates_layout_fixed.py",
+      "sha256": "171eb4dd6149fbc86196cc31589ca7553e3330e7866ca46e039f75bb22eaacdd"
+    },
+    "original_renderer": {
+      "bytes": 6722,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run01_capture\\render_saved_candidates.py",
+      "sha256": "32f7e4f30a20e8c0f815393ef00ff660618193ab501dce4c034fe35e250de3a0"
+    },
+    "result": {
+      "bytes": 491496,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    }
+  },
+  "raw_stderr_bytes": 0,
+  "raw_stdout_bytes": 955,
+  "renderer_output_bytes": 149157,
+  "renderer_outputs_under_2mib": true,
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 20
+}

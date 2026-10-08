@@ -1,0 +1,125 @@
+{
+  "actual_outer_returncode": 0,
+  "attempt01_artifacts_after": {
+    "source_pins.pre_authorization.json": "48f2d6fdea3a3224c692acdd64f93af63f3a6fc6a11587625c220183aac73975",
+    "trial_dispatch.json": "13bb629fbf0f94b7f028d321750fd4767f3249cb71b36f9e641dce865ed5760b",
+    "trial_receipt.json": "32e6866f8df0b9d72046d0bb5e3fde099ba21c021df032dcafdbdde9b87995b3",
+    "trial_stderr.bin": "44f613cae8bbfefe4f8c8d3721dcba00f5e9d15b2f9c87330f5d893893a5199e",
+    "trial_stdout.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "attempt01_artifacts_before": {
+    "source_pins.pre_authorization.json": "48f2d6fdea3a3224c692acdd64f93af63f3a6fc6a11587625c220183aac73975",
+    "trial_dispatch.json": "13bb629fbf0f94b7f028d321750fd4767f3249cb71b36f9e641dce865ed5760b",
+    "trial_receipt.json": "32e6866f8df0b9d72046d0bb5e3fde099ba21c021df032dcafdbdde9b87995b3",
+    "trial_stderr.bin": "44f613cae8bbfefe4f8c8d3721dcba00f5e9d15b2f9c87330f5d893893a5199e",
+    "trial_stdout.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "attempt01_artifacts_unchanged": true,
+  "authorization_source": "ROOT_ENGINEERING_GO",
+  "child_returncode": 0,
+  "elapsed_seconds": 0.726949900155887,
+  "human_confirmation": false,
+  "launcher_sha256": "076ad684cb17312d22dea1d95e51ec4eede8a0db22d8ae5a7a2ca034edccdfca",
+  "lp_attempts_per_family": 1,
+  "outer_timeout_seconds": 60,
+  "pinned_files_unchanged": true,
+  "post_run_all_pins": {
+    "all_match": true,
+    "authorization_metadata": {
+      "authorization_origin": "root engineering GO; not human confirmation",
+      "authorization_source": "ROOT_ENGINEERING_GO",
+      "human_confirmation": false,
+      "scope": "one local trial, one linprog per family, external 60-second cap"
+    },
+    "case_authorized": true,
+    "expected": {
+      "actual_seed": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+      "explicit_design_cases": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb",
+      "frozen_fixed_cases": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+      "frozen_old_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "implementation": "3509cbc65f1cc79489e7350cb282c75e0eec063eaf83918e010cb3eb9ab17086",
+      "planned_checker": "433f8c78e85344de6e4cd6a7e5b26af142574eea0fd6d00136871555de02b5f9",
+      "reviewed_curvature_source_reference": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "files": {
+      "actual_seed": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+      "explicit_design_cases": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb",
+      "frozen_fixed_cases": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+      "frozen_old_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "implementation": "3509cbc65f1cc79489e7350cb282c75e0eec063eaf83918e010cb3eb9ab17086",
+      "planned_checker": "433f8c78e85344de6e4cd6a7e5b26af142574eea0fd6d00136871555de02b5f9",
+      "reviewed_curvature_source_reference": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "source_pins_sha256": "3d8f14354963c48622d1e502392ce22a31e5dcaa93cc4c91cc56a7c38615d58b"
+  },
+  "pre_run_all_pins": {
+    "all_match": true,
+    "authorization_metadata": {
+      "authorization_origin": "root engineering GO; not human confirmation",
+      "authorization_source": "ROOT_ENGINEERING_GO",
+      "human_confirmation": false,
+      "scope": "one local trial, one linprog per family, external 60-second cap"
+    },
+    "case_authorized": true,
+    "expected": {
+      "actual_seed": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+      "explicit_design_cases": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb",
+      "frozen_fixed_cases": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+      "frozen_old_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "implementation": "3509cbc65f1cc79489e7350cb282c75e0eec063eaf83918e010cb3eb9ab17086",
+      "planned_checker": "433f8c78e85344de6e4cd6a7e5b26af142574eea0fd6d00136871555de02b5f9",
+      "reviewed_curvature_source_reference": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "files": {
+      "actual_seed": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+      "explicit_design_cases": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb",
+      "frozen_fixed_cases": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+      "frozen_old_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "implementation": "3509cbc65f1cc79489e7350cb282c75e0eec063eaf83918e010cb3eb9ab17086",
+      "planned_checker": "433f8c78e85344de6e4cd6a7e5b26af142574eea0fd6d00136871555de02b5f9",
+      "reviewed_curvature_source_reference": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "source_pins_sha256": "3d8f14354963c48622d1e502392ce22a31e5dcaa93cc4c91cc56a7c38615d58b"
+  },
+  "result_exists": true,
+  "result_summary": {
+    "bytes": 1314,
+    "families": {
+      "bowl": {
+        "audit_status": null,
+        "constraint_rows": 628,
+        "exact_linear_violation_count": null,
+        "fixed_reference_direction_speed_floor": null,
+        "independent_full_span_L1_projection_proof": null,
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "solver_status": 2,
+        "solver_success": false,
+        "status": "LP_DID_NOT_RETURN_CANDIDATE_INFEASIBILITY_NOT_PROVED",
+        "worst_exact_linear_violations": null
+      },
+      "jar": {
+        "audit_status": null,
+        "constraint_rows": 628,
+        "exact_linear_violation_count": null,
+        "fixed_reference_direction_speed_floor": null,
+        "independent_full_span_L1_projection_proof": null,
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "solver_status": 2,
+        "solver_success": false,
+        "status": "LP_DID_NOT_RETURN_CANDIDATE_INFEASIBILITY_NOT_PROVED",
+        "worst_exact_linear_violations": null
+      }
+    },
+    "sha256": "e7feb43d773cd12d9c0fd7b1b3fca4d3467f0f0770f2cad2bccc0b789e69cce8",
+    "status": "SOURCE_IMPLEMENTATION_RESULT_NOT_PHYSICS_READY"
+  },
+  "run_started_marker_exists": true,
+  "schema": "vesselforge.convex_meridian_feasibility.attempt02_receipt.v1",
+  "single_real_run_feasibility_call": true,
+  "started_unix_seconds": 1791294585.7668009,
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 955,
+  "stdout_sha256": "bb6806bb0e3a3a83109afc7a86424aa6d4f2b0be6d207b3f51d8c04b57f401c5",
+  "timed_out": false
+}

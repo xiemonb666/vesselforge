@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETE",
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\normal_offset_meridian_20261006\\run_normal_offset_meridian_zprime_fixed.py",
+    "--worker"
+  ],
+  "user_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\normal_offset_meridian_20261006\\run_normal_offset_meridian_zprime_fixed.py",
+    "--root-go"
+  ],
+  "actual_rc": 0,
+  "elapsed_seconds": 0.187,
+  "outer_limit_seconds": 15.0,
+  "output_limit_bytes_total": 4194304,
+  "result_limit_bytes_reserved": 4128768,
+  "hashes_before": {
+    "source": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+    "readme": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef",
+    "false_case": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319",
+    "runner": "ae91c04bac02e9a057e9f1a099350a34a9cb261d21c5bbd70388f931cb17cd54",
+    "saved_result": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+    "frozen_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "independent_audit": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+    "failed_attempt_manifest": "78394f83e773830c23734c41071386cd9bf8e9fdba5fd54b7e3e80ecb5698a00",
+    "source_pins": "9aee6ad4032434279efebeabf9f1b6be525e4bfd3951c875b7b7d08e2b0b8203"
+  },
+  "hashes_after": {
+    "source": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+    "readme": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef",
+    "false_case": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319",
+    "runner": "ae91c04bac02e9a057e9f1a099350a34a9cb261d21c5bbd70388f931cb17cd54",
+    "saved_result": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+    "frozen_driver": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "independent_audit": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+    "failed_attempt_manifest": "78394f83e773830c23734c41071386cd9bf8e9fdba5fd54b7e3e80ecb5698a00",
+    "source_pins": "9aee6ad4032434279efebeabf9f1b6be525e4bfd3951c875b7b7d08e2b0b8203"
+  },
+  "inputs_unchanged": true,
+  "result_sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+  "captured_stdout": {
+    "file": "normal_offset_meridian_stdout.bin",
+    "bytes": 83,
+    "sha256": "02a9574fccb60290d18db900f79150bb0f5b72fe4c964f0489f973f171469bb5",
+    "summary": "{\"status\": \"INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE\", \"spans\": 12, \"bytes\": 435804}\r\n"
+  },
+  "captured_stderr": {
+    "file": "normal_offset_meridian_stderr.bin",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": ""
+  },
+  "runner_error": null,
+  "retry_permitted": false,
+  "budget_status": "WITHIN_LIMIT",
+  "total_persisted_bytes_status": "EXACT_FIXED_POINT",
+  "total_persisted_bytes": 438983
+}

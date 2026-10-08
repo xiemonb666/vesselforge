@@ -1,0 +1,387 @@
+{
+  "schema": "vf.wall-mesh-binding-v5-test-run.v1",
+  "started_at_utc": "2026-10-04T15:20:30.7702420Z",
+  "completed_at_utc": "2026-10-04T15:20:33.6878324Z",
+  "executable": "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge",
+  "argv": [
+    "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\pytest_tmp",
+    "--junitxml",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\pytest.junit.xml",
+    "tests/test_wall_mesh_binding.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\pytest.stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\pytest.stderr.txt",
+  "stdout_sha256": "1a62708f9895408ab267e3a6a2107356503c8d67a847b77a21b4f51e555f36bc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 546,
+  "stderr_bytes": 0,
+  "junit_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\pytest.junit.xml",
+  "junit_present": true,
+  "junit_sha256": "481319d5d432269d6d756163a0a8ec0836aa4026763514ea11c2dbecc93c69bc",
+  "status": "PASS",
+  "exit_code": 0,
+  "freeze_stable": true,
+  "pre_frozen_and_dependencies": [
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\freeze_v2.json",
+      "sha256": "86eee63f22e1e602fdef3ac05eb513247382562c60d19b83869b91d002a82f89"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\pytest_receipt_v2.json",
+      "sha256": "e85de4b9d002e7d2966e428a1d1973c7106045873138ecf1c2b037f8775e2b8d"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\test_wall_mesh_binding.py",
+      "sha256": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\wall_mesh_binding.py",
+      "sha256": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_asset_failure_inventory_v4.json",
+      "sha256": "6c606df68e1d4c384e1c500e1fa9021893a299fc7672e2ec688237382ba601f2"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner_receipt_v4.json",
+      "sha256": "5ed95d156146dfac6529d202af400b5065864e1e48690f307981e77feec122e7"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner.stderr_v4.txt",
+      "sha256": "2819fe5d4962514883298132709c8b3e4fdf6fc7ce0947213de0b4d9158b502d"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner.stdout_v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\freeze_v4.json",
+      "sha256": "6227797f109766fe146189444d27bf35869d7229f34b43257c0a6e7e19a6a6e6"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest_receipt_v4.json",
+      "sha256": "05a408a01de8573ce6ec826d28811f5c9cb8bee919c1af776789415e721f7fc1"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.junit_v4.xml",
+      "sha256": "bc04017e21d92baf2c337adb48912ce99ef3fc516626b418d82f33fa9c4d335f"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.stderr_v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.stdout_v4.txt",
+      "sha256": "0f51c14ea91f5cb4471db26aa63b111b7871ab4f266adbcce645ca4ca5659ec1"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\test_wall_mesh_binding.py",
+      "sha256": "b3e6e96fa76843f1856c1fa3bdee28f4d0a3222d89e855cfd994df7d6b686a31"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\wall_mesh_binding.py",
+      "sha256": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\freeze_v5.json",
+      "sha256": "248c5d1b725fd41111c4251dc0fdcb19c33ec24609fc65371c189ae633ac03b9"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\test_wall_mesh_binding.py",
+      "sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\v5_compact_semantics_fix.md",
+      "sha256": "293627c0816131a4b00344618160ca6377bd3877aaa04ee2a0e1d523dc2604ce"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\wall_mesh_binding.py",
+      "sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_mesh_binding.py",
+      "sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/freeze.json",
+      "sha256": "248c5d1b725fd41111c4251dc0fdcb19c33ec24609fc65371c189ae633ac03b9"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/run_hollow_cylinder_binding.py",
+      "sha256": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/fixture_input.json",
+      "sha256": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/asset.py",
+      "sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/schema.py",
+      "sha256": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/semantics.py",
+      "sha256": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "vesselforge/pyproject.toml",
+      "sha256": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+    }
+  ],
+  "post_frozen_and_dependencies": [
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\freeze_v2.json",
+      "sha256": "86eee63f22e1e602fdef3ac05eb513247382562c60d19b83869b91d002a82f89"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\pytest_receipt_v2.json",
+      "sha256": "e85de4b9d002e7d2966e428a1d1973c7106045873138ecf1c2b037f8775e2b8d"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\test_wall_mesh_binding.py",
+      "sha256": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_frozen\\wall_mesh_binding.py",
+      "sha256": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_asset_failure_inventory_v4.json",
+      "sha256": "6c606df68e1d4c384e1c500e1fa9021893a299fc7672e2ec688237382ba601f2"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner_receipt_v4.json",
+      "sha256": "5ed95d156146dfac6529d202af400b5065864e1e48690f307981e77feec122e7"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner.stderr_v4.txt",
+      "sha256": "2819fe5d4962514883298132709c8b3e4fdf6fc7ce0947213de0b4d9158b502d"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\cylinder_runner.stdout_v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\freeze_v4.json",
+      "sha256": "6227797f109766fe146189444d27bf35869d7229f34b43257c0a6e7e19a6a6e6"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest_receipt_v4.json",
+      "sha256": "05a408a01de8573ce6ec826d28811f5c9cb8bee919c1af776789415e721f7fc1"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.junit_v4.xml",
+      "sha256": "bc04017e21d92baf2c337adb48912ce99ef3fc516626b418d82f33fa9c4d335f"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.stderr_v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\pytest.stdout_v4.txt",
+      "sha256": "0f51c14ea91f5cb4471db26aa63b111b7871ab4f266adbcce645ca4ca5659ec1"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\test_wall_mesh_binding.py",
+      "sha256": "b3e6e96fa76843f1856c1fa3bdee28f4d0a3222d89e855cfd994df7d6b686a31"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_frozen\\wall_mesh_binding.py",
+      "sha256": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\freeze_v5.json",
+      "sha256": "248c5d1b725fd41111c4251dc0fdcb19c33ec24609fc65371c189ae633ac03b9"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\test_wall_mesh_binding.py",
+      "sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\v5_compact_semantics_fix.md",
+      "sha256": "293627c0816131a4b00344618160ca6377bd3877aaa04ee2a0e1d523dc2604ce"
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_frozen\\wall_mesh_binding.py",
+      "sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_mesh_binding.py",
+      "sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/freeze.json",
+      "sha256": "248c5d1b725fd41111c4251dc0fdcb19c33ec24609fc65371c189ae633ac03b9"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/run_hollow_cylinder_binding.py",
+      "sha256": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/fixture_input.json",
+      "sha256": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/asset.py",
+      "sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/schema.py",
+      "sha256": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/semantics.py",
+      "sha256": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "vesselforge/pyproject.toml",
+      "sha256": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+    }
+  ],
+  "v4_asset_inputs_pre": [
+    {
+      "path": "fields\\surface_fields.npz",
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d",
+      "expected_bytes": 5320,
+      "expected_sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    {
+      "path": "geometry\\mesh_lineage.npz",
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+      "expected_bytes": 280,
+      "expected_sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    {
+      "path": "geometry\\solid.step",
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "expected_bytes": 9412,
+      "expected_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    {
+      "path": "geometry\\surface.npz",
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+      "expected_bytes": 9722,
+      "expected_sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 5108,
+      "sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+      "expected_bytes": 5108,
+      "expected_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f"
+    },
+    {
+      "path": "metadata\\face_semantics.json",
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+      "expected_bytes": 5709,
+      "expected_sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    {
+      "path": "metadata\\wall_reference.json",
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76",
+      "expected_bytes": 4717,
+      "expected_sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    {
+      "path": "validation\\geometry.json",
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61",
+      "expected_bytes": 320,
+      "expected_sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  ],
+  "v4_asset_inputs_post": [
+    {
+      "path": "fields\\surface_fields.npz",
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d",
+      "matches_pre": true
+    },
+    {
+      "path": "geometry\\mesh_lineage.npz",
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+      "matches_pre": true
+    },
+    {
+      "path": "geometry\\solid.step",
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "matches_pre": true
+    },
+    {
+      "path": "geometry\\surface.npz",
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+      "matches_pre": true
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 5108,
+      "sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+      "matches_pre": true
+    },
+    {
+      "path": "metadata\\face_semantics.json",
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+      "matches_pre": true
+    },
+    {
+      "path": "metadata\\wall_reference.json",
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76",
+      "matches_pre": true
+    },
+    {
+      "path": "validation\\geometry.json",
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61",
+      "matches_pre": true
+    }
+  ]
+}

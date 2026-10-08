@@ -1,0 +1,37 @@
+{
+  "schema": "vesselforge.global_bspline_meridian.minimum_jerk_render_receipt.v1",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import hashlib\nimport json\nimport math\nimport pathlib\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\n\nroot = pathlib.Path.cwd()\nsource_json = pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_exact_result.json\")\nout = pathlib.Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_outer_profiles.png\")\nresult = json.loads(source_json.read_text(encoding=\"utf-8\"))\ncases = json.loads((root / \"vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json\").read_text(encoding=\"utf-8\"))[\"cases\"]\n\ndef bezier_at(poles, t):\n    work = [tuple(point) for point in poles]\n    while len(work) > 1:\n        work = [tuple((1.0 - t) * a + t * b for a, b in zip(work[i], work[i + 1])) for i in range(len(work) - 1)]\n    return work[0]\n\nfig, axes = plt.subplots(1, 2, figsize=(12, 6))\nlegend_handles = None\nfor ax, family in zip(axes, (\"bowl\", \"jar\")):\n    case = cases[family]\n    spans = result[\"cases\"][family][\"geometry\"][\"spans\"]\n    points = []\n    for span in spans:\n        poles = [tuple(float(value) for value in point) for point in span[\"bezier_poles_rz_mm\"]]\n        points.extend(bezier_at(poles, j / 200.0) for j in range(201))\n    radius = [point[0] for point in points]\n    height = [point[1] for point in points]\n    outer_line, = ax.plot(radius, height, color=\"#315b7d\", linewidth=1.8, label=\"outer-body meridian\")\n    ax.plot([-r for r in radius], height, color=\"#315b7d\", linewidth=1.8)\n    apex_r = float(case[\"fixed_dimensions\"][\"max_outer_radius_mm\"])\n    apex_z = float(case[\"fixed_dimensions\"][\"apex_z_mm\"])\n    mouth_r = float(case[\"fixed_dimensions\"][\"outer_mouth_r_mm\"])\n    mouth_z = float(case[\"fixed_dimensions\"][\"mouth_datum_z_mm\"])\n    apex = ax.scatter([-apex_r, apex_r], [apex_z, apex_z], color=\"#c45a3c\", s=24, zorder=3, label=\"fixed max-radius apex\")\n    mouth = ax.scatter([-mouth_r, mouth_r], [mouth_z, mouth_z], color=\"#4a8a63\", s=20, zorder=3, label=\"mouth/body endpoint\")\n    ax.set_title(f\"{family.title()} outer body\\nmouth datum {mouth_z:g} mm; crest target {case['accepted_candidate_total_height_mm']} mm unbuilt\")\n    ax.set_xlabel(\"signed radius r (mm)\")\n    ax.set_ylabel(\"height z (mm)\")\n    ax.set_aspect(\"equal\", adjustable=\"box\")\n    ax.grid(True, alpha=0.22)\n    ax.set_xlim(-1.12 * apex_r, 1.12 * apex_r)\n    ax.set_ylim(-1, 1.05 * mouth_z)\n    if legend_handles is None:\n        legend_handles = [outer_line, apex, mouth]\nfig.legend(legend_handles, [handle.get_label() for handle in legend_handles], loc=\"lower center\", ncol=3, frameon=False)\nfig.suptitle(\"Frozen minimum-jerk profiles; 201 samples per exact Bezier span for display only\", y=0.97)\nfig.tight_layout(rect=(0, 0.08, 1, 0.92))\nfig.savefig(out, dpi=160)\nplt.close(fig)\nprint(json.dumps({\"png\": str(out), \"png_bytes\": out.stat().st_size, \"png_sha256\": hashlib.sha256(out.read_bytes()).hexdigest(), \"source_json_sha256\": hashlib.sha256(source_json.read_bytes()).hexdigest(), \"display_samples_per_span\": 201, \"render_only_no_control_solve\": True}, separators=(\",\", \":\")))"
+  ],
+  "runtime": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "root_ready_math_result_reused": true,
+  "render_only": true,
+  "input_result_json_sha256": "06c714ff30e8f36c60e586e07670510d539b844ec434772a5d93b749612a6f65",
+  "elapsed_ms": 529.882,
+  "timed_out": false,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"<string>\", line 28, in <module>\r\n  File \"<string>\", line 28, in <genexpr>\r\nValueError: could not convert string to float: '378098348/268532045'\r\n",
+  "pre_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "post_run_sha256": {
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_constraint_source.py": "e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/bspline_minimum_jerk_driver.py": "e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9",
+    "vesselforge/experiments/global_bspline_meridian_20261006/fixed_cases.json": "47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908",
+    "vesselforge/experiments/global_bspline_meridian_20261006/DESIGN_PROPOSAL.md": "5eeb0b0f0fe2aeb14a143eab5646d92f3db111c074208c9e48e5e95d4ea5ce8f",
+    "tmp/review_20261006/global_bspline_meridian_20261006/REVIEW_PLAN.md": "686ec854aacef68c3f8beb52acaf6c22b9d013d8733fb4b8b99d498c873e57e5"
+  },
+  "source_or_case_pin_changes": [],
+  "png_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\global_bspline_meridian_20261006\\minimum_jerk_candidate\\minimum_jerk_outer_profiles.png",
+  "png_bytes": null,
+  "png_sha256": null,
+  "controls_recomputed": false
+}

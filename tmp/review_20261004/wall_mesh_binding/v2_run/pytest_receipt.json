@@ -1,0 +1,49 @@
+{
+  "schema": "vf.wall-mesh-binding-v2-test-run.v1",
+  "approved_source_and_dependency_hashes": {
+    "vesselforge/src/vesselforge/wall_mesh_binding.py": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "vesselforge/tests/test_wall_mesh_binding.py": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6",
+    "vesselforge/src/vesselforge/asset.py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "vesselforge/src/vesselforge/schema.py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "vesselforge/src/vesselforge/semantics.py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "vesselforge/src/vesselforge/wall_reference.py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8",
+    "vesselforge/pyproject.toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+  },
+  "executable": "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge",
+  "argv": [
+    "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_run\\pytest_tmp",
+    "--junitxml",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_run\\junit.xml",
+    "tests/test_wall_mesh_binding.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "src",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_run\\pytest.stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_run\\pytest.stderr.txt",
+  "junit_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v2_run\\junit.xml",
+  "status": "FAIL",
+  "exit_code": 1,
+  "post_source_and_dependency_hashes": {
+    "vesselforge/src/vesselforge/wall_mesh_binding.py": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "vesselforge/tests/test_wall_mesh_binding.py": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6",
+    "vesselforge/src/vesselforge/asset.py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "vesselforge/src/vesselforge/schema.py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "vesselforge/src/vesselforge/semantics.py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "vesselforge/src/vesselforge/wall_reference.py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8",
+    "vesselforge/pyproject.toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+  },
+  "junit_present": true,
+  "stdout_bytes": 14794,
+  "stderr_bytes": 0
+}

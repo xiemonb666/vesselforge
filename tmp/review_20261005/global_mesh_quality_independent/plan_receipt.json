@@ -1,0 +1,8 @@
+{
+  "status": "WAITING_FOR_AUTHOR_FREEZE",
+  "candidate_directory": "vesselforge/experiments/global_mesh_quality_candidate_20261005",
+  "new_candidate_files_opened": false,
+  "generation_or_cad_run": false,
+  "review_plan": "vesselforge/tmp/review_20261005/global_mesh_quality_independent/REVIEW_PLAN.md",
+  "writes_confined_to": "vesselforge/tmp/review_20261005/global_mesh_quality_independent"
+}

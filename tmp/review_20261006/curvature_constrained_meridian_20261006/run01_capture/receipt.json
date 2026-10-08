@@ -1,0 +1,122 @@
+{
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "elapsed_seconds": 6.922000000020489,
+  "exception": null,
+  "invocation": "run_constrained_design(root_ready=True, design_cases=None)",
+  "outputs": {
+    "marker": {
+      "bytes": 88,
+      "exists": true,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\run_started.json",
+      "sha256": "91d06761cd4dfc917f06951aa082da15fab740e42130937eab6002ee1b016986"
+    },
+    "result": {
+      "bytes": 491496,
+      "exists": true,
+      "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    }
+  },
+  "post_pins": {
+    "inputs": {
+      "actual_seed": {
+        "bytes": 337648,
+        "path": "vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\minimum_jerk_candidate\\semantic_minimum_jerk_result.json",
+        "sha256": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11"
+      },
+      "design_cases": {
+        "bytes": 7038,
+        "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\design_cases.json",
+        "sha256": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb"
+      },
+      "driver": {
+        "bytes": 21048,
+        "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\semantic_base_neck_driver.py",
+        "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+      },
+      "fixed_cases": {
+        "bytes": 5522,
+        "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\fixed_cases.json",
+        "sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+      },
+      "implementation": {
+        "bytes": 25753,
+        "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian.py",
+        "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+      },
+      "source_pins": {
+        "bytes": 2817,
+        "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\source_pins.json",
+        "sha256": "768411b3a61cd703f4bce149573f589a3ccd1fb66acf2d74e490df32ca335766"
+      }
+    },
+    "runtime": {
+      "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "python_executable_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+      "python_version": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+      "scipy_distribution_version": "1.18.1",
+      "scipy_metadata_files": {
+        "METADATA": "c8313d18ca0168ff291fe0a3b50532f3a18b14547695e9aa7ca1c1ce6eca92dc",
+        "RECORD": "5e6878cfd8fb6de58b1860644bfae7a51f30a33c2d9aaf2d5400a244c54d7423"
+      }
+    }
+  },
+  "pre_pins": {
+    "inputs": {
+      "actual_seed": {
+        "bytes": 337648,
+        "path": "vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\minimum_jerk_candidate\\semantic_minimum_jerk_result.json",
+        "sha256": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11"
+      },
+      "design_cases": {
+        "bytes": 7038,
+        "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\design_cases.json",
+        "sha256": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb"
+      },
+      "driver": {
+        "bytes": 21048,
+        "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\semantic_base_neck_driver.py",
+        "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+      },
+      "fixed_cases": {
+        "bytes": 5522,
+        "path": "vesselforge\\experiments\\semantic_base_neck_bspline_20261006\\fixed_cases.json",
+        "sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+      },
+      "implementation": {
+        "bytes": 25753,
+        "path": "vesselforge\\experiments\\curvature_constrained_meridian_20261006\\curvature_constrained_meridian.py",
+        "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+      },
+      "source_pins": {
+        "bytes": 2817,
+        "path": "vesselforge\\tmp\\review_20261006\\curvature_constrained_meridian_20261006\\source_pins.json",
+        "sha256": "768411b3a61cd703f4bce149573f589a3ccd1fb66acf2d74e490df32ca335766"
+      }
+    },
+    "runtime": {
+      "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "python_executable_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+      "python_version": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+      "scipy_distribution_version": "1.18.1",
+      "scipy_metadata_files": {
+        "METADATA": "c8313d18ca0168ff291fe0a3b50532f3a18b14547695e9aa7ca1c1ce6eca92dc",
+        "RECORD": "5e6878cfd8fb6de58b1860644bfae7a51f30a33c2d9aaf2d5400a244c54d7423"
+      }
+    }
+  },
+  "raw_stderr_bytes": 0,
+  "raw_stdout_bytes": 614,
+  "returncode": 0,
+  "schema": "vesselforge.curvature_constrained_meridian.run_capture.v1",
+  "timed_out": false,
+  "timeout_seconds": 60,
+  "total_review_bytes_including_receipt": 507819,
+  "total_review_bytes_under_8mib": true,
+  "worker_command": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import json, runpy; ns=runpy.run_path('C:\\\\Users\\\\xiemo\\\\Desktop\\\\ShardForge\\\\vesselforge\\\\experiments\\\\curvature_constrained_meridian_20261006\\\\curvature_constrained_meridian.py'); out=ns['run_constrained_design'](root_ready=True, design_cases=None); print(json.dumps({'status': out.get('status'), 'elapsed_seconds': out.get('elapsed_seconds'), 'families': {k: {'optimizer_status': v.get('optimizer_status'), 'promotion_status': v.get('promotion_status'), 'reason': v.get('reason')} for k,v in out.get('families', {}).items()}}, default=str, sort_keys=True))"
+  ]
+}

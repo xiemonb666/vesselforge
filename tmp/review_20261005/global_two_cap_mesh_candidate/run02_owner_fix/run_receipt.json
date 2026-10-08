@@ -1,0 +1,32 @@
+{
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_two_cap_mesh_candidate_20261005\\candidate_owner_fix.py",
+    "--run"
+  ],
+  "automatic_retry": false,
+  "candidate_count": 1,
+  "candidate_id": "global_two_cap_mesh_candidate_owner_fix_20261005",
+  "elapsed_seconds": 34.674863800173625,
+  "error": "Object of type bool is not JSON serializable",
+  "error_type": "TypeError",
+  "finished_at_utc": "2026-10-05T16:52:04.271128+00:00",
+  "generation_invoked": true,
+  "input_sha256_after": {
+    "baseline_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+  },
+  "input_sha256_before": {
+    "baseline_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "local_b_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+  },
+  "prewrite_audit_sha256": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+  "source_sha256": "e79e7f9ce1661e0d2c3b649b222c2875d144e280701a9e953b7fc8bddde185a4",
+  "started_at_utc": "2026-10-05T16:51:29.586443+00:00",
+  "status": "UNKNOWN_OR_FAIL"
+}

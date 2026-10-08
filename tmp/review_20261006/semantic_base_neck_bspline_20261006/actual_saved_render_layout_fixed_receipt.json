@@ -1,0 +1,55 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\render_saved_candidate_layout_fixed.py"
+  ],
+  "command_line": "-B \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\render_saved_candidate_layout_fixed.py\"",
+  "runtime": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "external_timeout_seconds": 20,
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_ms": 1107.378,
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_saved_render_layout_fixed_stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_saved_render_layout_fixed_stderr.txt",
+  "stdout_sha256": "0172d29bed34c847672c354e84008b97d80aff21ee39e0e9ec5a13ab2c3a7146",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "png_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_saved_candidate_render_layout_fixed\\semantic_outer_meridians_equal_scale_layout_fixed.png",
+  "png_sha256": "2afeca6f0b593afd3340443ecef5ca4d1b1ec3942487260b22502ba293e46755",
+  "render_summary_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_saved_candidate_render_layout_fixed\\render_summary.json",
+  "render_summary_sha256": "0172d29bed34c847672c354e84008b97d80aff21ee39e0e9ec5a13ab2c3a7146",
+  "render_output_bytes": 235577.0,
+  "output_cap_bytes": 2097152,
+  "source_pre_sha256": {
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/minimum_jerk_candidate/semantic_minimum_jerk_result.json": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "131a6652706ac5d6c72df66497d15bbf340284e9a3989db83df9a5655a6baf62",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_candidate_receipt.json": "5cd9834add483106fb33fa62ced7257d7b77718559ab261729cb1652b3b3377a",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "cae09164146bb486cc8ad128c0759499d3d3ab519aac318dec26d04fcbcccacb",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_saved_candidate_render/semantic_outer_meridians_equal_scale.png": "e61f2ae8636e9aee29894ac1cc15a83d4e486b0146cf78f3028dd3173f6084fd",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/FREEZE_MANIFEST.json": "80318bfd34bfc0a5ebc18b4638c45894234b12c603400ba3484a06d43a8d5c19",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "5e4123acd5c5b95844852d774f5c38da395b6dc9e8c50abed07768c06d419945",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/render_saved_candidate.py": "f00b871af1d07cce6daad762a080439e2dd90afae451dfac3126b045af1970bb",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/render_saved_candidate_layout_fixed.py": "3c7cc0516b7129869e81e1c70779b6d7bfa2ad7e00ab691f27ede87f0203f941",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_rank_precheck/result.json": "7a752371fdd8360a15fe7859dc1ce755be6792444fb49629873985db73b89447",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+  },
+  "source_post_sha256": {
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/minimum_jerk_candidate/semantic_minimum_jerk_result.json": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/REVIEW_PLAN.md": "131a6652706ac5d6c72df66497d15bbf340284e9a3989db83df9a5655a6baf62",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_candidate_receipt.json": "5cd9834add483106fb33fa62ced7257d7b77718559ab261729cb1652b3b3377a",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/DESIGN_NOTE.md": "cae09164146bb486cc8ad128c0759499d3d3ab519aac318dec26d04fcbcccacb",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_saved_candidate_render/semantic_outer_meridians_equal_scale.png": "e61f2ae8636e9aee29894ac1cc15a83d4e486b0146cf78f3028dd3173f6084fd",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/FREEZE_MANIFEST.json": "80318bfd34bfc0a5ebc18b4638c45894234b12c603400ba3484a06d43a8d5c19",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/RUN_PLAN.md": "5e4123acd5c5b95844852d774f5c38da395b6dc9e8c50abed07768c06d419945",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/render_saved_candidate.py": "f00b871af1d07cce6daad762a080439e2dd90afae451dfac3126b045af1970bb",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/render_saved_candidate_layout_fixed.py": "3c7cc0516b7129869e81e1c70779b6d7bfa2ad7e00ab691f27ede87f0203f941",
+    "vesselforge/tmp/review_20261006/semantic_base_neck_bspline_20261006/actual_rank_precheck/result.json": "7a752371fdd8360a15fe7859dc1ce755be6792444fb49629873985db73b89447",
+    "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+  },
+  "source_unchanged_during_run": [
+    true
+  ]
+}

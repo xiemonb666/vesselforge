@@ -1,0 +1,15 @@
+{
+  "task": "Render computed ornament field preview",
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\plot_fields.py"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "plotting_source_sha256_before": "0a9e9e6cce930acc30525f2f39fee454542a465f2dde9de26379fce2f1fd3c63",
+  "plotting_source_sha256_after": "0a9e9e6cce930acc30525f2f39fee454542a465f2dde9de26379fce2f1fd3c63",
+  "output_file": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\ornament_fields\\ornament_fields_preview.png",
+  "output_sha256": "7f05a6aa3db708afc01b0bfef420e59fcb6084bdcf2eae5594d90d224039fdc1",
+  "stdout_stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,120 @@
+{
+  "runner_id": "global_two_cap_outer_process_supervisor_v1",
+  "status": "RUNNER_EXITED_NONZERO_OR_UNKNOWN",
+  "actual_argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_two_cap_mesh_candidate_20261005\\run_candidate_once.py",
+    "--root-approved-run"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_at_utc": "2026-10-05T12:11:43.4120974Z",
+  "hard_wait_timeout_ms": 120000,
+  "wait_method": "System.Diagnostics.Process.WaitForExit(timeout); on timeout/size cap call Process.Kill(true), with taskkill /T /F fallback",
+  "elapsed_ms_through_process_reap": 1522,
+  "python_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "source_freeze_sha256_before": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+  "source_freeze_sha256_after": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+  "source_freeze_unchanged": true,
+  "preserved_run02_candidate_npz_sha256_before": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "preserved_run02_candidate_npz_sha256_after": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "preserved_run02_candidate_npz_unchanged": true,
+  "runner_process_id": 136668,
+  "runner_process_exit_code": 1,
+  "runner_timed_out": false,
+  "run_directory_artifact_limit_bytes": 20971520,
+  "artifact_limit_triggered_while_running": false,
+  "artifact_bytes_observed_at_last_poll": 1757,
+  "post_run_artifact_bytes": 6267,
+  "post_run_artifacts_over_20_mib": false,
+  "run_directory_artifacts": [
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_combined_output.bin",
+      "bytes": 0
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_receipt.json",
+      "bytes": 4510
+    },
+    {
+      "path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\run_receipt.json",
+      "bytes": 1757
+    }
+  ],
+  "runner_receipt_path": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_receipt.json",
+  "runner_status": "CHILD_NONZERO_EXIT",
+  "candidate_return_code": 2,
+  "stdout_log": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_outer_stdout.log",
+  "stderr_log": "vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_outer_stderr.log",
+  "candidate_runner_receipt_snapshot": {
+    "approval_switch_present": true,
+    "automatic_retry": false,
+    "candidate_argv": [
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_two_cap_mesh_candidate_20261005\\candidate.py",
+      "--run"
+    ],
+    "candidate_elapsed_seconds": 1.3910000000614673,
+    "candidate_finished_at_utc": "2026-10-05T20:11:43.372221+08:00",
+    "candidate_generation_was_invoked": true,
+    "candidate_return_code": 2,
+    "candidate_started_at_utc": "2026-10-05T20:11:41.994286+08:00",
+    "child_pid": 130652,
+    "cleanup_reserve_seconds": 12.0,
+    "combined_child_output_observed_bytes": 0,
+    "combined_child_output_retained_bytes": 0,
+    "combined_child_output_retention_cap_bytes": 20971520,
+    "combined_child_output_truncated": false,
+    "combined_output_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap\\parent_runner_combined_output.bin",
+    "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+    "elapsed_seconds_before_receipt_write": 1.3910000000614673,
+    "finished_at_utc": "2026-10-05T20:11:43.377651+08:00",
+    "fixed_run_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_two_cap_mesh_candidate\\run01_two_cap",
+    "hard_total_wall_clock_seconds": 120.0,
+    "pinned_input_sha256_after": {
+      "baseline_fixture_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "local_b_candidate_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "ornament_case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "ornament_refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+    },
+    "pinned_input_sha256_before": {
+      "baseline_fixture_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "local_b_candidate_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "ornament_case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "ornament_refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+    },
+    "required_approval_switch": "--root-approved-run",
+    "runner_argv": [
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_two_cap_mesh_candidate_20261005\\run_candidate_once.py",
+      "--root-approved-run"
+    ],
+    "runner_id": "global_two_cap_mesh_candidate_parent_runner_v1",
+    "source_and_input_hashes_unchanged": true,
+    "source_sha256_after": {
+      "SOURCE_FREEZE.json": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+      "SOURCE_REVIEW.md": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c",
+      "candidate.py": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+      "candidate_contract.json": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97",
+      "focused_checks.py": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141",
+      "prewrite_budget_audit.json": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+      "prewrite_budget_audit.py": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+      "run_candidate_once.py": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757"
+    },
+    "source_sha256_before": {
+      "SOURCE_FREEZE.json": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+      "SOURCE_REVIEW.md": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c",
+      "candidate.py": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+      "candidate_contract.json": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97",
+      "focused_checks.py": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141",
+      "prewrite_budget_audit.json": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+      "prewrite_budget_audit.py": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+      "run_candidate_once.py": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757"
+    },
+    "started_at_utc": "2026-10-05T20:11:41.982667+08:00",
+    "status": "CHILD_NONZERO_EXIT",
+    "stderr_merged_into_stdout": true,
+    "timed_out": false
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "vesselforge.normal_offset_saved_independent_pins.v1",
+  "state": "SOURCE_ONLY_AWAITING_ROOT_GO",
+  "contract": {
+    "target_scope": "saved jar meridian 2D local true-normal offset only",
+    "offset_mm": "3",
+    "expected_local_status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+    "span_count": 12,
+    "bezier_degree": 5,
+    "shared_joins": 11,
+    "display_points_per_span": 25,
+    "expected_saved_primitive_nodes": 37,
+    "expected_saved_node_limit": 64,
+    "expected_saved_depth_limit": 6,
+    "false_fixture_node_limit_each": 8,
+    "false_fixture_depth_limit_each": 6,
+    "display_error_tolerance_mm": 1e-9,
+    "read_only": true,
+    "max_runtime_seconds": 15,
+    "max_stdout_bytes": 4194304,
+    "global_wall_status": "UNKNOWN",
+    "normal_strip_global_injectivity": "UNKNOWN",
+    "lip_closure": "UNKNOWN",
+    "revolved_surface_self_intersection": "UNKNOWN",
+    "native_brep": "UNKNOWN",
+    "material": "UNKNOWN",
+    "physics": "UNKNOWN"
+  },
+  "files": {
+    "offset_result": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    "receipt": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_run_receipt.json",
+      "sha256": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d"
+    },
+    "run_lock": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_once.lock",
+      "sha256": "d4d8e4969b36964e6cd8a2b86f4a795504431173778110eba5ddcf5256aa82c6"
+    },
+    "run_stdout": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_stdout.bin",
+      "sha256": "02a9574fccb60290d18db900f79150bb0f5b72fe4c964f0489f973f171469bb5"
+    },
+    "run_stderr": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_pins": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/source_pins.json",
+      "sha256": "9aee6ad4032434279efebeabf9f1b6be525e4bfd3951c875b7b7d08e2b0b8203"
+    },
+    "kernel": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114"
+    },
+    "runner": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/run_normal_offset_meridian_zprime_fixed.py",
+      "sha256": "ae91c04bac02e9a057e9f1a099350a34a9cb261d21c5bbd70388f931cb17cd54"
+    },
+    "normal_offset_readme": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/README.md",
+      "sha256": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef"
+    },
+    "false_case": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/case_false.json",
+      "sha256": "6ae5611616dbb1fdeeb498efc845a91a79798e0db5894e9577c4312c8a81a319"
+    },
+    "failed_attempt_manifest": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/failure_source_freeze_manifest.json",
+      "sha256": "78394f83e773830c23734c41071386cd9bf8e9fdba5fd54b7e3e80ecb5698a00"
+    },
+    "outer_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    "independent_audit": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    "curvature_source": {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/curvature_constrained_meridian.py",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "curvature_design_cases": {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/design_cases.json",
+      "sha256": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb"
+    },
+    "semantic_fixed_cases": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json",
+      "sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+    },
+    "semantic_driver": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    }
+  },
+  "audit_input_links": [
+    "curvature_source",
+    "curvature_design_cases",
+    "semantic_fixed_cases",
+    "semantic_driver",
+    "outer_result"
+  ],
+  "upstream_semantics": {
+    "outer_result_status": "GEOMETRY_ENGINEERING_CANDIDATE_ONLY",
+    "outer_promotion_status": "OPTIMIZER_UNSUCCESSFUL_NOT_PROMOTED",
+    "audit_status": "PASS_RECONSTRUCTION",
+    "upstream_r9_and_regularity": "pinned premise; not independently recalculated by this checker"
+  }
+}

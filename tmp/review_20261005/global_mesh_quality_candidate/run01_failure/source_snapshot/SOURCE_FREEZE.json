@@ -1,0 +1,54 @@
+{
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "state": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "generated_candidate": false,
+  "tests_run": false,
+  "schema_version": 2,
+  "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+  "legacy_reader_compatibility": "UNKNOWN",
+  "per_output_face_patch_record_cap": 128,
+  "per_output_face_patch_cap_basis": "Complete frozen bottom source fan; lineage bookkeeping bound only.",
+  "global_budgets": {
+    "patch_records_max": 15000,
+    "patch_polygon_vertices_max": 60000,
+    "wall_clock_seconds_max": 120
+  },
+  "geometry_quality_parameters": {
+    "grid_spacing_mm": 1.0,
+    "boundary_margin_mm": 0.4,
+    "floor_Q_min": 0.35,
+    "floor_aspect_max": 5.0
+  },
+  "pinned_inputs": {
+    "run02_fixture_arrays": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_arrays": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "ornament_case_freeze": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1"
+  },
+  "frozen_source_files": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "bytes": 33917
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+      "sha256": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "bytes": 6810
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+      "sha256": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "bytes": 5009
+    }
+  ],
+  "review_output_directory_empty": true,
+  "revision_note": "Replaced the arbitrary 12-parent per-face lineage ceiling with the complete frozen parent fan (128), synchronized the independent readback and contract, and documented the center-sector rationale as geometry-only, not a run observation. Global budgets, geometry, and quality targets are unchanged.",
+  "note": "Freeze covers proposal source, independent focused readback, contract, and source review note only. No generation, tests, rendering, CAD, or solver run."
+}

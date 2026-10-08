@@ -1,0 +1,50 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.independent_review.v1",
+  "status": "SOURCE_PROOF_ACCEPTED_CONDITIONAL_ACTUAL_RUN_UNKNOWN",
+  "inputs": {
+    "design": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/DESIGN.md",
+      "sha256": "ed2ce7b28a0612aad8ea8d07a07a3ee8774380743b2efa52369a4965a65cef11"
+    },
+    "source": {
+      "path": "vesselforge/experiments/monotone_normal_strip_certificate_20261007/monotone_normal_strip_certificate.py",
+      "sha256": "96951a1fa9b188ee5e192f9a05b23f11152a196c37e4824b002737b4b76cfad0"
+    },
+    "case": {
+      "path": "vesselforge/experiments/monotone_normal_strip_certificate_20261007/case.json",
+      "sha256": "9e7b9e7945a14b3dd45517c75a672607cf0923cdac5c723ab614fa0162fc127b"
+    },
+    "source_pins": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/source_pins.json",
+      "sha256": "fbc4c051a8a94e914623e64964604cbcc6d9479c5fe9d9287a5c427b531920a8"
+    }
+  },
+  "proof_assessment": {
+    "2d_meridian_strip_injectivity": "conditional proof is mathematically sound for the pinned actual controls and stated exact premises",
+    "saved_result_certification": "UNKNOWN; actual first run stopped at scope metadata because top-level scope is jar_meridian_2d_only while study scope is jar_meridian_2d_curve_only, but source requires both to equal jar_meridian_2d_only",
+    "hidden_global_assumption_found": false,
+    "premises": [
+      "strict z increase on open side/neck spans from exact nonnegative, nonzero Bernstein derivative poles",
+      "flat base handled separately with z'=0 and r'>0",
+      "all actual global-u C4 jets of orders 0 through 4 agree at all 11 joins",
+      "actual-control degree-24 R9 polynomial is rebuilt and matches pinned global coefficients after h^6 scaling",
+      "regular tangent and exact endpoint/seam/mouth predicates",
+      "mouth height minus base height exceeds the 3 mm strip depth"
+    ],
+    "slice_argument": "On side/neck open spans, Z_u=lambda*z'>0 and fixed-height differentiation gives dR/ds=-v/z'<0; the flat-base slice is injective by r'>0. The admissible s interval is connected. Isolated endpoint z'=0 is handled by continuity, without division there.",
+    "radius_provenance_caveat": "The verifier checks saved Q Bernstein coefficients against a saved full-span leaf and nonnegativity but does not reconstruct Q from the actual r,z controls in this source. Nonnegative-radius/half-plane interpretation therefore depends on the pinned upstream certificate chain; this does not undermine the R2 injectivity argument.",
+    "revolution_and_physical_limits": [
+      "Axis fibers collapse under revolution; valid cap/vertex topology is not established.",
+      "Lip/closure sewing and native B-rep validity remain UNKNOWN.",
+      "No Euclidean minimum wall thickness of 3 mm is proved.",
+      "No material or physics claim is made."
+    ]
+  },
+  "actions": {
+    "source_imported": false,
+    "certificate_or_verifier_called": false,
+    "curve_or_optimizer_computed": false,
+    "cad_or_solver_called": false,
+    "git_modified": false
+  }
+}

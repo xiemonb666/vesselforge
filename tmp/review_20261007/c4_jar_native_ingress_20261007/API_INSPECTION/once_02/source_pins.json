@@ -1,0 +1,134 @@
+{
+  "schema": "vesselforge.ocp_doc_only_source_pins/0.1",
+  "status": "PREPARED_NOT_YET_EXECUTED",
+  "authorized_scope": "one read-only import and __doc__/__init__.__doc__ inspection for the six named OCP classes",
+  "prohibited": "geometry constructors, CAD building, STEP, solver, tests, retries",
+  "root": "C:/Users/xiemo/Desktop/ShardForge",
+  "output_directory": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02",
+  "source_evidence_correction": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/PRIMARY_SOURCE_EVIDENCE_CORRECTED.json",
+  "target_argv": [
+    "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "-B",
+    "C:/Users/xiemo/Desktop/ShardForge/vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/inspect_ocp_docs.py"
+  ],
+  "child_timeout_seconds": 5,
+  "outer_timeout_seconds": 8,
+  "output_cap_bytes": 204800,
+  "classes": [
+    "Geom_BSplineCurve",
+    "Geom_OffsetCurve",
+    "BRepBuilderAPI_MakeEdge",
+    "BRepBuilderAPI_MakeFace",
+    "BRepPrimAPI_MakeRevol",
+    "GeomAPI_ProjectPointOnCurve"
+  ],
+  "files": [
+    {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/DESIGN.md",
+      "bytes": 7534,
+      "sha256": "f2beb8c624986e6fc803e82397dc4a8723d7fbff0204ad6ed3bd0322817188fa"
+    },
+    {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/CASE_DRAFT.json",
+      "bytes": 5582,
+      "sha256": "62027a35c8d08a6214f7e504a1f5f9820ec4df5c83d885c192b8ffbda50151c5"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/STATIC_REFERENCES.json",
+      "bytes": 7698,
+      "sha256": "c532b682a8e09e7f6f6426681f6d33598dca512d0db2cf52a830d00aa1dcc1ed"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "bytes": 491496,
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "bytes": 520952,
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "bytes": 435804,
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "bytes": 4355,
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/inspect_ocp_api.py",
+      "bytes": 3400,
+      "sha256": "e41928c3e0d91b817e997d4d98110f29a8b8ca49087daa6007af70180f1efb8e"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/PRIMARY_SOURCE_EVIDENCE.json",
+      "bytes": 2273,
+      "sha256": "c1a7d2ac6ed917d9bd218270b0af68eeed184a7d830ae6781b74e4267a40016a"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/receipt.json",
+      "bytes": 2039,
+      "sha256": "2de7b590eccf1194e178f74eca1e0a0f9f28e3ad63fc5eed893861d2e3afeb54"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/source_pins.json",
+      "bytes": 4199,
+      "sha256": "a2a16747a987074657526fe8e124ce94b3934ca2bda9f5e7274f179ab2bd73a4"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/wrapper_error.txt",
+      "bytes": 293,
+      "sha256": "34570fa7da20b396e07384eb13e870fc84cb994570bec620c2c2a41527af1f08"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/inspect_ocp_docs.py",
+      "bytes": 1398,
+      "sha256": "89ae2dd64b68d9c6d833ffe2f54b011669fe3e0391d79f4c0fcec4bbe09936b8"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/PRIMARY_SOURCE_EVIDENCE_CORRECTED.json",
+      "bytes": 2523,
+      "sha256": "8254d42bfcfb310822361cdc7d7a4fb2ed4fd9c0e5ea4d41d67af962e6ce57f7"
+    }
+  ],
+  "programs": [
+    {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/capture_once_02.py",
+      "bytes": 6115,
+      "sha256": "4eb27c299f4cdd5a4a36309533c1fa87a49cb79ad374dbc35aa9ebfe79edb351"
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Scripts/python.exe",
+      "bytes": 275432,
+      "sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery-2.8.0.dist-info/METADATA",
+      "bytes": 14420,
+      "sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae"
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+      "bytes": 855,
+      "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6"
+    }
+  ],
+  "prior_once_01": {
+    "exact_helper_processes_before": 0,
+    "preserve_byte_exact": true,
+    "directory": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "status": "READBACK_EXECUTION_EXIT_0",
+  "run_id": "run02_v2bugfix",
+  "child_process": {
+    "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "argv": [
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_mesh_quality_candidate_20261005\\readback_completion_adapter.py"
+    ],
+    "exit_code": 0,
+    "exit_code_source": "System.Diagnostics.Process.ExitCode captured after WaitForExit",
+    "started": true,
+    "timed_out": false
+  },
+  "started_at_utc": "2026-10-05T10:31:04.7535478+00:00",
+  "finished_at_utc": "2026-10-05T10:31:10.8913330+00:00",
+  "elapsed_seconds": 6.131161,
+  "execution_cap_seconds": 120.0,
+  "post_process_reserve_seconds": 2.0,
+  "source_freeze_sha256_before": "dac12c0531dacdaa1d9d52e16c130ea1a311f2c4058acb7171fc6854f71667e3",
+  "source_freeze_sha256_after": "dac12c0531dacdaa1d9d52e16c130ea1a311f2c4058acb7171fc6854f71667e3",
+  "python_runtime_sha256_before": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "python_runtime_sha256_after": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "hashes": {
+    "sources_unchanged": true,
+    "immutable_files_unchanged": true,
+    "source_freeze_unchanged": true,
+    "python_runtime_unchanged": true
+  },
+  "sources_before": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "bytes": 34531
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "17302c5e331d18fd0cb3696f3e3d96f7f6872a8f02b19073f2386617ff35a9e6",
+      "bytes": 49067
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/readback_completion_adapter.py",
+      "sha256": "787bd16e10abb396e57b4a53e01996a36c326ab76e6ac3fa93215dae7ab3ffa5",
+      "bytes": 13410
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/execute_readback_completion.ps1",
+      "sha256": "ccf57eded65eaf8c1a80b7affee0d810e42b0f68f875202da00a0cf4860c5565",
+      "bytes": 9040
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/READBACK_COMPLETION_CONTRACT.json",
+      "sha256": "9ad5840e822850ef3dced3782f15a36898a8a6991d656a5cb5eae2ca2681afe1",
+      "bytes": 3449
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/READBACK_COMPLETION_SOURCE_REVIEW.md",
+      "sha256": "f137683f9c2abacd7d67031bb2bdf9d88b7ebe66e7ff9a3026189253f3a2b305",
+      "bytes": 3206
+    }
+  ],
+  "sources_after": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "bytes": 34531
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "17302c5e331d18fd0cb3696f3e3d96f7f6872a8f02b19073f2386617ff35a9e6",
+      "bytes": 49067
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/readback_completion_adapter.py",
+      "sha256": "787bd16e10abb396e57b4a53e01996a36c326ab76e6ac3fa93215dae7ab3ffa5",
+      "bytes": 13410
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/execute_readback_completion.ps1",
+      "sha256": "ccf57eded65eaf8c1a80b7affee0d810e42b0f68f875202da00a0cf4860c5565",
+      "bytes": 9040
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/READBACK_COMPLETION_CONTRACT.json",
+      "sha256": "9ad5840e822850ef3dced3782f15a36898a8a6991d656a5cb5eae2ca2681afe1",
+      "bytes": 3449
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/READBACK_COMPLETION_SOURCE_REVIEW.md",
+      "sha256": "f137683f9c2abacd7d67031bb2bdf9d88b7ebe66e7ff9a3026189253f3a2b305",
+      "bytes": 3206
+    }
+  ],
+  "immutable_files_before": [
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "bytes": 107589
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "bytes": 513724
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "bytes": 6110
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "bytes": 59865
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "bytes": 5555
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/candidate_arrays.npz",
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "bytes": 1049265
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/run_receipt.json",
+      "sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "bytes": 932
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/execution_record.json",
+      "sha256": "550a36767e8991ba24a428bb59f7fb8ad1f443f3c8be2aa810847c541d4d7ee9",
+      "bytes": 8063
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/partial_failure_freeze.json",
+      "sha256": "8ed17cf93b3bbe39c62029e674e85e887734db71a075fda84ec4be8e719a8fa1",
+      "bytes": 5546
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "bytes": 3750
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "bytes": 3750
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/snapshot_manifest.json",
+      "sha256": "b29535c353d75d929502b7d4ba683dd7feed8ae046a1e94f0e23060f3a9ebac8",
+      "bytes": 781
+    }
+  ],
+  "immutable_files_after": [
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "bytes": 107589
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "bytes": 513724
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "bytes": 6110
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "bytes": 59865
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "bytes": 5555
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/candidate_arrays.npz",
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "bytes": 1049265
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/run_receipt.json",
+      "sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "bytes": 932
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/execution_record.json",
+      "sha256": "550a36767e8991ba24a428bb59f7fb8ad1f443f3c8be2aa810847c541d4d7ee9",
+      "bytes": 8063
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/partial_failure_freeze.json",
+      "sha256": "8ed17cf93b3bbe39c62029e674e85e887734db71a075fda84ec4be8e719a8fa1",
+      "bytes": 5546
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "bytes": 3750
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "bytes": 3750
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/pre_readback_source_snapshot/snapshot_manifest.json",
+      "sha256": "b29535c353d75d929502b7d4ba683dd7feed8ae046a1e94f0e23060f3a9ebac8",
+      "bytes": 781
+    }
+  ],
+  "stdout": {
+    "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/completion_review/runner_stdout.txt",
+    "sha256": "1e0262a6040871b40580ba0002ee74cdb8fac9302bd240e70b813124cf2487d5",
+    "bytes": 99
+  },
+  "stderr": {
+    "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/completion_review/runner_stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "output_files": [
+    {
+      "path": "checks.json",
+      "bytes": 7264,
+      "sha256": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173"
+    },
+    {
+      "path": "completion_manifest.json",
+      "bytes": 6508,
+      "sha256": "e76c6538dd303bbbd6e05185059966d634b43e3827d31882d0ad1d25a51d2932"
+    },
+    {
+      "path": "floor_equal_aspect_actual_mesh.png",
+      "bytes": 625400,
+      "sha256": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    {
+      "path": "global_equal_aspect_actual_mesh.png",
+      "bytes": 513107,
+      "sha256": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc"
+    },
+    {
+      "path": "readback_receipt.json",
+      "bytes": 1110,
+      "sha256": "0a7412cdf44f1e40b644de298fdf35797cbb05883933e0e8fa2f07f9e4ac5843"
+    },
+    {
+      "path": "runner_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runner_stdout.txt",
+      "bytes": 99,
+      "sha256": "1e0262a6040871b40580ba0002ee74cdb8fac9302bd240e70b813124cf2487d5"
+    },
+    {
+      "path": ".matplotlib\\fontlist-v3.11.0.json",
+      "bytes": 149919,
+      "sha256": "2c26592ea4406227fc04529acbf98976849c32c76f3b09dede409ab4115a33c9"
+    }
+  ],
+  "original_run02_receipt_modified": false,
+  "candidate_generation_invoked": false,
+  "candidate_main_invoked": false,
+  "cad_or_solver_invoked": false,
+  "automatic_retry": false
+}

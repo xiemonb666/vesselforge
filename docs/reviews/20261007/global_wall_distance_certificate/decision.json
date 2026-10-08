@@ -1,0 +1,8 @@
+{
+  "status": "SOURCE_ONLY_WRITTEN_NOT_RUN",
+  "meridian_claim_if_bounded_checker_passes": "min distance between pinned outer c and F(.,3) is exactly 3 mm",
+  "pinned_retry02_sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+  "required_premises": ["actual B-spline controls reconstruct pinned Bezier spans", "10 exact R9 proofs imply lambda>=1/3 through depth 6", "11 exact C4 joins and the saved derivative sign table", "base plateau, strict side/neck height, 120 mm height range, radius bounds", "both endpoint distance-squared polynomials pass bounded exact Bernstein subdivision"],
+  "not_proved_here": ["checker execution/PASS", "actual CAD lip or cap clearance", "native B-rep validity", "production vessel wall qualification"],
+  "execution": "DISABLED; no numeric, CAD, provider, solver, renderer, or test work performed"
+}

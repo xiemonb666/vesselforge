@@ -1,0 +1,80 @@
+{
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "candidate_schema_version": 2,
+  "state": "V2BUGFIX_SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+  "legacy_reader_compatibility": "UNKNOWN",
+  "purpose": "One deterministic planar remesh of the bottom exterior disk on the frozen local_b_0p25mm analytic fixture.",
+  "physical_surface_id": "bottom_exterior_z0",
+  "immutable_inputs": {
+    "run02_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_arrays_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "ornament_case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1"
+  },
+  "input_mesh": {
+    "vertices": 18546,
+    "faces": 37088,
+    "bottom_fan_source_faces": 128,
+    "bottom_boundary_vertices": 128,
+    "bottom_center_vertex_id": 6400,
+    "bottom_boundary_radius_mm": 20.0,
+    "known_bottom_minimum_quality_Q": 0.0849,
+    "known_bottom_maximum_aspect": 20.38,
+    "known_unornamented_body_maximum_aspect": 8.0014
+  },
+  "method": {
+    "scope": "Replace only the z=0 bottom fan triangulation; retain its exact 128-vertex polygon boundary and the same planar surface.",
+    "interior_point_layout": "Deterministic 1.0 mm triangular lattice, clipped to the existing convex polygon with a 0.40 mm boundary margin; one SciPy/Qhull Delaunay triangulation; no random jitter or adaptive escalation.",
+    "surface_chart": "World XY in millimeters at z=0, identified by bottom_exterior_z0.",
+    "relief_and_shape": "All old rest/relief coordinates remain a bitwise-identical prefix. New points lie in the existing planar polygon and have rest_xyz == relief_xyz with z=0.",
+    "color": "Sample the frozen base_linear_rgb field at every new floor vertex and every source/output patch vertex. Require local-B outer_base_linear_rgb to match frozen baseline outer_color_linear_rgb in shape, dtype, and bytes; this preserved vertex table can be patterned and is not the scalar base pigment. Preserve every existing outer relief/color/chart array bitwise and compare point-sampled outer_color_linear_rgb at its corners plus finite edge-midpoint/centroid samples against the frozen continuous field, including sRGB checks.",
+    "lineage_schema": "Quarantined experiment-only schema v2 with no production integration. A floor child face fully contained in one baseline fan triangle may store valid data under v2_legacy_single_parent_face_source_ids and v2_legacy_single_parent_face_corner_barycentric_to_source. Cross-parent faces use -1/NaN only in those explicitly named v2 legacy-single-parent arrays, plus clipped parent patches. Each patch records baseline source face, intersection area, intersection vertices in XY, barycentric coordinates in both source and output faces, and field-sampled linear/sRGB color. Patches must cover the output face with no positive-area overlap. The per-output-face record ceiling is the complete frozen 128-parent fan, not an arbitrary smaller sector count: a child triangle incident to the retained center can geometrically cross many narrow radial sectors (about 21–22 sectors across a 60-degree span at 2.8125 degrees per sector). This is a geometric bookkeeping rationale, not a generated-output observation or quality target. The standard schema-v1 source_face_ids and face_corner_barycentric_to_source keys are omitted from the saved candidate, so consumers requiring either key should fail closed with KeyError. Compatibility with legacy consumers is UNKNOWN; metadata does not enforce reader behavior.",
+    "quarantine": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION; no production reader/writer integration is authorized by this source review.",
+    "fixture_semantics": "Analytic synthetic fixture only; geometric triangle quality does not establish tet quality, solver h, mechanics, fragment identity, or material calibration."
+  },
+  "focused_checks": [
+    "All input SHA pins, case freeze, baseline provenance, and expected topology are verified before generation.",
+    "The preserved local-B outer-base color table is byte-identical to the frozen baseline outer-color table; it is not compared to the scalar base pigment. Actual sampled outer continuous-field color and sRGB checks remain active.",
+    "All original candidate vertices, outer chart samples, relief, colors, and normals remain bitwise equal by ID; the 128-vertex floor boundary is unchanged.",
+    "The remeshed disk is the same convex polygon: area, interface cycle, orientation, and whole-mesh closed two-manifold topology are checked.",
+    "Every new floor vertex is independently reconstructed from its frozen baseline source triangle and barycentric coordinates.",
+    "Every floor patch has positive area; source/output barycentric reconstruction passes; patch area covers its output face; pairwise patch intersections have zero area within tolerance.",
+    "The readback derives the frozen parent fan from baseline geometry, checks the saved fan declaration, and caps each output face at that complete 128-face fan with unique parent patches; global patch-record, patch-vertex, and wall-clock budgets remain fixed.",
+    "Every floor vertex/patch color is compared in linear RGB and sRGB with source-position field samples; finite global outer-field samples are compared with local-B, including an explicit unchanged relief-sample-error delta gate.",
+    "Actual displaced-coordinate triangle Q/aspect are reported globally and for floor/nonfloor regions; floor and global minimum-Q/maximum-aspect must improve over input.",
+    "The saved-mesh global PNG uses equal physical axis scaling and flat triangles; an equal-aspect floor view exposes the actual remesh."
+  ],
+  "candidate_targets_for_root_review": {
+    "floor_minimum_Q_at_least": 0.35,
+    "floor_maximum_aspect_at_most": 5.0,
+    "global_minimum_Q_strictly_greater_than_input": true,
+    "global_maximum_aspect_strictly_less_than_input": true,
+    "note": "These are experiment review targets for this candidate, not general mesh or mechanics standards."
+  },
+  "finite_budget": {
+    "candidate_count": 1,
+    "interior_vertices_max": 2500,
+    "output_faces_max": 45000,
+    "patch_records_max": 15000,
+    "patch_polygon_vertices_max": 60000,
+    "per_output_face_patch_records_max": 128,
+    "per_output_face_patch_limit_basis": "Complete frozen bottom source fan; lineage bookkeeping bound only, not a geometric quality threshold.",
+    "wall_clock_seconds_max": 120,
+    "on_budget_or_check_failure": "Write a bounded failure/unknown receipt when possible, stop the only candidate, and do not alter pitch, margin, thresholds, or retry with another density."
+  },
+  "expected_outputs_after_root_approval_only": [
+    "candidate_arrays.npz",
+    "checks.json",
+    "candidate_manifest.json",
+    "run_receipt.json",
+    "global_equal_aspect_actual_mesh.png",
+    "floor_equal_aspect_actual_mesh.png"
+  ],
+  "output_directory": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate",
+  "output_directory_status": "RUN01_FAILURE_EVIDENCE; DO_NOT_REUSE",
+  "next_run_output_directory": "UNASSIGNED_PENDING_ROOT_APPROVAL; MUST_BE_A_NEW_EMPTY_DIRECTORY",
+  "execution_status": "RUN01_FAILED_BEFORE_NPZ_WRITE; V2BUGFIX_SOURCE_ONLY_NOT_RUN",
+  "run01_failure_evidence": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run01_failure/run_receipt.json"
+}

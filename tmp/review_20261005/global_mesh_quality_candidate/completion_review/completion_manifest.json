@@ -1,0 +1,139 @@
+{
+  "automatic_retry": false,
+  "baseline_quality": {
+    "face_count": 37088,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+    "maximum_edge_mm": 20.000000000000004,
+    "minimum_Q": 0.08488545669419832,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "cad_or_solver_invoked": false,
+  "candidate_floor_quality": {
+    "face_count": 2912,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 2.8688104625143938,
+    "maximum_edge_mm": 1.4404914720215474,
+    "minimum_Q": 0.6407401783487409,
+    "minimum_altitude_mm": 0.4065812940016269,
+    "zero_area_face_count": 0
+  },
+  "candidate_generation_invoked": false,
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "candidate_main_invoked": false,
+  "candidate_nonfloor_quality": {
+    "face_count": 36960,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+    "maximum_edge_mm": 17.000000000000004,
+    "minimum_Q": 0.08488545669419845,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "candidate_quality": {
+    "face_count": 39872,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+    "maximum_edge_mm": 17.000000000000004,
+    "minimum_Q": 0.08488545669419845,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "execution_cap_seconds": 120.0,
+  "floor_patch_parent_count_max": 22,
+  "focused_checks_pass": true,
+  "input_floor_quality": {
+    "face_count": 128,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+    "maximum_edge_mm": 20.000000000000004,
+    "minimum_Q": 0.08488545669419832,
+    "minimum_altitude_mm": 0.9813534865483533,
+    "zero_area_face_count": 0
+  },
+  "input_pins": [
+    {
+      "bytes": 107589,
+      "name": "baseline",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run02\\fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974"
+    },
+    {
+      "bytes": 513724,
+      "name": "local_b_candidate",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_b_0p25mm\\candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf"
+    },
+    {
+      "bytes": 6110,
+      "name": "local_b_checks",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_b_0p25mm\\checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8"
+    },
+    {
+      "bytes": 59865,
+      "name": "refinement_source",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_refinement_20261005\\refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74"
+    },
+    {
+      "bytes": 5555,
+      "name": "case_freeze",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_refinement_20261005\\candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1"
+    },
+    {
+      "bytes": 1049265,
+      "name": "saved_run02_candidate",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_mesh_quality_candidate\\run02_v2bugfix\\candidate_arrays.npz",
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9"
+    }
+  ],
+  "interpretation": "Saved analytic fixture triangle geometry only; not tet quality, solver h, mechanics, fracture, or material validation.",
+  "legacy_reader_compatibility": "UNKNOWN; schema-v1 aliases are absent",
+  "original_run02_receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "pngs": {
+    "floor_equal_aspect_actual_mesh.png": {
+      "bytes": 625400,
+      "sha256": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    "global_equal_aspect_actual_mesh.png": {
+      "bytes": 513107,
+      "sha256": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc"
+    }
+  },
+  "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+  "saved_candidate_sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "source_freeze_sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+  "source_pins": [
+    {
+      "bytes": 34531,
+      "name": "frozen_candidate_source",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_mesh_quality_candidate_20261005\\candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e"
+    },
+    {
+      "bytes": 49067,
+      "name": "narrowly_fixed_focused_checks",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_mesh_quality_candidate_20261005\\focused_checks.py",
+      "sha256": "17302c5e331d18fd0cb3696f3e3d96f7f6872a8f02b19073f2386617ff35a9e6"
+    },
+    {
+      "bytes": 48948,
+      "name": "pre_readback_checker_snapshot",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_mesh_quality_candidate\\run02_v2bugfix\\pre_readback_source_snapshot\\focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65"
+    },
+    {
+      "bytes": 3750,
+      "name": "pre_readback_source_freeze_snapshot",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_mesh_quality_candidate\\run02_v2bugfix\\pre_readback_source_snapshot\\SOURCE_FREEZE.json",
+      "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3"
+    },
+    {
+      "bytes": 781,
+      "name": "pre_readback_snapshot_manifest",
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_mesh_quality_candidate\\run02_v2bugfix\\pre_readback_source_snapshot\\snapshot_manifest.json",
+      "sha256": "b29535c353d75d929502b7d4ba683dd7feed8ae046a1e94f0e23060f3a9ebac8"
+    }
+  ],
+  "source_run_id": "run02_v2bugfix",
+  "source_run_status": "UNKNOWN_OR_FAIL; preserved and not rewritten"
+}

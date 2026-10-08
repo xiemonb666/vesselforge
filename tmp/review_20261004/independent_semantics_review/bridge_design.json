@@ -1,0 +1,169 @@
+{
+  "schema": "vf.synlab.wall-bridge-design.v1",
+  "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "review_date": "2026-10-04",
+  "scope": "canonical STEP mother wall_reference stations -> tessellated parent surface plus face lineage -> SynLab fragment ancestry -> A12 degrade.wall_intervals",
+  "constraints_observed": {
+    "read_only": true,
+    "tests_run": false,
+    "solver_or_cad_run": false,
+    "current_wall_reference_or_profile_catalog_read": false,
+    "outputs": ["bridge_design.md", "bridge_design.json"]
+  },
+  "frozen_inputs": {
+    "wall_reference_v1_snapshot": {
+      "path": "vesselforge/tmp/review_20261004/wall_reference/v2_review/before/wall_reference.py",
+      "sha256": "ceeeeec791ed1264bd73a2c0e9dd250ab39aa213a97f75725bf2e6eab91c3461"
+    },
+    "vf_semantics": {
+      "path": "vesselforge/src/vesselforge/semantics.py",
+      "sha256": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af"
+    },
+    "vf_tessellation": {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    "vf_asset_builder": {
+      "path": "vesselforge/src/vesselforge/asset.py",
+      "sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0"
+    },
+    "vf_asset_schema": {
+      "path": "vesselforge/src/vesselforge/schema.py",
+      "sha256": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9"
+    },
+    "synlab_wall_intervals": {
+      "path": "relicweave-synlab/synlab/degrade/wall_intervals.py",
+      "sha256": "02799e54cd1567405b43bfbbdfd1044fed609ccfc5be6de88764f3544ce16693"
+    },
+    "synlab_wall_intervals_tests_source_only": {
+      "path": "relicweave-synlab/tests/a12/operators/test_wall_intervals_20261004.py",
+      "sha256": "05bb645d63f07ac39153e82f327836d16c25f0365692d7af80771ad7b52394fa"
+    },
+    "synlab_boolean_lineage": {
+      "path": "relicweave-synlab/synlab/fracture/booleans.py",
+      "sha256": "033b2e6f999a3e9061ea538b4ae923dbe0b91ad167295d7125b1425a46378032"
+    },
+    "synlab_fragment_lineage": {
+      "path": "relicweave-synlab/synlab/fracture/fragment.py",
+      "sha256": "53a581c5964d7b350a6c938bb188e908adb06e87e4114cbc5914bf6ee1e079fd"
+    },
+    "synlab_damage_face_provenance": {
+      "path": "relicweave-synlab/synlab/physical/api.py",
+      "sha256": "4685fb7d37cddfdd737cfd92c4021691f1a416e208163b80f5f829fc3f518ea9"
+    },
+    "synlab_runtime_types": {
+      "path": "relicweave-synlab/synlab/schemas/runtime.py",
+      "sha256": "080b6e9c5abed88873786f5dce4d654e78072cb71e3e04106ceda17640352609"
+    },
+    "synlab_open_items": {
+      "path": "relicweave-synlab/docs/a12/open_items.md",
+      "sha256": "b48bac656c30a604d5fe2d2568890ec985220dff4d61ba375abbec78436743cc"
+    }
+  },
+  "separation_of_stages": {
+    "stage_1": {
+      "name": "mother_mesh_station_binding",
+      "proposed_schema": "vf.wall-mesh-binding.v1",
+      "purpose": "Bind every finite wall_reference station from the frozen canonical STEP to the tessellated parent surface and same-face triangle lineage.",
+      "input": ["canonical STEP file bytes", "PASS face_semantics tied to STEP SHA", "frozen wall_reference v1 tied to STEP SHA", "surface.npz", "mesh_lineage.npz"],
+      "output_status": ["PASS_MOTHER_STATION_BINDING", "UNKNOWN"],
+      "success_conditions": [
+        "All exact file SHA values independently recomputed and closed through the VF manifest.",
+        "Frame is right_handed_z_up; coordinates and lengths are mm; directions are dimensionless.",
+        "Canonical B-rep face count, semantic face index, role, classifier and STEP SHA agree.",
+        "Every requested station revalidates inside its trimmed B-rep face, not only on the underlying untrimmed surface.",
+        "Every station binds to one parent triangle selected only among triangles with the exact source B-rep face index.",
+        "Parent mesh station projection error and B-rep-to-facet normal angle satisfy recorded local tolerances.",
+        "No distinct-face near tie or parent lineage contradiction exists; full finite station mapping fraction is 1.0."
+      ],
+      "nonclaims": ["no area coverage", "no fragment mapping", "no global minimum wall proof", "no physics qualification"]
+    },
+    "stage_2": {
+      "name": "parent_triangle_to_fragment_ancestry",
+      "proposed_schema": "synlab.wall-fragment-lineage.v1",
+      "purpose": "Compose fragment/damage result geometry back to the exact parent mesh triangle, then to the canonical STEP B-rep face and wall role.",
+      "primary_key": ["parent_mesh_content_sha256", "parent_triangle_index"],
+      "required_channels": [
+        "origin_kind",
+        "parent_triangle_index or null",
+        "parent_mesh_content_sha256",
+        "per-corner barycentric coordinates or explicit child-to-parent transform",
+        "reconstruction_residual_mm",
+        "source_brep_face_index",
+        "wall_role or null",
+        "ambiguity reason"
+      ],
+      "eligible_origin": "unambiguous inherited ORIGIN_MOTHER_SURFACE only",
+      "excluded_origins": ["ORIGIN_INTERFACE", "ORIGIN_AMBIGUOUS", "missing parent mesh hash", "mixed source triangle IDs", "unverified nearest-only remap"],
+      "success_conditions": [
+        "Each inherited face's corners reconstruct against one exact parent triangle within tolerance; no majority-vote-only ancestry.",
+        "Hash namespace, face count and face ordering remain tied to the original parent mesh file/content identity.",
+        "Mapping to physical result composes through the clean fragment face/triangle; current face-origin label alone is insufficient.",
+        "Near ties across distinct B-rep face IDs or outer/inner roles become UNKNOWN/AMBIGUOUS, not nearest-selected."
+      ],
+      "nonclaims": ["station mapping does not imply wall interval pass", "fragment mapping is finite ancestry, not global material coverage"]
+    }
+  },
+  "hash_contract": {
+    "canonical_step_file_sha256": "sha256 of exact canonical STEP file bytes",
+    "face_semantics_file_sha256": "sha256 of exact semantic report bytes, separate from STEP hash",
+    "parent_surface_file_sha256": "sha256 of exact geometry/surface.npz bytes",
+    "parent_lineage_file_sha256": "sha256 of exact geometry/mesh_lineage.npz bytes",
+    "parent_mesh_content_sha256": "new canonical hash over schema tag, units, frame, shapes, fixed-endian vertices_mm, faces, and face_source_brep_index arrays",
+    "synlab_mesh_hash": "optional geometry-only helper hash; record separately because it rounds vertex coordinates to 9 decimals and omits face attributes",
+    "triangle_ref": "parent_mesh_content_sha256 + parent_triangle_index",
+    "step_hash_is_mesh_hash": false
+  },
+  "stage_1_station_mapping": {
+    "frozen_station_id": "retain v1 station_id as displayed/source ID; also carry full STEP SHA, B-rep face index, wall_role and wall-reference artifact SHA",
+    "trimmed_uv": "re-evaluate sample u,v on canonical B-rep face; require BRepClass_FaceClassifier state IN; ON/OUT is UNKNOWN",
+    "triangle_search": "restrict candidates to face_source_brep_index == source_wall_face_index_zero_based; global nearest is diagnostic only and never a fallback",
+    "mesh_station_for_ray": "barycentric closest point on selected parent triangle; record alongside original STEP point and projection error",
+    "normal_source": "canonical face-oriented outward_from_material normal from face semantics re-evaluated at the bound station; never a fragment/interface normal",
+    "same_face_tie": "allow deterministic minimum triangle index only when all tied triangles have the same B-rep face ID and projection points agree within tie_tolerance_mm",
+    "different_face_tie": "UNKNOWN / AMBIGUOUS_FACE_LINEAGE when a different face has a candidate in the uncertainty band or equal-distance tie",
+    "candidate_tolerances": {
+      "linear_projection_limit_mm": "target_linear_deflection_mm + 2*weld_tolerance_mm + cad_numeric_tolerance_mm; also record actual per-station error",
+      "normal_angle_rad": "min(15 degrees, max(5 degrees, 2*angular_deflection_rad)); must pass actual oriented-normal comparison",
+      "tie_tolerance_mm": "max(recorded same-face weld/numeric tolerance, documented nearest-distance uncertainty); frozen in binding schema"
+    },
+    "coverage_semantics": "100% means every finite v1 station mapped; it is not wall area coverage"
+  },
+  "a12_wall_intervals_adapter": {
+    "call": "measure_material_intervals(source_mesh, result_mesh, stations_mm, wall_directions, direction_evidence=..., result_evidence=..., station_ids=...)",
+    "directions": {
+      "source": "inner_outer_wall_map",
+      "trusted": "true only after binding hash/lineage/normal validation",
+      "convention": "outward_from_source",
+      "units": "mm",
+      "provenance": "include STEP SHA, wall-reference SHA, binding SHA, parent mesh content SHA, station IDs, B-rep face IDs and roles"
+    },
+    "subset_evidence": "trusted only when a verifier has established result material is a subset of the exact source mesh; phase-1 identity case requires source and result composite mesh identities equal",
+    "mesh_health_gate": ["Trimesh", "finite vertices", "valid triangle indices", "watertight", "winding consistent", "positive volume", "self-intersection API available and false"],
+    "precision_gate": "derive Open3D float32 merge tolerance; require probe_offset_mm > 8*merge_tolerance_mm and 16*merge_tolerance_mm < min_remaining_wall_mm; if no feasible local offset use UNKNOWN",
+    "stage_1_baseline": "source_mesh=result_mesh=exact parent mesh, stations are projected mesh points, directions are bound B-rep outward material normals",
+    "never_promote": ["SAMPLED_PASS is finite station evidence", "global_wall_status remains UNVERIFIED", "physical_qualification_status remains UNKNOWN", "split result intervals remain SPLIT_INTERVAL and are never summed"]
+  },
+  "minimal_acceptance": [
+    {"id":"M1_HASH_UNITS_LINEAGE", "expected":"STEP, semantics, parent surface, parent lineage and composite mesh hashes validate independently; all face lineage indices in range; arrays are mm/right-handed-Z-up."},
+    {"id":"M2_HOLLOW_CYLINDER", "expected":"Canonical OCP hollow cylinder outer R=10 mm, inner R=8 mm maps both stations; directions have opposite radial signs; sampled mesh wall interval is about 2 mm within a predeclared bound; global remains UNVERIFIED."},
+    {"id":"M3_THIN_WALL_AMBIGUITY", "expected":"Close inner/outer candidate faces never steal each other's station; same-face restricted projection passes only if locally unique; cross-face tie/corrupt lineage yields UNKNOWN."},
+    {"id":"M4_TRIMMED_DOMAIN", "expected":"ON/OUT UV, trim-edge or incompatible face inventory yields UNKNOWN; no untrimmed-surface or global nearest fallback."},
+    {"id":"M5_DIRECTION_SUBSET_TRUST", "expected":"Interface-normal, missing provenance, wrong frame/units or unproven subset returns UNKNOWN; same parent mesh identity permits only explicit identity subset evidence."},
+    {"id":"M6_FRAGMENT_ANCESTRY", "expected":"Fracture inherited faces compose to parent triangle and B-rep wall face using exact hashes/barycentrics; interfaces and mixed/ambiguous ancestry do not map; reorder/hash mismatch is rejected."},
+    {"id":"M7_STATUS_ISOLATION", "expected":"All finite station samples PASS still leaves global minimum and physics UNKNOWN; split material intervals are not combined across air or fragments."}
+  ],
+  "status_vocabulary": {
+    "mother_mesh_binding_status": ["PASS_MOTHER_STATION_BINDING", "UNKNOWN"],
+    "fragment_wall_binding_status": ["PASS_FRAGMENT_ANCESTRY", "PARTIAL", "UNKNOWN", "NOT_MAPPED"],
+    "sampled_interval_status": ["SAMPLED_PASS", "SAMPLED_FAIL", "UNKNOWN"],
+    "global_wall_status": "UNVERIFIED always",
+    "physical_qualification_status": "UNKNOWN always"
+  },
+  "source_interface_facts": {
+    "vf_parent_triangle_lineage": "mesh_shape enumerates canonical imported STEP faces and asset.py writes one face_source_brep_index per emitted triangle",
+    "synlab_fragment_lineage": "SourceTaggedResult has source_tri and barycentric channels; Fragment stores face origin/source triangle/interface fields; current majority face source must not be used alone as proof",
+    "synlab_damage_mapping": "current face-origin mapping returns origin/interface class but not a canonical parent triangle foreign key",
+    "a12_integration": "local wall_intervals helper is not wired into P03 per open_items.md; proposal requires an explicit adapter"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.case_draft/0.1",
+  "status": "DESIGN_ONLY_WAITING_FOR_ROOT_ROUTE_AND_TOLERANCE_DECISIONS",
+  "execution_authorized": false,
+  "scope": "one frozen C4 jar outer meridian to one native revolved B-rep and one STEP roundtrip",
+  "candidate_claim_limit": "geometry engineering candidate only; not physics-ready, style-calibrated, or global-wall-qualified",
+  "inputs": {
+    "outer_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "status": "GEOMETRY_ENGINEERING_CANDIDATE_ONLY",
+      "geometry": "17 exact rational RZ poles; degree 5; 12 spans; 11 C4 joins; flat-base span 0, side spans 1-10, straight-neck span 11"
+    },
+    "independent_audit": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    "normal_offset_result": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+      "status": "INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE",
+      "offset_mm": 3,
+      "global_minimum_wall": "UNKNOWN"
+    },
+    "normal_strip_result": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+      "status": "GLOBAL_MERIDIAN_STRIP_INJECTIVITY_PROVED_CONDITIONAL",
+      "scope": "2D meridian map only, all 12 spans, 0<=s<=3 mm",
+      "native_brep": "UNKNOWN",
+      "global_minimum_euclidean_wall": "UNKNOWN",
+      "revolved_surface_self_intersection": "UNKNOWN",
+      "physics": "UNKNOWN"
+    }
+  },
+  "outer_curve": {
+    "source": "saved exact rational control poles; no sample fit",
+    "plane": "global XZ",
+    "degree": 5,
+    "pole_count": 17,
+    "span_count": 12,
+    "knot_sequence": "open uniform [0,1], endpoint multiplicity 6, internal knots j/12 for j=1..11",
+    "construction": "direct Geom_BSplineCurve from poles, knots, multiplicities; finite double conversion only at OCP boundary",
+    "samples_used_as_geometry": false
+  },
+  "inner_curve": {
+    "preferred_api": "OCP BRepOffsetAPI_MakeOffset on a single open planar wire",
+    "join": "GeomAbs_Arc",
+    "is_open_result": true,
+    "normal_formula_rz": "(r-3*zprime/v, z+3*rprime/v), v=sqrt(rprime^2+zprime^2)",
+    "signed_distance_mm": "ROOT_DECISION_REQUIRED_BEFORE_GO",
+    "expected_start_rz_mm": [0, 3],
+    "expected_end_rz_mm": [23, 120],
+    "one_wire_required": true,
+    "fallback_or_sign_retry": false
+  },
+  "section_and_revolve": {
+    "profile_order": ["outer axis-to-mouth", "radial lip connector", "reversed OCC inner contour", "axis closure"],
+    "expected_fibers_rz_mm": {
+      "axis": [[0, 0], [0, 3]],
+      "base_side_seam": [[18, 0], [18, 3]],
+      "mouth": [[26, 120], [23, 120]]
+    },
+    "axis_closure": "degenerate revolution boundary; no material face",
+    "revolve_degrees": 360,
+    "axis_start_xyz_mm": [0, 0, 0],
+    "axis_end_xyz_mm": [0, 0, 1],
+    "required_topology": {"solids": 1, "shells": 1, "all_shells_closed": true, "shape_valid": true},
+    "required_metrics": ["finite positive section area", "finite positive solid area", "finite positive volume", "geometry-only bounds"]
+  },
+  "tolerances": {
+    "step_identity_mm": 1e-7,
+    "identity_policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+    "offset_residual_mm": "ROOT_DECISION_REQUIRED",
+    "endpoint_closure_mm": "ROOT_DECISION_REQUIRED",
+    "normal_deviation_degrees": "ROOT_DECISION_REQUIRED",
+    "step_area_volume_delta": "ROOT_DECISION_REQUIRED",
+    "identity_tolerance_is_wall_thickness": false
+  },
+  "curve_checks": {
+    "target": "exact outer spline and its analytic 3 mm true-normal target",
+    "stations": "independent per-span deterministic stations including knots, with bounded adaptive refinement; not the saved 25/span display set",
+    "metrics": ["target-to-trimmed-edge distance", "trimmed-edge-to-target distance", "unit tangent/normal angular deviation", "projection uniqueness and coverage"],
+    "scope": "finite diagnostics only; not global Hausdorff certification"
+  },
+  "semantic_face_roles": ["outer_base", "outer_side", "outer_neck", "inner_base", "inner_side", "inner_neck", "lip"],
+  "wall_scope": {
+    "requested_normal_offset_mm": 3,
+    "global_minimum_euclidean_wall": "UNKNOWN",
+    "radial_gap_is_wall_thickness": false,
+    "dedicated_complete_brep_clearance_study_required": true
+  },
+  "run_budget": {
+    "outer_wall_seconds": 60,
+    "total_persisted_output_bytes": 20971520,
+    "native_builds": 1,
+    "step_exports": 1,
+    "step_imports": 1,
+    "retries": 0,
+    "optimizer": false,
+    "mesh": false,
+    "solver": false,
+    "normal_rays": false
+  },
+  "root_decisions": [
+    "Approve MakeOffset route and signed distance, or specify a separately reviewed Geom_OffsetCurve route",
+    "Set offset residual, endpoint closure, normal-angle, and area/volume roundtrip limits",
+    "Choose sidecar semantic labels or AP242/XCAF STEP naming",
+    "Confirm axis-degenerate topology gate and whether global minimum wall blocks any later CAD candidate claim",
+    "Approve the one-run 60-second / 20-MiB contract"
+  ]
+}

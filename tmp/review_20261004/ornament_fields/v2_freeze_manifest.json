@@ -1,0 +1,21 @@
+{
+  "freeze": "VesselForge ornament_fields v2 draft for root review",
+  "state": "ROOT_REVIEW_ACCEPTED; targeted pytest PASSED once; reviewed source and test unchanged",
+  "files": {
+    "vesselforge/src/vesselforge/ornament_fields.py": {
+      "v1_sha256": "c9d0f28af1f1681fb3e47217d2cfb823097b8199f0a075ce64ebf70572f2594c",
+      "v2_sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+      "diff_lines": 101
+    },
+    "vesselforge/tests/test_ornament_fields.py": {
+      "v1_sha256": "d9418859a219ade52eec2aa0586523dfea69692de20dc01f2e673995cdbba596",
+      "v2_sha256": "7cec79dfce6a867d70dbfc786d3d04b38b3cece47be2f6d6fc20f3987bafc022",
+      "diff_lines": 57
+    }
+  },
+  "v1_pytest_receipt": "v1_snapshot/pytest_receipt.json",
+  "targeted_pytest_rerun": "COMPLETED_ONCE_PASS",
+  "rendered_again": false,
+  "boundary": "No asset/schema/mesh integration; all geometry outputs remain scalar height fields only.",
+  "validation_receipt": "pytest_v2_receipt.json"
+}

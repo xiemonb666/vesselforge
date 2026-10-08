@@ -1,0 +1,18 @@
+# Global two-cap mesh candidate: source review
+
+This is a quarantined, source-only experiment for the frozen R20 / R17 vessel fixture. It replaces exactly two planar fans selected from the pinned baseline by their actual face indices and maps those identities into local-B through its `source_face_ids` table:
+
+- `bottom_exterior_z0`: z=0 mm, R=20 mm, outward normal toward −z.
+- `interior_floor_z2`: z=2 mm, R=17 mm, inward normal toward +z.
+
+Each cap keeps its original center vertex, all 128 boundary vertex IDs, and the full boundary cycle. The deterministic 1 mm triangular lattice with a 0.4 mm boundary margin yields 1,392 new outer-cap vertices and 1,002 new inner-cap vertices. The disk Euler relation `F = 2P + B` predicts 2,912 and 2,132 output cap faces, for 2,394 total added vertices and 41,876 total mesh faces. These counts are from the no-triangulation prewrite audit in the review directory.
+
+Before writing this source, an independent relief-geometry calculation removed both source-identified caps from local-B and measured the remaining 36,832 faces. Their minimum Q is 0.2384632727 (baseline source face 3752), and their maximum longest-edge/minimum-altitude aspect is 8.0013721971 (baseline source face 2838). Local-B's global values are Q=0.0848854567 and aspect=20.3800162471. Therefore, when both remeshed caps meet the already-frozen Q≥0.35 and aspect≤5.0 targets, the untouched noncap region should not mask a meaningful global gain. “Noncap” is the only aggregate label used; this audit does not invent body/support subregions.
+
+The readback checks independently reconstruct every new vertex from its baseline parent and barycentrics, verify source/output barycentrics for every clipped source-patch polygon, and check per-face patch coverage and nonoverlap. Output faces that cross source-parent boundaries carry complete v2 CSR patch lineage. Their v2 legacy-single-parent fields use status 2, a −1 sentinel, and NaNs; only truly single-parent-contained faces receive a single source ID. Standard schema-v1 aliases are omitted. Legacy consumer compatibility remains unknown, and this package is not integrated into production.
+
+The frozen aggregate guards remain 2,500 added vertices, 45,000 output faces, 15,000 patch records, 60,000 patch-polygon vertices, and at most 128 source parents per output face. Preflight proves the lattice-vertex and Euler-face budgets fit. Exact polygon-overlay record counts are not known without running the triangulator; the source enforces all patch budgets and aborts before writing a candidate NPZ if any are exceeded. No mesh generation, saved-candidate check, PNG render, CAD, or solver was run while preparing this review.
+
+The global acceptance gate requires each cap to meet the unchanged Q/aspect targets and requires global minimum-Q gain and global maximum-aspect reduction each to exceed 64 float64 ULPs at the observed scale. This rejects the previous run's ~1e−16 / ~1e−14 numerical tie. The gate concerns geometric triangles only; it makes no tetrahedral quality, solver, mechanics-h, fracture, or physical-match claim.
+
+On a later root-approved single run, the runner is prepared to save the candidate, run the focused NPZ readback, and write two actual-geometry images under `vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_two_cap/`: the full-mesh equal-scale view and a pair of equal-scale planar cap charts. Neither image exists yet.

@@ -1,0 +1,112 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.source_pins/1.0",
+  "phase": "SOURCE_ONLY_WAITING_FOR_ROOT_REVIEW",
+  "execution_authorized": false,
+  "source_files": {
+    "driver": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/native_c4_ingress.py",
+      "sha256": "b7f0550a0c0b60b557f8190e25c1b827a7a8b550fcc37b3cea0cc9cbc2d9fc04"
+    },
+    "input_gate": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/native_input_gate.py",
+      "sha256": "45ee34ab7963c2d8886bd21be6844a0d171adb8257ee3665bd91a182aa4d44e4"
+    },
+    "input_gate": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/native_input_gate.py",
+      "sha256": "45ee34ab7963c2d8886bd21be6844a0d171adb8257ee3665bd91a182aa4d44e4"
+    },
+    "case": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/native_c4_ingress_case.json",
+      "sha256": "38fd2a65f8769dab9c994ba0ad270fba0340475a1c9a2be33a867c676f26eb8f"
+    },
+    "runner": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/capture_once.py",
+      "sha256": "7ea52a08da1900825fe950ee05bf8fadeecc5b98c1192d60e29366ddb639f4c4"
+    }
+  },
+  "inputs": {
+    "outer_result": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185"
+    },
+    "independent_audit": {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b"
+    },
+    "normal_offset_result": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a"
+    },
+    "normal_strip_result": {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf"
+    },
+    "global_wall_result": {
+      "path": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/run01_capture/result.json",
+      "sha256": "2ed29f2581c49304581c36dfdf8fdda9d02b193c8078629202bc82bcefe727f0"
+    }
+  },
+  "preserved_files": {
+    "original_design": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/DESIGN.md",
+      "sha256": "f2beb8c624986e6fc803e82397dc4a8723d7fbff0204ad6ed3bd0322817188fa"
+    },
+    "original_case_draft": {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/CASE_DRAFT.json",
+      "sha256": "62027a35c8d08a6214f7e504a1f5f9820ec4df5c83d885c192b8ffbda50151c5"
+    }
+  },
+  "tooling": {
+    "frozen_outer_driver": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+    },
+    "curvature_constrained_source": {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/curvature_constrained_meridian.py",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce"
+    },
+    "curvature_design_cases": {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/design_cases.json",
+      "sha256": "d1bb74bfc90de5937884854fd4e5e62c4dbf01f33e2f1f7be5dbf931ee35c8eb"
+    },
+    "frozen_fixed_cases": {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/fixed_cases.json",
+      "sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c"
+    },
+    "normal_offset_kernel": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114"
+    },
+    "ocp_runtime_metadata": {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+      "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6"
+    },
+    "matching_ocp_stub_wheel": {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl",
+      "sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359"
+    },
+    "matched_stub_signature_evidence": {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/MATCHED_STUB_SIGNATURE_EVIDENCE.md",
+      "sha256": "7240b899b1de8efb86e441a1a5bc58acfdda97606f551bcd44727b6b97a74dbe"
+    },
+    "official_occt_source_sign_correction": {
+      "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_02/PRIMARY_SOURCE_EVIDENCE_CORRECTED.json",
+      "sha256": "8254d42bfcfb310822361cdc7d7a4fb2ed4fd9c0e5ea4d41d67af962e6ce57f7"
+    }
+  },
+  "runtime": {
+    "cadquery_ocp_version": "7.9.3.1.1",
+    "matching_stubs_installed": false,
+    "matching_stub_wheel_status": "downloaded_for_signature_review_only; not installed",
+    "api_introspection_import_attempts": 0,
+    "cad_construction_calls": 0
+  },
+  "execution_contract": {
+    "future_explicit_flag": "--root-go",
+    "future_output_directory": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/native_source_v1/run01_root_go",
+    "output_directory_exists": false,
+    "all_prior_design_case_bytes_preserved": true,
+    "no_production_changes": true,
+    "no_cad_run_in_this_source_prep": true
+  }
+}
