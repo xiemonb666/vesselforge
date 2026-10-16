@@ -1,0 +1,136 @@
+{
+  "run_id": "run02_v2bugfix",
+  "status": "PARTIAL_FAILURE_PRESERVED",
+  "source_freeze_sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+  "source_hashes_before_after_unchanged": true,
+  "sources_before": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "bytes": 34531
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+      "sha256": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+      "bytes": 7654
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+      "sha256": "645b7e29821a8a0c6287521984febf9f1f515775ec60a6246132d7b5a8f1a2af",
+      "bytes": 6880
+    }
+  ],
+  "sources_after": [
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+      "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "bytes": 34531
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+      "sha256": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+      "bytes": 7654
+    },
+    {
+      "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+      "sha256": "645b7e29821a8a0c6287521984febf9f1f515775ec60a6246132d7b5a8f1a2af",
+      "bytes": 6880
+    }
+  ],
+  "inputs_before": [
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "bytes": 107589
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "bytes": 513724
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "bytes": 6110
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "bytes": 59865
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "bytes": 5555
+    }
+  ],
+  "inputs_after": [
+    {
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "bytes": 107589
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "bytes": 513724
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "bytes": 6110
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "bytes": 59865
+    },
+    {
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "bytes": 5555
+    }
+  ],
+  "receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "candidate_arrays_sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "execution_record_sha256": "550a36767e8991ba24a428bb59f7fb8ad1f443f3c8be2aa810847c541d4d7ee9",
+  "expected_checks_and_pngs_written": false,
+  "no_retry": true,
+  "files": [
+    {
+      "name": "candidate_arrays.npz",
+      "bytes": 1049265,
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9"
+    },
+    {
+      "name": "execution_record.json",
+      "bytes": 8063,
+      "sha256": "550a36767e8991ba24a428bb59f7fb8ad1f443f3c8be2aa810847c541d4d7ee9"
+    },
+    {
+      "name": "run_receipt.json",
+      "bytes": 932,
+      "sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184"
+    },
+    {
+      "name": "runner_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "runner_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_WITHIN_DECLARED_PROCESS_CAPS",
+  "command": "python -B experiments/continuation_20261015/named_step/witness_lineage_probe.py",
+  "exit_code": 0,
+  "wall_time_seconds": 12.213,
+  "peak_sampled_working_set_bytes": 4390912,
+  "wall_time_cap_seconds": 60,
+  "working_set_cap_bytes": 2147483648,
+  "working_set_sampling_interval_ms": 100,
+  "executed_source_sha256": "2ca30fa1b43fec4438fc4a9e4e7565ca97a298699310002528c075f4209533ff",
+  "stdout_sha256": "1c51cb816c21622baaed82d9f68deda654984ebf6b723f24615a49383f2e16fb",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

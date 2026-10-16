@@ -1,0 +1,35 @@
+{
+  "base_linear_rgb": [
+    0.66,
+    0.49,
+    0.34
+  ],
+  "base_srgb_8bit_round": [
+    212,
+    186,
+    158
+  ],
+  "base_srgb_actual": [
+    0.8322835558967641,
+    0.7287318438688483,
+    0.6180314235705168
+  ],
+  "display_array_used": "outer_color_srgb_for_display",
+  "maximum_srgb_vs_linear_difference": 0.28713584952592675,
+  "maximum_standard_transfer_error": 0.0,
+  "peak_linear_rgb": [
+    0.095,
+    0.032,
+    0.018
+  ],
+  "peak_srgb_8bit_round": [
+    87,
+    50,
+    36
+  ],
+  "peak_srgb_actual": [
+    0.3406434332322427,
+    0.1964191095592996,
+    0.1428256813030392
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "review_id": "global_two_cap_candidate_independent_static_review_20261005",
+  "review_type": "read-only full static source/contract review; no candidate execution, focused checks, CAD, solver, or triangulation",
+  "source_freeze_id": "global_two_cap_mesh_candidate_20261005_source_review_v2_audit_pin_parent_runner",
+  "source_freeze_status": "SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "decision": "NO_STATIC_BLOCKER_AFTER_PIN_CORRECTION; single root-authorized run only within the external hard 120-second and separate artifact-tree caps; no physical or quality qualification implied",
+  "hashes_sha256": {
+    "candidate.py": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+    "focused_checks.py": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141",
+    "candidate_contract.json": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97",
+    "run_candidate_once.py": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757",
+    "SOURCE_REVIEW.md": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c",
+    "SOURCE_FREEZE.json": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+    "prewrite_budget_audit.py": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+    "prewrite_budget_audit.json": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+    "baseline_fixture_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "local_b_candidate_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "local_b_checks.json": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "ornament_refinement_source.py": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "case_freeze.json": "ab89a0832366d0391b9539248cfbf9b1499ee6b39b0b533c1"
+  },
+  "source_hash_validation": {
+    "candidate_py": {
+      "actual": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+      "declared": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+      "matches": true
+    },
+    "focused_checks_py": {
+      "actual": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141",
+      "declared": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141",
+      "matches": true
+    },
+    "candidate_contract_json": {
+      "actual": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97",
+      "declared": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97",
+      "matches": true
+    },
+    "run_candidate_once_py": {
+      "actual": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757",
+      "declared": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757",
+      "matches": true
+    },
+    "source_review_md": {
+      "actual": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c",
+      "declared": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c",
+      "matches": true
+    },
+    "prewrite_budget_audit_py": {
+      "actual": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+      "declared": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e",
+      "matches": true
+    },
+    "prewrite_budget_audit_json": {
+      "actual": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+      "declared": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+      "matches": true
+    },
+    "all_five_pinned_inputs_match_contract": true,
+    "freeze_file_actual_sha256": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5"
+  },
+  "resolved_prior_blocker": {
+    "id": "BLOCK-01",
+    "status": "RESOLVED_IN_THIS_SNAPSHOT",
+    "file_lines": [
+      "candidate.py:43",
+      "candidate_contract.json:17",
+      "SOURCE_FREEZE.json:14"
+    ],
+    "correct_sha256": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1",
+    "actual_hash_length_hex": 64,
+    "declared_hashes_match_actual": true,
+    "effect": "The prior extra-character pin no longer forces CandidateUnknown at the pre-generation audit comparison."
+  },
+  "findings": {
+    "cap_identity": "candidate.py:251-298, 389-410 selects and maps exactly 128 z=0/R20 exterior faces and 128 z=2/R17 floor faces; center/boundary identity and winding are checked. focused_checks.py:284-318 independently identifies the physical caps.",
+    "boundary_and_triangulation": "candidate.py:150-180, 337-375 retains center and exact 128-vertex cap boundary, uses a fixed 1 mm triangular lattice with 0.4 mm margin and separate SciPy Delaunay calls. Frozen preflight metadata gives 2394 new vertices and 41876 predicted total faces; not recomputed here.",
+    "preservation_and_budgets": "candidate.py:389-421, 462-476, 588-607 preserves only the two cap modifications and checks noncap/connectivity/color preservation. candidate.py:535-583, 656-664 guards 128 parents, 15000 patch records, 60000 patch vertices and total vertex/face budgets before NPZ save.",
+    "schema_and_lineage": "candidate.py:596-615 omits standard v1 aliases; v2 cross-parent faces carry -1/NaN single-parent sentinel and complete CSR. focused_checks.py:321-427, 430-455, 497-511 reads CSR, vertex/face lineage, coverage, overlap, preservation, and quarantine.",
+    "continuous_fields_and_colors": "The patterned baseline outer color table remains bitwise preserved; focused_checks.py:212-280 uses periodic theta unwrapping and finite corner/edge-midpoint/centroid probes; planar cap field uses frozen constant base RGB with stored samples/sRGB checks at focused_checks.py:577-599. Finite samples do not prove a continuous field globally.",
+    "quality_and_topology": "focused_checks.py:153-209, 627-668 checks closed oriented one-component Euler-2 positive-volume geometry and relief-triangle Q/aspect for all faces, cap targets, unchanged noncap extrema, plus >64 scaled float64-epsilon global gains. These are geometry checks, not mechanics or solver qualification.",
+    "output_evidence": "candidate.py:704-709 writes checks.json before render; candidate_manifest.json follows successful rendering. A render failure can leave checks without manifest. run_candidate_once.py:45-48 limits retained child logs to 20 MiB; its child deadline/cleanup does not hard-bound its own snapshot/receipt tail, so the separately supplied external 120s hard timeout and artifact-tree cap are necessary."
+  },
+  "execution": {
+    "candidate_generation_run_by_reviewer": false,
+    "focused_checks_run_by_reviewer": false,
+    "triangulation_by_reviewer": false,
+    "cad_or_solver_by_reviewer": false,
+    "approved_execution": "parent authorized a single actual run outside this review; independent saved-NPZ review is pending results and must not run if the execution stage fails"
+  },
+  "limitations": [
+    "Static review cannot confirm actual triangulation, saved NPZ integrity, global quality, closure, or render correspondence.",
+    "Prewrite counts are read as frozen metadata, not independently recalculated.",
+    "The cap color/outer field probes are finite checks.",
+    "No physical qualification is claimed."
+  ]
+}
+

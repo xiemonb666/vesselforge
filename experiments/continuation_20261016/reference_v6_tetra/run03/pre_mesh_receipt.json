@@ -1,0 +1,393 @@
+{
+  "code_hashes": {
+    "face_witness.py": {
+      "sha256": "20295b2ddb317ebec512ae9ce49e69c6fab8d097b8669071ff1ecd86a06a78cf",
+      "snapshot_sha256": "20295b2ddb317ebec512ae9ce49e69c6fab8d097b8669071ff1ecd86a06a78cf"
+    },
+    "named_step.py": {
+      "sha256": "f49ada5adf889cb980442ebdf40e58c7f65f05907bc4d2958a477c75316e115e",
+      "snapshot_sha256": "f49ada5adf889cb980442ebdf40e58c7f65f05907bc4d2958a477c75316e115e"
+    },
+    "revolved_profile.py": {
+      "sha256": "68cdec53d4633dd01903d5a22025a4c6283dc9f3a41293092c579507128ec206",
+      "snapshot_sha256": "68cdec53d4633dd01903d5a22025a4c6283dc9f3a41293092c579507128ec206"
+    },
+    "run03_witness_mesh.py": {
+      "sha256": "36b79b63eaab2005c896a2218cd4e9977c7479a511413e4d040356c6dc82b5e5",
+      "snapshot_sha256": "36b79b63eaab2005c896a2218cd4e9977c7479a511413e4d040356c6dc82b5e5"
+    },
+    "step_partition.py": {
+      "sha256": "d1f516b90d25e7ac14eca5c10a406d80301068e48832ad25ec63ff818c39404f",
+      "snapshot_sha256": "d1f516b90d25e7ac14eca5c10a406d80301068e48832ad25ec63ff818c39404f"
+    },
+    "test_face_witness.py": {
+      "sha256": "fad34829ce0bd7b3deea7503c19b37c17ac04a36b0e773e437542ed849c63a82",
+      "snapshot_sha256": "fad34829ce0bd7b3deea7503c19b37c17ac04a36b0e773e437542ed849c63a82"
+    },
+    "test_step_partition.py": {
+      "sha256": "6c546a7cad40bcec0785a23a3640fbea1701174715e4b62dc8754a9d981d04c6",
+      "snapshot_sha256": "6c546a7cad40bcec0785a23a3640fbea1701174715e4b62dc8754a9d981d04c6"
+    },
+    "tetra_audit.py": {
+      "sha256": "05c85673bb1f87077da20e40b2fb98b5ef045f83ea46dd17db1f04c1a73bf720",
+      "snapshot_sha256": "05c85673bb1f87077da20e40b2fb98b5ef045f83ea46dd17db1f04c1a73bf720"
+    }
+  },
+  "declared_resource_caps": {
+    "max_forecast_memory_bytes": 2147483648,
+    "max_step_bytes": 33554432,
+    "max_tetrahedra": 100000,
+    "mesh_size_m": 0.0026,
+    "process_wall_cap_s": 120
+  },
+  "driver_wall_cap_s": 120,
+  "executed_driver_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run03_witness_mesh.py",
+  "executed_driver_sha256": "36b79b63eaab2005c896a2218cd4e9977c7479a511413e4d040356c6dc82b5e5",
+  "execution_environment": null,
+  "independent_mesh_audit": null,
+  "input_hashes": {
+    "daily_native_named.step": "32b2735010a086eb809674ca07bc4cd0dc5ca499e3adc539eedeca7657e1df9d",
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "label_import_receipt.json": "6576c96270fa91685865b9dca24210176591f52290b5849cf1255b90298deff4",
+    "native_face_identity.json": "b101f3ae3262659f4d3140307ee9473340110a5dfeb23f963379e0040c8dcac3",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e",
+    "v15_receipt.json": "f7478ea8fc5916bcd2e1e95232f052469f96b09c3a642f9d5aa3ee763e8af5fc",
+    "witness_manifest.json": "f053759bc715758f99e1eb62e2c0da561a96b78e29259e925692b91583c4806d"
+  },
+  "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "python_version": "3.12.14",
+  "schema": "vesselforge.reference_v6_witness_tetra_run.v1",
+  "source_geometry_and_lineage": {
+    "asset_hashes": {
+      "daily_native_named.step": "32b2735010a086eb809674ca07bc4cd0dc5ca499e3adc539eedeca7657e1df9d",
+      "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+      "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+      "label_import_receipt.json": "6576c96270fa91685865b9dca24210176591f52290b5849cf1255b90298deff4",
+      "native_face_identity.json": "b101f3ae3262659f4d3140307ee9473340110a5dfeb23f963379e0040c8dcac3",
+      "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+      "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e",
+      "v15_receipt.json": "f7478ea8fc5916bcd2e1e95232f052469f96b09c3a642f9d5aa3ee763e8af5fc",
+      "witness_manifest.json": "f053759bc715758f99e1eb62e2c0da561a96b78e29259e925692b91583c4806d"
+    },
+    "geometry_report_volume_mm3": 32987.77282909537,
+    "geometry_report_vs_rebuilt_volume_relative_error": 0.0,
+    "native_face_count": 16,
+    "original_source_step_metrics_mm": {
+      "bounds_mm": [
+        -54.0000001,
+        -54.0000001,
+        -2.22044604925e-16,
+        54.0,
+        54.0000001,
+        53.0000001
+      ],
+      "face_count": 16,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 32987.7728290895
+    },
+    "rebuilt_native_metrics_mm": {
+      "bounds_mm": [
+        -54.000000099999994,
+        -54.000000099999994,
+        -2.220446049250313e-16,
+        53.99999999999999,
+        54.000000099999994,
+        53.0000001
+      ],
+      "face_count": 16,
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 32987.77282909537
+    },
+    "rebuilt_vs_original_bounds_relative_to_body_span": 6.579099393002596e-17,
+    "rebuilt_vs_original_volume_relative_error": 1.7777562211958106e-13,
+    "source_face_id_to_native_face_index": {
+      "original-brep-face-000": 0,
+      "original-brep-face-001": 1,
+      "original-brep-face-002": 2,
+      "original-brep-face-003": 3,
+      "original-brep-face-004": 4,
+      "original-brep-face-005": 5,
+      "original-brep-face-006": 6,
+      "original-brep-face-007": 7,
+      "original-brep-face-008": 8,
+      "original-brep-face-009": 9,
+      "original-brep-face-010": 10,
+      "original-brep-face-011": 11,
+      "original-brep-face-012": 12,
+      "original-brep-face-013": 13,
+      "original-brep-face-014": 14,
+      "original-brep-face-015": 15
+    },
+    "source_face_identity_rows": [
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 0,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-000",
+        "source_original_brep_face_index": 0,
+        "source_segment_indices": [
+          0
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 1,
+        "role": "body_inner",
+        "source_original_brep_face_id": "original-brep-face-001",
+        "source_original_brep_face_index": 1,
+        "source_segment_indices": [
+          1
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 2,
+        "role": "rim",
+        "source_original_brep_face_id": "original-brep-face-002",
+        "source_original_brep_face_index": 2,
+        "source_segment_indices": [
+          2
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 3,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-003",
+        "source_original_brep_face_index": 3,
+        "source_segment_indices": [
+          3
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 4,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-004",
+        "source_original_brep_face_index": 4,
+        "source_segment_indices": [
+          4
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 5,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-005",
+        "source_original_brep_face_index": 5,
+        "source_segment_indices": [
+          5
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 6,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-006",
+        "source_original_brep_face_index": 6,
+        "source_segment_indices": [
+          6
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 7,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-007",
+        "source_original_brep_face_index": 7,
+        "source_segment_indices": [
+          7
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 8,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-008",
+        "source_original_brep_face_index": 8,
+        "source_segment_indices": [
+          8
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 9,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-009",
+        "source_original_brep_face_index": 9,
+        "source_segment_indices": [
+          9
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 10,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-010",
+        "source_original_brep_face_index": 10,
+        "source_segment_indices": [
+          10
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 11,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-011",
+        "source_original_brep_face_index": 11,
+        "source_segment_indices": [
+          11
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 12,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-012",
+        "source_original_brep_face_index": 12,
+        "source_segment_indices": [
+          12
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 13,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-013",
+        "source_original_brep_face_index": 13,
+        "source_segment_indices": [
+          13
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 14,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-014",
+        "source_original_brep_face_index": 14,
+        "source_segment_indices": [
+          14
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 15,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-015",
+        "source_original_brep_face_index": 15,
+        "source_segment_indices": [
+          15
+        ]
+      }
+    ],
+    "source_identity_basis": "unique (role, sorted source_segment_indices) tuple joined between frozen source lineage and rebuilt native shape",
+    "source_integrals": {
+      "area_method": "Gauss-Legendre integral of r(t) dz/dt around the closed serialized meridian boundary; complete central cut is twice the positive-radius section area",
+      "independent_complete_x0_cut_area_m2_by_order": {
+        "128": 0.00038320016765987913,
+        "64": 0.000383200167659862
+      },
+      "independent_meridian_volume_m3_by_order": {
+        "128": 3.2987772829095533e-05,
+        "64": 3.29877728290949e-05
+      },
+      "independent_positive_radius_section_area_m2_by_order": {
+        "128": 0.00019160008382993957,
+        "64": 0.000191600083829931
+      },
+      "quadrature_orders": [
+        64,
+        128
+      ],
+      "source_geometry_report_integral_volume_m3": 3.298777282909488e-05
+    },
+    "v15_receipt_status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+    "witness_file_hashes": {
+      "original-brep-face-000": {
+        "bytes": 2749,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-000.step",
+        "sha256": "631583db216242417ffa3c1a24c1bdf86c13a0eac7eb4755c3cdc34f22a6f3b5"
+      },
+      "original-brep-face-001": {
+        "bytes": 4933,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-001.step",
+        "sha256": "3c2a011a9d272edb9bd108fc832327dfa02a7222f65eedb57623c2b424ba9f27"
+      },
+      "original-brep-face-002": {
+        "bytes": 4584,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-002.step",
+        "sha256": "b2dcd937696aea344880ced12ca121da4ac1e6f205079639fc34e1be63ad066b"
+      },
+      "original-brep-face-003": {
+        "bytes": 5049,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-003.step",
+        "sha256": "b2b645289eee9ae19d0998563e3e4a55b11c3596955a7e514b621b812b93fd33"
+      },
+      "original-brep-face-004": {
+        "bytes": 5049,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-004.step",
+        "sha256": "fac6fa9710f9c2b64838545d5d13718a495bca40ffa93cd7886bb1dedc27b13a"
+      },
+      "original-brep-face-005": {
+        "bytes": 5043,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-005.step",
+        "sha256": "102addfcf263509a9f599a40d6a83e55e4ebb7b94d8b230689d098d0abfb9768"
+      },
+      "original-brep-face-006": {
+        "bytes": 5045,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-006.step",
+        "sha256": "1585b45a88a5e601890d4b2ab7e3c61207b4335edecfb8e2e0f28bd553a8e8b4"
+      },
+      "original-brep-face-007": {
+        "bytes": 4921,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-007.step",
+        "sha256": "3ef138858cbf9864e71da76d301ec455520157e854c6c68643e963dc4296d212"
+      },
+      "original-brep-face-008": {
+        "bytes": 4757,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-008.step",
+        "sha256": "72b61874da63a603aaeef19c91995304eea0c937fc0d50c55e7d3c38f5cff840"
+      },
+      "original-brep-face-009": {
+        "bytes": 4480,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-009.step",
+        "sha256": "e0451550f07a6db32f59b691e49d320efe6f464e197586f532e9e8ebe162f385"
+      },
+      "original-brep-face-010": {
+        "bytes": 4372,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-010.step",
+        "sha256": "bf8aee474feb1b0a33ad2f0acf0cd25d7c4416a86cdb210ef6975fc4cc300d66"
+      },
+      "original-brep-face-011": {
+        "bytes": 4528,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-011.step",
+        "sha256": "018c71e78e38ea9d89114cd535d03ba3d54e64b9a6689ffca638673ff15cb44f"
+      },
+      "original-brep-face-012": {
+        "bytes": 3543,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-012.step",
+        "sha256": "d22f75cf3b669846359da6386fdd43ea573c7a9ddda8019bb6158002c303bda8"
+      },
+      "original-brep-face-013": {
+        "bytes": 4498,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-013.step",
+        "sha256": "f85da6cfd2da0aa19a6f7e8cac2d6d698698e9a00853bbbbf48e9c17dffe8926"
+      },
+      "original-brep-face-014": {
+        "bytes": 4361,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-014.step",
+        "sha256": "817d084681ce71c8624a392b580d75dfcf6b15ca7d11fc82c2a12ec2c247a30b"
+      },
+      "original-brep-face-015": {
+        "bytes": 2750,
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15\\native_face_witnesses\\original-brep-face-015.step",
+        "sha256": "a339100392ec1f5229228a364cc8fc5082f8b35c2460c9abde4e497ecee65368"
+      }
+    }
+  },
+  "status": "RUNNING"
+}

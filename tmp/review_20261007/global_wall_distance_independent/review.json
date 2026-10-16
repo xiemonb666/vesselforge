@@ -1,0 +1,52 @@
+{
+  "schema": "vesselforge.global_wall_distance.independent_source_review.v1",
+  "status": "CONDITIONAL_MATH_REVIEW_PASS_EXTERNAL_SOURCE_PIN_REQUIRED",
+  "inputs": {
+    "source": {
+      "path": "vesselforge/experiments/global_wall_distance_certificate_20261007/global_wall_distance_certificate.py",
+      "sha256": "2466306decc0af17d47c71d8e66b110aa77255f8f9279b94180a86ee7029886d"
+    },
+    "case": {
+      "path": "vesselforge/experiments/global_wall_distance_certificate_20261007/case.json",
+      "sha256": "985b12a38a9996372a39afb700ecc413ecbb52c106f0594dc94350674b7c27d8"
+    },
+    "pins": {
+      "path": "vesselforge/experiments/global_wall_distance_certificate_20261007/source_pins.json",
+      "sha256": "63be31ab8ea506dc77888ccba0865ddc85ac938cd97e822cd2e5b8006f16d32f"
+    },
+    "readme": {
+      "path": "vesselforge/experiments/global_wall_distance_certificate_20261007/README.md",
+      "sha256": "7efb1da252847accba61ff0790703a017f73c34d24bd5d4245e85ab0d0d28a5a"
+    },
+    "pinned_inputs_current_hashes_match": true,
+    "saved_json_field_schema_matches": true
+  },
+  "math_assessment": {
+    "extended_F_0_to_6_injectivity_route": "sound conditional on the checked exact signs, regularity, R9, endpoints and C4 joins",
+    "monotone_height_range": "z_mouth-z_base=120 mm > 6 mm; fixed-height admissible s set connected; flat base/seam handled separately",
+    "radius_nonnegative": "side r>=18 => depth-6 radius>=12; straight neck radius>=20; flat base preserves r>=0",
+    "minimum_curve_pair_3mm": "For a closest pair c(u), q=F(v,3): if v is an interior parameter, q prime equals lambda*c prime with lambda>0. Stationarity in v gives c(u)-q=+/-d*N(v), hence c(u)=F(v,3+/-d). If d<3, both depths lie in (0,6), contradicting extended F injectivity against c(u)=F(u,0). The outer parameter u may be an endpoint. Only inner-curve endpoint cases require the 24 exact degree-10 checks.",
+    "endpoint_subdivision": "PASS is coefficient-sufficient; all-strictly-negative leaf yields FAIL; depth/leaf cap unresolved yields UNKNOWN",
+    "revolution_transfer": "valid for nonnegative radii by the added 2*r*rho*(1-cos(delta_theta)) term",
+    "global_wall_cad_lip_native_brep_physics": "UNKNOWN"
+  },
+  "source_integrity": {
+    "case_sha_guard": true,
+    "pins_sha_guard": true,
+    "four_input_hash_guards": true,
+    "checker_self_source_sha_guard": false,
+    "source_hash": "2466306decc0af17d47c71d8e66b110aa77255f8f9279b94180a86ee7029886d",
+    "required_action_before_any_GO": "Bind this source SHA in the external GO/receipt and verify it before and after the single run."
+  },
+  "execution": {
+    "checker_called": false,
+    "fraction_or_curve_calculation_performed": false,
+    "cad_solver_test_called": false,
+    "author_source_modified": false
+  },
+  "revision_history": {
+    "prior_review_sha256": "1d680f3a67b9fad91f3532987c0882fc09c95a2b4824ded92541e9542042a3a7",
+    "prior_review_json_sha256": "603c8f719da1d778fdf02c9790dd5560717e58d12a86eafbd304ab3ec235c3bd",
+    "correction": "Withdraw the prior extra inward-normal sign exclusion and separate outer-endpoint argument; they were unnecessary and not independently checked. Symmetric +/-d stationarity covers arbitrary outer parameter u."
+  }
+}

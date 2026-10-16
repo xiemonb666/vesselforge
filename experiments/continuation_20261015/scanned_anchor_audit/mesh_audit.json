@@ -1,0 +1,270 @@
+{
+  "source_model_file": "Footed_Bowl_SHM_17946_0047.obj",
+  "source_model_sha256": "c03413172398ae5280fae3d1759f505b38bc97a1561e510fcfb4b99d97c57232",
+  "raw_vertex_count": 326647,
+  "raw_face_count_obj_polygons": 651814,
+  "triangles_for_audit": 651814,
+  "raw_vt_count": 342151,
+  "raw_vn_count": 326647,
+  "face_polygon_size_histogram": {
+    "3": 651814
+  },
+  "object_names": [],
+  "groups": [],
+  "materials": [
+    "Footed_Bowl_SHM_17946_0047"
+  ],
+  "mtllib": [
+    "Footed_Bowl_SHM_17946_0047.mtl"
+  ],
+  "raw_bounds_xyz": {
+    "min": [
+      -0.027423,
+      -0.086138,
+      0.017478
+    ],
+    "max": [
+      0.133013,
+      0.072108,
+      0.13691
+    ],
+    "extent": [
+      0.160436,
+      0.158246,
+      0.11943200000000001
+    ],
+    "units": "UNKNOWN in OBJ header; unit-scale candidates only"
+  },
+  "unused_vertex_count": 0,
+  "degenerate_triangle_count_area_lt_1e-12_raw_units2": 4,
+  "unique_edges": 977721,
+  "boundary_edge_count": 0,
+  "boundary_graph_component_count": 0,
+  "boundary_components": [],
+  "boundary_components_truncated": false,
+  "nonmanifold_edge_count_incidence_gt2": 0,
+  "connected_face_regions_vtk": 389,
+  "watertight_by_indexed_edge_incidence": true,
+  "surface_only_input": true,
+  "source_record": {
+    "item_url": "https://apsida.cut.ac.cy/items/show/49281",
+    "identifier": "SHM 17946:0047",
+    "title": "Footed bowl",
+    "period": "C.G. III (850\u2013700 BC)",
+    "material": "Earthenware; Clay; Pottery",
+    "reported_height_mm": 119.0,
+    "reported_base_diameter_mm": 70.0,
+    "reported_rim_diameter_mm": 160.0,
+    "reported_dimension_ratios": {
+      "height_over_rim_diameter": 0.74375,
+      "base_over_rim_diameter": 0.4375
+    },
+    "obj_header": "Generated with Agisoft Metashape",
+    "coordinate_units_declared": false,
+    "rights": "CC BY-SA 4.0"
+  },
+  "scale_candidates": {
+    "meter_candidate": {
+      "assumption": "1 raw OBJ unit = 1 m (1000 mm/raw unit); inferred from coordinate magnitude and reported H only, not declared in OBJ",
+      "bounds_extent_mm_if_assumed": [
+        160.436,
+        158.246,
+        119.43200000000002
+      ],
+      "height_delta_from_report_mm": 0.43200000000001637,
+      "height_delta_percent": 0.36302521008404476,
+      "top_band_fitted_circle_diameter_mm_if_assumed": 153.9607938141228,
+      "top_band_diameter_delta_from_reported_rim_mm": -6.039206185877191,
+      "top_band_diameter_delta_percent": -3.77450386617324,
+      "top_band_circle_fit_rms_mm_if_assumed": 2.13194444838014,
+      "low_band_radial_diameter_mm_if_assumed": 72.74180549292045,
+      "low_band_diameter_delta_from_reported_base_mm": 2.7418054929204487,
+      "low_band_diameter_delta_percent": 3.9168649898863483,
+      "warning": "Dimensions do not match all reported dimensions exactly; do not treat as calibrated physical unit scale."
+    }
+  },
+  "edge_graph_component_count": 389,
+  "largest_component": {
+    "area_rank": 1,
+    "component_label": 0,
+    "vertex_count": 321632,
+    "face_count": 643336,
+    "surface_area_raw_units2": 0.10360753450427244,
+    "signed_volume_raw_units3": 0.0002572576118762505,
+    "abs_signed_volume_raw_units3": 0.0002572576118762505,
+    "inconsistent_oriented_edge_count": 0,
+    "bounds_min_x": -0.027423,
+    "bounds_min_y": -0.086138,
+    "bounds_min_z": 0.017478,
+    "bounds_max_x": 0.133013,
+    "bounds_max_y": 0.072108,
+    "bounds_max_z": 0.13691,
+    "extent_x": 0.160436,
+    "extent_y": 0.158246,
+    "extent_z": 0.11943200000000001
+  },
+  "largest_component_face_fraction": 0.9869932219927771,
+  "largest_component_surface_area_fraction": 0.9995088000610689,
+  "exact_duplicate_xyz_vertex_count": 25,
+  "inconsistent_oriented_edge_count": 0,
+  "component_table_file": "component_table.csv",
+  "raw_geometry_npz": "raw_geometry.npz",
+  "raw_geometry_npz_payload": "vertices_source_units and faces; preserves original parsed OBJ indexing, no weld/repair/rescale",
+  "top_rim_band_circle_fit_diagnostic": {
+    "band_z_min": 0.13391,
+    "point_count": 25329,
+    "center_xy_raw_units": [
+      0.05191771229236255,
+      -0.007930005189105168
+    ],
+    "radius_raw_units": 0.0769803969070614,
+    "radial_rms_residual_raw_units": 0.00213194444838014
+  },
+  "bottom_band_diameter_candidate_raw_units": 0.07274180549292045,
+  "section_stats": [
+    {
+      "section_axis": "x",
+      "plane_coordinate": 0.05191771229236255,
+      "plane_coordinate_source": "least-squares top rim band center; candidate axis only",
+      "point_count": 2573,
+      "cut_segments": 2573,
+      "joined_polylines": 3,
+      "polyline_point_count_min": 571,
+      "polyline_point_count_max": 1006,
+      "polylines": [
+        {
+          "polyline_id": 0,
+          "point_count": 1001,
+          "bounds_min_xyz": [
+            0.05191771229236255,
+            -0.08162515053788792,
+            0.05175745798715204
+          ],
+          "bounds_max_xyz": [
+            0.05191771229236255,
+            0.07106927870819062,
+            0.1358393307673613
+          ],
+          "extent_xyz": [
+            0.0,
+            0.15269442924607854,
+            0.08408187278020926
+          ]
+        },
+        {
+          "polyline_id": 1,
+          "point_count": 1006,
+          "bounds_min_xyz": [
+            0.05191771229236255,
+            -0.0432787694972315,
+            0.01771932034168842
+          ],
+          "bounds_max_xyz": [
+            0.05191771229236255,
+            0.07196157823766654,
+            0.13567691564530443
+          ],
+          "extent_xyz": [
+            0.0,
+            0.11524034773489804,
+            0.117957595303616
+          ]
+        },
+        {
+          "polyline_id": 2,
+          "point_count": 571,
+          "bounds_min_xyz": [
+            0.05191771229236255,
+            -0.08607,
+            0.02701062864468383
+          ],
+          "bounds_max_xyz": [
+            0.05191771229236255,
+            -0.021098639669449075,
+            0.1361963532785454
+          ],
+          "extent_xyz": [
+            0.0,
+            0.06497136033055093,
+            0.10918572463386157
+          ]
+        }
+      ]
+    },
+    {
+      "section_axis": "y",
+      "plane_coordinate": -0.007930005189105168,
+      "plane_coordinate_source": "least-squares top rim band center; candidate axis only",
+      "point_count": 2686,
+      "cut_segments": 2686,
+      "joined_polylines": 1,
+      "polyline_point_count_min": 2690,
+      "polyline_point_count_max": 2690,
+      "polylines": [
+        {
+          "polyline_id": 0,
+          "point_count": 2690,
+          "bounds_min_xyz": [
+            -0.027380861185423794,
+            -0.007930005189105168,
+            0.018056500037065038
+          ],
+          "bounds_max_xyz": [
+            0.13286117660448293,
+            -0.007930005189105168,
+            0.13573217383033223
+          ],
+          "extent_xyz": [
+            0.16024203778990673,
+            0.0,
+            0.1176756737932672
+          ]
+        }
+      ]
+    }
+  ],
+  "render_errors": [],
+  "render_views": {
+    "scan_side": {
+      "camera_direction_relative_to_extent": [
+        0,
+        -3.5,
+        0
+      ],
+      "image": "scan_side.png"
+    },
+    "scan_oblique": {
+      "camera_direction_relative_to_extent": [
+        2.6,
+        -3.4,
+        1.4
+      ],
+      "image": "scan_oblique.png"
+    },
+    "scan_top": {
+      "camera_direction_relative_to_extent": [
+        0,
+        0,
+        3.5
+      ],
+      "image": "scan_top.png"
+    },
+    "scan_bottom": {
+      "camera_direction_relative_to_extent": [
+        0,
+        0,
+        -3.5
+      ],
+      "image": "scan_bottom.png"
+    }
+  },
+  "processing_notes": [
+    "Parsed original OBJ xyz positions and indexed triangular faces directly.",
+    "VTK stock vtkOBJReader warned on the source xyzrgb vertex rows and duplicated corners; it was not used for final topology.",
+    "Edge-graph components use original OBJ v indices; no UV/normal seam welding.",
+    "No mesh repair, hole fill, smoothing, decimation, rescaling, or remeshing.",
+    "Computed temporary normals are only for visual shading.",
+    "Section cuts use the original indexed triangle surface.",
+    "A closed edge-incidence test only characterizes mesh topology; it does not establish physical solidity, acquisition completeness, or scan fidelity."
+  ]
+}

@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\Users\xiemo\Desktop\ShardForge\vesselforge
+configfile: pyproject.toml
+collected 39 items
+
+tests\test_wall_mesh_binding.py .......................................  [100%]
+
+- generated xml file: C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261004\wall_mesh_binding\v5_run\pytest.junit.xml -
+============================= 39 passed in 1.68s ==============================

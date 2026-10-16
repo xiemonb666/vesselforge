@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\fixture_once_check.py",
+    "--prototype",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\surface_mapping_prototype.py",
+    "--output-dir",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run01"
+  ],
+  "executable": "C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\python.exe",
+  "full_argv_vector": [
+    "C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\fixture_once_check.py",
+    "--prototype",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\surface_mapping_prototype.py",
+    "--output-dir",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run01"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+}

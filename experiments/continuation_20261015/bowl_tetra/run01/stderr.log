@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\xiemo\Desktop\ShardForge\experiments\continuation_20261015\run_tetra_partition.py", line 69, in <module>
+    main()
+  File "C:\Users\xiemo\Desktop\ShardForge\experiments\continuation_20261015\run_tetra_partition.py", line 32, in main
+    result = partition_step_at_x(gmsh, ROOT / "vesselforge/data/continuation_20261015/spherical_bowl/three_bands", out / "mesh")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\src\vesselforge\tetra_partition.py", line 85, in partition_step_at_x
+    raise ValueError("imported/scaled OCC volume differs from analytic source")
+ValueError: imported/scaled OCC volume differs from analytic source

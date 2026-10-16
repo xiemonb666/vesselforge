@@ -1,0 +1,345 @@
+{
+  "schema": "vesselforge.gmsh_mesh_quality_probe_v2.v1",
+  "status": "COMPLETED",
+  "outcome": "NO_QUALIFIED_CANDIDATE",
+  "purpose": "Re-run one default Gmsh tetra optimizer pass with Mesh.Renumber set to 0 and exact tag capture to distinguish tag renumbering from actual coordinate/surface changes.",
+  "input": {
+    "source_mesh_path": "vesselforge\\experiments\\continuation_20261015\\reference_tetra\\daily_aberdeen_v5_diagnostic\\mesh.msh",
+    "source_mesh_sha256": "c9c6d697371d61873fae3dcde19e7a48404725480918231471cf77817b3c3627",
+    "source_npz_sha256": "e39b6d838468b2ce5eaff39e33d370f93d62cfb68be70594d9e0ac9dc4b39822",
+    "source_report_sha256": "959a5334a4845fd36122e701c110615ae1229567565093d872d65eabcc50d039",
+    "frozen_helper_script_sha256": "aa32f021526b883d367a46fd9faf6f14f5af46ab4e512e9bd5267bd364621417",
+    "source_ancestry_status": "PRESENT_BUT_UNBOUND"
+  },
+  "gmsh": {
+    "version": "4.15.2",
+    "optimizer": "default (empty method string)",
+    "force": true,
+    "niter": 1,
+    "dimTags": [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "default_Mesh.Renumber_at_initialization": 1.0,
+    "Mesh.Renumber_set_before_open": 0.0,
+    "Mesh.Renumber_after_open_before_optimize": 0.0,
+    "Mesh.Renumber_after_optimize": 0.0,
+    "renumber_option_semantics_source": "Official Gmsh 4.15.2 manual defines Mesh.Renumber as renumbering nodes and elements in a continuous sequence after mesh generation (default 1); this experiment records and sets it to 0 before optimize without claiming that the option itself guarantees optimizer tag stability."
+  },
+  "timing": {
+    "optimizer_wall_s": 0.06300000000010186,
+    "process_wall_s": 8.125,
+    "process_wall_cap_s": 110.0
+  },
+  "resources": {
+    "source_forecast_tetrahedra": 96942,
+    "source_forecast_peak_memory_bytes": 1588297728,
+    "declared_tetrahedron_cap": 100000,
+    "declared_peak_memory_cap_bytes": 2147483648,
+    "actual_before_tetrahedra": 56139,
+    "actual_after_tetrahedra": 56128,
+    "actual_process_peak_memory_sampled": false
+  },
+  "baseline": {
+    "source_alignment": {
+      "source_node_count": 18236,
+      "source_tetrahedron_count": 56139,
+      "coordinate_match_for_exact_source_node_tags_with_1e-17_m_MSH_text_tolerance": true,
+      "max_source_NPZ_vs_MSH_coordinate_delta_m": 6.938893903907228e-18,
+      "missing_source_node_tags": [],
+      "cell_tags_and_oriented_node_tag_connectivity_equal": true,
+      "partition_by_exact_cell_tag_equal": true,
+      "source_surface_entity_count": 49,
+      "surface_entities_exact_node_tag_connectivity_equal": true,
+      "all_source_indexed_mesh_arrays_align": true
+    },
+    "quality": {
+      "tetrahedra": 56139,
+      "nodes": 18236,
+      "positive_oriented_tetrahedra": 56139,
+      "negative_oriented_tetrahedra": 0,
+      "zero_or_nonfinite_determinants": 0,
+      "minimum_per_tetrahedron_altitude_mm": {
+        "min": 0.05872163127393696,
+        "p1": 0.3595067279889491,
+        "p5": 0.6632324909752649,
+        "median": 1.1398991534279117,
+        "p95": 1.2939152581803208,
+        "max": 1.8917304395626264
+      },
+      "signed_tetrahedral_volume_m3": 3.251739103504759e-05,
+      "cad_mesh_volume_relative_error": 0.00612072066692189,
+      "gmsh_minSICN": {
+        "min": 0.04511484995955685,
+        "p1": 0.32322254204002204,
+        "p5": 0.474415894807887,
+        "median": 0.8296202997000427,
+        "p95": 0.893036271290205,
+        "max": 0.9993156159264367
+      },
+      "gmsh_minSICN_error": null
+    },
+    "tetra_audit": {
+      "status": "PASS",
+      "checks": {
+        "finite_coordinates": true,
+        "positive_oriented_non_degenerate_tetrahedra": true,
+        "unique_tetrahedra": true,
+        "all_face_incidence_at_most_two": true,
+        "two_parent_face_windings_opposed": true,
+        "connected_tetrahedral_body": true,
+        "interface_matches_all_cross_partition_faces": true,
+        "whole_exterior_closed_oriented_vertex_manifold": true,
+        "partition_boundaries_closed_oriented_vertex_manifold": true,
+        "whole_boundary_volume_matches_cell_volume": true,
+        "partition_boundary_volumes_match_cell_volumes": true,
+        "stored_cell_volumes_match_determinants": null
+      },
+      "counts": {
+        "nodes": 18236,
+        "referenced_nodes": 18236,
+        "unused_nodes": 0,
+        "tetrahedra": 56139,
+        "unique_faces": 130170,
+        "one_parent_boundary_faces": 35784,
+        "two_parent_internal_faces": 94386,
+        "cross_partition_faces": 541,
+        "partitions": 2,
+        "mesh_connected_components": 1
+      },
+      "volume": {
+        "tetrahedral_volume_m3": 3.251739103504759e-05,
+        "analytic_relative_error": 0.00612072066692189,
+        "partition_balance_relative_error": 5.3908042783455984e-05,
+        "partitions": {
+          "0": {
+            "tetrahedra": 27809,
+            "tetrahedral_volume_m3": 1.625781904307024e-05,
+            "analytic_half_volume_relative_error": 0.006174298753633354
+          },
+          "1": {
+            "tetrahedra": 28330,
+            "tetrahedral_volume_m3": 1.6259571991977357e-05,
+            "analytic_half_volume_relative_error": 0.006067142580210012
+          }
+        }
+      },
+      "interface": {
+        "triangles": 541,
+        "unique_nodes": 398,
+        "cross_partition_faces": 541,
+        "parent_pairs_exact": true,
+        "parents_from_distinct_partitions": true,
+        "area_m2": 0.0003880800592225199,
+        "expected_area_m2": 0.0003886735433721346,
+        "relative_area_error": 0.001526947639568155,
+        "max_abs_x_plane_deviation_m": 9.872129494151304e-18
+      },
+      "exterior_surface": {
+        "faces": 35784,
+        "vertices": 17894,
+        "edges": 53676,
+        "edge_incidence_min": 2,
+        "edge_incidence_max": 2,
+        "edges_with_incidence_other_than_two": 0,
+        "edges_with_inconsistent_direction": 0,
+        "vertex_link_issues": 0,
+        "connected_components": 1,
+        "surface_area_m2": 0.03237541736894249,
+        "signed_volume_m3": 3.251739103504761e-05,
+        "closed_oriented_vertex_manifold": true
+      }
+    }
+  },
+  "optimized": {
+    "source_index_alignment": {
+      "source_node_count": 18236,
+      "source_tetrahedron_count": 56139,
+      "coordinate_match_for_exact_source_node_tags_with_1e-17_m_MSH_text_tolerance": true,
+      "max_source_NPZ_vs_MSH_coordinate_delta_m": 6.938893903907228e-18,
+      "missing_source_node_tags": [],
+      "cell_tags_and_oriented_node_tag_connectivity_equal": false,
+      "partition_by_exact_cell_tag_equal": false,
+      "source_surface_entity_count": 49,
+      "surface_entities_exact_node_tag_connectivity_equal": true,
+      "all_source_indexed_mesh_arrays_align": false
+    },
+    "quality": {
+      "tetrahedra": 56128,
+      "nodes": 18236,
+      "positive_oriented_tetrahedra": 56128,
+      "negative_oriented_tetrahedra": 0,
+      "zero_or_nonfinite_determinants": 0,
+      "minimum_per_tetrahedron_altitude_mm": {
+        "min": 0.05872163127393696,
+        "p1": 0.36446796230760015,
+        "p5": 0.663928885494683,
+        "median": 1.1399143690799924,
+        "p95": 1.2939210966059285,
+        "max": 1.8917304395626264
+      },
+      "signed_tetrahedral_volume_m3": 3.25173910350476e-05,
+      "cad_mesh_volume_relative_error": 0.0061207206669216824,
+      "gmsh_minSICN": null,
+      "gmsh_minSICN_error": "Exception: Unknown element 92465"
+    },
+    "tetra_audit": {
+      "status": "PASS",
+      "checks": {
+        "finite_coordinates": true,
+        "positive_oriented_non_degenerate_tetrahedra": true,
+        "unique_tetrahedra": true,
+        "all_face_incidence_at_most_two": true,
+        "two_parent_face_windings_opposed": true,
+        "connected_tetrahedral_body": true,
+        "interface_matches_all_cross_partition_faces": true,
+        "whole_exterior_closed_oriented_vertex_manifold": true,
+        "partition_boundaries_closed_oriented_vertex_manifold": true,
+        "whole_boundary_volume_matches_cell_volume": true,
+        "partition_boundary_volumes_match_cell_volumes": true,
+        "stored_cell_volumes_match_determinants": null
+      },
+      "counts": {
+        "nodes": 18236,
+        "referenced_nodes": 18236,
+        "unused_nodes": 0,
+        "tetrahedra": 56128,
+        "unique_faces": 130148,
+        "one_parent_boundary_faces": 35784,
+        "two_parent_internal_faces": 94364,
+        "cross_partition_faces": 541,
+        "partitions": 2,
+        "mesh_connected_components": 1
+      },
+      "volume": {
+        "tetrahedral_volume_m3": 3.25173910350476e-05,
+        "analytic_relative_error": 0.0061207206669216824,
+        "partition_balance_relative_error": 5.390804278345598e-05,
+        "partitions": {
+          "0": {
+            "tetrahedra": 27803,
+            "tetrahedral_volume_m3": 1.6257819043070237e-05,
+            "analytic_half_volume_relative_error": 0.006174298753633561
+          },
+          "1": {
+            "tetrahedra": 28325,
+            "tetrahedral_volume_m3": 1.6259571991977357e-05,
+            "analytic_half_volume_relative_error": 0.006067142580210012
+          }
+        }
+      },
+      "interface": {
+        "triangles": 541,
+        "unique_nodes": 398,
+        "cross_partition_faces": 541,
+        "parent_pairs_exact": true,
+        "parents_from_distinct_partitions": true,
+        "area_m2": 0.0003880800592225199,
+        "expected_area_m2": 0.0003886735433721346,
+        "relative_area_error": 0.001526947639568155,
+        "max_abs_x_plane_deviation_m": 9.872129494151304e-18
+      },
+      "exterior_surface": {
+        "faces": 35784,
+        "vertices": 17894,
+        "edges": 53676,
+        "edge_incidence_min": 2,
+        "edge_incidence_max": 2,
+        "edges_with_incidence_other_than_two": 0,
+        "edges_with_inconsistent_direction": 0,
+        "vertex_link_issues": 0,
+        "connected_components": 1,
+        "surface_area_m2": 0.03237541736894249,
+        "signed_volume_m3": 3.251739103504761e-05,
+        "closed_oriented_vertex_manifold": true
+      }
+    }
+  },
+  "tag_and_surface_diagnosis": {
+    "node_count_before": 18236,
+    "node_count_after": 18236,
+    "direct_node_tags_equal": true,
+    "coordinates_bitwise_equal_by_same_node_tag": false,
+    "exact_coordinate_key_bijection_available": false,
+    "exact_coordinate_keys_unique_before": true,
+    "exact_coordinate_keys_unique_after": true,
+    "coordinate_key_set_equal": false,
+    "duplicate_coordinate_key_count_before": 0,
+    "duplicate_coordinate_key_count_after": 0,
+    "same_tag_nodes_with_nonbitwise_coordinate_change": 2,
+    "max_coordinate_displacement_by_same_node_tag_m": 1.8399521000200487e-18,
+    "exact_coordinate_tag_permutation_count": null,
+    "surface_entities_before": 49,
+    "surface_entities_after": 49,
+    "surface_element_tags_and_oriented_node_connectivity_equal_by_exact_element_tag": true,
+    "surface_connectivity_equal_after_exact_coordinate_tag_mapping": null,
+    "same_indexed_boundary_coordinates_bitwise_equal": true,
+    "surface_direct_same_tag_comparison": {
+      "exact_surface_entity_tags_equal": true,
+      "surface_node_tag_sets_equal": true,
+      "surface_coordinates_bitwise_equal_by_exact_node_tag": true,
+      "missing_surface_node_tags": [],
+      "new_surface_node_tags": [],
+      "moved_surface_node_tags": [],
+      "moved_surface_node_count": 0,
+      "max_surface_node_displacement_m": 0.0,
+      "interface_surface_displacement": {
+        "source_surface_node_count": 398,
+        "moved_node_count": 0,
+        "max_node_displacement_m": 0.0,
+        "max_node_displacement_mm": 0.0
+      },
+      "exterior_surface_displacement": {
+        "source_surface_node_count": 17894,
+        "moved_node_count": 0,
+        "max_node_displacement_m": 0.0,
+        "max_node_displacement_mm": 0.0
+      },
+      "changed_connectivity_by_surface_entity": {},
+      "changed_orientation_by_surface_entity": {},
+      "surface_preserved_exactly": true
+    },
+    "tetrahedron_element_tag_sets_equal": false,
+    "tetrahedron_tags_only_before": 57,
+    "tetrahedron_tags_only_after": 46,
+    "oriented_tetra_connectivity_equal_for_common_exact_element_tags": true,
+    "same_tag_tetra_connectivity_changes": 0,
+    "actual_physical_boundary_change_diagnosed": false,
+    "interpretation": "In this Mesh.Renumber=0 run, boundary/interface coordinates and oriented triangle connectivity are exactly preserved under the same node and element tags. This does not retroactively prove the cause of the earlier run's raw-tag mismatch because its post-run arrays were not retained."
+  },
+  "decision": {
+    "surface_preserved_by_same_indexed_tags_and_bitwise_coordinates": true,
+    "tetra_audit_pass": true,
+    "positive_orientation_pass": true,
+    "tetrahedron_cap_pass": true,
+    "declared_memory_forecast_cap_pass": true,
+    "minimum_altitude_gain_fraction": 0.0,
+    "minimum_altitude_gain_threshold_fraction": 0.001,
+    "substantive_altitude_gain_pass": false,
+    "candidate_written": false,
+    "candidate_artifact": null,
+    "candidate_gate": "same indexed boundary/interface node tags, bitwise coordinates and exact element-tag triangle connectivity; tetra_audit PASS; all positive cells; resource caps; minimum tetra altitude improves by more than 0.1%"
+  },
+  "limitations": [
+    "No STEP geometry, loading, constitutive model or discretization order was changed; no solver evolution was run.",
+    "Source exterior face ancestry remains PRESENT_BUT_UNBOUND and was not inferred.",
+    "The source reports a forecast rather than sampled peak memory; this process uses one fresh model and one optimizer call.",
+    "This disposable v5 diagnostic is not the latest v6 mesh or an accepted physical mother."
+  ],
+  "controller_wall_s": 8.858999999999924,
+  "runner_sha256": "de2abe873a12ad6357bdec5b0e3580cd2bdceaf5cfdc18227fcf92d6b80ead06",
+  "output_limits": {
+    "worker_stdout_bytes": 0,
+    "worker_stderr_bytes": 0,
+    "worker_log_cap_bytes": 268435456,
+    "run_v2_file_cap_bytes": 268435456,
+    "run_v2_file_bytes_total": 46969,
+    "run_v2_files_under_cap": true
+  }
+}

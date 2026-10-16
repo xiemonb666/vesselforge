@@ -1,0 +1,1 @@
+{"error": "ValueError", "detail": "Bernstein degrees must match before addition"}

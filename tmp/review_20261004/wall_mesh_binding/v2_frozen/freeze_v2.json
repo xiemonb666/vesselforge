@@ -1,0 +1,43 @@
+{
+  "schema": "vf.wall-mesh-binding-review-freeze.v2",
+  "frozen_at_utc": "2026-10-04",
+  "status": "SOURCE_PATCH_FROZEN_PENDING_REVIEW",
+  "execution": {
+    "pytest": "NOT_RUN",
+    "cad_or_step": "NOT_RUN",
+    "boolean": "NOT_RUN",
+    "ray_query": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED"
+  },
+  "v1_preserved_bytes": {
+    "helper": "v1_frozen/wall_mesh_binding.py:516b2a1d3c6956aadd83485beb0c272b2df56a3c30cb578040849312b7341e9d",
+    "tests": "v1_frozen/test_wall_mesh_binding.py:db4f9c7abbb2e045086fbde5ba79fd04adccef58cea952926e436defcd48d1d7",
+    "fixture_input": "v1_frozen/fixture_input.json:706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "implementation_plan": "v1_frozen/implementation_plan.md:b609dd97d1274cfe558aa4f811a0ed493e0622e1f240c65b18f4ad2edf7268a3",
+    "runner": "v1_frozen/run_hollow_cylinder_binding.py:37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc",
+    "original_freeze": "v1_frozen/freeze_v1.json:e7fe103cb5dc0f629ef7b5bb4d8ed9b3c3979980bf1cb4505e847895c7a04eb7"
+  },
+  "current_owned_artifacts": {
+    "helper": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "tests": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6",
+    "fixture_input": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "implementation_plan": "b609dd97d1274cfe558aa4f811a0ed493e0622e1f240c65b18f4ad2edf7268a3",
+    "runner": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+  },
+  "frozen_dependencies": {
+    "asset_py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry_py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema_py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics_py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference_py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+  },
+  "changes": [
+    "Made batch station aggregation private and removed the public exported function.",
+    "Validated BindingPolicy real, non-boolean, finite positive fields plus radian ranges and finite derived tolerances.",
+    "Validated all six manifest/report deflection values before float conversion; JSON booleans are rejected.",
+    "Added normal-angle policy ID and an explicit distinction between acceptance threshold and measured error.",
+    "Added source-only negative-control tests."
+  ],
+  "note": "freeze.json excludes its own hash. V1 source, test, runner, input, plan, and original freeze bytes are preserved in v1_frozen/."
+}

@@ -1,0 +1,33 @@
+{
+  "coverage": {
+    "coverage_semantics": "finite wall-reference station mapping fraction; not area coverage",
+    "station_mapping_fraction": null,
+    "stations_bound": 0,
+    "stations_requested": 0
+  },
+  "errors": [
+    "CANONICAL_BREP_FACE_BOUNDS_MISMATCH:0"
+  ],
+  "input_file_sha256": {
+    "canonical_step_file_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "face_semantics_file_sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+    "parent_lineage_file_sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+    "parent_surface_file_sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+    "wall_reference_file_sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+  },
+  "qualification": {
+    "fragment_mapping_status": "UNAVAILABLE",
+    "global_minimum_wall_claim": false,
+    "global_minimum_wall_status": "NOT_ESTABLISHED",
+    "global_wall_status": "UNVERIFIED",
+    "mesh_binding_status": "UNKNOWN",
+    "physical_qualification_status": "UNKNOWN",
+    "physics_claim": false,
+    "physics_status": "NOT_ASSESSED",
+    "stage_2_fragment_lineage_status": "UNIMPLEMENTED"
+  },
+  "reason": "CANONICAL_BREP_FACE_BOUNDS_MISMATCH:0",
+  "schema": "vf.wall-mesh-binding.v1",
+  "stations": [],
+  "status": "UNKNOWN"
+}

@@ -1,0 +1,10 @@
+Info    : Clearing all models and views...
+Info    : Done clearing all models and views
+{
+  "status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+  "output": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v15",
+  "label_import_status": "FAIL_UNRESOLVED_GMSH_FACE_LABELS",
+  "imprint_status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+  "cut_status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+  "source_face_count": 16
+}

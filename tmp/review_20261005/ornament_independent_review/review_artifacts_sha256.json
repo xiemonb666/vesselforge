@@ -1,0 +1,42 @@
+{
+  "run_receipt.actual.json": {
+    "sha256": "fcbc60fa0de7974bdf125a75aed725a58db3af6c813a5f9858dd09fc7e70af84",
+    "bytes": 802
+  },
+  "local_a_0p50mm.checks.actual.json": {
+    "sha256": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+    "bytes": 6103
+  },
+  "local_b_0p25mm.checks.actual.json": {
+    "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "bytes": 6110
+  },
+  "local_a_original_flat_triangle_visual.png": {
+    "sha256": "2931af31de62f710034b1d01b298357a444a3fe283231ac301e83500108ba1a0",
+    "bytes": 512146
+  },
+  "local_b_original_flat_triangle_visual.png": {
+    "sha256": "0cbf8d44c6e19075be91882e7f95ce5fb82ff35e6b935ba98c24712c97dba565",
+    "bytes": 675966
+  },
+  "input_sha256.json": {
+    "sha256": "b7971b107d35a946c217f5a6d904776b5c78e742c4c084dc98ad98d04d99473a",
+    "bytes": 1776
+  },
+  "independent_metrics.json": {
+    "sha256": "179cb0d51f64b59a6d68530c253494372704aeaa2b03e9545c1f0e9738302636",
+    "bytes": 29364
+  },
+  "independent_relief_review.png": {
+    "sha256": "021269850ceabfb6407ebdfb51d8331cc7a018b20084c7e8ea114a5d923b01d0",
+    "bytes": 384689
+  },
+  "report.md": {
+    "sha256": "518c1129fdea692417ab49120d40502f9f44392c87759cc1bad68a9d13c8cc8e",
+    "bytes": 10082
+  },
+  "independent_review.py": {
+    "sha256": "741cb11dc30e6e81f79ec8e4b3ed736bc60c8ec3c04e4f5442a615049f4dcd60",
+    "bytes": 35517
+  }
+}

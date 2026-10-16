@@ -1,0 +1,34 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\Users\xiemo\Desktop\ShardForge\vesselforge
+configfile: pyproject.toml
+collected 24 items
+
+tests\test_wall_mesh_binding.py ...................F....                 [100%]
+
+================================== FAILURES ===================================
+_______________ test_reversed_parent_triangle_normal_is_unknown _______________
+
+    def test_reversed_parent_triangle_normal_is_unknown() -> None:
+        vertices = np.asarray([
+            [0.0, -1.0, -1.0], [0.0, 0.0, 2.0], [0.0, 1.0, -1.0],
+        ], dtype=np.float64)
+        faces = np.asarray([[0, 1, 2]], dtype=np.int32)  # -X, opposite to the recorded wall normal.
+        lineage = np.asarray([0], dtype=np.int32)
+        vertices, faces, lineage = _append_distant_triangles(
+            vertices, faces, lineage, (1, 1, 1))
+        row = binding.bind_station_to_parent_mesh(
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            vertices, faces, lineage, canonical_face_count=2, policy=_policy())
+        assert row["status"] == "UNKNOWN"
+>       assert row["reason"] == "MESH_NORMAL_MISMATCH"
+E       AssertionError: assert 'SAME_FACE_TI..._DISAGREEMENT' == 'MESH_NORMAL_MISMATCH'
+E         
+E         - MESH_NORMAL_MISMATCH
+E         + SAME_FACE_TIE_NORMAL_DISAGREEMENT
+
+tests\test_wall_mesh_binding.py:254: AssertionError
+- generated xml file: C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261004\wall_mesh_binding\v3_run\junit.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_wall_mesh_binding.py::test_reversed_parent_triangle_normal_is_unknown
+======================== 1 failed, 23 passed in 1.68s =========================

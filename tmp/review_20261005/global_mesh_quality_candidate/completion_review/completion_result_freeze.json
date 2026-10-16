@@ -1,0 +1,120 @@
+{
+  "run_id": "run02_v2bugfix",
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "status": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "original_run02_status": "UNKNOWN_OR_FAIL; preserved without modification",
+  "original_run02_receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "original_run02_receipt_sha256_after": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "saved_candidate_npz_sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "saved_candidate_npz_sha256_after": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+  "source_freeze_sha256": "dac12c0531dacdaa1d9d52e16c130ea1a311f2c4058acb7171fc6854f71667e3",
+  "actual_child_exit_code": 0,
+  "actual_child_exit_code_source": "System.Diagnostics.Process.ExitCode captured after WaitForExit",
+  "timed_out": false,
+  "runner_elapsed_seconds": 6.131161,
+  "readback_elapsed_seconds": 5.7643027999438345,
+  "execution_cap_seconds": 120.0,
+  "source_hashes_unchanged": true,
+  "immutable_hashes_unchanged": true,
+  "source_freeze_unchanged": true,
+  "python_runtime_unchanged": true,
+  "focused_checks": {
+    "passed": 29,
+    "total": 29,
+    "result": true
+  },
+  "global_quality": {
+    "input_minimum_Q": 0.08488545669419832,
+    "candidate_minimum_Q": 0.08488545669419845,
+    "input_maximum_aspect": 20.38001624709626,
+    "candidate_maximum_aspect": 20.380016247096233,
+    "strict_improvement_magnitude_Q": 1.249000902703301E-16,
+    "strict_improvement_magnitude_aspect": 2.842170943040401E-14,
+    "near_floating_point_tie_caveat": true
+  },
+  "floor_quality": {
+    "input_minimum_Q": 0.08488545669419832,
+    "candidate_minimum_Q": 0.6407401783487409,
+    "input_maximum_aspect": 20.38001624709626,
+    "candidate_maximum_aspect": 2.8688104625143938
+  },
+  "nonfloor_quality": {
+    "face_count": 36960,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+    "maximum_edge_mm": 17.000000000000004,
+    "minimum_Q": 0.08488545669419845,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "lineage": {
+    "output_floor_faces": 2912,
+    "total_patch_records": 8200,
+    "actual_parent_patch_count_max_per_output_face": 22,
+    "per_output_face_cap": 128,
+    "cap_pass": true,
+    "source_area_coverage_max_residual_mm2": 3.552713678800501E-14,
+    "pairwise_overlap_max_area_mm2": 0.0
+  },
+  "png_hashes": {
+    "floor_equal_aspect_actual_mesh.png": {
+      "bytes": 625400,
+      "sha256": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    "global_equal_aspect_actual_mesh.png": {
+      "bytes": 513107,
+      "sha256": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc"
+    }
+  },
+  "candidate_generation_invoked": false,
+  "candidate_main_invoked": false,
+  "cad_or_solver_invoked": false,
+  "production_promotion": false,
+  "interpretation": "Analytic fixture geometric triangle quality only; no tet quality, solver h, mechanics, fracture, or material qualification.",
+  "files": [
+    {
+      "path": "checks.json",
+      "bytes": 7264,
+      "sha256": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173"
+    },
+    {
+      "path": "completion_manifest.json",
+      "bytes": 6508,
+      "sha256": "e76c6538dd303bbbd6e05185059966d634b43e3827d31882d0ad1d25a51d2932"
+    },
+    {
+      "path": "execution_receipt.json",
+      "bytes": 12663,
+      "sha256": "c716e507e3ec4eb66bfe6b5c73bed4e301b475ab8ec029cdc4299197deb0173b"
+    },
+    {
+      "path": "floor_equal_aspect_actual_mesh.png",
+      "bytes": 625400,
+      "sha256": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    {
+      "path": "global_equal_aspect_actual_mesh.png",
+      "bytes": 513107,
+      "sha256": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc"
+    },
+    {
+      "path": "readback_receipt.json",
+      "bytes": 1110,
+      "sha256": "0a7412cdf44f1e40b644de298fdf35797cbb05883933e0e8fa2f07f9e4ac5843"
+    },
+    {
+      "path": "runner_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runner_stdout.txt",
+      "bytes": 99,
+      "sha256": "1e0262a6040871b40580ba0002ee74cdb8fac9302bd240e70b813124cf2487d5"
+    },
+    {
+      "path": ".matplotlib\\fontlist-v3.11.0.json",
+      "bytes": 149919,
+      "sha256": "2c26592ea4406227fc04529acbf98976849c32c76f3b09dede409ab4115a33c9"
+    }
+  ]
+}

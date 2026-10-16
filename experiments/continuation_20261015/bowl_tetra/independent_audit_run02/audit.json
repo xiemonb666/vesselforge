@@ -1,0 +1,226 @@
+{
+  "schema": "vesselforge.independent_tetra_audit.v1",
+  "status": "PASS",
+  "counts": {
+    "nodes": 1212,
+    "referenced_nodes": 1212,
+    "unused_nodes": 0,
+    "tetrahedra": 4342,
+    "unique_faces": 9630,
+    "one_parent_boundary_faces": 1892,
+    "two_parent_internal_faces": 7738,
+    "cross_partition_faces": 158,
+    "partitions": 2,
+    "mesh_connected_components": 1
+  },
+  "checks": {
+    "finite_coordinates": true,
+    "positive_oriented_non_degenerate_tetrahedra": true,
+    "unique_tetrahedra": true,
+    "all_face_incidence_at_most_two": true,
+    "two_parent_face_windings_opposed": true,
+    "connected_tetrahedral_body": true,
+    "interface_matches_all_cross_partition_faces": true,
+    "whole_exterior_closed_oriented_vertex_manifold": true,
+    "partition_boundaries_closed_oriented_vertex_manifold": true,
+    "whole_boundary_volume_matches_cell_volume": true,
+    "partition_boundary_volumes_match_cell_volumes": true,
+    "stored_cell_volumes_match_determinants": true
+  },
+  "volume": {
+    "tetrahedral_volume_m3": 2.5398821979027247e-06,
+    "exterior_boundary_signed_volume_m3": 2.5398821979027247e-06,
+    "exterior_boundary_relative_error": 0.0,
+    "expected_volume_m3": 2.546784444510125e-06,
+    "analytic_relative_error": 0.002710180919425229,
+    "partition_balance_relative_error": 0.0002992968604717808,
+    "partitions": {
+      "1": {
+        "tetrahedra": 2239,
+        "tetrahedral_volume_m3": 1.269561009567462e-06,
+        "expected_analytic_half_volume_m3": 1.2733922222550625e-06,
+        "analytic_half_volume_relative_error": 0.0030086666312565155,
+        "surface": {
+          "faces": 1116,
+          "vertices": 560,
+          "edges": 1674,
+          "edge_incidence_min": 2,
+          "edge_incidence_max": 2,
+          "edges_with_incidence_other_than_two": 0,
+          "edges_with_inconsistent_direction": 0,
+          "vertex_link_issues": 0,
+          "connected_components": 1,
+          "surface_area_m2": 0.0009021858173268823,
+          "signed_volume_m3": 1.2695610095674623e-06,
+          "closed_oriented_vertex_manifold": true
+        },
+        "boundary_volume_relative_error": 1.667964242897794e-16
+      },
+      "2": {
+        "tetrahedra": 2103,
+        "tetrahedral_volume_m3": 1.2703211883352621e-06,
+        "expected_analytic_half_volume_m3": 1.2733922222550625e-06,
+        "analytic_half_volume_relative_error": 0.0024116952075942753,
+        "surface": {
+          "faces": 1092,
+          "vertices": 548,
+          "edges": 1638,
+          "edge_incidence_min": 2,
+          "edge_incidence_max": 2,
+          "edges_with_incidence_other_than_two": 0,
+          "edges_with_inconsistent_direction": 0,
+          "vertex_link_issues": 0,
+          "connected_components": 1,
+          "surface_area_m2": 0.0009021210991908484,
+          "signed_volume_m3": 1.2703211883352623e-06,
+          "closed_oriented_vertex_manifold": true
+        },
+        "boundary_volume_relative_error": 1.666966108713665e-16
+      }
+    }
+  },
+  "quality": {
+    "signed_volume_m3": {
+      "min": 1.4554268420291254e-10,
+      "median": 5.348364718560614e-10,
+      "p95": 1.061917034014042e-09,
+      "p99": 1.2680621104155323e-09,
+      "max": 1.5240565145206692e-09
+    },
+    "minimum_altitude_m": {
+      "min": 0.0003734658155027814,
+      "median": 0.0010235811705573568,
+      "p95": 0.0014063532060494199,
+      "p99": 0.0015775678392946084,
+      "max": 0.001818800855572454
+    },
+    "maximum_edge_length_m": {
+      "min": 0.0013854865828050484,
+      "median": 0.0023936711896435326,
+      "p95": 0.002774399935512754,
+      "p99": 0.0028848011203968463,
+      "max": 0.003081547686172325
+    },
+    "worst_vertex_edge_matrix_condition": {
+      "min": 2.0684244516748787,
+      "median": 4.071536015055048,
+      "p95": 7.240038518810045,
+      "p99": 10.344092445057953,
+      "max": 13.401862439111381
+    }
+  },
+  "exterior_surface": {
+    "faces": 1892,
+    "vertices": 948,
+    "edges": 2838,
+    "edge_incidence_min": 2,
+    "edge_incidence_max": 2,
+    "edges_with_incidence_other_than_two": 0,
+    "edges_with_inconsistent_direction": 0,
+    "vertex_link_issues": 0,
+    "connected_components": 1,
+    "surface_area_m2": 0.001553060286314105,
+    "signed_volume_m3": 2.5398821979027247e-06,
+    "closed_oriented_vertex_manifold": true
+  },
+  "interface": {
+    "triangles": 158,
+    "unique_nodes": 105,
+    "cross_partition_faces": 158,
+    "parent_pairs_exact": true,
+    "parents_from_distinct_partitions": true,
+    "area_m2": 0.0001256233151018129,
+    "expected_area_m2": 0.00012566370614359174,
+    "relative_area_error": 0.00032142169778678084,
+    "max_abs_x_plane_deviation_m": 2.204291436880279e-18
+  },
+  "geometry_sampling": {
+    "center_m": [
+      0.0,
+      0.0,
+      0.012
+    ],
+    "inner_radius_m": 0.008,
+    "outer_radius_m": 0.012,
+    "tetrahedron_centroids_inside_material": 4342,
+    "tetrahedron_centroids_outside_material": 0,
+    "simplex_barycenter_samples": {
+      "vertices": {
+        "evaluations": 1212,
+        "inside_material": 1212,
+        "outside_material": 0,
+        "minimum_inner_radial_clearance_m": -5.204170427930421e-18,
+        "maximum_outer_radial_clearance_m": 0.004000000000000005
+      },
+      "unique_edge_midpoints": {
+        "evaluations": 6499,
+        "inside_material": 5727,
+        "outside_material": 772,
+        "minimum_inner_radial_clearance_m": -6.225205219072792e-05,
+        "maximum_outer_radial_clearance_m": 0.004062252052190728
+      },
+      "unique_face_centroids": {
+        "evaluations": 9630,
+        "inside_material": 9127,
+        "outside_material": 503,
+        "minimum_inner_radial_clearance_m": -6.455904974451802e-05,
+        "maximum_outer_radial_clearance_m": 0.004064559049744518
+      },
+      "tetrahedron_centroids": {
+        "evaluations": 4342,
+        "inside_material": 4342,
+        "outside_material": 0,
+        "minimum_inner_radial_clearance_m": 0.00018862503122508457,
+        "maximum_outer_radial_clearance_m": 0.0038113749687749155
+      }
+    },
+    "inner_spherical_boundary_chord_sampling": {
+      "inner_radius_boundary_triangles": 503,
+      "barycentric_grid_subdivisions_per_edge": 10,
+      "sample_evaluations_including_face_edge_repeats": 33198,
+      "samples_inside_analytic_cavity": 32260,
+      "maximum_sampled_radial_intrusion_m": 6.641378640541429e-05,
+      "maximum_sampled_radial_intrusion_mm": 0.06641378640541429
+    },
+    "continuous_global_containment_certified": false,
+    "sampling_note": "Finite simplex barycenters and a fixed barycentric lattice on detected inner-radius boundary triangles. Repeated edge samples occur once per incident triangle; these measure linear-chord intrusion but do not bound the continuous maximum."
+  },
+  "input": {
+    "mesh_npz": {
+      "path": "run02/mesh/mesh.npz",
+      "sha256": "690d3128887277c3686713e48220c815931b9a25529887b52c191ca766eb7151"
+    },
+    "mesh_msh": {
+      "path": "run02/mesh/mesh.msh",
+      "sha256": "09a998802881bea5227c50ea67c2e3042e5d533193e9212a757085a4e678b97d"
+    },
+    "source_result_json": {
+      "path": "run02/mesh/result.json",
+      "sha256": "7109d7f0adfd09e47be06dc0360dd2468f1d5f508cf8ed7b35a97014e2ffa567"
+    },
+    "gmsh_version": "4.15.2",
+    "unit_conversion": "Geometry.OCCTargetUnit=M at import; no post-import geometric dilation"
+  },
+  "audit_implementation": {
+    "module": {
+      "path": "src/vesselforge/tetra_audit.py",
+      "sha256": "05c85673bb1f87077da20e40b2fb98b5ef045f83ea46dd17db1f04c1a73bf720"
+    },
+    "tests": {
+      "path": "tests/test_tetra_audit.py",
+      "sha256": "0d483164f9ca465b1b9d0116384e4d89835594620c29fa8628b4b5f734ff4e67"
+    }
+  },
+  "audit_scope": [
+    "Recomputed tetrahedron orientation, volume, heights, and edge-matrix condition from nodes and connectivity.",
+    "Rebuilt complete canonical T4 face incidence and checked parent count and shared-face winding.",
+    "Matched every declared interface triangle and two-cell parent pair against cross-partition faces.",
+    "Checked the exterior and each partition boundary for edge closure, directed-edge cancellation, connected vertex links, and signed boundary volume.",
+    "Compared total and half-partition volume and interface area against the analytic hemispherical-bowl values.",
+    "Measured finite point-sample behavior on linear inner-radius boundary triangles; this does not certify continuous global containment."
+  ],
+  "limitations": [
+    "Linear tetrahedral faces approximate curved CAD surfaces. The inner-sphere chord samples enter the analytic cavity; the reported intrusion is the maximum found on a fixed finite sample lattice, not a continuous maximum.",
+    "This is a geometry and mesh audit only. It does not model fracture, debris, dynamics, calibrated material response, or qualification."
+  ]
+}

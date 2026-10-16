@@ -1,0 +1,40 @@
+{
+  "schema": "vesselforge.whole_body_c3_independent_review_final.v1",
+  "status": "NARROW_MATH_READY_FOR_ROOT_AUTHORIZED_RUN",
+  "prior_blocker": "OUTPUT_ROOT_ESCAPES_WORKSPACE",
+  "prior_blocker_resolution": {
+    "only_source_change_reviewed": "REPO_ROOT = HERE.parents[3] -> HERE.parents[2]",
+    "output_root": "ShardForge/tmp/review_20261006/whole_body_c2_profiles_20261006/fixed_outer_trial",
+    "driver_sha256": "d1d327f298dad639e0529edf45d4a5d4c6a6fe6b7cf7ac2773a3fcd48adb66a7",
+    "freeze_manifest_sha256": "4905c92d580aadd0b92d861d88fb49ab2d57ce680fbdf314ad1b47f8b8be775d"
+  },
+  "unchanged_pins_verified": {
+    "profile_design.py": "057233b930a2b8e0e3ef43a3568f1cb0e6e972baed97eeeeceb6459d9de8c951",
+    "fixed_cases.json": "e1e9c3cf659dbc59d99a18c4b70694201518be4f3aba09a57806402e732cf95a",
+    "DESIGN_PROPOSAL.md": "8b5c8b7e78c8d2e245f9ade1498e3dd3c5f69b0a7a82eaf593e3ea49b1b7dbbf",
+    "CONTROL_HULL_DESIGN.md": "9fab758e2bc43926f6fe2e82b8ee6b65e4d3fdbaebbca8da84e29f5feb0f4a2b",
+    "REVIEW_PLAN.md": "734be4d98d9aabc3e30e3385506a64b28cf31a376dd34e91d1b1e6538376811e"
+  },
+  "static_math_findings": {
+    "arbitrary_parameter_curvature_formula": "CORRECT",
+    "C_second_derivative_tangential_term": "PRESENT",
+    "jet_units": {"d1": "dimensionless", "d2": "1/mm", "d3": "1/mm^2"},
+    "normal_offset_factor": "1 - t*kappa",
+    "exact_offset_c2_seam_condition": "regular curve and matching curvature derivative for constant t",
+    "driver_bound_method": "STATICALLY ACCEPTED; no numerical evaluation performed",
+    "full_span_curvature_values": "NOT_EVALUATED",
+    "global_minimum_wall_and_nonintersection": "UNKNOWN",
+    "inner_profile": "NOT_CONSTRUCTED_SOURCE_ONLY"
+  },
+  "fixed_check_scope": {
+    "outer_spans": 16,
+    "profile_sites": 128,
+    "offset_point_probes": 16,
+    "total": 144,
+    "ceiling": 256,
+    "candidate_bbox_heights_mm": {"bowl": 92, "jar": 122},
+    "catalog_mouth_body_datums_mm": {"bowl": 90, "jar": 120}
+  },
+  "review_execution": "NO_CURVE_CONSTRUCTION_OR_SAMPLING; NO_CAD_OR_STEP; NO_SOLVER",
+  "physical_qualification": "NOT_CLAIMED"
+}

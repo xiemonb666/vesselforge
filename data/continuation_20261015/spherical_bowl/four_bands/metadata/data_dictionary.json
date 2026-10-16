@@ -1,0 +1,69 @@
+{
+  "fields": {
+    "fields/surface.npz:albedo_linear_rgb": {
+      "dtype": "float32",
+      "meaning": "paint values sampled at triangle rest-coordinate centroids",
+      "shape": "F×3"
+    },
+    "fields/surface.npz:face_region": {
+      "dtype": "uint8",
+      "meaning": "semantic region projected through triangle-to-face lineage",
+      "region_codes": {
+        "1": "body_outer",
+        "2": "body_inner",
+        "3": "natural_rim",
+        "4": "base",
+        "5": "handle"
+      },
+      "shape": "F"
+    },
+    "fields/surface.npz:vertices_material_xyz_mm": {
+      "dtype": "float64",
+      "meaning": "immutable source-mother rest coordinates for continuous paint re-evaluation",
+      "shape": "N×3"
+    },
+    "geometry/mesh_lineage.npz:face_source_brep_index": {
+      "dtype": "int32",
+      "meaning": "canonical STEP face index for each triangle",
+      "shape": "F"
+    },
+    "geometry/surface.npz:faces": {
+      "dtype": "int32",
+      "meaning": "oriented triangle indices",
+      "shape": "F×3"
+    },
+    "geometry/surface.npz:vertices_mm": {
+      "dtype": "float64",
+      "meaning": "canonical STEP surface vertex in millimetres",
+      "shape": "N×3"
+    },
+    "material.mechanics": {
+      "validity": "illustrative UNVALIDATED_PROTOTYPE placeholders; not experimental calibration"
+    },
+    "metadata/face_semantics.json:faces": {
+      "meaning": "auditable outer sphere, inner sphere, and annular-rim classifications bound to the STEP SHA-256"
+    },
+    "ornament.recipe": {
+      "geometry_relief_mm": 0.0,
+      "historical_style_validation": "NOT_VALIDATED",
+      "meaning": "continuous deterministic painted bands evaluated from rest-coordinate Z"
+    },
+    "solver_points": {
+      "meaning": "generated separately by generate_solver_points; centroid lattice with h-cubed approximate volume; accepted cells are not claimed fully inside"
+    }
+  },
+  "frame": "right_handed_z_up",
+  "missing_evidence": {
+    "historical_style": "not matched to a dated/provenanced specimen",
+    "impact_fracture": "outside this geometry-only package",
+    "material_calibration": "no specimen-specific tests"
+  },
+  "parameters": "see manifest.provenance.spec",
+  "schema": "forge.asset.v1",
+  "units": {
+    "length": "mm",
+    "mass": "kg",
+    "time": "s"
+  },
+  "validity": "analytic geometry and procedural paint only; no specimen calibration or historical style validation"
+}

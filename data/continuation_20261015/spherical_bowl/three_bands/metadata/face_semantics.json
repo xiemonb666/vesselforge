@@ -1,0 +1,148 @@
+{
+  "backend": {
+    "cadquery_version": "2.8.0",
+    "ocp_distribution_version": "7.9.3.1.1",
+    "ocp_module_version": "7.9.3.1"
+  },
+  "canonical_step_face_count": 3,
+  "canonical_step_sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c",
+  "classifier": "vf.canonical-step-face-semantics/1.1.0-spherical-bowl",
+  "counts": {
+    "body_inner": 1,
+    "body_outer": 1,
+    "natural_rim": 1
+  },
+  "faces": [
+    {
+      "canonical_step_sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c",
+      "classification_basis": "sphere radius matches outer radius and oriented normal points away from the common center",
+      "classification_evidence": {
+        "radial_normal_dot_mm": 12.000000000000002
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.1.0-spherical-bowl",
+      "face_area_mm2": 904.7786842337069,
+      "face_index_zero_based": 0,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          -0.7071067811865108,
+          8.659560562354484e-17,
+          -0.7071067811865843
+        ],
+        "point_mm": [
+          -8.485281374238134,
+          1.0391472674825382e-15,
+          3.514718625760988
+        ],
+        "u": 3.141592653589793,
+        "uv_state": "IN_OR_ON",
+        "v": -0.7853981633975002
+      },
+      "reason": null,
+      "region_code": 1,
+      "region_name": "body_outer",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "center_xyz_mm": [
+          -3.996802888651e-15,
+          0.0,
+          12.0
+        ],
+        "radius_mm": 12.0
+      },
+      "surface_type": "sphere"
+    },
+    {
+      "canonical_step_sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c",
+      "classification_basis": "open horizontal annular rim at the declared sphere center height with outward normal +Z",
+      "classification_evidence": {
+        "normal_z": 1.0,
+        "rim_z_mm": 12.0
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.1.0-spherical-bowl",
+      "face_area_mm2": 251.3274122871836,
+      "face_index_zero_based": 1,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "point_mm": [
+          -6.0,
+          -6.0,
+          12.0
+        ],
+        "u": -6.0,
+        "uv_state": "IN_OR_ON",
+        "v": -6.0
+      },
+      "reason": null,
+      "region_code": 3,
+      "region_name": "natural_rim",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "normal_xyz": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_xyz_mm": [
+          0.0,
+          0.0,
+          12.0
+        ]
+      },
+      "surface_type": "plane"
+    },
+    {
+      "canonical_step_sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c",
+      "classification_basis": "sphere radius matches inner radius and oriented normal points toward the common center",
+      "classification_evidence": {
+        "radial_normal_dot_mm": -8.0
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.1.0-spherical-bowl",
+      "face_area_mm2": 402.1238596595199,
+      "face_index_zero_based": 2,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          0.7071067811865476,
+          1.4641921275495138e-13,
+          0.7071067811865475
+        ],
+        "point_mm": [
+          -5.656854249492384,
+          -1.1713537020396113e-12,
+          6.34314575050762
+        ],
+        "u": 3.141592653589586,
+        "uv_state": "IN_OR_ON",
+        "v": 0.7853981633974482
+      },
+      "reason": null,
+      "region_code": 2,
+      "region_name": "body_inner",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "center_xyz_mm": [
+          -3.10862446895e-15,
+          0.0,
+          12.0
+        ],
+        "radius_mm": 8.0
+      },
+      "surface_type": "sphere"
+    }
+  ],
+  "fracture_reserve_code": 255,
+  "region_codes": {
+    "1": "body_outer",
+    "2": "body_inner",
+    "3": "natural_rim",
+    "4": "base",
+    "5": "handle"
+  },
+  "schema": "vf.brep-face-semantics.v1",
+  "status": "PASS",
+  "unknown_blocks_coloring_and_generation": true,
+  "unknown_face_indices": []
+}

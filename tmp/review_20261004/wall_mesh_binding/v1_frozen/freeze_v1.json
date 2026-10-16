@@ -1,0 +1,27 @@
+{
+  "schema": "vf.wall-mesh-binding-review-freeze.v1",
+  "frozen_at_utc": "2026-10-04",
+  "status": "SOURCE_FROZEN_PENDING_PARENT_REVIEW",
+  "execution": {
+    "pytest": "NOT_RUN",
+    "cad_or_step": "NOT_RUN",
+    "boolean": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED"
+  },
+  "owned_artifacts": {
+    "helper": "516b2a1d3c6956aadd83485beb0c272b2df56a3c30cb578040849312b7341e9d",
+    "tests": "db4f9c7abbb2e045086fbde5ba79fd04adccef58cea952926e436defcd48d1d7",
+    "fixture_input": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "implementation_plan": "b609dd97d1274cfe558aa4f811a0ed493e0622e1f240c65b18f4ad2edf7268a3",
+    "runner_source": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+  },
+  "frozen_dependencies": {
+    "asset_py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry_py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema_py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics_py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference_py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+  },
+  "note": "freeze.json excludes its own hash; input and source hashes are byte SHA-256."
+}

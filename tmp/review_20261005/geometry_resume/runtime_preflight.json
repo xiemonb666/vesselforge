@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "stdout": "runtime_preflight.stdout.txt",
+  "stderr": "runtime_preflight.stderr.txt",
+  "runtime_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "runtime_exe_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7"
+}

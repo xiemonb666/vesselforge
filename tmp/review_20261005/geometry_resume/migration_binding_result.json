@@ -1,0 +1,272 @@
+{
+  "asset_validation": {
+    "canonical_brep_face_count": 4,
+    "contract_status": "PASS",
+    "file_count": 7,
+    "geometry_status": "PASS",
+    "historical_style_validation": "NOT_VALIDATED",
+    "mechanics_calibration_status": "UNVALIDATED_PROTOTYPE",
+    "region_codes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "schema": "forge.asset.v1",
+    "triangle_count": 1264,
+    "vertex_count": 632
+  },
+  "binding_result": {
+    "aggregation_scope": "internal_station_status_aggregation_only_not_external_source_authentication",
+    "brep_face_bounds_policy": {
+      "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+      "bounds_order": [
+        "xmin",
+        "xmax",
+        "ymin",
+        "ymax",
+        "zmin",
+        "zmax"
+      ],
+      "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+      "units": "mm",
+      "use_shape_tolerance": false,
+      "use_triangulation": false
+    },
+    "brep_face_bounds_policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+    "canonical_step_backend": {
+      "cadquery_version": "2.8.0",
+      "ocp_distribution_version": "7.9.3.1.1",
+      "ocp_module_version": "7.9.3.1"
+    },
+    "canonical_step_face_count": 4,
+    "coverage": {
+      "coverage_semantics": "finite wall-reference station mapping fraction; not area coverage",
+      "station_mapping_fraction": 1.0,
+      "stations_bound": 2,
+      "stations_requested": 2
+    },
+    "frame": "right_handed_z_up",
+    "input_file_sha256": {
+      "canonical_step_file_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "face_semantics_file_sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+      "parent_lineage_file_sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+      "parent_surface_file_sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+      "wall_reference_file_sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    "parent_mesh_content_sha256": "f5163e0c1ac1018e227d3f47e4ae227a6265dca7bec0524ccdad3aa01b66220e",
+    "parent_triangle_count": 1264,
+    "parent_vertex_count": 632,
+    "qualification": {
+      "fragment_mapping_status": "UNAVAILABLE",
+      "global_minimum_wall_claim": false,
+      "global_minimum_wall_status": "NOT_ESTABLISHED",
+      "global_wall_status": "UNVERIFIED",
+      "mesh_binding_status": "PASS_MOTHER_STATION_BINDING",
+      "physical_qualification_status": "UNKNOWN",
+      "physics_claim": false,
+      "physics_status": "NOT_ASSESSED",
+      "stage_2_fragment_lineage_status": "UNIMPLEMENTED"
+    },
+    "reason": null,
+    "schema": "vf.wall-mesh-binding.v1",
+    "source_scope": "analytic_fixture_mother",
+    "stations": [
+      {
+        "mesh_station_point_mm": [
+          -9.99999999999996,
+          -2.0698701152310253e-12,
+          5.0
+        ],
+        "nearest_other_face_distance_mm": 2.0,
+        "nearest_other_face_index": 1,
+        "normal_angle_error_rad": 0.019883497807324138,
+        "outward_from_material": [
+          -1.0,
+          -2.070680364700439e-13,
+          0.0
+        ],
+        "parent_triangle_barycentric": [
+          0.49999999999484646,
+          5.153596326394572e-12,
+          0.5
+        ],
+        "parent_triangle_index": 157,
+        "same_face_tie_triangle_indices": [
+          157,
+          158
+        ],
+        "source_wall_face_index_zero_based": 0,
+        "station_id": "wr1-5c68bbc29b2b0bc6-outer-f00000",
+        "station_projection_error_mm": 4.08642408427019e-14,
+        "status": "BOUND",
+        "step_normal_recheck_error_rad": 0.0,
+        "step_point_mm": [
+          -10.0,
+          -2.070680364700439e-12,
+          5.0
+        ],
+        "step_point_recheck_error_mm": 0.0,
+        "trimmed_uv_state": "IN",
+        "u": 3.141592653589586,
+        "v": -5.0,
+        "wall_role": "outer"
+      },
+      {
+        "mesh_station_point_mm": [
+          -7.999999999999967,
+          -1.65589609218482e-12,
+          5.0
+        ],
+        "nearest_other_face_distance_mm": 1.9996046595400978,
+        "nearest_other_face_index": 0,
+        "normal_angle_error_rad": 0.019883497807324138,
+        "outward_from_material": [
+          1.0,
+          2.0706803647004391e-13,
+          -0.0
+        ],
+        "parent_triangle_barycentric": [
+          0.49999999999484634,
+          0.5,
+          5.153596326394571e-12
+        ],
+        "parent_triangle_index": 473,
+        "same_face_tie_triangle_indices": [
+          473,
+          474
+        ],
+        "source_wall_face_index_zero_based": 1,
+        "station_id": "wr1-5c68bbc29b2b0bc6-inner-f00001",
+        "station_projection_error_mm": 3.1105684890236367e-14,
+        "status": "BOUND",
+        "step_normal_recheck_error_rad": 0.0,
+        "step_point_mm": [
+          -8.0,
+          -1.6565442917603513e-12,
+          5.0
+        ],
+        "step_point_recheck_error_mm": 0.0,
+        "trimmed_uv_state": "IN",
+        "u": 3.141592653589586,
+        "v": -5.0,
+        "wall_role": "inner"
+      }
+    ],
+    "status": "PASS_MOTHER_STATION_BINDING",
+    "tolerances": {
+      "ambiguity_tolerance_mm": 0.05001010000000001,
+      "cad_numeric_angle_tolerance_rad": 1e-07,
+      "cad_numeric_tolerance_mm": 1e-07,
+      "linear_projection_limit_mm": 0.05001010000000001,
+      "normal_angle_limit_rad": 0.16,
+      "normal_angle_limit_semantics": "predeclared local acceptance threshold derived from source angular deflection; each station's measured normal_angle_error_rad is reported separately; this threshold is not a measured error or global error bound",
+      "normal_angle_policy_basis": "min(15 degrees, max(5 degrees, 2 * source angular deflection))",
+      "normal_angle_policy_id": "vf.wall-mesh-binding.normal-angle/2x-deflection-5deg-floor-15deg-cap/v1",
+      "target_angular_deflection_rad": 0.08,
+      "target_linear_deflection_mm": 0.05,
+      "tie_tolerance_mm": 1e-05,
+      "weld_tolerance_mm": 5e-06,
+      "weld_tolerance_rule": "geometry.mesh_shape:min(1e-5_mm,linear_deflection_mm*1e-4)/v1"
+    },
+    "units": {
+      "direction": "dimensionless",
+      "length": "mm"
+    },
+    "wall_reference_validation": {
+      "errors": [],
+      "status": "VALID"
+    }
+  },
+  "bounds_policy": {
+    "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+    "bounds_order": [
+      "xmin",
+      "xmax",
+      "ymin",
+      "ymax",
+      "zmin",
+      "zmax"
+    ],
+    "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+    "units": "mm",
+    "use_shape_tolerance": false,
+    "use_triangulation": false
+  },
+  "destination_asset_relative_path": "tmp/review_20261005/geometry_resume/migration_copy/cylinder_asset_run01",
+  "destination_manifest_sha256": "df781dc6c818512af8d66b164288aa0d5991097ea0166b85556119de2c9fba41",
+  "destination_payloads_sha256": {
+    "fields/surface_fields.npz": {
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    "geometry/mesh_lineage.npz": {
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    "geometry/solid.step": {
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    "geometry/surface.npz": {
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    "metadata/face_semantics.json": {
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    "metadata/wall_reference.json": {
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    "validation/geometry.json": {
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  },
+  "expected_step_imports": 2,
+  "mesh_calls": 0,
+  "native_geometry_rebuilds": 0,
+  "original_source_modified": false,
+  "original_v4_run_requalified": false,
+  "payload_bytes_preserved": true,
+  "reason": null,
+  "result_written_at_utc": "2026-10-04T23:43:48.215313+00:00",
+  "schema": "vf.asset-identity-migration-result.v1",
+  "source_asset_relative_path": "tmp/review_20261004/wall_mesh_binding/v4_run/cylinder_asset_run01",
+  "source_manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+  "source_payloads_sha256": {
+    "fields/surface_fields.npz": {
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    "geometry/mesh_lineage.npz": {
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    "geometry/solid.step": {
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    "geometry/surface.npz": {
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    "metadata/face_semantics.json": {
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    "metadata/wall_reference.json": {
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    "validation/geometry.json": {
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  },
+  "status": "PASS_MOTHER_STATION_BINDING",
+  "step_exports": 0,
+  "step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+}

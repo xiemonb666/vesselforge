@@ -1,0 +1,12 @@
+{
+  "schema": "vesselforge.process_watchdog.v1",
+  "status": "EXITED_NONZERO",
+  "process_id": 7216,
+  "exit_code": 1,
+  "wall_time_s": 5.182,
+  "sampled_peak_working_set_bytes": 4382720,
+  "process_memory_measurement": "Process.PeakWorkingSet64 sampled every 0.5 s; transient sub-sample peaks may be missed",
+  "limit_reason": null,
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run02_stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run02_stderr.txt"
+}

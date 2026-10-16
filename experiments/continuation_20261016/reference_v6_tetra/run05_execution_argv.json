@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run05_witness_mesh.py"
+  ],
+  "driver_sha256": "a8ea720376e7e45000417c5b56288cf3bfe5e63fe281b456bca1d762587886dd",
+  "frozen_code_sha256": {
+    "face_witness.py": "20295b2ddb317ebec512ae9ce49e69c6fab8d097b8669071ff1ecd86a06a78cf",
+    "named_step.py": "f49ada5adf889cb980442ebdf40e58c7f65f05907bc4d2958a477c75316e115e",
+    "revolved_profile.py": "68cdec53d4633dd01903d5a22025a4c6283dc9f3a41293092c579507128ec206",
+    "run05_witness_mesh.py": "a8ea720376e7e45000417c5b56288cf3bfe5e63fe281b456bca1d762587886dd",
+    "step_partition.py": "20c20204cd97b6ccfc4b187187543436ab07c2b0c2a27422feac2bb2290e0cc6",
+    "test_face_witness.py": "fad34829ce0bd7b3deea7503c19b37c17ac04a36b0e773e437542ed849c63a82",
+    "test_named_step.py": "cdaf2b198a9c85fed7a63a67803e74a1231af29330f09788a74b376f3a2c4b58",
+    "test_step_partition.py": "e0b58e95b7c42b09c064c21cce8df394b8a1edd4e8409c67a73c49dce669b19d",
+    "tetra_audit.py": "05c85673bb1f87077da20e40b2fb98b5ef045f83ea46dd17db1f04c1a73bf720"
+  },
+  "preflight_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run05_prelaunch_preflight.json",
+  "preflight_sha256": "03d68b66230d677535ebcb189ed5fedbb8c24a45a75b19b2fb5574ff8d63651f",
+  "prepared_utc": "2026-10-16T16:41:12.379393+08:00",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run05_stderr.txt",
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run05_stdout.txt",
+  "timeout_s": 120,
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_utc": "2026-10-16T08:41:41.6972525+00:00"
+}

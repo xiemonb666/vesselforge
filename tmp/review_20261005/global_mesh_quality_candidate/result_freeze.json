@@ -1,0 +1,189 @@
+{
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "result_status": "RUN01_UNKNOWN_OR_FAIL_COLOR_PROVENANCE_GATE; V2BUGFIX_SOURCE_ONLY_AWAITING_ROOT_REVIEW",
+  "source_freeze": {
+    "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_FREEZE.json",
+    "sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+    "revision_tag": "v2bugfix"
+  },
+  "run01": {
+    "source_freeze_sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+    "status": "UNKNOWN_OR_FAIL",
+    "exit_code": 2,
+    "elapsed_seconds": 2.0152110001072288,
+    "receipt_sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+    "error": "local-B base colors disagree with the frozen continuous field",
+    "failure_evidence_directory": "run01_failure/",
+    "candidate_arrays_written": false,
+    "focused_checks_run": false,
+    "checks_json_written": false,
+    "actual_pngs_written": false,
+    "triangle_quality_metrics_available": false
+  },
+  "source_hashes_match_v2bugfix_freeze": true,
+  "source_hashes_match_run01_snapshot": true,
+  "pinned_input_hashes_before_and_after_run01": [
+    {
+      "name": "run02_fixture_arrays",
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "expected": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "actual": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "match": true
+    },
+    {
+      "name": "local_b_candidate_arrays",
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "expected": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "actual": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "match": true
+    },
+    {
+      "name": "local_b_checks",
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "expected": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "actual": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "match": true
+    },
+    {
+      "name": "ornament_refinement_source",
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "expected": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "actual": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "match": true
+    },
+    {
+      "name": "ornament_case_freeze",
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "expected": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "actual": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "match": true
+    }
+  ],
+  "color_diagnostic": {
+    "path": "run01_failure/color_diagnostic_record.json",
+    "sha256": "da86d166dc43d098f9000d928c73ddb8a2e9e787f722f0ff4c7c5b712b1ecbc9",
+    "read_only": true,
+    "exit_code": 0,
+    "elapsed_seconds": 0.1717344,
+    "outer_color_max_abs_delta_vs_continuous_field": 0.0,
+    "outer_base_table_vs_frozen_baseline_max_abs_delta": 0.0,
+    "outer_base_table_vs_scalar_base_max_abs_delta": 0.5650000000000001,
+    "outer_base_rows_over_1e_12_from_scalar_base": 136
+  },
+  "v2bugfix_execution": "NOT_RUN_PENDING_EXPLICIT_ROOT_APPROVAL",
+  "visual_review": "NOT_AVAILABLE_NO_CANDIDATE_NPZ_OR_ACTUAL_MESH_PNG",
+  "independent_quality_review": "NOT_AVAILABLE_NO_SAVED_CANDIDATE_MESH",
+  "forbidden_claims": "No geometric quality, tetrahedral quality, mechanics, solver, CAD, or production/legacy compatibility conclusion is supported.",
+  "artifacts": [
+    {
+      "path": "color_diagnostic_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "color_diagnostic_stdout.txt",
+      "sha256": "2c27bea4a074e2ad24b3ad6ff0c3eb2fe63077a369eea82f5c063b3fc85d24dc",
+      "bytes": 1544
+    },
+    {
+      "path": "diagnostic_attempt_01_stderr.txt",
+      "sha256": "81c53785131505b33546ee8636a87528b0a8b0c734c7aa01a8ce5935374e6dd2",
+      "bytes": 2535
+    },
+    {
+      "path": "diagnostic_attempt_01_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "generation_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "generation_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run_receipt.json",
+      "sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+      "bytes": 955
+    },
+    {
+      "path": "run01_failure/color_diagnostic_record.json",
+      "sha256": "da86d166dc43d098f9000d928c73ddb8a2e9e787f722f0ff4c7c5b712b1ecbc9",
+      "bytes": 5969
+    },
+    {
+      "path": "run01_failure/color_diagnostic_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run01_failure/color_diagnostic_stdout.txt",
+      "sha256": "2c27bea4a074e2ad24b3ad6ff0c3eb2fe63077a369eea82f5c063b3fc85d24dc",
+      "bytes": 1544
+    },
+    {
+      "path": "run01_failure/diagnostic_attempt_01_stderr.txt",
+      "sha256": "81c53785131505b33546ee8636a87528b0a8b0c734c7aa01a8ce5935374e6dd2",
+      "bytes": 2535
+    },
+    {
+      "path": "run01_failure/diagnostic_attempt_01_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run01_failure/execution_record.json",
+      "sha256": "ae789cfcafe3fb9609e1f32cfffe4909743983b032d1a60492303d1d73af3268",
+      "bytes": 6293
+    },
+    {
+      "path": "run01_failure/generation_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run01_failure/generation_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run01_failure/run_receipt.json",
+      "sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+      "bytes": 955
+    },
+    {
+      "path": "run01_failure/source_snapshot_manifest.json",
+      "sha256": "b53d5ed3c45b6adaaacbd05c73d6f0332fe1f34dc812dfa052811e483df5c7da",
+      "bytes": 3058
+    },
+    {
+      "path": "run01_failure/source_snapshot/candidate_contract.json",
+      "sha256": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "bytes": 6810
+    },
+    {
+      "path": "run01_failure/source_snapshot/candidate.py",
+      "sha256": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "bytes": 33917
+    },
+    {
+      "path": "run01_failure/source_snapshot/focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "bytes": 48948
+    },
+    {
+      "path": "run01_failure/source_snapshot/SOURCE_FREEZE.json",
+      "sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+      "bytes": 2711
+    },
+    {
+      "path": "run01_failure/source_snapshot/SOURCE_REVIEW.md",
+      "sha256": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "bytes": 5009
+    }
+  ]
+}

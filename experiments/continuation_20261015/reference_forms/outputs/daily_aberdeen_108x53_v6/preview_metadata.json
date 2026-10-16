@@ -1,0 +1,14 @@
+{
+  "display_notes": [
+    "Aberdeen City Museums",
+    "H 53 · rim Ø108 · foot Ø31 mm",
+    "Assumed wall 2 mm · foot H 7 mm",
+    "θ 75° · profile controls assumed",
+    "Geometry candidate only · not a scan or reconstruction"
+  ],
+  "geometry_source": "same saved candidate B-rep and meridian section",
+  "projection": "orthographic for side, top, bottom and section; perspective for the lit 3D view",
+  "render_is_measurement": false,
+  "renderer": "VTK 9.6.2 offscreen with surface lighting",
+  "view_count": 5
+}

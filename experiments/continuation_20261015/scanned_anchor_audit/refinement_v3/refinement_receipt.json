@@ -1,0 +1,302 @@
+{
+  "record_type": "one-authorized local paired-triangle scan-artifact derivative; geometry candidate, not physical validation",
+  "source": {
+    "item_url": "https://apsida.cut.ac.cy/items/show/49281",
+    "archive_url": "https://apsida.cut.ac.cy/files/original/529/49281/Footed_Bowl_SHM_17946_0047_Obj06.zip",
+    "identifier": "SHM 17946:0047",
+    "rights": "CC BY-SA 4.0",
+    "attribution": "Medelhavsmuseet, SHM 17946:0047; via Apsida / Digital Heritage Research Lab",
+    "source_obj_sha256": "c03413172398ae5280fae3d1759f505b38bc97a1561e510fcfb4b99d97c57232",
+    "source_zip_sha256": "7977fe145179160eba1f560f09c75302fcbc9c501e2460b7817311b1860fe35b",
+    "raw_geometry_npz_sha256": "f5044bbb781fcead97dfb73d35755caf24fdb8547341757c6fa329dd938671e2",
+    "v1_main_component_receipt_sha256": "08368421fcbe2b921f049321c657262496749411606978c0a186b0e23dbe4a89",
+    "parent_v2_candidate_npz_sha256": "13cb4b7aeb7d6c7c22c057fbba4d3485b91a38ec1298bccaedceca17ae09762b",
+    "source_coordinate_units": "UNKNOWN; no scale applied"
+  },
+  "single_local_change": {
+    "authorization": "Parent-approved one local repair, no further repair if topology still fails.",
+    "v2_candidate_face_indices_zero_based": [
+      119578,
+      119666
+    ],
+    "raw_source_face_indices_zero_based": [
+      125422,
+      125511
+    ],
+    "reason": "After exact XYZ weld, these two triangles have the same three XYZ positions and opposite winding, i.e. an overlapping zero-thickness double patch; together they caused two edge-incidence-4 edges.",
+    "raw_obj_face_vertex_indices": [
+      [
+        63890,
+        63886,
+        63893
+      ],
+      [
+        63890,
+        63933,
+        63886
+      ]
+    ],
+    "v2_canonical_raw_source_vertex_representatives": [
+      [
+        63890,
+        63886,
+        63893
+      ],
+      [
+        63890,
+        63893,
+        63886
+      ]
+    ],
+    "triangle_coordinates_source_units": [
+      [
+        [
+          -0.00166,
+          -0.062618,
+          0.108501
+        ],
+        [
+          -0.001659,
+          -0.062612,
+          0.108612
+        ],
+        [
+          -0.001738,
+          -0.062634,
+          0.108622
+        ]
+      ],
+      [
+        [
+          -0.00166,
+          -0.062618,
+          0.108501
+        ],
+        [
+          -0.001738,
+          -0.062634,
+          0.108622
+        ],
+        [
+          -0.001659,
+          -0.062612,
+          0.108612
+        ]
+      ]
+    ],
+    "triangle_area_source_units2_each": [
+      4.569878253301596e-09,
+      4.569878253301596e-09
+    ],
+    "triangle_signed_volume_contribution_source_units3_each": [
+      9.910209233338215e-11,
+      -9.910209233338215e-11
+    ],
+    "paired_area_removed_source_units2": 9.139756506603192e-09,
+    "paired_signed_volume_sum_source_units3": 0.0,
+    "removed_face_count": 2,
+    "other_faces_removed": 0,
+    "unreferenced_v2_vertices_pruned": 0,
+    "pruned_v2_vertex_ids": [],
+    "holes_filled_or_surfaces_added": 0,
+    "smoothing_or_rescale": false
+  },
+  "topology_before": {
+    "vertex_count_in_file": 321624,
+    "vertex_count_referenced": 321624,
+    "face_count": 643332,
+    "unique_edge_count": 964996,
+    "boundary_edge_count": 0,
+    "nonmanifold_edge_count": 2,
+    "inconsistent_winding_edge_count": 0,
+    "edge_connected_components_including_unused_vertices": 1,
+    "edge_connected_components_of_referenced_mesh": 1,
+    "euler_characteristic_referenced_mesh": -40,
+    "genus_if_closed_oriented_connected_manifold": null,
+    "formal_genus_from_chi_if_assuming_manifold": 21,
+    "exact_zero_area_face_count": 0,
+    "duplicate_unoriented_triangle_group_count": 1,
+    "faces_in_duplicate_unoriented_triangle_groups": 2,
+    "surface_area_source_units2": 0.10360753450427215,
+    "signed_volume_source_units3": 0.00025725761187624796,
+    "bounds_min_xyz_source_units": [
+      -0.027423,
+      -0.086138,
+      0.017478
+    ],
+    "bounds_max_xyz_source_units": [
+      0.133013,
+      0.072108,
+      0.13691
+    ],
+    "bounds_extent_xyz_source_units": [
+      0.160436,
+      0.158246,
+      0.11943200000000001
+    ]
+  },
+  "topology_after": {
+    "vertex_count_in_file": 321624,
+    "vertex_count_referenced": 321624,
+    "face_count": 643330,
+    "unique_edge_count": 964995,
+    "boundary_edge_count": 0,
+    "nonmanifold_edge_count": 0,
+    "inconsistent_winding_edge_count": 0,
+    "edge_connected_components_including_unused_vertices": 1,
+    "edge_connected_components_of_referenced_mesh": 1,
+    "euler_characteristic_referenced_mesh": -41,
+    "genus_if_closed_oriented_connected_manifold": null,
+    "formal_genus_from_chi_if_assuming_manifold": null,
+    "exact_zero_area_face_count": 0,
+    "duplicate_unoriented_triangle_group_count": 0,
+    "faces_in_duplicate_unoriented_triangle_groups": 0,
+    "surface_area_source_units2": 0.10360752536451565,
+    "signed_volume_source_units3": 0.00025725761187624796,
+    "bounds_min_xyz_source_units": [
+      -0.027423,
+      -0.086138,
+      0.017478
+    ],
+    "bounds_max_xyz_source_units": [
+      0.133013,
+      0.072108,
+      0.13691
+    ],
+    "bounds_extent_xyz_source_units": [
+      0.160436,
+      0.158246,
+      0.11943200000000001
+    ],
+    "vertex_link_audit": {
+      "link_graph_node_count": 1929990,
+      "link_graph_connected_components_global": 321631,
+      "vertices_with_multiple_disconnected_link_cycles": 7,
+      "link_nodes_degree_not_2": 0,
+      "vertices_with_bad_degree_nodes": 0,
+      "vertex_manifold_failure_count": 7,
+      "all_vertices_have_one_connected_cycle_link": false,
+      "method": "For each triangle corner, form the corresponding edge of that vertex's link graph; verify each link graph is exactly one connected cycle."
+    }
+  },
+  "comparison": {
+    "vertex_count_delta": 0,
+    "face_count_delta": -2,
+    "euler_characteristic_before": -40,
+    "euler_characteristic_after": -41,
+    "formal_genus_from_chi_before_not_physical": 21,
+    "formal_genus_from_chi_after_not_physical": null,
+    "validated_genus_after": null,
+    "vertex_link_manifold_audit": {
+      "link_graph_node_count": 1929990,
+      "link_graph_connected_components_global": 321631,
+      "vertices_with_multiple_disconnected_link_cycles": 7,
+      "link_nodes_degree_not_2": 0,
+      "vertices_with_bad_degree_nodes": 0,
+      "vertex_manifold_failure_count": 7,
+      "all_vertices_have_one_connected_cycle_link": false,
+      "method": "For each triangle corner, form the corresponding edge of that vertex's link graph; verify each link graph is exactly one connected cycle."
+    },
+    "surface_area_before_source_units2": 0.10360753450427215,
+    "surface_area_after_source_units2": 0.10360752536451565,
+    "surface_area_delta_source_units2": -9.139756507181573e-09,
+    "signed_volume_before_source_units3": 0.00025725761187624796,
+    "signed_volume_after_source_units3": 0.00025725761187624796,
+    "signed_volume_delta_source_units3": 0.0,
+    "volume_within_tolerance": true
+  },
+  "acceptance": {
+    "status": "FAIL_UNQUALIFIED_SCAN_USE_AS_VISUAL_REFERENCE_ONLY",
+    "requirements": {
+      "zero_area_faces_zero": true,
+      "boundary_edges_zero": true,
+      "nonmanifold_edges_zero": true,
+      "inconsistent_winding_edges_zero": true,
+      "one_referenced_component": true,
+      "duplicate_triangles_zero": true,
+      "every_vertex_link_is_one_cycle": false,
+      "signed_volume_within_tolerance": true
+    },
+    "physics_status": "NOT_PHYSICS_QUALIFIED; scan topology alone does not establish material, metrology, completeness, watertight real object, or calibrated units."
+  },
+  "maps": {
+    "file": "SHM17946_0047_localrepair_maps.npz",
+    "raw_vertex_mapping_summary": {
+      "raw_source_vertex_count": 326647,
+      "raw_source_vertex_ids_mapped_to_v3": 321632,
+      "v1_main_component_source_vertex_count": 321632,
+      "all_v1_main_component_source_vertex_ids_mapped": true,
+      "unmapped_raw_vertices": 5015,
+      "note": "Exact-coordinate alias source vertex IDs all map through V2. Unmapped raw vertices belong to the 388 omitted indexed islands; no V3 surface vertices were pruned."
+    },
+    "raw_face_mapping_summary": {
+      "raw_source_face_count": 651814,
+      "mapped_to_v3_candidate_face_count": 643330,
+      "unmapped_face_count": 8484,
+      "unmapped_breakdown": {
+        "v1_omitted_disconnected_island_faces": 8478,
+        "v2_removed_collapsed_zero_area_faces": 4,
+        "v3_removed_opposite_winding_pair_faces": 2
+      }
+    },
+    "contains": [
+      "raw source vertex -> v3 vertex (-1 for omitted islands)",
+      "v2 vertex -> v3 vertex",
+      "v3 vertex -> v2/raw source vertex",
+      "raw source face -> v3 face (-1 for omitted islands, the four v2 collapsed faces, and the two v3 pair faces)",
+      "v2 face -> v3 face (-1 for the two v3 pair faces)",
+      "v3 face -> raw source face",
+      "removed face IDs",
+      "pruned unreferenced v2 vertex IDs"
+    ],
+    "local_change_csv": "local_pair_repair.csv"
+  },
+  "visual_review": {
+    "render_files_sha256": {
+      "localrepair_bottom.png": "bad7b4daf818f85d589bc34d8e79b7787916116d5464bcb3c71653f6a65c17c8",
+      "localrepair_oblique.png": "d0dd0e0bf1c655e56a465c685ee5eb0d2558e976ca3234060477c946744ff809",
+      "localrepair_side.png": "3e8d25bcf2e4e1f3a9bf482a6212f2a10a3dfc3916faca562fccd6ec93be532b",
+      "localrepair_top.png": "430ba34d00585ab273be79202723a3fb15c694a0e2a487f006c693af2785745b",
+      "refined_y_section.png": "605563f72ffe2f6a23a52469cbeaba7b9b3c889ea4c75211d1266d2607a5c381"
+    },
+    "views": {
+      "localrepair_side.png": "orthographic side, full foot and stem",
+      "localrepair_oblique.png": "cavity, body, both handles and foot",
+      "localrepair_top.png": "opening and inner surface",
+      "localrepair_bottom.png": "foot underside",
+      "refined_y_section.png": "actual output mesh Y-center section; not a revolved reconstruction"
+    },
+    "section_y_joined_polyline_count": 1,
+    "point_normals": "Recomputed for rendering only; no coordinate changes.",
+    "vertex_link_anomaly_count": 7,
+    "retained_connected_features": "No handles, rim, foot, stem, cavity, or body parts were masked. Only the explicitly paired triangles above were removed."
+  },
+  "tool_versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "vtk": "9.6.2",
+    "matplotlib": "3.11.2"
+  },
+  "limitations": [
+    "Source OBJ coordinate units are unknown and no scale is baked in. `1 raw unit = 1 m` remains an uncalibrated size hypothesis only.",
+    "CC BY-SA 4.0 source terms apply; preserve attribution and ShareAlike for redistributed derivatives and views.",
+    "A passing topology gate is only a reviewed geometry candidate. It does not assert true wall thickness, native scale, capture completeness, material behavior, or scan metrology.",
+    "The omitted 388 disconnected components remain preserved in the raw source and earlier audit; this derivative does not assert those islands are nonphysical.",
+    "OBJ header says Generated with Agisoft Metashape, but camera/scanner/hardware and exact acquisition workflow are not documented in the model package; do not treat the asset as calibrated scanner metrology.",
+    "Euler values/formal genus are mesh topology diagnostics. High genus / small tunnels may reflect scan or triangulation artifacts and are not evidence for corresponding designed vessel features."
+  ],
+  "derivative_files": {
+    "SHM17946_0047_main_component_localrepair_candidate.obj": {
+      "bytes": 26598038,
+      "sha256": "ecdddfb248e2a25eeda93c4150b8a482fb3bc86b915430419cf3630f4822a14a"
+    },
+    "SHM17946_0047_main_component_localrepair_candidate.npz": {
+      "bytes": 10847269,
+      "sha256": "8e92b6159d7a36a2f23f9c9a3e62c0235895675f47fa6ed7f19e99a0e666d3c3"
+    },
+    "SHM17946_0047_localrepair_maps.npz": {
+      "bytes": 4879291,
+      "sha256": "3e4cbca2249e4d692784f08870b902aab99750c3f08b29869f2fa08aacf1af5f"
+    }
+  }
+}

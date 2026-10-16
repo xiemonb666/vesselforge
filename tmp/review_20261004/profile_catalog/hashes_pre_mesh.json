@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-04T08:28:42.6148419Z",
+  "freeze_runner_exit_code": 0,
+  "frozen_inputs_sha256": "4ef81ae0fa85c424fd64da5631dee333474ed6082b6bb5a1fa2f08d447e1faad",
+  "all_locked_source_hashes_match": true,
+  "files": {
+    "vesselforge/tests/test_profile_catalog.py": "0752755c1e371afa6f5a03db46394d299f9acabc3c1d72dd84911672e2454e2e",
+    "vesselforge/tmp/review_20261004/profile_catalog/run_candidate_meshes.ps1": "e9f001af6596e737cdd970cb67a62aa68fe35a4dcd5cb3a6ac3c389ba99662ac",
+    "vesselforge/pyproject.toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad",
+    "vesselforge/tmp/review_20261004/profile_catalog/mesh_inputs.json": "4ef81ae0fa85c424fd64da5631dee333474ed6082b6bb5a1fa2f08d447e1faad",
+    "third_party/vesselforge-runtime/venv/Scripts/python.exe": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+    "vesselforge/tmp/review_20261004/profile_catalog/run_freeze_candidate_mesh_plan.ps1": "7a0668a5541c99b73e829ae9bc1069bb79b117790c05fa03d5b9bfb55b1a6c65",
+    "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "vesselforge/tmp/review_20261004/profile_catalog/mesh_preflight_receipt.json": "a025e120db17135c34f8f3158e2ed8e0fbe8cccf635c7889ef0db1ca0aad5728",
+    "vesselforge/src/vesselforge/profile_catalog.py": "ff90a8f1c0528d326fc81bb184cc814cfebb38ae91b0ade82e59d09a7b3ef64f",
+    "vesselforge/tmp/review_20261004/profile_catalog/freeze_candidate_mesh_plan.py": "ab99b941470846f9264296daf577e56949456242343e7c0f56d470d2490a49e5",
+    "vesselforge/tmp/review_20261004/profile_catalog/generate_candidate_meshes.py": "fddbd332c8fd804d26c1cb840b962c4d30642717396052914797d6fa354f5886"
+  }
+}

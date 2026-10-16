@@ -1,0 +1,103 @@
+{
+  "argv_sha256": "9fc8ba4acce0fc0eebe34bcec0bb3c71c34660d6aad6a07e7705f3dc16e64f54",
+  "backend": {
+    "cadquery_version": "2.8.0",
+    "ocp_module_version": "7.9.3.1",
+    "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "case_id": "spherical_bowl_three_bands_20261015",
+  "case_sha256": "5f8885d6ce125de75f30b903671cadecc1bc615561c34cfa5c215683e00cb91d",
+  "checks": {
+    "analytic_step_volume_relative_error_below_1e_8": true,
+    "builder_return_validator_contract_pass": true,
+    "expected_mechanics_preserved": true,
+    "legacy_validator_contract_pass": true,
+    "legacy_validator_geometry_pass": true,
+    "one_valid_step_solid_and_closed_shell": true,
+    "output_package_below_32_mib": true,
+    "run_completed_within_60_seconds": true
+  },
+  "elapsed_seconds": 10.031000000000006,
+  "finished_utc": "2026-10-15T04:40:08Z",
+  "independent_analytic_volume": {
+    "analytic_volume_mm3": 2546.7844445101255,
+    "canonical_step_volume_mm3": 2546.784444509635,
+    "formula": "2*pi/3*(outer_radius_mm^3-inner_radius_mm^3)",
+    "inner_radius_mm": 8.0,
+    "outer_radius_mm": 12.0,
+    "relative_error": 1.92663494809776e-13
+  },
+  "limits": {
+    "package_bytes_max": 33554432,
+    "wall_seconds_max": 60
+  },
+  "manifest_sha256": "0b33ba3dc1bdd12c05b65f73c4c570ab6e4b566702dcb5b33958b426e756ee67",
+  "output_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\data\\continuation_20261015\\spherical_bowl\\three_bands",
+  "package_bytes": 4228636,
+  "package_files": [
+    {
+      "bytes": 1680599,
+      "path": "fields/surface.npz",
+      "sha256": "9452d7126510473b6a5ffbf435c9450e6b3f1036651d985278b4e8ceda932d65"
+    },
+    {
+      "bytes": 1246,
+      "path": "geometry/mesh_lineage.npz",
+      "sha256": "e32532c019cf6060393ad45bcbdcbdfcf4a0c8516427b75e1dabcbd394f0b439"
+    },
+    {
+      "bytes": 7151,
+      "path": "geometry/solid.step",
+      "sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c"
+    },
+    {
+      "bytes": 2519080,
+      "path": "geometry/surface.npz",
+      "sha256": "7589a1ca799c6b563c4db34d0a0e7b0ea26ffdd678d45354f794a9b3da073cdf"
+    },
+    {
+      "bytes": 6147,
+      "path": "manifest.json",
+      "sha256": "0b33ba3dc1bdd12c05b65f73c4c570ab6e4b566702dcb5b33958b426e756ee67"
+    },
+    {
+      "bytes": 2487,
+      "path": "metadata/data_dictionary.json",
+      "sha256": "5c36ae1eded7e3d797e8f3b02378d62b6bcc0dd3c9a66c4c4a95db959d576200"
+    },
+    {
+      "bytes": 4369,
+      "path": "metadata/face_semantics.json",
+      "sha256": "8eee0b9d1e871e844b83e6a92e2116440aaa463c300bcf84ad7e2ea3cf06bbfe"
+    },
+    {
+      "bytes": 7557,
+      "path": "validation/geometry.json",
+      "sha256": "b2c66583dd744b19b968b35347d1be21d496f8c9e856df6bc903d1c63467f0c4"
+    }
+  ],
+  "package_validation": {
+    "canonical_brep_face_count": 3,
+    "contract_status": "PASS",
+    "file_count": 7,
+    "geometry_status": "PASS",
+    "historical_style_validation": "NOT_VALIDATED",
+    "mechanics_calibration_status": "UNVALIDATED_PROTOTYPE",
+    "region_codes": [
+      1,
+      2,
+      3
+    ],
+    "schema": "forge.asset.v1",
+    "triangle_count": 204072,
+    "vertex_count": 102038
+  },
+  "runner_sha256": "7e27b35bd333e68d608b0d1616d93125246820aec979eeff0710731b2ad9b328",
+  "schema": "vf.spherical_bowl_execution_receipt.v1",
+  "source_file_count": 13,
+  "source_inventory_after_sha256": "9efc793c528a3388a3883538f59301e289f8022b872cd1515756fb55192911ee",
+  "source_inventory_sha256": "9efc793c528a3388a3883538f59301e289f8022b872cd1515756fb55192911ee",
+  "source_unchanged_during_run": true,
+  "started_utc": "2026-10-15T04:39:58Z",
+  "status": "PASS"
+}

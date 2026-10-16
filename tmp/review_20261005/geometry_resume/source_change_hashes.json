@@ -1,0 +1,75 @@
+{
+  "schema": "vf.geometry_resume.source_change_hashes.v1",
+  "recorded_at_utc": "2026-10-04T19:19:29.2822631Z",
+  "status": "SOURCE_ONLY_TESTS_PASS_MIGRATION_DRAFT_READY_FOR_ROOT_REVIEW",
+  "policy": {
+    "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+    "manifest_field": "provenance.spec.brep_face_bounds_policy",
+    "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+    "use_triangulation": false,
+    "use_shape_tolerance": false,
+    "units": "mm",
+    "bounds_order": [
+      "xmin",
+      "xmax",
+      "ymin",
+      "ymax",
+      "zmin",
+      "zmax"
+    ],
+    "legacy_binding": "UNKNOWN: CANONICAL_BREP_FACE_BOUNDS_POLICY_MISSING_OR_UNSUPPORTED",
+    "tolerance_mm": 1E-07
+  },
+  "changed_files": [
+    {
+      "path": "vesselforge/src/vesselforge/brep_identity.py",
+      "role": "new shared explicit AddOptimal(False,False) policy, strict policy validator, empty/nonfinite/range validation",
+      "bytes": 3834,
+      "sha256": "a59d0056f4d0ff7bb7bf7932750c33dab773ddc0792f3cfe4bae707bfea53c3a"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/asset.py",
+      "role": "producer policy record; explicit bounds for face inventory and global STEP/construction dimensions",
+      "bytes": 20798,
+      "sha256": "015c863f3b3215b60a08a6cb36605b3582b846348abd37dd2f7ed1bca0c32804"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "role": "early legacy policy gate; explicit bounds inventory comparison; result records verified policy",
+      "bytes": 50769,
+      "sha256": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0"
+    },
+    {
+      "path": "vesselforge/tests/test_brep_identity.py",
+      "role": "shared-policy and pre/post triangulation stability regression tests; targeted pytest passed",
+      "bytes": 4698,
+      "sha256": "15e007278abe080b9548459f328b8444249c143c6561decf6924c4b8f0b92297"
+    },
+    {
+      "path": "vesselforge/tests/test_wall_mesh_binding.py",
+      "role": "consumer shared-helper, strict-policy, and legacy UNKNOWN tests; targeted pytest passed",
+      "bytes": 21730,
+      "sha256": "dbb1baefa6dc2a4ea1b62b30fe22c6e22fbc6c51d1739afcae37fae92ad2b2f2"
+    }
+  ],
+  "unchanged_geometry_source": {
+    "path": "vesselforge/src/vesselforge/geometry.py",
+    "bytes": 28698,
+    "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+  },
+  "previous_test_coverage": {
+    "v5_prechange_wall_mesh_binding_sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45",
+    "v5_prechange_asset_sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "v5_prechange_test_wall_mesh_binding_sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072",
+    "v5_unchanged_geometry_sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "recorded_v5_pytest": "39 passed; previous bytes only; not coverage of current source/tests"
+  },
+  "validation": {
+    "ast_parse": "PASS",
+    "pytest": "PASS: 57 tests in test_brep_identity.py and test_wall_mesh_binding.py; see targeted_pytest_receipt.json",
+    "cad_or_native_run": "No native fixture rebuild, STEP export, or production geometry generation. The one authorized bounds diagnostic imported/meshed the preserved STEP once; targeted tests also exercised one synthetic CadQuery shape for cache-stability coverage.",
+    "git": "NOT_USED",
+    "migration": "EXECUTED_ONCE: PASS_MOTHER_STATION_BINDING on copied migration asset; actual Python exit code not captured; see migration_execution_receipt.json"
+  },
+  "compatibility": "forge.asset.v1 remains unchanged; schema.py has no provenance.spec allowlist; additive policy field preserves package-reader compatibility while binding fails closed for undeclared legacy inputs"
+}

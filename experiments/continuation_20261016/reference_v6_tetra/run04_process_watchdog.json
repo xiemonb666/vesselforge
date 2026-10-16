@@ -1,0 +1,14 @@
+{
+  "process_id": 27164,
+  "timeout_s": 120,
+  "elapsed_s": 7.44,
+  "timed_out": false,
+  "exit_code": 1,
+  "started_utc": "2026-10-16T08:29:35.4696295+00:00",
+  "finished_utc": "2026-10-16T08:29:42.9586048+00:00",
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run04_stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run04_stderr.txt",
+  "driver_sha256": "e48ec30ebf93522c8b969f5a99c67ca7f6f74c0d8721854d91861aa978135986",
+  "preflight_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run04_prelaunch_preflight.json",
+  "preflight_sha256": "b94451f72ca392487d9c2c0ba2e973f84ccc27c9eda6378ce3e5d76fac0e48d9"
+}

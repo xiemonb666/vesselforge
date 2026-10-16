@@ -1,0 +1,54 @@
+{
+  "schema": "vesselforge.normal_offset_zprime_fixed_independent_review.v1",
+  "status": "SOURCE_READY",
+  "scope": "static_source_and_metadata_only",
+  "execution_performed": false,
+  "hashes": {
+    "runner": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/run_normal_offset_meridian_zprime_fixed.py",
+      "sha256": "ae91c04bac02e9a057e9f1a099350a34a9cb261d21c5bbd70388f931cb17cd54"
+    },
+    "kernel": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114"
+    },
+    "retry_source_pins": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/source_pins.json",
+      "sha256": "9aee6ad4032434279efebeabf9f1b6be525e4bfd3951c875b7b7d08e2b0b8203"
+    },
+    "failure_source_freeze_manifest": {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/failure_source_freeze/failure_source_freeze_manifest.json",
+      "sha256": "78394f83e773830c23734c41071386cd9bf8e9fdba5fd54b7e3e80ecb5698a00"
+    }
+  },
+  "static_checks": {
+    "runner_diff_only_q_arguments_and_review_directory": true,
+    "all_radius_numerator_calls_use_r_and_zprime": true,
+    "r_control_count": 6,
+    "zprime_control_count": 5,
+    "kernel_Q": "r^2*(rprime^2+zprime^2)-9*zprime^2",
+    "exact_boehm_insertions": 44,
+    "quintic_spans": 12,
+    "shared_node_limit": 64,
+    "depth_limit": 6,
+    "jar_primitive_nonnegative_calls_by_structure": 37,
+    "display_points_per_span": 25,
+    "display_is_certificate": false,
+    "false_fixture_node_limits": [8, 8],
+    "false_fixture_depth_limits": [6, 6],
+    "mixed_or_budget_unresolved_status": "UNKNOWN",
+    "local_axis_nonnegative_requires": ["r>=0", "zprime>=0", "speed>0", "Q>=0"],
+    "global_wall_and_physics": "UNKNOWN"
+  },
+  "integrity": {
+    "retry_pin_hashes_match_disk": true,
+    "failure_manifest_snapshot_hashes_match": true,
+    "old_failure_rc": 2,
+    "old_failure_stderr_bytes": 83,
+    "old_failure_total_persisted_bytes": 2890,
+    "old_failure_result_present": false,
+    "retry_output_directory_isolated": true
+  },
+  "receipt_note": "Receipt status COMPLETE and rc=0 identify successful worker execution, not semantic certificate success; consumers must inspect result.status.",
+  "blockers": []
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "vesselforge.ocp_stubs_wheel_source_evidence/0.1",
+  "package": "cadquery-ocp-stubs",
+  "version": "7.9.3.1.1",
+  "pypi_project_url": "https://pypi.org/project/cadquery-ocp-stubs/7.9.3.1.1/",
+  "pypi_json_url": "https://pypi.org/pypi/cadquery-ocp-stubs/7.9.3.1.1/json",
+  "wheel": {
+    "filename": "cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/6c/de/2a93a7cd47226bdd802674e8a040235ef1a1a4433bbf4d220e21253fe31e/cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl",
+    "platform": "Windows x86_64; pure Python wheel",
+    "bytes": 2899849,
+    "sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359",
+    "pypi_uploaded_utc": "2026-05-28T13:08:56.172575Z",
+    "yanked": false
+  },
+  "installed_runtime": {
+    "distribution": "cadquery-ocp",
+    "version": "7.9.3.1.1",
+    "metadata_path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+    "metadata_sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6",
+    "requires_dist": ["cadquery-ocp-proxy==7.9.3.1.1", "vtk==9.6.2"],
+    "stubs_are_pinned_dependency": false,
+    "description_mentions_optional_stubs": true
+  },
+  "decision": "Download exact matching wheel into this review directory only; do not install or modify runtime. Verify wheel SHA before extracting only selected .pyi files.",
+  "verified_from_primary_pypi": true
+}

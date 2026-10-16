@@ -1,0 +1,30 @@
+{
+  "schema": "vesselforge.profile_catalog.v2_review_freeze/0.1.0",
+  "status": "FROZEN_WAITING_MAIN_REVIEW",
+  "v1_snapshot": "v1_snapshot/",
+  "v1_module_sha256": "ff90a8f1c0528d326fc81bb184cc814cfebb38ae91b0ade82e59d09a7b3ef64f",
+  "v1_test_sha256": "0752755c1e371afa6f5a03db46394d299f9acabc3c1d72dd84911672e2454e2e",
+  "v1_test_result": "14 passed in 1.48s",
+  "v2_module_sha256": "4344283912f4574dd28f3520d04e4b6d5414f37b681b29add7091cd32e44f864",
+  "v2_test_sha256": "e1400b7ddff53a64e3dc31321481a6a2fb9e21efc1c43a4ca363eeb7e514a9dd",
+  "v2_diff_sha256": "9c4fc839a2dbd615dbfcd9caa9fc7cdef9b530618daa642bdbf41b132997337f",
+  "v2_diff_path": "v2.diff",
+  "changes": [
+    "Remove the rejection mouth_radius_mm <= wall declaration; the mouth is the clear inside opening.",
+    "Add jar regression max_radius_mm=60, mouth_diameter_mm=10, wall_thickness_declaration_mm=6; asserts 5 mm inner mouth, 11 mm outer lip, simple profiles/section, and positive signed meridian area."
+  ],
+  "requested_regression": {
+    "wall_thickness_declaration_mm": 6.0,
+    "max_radius_mm": 60.0,
+    "mouth_diameter_mm": 10.0,
+    "expected_outer_lip_radius_mm": 11.0,
+    "expected_inner_mouth_radius_mm": 5.0,
+    "family": "jar"
+  },
+  "pytest": {
+    "previous_v1_pytest_result_preserved": true,
+    "executed": false,
+    "permitted_scope": "vesselforge/tests/test_profile_catalog.py only",
+    "waiting_for_main_review": true
+  }
+}

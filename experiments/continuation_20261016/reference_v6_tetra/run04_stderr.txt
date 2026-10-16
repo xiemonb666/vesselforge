@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\continuation_20261016\reference_v6_tetra\run04_witness_mesh.py", line 793, in <module>
+    main()
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\continuation_20261016\reference_v6_tetra\run04_witness_mesh.py", line 715, in main
+    result = partition_step_at_x(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\src\vesselforge\step_partition.py", line 963, in partition_step_at_x
+    raise error
+ValueError: tetrahedral volume differs from imported CAD volume by more than 1%: 1.125% (tetrahedra=31808, mesh_volume_m3=3.2616566867e-05, cad_volume_m3=3.29877728291e-05, cad_partition_volumes_m3=[1.64938711267528e-05, 1.6493883260964347e-05], forecast=82470)

@@ -1,0 +1,173 @@
+{
+  "face_identity_basis": "unique role + sorted source_segment_indices tuple joined between frozen face_lineage.json and a fresh build_revolved_solid(section.json)",
+  "faces": [
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 0,
+      "role": "base",
+      "source_original_brep_face_id": "original-brep-face-000",
+      "source_original_brep_face_index": 0,
+      "source_segment_indices": [
+        0
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 1,
+      "role": "body_inner",
+      "source_original_brep_face_id": "original-brep-face-001",
+      "source_original_brep_face_index": 1,
+      "source_segment_indices": [
+        1
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 2,
+      "role": "rim",
+      "source_original_brep_face_id": "original-brep-face-002",
+      "source_original_brep_face_index": 2,
+      "source_segment_indices": [
+        2
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 3,
+      "role": "body_outer",
+      "source_original_brep_face_id": "original-brep-face-003",
+      "source_original_brep_face_index": 3,
+      "source_segment_indices": [
+        3
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 4,
+      "role": "body_outer",
+      "source_original_brep_face_id": "original-brep-face-004",
+      "source_original_brep_face_index": 4,
+      "source_segment_indices": [
+        4
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 5,
+      "role": "body_outer",
+      "source_original_brep_face_id": "original-brep-face-005",
+      "source_original_brep_face_index": 5,
+      "source_segment_indices": [
+        5
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 6,
+      "role": "body_outer",
+      "source_original_brep_face_id": "original-brep-face-006",
+      "source_original_brep_face_index": 6,
+      "source_segment_indices": [
+        6
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 7,
+      "role": "body_outer",
+      "source_original_brep_face_id": "original-brep-face-007",
+      "source_original_brep_face_index": 7,
+      "source_segment_indices": [
+        7
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 8,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-008",
+      "source_original_brep_face_index": 8,
+      "source_segment_indices": [
+        8
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 9,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-009",
+      "source_original_brep_face_index": 9,
+      "source_segment_indices": [
+        9
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 10,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-010",
+      "source_original_brep_face_index": 10,
+      "source_segment_indices": [
+        10
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 11,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-011",
+      "source_original_brep_face_index": 11,
+      "source_segment_indices": [
+        11
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 12,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-012",
+      "source_original_brep_face_index": 12,
+      "source_segment_indices": [
+        12
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 13,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-013",
+      "source_original_brep_face_index": 13,
+      "source_segment_indices": [
+        13
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 14,
+      "role": "foot",
+      "source_original_brep_face_id": "original-brep-face-014",
+      "source_original_brep_face_index": 14,
+      "source_segment_indices": [
+        14
+      ]
+    },
+    {
+      "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+      "native_face_index": 15,
+      "role": "base",
+      "source_original_brep_face_id": "original-brep-face-015",
+      "source_original_brep_face_index": 15,
+      "source_segment_indices": [
+        15
+      ]
+    }
+  ],
+  "schema": "vesselforge.daily_native_face_identity.v1",
+  "source_asset_relative_path": "vesselforge\\experiments\\continuation_20261015\\reference_forms\\outputs\\daily_aberdeen_108x53_v6_final",
+  "source_hashes": {
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e"
+  }
+}

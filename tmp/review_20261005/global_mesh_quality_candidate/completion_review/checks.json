@@ -1,0 +1,175 @@
+{
+  "candidate_counts": {
+    "faces": 39872,
+    "vertices": 19938
+  },
+  "candidate_floor_quality": {
+    "face_count": 2912,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 2.8688104625143938,
+    "maximum_edge_mm": 1.4404914720215474,
+    "minimum_Q": 0.6407401783487409,
+    "minimum_altitude_mm": 0.4065812940016269,
+    "zero_area_face_count": 0
+  },
+  "candidate_global_quality": {
+    "face_count": 39872,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+    "maximum_edge_mm": 17.000000000000004,
+    "minimum_Q": 0.08488545669419845,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "candidate_nonfloor_quality": {
+    "face_count": 36960,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+    "maximum_edge_mm": 17.000000000000004,
+    "minimum_Q": 0.08488545669419845,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "floor_patch_lineage": {
+    "floor_output_face_count": 2912,
+    "floor_patch_count": 8200,
+    "floor_patch_vertex_count": 29596,
+    "floor_source_declaration_matches_frozen_fan": true,
+    "floor_vertex_color_max_abs_linear_rgb_error": 0.0,
+    "floor_vertex_color_max_abs_srgb_error": 0.0,
+    "frozen_floor_source_face_count": 128,
+    "multi_parent_floor_face_count": 2784,
+    "output_barycentric_simplex_pass": true,
+    "output_chart_reconstruction_max_residual_mm": 7.895083119518377e-15,
+    "patch_area_coverage_max_residual_mm2": 3.552713678800501e-14,
+    "patch_area_total_mm2": 1256.1324627819029,
+    "patch_pairwise_overlap_max_area_mm2": 0.0,
+    "patch_vertex_color_max_abs_linear_rgb_error": 0.0,
+    "patch_vertex_color_max_abs_srgb_error": 0.0,
+    "per_output_face_patch_cap_pass": true,
+    "per_output_face_patch_record_cap": 128,
+    "per_output_face_patch_records_max": 22,
+    "single_parent_floor_face_count": 128,
+    "source_barycentric_simplex_pass": true,
+    "source_chart_reconstruction_max_residual_mm": 5.2993818720552705e-14
+  },
+  "floor_polygon_area_abs_difference_mm2": 0.0,
+  "floor_polygon_area_candidate_mm2": 1256.1324627819013,
+  "floor_polygon_area_input_mm2": 1256.1324627819013,
+  "focused_check_count": 29,
+  "focused_check_pass_count": 29,
+  "focused_checks_pass": true,
+  "input_counts": {
+    "faces": 37088,
+    "vertices": 18546
+  },
+  "input_floor_quality": {
+    "face_count": 128,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+    "maximum_edge_mm": 20.000000000000004,
+    "minimum_Q": 0.08488545669419832,
+    "minimum_altitude_mm": 0.9813534865483533,
+    "zero_area_face_count": 0
+  },
+  "input_global_quality": {
+    "face_count": 37088,
+    "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+    "maximum_edge_mm": 20.000000000000004,
+    "minimum_Q": 0.08488545669419832,
+    "minimum_altitude_mm": 0.12271827051863031,
+    "zero_area_face_count": 0
+  },
+  "interpretation": "actual displaced geometric triangle metrics only; no tetrahedron quality, mechanics, fracture h, material calibration, or fragment match claim",
+  "legacy_reader_compatibility": "UNKNOWN; standard schema-v1 source_face_ids and face_corner_barycentric_to_source keys are omitted",
+  "local_b_recorded_run_gate": "UNKNOWN",
+  "new_vertex_lineage": {
+    "all_new_vertices_reconstructed": true,
+    "barycentric_simplex_pass": true,
+    "new_vertex_count": 1392,
+    "source_ids_valid_bottom_fan_only": true,
+    "source_triangle_reconstruction_max_residual_mm": 5.163671038754328e-14
+  },
+  "outer_field_samples_candidate": {
+    "finite_outer_color_max_abs_linear_rgb_error": 0.00529058349530287,
+    "finite_outer_relief_max_abs_error_mm": 0.004213739067055411,
+    "finite_outer_sample_count": 213024,
+    "finite_samples_per_outer_triangle": 7,
+    "outer_triangle_count": 30432,
+    "outer_vertex_count": 15344,
+    "per_corner_color_max_abs_linear_rgb_error": 0.0,
+    "per_corner_relief_max_abs_error_mm": 0.0
+  },
+  "outer_field_samples_input_local_b": {
+    "finite_outer_color_max_abs_linear_rgb_error": 0.00529058349530287,
+    "finite_outer_relief_max_abs_error_mm": 0.004213739067055411,
+    "finite_outer_sample_count": 213024,
+    "finite_samples_per_outer_triangle": 7,
+    "outer_triangle_count": 30432,
+    "outer_vertex_count": 15344,
+    "per_corner_color_max_abs_linear_rgb_error": 0.0,
+    "per_corner_relief_max_abs_error_mm": 0.0
+  },
+  "outer_finite_sample_error_difference_from_input": {
+    "color_error_unchanged_pass": true,
+    "linear_rgb_max_abs_error_delta": 0.0,
+    "relief_error_unchanged_pass": true,
+    "relief_max_abs_error_delta_mm": 0.0
+  },
+  "preservation": {
+    "all_nonfloor_face_barycentric_rows_equal": true,
+    "all_nonfloor_face_source_ids_equal": true,
+    "all_nonfloor_faces_connectivity_equal": true,
+    "all_preserved_outer_arrays_equal": true,
+    "floor_boundary_interface_cycle_preserved": true,
+    "floor_chart_matches_saved_vertex_coordinates": true,
+    "floor_chart_points_inside_same_polygon": true,
+    "floor_polygon_area_preserved": true,
+    "local_b_vertex_relief_prefix_equal": true,
+    "local_b_vertex_rest_prefix_equal": true,
+    "new_floor_vertices_remain_planar_and_unrelieved": true,
+    "outer_face_connectivity_equal": true,
+    "preserved_outer_arrays_equal": {
+      "outer_base_linear_rgb": true,
+      "outer_base_srgb": true,
+      "outer_color_linear_rgb": true,
+      "outer_color_srgb_for_display": true,
+      "outer_normals_analytic_displaced": true,
+      "outer_relief_height_mm": true,
+      "outer_source_face_ids": true,
+      "outer_theta_rad": true,
+      "outer_vertex_indices": true,
+      "outer_z_mm": true
+    },
+    "run02_baseline_relief_prefix_equal": true,
+    "run02_baseline_rest_prefix_equal": true,
+    "schema_v2_quarantine_and_legacy_alias_pass": true
+  },
+  "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+  "recorded_local_b_checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+  "review_targets": {
+    "floor_Q_improved_over_input": true,
+    "floor_Q_target_pass": true,
+    "floor_aspect_improved_over_input": true,
+    "floor_aspect_target_pass": true,
+    "floor_maximum_aspect_at_most": 5.0,
+    "floor_minimum_Q_at_least": 0.35,
+    "global_maximum_aspect_improved_over_input": true,
+    "global_minimum_Q_improved_over_input": true
+  },
+  "schema": "isolated_global_mesh_quality_candidate_v2_multi_parent_floor_patches",
+  "source_surface_id": "bottom_exterior_z0",
+  "topology": {
+    "boundary_edge_count": 0,
+    "connected_component_count": 1,
+    "duplicate_face_count_unoriented": 0,
+    "euler_characteristic": 2,
+    "face_count": 39872,
+    "inconsistent_winding_edge_count": 0,
+    "non_two_incidence_edge_count": 0,
+    "positive_signed_volume": true,
+    "repeated_vertex_face_count": 0,
+    "signed_volume_mm3": 10202.175145733467,
+    "unique_undirected_edge_count": 59808,
+    "used_vertex_count": 19938,
+    "vertex_count": 19938,
+    "zero_area_face_count_threshold_1e-12_mm2": 0
+  }
+}

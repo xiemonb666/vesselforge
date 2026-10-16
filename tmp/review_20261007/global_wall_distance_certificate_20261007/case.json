@@ -1,0 +1,17 @@
+{
+  "schema": "vesselforge.global_wall_distance_capture_case_v1",
+  "authorization": "ROOT_20261007_GLOBAL_WALL_DISTANCE_RUN01",
+  "decision": "SOURCE_ONLY_READY_AWAITING_ROOT_GO",
+  "capture_directory": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/run01_capture",
+  "go_record": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/run01_GO.json",
+  "checker_source": "vesselforge/experiments/global_wall_distance_certificate_20261007/global_wall_distance_certificate.py",
+  "checker_case": "vesselforge/experiments/global_wall_distance_certificate_20261007/case.json",
+  "checker_pins": "vesselforge/experiments/global_wall_distance_certificate_20261007/source_pins.json",
+  "invoke_helper": "vesselforge/tmp/review_20261007/global_wall_distance_certificate_20261007/invoke_once.py",
+  "child_timeout_seconds": 10,
+  "whole_call_limit_seconds": 15,
+  "bounded_files_limit_bytes": 4194304,
+  "max_raw_stdout_stderr_bytes": 1100000,
+  "go_schema": "vesselforge.global_wall_distance.root_go_record.v1",
+  "go_required_fields": ["decision", "authorization", "case_sha256", "source_pins_sha256", "invoke_once_sha256", "capture_once_sha256", "root_ready_argument", "call_count_authorized"]
+}

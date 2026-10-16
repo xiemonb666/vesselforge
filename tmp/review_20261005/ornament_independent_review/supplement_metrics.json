@@ -1,0 +1,5908 @@
+{
+  "verified_baseline": {
+    "path": "vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run02\\fixture_arrays.npz",
+    "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "arrays": {
+      "vertices_rest_xyz_mm": {
+        "shape": [
+          6402,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "vertices_relief_xyz_mm": {
+        "shape": [
+          6402,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "faces": {
+        "shape": [
+          12800,
+          3
+        ],
+        "dtype": "int32"
+      },
+      "outer_side_vertex_indices": {
+        "shape": [
+          3200
+        ],
+        "dtype": "int64"
+      },
+      "inner_side_vertex_indices": {
+        "shape": [
+          3200
+        ],
+        "dtype": "int64"
+      },
+      "outer_color_linear_rgb": {
+        "shape": [
+          3200,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "outer_color_srgb_for_display": {
+        "shape": [
+          3200,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "outer_relief_height_mm": {
+        "shape": [
+          3200
+        ],
+        "dtype": "float64"
+      },
+      "outer_normals_material_outward": {
+        "shape": [
+          3200,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "outer_side_theta_rad": {
+        "shape": [
+          3200
+        ],
+        "dtype": "float64"
+      },
+      "outer_side_z_mm": {
+        "shape": [
+          3200
+        ],
+        "dtype": "float64"
+      },
+      "outer_radius_mm": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "inner_radius_mm": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "wall_declaration_mm": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "height_mm": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "floor_mm": {
+        "shape": [],
+        "dtype": "float64"
+      },
+      "around": {
+        "shape": [],
+        "dtype": "int32"
+      },
+      "side_rows": {
+        "shape": [],
+        "dtype": "int32"
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "local_a_0p50mm",
+      "candidate_sha256": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+      "checks_sha256": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+      "candidate_baseline_hash_matches_verified_file_sha256": true,
+      "original_counts_match_baseline": true,
+      "outer_source_face_ids_exactly_match_baseline_outer_side_faces": true,
+      "source_ids_in_baseline_face_range": true,
+      "face_corner_barycentric_simplex_pass": true,
+      "face_corner_lineage_reconstruction": {
+        "method": "source face + saved barycentric weights; outer/inner cylinders compared in locally unwrapped (R*theta,z) chart using periodic angle difference; planar/base faces compared in rest XYZ",
+        "reconstructed_corner_count": 56928,
+        "unreconstructed_corner_count": 0,
+        "corner_count_by_source_type": {
+          "outer": 36960,
+          "inner": 18432,
+          "base": 1536
+        },
+        "residual_mm_by_source_type": {
+          "outer": {
+            "count": 36960,
+            "finite": true,
+            "max_mm_or_value": 1.7763568394002505e-14,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 8.881784197001252e-15,
+            "rms_mm_or_value": 1.6861117231197814e-15
+          },
+          "inner": {
+            "count": 18432,
+            "finite": true,
+            "max_mm_or_value": 0.0,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 0.0,
+            "rms_mm_or_value": 0.0
+          },
+          "base": {
+            "count": 1536,
+            "finite": true,
+            "max_mm_or_value": 0.0,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 0.0,
+            "rms_mm_or_value": 0.0
+          }
+        },
+        "all_corners_reconstructed": true
+      },
+      "new_vertex_lineage_reconstruction": {
+        "new_vertex_count": 3088,
+        "source_face_ids_valid": true,
+        "barycentric_simplex_pass": true,
+        "max_barycentric_sum_error": 0.0,
+        "reconstructed_vertex_count": 3088,
+        "unreconstructed_vertex_count": 0,
+        "source_type_counts": {
+          "outer": 3088,
+          "inner": 0,
+          "base": 0
+        },
+        "residual_mm_by_source_type": {
+          "outer": {
+            "count": 3088,
+            "finite": true,
+            "max_mm_or_value": 1.7763568394002505e-14,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 1.7763568394002505e-14,
+            "rms_mm_or_value": 2.916645776477972e-15
+          },
+          "inner": {
+            "count": 0,
+            "finite": true,
+            "max_mm_or_value": null,
+            "p95_mm_or_value": null,
+            "p99_mm_or_value": null,
+            "rms_mm_or_value": null
+          },
+          "base": {
+            "count": 0,
+            "finite": true,
+            "max_mm_or_value": null,
+            "p95_mm_or_value": null,
+            "p99_mm_or_value": null,
+            "rms_mm_or_value": null
+          }
+        },
+        "all_new_vertices_reconstructed": true
+      },
+      "original_prefix_and_color_exactness": {
+        "baseline_rest_vertices_array_equal": true,
+        "baseline_relief_vertices_array_equal": true,
+        "baseline_outer_relief_heights_array_equal_by_vertex_id": true,
+        "outer_base_linear_rgb_array_equal": true,
+        "outer_base_srgb_array_equal": true,
+        "outer_colors_on_original_vertex_ids_linear_rgb_array_equal": false,
+        "outer_colors_on_original_vertex_ids_srgb_array_equal": false,
+        "outer_colors_on_original_vertex_ids_linear_rgb_max_abs_difference": 1.1102230246251565e-16,
+        "outer_colors_on_original_vertex_ids_linear_rgb_exact_rows": 3128,
+        "outer_colors_on_original_vertex_ids_srgb_max_abs_difference": 1.1102230246251565e-16,
+        "outer_colors_on_original_vertex_ids_srgb_exact_rows": 3160,
+        "recorded_baseline_field_and_color_gate_pass": true,
+        "recorded_baseline_linear_rgb_max_difference": 1.1102230246251565e-16
+      },
+      "triangle_quality_definitions": {
+        "quality_Q": "4*sqrt(3)*area/sum(edge_length^2), equilateral = 1",
+        "minimum_altitude": "2*area/longest_edge",
+        "aspect_ratio": "longest_edge/minimum_altitude, equilateral = sqrt(4/3) ~1.155",
+        "3d_geometry": "candidate relief vertex coordinates and straight triangle chords; geometric mesh descriptor, not a mechanics or fracture measure",
+        "cylinder_chart": "intrinsic local chart metric with shortest periodic angular deltas and arc length radius*delta_theta, combined with z"
+      },
+      "triangle_group_definitions": {
+        "body": "outer source face with all three saved outer relief heights exactly zero",
+        "support": "outer source face with all three saved outer relief heights strictly positive",
+        "transition": "outer source face with both zero and positive saved outer relief heights at its corners",
+        "inner": "source face whose three baseline vertices are all in baseline inner_side_vertex_indices",
+        "base": "remaining non-outer and non-inner source faces, including planar rims/floor/caps",
+        "outer_classification_complete": true,
+        "groups_form_exact_partition": true
+      },
+      "triangle_quality_by_group": {
+        "body": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 9696,
+            "quality_Q_min": 0.4935438097367558,
+            "worst_quality_triangle": {
+              "candidate_face_index": 2794,
+              "source_face_id": 2523,
+              "candidate_vertex_indices": [
+                1390,
+                6525,
+                1261
+              ],
+              "edge_lengths_mm": [
+                0.49086153142879413,
+                1.1139771285967415,
+                1.4012976257248548
+              ],
+              "area_mm2": 0.2454485728410226,
+              "minimum_altitude_mm": 0.3503161189102257,
+              "quality_Q": 0.4935438097367558,
+              "aspect_longest_edge_over_min_altitude": 4.000094629056908,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  9.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  9.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1261,
+                1390,
+                1389
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  9.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  10.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543538596616538,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 3763,
+              "source_face_id": 2778,
+              "candidate_vertex_indices": [
+                6525,
+                8109,
+                6707
+              ],
+              "edge_lengths_mm": [
+                0.35034058954731545,
+                0.35034058954731545,
+                0.5
+              ],
+              "area_mm2": 0.061358846491541344,
+              "minimum_altitude_mm": 0.24543538596616538,
+              "quality_Q": 0.8579742535935878,
+              "aspect_longest_edge_over_min_altitude": 2.0371960548057557,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.25
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.25
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1389,
+                1390,
+                1518
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 4.000686098556127,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 2443,
+              "source_face_id": 2362,
+              "candidate_vertex_indices": [
+                6449,
+                1310,
+                1181
+              ],
+              "edge_lengths_mm": [
+                0.5,
+                1.4012976257248417,
+                1.1016510499527872
+              ],
+              "area_mm2": 0.24541228522912195,
+              "minimum_altitude_mm": 0.35026432746887565,
+              "quality_Q": 0.49609927192529185,
+              "aspect_longest_edge_over_min_altitude": 4.000686098556127,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  9.5
+                ],
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  10.0
+                ],
+                [
+                  2.9346094891072347,
+                  19.78353019929562,
+                  9.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  9.5
+                ],
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  10.0
+                ],
+                [
+                  2.9346094891072347,
+                  19.78353019929562,
+                  9.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1181,
+                1182,
+                1310
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  2.9346094891072347,
+                  19.78353019929562,
+                  9.0
+                ],
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  9.0
+                ],
+                [
+                  1.9603428065912154,
+                  19.903694533443936,
+                  10.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 9696,
+            "quality_Q_min": 0.4934892087951812,
+            "worst_quality_triangle": {
+              "candidate_face_index": 2326,
+              "source_face_id": 2303,
+              "candidate_vertex_indices": [
+                1152,
+                6425,
+                1151
+              ],
+              "edge_lengths_mm": [
+                0.49087385212338575,
+                1.1139825576275808,
+                1.401366673927233
+              ],
+              "area_mm2": 0.24543692606169287,
+              "minimum_altitude_mm": 0.3502822360886789,
+              "quality_Q": 0.4934892087951812,
+              "aspect_longest_edge_over_min_altitude": 4.000678680070026,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1151,
+                1152,
+                1279
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  9.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543692606169287,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 2728,
+              "source_face_id": 2492,
+              "candidate_vertex_indices": [
+                1375,
+                7923,
+                6511
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -1.2264147260441622,
+                  -19.962362258002987,
+                  9.75
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -1.2264147260441622,
+                  -19.962362258002987,
+                  9.75
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1246,
+                1247,
+                1375
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -1.960342806591209,
+                  -19.90369453344394,
+                  9.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 4.000678680070026,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 2326,
+              "source_face_id": 2303,
+              "candidate_vertex_indices": [
+                1152,
+                6425,
+                1151
+              ],
+              "edge_lengths_mm": [
+                0.49087385212338575,
+                1.1139825576275808,
+                1.401366673927233
+              ],
+              "area_mm2": 0.24543692606169287,
+              "minimum_altitude_mm": 0.3502822360886789,
+              "quality_Q": 0.4934892087951812,
+              "aspect_longest_edge_over_min_altitude": 4.000678680070026,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1151,
+                1152,
+                1279
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  9.0
+                ]
+              ]
+            }
+          }
+        },
+        "support": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 1888,
+            "quality_Q_min": 0.8420071738295044,
+            "worst_quality_triangle": {
+              "candidate_face_index": 4806,
+              "source_face_id": 3006,
+              "candidate_vertex_indices": [
+                1632,
+                8336,
+                6892
+              ],
+              "edge_lengths_mm": [
+                0.36194839097284437,
+                0.3578818171207668,
+                0.5225488926868456
+              ],
+              "area_mm2": 0.06467312330350244,
+              "minimum_altitude_mm": 0.247529462634456,
+              "quality_Q": 0.8420071738295044,
+              "aspect_longest_edge_over_min_altitude": 2.1110573550532443,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  11.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -3.718222268947672e-15,
+                  -20.2410592808552,
+                  12.0
+                ],
+                [
+                  -0.24735758149235118,
+                  -20.155497229652067,
+                  11.75
+                ],
+                [
+                  -3.690328528077879e-15,
+                  -20.089212827988337,
+                  11.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1503,
+                1504,
+                1632
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24598215808568924,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 4965,
+              "source_face_id": 3040,
+              "candidate_vertex_indices": [
+                6922,
+                8370,
+                6717
+              ],
+              "edge_lengths_mm": [
+                0.3537419905953209,
+                0.3517866378278978,
+                0.5057055849404059
+              ],
+              "area_mm2": 0.06219727556981343,
+              "minimum_altitude_mm": 0.24598215808568924,
+              "quality_Q": 0.8539312299460396,
+              "aspect_longest_edge_over_min_altitude": 2.0558628677623054,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.484941659029333,
+                  -13.790810894741343,
+                  11.5
+                ],
+                [
+                  14.314616505676376,
+                  -13.967524988179454,
+                  11.25
+                ],
+                [
+                  14.484941659029333,
+                  -13.790810894741343,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.540690245403905,
+                  -13.843887961286628,
+                  11.5
+                ],
+                [
+                  14.337163240305529,
+                  -13.989525024241171,
+                  11.25
+                ],
+                [
+                  14.48582816488399,
+                  -13.79165491847899,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1520,
+                1521,
+                1649
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.0
+                ],
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  11.0
+                ],
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  12.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.1110573550532443,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 4806,
+              "source_face_id": 3006,
+              "candidate_vertex_indices": [
+                1632,
+                8336,
+                6892
+              ],
+              "edge_lengths_mm": [
+                0.36194839097284437,
+                0.3578818171207668,
+                0.5225488926868456
+              ],
+              "area_mm2": 0.06467312330350244,
+              "minimum_altitude_mm": 0.247529462634456,
+              "quality_Q": 0.8420071738295044,
+              "aspect_longest_edge_over_min_altitude": 2.1110573550532443,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  11.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -3.718222268947672e-15,
+                  -20.2410592808552,
+                  12.0
+                ],
+                [
+                  -0.24735758149235118,
+                  -20.155497229652067,
+                  11.75
+                ],
+                [
+                  -3.690328528077879e-15,
+                  -20.089212827988337,
+                  11.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1503,
+                1504,
+                1632
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 1888,
+            "quality_Q_min": 0.8579770191690174,
+            "worst_quality_triangle": {
+              "candidate_face_index": 4697,
+              "source_face_id": 2979,
+              "candidate_vertex_indices": [
+                6873,
+                8312,
+                6874
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  11.5
+                ],
+                [
+                  -12.876630857795844,
+                  -15.303345312449167,
+                  11.75
+                ],
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  12.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -13.07189254825802,
+                  -15.153956238232064,
+                  11.5
+                ],
+                [
+                  -12.88978726536443,
+                  -15.31898116085679,
+                  11.75
+                ],
+                [
+                  -13.118253737327077,
+                  -15.20770174047753,
+                  12.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1489,
+                1618,
+                1617
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  11.0
+                ],
+                [
+                  -12.687865683272918,
+                  -15.460209067254734,
+                  12.0
+                ],
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543692606169287,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 4697,
+              "source_face_id": 2979,
+              "candidate_vertex_indices": [
+                6873,
+                8312,
+                6874
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  11.5
+                ],
+                [
+                  -12.876630857795844,
+                  -15.303345312449167,
+                  11.75
+                ],
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  12.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -13.07189254825802,
+                  -15.153956238232064,
+                  11.5
+                ],
+                [
+                  -12.88978726536443,
+                  -15.31898116085679,
+                  11.75
+                ],
+                [
+                  -13.118253737327077,
+                  -15.20770174047753,
+                  12.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1489,
+                1618,
+                1617
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  11.0
+                ],
+                [
+                  -12.687865683272918,
+                  -15.460209067254734,
+                  12.0
+                ],
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  12.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.037183271576341,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 4697,
+              "source_face_id": 2979,
+              "candidate_vertex_indices": [
+                6873,
+                8312,
+                6874
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  11.5
+                ],
+                [
+                  -12.876630857795844,
+                  -15.303345312449167,
+                  11.75
+                ],
+                [
+                  -13.063456859075542,
+                  -15.144176930129685,
+                  12.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -13.07189254825802,
+                  -15.153956238232064,
+                  11.5
+                ],
+                [
+                  -12.88978726536443,
+                  -15.31898116085679,
+                  11.75
+                ],
+                [
+                  -13.118253737327077,
+                  -15.20770174047753,
+                  12.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1489,
+                1618,
+                1617
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  11.0
+                ],
+                [
+                  -12.687865683272918,
+                  -15.460209067254734,
+                  12.0
+                ],
+                [
+                  -13.431179096940372,
+                  -14.819022507099177,
+                  12.0
+                ]
+              ]
+            }
+          }
+        },
+        "transition": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 736,
+            "quality_Q_min": 0.8566287804415939,
+            "worst_quality_triangle": {
+              "candidate_face_index": 4810,
+              "source_face_id": 3007,
+              "candidate_vertex_indices": [
+                1503,
+                8334,
+                6889
+              ],
+              "edge_lengths_mm": [
+                0.35092543789203373,
+                0.3516848271817464,
+                0.502125306133559
+              ],
+              "area_mm2": 0.06169335466688374,
+              "minimum_altitude_mm": 0.245728920304503,
+              "quality_Q": 0.8566287804415939,
+              "aspect_longest_edge_over_min_altitude": 2.0434115183159314,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -0.7361444588271866,
+                  -19.98644769176699,
+                  11.25
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -0.7368364981107999,
+                  -20.005236676424456,
+                  11.25
+                ],
+                [
+                  -0.9836179600161242,
+                  -20.022003540464155,
+                  11.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1503,
+                1632,
+                1631
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543990421416229,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 3819,
+              "source_face_id": 2785,
+              "candidate_vertex_indices": [
+                6717,
+                8123,
+                6716
+              ],
+              "edge_lengths_mm": [
+                0.3503479893835132,
+                0.3503405895473172,
+                0.5000014982664552
+              ],
+              "area_mm2": 0.0613601599207282,
+              "minimum_altitude_mm": 0.24543990421416229,
+              "quality_Q": 0.8579810462451608,
+              "aspect_longest_edge_over_min_altitude": 2.0371646569343973,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.484941659029333,
+                  -13.790810894741343,
+                  11.0
+                ],
+                [
+                  14.314616505676376,
+                  -13.967524988179454,
+                  10.75
+                ],
+                [
+                  14.484941659029333,
+                  -13.790810894741343,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.48582816488399,
+                  -13.79165491847899,
+                  11.0
+                ],
+                [
+                  14.314616505676376,
+                  -13.967524988179454,
+                  10.75
+                ],
+                [
+                  14.484941659029333,
+                  -13.790810894741343,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1392,
+                1521,
+                1520
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  10.0
+                ],
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0434115183159314,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 4810,
+              "source_face_id": 3007,
+              "candidate_vertex_indices": [
+                1503,
+                8334,
+                6889
+              ],
+              "edge_lengths_mm": [
+                0.35092543789203373,
+                0.3516848271817464,
+                0.502125306133559
+              ],
+              "area_mm2": 0.06169335466688374,
+              "minimum_altitude_mm": 0.245728920304503,
+              "quality_Q": 0.8566287804415939,
+              "aspect_longest_edge_over_min_altitude": 2.0434115183159314,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -0.7361444588271866,
+                  -19.98644769176699,
+                  11.25
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -0.7368364981107999,
+                  -20.005236676424456,
+                  11.25
+                ],
+                [
+                  -0.9836179600161242,
+                  -20.022003540464155,
+                  11.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1503,
+                1632,
+                1631
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  11.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  12.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  12.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 736,
+            "quality_Q_min": 0.8579770191690174,
+            "worst_quality_triangle": {
+              "candidate_face_index": 3662,
+              "source_face_id": 2750,
+              "candidate_vertex_indices": [
+                1504,
+                8092,
+                6688
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -3.6744848832638375e-15,
+                  -20.00296404275996,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1375,
+                1376,
+                1504
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543692606169287,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 3662,
+              "source_face_id": 2750,
+              "candidate_vertex_indices": [
+                1504,
+                8092,
+                6688
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -3.6744848832638375e-15,
+                  -20.00296404275996,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1375,
+                1376,
+                1504
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.037183271576341,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 3662,
+              "source_face_id": 2750,
+              "candidate_vertex_indices": [
+                1504,
+                8092,
+                6688
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -3.6744848832638375e-15,
+                  -20.00296404275996,
+                  11.0
+                ],
+                [
+                  -0.24543076571439248,
+                  -19.99849403678289,
+                  10.75
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1375,
+                1376,
+                1504
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  10.0
+                ],
+                [
+                  -3.673940397442059e-15,
+                  -20.0,
+                  11.0
+                ]
+              ]
+            }
+          }
+        },
+        "inner": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622110056079775,
+            "worst_quality_triangle": {
+              "candidate_face_index": 12546,
+              "source_face_id": 6370,
+              "candidate_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177545,
+                0.9166666666666665,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820474,
+              "minimum_altitude_mm": 0.6170492022717229,
+              "quality_Q": 0.8622110056079775,
+              "aspect_longest_edge_over_min_altitude": 2.0088479459242614,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170492022717223,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 16386,
+              "source_face_id": 10210,
+              "candidate_vertex_indices": [
+                5233,
+                5362,
+                5234
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177527,
+                0.9166666666666643,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820465,
+              "minimum_altitude_mm": 0.6170492022717223,
+              "quality_Q": 0.8622110056079778,
+              "aspect_longest_edge_over_min_altitude": 2.00884794592426,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5233,
+                5362,
+                5234
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088479459242614,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 12546,
+              "source_face_id": 6370,
+              "candidate_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177545,
+                0.9166666666666665,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820474,
+              "minimum_altitude_mm": 0.6170492022717229,
+              "quality_Q": 0.8622110056079775,
+              "aspect_longest_edge_over_min_altitude": 2.0088479459242614,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622191172032593,
+            "worst_quality_triangle": {
+              "candidate_face_index": 14506,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170830818809846,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 16298,
+              "source_face_id": 10122,
+              "candidate_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322116,
+                0.9166666666666643,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.38247254311281415,
+              "minimum_altitude_mm": 0.6170830818809846,
+              "quality_Q": 0.8622191172032596,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606247,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088290470606256,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 14506,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart_all_side_faces": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622191172032593,
+            "worst_quality_triangle": {
+              "candidate_face_index": 14506,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170830818809846,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 16298,
+              "source_face_id": 10122,
+              "candidate_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322116,
+                0.9166666666666643,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.38247254311281415,
+              "minimum_altitude_mm": 0.6170830818809846,
+              "quality_Q": 0.8622191172032596,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606247,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088290470606256,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 14506,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            }
+          }
+        },
+        "base": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 512,
+            "quality_Q_min": 0.08488545669419832,
+            "worst_quality_triangle": {
+              "candidate_face_index": 18548,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.7986013402350507,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 18919,
+              "source_face_id": 12743,
+              "candidate_vertex_indices": [
+                3185,
+                6386,
+                6385
+              ],
+              "edge_lengths_mm": [
+                3.1335426884730264,
+                0.8344017697790127,
+                2.9999999999999987
+              ],
+              "area_mm2": 1.2512256953491514,
+              "minimum_altitude_mm": 0.7986013402350507,
+              "quality_Q": 0.4442021775416903,
+              "aspect_longest_edge_over_min_altitude": 3.923788416822262,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3185,
+                6386,
+                6385
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 20.380016247096258,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 18548,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            }
+          }
+        },
+        "all": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 18976,
+            "quality_Q_min": 0.08488545669419832,
+            "worst_quality_triangle": {
+              "candidate_face_index": 18548,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543538596616538,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 3763,
+              "source_face_id": 2778,
+              "candidate_vertex_indices": [
+                6525,
+                8109,
+                6707
+              ],
+              "edge_lengths_mm": [
+                0.35034058954731545,
+                0.35034058954731545,
+                0.5
+              ],
+              "area_mm2": 0.061358846491541344,
+              "minimum_altitude_mm": 0.24543538596616538,
+              "quality_Q": 0.8579742535935878,
+              "aspect_longest_edge_over_min_altitude": 2.0371960548057557,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.25
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.0
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.25
+                ],
+                [
+                  12.304631811612541,
+                  -15.766928552532121,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1389,
+                1390,
+                1518
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 20.380016247096258,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 18548,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            }
+          }
+        },
+        "outer_all": {
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 12320,
+            "quality_Q_min": 0.4934892087951812,
+            "worst_quality_triangle": {
+              "candidate_face_index": 2326,
+              "source_face_id": 2303,
+              "candidate_vertex_indices": [
+                1152,
+                6425,
+                1151
+              ],
+              "edge_lengths_mm": [
+                0.49087385212338575,
+                1.1139825576275808,
+                1.401366673927233
+              ],
+              "area_mm2": 0.24543692606169287,
+              "minimum_altitude_mm": 0.3502822360886789,
+              "quality_Q": 0.4934892087951812,
+              "aspect_longest_edge_over_min_altitude": 4.000678680070026,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1151,
+                1152,
+                1279
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  9.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.24543692606169287,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 2728,
+              "source_face_id": 2492,
+              "candidate_vertex_indices": [
+                1375,
+                7923,
+                6511
+              ],
+              "edge_lengths_mm": [
+                0.35034166848180204,
+                0.35034166848180204,
+                0.5
+              ],
+              "area_mm2": 0.06135923151542322,
+              "minimum_altitude_mm": 0.24543692606169287,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -1.2264147260441622,
+                  -19.962362258002987,
+                  9.75
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ],
+                [
+                  -1.2264147260441622,
+                  -19.962362258002987,
+                  9.75
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1246,
+                1247,
+                1375
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -1.960342806591209,
+                  -19.90369453344394,
+                  9.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  9.0
+                ],
+                [
+                  -0.9813534865483606,
+                  -19.97590912410345,
+                  10.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 4.000678680070026,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 2326,
+              "source_face_id": 2303,
+              "candidate_vertex_indices": [
+                1152,
+                6425,
+                1151
+              ],
+              "edge_lengths_mm": [
+                0.49087385212338575,
+                1.1139825576275808,
+                1.401366673927233
+              ],
+              "area_mm2": 0.24543692606169287,
+              "minimum_altitude_mm": 0.3502822360886789,
+              "quality_Q": 0.4934892087951812,
+              "aspect_longest_edge_over_min_altitude": 4.000678680070026,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.993976373924085,
+                  -0.49082457045824895,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1151,
+                1152,
+                1279
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  8.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  -0.9813534865483619,
+                  9.0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "recorded_check_reconciliation": {
+        "recorded_lineage_reconstruction_pass": true,
+        "recorded_face_chart_max_residual_mm": 1.7763568394002505e-14,
+        "recorded_new_vertex_chart_max_residual_mm": 1.7763568394002505e-14,
+        "recorded_baseline_field_and_color_gate_pass": true,
+        "recorded_baseline_linear_rgb_max_difference": 1.1102230246251565e-16,
+        "prototype_baseline_color_tolerance": 1e-12,
+        "prototype_lineage_chart_tolerance_mm": 1e-09,
+        "recorded_topology_counts": {
+          "boundary_edge_count": 0,
+          "connected_component_count": 1,
+          "duplicate_face_count_unoriented": 0,
+          "euler_characteristic": 2,
+          "face_count": 18976,
+          "inconsistent_winding_edge_count": 0,
+          "minimum_double_area_mm2": 0.12271760931148541,
+          "non_two_incidence_edge_count": 0,
+          "positive_signed_volume": true,
+          "repeated_vertex_face_count": 0,
+          "signed_volume_mm3": 10202.014178867737,
+          "unique_undirected_edge_count": 28464,
+          "vertex_count": 9490,
+          "zero_area_face_count_threshold_1e-12_mm2_double_area": 0
+        },
+        "finite_geometry_recorded_max_error_mm": 0.014577259475220927,
+        "finite_geometry_reference_residual_independently_recomputed": false,
+        "finite_geometry_reference_residual_status": "UNKNOWN_IN_THIS_SUPPLEMENT; baseline/source lineage is now verified, but the prototype analytic field evaluator and its exact geometric probe construction were not re-executed or independently reimplemented",
+        "normal_angle_recorded_max_degrees": 5.826063000141969
+      }
+    },
+    {
+      "case_id": "local_b_0p25mm",
+      "candidate_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "candidate_baseline_hash_matches_verified_file_sha256": true,
+      "original_counts_match_baseline": true,
+      "outer_source_face_ids_exactly_match_baseline_outer_side_faces": true,
+      "source_ids_in_baseline_face_range": true,
+      "face_corner_barycentric_simplex_pass": true,
+      "face_corner_lineage_reconstruction": {
+        "method": "source face + saved barycentric weights; outer/inner cylinders compared in locally unwrapped (R*theta,z) chart using periodic angle difference; planar/base faces compared in rest XYZ",
+        "reconstructed_corner_count": 111264,
+        "unreconstructed_corner_count": 0,
+        "corner_count_by_source_type": {
+          "outer": 91296,
+          "inner": 18432,
+          "base": 1536
+        },
+        "residual_mm_by_source_type": {
+          "outer": {
+            "count": 91296,
+            "finite": true,
+            "max_mm_or_value": 1.7763568394002505e-14,
+            "p95_mm_or_value": 8.881784197001252e-15,
+            "p99_mm_or_value": 1.7763568394002505e-14,
+            "rms_mm_or_value": 3.51390856198271e-15
+          },
+          "inner": {
+            "count": 18432,
+            "finite": true,
+            "max_mm_or_value": 0.0,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 0.0,
+            "rms_mm_or_value": 0.0
+          },
+          "base": {
+            "count": 1536,
+            "finite": true,
+            "max_mm_or_value": 0.0,
+            "p95_mm_or_value": 0.0,
+            "p99_mm_or_value": 0.0,
+            "rms_mm_or_value": 0.0
+          }
+        },
+        "all_corners_reconstructed": true
+      },
+      "new_vertex_lineage_reconstruction": {
+        "new_vertex_count": 12144,
+        "source_face_ids_valid": true,
+        "barycentric_simplex_pass": true,
+        "max_barycentric_sum_error": 0.0,
+        "reconstructed_vertex_count": 12144,
+        "unreconstructed_vertex_count": 0,
+        "source_type_counts": {
+          "outer": 12144,
+          "inner": 0,
+          "base": 0
+        },
+        "residual_mm_by_source_type": {
+          "outer": {
+            "count": 12144,
+            "finite": true,
+            "max_mm_or_value": 1.7763568394002505e-14,
+            "p95_mm_or_value": 8.881784197001252e-15,
+            "p99_mm_or_value": 1.7763568394002505e-14,
+            "rms_mm_or_value": 4.184844078862758e-15
+          },
+          "inner": {
+            "count": 0,
+            "finite": true,
+            "max_mm_or_value": null,
+            "p95_mm_or_value": null,
+            "p99_mm_or_value": null,
+            "rms_mm_or_value": null
+          },
+          "base": {
+            "count": 0,
+            "finite": true,
+            "max_mm_or_value": null,
+            "p95_mm_or_value": null,
+            "p99_mm_or_value": null,
+            "rms_mm_or_value": null
+          }
+        },
+        "all_new_vertices_reconstructed": true
+      },
+      "original_prefix_and_color_exactness": {
+        "baseline_rest_vertices_array_equal": true,
+        "baseline_relief_vertices_array_equal": true,
+        "baseline_outer_relief_heights_array_equal_by_vertex_id": true,
+        "outer_base_linear_rgb_array_equal": true,
+        "outer_base_srgb_array_equal": true,
+        "outer_colors_on_original_vertex_ids_linear_rgb_array_equal": false,
+        "outer_colors_on_original_vertex_ids_srgb_array_equal": false,
+        "outer_colors_on_original_vertex_ids_linear_rgb_max_abs_difference": 1.1102230246251565e-16,
+        "outer_colors_on_original_vertex_ids_linear_rgb_exact_rows": 3128,
+        "outer_colors_on_original_vertex_ids_srgb_max_abs_difference": 1.1102230246251565e-16,
+        "outer_colors_on_original_vertex_ids_srgb_exact_rows": 3160,
+        "recorded_baseline_field_and_color_gate_pass": true,
+        "recorded_baseline_linear_rgb_max_difference": 1.1102230246251565e-16
+      },
+      "triangle_quality_definitions": {
+        "quality_Q": "4*sqrt(3)*area/sum(edge_length^2), equilateral = 1",
+        "minimum_altitude": "2*area/longest_edge",
+        "aspect_ratio": "longest_edge/minimum_altitude, equilateral = sqrt(4/3) ~1.155",
+        "3d_geometry": "candidate relief vertex coordinates and straight triangle chords; geometric mesh descriptor, not a mechanics or fracture measure",
+        "cylinder_chart": "intrinsic local chart metric with shortest periodic angular deltas and arc length radius*delta_theta, combined with z"
+      },
+      "triangle_group_definitions": {
+        "body": "outer source face with all three saved outer relief heights exactly zero",
+        "support": "outer source face with all three saved outer relief heights strictly positive",
+        "transition": "outer source face with both zero and positive saved outer relief heights at its corners",
+        "inner": "source face whose three baseline vertices are all in baseline inner_side_vertex_indices",
+        "base": "remaining non-outer and non-inner source faces, including planar rims/floor/caps",
+        "outer_classification_complete": true,
+        "groups_form_exact_partition": true
+      },
+      "triangle_quality_by_group": {
+        "body": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 20384,
+            "quality_Q_min": 0.23846327269365253,
+            "worst_quality_triangle": {
+              "candidate_face_index": 22967,
+              "source_face_id": 3752,
+              "candidate_vertex_indices": [
+                1876,
+                11005,
+                2005
+              ],
+              "edge_lengths_mm": [
+                0.24543538596616896,
+                1.2418101019561762,
+                1.401297625724842
+              ],
+              "area_mm2": 0.12273772421246076,
+              "minimum_altitude_mm": 0.17517723852414702,
+              "quality_Q": 0.23846327269365253,
+              "aspect_longest_edge_over_min_altitude": 7.9993133670256045,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -11.111404660392044,
+                  -16.629392246050905,
+                  14.0
+                ],
+                [
+                  -10.906499768440936,
+                  -16.764494111096756,
+                  14.0
+                ],
+                [
+                  -10.282054883864436,
+                  -17.15457220000544,
+                  15.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -11.111404660392044,
+                  -16.629392246050905,
+                  14.0
+                ],
+                [
+                  -10.906499768440936,
+                  -16.764494111096756,
+                  14.0
+                ],
+                [
+                  -10.282054883864436,
+                  -17.15457220000544,
+                  15.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1876,
+                1877,
+                2005
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -11.111404660392044,
+                  -16.629392246050905,
+                  14.0
+                ],
+                [
+                  -10.282054883864436,
+                  -17.15457220000544,
+                  14.0
+                ],
+                [
+                  -10.282054883864436,
+                  -17.15457220000544,
+                  15.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271827051863031,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 6077,
+              "source_face_id": 2778,
+              "candidate_vertex_indices": [
+                8646,
+                13471,
+                8644
+              ],
+              "edge_lengths_mm": [
+                0.1751706993737358,
+                0.1751706993737358,
+                0.25
+              ],
+              "area_mm2": 0.015339783814828789,
+              "minimum_altitude_mm": 0.12271827051863031,
+              "quality_Q": 0.8579763277772942,
+              "aspect_longest_edge_over_min_altitude": 2.037186467373223,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.75
+                ],
+                [
+                  12.401144235265784,
+                  -15.691131943111504,
+                  10.625
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.75
+                ],
+                [
+                  12.401144235265784,
+                  -15.691131943111504,
+                  10.625
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1389,
+                1390,
+                1518
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 8.001372197112254,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 8494,
+              "source_face_id": 2934,
+              "candidate_vertex_indices": [
+                9098,
+                1596,
+                1467
+              ],
+              "edge_lengths_mm": [
+                0.25,
+                1.4012976257248424,
+                1.2353683806306848
+              ],
+              "area_mm2": 0.1227061426145611,
+              "minimum_altitude_mm": 0.1751321637344379,
+              "quality_Q": 0.23932107538890518,
+              "aspect_longest_edge_over_min_altitude": 8.001372197112254,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  11.75
+                ],
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  12.0
+                ],
+                [
+                  -19.400625063890878,
+                  4.859603598065282,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  11.75
+                ],
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  12.0
+                ],
+                [
+                  -19.400625063890878,
+                  4.859603598065282,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1467,
+                1468,
+                1596
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -19.400625063890878,
+                  4.859603598065282,
+                  11.0
+                ],
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  11.0
+                ],
+                [
+                  -19.61570560806461,
+                  3.9018064403225723,
+                  12.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 20384,
+            "quality_Q_min": 0.2384087683444423,
+            "worst_quality_triangle": {
+              "candidate_face_index": 10058,
+              "source_face_id": 3031,
+              "candidate_vertex_indices": [
+                1644,
+                9393,
+                1515
+              ],
+              "edge_lengths_mm": [
+                0.24543692606169287,
+                1.2418347563470626,
+                1.401366673927233
+              ],
+              "area_mm2": 0.12271846303084644,
+              "minimum_altitude_mm": 0.17514111804433946,
+              "quality_Q": 0.2384087683444423,
+              "aspect_longest_edge_over_min_altitude": 8.001357360140052,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1515,
+                1644,
+                1643
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ],
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271846303084644,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 2332,
+              "source_face_id": 2304,
+              "candidate_vertex_indices": [
+                1281,
+                12786,
+                7891
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  9.875
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  9.875
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1152,
+                1153,
+                1281
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 8.001357360140052,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 10058,
+              "source_face_id": 3031,
+              "candidate_vertex_indices": [
+                1644,
+                9393,
+                1515
+              ],
+              "edge_lengths_mm": [
+                0.24543692606169287,
+                1.2418347563470626,
+                1.401366673927233
+              ],
+              "area_mm2": 0.12271846303084644,
+              "minimum_altitude_mm": 0.17514111804433946,
+              "quality_Q": 0.2384087683444423,
+              "aspect_longest_edge_over_min_altitude": 8.001357360140052,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1515,
+                1644,
+                1643
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ],
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  12.0
+                ]
+              ]
+            }
+          }
+        },
+        "support": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 8544,
+            "quality_Q_min": 0.8408557477137146,
+            "worst_quality_triangle": {
+              "candidate_face_index": 10267,
+              "source_face_id": 3038,
+              "candidate_vertex_indices": [
+                1648,
+                14448,
+                9435
+              ],
+              "edge_lengths_mm": [
+                0.1809249663045767,
+                0.18003704564271522,
+                0.2623566153709168
+              ],
+              "area_mm2": 0.01626053893902713,
+              "minimum_altitude_mm": 0.12395752945690477,
+              "quality_Q": 0.8408557477137146,
+              "aspect_longest_edge_over_min_altitude": 2.1165040681302707,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ],
+                [
+                  14.055094889144506,
+                  -14.228643914904328,
+                  11.875
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.312590275891612,
+                  -14.312590275891619,
+                  12.0
+                ],
+                [
+                  14.195394051670059,
+                  -14.370675458688298,
+                  11.875
+                ],
+                [
+                  14.25632752787446,
+                  -14.256327527874467,
+                  11.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1519,
+                1520,
+                1648
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12275669791413511,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 14124,
+              "source_face_id": 3258,
+              "candidate_vertex_indices": [
+                7119,
+                15348,
+                10158
+              ],
+              "edge_lengths_mm": [
+                0.17524421280492145,
+                0.17517374862565907,
+                0.2500318287232028
+              ],
+              "area_mm2": 0.015346540833746487,
+              "minimum_altitude_mm": 0.12275669791413511,
+              "quality_Q": 0.8580581661101896,
+              "aspect_longest_edge_over_min_altitude": 2.0368080355020064,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -2.448213503984337,
+                  -19.8495906919742,
+                  12.5
+                ],
+                [
+                  -2.5699622158758717,
+                  -19.83419507338199,
+                  12.375
+                ],
+                [
+                  -2.448213503984337,
+                  -19.8495906919742,
+                  12.25
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -2.448790418983688,
+                  -19.854268195215862,
+                  12.5
+                ],
+                [
+                  -2.5699622227006387,
+                  -19.83419512605349,
+                  12.375
+                ],
+                [
+                  -2.4483020728801046,
+                  -19.85030878960995,
+                  12.25
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1629,
+                1630,
+                1758
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -2.9346094891072463,
+                  -19.78353019929562,
+                  12.0
+                ],
+                [
+                  -1.960342806591209,
+                  -19.90369453344394,
+                  12.0
+                ],
+                [
+                  -1.960342806591209,
+                  -19.90369453344394,
+                  13.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.1165040681302707,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 10267,
+              "source_face_id": 3038,
+              "candidate_vertex_indices": [
+                1648,
+                14448,
+                9435
+              ],
+              "edge_lengths_mm": [
+                0.1809249663045767,
+                0.18003704564271522,
+                0.2623566153709168
+              ],
+              "area_mm2": 0.01626053893902713,
+              "minimum_altitude_mm": 0.12395752945690477,
+              "quality_Q": 0.8408557477137146,
+              "aspect_longest_edge_over_min_altitude": 2.1165040681302707,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ],
+                [
+                  14.055094889144506,
+                  -14.228643914904328,
+                  11.875
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.312590275891612,
+                  -14.312590275891619,
+                  12.0
+                ],
+                [
+                  14.195394051670059,
+                  -14.370675458688298,
+                  11.875
+                ],
+                [
+                  14.25632752787446,
+                  -14.256327527874467,
+                  11.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1519,
+                1520,
+                1648
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 8544,
+            "quality_Q_min": 0.8579770191690174,
+            "worst_quality_triangle": {
+              "candidate_face_index": 6664,
+              "source_face_id": 2816,
+              "candidate_vertex_indices": [
+                8755,
+                13602,
+                8126
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.25
+                ],
+                [
+                  19.99962350565202,
+                  0.12271769298309242,
+                  11.125
+                ],
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.029993360418366,
+                  0.24581733997869917,
+                  11.25
+                ],
+                [
+                  20.013716535172335,
+                  0.12280416781445044,
+                  11.125
+                ],
+                [
+                  20.000950844637114,
+                  0.24546091679636578,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1408,
+                1409,
+                1537
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271846303084644,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 6664,
+              "source_face_id": 2816,
+              "candidate_vertex_indices": [
+                8755,
+                13602,
+                8126
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.25
+                ],
+                [
+                  19.99962350565202,
+                  0.12271769298309242,
+                  11.125
+                ],
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.029993360418366,
+                  0.24581733997869917,
+                  11.25
+                ],
+                [
+                  20.013716535172335,
+                  0.12280416781445044,
+                  11.125
+                ],
+                [
+                  20.000950844637114,
+                  0.24546091679636578,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1408,
+                1409,
+                1537
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  12.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.037183271576341,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 6664,
+              "source_face_id": 2816,
+              "candidate_vertex_indices": [
+                8755,
+                13602,
+                8126
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.25
+                ],
+                [
+                  19.99962350565202,
+                  0.12271769298309242,
+                  11.125
+                ],
+                [
+                  19.99849403678289,
+                  0.245430765714401,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  20.029993360418366,
+                  0.24581733997869917,
+                  11.25
+                ],
+                [
+                  20.013716535172335,
+                  0.12280416781445044,
+                  11.125
+                ],
+                [
+                  20.000950844637114,
+                  0.24546091679636578,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1408,
+                1409,
+                1537
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  12.0
+                ]
+              ]
+            }
+          }
+        },
+        "transition": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 1504,
+            "quality_Q_min": 0.8577290778519028,
+            "worst_quality_triangle": {
+              "candidate_face_index": 10279,
+              "source_face_id": 3039,
+              "candidate_vertex_indices": [
+                1519,
+                14440,
+                9420
+              ],
+              "edge_lengths_mm": [
+                0.17521415915192307,
+                0.1753370468131761,
+                0.25021851910850923
+              ],
+              "area_mm2": 0.01535799940667991,
+              "minimum_altitude_mm": 0.12275669651789275,
+              "quality_Q": 0.8577290778519028,
+              "aspect_longest_edge_over_min_altitude": 2.0383288749712967,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  13.521854071506315,
+                  -14.736331377547403,
+                  11.125
+                ],
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.25
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  13.524250068193535,
+                  -14.738942572800337,
+                  11.125
+                ],
+                [
+                  13.438200254801302,
+                  -14.826769161031509,
+                  11.25
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1519,
+                1648,
+                1647
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ],
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271827052930229,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 14754,
+              "source_face_id": 3291,
+              "candidate_vertex_indices": [
+                10278,
+                15496,
+                10277
+              ],
+              "edge_lengths_mm": [
+                0.17517069938868762,
+                0.17517069937373686,
+                0.25000000000000006
+              ],
+              "area_mm2": 0.01533978381616279,
+              "minimum_altitude_mm": 0.12271827052930229,
+              "quality_Q": 0.8579763278156216,
+              "aspect_longest_edge_over_min_altitude": 2.037186467196063,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.110220828086506,
+                  -15.916738092177674,
+                  13.0
+                ],
+                [
+                  12.01232958767738,
+                  -15.9907453821581,
+                  12.875
+                ],
+                [
+                  12.110220828086506,
+                  -15.916738092177674,
+                  12.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.110220832298374,
+                  -15.916738097713427,
+                  13.0
+                ],
+                [
+                  12.01232958767738,
+                  -15.9907453821581,
+                  12.875
+                ],
+                [
+                  12.110220828086506,
+                  -15.916738092177674,
+                  12.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1645,
+                1774,
+                1773
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  12.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  13.0
+                ],
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  13.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0383288749712967,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 10279,
+              "source_face_id": 3039,
+              "candidate_vertex_indices": [
+                1519,
+                14440,
+                9420
+              ],
+              "edge_lengths_mm": [
+                0.17521415915192307,
+                0.1753370468131761,
+                0.25021851910850923
+              ],
+              "area_mm2": 0.01535799940667991,
+              "minimum_altitude_mm": 0.12275669651789275,
+              "quality_Q": 0.8577290778519028,
+              "aspect_longest_edge_over_min_altitude": 2.0383288749712967,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  13.521854071506315,
+                  -14.736331377547403,
+                  11.125
+                ],
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.25
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  13.524250068193535,
+                  -14.738942572800337,
+                  11.125
+                ],
+                [
+                  13.438200254801302,
+                  -14.826769161031509,
+                  11.25
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1519,
+                1648,
+                1647
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  11.0
+                ],
+                [
+                  14.142135623730947,
+                  -14.142135623730955,
+                  12.0
+                ],
+                [
+                  13.431179096940367,
+                  -14.819022507099183,
+                  12.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 1504,
+            "quality_Q_min": 0.8579770191690174,
+            "worst_quality_triangle": {
+              "candidate_face_index": 3386,
+              "source_face_id": 2561,
+              "candidate_vertex_indices": [
+                8120,
+                12890,
+                8123
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98656475144764,
+                  0.7361487703905224,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1280,
+                1409,
+                1408
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  10.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271846303084644,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 3386,
+              "source_face_id": 2561,
+              "candidate_vertex_indices": [
+                8120,
+                12890,
+                8123
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98656475144764,
+                  0.7361487703905224,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1280,
+                1409,
+                1408
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  10.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.037183271576341,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 3386,
+              "source_face_id": 2561,
+              "candidate_vertex_indices": [
+                8120,
+                12890,
+                8123
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  19.98644769176699,
+                  0.7361444588271775,
+                  10.75
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  10.875
+                ],
+                [
+                  19.98656475144764,
+                  0.7361487703905224,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1280,
+                1409,
+                1408
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  10.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  11.0
+                ],
+                [
+                  20.0,
+                  0.0,
+                  11.0
+                ]
+              ]
+            }
+          }
+        },
+        "inner": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622110056079775,
+            "worst_quality_triangle": {
+              "candidate_face_index": 30658,
+              "source_face_id": 6370,
+              "candidate_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177545,
+                0.9166666666666665,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820474,
+              "minimum_altitude_mm": 0.6170492022717229,
+              "quality_Q": 0.8622110056079775,
+              "aspect_longest_edge_over_min_altitude": 2.0088479459242614,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170492022717223,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 34498,
+              "source_face_id": 10210,
+              "candidate_vertex_indices": [
+                5233,
+                5362,
+                5234
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177527,
+                0.9166666666666643,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820465,
+              "minimum_altitude_mm": 0.6170492022717223,
+              "quality_Q": 0.8622110056079778,
+              "aspect_longest_edge_over_min_altitude": 2.00884794592426,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5233,
+                5362,
+                5234
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  15.75
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  16.666666666666664
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088479459242614,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 30658,
+              "source_face_id": 6370,
+              "candidate_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "edge_lengths_mm": [
+                1.2395580225177545,
+                0.9166666666666665,
+                0.8344017697790127
+              ],
+              "area_mm2": 0.3824341444820474,
+              "minimum_altitude_mm": 0.6170492022717229,
+              "quality_Q": 0.8622110056079775,
+              "aspect_longest_edge_over_min_altitude": 2.0088479459242614,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3313,
+                3442,
+                3314
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  2.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.9166666666666665
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  2.0
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622191172032593,
+            "worst_quality_triangle": {
+              "candidate_face_index": 32618,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170830818809846,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 34410,
+              "source_face_id": 10122,
+              "candidate_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322116,
+                0.9166666666666643,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.38247254311281415,
+              "minimum_altitude_mm": 0.6170830818809846,
+              "quality_Q": 0.8622191172032596,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606247,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088290470606256,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 32618,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            }
+          },
+          "intrinsic_cylinder_chart_all_side_faces": {
+            "triangle_count": 6144,
+            "quality_Q_min": 0.8622191172032593,
+            "worst_quality_triangle": {
+              "candidate_face_index": 32618,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.6170830818809846,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 34410,
+              "source_face_id": 10122,
+              "candidate_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322116,
+                0.9166666666666643,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.38247254311281415,
+              "minimum_altitude_mm": 0.6170830818809846,
+              "quality_Q": 0.8622191172032596,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606247,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                5189,
+                5318,
+                5190
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  15.75
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  16.666666666666664
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  15.75
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 2.0088290470606256,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 32618,
+              "source_face_id": 8330,
+              "candidate_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "edge_lengths_mm": [
+                1.2396144193322143,
+                0.9166666666666679,
+                0.8344855486097784
+              ],
+              "area_mm2": 0.3824725431128156,
+              "minimum_altitude_mm": 0.6170830818809856,
+              "quality_Q": 0.8622191172032593,
+              "aspect_longest_edge_over_min_altitude": 2.0088290470606256,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                4293,
+                4422,
+                4294
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  -16.490531304307247,
+                  -4.130663058355485,
+                  9.333333333333332
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  10.25
+                ],
+                [
+                  -16.26798570744755,
+                  -4.934839513325856,
+                  9.333333333333332
+                ]
+              ]
+            }
+          }
+        },
+        "base": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 512,
+            "quality_Q_min": 0.08488545669419832,
+            "worst_quality_triangle": {
+              "candidate_face_index": 36660,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.7986013402350507,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 37031,
+              "source_face_id": 12743,
+              "candidate_vertex_indices": [
+                3185,
+                6386,
+                6385
+              ],
+              "edge_lengths_mm": [
+                3.1335426884730264,
+                0.8344017697790127,
+                2.9999999999999987
+              ],
+              "area_mm2": 1.2512256953491514,
+              "minimum_altitude_mm": 0.7986013402350507,
+              "quality_Q": 0.4442021775416903,
+              "aspect_longest_edge_over_min_altitude": 3.923788416822262,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                3185,
+                6386,
+                6385
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  14.819022507099177,
+                  -13.431179096940372,
+                  24.0
+                ],
+                [
+                  13.141177707166522,
+                  -10.784685830781982,
+                  24.0
+                ],
+                [
+                  12.596169131034301,
+                  -11.416502232399317,
+                  24.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 20.380016247096258,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 36660,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            }
+          }
+        },
+        "all": {
+          "3d_displaced_chord_geometry": {
+            "triangle_count": 37088,
+            "quality_Q_min": 0.08488545669419832,
+            "worst_quality_triangle": {
+              "candidate_face_index": 36660,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271827051863031,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 6077,
+              "source_face_id": 2778,
+              "candidate_vertex_indices": [
+                8646,
+                13471,
+                8644
+              ],
+              "edge_lengths_mm": [
+                0.1751706993737358,
+                0.1751706993737358,
+                0.25
+              ],
+              "area_mm2": 0.015339783814828789,
+              "minimum_altitude_mm": 0.12271827051863031,
+              "quality_Q": 0.8579763277772942,
+              "aspect_longest_edge_over_min_altitude": 2.037186467373223,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.75
+                ],
+                [
+                  12.401144235265784,
+                  -15.691131943111504,
+                  10.625
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.5
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.75
+                ],
+                [
+                  12.401144235265784,
+                  -15.691131943111504,
+                  10.625
+                ],
+                [
+                  12.497189762847722,
+                  -15.614744571441895,
+                  10.5
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1389,
+                1390,
+                1518
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.913986089848656,
+                  -16.064150629612904,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  10.0
+                ],
+                [
+                  12.687865683272912,
+                  -15.460209067254738,
+                  11.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 20.380016247096258,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 36660,
+              "source_face_id": 12372,
+              "candidate_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "edge_lengths_mm": [
+                20.0,
+                0.981649140916485,
+                20.0
+              ],
+              "area_mm2": 9.813534865483533,
+              "minimum_altitude_mm": 0.9813534865483533,
+              "quality_Q": 0.08488545669419832,
+              "aspect_longest_edge_over_min_altitude": 20.380016247096258,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                6400,
+                22,
+                21
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  9.427934736519957,
+                  17.6384252869671,
+                  0.0
+                ],
+                [
+                  10.282054883864433,
+                  17.154572200005443,
+                  0.0
+                ]
+              ]
+            }
+          }
+        },
+        "outer_all": {
+          "intrinsic_cylinder_chart": {
+            "triangle_count": 30432,
+            "quality_Q_min": 0.2384087683444423,
+            "worst_quality_triangle": {
+              "candidate_face_index": 10058,
+              "source_face_id": 3031,
+              "candidate_vertex_indices": [
+                1644,
+                9393,
+                1515
+              ],
+              "edge_lengths_mm": [
+                0.24543692606169287,
+                1.2418347563470626,
+                1.401366673927233
+              ],
+              "area_mm2": 0.12271846303084644,
+              "minimum_altitude_mm": 0.17514111804433946,
+              "quality_Q": 0.2384087683444423,
+              "aspect_longest_edge_over_min_altitude": 8.001357360140052,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1515,
+                1644,
+                1643
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ],
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  12.0
+                ]
+              ]
+            },
+            "minimum_altitude_mm": 0.12271846303084644,
+            "worst_altitude_triangle": {
+              "candidate_face_index": 2332,
+              "source_face_id": 2304,
+              "candidate_vertex_indices": [
+                1281,
+                12786,
+                7891
+              ],
+              "edge_lengths_mm": [
+                0.17517083424090102,
+                0.17517083424090102,
+                0.25
+              ],
+              "area_mm2": 0.015339807878855805,
+              "minimum_altitude_mm": 0.12271846303084644,
+              "quality_Q": 0.8579770191690174,
+              "aspect_longest_edge_over_min_altitude": 2.037183271576341,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  9.875
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.75
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ],
+                [
+                  19.981554555052906,
+                  0.8587651386988169,
+                  9.875
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.75
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1152,
+                1153,
+                1281
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  20.0,
+                  0.0,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  9.0
+                ],
+                [
+                  19.97590912410345,
+                  0.9813534865483603,
+                  10.0
+                ]
+              ]
+            },
+            "aspect_longest_edge_over_min_altitude_max": 8.001357360140052,
+            "worst_aspect_triangle": {
+              "candidate_face_index": 10058,
+              "source_face_id": 3031,
+              "candidate_vertex_indices": [
+                1644,
+                9393,
+                1515
+              ],
+              "edge_lengths_mm": [
+                0.24543692606169287,
+                1.2418347563470626,
+                1.401366673927233
+              ],
+              "area_mm2": 0.12271846303084644,
+              "minimum_altitude_mm": 0.17514111804433946,
+              "quality_Q": 0.2384087683444423,
+              "aspect_longest_edge_over_min_altitude": 8.001357360140052,
+              "candidate_vertex_coordinates_rest_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "candidate_vertex_coordinates_relief_xyz_mm": [
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.906499768440929,
+                  -16.76449411109676,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ]
+              ],
+              "baseline_source_vertex_indices": [
+                1515,
+                1644,
+                1643
+              ],
+              "baseline_source_vertex_coordinates_rest_xyz_mm": [
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  11.0
+                ],
+                [
+                  11.111404660392036,
+                  -16.62939224605091,
+                  12.0
+                ],
+                [
+                  10.282054883864431,
+                  -17.154572200005443,
+                  12.0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "recorded_check_reconciliation": {
+        "recorded_lineage_reconstruction_pass": true,
+        "recorded_face_chart_max_residual_mm": 1.7763568394002505e-14,
+        "recorded_new_vertex_chart_max_residual_mm": 1.7763568394002505e-14,
+        "recorded_baseline_field_and_color_gate_pass": true,
+        "recorded_baseline_linear_rgb_max_difference": 1.1102230246251565e-16,
+        "prototype_baseline_color_tolerance": 1e-12,
+        "prototype_lineage_chart_tolerance_mm": 1e-09,
+        "recorded_topology_counts": {
+          "boundary_edge_count": 0,
+          "connected_component_count": 1,
+          "duplicate_face_count_unoriented": 0,
+          "euler_characteristic": 2,
+          "face_count": 37088,
+          "inconsistent_winding_edge_count": 0,
+          "minimum_double_area_mm2": 0.03067956240534959,
+          "non_two_incidence_edge_count": 0,
+          "positive_signed_volume": true,
+          "repeated_vertex_face_count": 0,
+          "signed_volume_mm3": 10202.175145733467,
+          "unique_undirected_edge_count": 55632,
+          "vertex_count": 18546,
+          "zero_area_face_count_threshold_1e-12_mm2_double_area": 0
+        },
+        "finite_geometry_recorded_max_error_mm": 0.00602362607591951,
+        "finite_geometry_reference_residual_independently_recomputed": false,
+        "finite_geometry_reference_residual_status": "UNKNOWN_IN_THIS_SUPPLEMENT; baseline/source lineage is now verified, but the prototype analytic field evaluator and its exact geometric probe construction were not re-executed or independently reimplemented",
+        "normal_angle_recorded_max_degrees": 3.276867202526798
+      }
+    }
+  ]
+}

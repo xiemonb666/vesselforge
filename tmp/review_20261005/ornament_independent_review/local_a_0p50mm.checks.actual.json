@@ -1,0 +1,146 @@
+{
+  "baseline_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+  "candidate_arrays_sha256": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+  "candidate_scope": "ONE_ANALYTIC_SAMPLE_RESOLUTION_VARIANT",
+  "case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+  "case_id": "local_a_0p50mm",
+  "checks": {
+    "all_local_geometry_and_lineage_checks_finite": true,
+    "baseline_coordinate_gate_pass": true,
+    "baseline_field_and_color_gate_pass": true,
+    "baseline_field_height_max_difference_mm": 0.0,
+    "baseline_linear_rgb_max_difference": 1.1102230246251565e-16,
+    "baseline_prefix_ids_and_coordinates_stable": true,
+    "closed_oriented_sphere_gate_pass": true,
+    "face_lineage_chart_max_residual_mm": 1.7763568394002505e-14,
+    "face_source_triangle_lineage_present": true,
+    "finite_geometry_probe_gate_pass": true,
+    "geometry_and_resolution": {
+      "actual_edge_lengths": {
+        "maximum_outer_chart_edge_mm": 1.4013666739272455,
+        "maximum_outer_chart_edge_over_amplitude": 3.1141481642827675,
+        "maximum_outer_displaced_3d_edge_mm": 1.401297625724855,
+        "maximum_outer_displaced_3d_edge_over_amplitude": 3.1139947238330112,
+        "support_plus_transition_chart_gate_pass": true,
+        "support_plus_transition_max_chart_edge_mm": 0.5,
+        "support_plus_transition_max_chart_edge_over_amplitude": 1.1111111111111112,
+        "support_plus_transition_max_displaced_3d_edge_mm": 0.5225488926868456,
+        "support_plus_transition_max_displaced_3d_edge_over_amplitude": 1.1612197615263236,
+        "support_plus_transition_target_chart_edge_mm": 0.5
+      },
+      "geometry_error_mm": {
+        "all_probes": {
+          "count": 49280,
+          "finite": true,
+          "max": 0.014577259475220927,
+          "p95": 0.006023626075917725,
+          "p99": 0.00941790323095774,
+          "rms": 0.003893121975432219
+        },
+        "by_probe": {
+          "barycenter": {
+            "count": 12320,
+            "finite": true,
+            "max": 0.012186791373428874,
+            "p95": 0.005354324334638069,
+            "p99": 0.010753997311153094,
+            "rms": 0.004140731977873679
+          },
+          "edge_midpoints": {
+            "count": 36960,
+            "finite": true,
+            "max": 0.014577259475220927,
+            "p95": 0.006023626075917882,
+            "p99": 0.009417903230957439,
+            "rms": 0.0038070081669550515
+          }
+        },
+        "finite_sample_gate_pass": true,
+        "finite_sample_gate_target_mm": 0.02,
+        "scope": "finite barycenter and edge-midpoint probes; not a certified supremum or global Hausdorff bound"
+      },
+      "normal_angle_error_degrees": {
+        "acceptance_gate": "REPORT_ONLY_NO_OWNER_LIMIT_SET",
+        "all_probes": {
+          "count": 49280,
+          "finite": true,
+          "max": 5.826063000141969,
+          "p95": 2.1803762399174222,
+          "p99": 3.849074033159411,
+          "rms": 1.0348498835910351
+        },
+        "by_probe": {
+          "barycenter": {
+            "count": 12320,
+            "finite": true,
+            "max": 3.2498818325965564,
+            "p95": 1.5428493135431318,
+            "p99": 3.1033301893101624,
+            "rms": 0.7563774024393511
+          },
+          "edge_midpoints": {
+            "count": 36960,
+            "finite": true,
+            "max": 5.826063000141969,
+            "p95": 2.4549632150122807,
+            "p99": 4.014831958899692,
+            "rms": 1.1122874855229075
+          }
+        }
+      },
+      "outer_triangle_count": 12320,
+      "sample_count": 49280
+    },
+    "lineage_barycentric_max": 1.0,
+    "lineage_barycentric_min": 0.0,
+    "lineage_barycentric_sum_max_error": 0.0,
+    "lineage_gate_pass": true,
+    "lineage_reconstruction_pass": true,
+    "new_analytic_coordinate_gate_pass": true,
+    "new_vertex_lineage_chart_max_residual_mm": 1.7763568394002505e-14,
+    "new_vertex_source_triangle_lineage_present": true,
+    "new_vertices_displaced_analytic_max_abs_error_mm": 0.0,
+    "new_vertices_rest_analytic_max_abs_error_mm": 0.0,
+    "outer_duplicate_rest_coordinate_count_rounded_1e-12_mm": 0,
+    "overall_candidate_gate_pass": true,
+    "periodic_seam_duplicate_coordinate_count_rounded_1e-12_mm": 0,
+    "periodic_seam_unique_gate_pass": true,
+    "periodic_seam_vertex_count": 33,
+    "refinement_rounds": 2,
+    "standard_srgb_transfer_max_difference": 0.0,
+    "topology": {
+      "boundary_edge_count": 0,
+      "connected_component_count": 1,
+      "duplicate_face_count_unoriented": 0,
+      "euler_characteristic": 2,
+      "face_count": 18976,
+      "inconsistent_winding_edge_count": 0,
+      "minimum_double_area_mm2": 0.12271760931148541,
+      "non_two_incidence_edge_count": 0,
+      "positive_signed_volume": true,
+      "repeated_vertex_face_count": 0,
+      "signed_volume_mm3": 10202.014178867737,
+      "unique_undirected_edge_count": 28464,
+      "vertex_count": 9490,
+      "zero_area_face_count_threshold_1e-12_mm2_double_area": 0
+    },
+    "zone_edge_target_gate_pass": true
+  },
+  "elapsed_seconds": 7.555535899940878,
+  "field_and_resolution": {
+    "case_id": "local_a_0p50mm",
+    "maximum_chart_edge_mm_in_support_and_transition": 0.5,
+    "proposed_max_edge_over_relief_amplitude": 1.1111111111111112,
+    "status": "PROPOSED_NOT_MEASURED"
+  },
+  "flat_triangle_visual_sha256": "2931af31de62f710034b1d01b298357a444a3fe283231ac301e83500108ba1a0",
+  "fracture_labels": "NONE",
+  "global_minimum_normal_wall_thickness": "UNKNOWN",
+  "independent_sample_or_ground_truth": "NO",
+  "material_or_physical_qualification": "NOT_VALIDATED",
+  "physics_qualification": "UNKNOWN",
+  "real_vessel_match": "NOT_VALIDATED",
+  "self_intersection_or_general_offset_validity": "NOT_ASSESSED",
+  "source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+  "status": "PASS"
+}

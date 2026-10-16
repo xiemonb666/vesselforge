@@ -1,0 +1,22 @@
+{
+  "supplement_report.md": {
+    "sha256": "952c634eac7cda72b6ad1589e210b827d91b663b02c4394d2a5864042e9e2e9e",
+    "bytes": 8027
+  },
+  "supplement_metrics.json": {
+    "sha256": "ba51758d1aa4061645a87a10e7a116bd39ff92ca6aee4803308ffbef5937ae1f",
+    "bytes": 189432
+  },
+  "supplement_receipt.json": {
+    "sha256": "1d00ae031efbc2110d40bbc7ca8d03cd873a7924662988a895e06de9134110f5",
+    "bytes": 1221
+  },
+  "supplement_input_sha256.json": {
+    "sha256": "96cf8aadca22b21f6fd98e9ba7beff7bcb1490596d8b6b2c9045751b741cc6b7",
+    "bytes": 1513
+  },
+  "lineage_geometry_supplement.py": {
+    "sha256": "b7efeedcc1ae43e852a14ea69ea730932423475514a26357d07144dd0186bb4a",
+    "bytes": 36368
+  }
+}

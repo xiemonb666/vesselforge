@@ -1,0 +1,89 @@
+{
+  "schema": "vesselforge.c4_native_source_independent_review/1.0",
+  "verdict": "NO_GO_SOURCE_ONLY",
+  "review_scope": [
+    "vesselforge/experiments/c4_jar_native_ingress_20261007/native_c4_ingress.py",
+    "vesselforge/experiments/c4_jar_native_ingress_20261007/native_input_gate.py",
+    "vesselforge/experiments/c4_jar_native_ingress_20261007/capture_once.py",
+    "vesselforge/experiments/c4_jar_native_ingress_20261007/native_c4_ingress_case.json",
+    "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/native_source_v1/source_pins.json"
+  ],
+  "method": "Static reads, SHA-256 checks and matched-stub/evidence review only. No OCP, provider or NumPy imports; no CAD construction, STEP operation or test execution.",
+  "source_hashes": {
+    "native_c4_ingress.py": {
+      "sha256": "b7f0550a0c0b60b557f8190e25c1b827a7a8b550fcc37b3cea0cc9cbc2d9fc04",
+      "matches_pin": true
+    },
+    "native_input_gate.py": {
+      "sha256": "45ee34ab7963c2d8886bd21be6844a0d171adb8257ee3665bd91a182aa4d44e4",
+      "matches_pin": true
+    },
+    "capture_once.py": {
+      "sha256": "7ea52a08da1900825fe950ee05bf8fadeecc5b98c1192d60e29366ddb639f4c4",
+      "matches_pin": true
+    },
+    "native_c4_ingress_case.json": {
+      "sha256": "38fd2a65f8769dab9c994ba0ad270fba0340475a1c9a2be33a867c676f26eb8f",
+      "matches_pin": true
+    },
+    "native_source_v1/source_pins.json": {
+      "sha256": "330f6695491a9e9edd925bce02557251424ef8ac0d5a3689dfb1a6984409c1f0",
+      "externally_enforced_expected_digest": false
+    }
+  },
+  "matched_ocp_evidence": {
+    "runtime_version": "7.9.3.1.1",
+    "stub_wheel_sha256": "5ecba090df1ada12c558ff4a1b49c61d5155edc8cb3411067a785e3b43f4b359",
+    "signature_evidence_sha256": "7240b899b1de8efb86e441a1a5bc58acfdda97606f551bcd44727b6b97a74dbe",
+    "degenerated_method_signature": "BRepPrimAPI_MakeRevol.Degenerated() -> TopTools_ListOfShape; HasDegenerated() -> bool"
+  },
+  "findings": [
+    {
+      "id": "C4R-01",
+      "severity": "blocker_likely",
+      "confidence": "high",
+      "location": "native_c4_ingress.py:117-125,171-180,244-265",
+      "finding": "Native role classification requires Plane for base/lip and Cylinder for neck, while the generated geometry comes from trimmed BSpline/OffsetCurve edges. Generic revolution or spline surface adaptors fall into a side-only bbox-radius classifier, which cannot identify base radii and can label necks as sides.",
+      "action": "Map native roles from Generated(source_edge) history and verify those faces are in the actual body face inventory. Classify imported faces with unique representation-independent metrics."
+    },
+    {
+      "id": "C4R-02",
+      "severity": "high_risk",
+      "confidence": "high",
+      "location": "native_c4_ingress.py:291-302",
+      "finding": "TopoDS.Face(shape) is used with exception handling as a runtime shape-kind predicate. The matched stub only guarantees a typed return; a downcast can fail to validate the underlying TopAbs shape type.",
+      "action": "Check axis_generated.First().ShapeType() == TopAbs_FACE before casting."
+    },
+    {
+      "id": "C4R-03",
+      "severity": "high_risk",
+      "confidence": "high",
+      "location": "capture_once.py:32-49,61-67",
+      "finding": "The runner hashes source_pins.json before and after the attempt but does not compare it with an externally fixed reviewed digest. Source files and pin records can be changed together before execution.",
+      "action": "Bind root-go to an independently recorded expected digest for the reviewed pin file or equivalent immutable authorization record."
+    },
+    {
+      "id": "C4R-04",
+      "severity": "medium_risk",
+      "confidence": "high",
+      "location": "native_c4_ingress_case.json:run_budget.outer_wall_seconds; capture_once.py:24,82-91",
+      "finding": "Only the child process has a 55-second timeout. Preflight, post-run hashing, persistence and receipt work have no 60-second outer deadline.",
+      "action": "Enforce a deadline across the complete capture lifecycle or describe the 60-second value as an unenforced target."
+    },
+    {
+      "id": "C4R-05",
+      "severity": "low_risk",
+      "confidence": "high",
+      "location": "native_source_v1/source_pins.json:source_files",
+      "finding": "The input_gate member is duplicated with an identical current value. Standard Python JSON loading silently retains one occurrence.",
+      "action": "Remove the duplicate member."
+    }
+  ],
+  "geometry_scope": {
+    "offset_sign": "Consistent with the pinned OCCT correction: +3 mm, V=+Y, T cross V gives inward (-zprime,+rprime) in RZ.",
+    "native_global_wall": "UNKNOWN",
+    "native_step_full_geometry_equality": "UNKNOWN",
+    "numeric_runtime_results": "NOT_RUN"
+  },
+  "go_recommended": false
+}

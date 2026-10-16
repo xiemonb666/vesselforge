@@ -1,0 +1,53 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.failure_source_freeze.v1",
+  "prior_status": "UNKNOWN",
+  "prior_reason": "unexpected local-offset result scope",
+  "verifier_call_count": 1,
+  "source_snapshot": {
+    "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/failure_source_freeze/monotone_normal_strip_certificate.pre_scope_alias_fix.py",
+    "sha256": "96951a1fa9b188ee5e192f9a05b23f11152a196c37e4824b002737b4b76cfad0",
+    "bytes": 19144
+  },
+  "source_pins_snapshot": {
+    "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/failure_source_freeze/source_pins.pre_scope_alias_fix.json",
+    "sha256": "fbc4c051a8a94e914623e64964604cbcc6d9479c5fe9d9287a5c427b531920a8",
+    "bytes": 5441
+  },
+  "failure_artifacts": [
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/capture_supervisor.py",
+      "sha256": "0cec8f56aa533c1f8d2fb1e8e31081dfc9a21586f1d812920844a13b0d69f06f",
+      "bytes": 8007
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/invoke_once.py",
+      "sha256": "8df4f043b1622053f204935a0f2a640675381730c9f12607d84959ba288b6b34",
+      "bytes": 821
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_01/stdout.bin",
+      "sha256": "4342dcdaecc97b19bf40c58e808209fb80e239820e88ca3a8ff1701b36f67c40",
+      "bytes": 134
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_01/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_01/result.json",
+      "sha256": "4342dcdaecc97b19bf40c58e808209fb80e239820e88ca3a8ff1701b36f67c40",
+      "bytes": 134
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_01/receipt.json",
+      "sha256": "65c0b5e5509ae454b26fb5f163ff3a942de1f73a5ed132858c2a42dcf536b7db",
+      "bytes": 10176
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/normal_strip_once_GO.json",
+      "sha256": "1f8843c771e4388434720da555a445fb56b0214ed39efd296786be40fc4cb991",
+      "bytes": 731
+    }
+  ]
+}

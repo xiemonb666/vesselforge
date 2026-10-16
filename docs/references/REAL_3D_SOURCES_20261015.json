@@ -1,0 +1,431 @@
+{
+  "schema": "real-vessel-3d-source-catalog-v1",
+  "checked_date": "2026-10-15",
+  "scope": "官方一手来源和数据集说明中的可复用真实对象三维几何；本文件不声称已接入、量测或验证任何网格。",
+  "collection_method": {
+    "performed": [
+      "读取官方网页、馆藏元数据、论文、公开API响应和数据集脚本",
+      "对少量单件直链执行HTTP HEAD以确认公开访问状态、类型和字节数"
+    ],
+    "not_performed": [
+      "没有下载扫描网格、模型档案或图像媒体",
+      "没有申请账户、付费或联系数据提供方",
+      "没有检查OBJ/GLB/PLY顶点、UV、内腔、底面、坐标单位或watertight状态"
+    ]
+  },
+  "evidence_labels": {
+    "FACT_FROM_SOURCE": "来源直接报告的事实、尺寸、格式、扫描流程或许可证",
+    "VISUAL_INFERENCE": "页面图像/可视化呈现出的定性判断，不是尺寸测量",
+    "DESIGN_ASSUMPTION": "未来生成器可能补入的设计值，必须明确标记为假设",
+    "UNKNOWN": "本次官方来源没有报告或无法从元数据确认的属性"
+  },
+  "summary": {
+    "daily_true_object_meshes_found": true,
+    "daily_ceramic_vessel_scan_found": false,
+    "daily_mesh_source": "YCB Object and Model Set: actual everyday consumer objects scanned for robotics; confirmed vessel examples are enamel-coated metal bowl, metal mug, metal plate, pitcher, mustard bottle.",
+    "best_archaeological_bowl_mesh_candidate": "Apsida SHM 17946:0047; footed two-handled earthenware bowl; OBJ archive; CC BY-SA 4.0.",
+    "best_archaeological_jar_like_mesh_candidate": "Smithsonian NMAAHC Colonoware pot 2017.108.1.1; OBJ/GLB API links; CC0; object is broken and repaired.",
+    "best_archaeological_beaker_candidate": "Smithsonian NMAA F1980.194a-b beaker-shaped vase; OBJ/GLB API links; CC0.",
+    "mesh_exists_does_not_prove": [
+      "physical wall thickness",
+      "complete interior coverage",
+      "complete underside coverage",
+      "mesh coordinate units or calibrated scale",
+      "watertight physical wall shell",
+      "absence of scan holes or reconstruction artifacts"
+    ]
+  },
+  "family_coverage": [
+    {
+      "family": "bowl",
+      "daily": {"status": "candidate", "source_object_ids": ["ycb_024_bowl"], "material_limit": "enamel-coated metal; not ceramic"},
+      "archaeological": {"status": "candidate", "source_object_ids": ["apsida_shm_17946_0047"], "shape_limit": "two handles; not a pure rotational object"}
+    },
+    {
+      "family": "beaker",
+      "daily": {"status": "unknown", "nearby_form": "YCB 025 metal mug is handled and does not qualify as an unhandled beaker"},
+      "archaeological": {"status": "candidate", "source_object_ids": ["smithsonian_f1980_194"]}
+    },
+    {
+      "family": "jar",
+      "daily": {"status": "unknown", "note": "No explicitly named household jar scan confirmed; YCB bottle is not treated as a jar."},
+      "archaeological": {"status": "near_neighbor", "source_object_ids": ["smithsonian_nmaahc_2017_108_1_1"], "shape_limit": "museum calls it a Colonoware pot with narrowed neck; broken, cross-mended and repaired"}
+    },
+    {
+      "family": "handled_vessel",
+      "daily": {"status": "candidate", "source_object_ids": ["ycb_025_mug", "ycb_019_pitcher_base"], "material_limit": "metal/unspecified, not confirmed ceramic"},
+      "archaeological": {"status": "candidate", "source_object_ids": ["apsida_shm_17946_0047"]}
+    },
+    {
+      "family": "plate",
+      "daily": {"status": "candidate", "source_object_ids": ["ycb_029_plate"], "material_limit": "metal"},
+      "archaeological": {"status": "unknown"}
+    },
+    {
+      "family": "bottle",
+      "daily": {"status": "candidate", "source_object_ids": ["ycb_006_mustard_bottle"], "material_limit": "consumer packaging; material not reported in cited table"},
+      "archaeological": {"status": "unknown"}
+    },
+    {
+      "family": "jug",
+      "daily": {"status": "near_neighbor", "source_object_ids": ["ycb_019_pitcher_base"], "shape_limit": "Pitcher Base object; no generic jug contour implied"},
+      "archaeological": {"status": "unknown", "note": "A 3D downloadable ewer/jug model was not verified in this pass."}
+    }
+  ],
+  "datasets": [
+    {
+      "id": "ycb_object_model_set",
+      "domain": "ycb-benchmarks.s3.amazonaws.com",
+      "kind": "daily_real_object_scan_dataset",
+      "official_sources": [
+        "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+        "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf",
+        "https://ycb-benchmarks.s3.amazonaws.com/scripts_to_publish/ycb_downloader.py"
+      ],
+      "license": {
+        "data": "CC BY 4.0",
+        "code": "MIT",
+        "attribution": "Credit the dataset authors and cite Calli et al. 2015; follow CC BY 4.0 attribution terms.",
+        "redistribution": "Dataset page identifies the data as CC BY 4.0. Recheck the per-file license/readme when integrating an archive."
+      },
+      "access": {
+        "requires_account": false,
+        "specific_item_path_pattern": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/{object_id}/{object_id}_berkeley_meshes.tgz",
+        "package_contents_as_documented": "Processed Berkeley archive contains segmented point clouds and textured meshes; inner file extensions were not inspected.",
+        "sample_head_checks_only": true
+      },
+      "capture": {
+        "source": "Physical YCB objects captured on the BigBIRD scanning rig.",
+        "reported_setup": "5 RGB-D sensors and 5 high-resolution RGB cameras on a quarter-circular arc; object on computer-controlled turntable, 3-degree step, 120 positions; 600 RGB-D and 600 RGB images per object.",
+        "mesh_processing": "Poisson surface reconstruction; official paper describes resulting meshes as watertight.",
+        "bottom": "Paper explicitly states object bottoms were not scanned; mesh bottoms are untextured.",
+        "interior": "Not reported per object; bowl/mug internal surface coverage is UNKNOWN.",
+        "mesh_native_unit": "UNKNOWN; paper table has millimetre physical dimensions, but this does not specify mesh vertex-coordinate units.",
+        "watertight_boundary": "Watertight is a source statement about Poisson reconstructed mesh, not evidence of physical wall thickness, inner shell, or full scan coverage."
+      },
+      "reported_measurement_source": "Paper Table I reports object dimensions in mm and mass in g; paper acknowledgements credit Michael Leddy for measuring physical properties. Measurement tolerance and per-axis nomenclature for vessel entries are not specified in the table.",
+      "paper_citation": "Berk Calli et al., The YCB Object and Model Set: Towards Common Benchmarks for Manipulation Research, 2015.",
+      "data_not_downloaded": true
+    },
+    {
+      "id": "amazon_berkeley_objects_abo",
+      "domain": "amazon-berkeley-objects.s3.amazonaws.com",
+      "kind": "real_product_catalog_with_artist_designed_3d_models",
+      "official_sources": [
+        "https://amazon-berkeley-objects.s3.amazonaws.com/index.html",
+        "https://bcommons.berkeley.edu/amazon-berkeley-objects-large-scale-dataset-3d-object-understanding",
+        "https://www.amazon.science/code-and-datasets/amazon-berkeley-objects-abo-dataset"
+      ],
+      "license": {
+        "data_page_license": "CC BY 4.0",
+        "attribution": "Amazon.com for data; dataset authors/builders as listed by official index; cite Collins et al., CVPR 2022.",
+        "redistribution": "Official download index requires attribution, a CC BY 4.0 license link, and indication of modifications.",
+        "integration_note": "Recheck archive-local terms before commercial use; this catalogue does not provide legal review."
+      },
+      "access": {
+        "direct_bucket": "s3://amazon-berkeley-objects/",
+        "3d_metadata_path": "s3://amazon-berkeley-objects/3dmodels/metadata/",
+        "metadata_fields": ["3dmodel_id", "path", "meshes", "materials", "textures", "vertices", "faces", "extent_x", "extent_y", "extent_z"],
+        "full_3d_archive_size_label": "154 Gb (official page label)",
+        "per_product_id_confirmed_in_this_pass": false,
+        "data_downloaded": false
+      },
+      "qualification": {
+        "official_description": "Berkeley BAIR project description calls the 7,953 product-associated 3D meshes artist-designed.",
+        "physical_scan": false,
+        "unit_and_interior_evidence": "UNKNOWN; extent fields in schema do not identify units or certify interior/bottom coverage.",
+        "usefulness": "Product metadata, materials, texture/rendering and product-design reference; exclude as a physical scan or calibrated vessel profile source."
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "ycb_024_bowl",
+      "source_dataset": "ycb_object_model_set",
+      "family": "bowl",
+      "object_type": "Bowl",
+      "object_material": "Enamel-coated metal (paper figure caption)",
+      "reported_facts": [
+        {"name": "dimensions_as_printed", "value": [159, 53], "unit": "mm", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "note": "Table I lists Dimensions (mm), but does not name the order for each axis."},
+        {"name": "mass", "value": 147, "unit": "g", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf"}
+      ],
+      "conditional_derived": [
+        {"name": "H_over_D", "value": 0.3333, "assumption": "Interpret 159 mm as outside diameter and 53 mm as height; conditional because table axis labels are not given."}
+      ],
+      "asset": {
+        "format_available": "Berkeley processed mesh archive; .tgz container; inner mesh extension not inspected",
+        "url": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/024_bowl/024_bowl_berkeley_meshes.tgz",
+        "head_status": 200,
+        "bytes": 20628076,
+        "downloaded": false
+      },
+      "shape_note": "Real-world metal bowl scan; a geometry analog only, not a ceramic wall/foot specification.",
+      "coverage": {
+        "bottom_scanned": false,
+        "bottom_textured": false,
+        "interior_surface": "UNKNOWN",
+        "wall_thickness": "UNKNOWN",
+        "mesh_unit": "UNKNOWN",
+        "mesh_watertight_source_statement": "Dataset paper describes Poisson-reconstructed meshes as watertight; not a physical-wall validation."
+      }
+    },
+    {
+      "id": "ycb_025_mug",
+      "source_dataset": "ycb_object_model_set",
+      "family_candidates": ["handled_vessel", "cup_near_neighbor"],
+      "object_type": "Mug",
+      "object_material": "Metal (paper figure caption)",
+      "reported_facts": [
+        {"name": "dimensions_as_printed", "value": [80, 82], "unit": "mm", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "note": "Table I lists Dimensions (mm), but does not name the order for each axis."},
+        {"name": "mass", "value": 118, "unit": "g", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf"}
+      ],
+      "conditional_derived": [
+        {"name": "H_over_D", "value": 1.025, "assumption": "Interpret 80 mm as diameter and 82 mm as height; conditional because table axis labels are not given."}
+      ],
+      "asset": {
+        "format_available": "Berkeley processed mesh archive; .tgz container; inner mesh extension not inspected",
+        "url": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/025_mug/025_mug_berkeley_meshes.tgz",
+        "head_status": 200,
+        "bytes": 12799152,
+        "downloaded": false
+      },
+      "shape_note": "True handled metal mug near-neighbor; it is neither an unhandled beaker nor ceramic.",
+      "coverage": {
+        "bottom_scanned": false,
+        "bottom_textured": false,
+        "interior_surface": "UNKNOWN",
+        "handle_section_and_attachments": "UNKNOWN from dimensional table; should be checked in the source mesh before reusing geometry",
+        "wall_thickness": "UNKNOWN",
+        "mesh_unit": "UNKNOWN"
+      }
+    },
+    {
+      "id": "ycb_019_pitcher_base",
+      "source_dataset": "ycb_object_model_set",
+      "family_candidates": ["handled_vessel", "jug_near_neighbor"],
+      "object_type": "Pitcher Base",
+      "reported_facts": [
+        {"name": "dimensions_as_printed", "value": [108, 235], "unit": "mm", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "note": "Table I does not name axis order."},
+        {"name": "mass", "value": 178, "unit": "g", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf"}
+      ],
+      "asset": {
+        "format_available": "Berkeley processed mesh archive; .tgz container; inner mesh extension not inspected",
+        "url": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/019_pitcher_base/019_pitcher_base_berkeley_meshes.tgz",
+        "head_status": 200,
+        "bytes": 40894472,
+        "downloaded": false
+      },
+      "shape_note": "Paper illustration depicts a pitcher; dataset name is Pitcher Base. Do not infer that it matches a generic jug profile or has a complete lid/neck part.",
+      "coverage": {
+        "bottom_scanned": false,
+        "interior_surface": "UNKNOWN",
+        "wall_thickness": "UNKNOWN",
+        "mesh_unit": "UNKNOWN"
+      }
+    },
+    {
+      "id": "ycb_006_mustard_bottle",
+      "source_dataset": "ycb_object_model_set",
+      "family": "bottle",
+      "object_type": "Mustard Bottle",
+      "reported_facts": [
+        {"name": "dimensions_as_printed", "value": [58, 95, 190], "unit": "mm", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "note": "Three dimensions reported; table does not name axis order."},
+        {"name": "mass", "value": 603, "unit": "g", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf"}
+      ],
+      "asset": {
+        "format_available": "Berkeley processed mesh archive; .tgz container; inner mesh extension not inspected",
+        "url": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/006_mustard_bottle/006_mustard_bottle_berkeley_meshes.tgz",
+        "head_status": 200,
+        "bytes": 20051277,
+        "downloaded": false
+      },
+      "shape_note": "Commercial consumer bottle, not a ceramic storage bottle; material not identified in the cited paper table/caption.",
+      "coverage": {
+        "bottom_scanned": false,
+        "interior_surface": "UNKNOWN",
+        "neck_or_cap_geometry": "UNKNOWN until mesh file is checked",
+        "wall_thickness": "UNKNOWN",
+        "mesh_unit": "UNKNOWN"
+      }
+    },
+    {
+      "id": "ycb_029_plate",
+      "source_dataset": "ycb_object_model_set",
+      "family": "plate",
+      "object_type": "Plate",
+      "object_material": "Metal (paper figure caption)",
+      "reported_facts": [
+        {"name": "dimensions_as_printed", "value": [258, 24], "unit": "mm", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "note": "Table I lists Dimensions (mm), but does not name axis order."},
+        {"name": "mass", "value": 279, "unit": "g", "source_url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf"}
+      ],
+      "conditional_derived": [
+        {"name": "envelope_height_over_diameter", "value": 0.093, "assumption": "Interpret 258 mm as outside diameter and 24 mm as overall height/depth; conditional because table axis labels are not given."}
+      ],
+      "asset": {
+        "format_available": "Berkeley processed mesh archive; .tgz container; inner mesh extension not inspected",
+        "url": "https://ycb-benchmarks.s3.amazonaws.com/data/berkeley/029_plate/029_plate_berkeley_meshes.tgz",
+        "head_status": 200,
+        "bytes": 37703920,
+        "downloaded": false
+      },
+      "shape_note": "Real metal plate scan; not a ceramic rim/foot reference.",
+      "coverage": {
+        "bottom_scanned": false,
+        "interior_surface": "UNKNOWN",
+        "rim_section": "UNKNOWN",
+        "wall_or_floor_thickness": "UNKNOWN",
+        "mesh_unit": "UNKNOWN"
+      }
+    },
+    {
+      "id": "apsida_shm_17946_0047",
+      "domain": "apsida.cut.ac.cy",
+      "family_candidates": ["bowl", "footed_vessel", "handled_vessel"],
+      "title": "SHM 17946:0047 — Footed bowl",
+      "official_record": "https://apsida.cut.ac.cy/items/show/49281",
+      "collection_provenance": "Medelhavsmuseet; record source names the Världskulturmuseerna Database; hosted by the Digital Heritage Research Laboratory / Cyprus University of Technology.",
+      "reported_facts": [
+        {"name": "period", "value": "C.G. III (850-700 BC), as written in the record", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "material", "value": "Earthenware; clay; pottery", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "height", "value": 11.9, "unit": "cm", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "base_diameter", "value": 7.0, "unit": "cm", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "rim_diameter", "value": 16.0, "unit": "cm", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "shape_description", "value": "Slightly convex conical foot with conical cavity underneath; stem tapering upward; convex lower body; slightly convex mid-body; ridge between mid-body and upper body; cylindrical upper body; sharp rim; two horizontal round handles on mid-body.", "source_url": "https://apsida.cut.ac.cy/items/show/49281"},
+        {"name": "interior_decoration", "value": "Five black concentric circles on bottom are listed in description; this is not evidence of full scan coverage.", "source_url": "https://apsida.cut.ac.cy/items/show/49281"}
+      ],
+      "derived_ratios": {
+        "height_over_rim_diameter": 0.74375,
+        "base_diameter_over_rim_diameter": 0.4375,
+        "basis": "Arithmetic from dimensions explicitly named by the record; not profile measurements."
+      },
+      "asset": {
+        "page_format": "OBJ",
+        "viewer": true,
+        "url": "https://apsida.cut.ac.cy/files/original/529/49281/Footed_Bowl_SHM_17946_0047_Obj06.zip",
+        "container": "ZIP",
+        "head_status": 200,
+        "bytes": 21934200,
+        "contents_downloaded_or_inspected": false
+      },
+      "license": {
+        "reported": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "Attribute Medelhavsmuseet and the Apsida record; ShareAlike terms apply to redistributed adaptations.",
+        "rights_field_source": "https://apsida.cut.ac.cy/items/show/49281"
+      },
+      "visual_inference": [
+        "Curatorial text supports an approximately axial bowl body with foot/stem and cylindrical upper body; the two handles make it non-axisymmetric overall.",
+        "Do not infer measured rim, foot, handle section or wall dimensions from page photographs."
+      ],
+      "design_assumptions": [],
+      "unknowns": [
+        "OBJ mesh coordinate unit and object-to-mesh calibration",
+        "Capture modality and per-object acquisition procedure",
+        "Full interior and underside coverage",
+        "Watertightness of the delivered mesh",
+        "Wall thickness and base thickness",
+        "Rim cross-section, foot/stem cross-section and handle section",
+        "Exact meridian control points"
+      ]
+    },
+    {
+      "id": "smithsonian_nmaahc_2017_108_1_1",
+      "domain": "3d.si.edu",
+      "family_candidates": ["jar_near_neighbor", "pot", "historical_vessel"],
+      "title": "Colonoware pot from Cooper River, Charleston County, SC",
+      "object_number": "2017.108.1.1",
+      "date": "18th century; object page describes c. 1700-1800",
+      "object_record_url": "https://www.si.edu/object/colonoware-pot-cooper-river-charleston-county-sc%3Anmaahc_2017.108.1.1",
+      "3d_object_url": "https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f",
+      "reported_facts": [
+        {"name": "form_description", "value": "Unglazed Colonoware pot; rounded body and base; slightly flared lip; narrowed neck.", "source_url": "https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f"},
+        {"name": "dimensions", "value": {"height": 23.0, "width": 26.7, "diameter": 26.7}, "unit": "cm", "source_url": "https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f"},
+        {"name": "condition", "value": "Broken into several large pieces and cross-mended; base repaired with dark painted plaster; other losses noted.", "source_url": "https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f"}
+      ],
+      "derived_ratios": {"height_over_diameter": 0.86142, "basis": "23.0 cm / 26.7 cm; derived from labeled museum dimensions."},
+      "api": {
+        "documentation_url": "https://3d-api.si.edu/api-docs/",
+        "query_url": "https://3d-api.si.edu/api/v1.0/content/file/search?model_url=3d_package%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f&rows=100",
+        "package_id": "3d_package:79da3e3f-3ad7-41de-8956-e891d88a3c5f",
+        "filters_documented": ["model_url", "file_type", "model_type", "file_quality"],
+        "water_tight_filter_rows": 0
+      },
+      "assets": [
+        {"format": "OBJ ZIP", "quality": "Full_resolution", "url": "https://3d-api.si.edu/content/document/3d_package:79da3e3f-3ad7-41de-8956-e891d88a3c5f/resources/2017_108_1_1-ColonoPottery-full_resolution-obj_std.zip", "bytes": 29160378},
+        {"format": "GLB", "quality": "Low_Resolution", "url": "https://3d-api.si.edu/content/document/3d_package:79da3e3f-3ad7-41de-8956-e891d88a3c5f/resources/2017_108_1_1-ColonoPottery-150k-4096_std.glb", "bytes": 7893908},
+        {"format": "GLB Draco", "quality": "Low_Resolution", "url": "https://3d-api.si.edu/content/document/3d_package:79da3e3f-3ad7-41de-8956-e891d88a3c5f/resources/2017_108_1_1-ColonoPottery-100k-2048_std_draco.glb", "bytes": 1525892}
+      ],
+      "license": {
+        "reported": "Public domain / CC0",
+        "rights_url": "https://www.si.edu/openaccess/faq",
+        "attribution": "Smithsonian attribution is recommended; do not misrepresent source or data.",
+        "source_url": "https://3d.si.edu/object/3d/colonoware-pot-cooper-river-charleston-county-sc%3A79da3e3f-3ad7-41de-8956-e891d88a3c5f"
+      },
+      "capture_and_coverage": {
+        "institutional_context": "Smithsonian 3D Digitization model; Smithsonian program states it uses 3D scanning technology.",
+        "object_specific_capture_method": "UNKNOWN",
+        "mesh_unit_and_scale_transform": "UNKNOWN",
+        "interior_coverage": "UNKNOWN",
+        "bottom_coverage": "UNKNOWN",
+        "wall_thickness": "UNKNOWN",
+        "watertightness": "UNKNOWN; no Water_tight-labelled file returned by documented API filter. Zero labelled results is not proof of non-watertightness."
+      },
+      "adaptation_limit": "A damaged/restored museum object; use only the surviving/repaired scanned shape as evidence and do not extrapolate an intact vessel profile."
+    },
+    {
+      "id": "smithsonian_nmaa_f1980_194",
+      "domain": "3d.si.edu",
+      "family_candidates": ["beaker", "vase"],
+      "title": "Beaker-shaped vase, from a five-piece garniture",
+      "object_number": "F1980.194a-b",
+      "period": "Qing dynasty, Kangxi reign, 1662-1722",
+      "origin": "Jingdezhen, Jiangxi province, China",
+      "object_record_url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_F1980.194a-b/",
+      "3d_object_url": "https://3d.si.edu/object/3d/beaker-shaped-vase-five-piece-garniture%3Ad8c64b96-4ebc-11ea-b77f-2e728ce88125",
+      "reported_facts": [
+        {"name": "material", "value": "Porcelain with cobalt pigment under clear colorless glaze", "source_url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_F1980.194a-b/"},
+        {"name": "dimensions", "value": {"height": 43.0, "diameter": 20.6}, "unit": "cm", "source_url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_F1980.194a-b/"},
+        {"name": "shape_description", "value": "Beaker-shaped vase in a five-piece garniture; collection description notes a flaring neck.", "source_url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_F1980.194a-b/"}
+      ],
+      "derived_ratios": {"height_over_diameter": 2.08738, "basis": "43 cm / 20.6 cm from labeled H × diameter dimensions."},
+      "api": {
+        "documentation_url": "https://3d-api.si.edu/api-docs/",
+        "query_url": "https://3d-api.si.edu/api/v1.0/content/file/search?model_url=3d_package%3Ad8c64b96-4ebc-11ea-b77f-2e728ce88125&rows=100",
+        "package_id": "3d_package:d8c64b96-4ebc-11ea-b77f-2e728ce88125",
+        "water_tight_filter_rows": 0
+      },
+      "assets": [
+        {"format": "OBJ ZIP", "quality": "Full_resolution", "url": "https://3d-api.si.edu/content/document/3d_package:d8c64b96-4ebc-11ea-b77f-2e728ce88125/resources/f1980_194-full_resolution-obj.zip", "bytes": 70698813},
+        {"format": "OBJ ZIP", "quality": "Low_resolution", "url": "https://3d-api.si.edu/content/document/3d_package:d8c64b96-4ebc-11ea-b77f-2e728ce88125/resources/f1980_194-150k-4096-obj.zip", "bytes": 6860431},
+        {"format": "GLB", "quality": "Low_resolution", "url": "https://3d-api.si.edu/content/document/3d_package:d8c64b96-4ebc-11ea-b77f-2e728ce88125/resources/f1980_194-150k-4096.glb", "bytes": 5666060}
+      ],
+      "license": {
+        "reported": "CC0 / public domain",
+        "rights_url": "https://www.si.edu/openaccess/faq",
+        "attribution": "Smithsonian attribution is recommended; do not misrepresent source or data.",
+        "source_url": "https://3d.si.edu/object/3d/beaker-shaped-vase-five-piece-garniture%3Ad8c64b96-4ebc-11ea-b77f-2e728ce88125"
+      },
+      "capture_and_coverage": {
+        "institutional_context": "Smithsonian 3D Digitization model; Smithsonian program states it uses 3D scanning technology.",
+        "object_specific_capture_method": "UNKNOWN",
+        "mesh_unit_and_scale_transform": "UNKNOWN",
+        "interior_coverage": "UNKNOWN",
+        "bottom_or_foot_coverage": "UNKNOWN",
+        "wall_thickness": "UNKNOWN",
+        "watertightness": "UNKNOWN; no Water_tight-labelled file returned by documented API filter. Zero labelled results is not proof of non-watertightness."
+      },
+      "adaptation_limit": "Museum classifies this as a decorative beaker-shaped vase, not an everyday drinking cup; do not treat its profile as a generic daily beaker."
+    }
+  ],
+  "source_references": [
+    {"id": "ycb_data", "url": "https://ycb-benchmarks.s3.amazonaws.com/index.html", "purpose": "per-object scan archives, capture source summary, CC BY 4.0 and MIT code licenses"},
+    {"id": "ycb_paper", "url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "purpose": "physical-object table, material figure captions, scan rig, mesh reconstruction and bottom coverage"},
+    {"id": "ycb_downloader", "url": "https://ycb-benchmarks.s3.amazonaws.com/scripts_to_publish/ycb_downloader.py", "purpose": "official single-item asset URL pattern and package content categories"},
+    {"id": "smithsonian_api", "url": "https://3d-api.si.edu/api-docs/", "purpose": "public file search API, supported native formats and quality filters"},
+    {"id": "smithsonian_open_access", "url": "https://www.si.edu/openaccess/faq", "purpose": "CC0 reuse and attribution guidance"},
+    {"id": "smithsonian_program_about", "url": "https://3d.si.edu/about", "purpose": "institutional 3D digitization/3D scanning context"},
+    {"id": "abo_dataset", "url": "https://amazon-berkeley-objects.s3.amazonaws.com/index.html", "purpose": "ABO catalog, GLTF 2.0, metadata path, archive size, CC BY 4.0"},
+    {"id": "abo_bair", "url": "https://bcommons.berkeley.edu/amazon-berkeley-objects-large-scale-dataset-3d-object-understanding", "purpose": "official confirmation that ABO meshes are artist-designed"},
+    {"id": "apsida_shm_17946_0047", "url": "https://apsida.cut.ac.cy/items/show/49281", "purpose": "Apsida object description, measurements, OBJ format, record rights and direct asset link"}
+  ]
+}

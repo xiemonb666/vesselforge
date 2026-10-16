@@ -1,0 +1,770 @@
+{
+  "audit_id": "saved_npz_completion_independent_review_20261005",
+  "scope": "Read-only independent NumPy recomputation from saved candidate, local-B, and frozen baseline NPZs plus visual inspection of the actual saved PNGs. No generation, test, source edit, CAD, or solver.",
+  "sha256": {
+    "start": {
+      "candidate_npz": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "local_b_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "baseline_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "checks": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173",
+      "completion_freeze": "cc003892dbebe4f0bcaec1b826c22c4eca56201b5adfcaa234353bc3f3c09948",
+      "completion_manifest": "e76c6538dd303bbbd6e05185059966d634b43e3827d31882d0ad1d25a51d2932",
+      "execution_receipt": "c716e507e3ec4eb66bfe6b5c73bed4e301b475ab8ec029cdc4299197deb0173b",
+      "readback_receipt": "0a7412cdf44f1e40b644de298fdf35797cbb05883933e0e8fa2f07f9e4ac5843",
+      "original_run02_receipt": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "candidate_source": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "focused_checks_source": "17302c5e331d18fd0cb3696f3e3d96f7f6872a8f02b19073f2386617ff35a9e6",
+      "contract": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+      "source_freeze": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "global_png": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc",
+      "floor_png": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    "end": {
+      "candidate_npz": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "local_b_npz": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "baseline_npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "checks": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173",
+      "completion_freeze": "cc003892dbebe4f0bcaec1b826c22c4eca56201b5adfcaa234353bc3f3c09948",
+      "completion_manifest": "e76c6538dd303bbbd6e05185059966d634b43e3827d31882d0ad1d25a51d2932",
+      "execution_receipt": "c716e507e3ec4eb66bfe6b5c73bed4e301b475ab8ec029cdc4299197deb0173b",
+      "readback_receipt": "0a7412cdf44f1e40b644de298fdf35797cbb05883933e0e8fa2f07f9e4ac5843",
+      "original_run02_receipt": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "candidate_source": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+      "focused_checks_source": "17302c5e331d18fd0cb3696f3e3d96f7f6872a8f02b19073f2386617ff35a9e6",
+      "contract": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+      "source_freeze": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+      "global_png": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc",
+      "floor_png": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148"
+    },
+    "all_source_and_input_hashes_unchanged": true
+  },
+  "recovery": {
+    "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+    "completion_freeze_sha256": "cc003892dbebe4f0bcaec1b826c22c4eca56201b5adfcaa234353bc3f3c09948",
+    "readback_rc": 0,
+    "readback_elapsed_seconds": 6.131161,
+    "readback_status": "READBACK_COMPLETE",
+    "new_candidate_generation_invoked": false,
+    "original_run02_status": "UNKNOWN_OR_FAIL",
+    "original_run02_error": "name 'COLOR_FINITE_SAMPLE_TOL' is not defined",
+    "original_run02_receipt_sha256_before_after_current": [
+      "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+      "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184"
+    ],
+    "candidate_npz_sha256_before_after_current": [
+      "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+      "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9"
+    ],
+    "focused_checks_passed": 29,
+    "focused_checks_total": 29
+  },
+  "triangle_metrics": {
+    "formula": "Q=4*sqrt(3)*area/sum(edge^2); aspect=longest_edge^2/(2*area); min_altitude=2*area/longest_edge. All saved faces, vertices_relief_xyz_mm.",
+    "local_b_global": {
+      "face_count": 37088,
+      "minimum_Q": 0.08488545669419832,
+      "minimum_Q_face_id": 36660,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+      "maximum_aspect_face_id": 36660,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "minimum_altitude_face_id": 6077,
+      "maximum_edge_mm": 20.000000000000004,
+      "zero_area_face_count": 0
+    },
+    "local_b_exterior_floor": {
+      "face_count": 128,
+      "minimum_Q": 0.08488545669419832,
+      "minimum_Q_face_id": 36660,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.38001624709626,
+      "maximum_aspect_face_id": 36660,
+      "minimum_altitude_mm": 0.9813534865483533,
+      "minimum_altitude_face_id": 36660,
+      "maximum_edge_mm": 20.000000000000004,
+      "zero_area_face_count": 0
+    },
+    "candidate_global": {
+      "face_count": 39872,
+      "minimum_Q": 0.08488545669419845,
+      "minimum_Q_face_id": 36639,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+      "maximum_aspect_face_id": 36639,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "minimum_altitude_face_id": 6077,
+      "maximum_edge_mm": 17.000000000000004,
+      "zero_area_face_count": 0
+    },
+    "candidate_exterior_floor": {
+      "face_count": 2912,
+      "minimum_Q": 0.6407401783487409,
+      "minimum_Q_face_id": 37088,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 2.8688104625143938,
+      "maximum_aspect_face_id": 37218,
+      "minimum_altitude_mm": 0.4065812940016269,
+      "minimum_altitude_face_id": 37218,
+      "maximum_edge_mm": 1.4404914720215474,
+      "zero_area_face_count": 0
+    },
+    "candidate_nonfloor": {
+      "face_count": 36960,
+      "minimum_Q": 0.08488545669419845,
+      "minimum_Q_face_id": 36639,
+      "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+      "maximum_aspect_face_id": 36639,
+      "minimum_altitude_mm": 0.12271827051863031,
+      "minimum_altitude_face_id": 6077,
+      "maximum_edge_mm": 17.000000000000004,
+      "zero_area_face_count": 0
+    },
+    "global_delta_Qmin": 1.249000902703301e-16,
+    "global_delta_max_aspect": -2.842170943040401e-14,
+    "global_improvement_qualification": false,
+    "regions": {
+      "retessellated_exterior_floor_z0": {
+        "face_count": 2912,
+        "minimum_Q": 0.6407401783487409,
+        "minimum_Q_face_id": 37088,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 2.8688104625143938,
+        "maximum_aspect_face_id": 37218,
+        "minimum_altitude_mm": 0.4065812940016269,
+        "minimum_altitude_face_id": 37218,
+        "maximum_edge_mm": 1.4404914720215474,
+        "zero_area_face_count": 0
+      },
+      "untouched_inner_base_fan_z2_radius17": {
+        "face_count": 128,
+        "minimum_Q": 0.08488545669419845,
+        "minimum_Q_face_id": 36639,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 20.380016247096233,
+        "maximum_aspect_face_id": 36639,
+        "minimum_altitude_mm": 0.8341504635661013,
+        "minimum_altitude_face_id": 36639,
+        "maximum_edge_mm": 17.000000000000004,
+        "zero_area_face_count": 0
+      },
+      "outer_side_wall_parents_0_6143": {
+        "face_count": 30432,
+        "minimum_Q": 0.23846327269365253,
+        "minimum_Q_face_id": 22967,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 8.001372197112254,
+        "maximum_aspect_face_id": 6931,
+        "minimum_altitude_mm": 0.12271827051863031,
+        "minimum_altitude_face_id": 6077,
+        "maximum_edge_mm": 1.401297625724855,
+        "zero_area_face_count": 0
+      },
+      "inner_side_wall_parents_6144_12287": {
+        "face_count": 6144,
+        "minimum_Q": 0.8622110056079775,
+        "minimum_Q_face_id": 30658,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 2.0088479459242614,
+        "maximum_aspect_face_id": 30658,
+        "minimum_altitude_mm": 0.6170492022717223,
+        "minimum_altitude_face_id": 34498,
+        "maximum_edge_mm": 1.2395580225177683,
+        "zero_area_face_count": 0
+      },
+      "remaining_top_base_parents": {
+        "face_count": 256,
+        "minimum_Q": 0.4442021775416903,
+        "minimum_Q_face_id": 36917,
+        "maximum_aspect_longest_edge_over_minimum_altitude": 3.9237884168222625,
+        "maximum_aspect_face_id": 36917,
+        "minimum_altitude_mm": 0.7986013402350507,
+        "minimum_altitude_face_id": 36917,
+        "maximum_edge_mm": 3.1335426884730335,
+        "zero_area_face_count": 0
+      }
+    },
+    "candidate_worst_Q_top10": [
+      {
+        "candidate_face_id": 36639,
+        "source_parent_face_id": 12373,
+        "minimum_Q": 0.08488545669419845,
+        "aspect": 20.380016247096233,
+        "minimum_altitude_mm": 0.8341504635661013,
+        "vertex_indices": [
+          6401,
+          3221,
+          3222
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36915,
+        "source_parent_face_id": 12741,
+        "minimum_Q": 0.08488545669419845,
+        "aspect": 20.380016247096233,
+        "minimum_altitude_mm": 0.8341504635661013,
+        "vertex_indices": [
+          6401,
+          3313,
+          3314
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36834,
+        "source_parent_face_id": 12633,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3286,
+          3287
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36897,
+        "source_parent_face_id": 12717,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3307,
+          3308
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36801,
+        "source_parent_face_id": 12589,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3275,
+          3276
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36879,
+        "source_parent_face_id": 12693,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3301,
+          3302
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36783,
+        "source_parent_face_id": 12565,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3269,
+          3270
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36744,
+        "source_parent_face_id": 12513,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3256,
+          3257
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36900,
+        "source_parent_face_id": 12721,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3308,
+          3309
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36702,
+        "source_parent_face_id": 12457,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3242,
+          3243
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      }
+    ],
+    "candidate_worst_aspect_top10": [
+      {
+        "candidate_face_id": 36639,
+        "source_parent_face_id": 12373,
+        "minimum_Q": 0.08488545669419845,
+        "aspect": 20.380016247096233,
+        "minimum_altitude_mm": 0.8341504635661013,
+        "vertex_indices": [
+          6401,
+          3221,
+          3222
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36915,
+        "source_parent_face_id": 12741,
+        "minimum_Q": 0.08488545669419845,
+        "aspect": 20.380016247096233,
+        "minimum_altitude_mm": 0.8341504635661013,
+        "vertex_indices": [
+          6401,
+          3313,
+          3314
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36897,
+        "source_parent_face_id": 12717,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3307,
+          3308
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36801,
+        "source_parent_face_id": 12589,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3275,
+          3276
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36834,
+        "source_parent_face_id": 12633,
+        "minimum_Q": 0.08488545669419853,
+        "aspect": 20.38001624709621,
+        "minimum_altitude_mm": 0.8341504635661022,
+        "vertex_indices": [
+          6401,
+          3286,
+          3287
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36807,
+        "source_parent_face_id": 12597,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3277,
+          3278
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36879,
+        "source_parent_face_id": 12693,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3301,
+          3302
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36726,
+        "source_parent_face_id": 12489,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3250,
+          3251
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36783,
+        "source_parent_face_id": 12565,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3269,
+          3270
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      },
+      {
+        "candidate_face_id": 36837,
+        "source_parent_face_id": 12637,
+        "minimum_Q": 0.08488545669419861,
+        "aspect": 20.38001624709619,
+        "minimum_altitude_mm": 0.834150463566103,
+        "vertex_indices": [
+          6401,
+          3287,
+          3288
+        ],
+        "z_mm": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "radius_mm": [
+          0.0,
+          17.0,
+          17.0
+        ],
+        "source_parent_corner_reconstruction_max_residual_mm": 0.0
+      }
+    ],
+    "diagnosis": "The unchanged 128-face z=2 mm inner base fan (r=0/17/17 mm) now controls global minimum Q and maximum aspect; the repaired z=0 exterior floor no longer controls them.",
+    "naive_3d_source_chord_residual_diagnostic": {
+      "candidate_max_mm": 0.0812363656496656,
+      "local_b_max_mm": 0.0812363656496656,
+      "candidate_vs_local_b_elementwise_residual_difference_mm": 0.0,
+      "interpretation": "Not an analytic curved-surface reprojection error test. Straight 3D barycentric chord interpolation is not used here to pass/fail curved-surface lineage.",
+      "analytic_chart_aware_reprojection_status": "UNKNOWN in this independent saved-NPZ review"
+    }
+  },
+  "lineage_and_topology": {
+    "schema_version": 2,
+    "standard_v1_source_face_id_alias_present": false,
+    "standard_v1_corner_barycentric_alias_present": false,
+    "explicit_v2_parent_keys_present": true,
+    "quarantine_status": "EXPERIMENT_ONLY_NOT_FOR_PRODUCTION",
+    "legacy_reader_compatibility": "UNKNOWN; standard schema-v1 source_face_ids and face_corner_barycentric_to_source keys are omitted",
+    "floor_output_faces": 2912,
+    "modified_exterior_parent_count": 128,
+    "inner_base_parent_count": 128,
+    "area_csr": {
+      "face_offsets_length": 2913,
+      "face_offsets_start": 0,
+      "face_offsets_end": 8200,
+      "face_offsets_monotone": true,
+      "patch_record_count": 8200,
+      "vertex_offsets_length": 8201,
+      "vertex_offsets_start": 0,
+      "vertex_offsets_end": 29596,
+      "vertex_offsets_monotone": true,
+      "max_parent_patches_per_output_face": 22,
+      "cap": 128,
+      "max_patch_sum_to_output_area_residual_mm2": 3.375077994860476e-14,
+      "saved_area_coverage_residual_mm2": 3.552713678800501e-14,
+      "saved_pairwise_overlap_max_area_mm2": 0.0
+    },
+    "saved_floor_lineage_checks": {
+      "floor_output_face_count": 2912,
+      "floor_patch_count": 8200,
+      "floor_patch_vertex_count": 29596,
+      "floor_source_declaration_matches_frozen_fan": true,
+      "floor_vertex_color_max_abs_linear_rgb_error": 0.0,
+      "floor_vertex_color_max_abs_srgb_error": 0.0,
+      "frozen_floor_source_face_count": 128,
+      "multi_parent_floor_face_count": 2784,
+      "output_barycentric_simplex_pass": true,
+      "output_chart_reconstruction_max_residual_mm": 7.895083119518377e-15,
+      "patch_area_coverage_max_residual_mm2": 3.552713678800501e-14,
+      "patch_area_total_mm2": 1256.1324627819029,
+      "patch_pairwise_overlap_max_area_mm2": 0.0,
+      "patch_vertex_color_max_abs_linear_rgb_error": 0.0,
+      "patch_vertex_color_max_abs_srgb_error": 0.0,
+      "per_output_face_patch_cap_pass": true,
+      "per_output_face_patch_record_cap": 128,
+      "per_output_face_patch_records_max": 22,
+      "single_parent_floor_face_count": 128,
+      "source_barycentric_simplex_pass": true,
+      "source_chart_reconstruction_max_residual_mm": 5.2993818720552705e-14
+    },
+    "saved_preservation_checks": {
+      "all_nonfloor_face_barycentric_rows_equal": true,
+      "all_nonfloor_face_source_ids_equal": true,
+      "all_nonfloor_faces_connectivity_equal": true,
+      "all_preserved_outer_arrays_equal": true,
+      "floor_boundary_interface_cycle_preserved": true,
+      "floor_chart_matches_saved_vertex_coordinates": true,
+      "floor_chart_points_inside_same_polygon": true,
+      "floor_polygon_area_preserved": true,
+      "local_b_vertex_relief_prefix_equal": true,
+      "local_b_vertex_rest_prefix_equal": true,
+      "new_floor_vertices_remain_planar_and_unrelieved": true,
+      "outer_face_connectivity_equal": true,
+      "preserved_outer_arrays_equal": {
+        "outer_base_linear_rgb": true,
+        "outer_base_srgb": true,
+        "outer_color_linear_rgb": true,
+        "outer_color_srgb_for_display": true,
+        "outer_normals_analytic_displaced": true,
+        "outer_relief_height_mm": true,
+        "outer_source_face_ids": true,
+        "outer_theta_rad": true,
+        "outer_vertex_indices": true,
+        "outer_z_mm": true
+      },
+      "run02_baseline_relief_prefix_equal": true,
+      "run02_baseline_rest_prefix_equal": true,
+      "schema_v2_quarantine_and_legacy_alias_pass": true
+    },
+    "saved_topology_checks": {
+      "boundary_edge_count": 0,
+      "connected_component_count": 1,
+      "duplicate_face_count_unoriented": 0,
+      "euler_characteristic": 2,
+      "face_count": 39872,
+      "inconsistent_winding_edge_count": 0,
+      "non_two_incidence_edge_count": 0,
+      "positive_signed_volume": true,
+      "repeated_vertex_face_count": 0,
+      "signed_volume_mm3": 10202.175145733467,
+      "unique_undirected_edge_count": 59808,
+      "used_vertex_count": 19938,
+      "vertex_count": 19938,
+      "zero_area_face_count_threshold_1e-12_mm2": 0
+    },
+    "independent_nonfloor_preservation_vs_local_b": {
+      "candidate_nonfloor_face_count": 36960,
+      "local_b_nonmodified_floor_face_count": 36960,
+      "connectivity_equal": true,
+      "source_parent_face_ids_equal": true,
+      "corner_barycentric_rows_equal": true,
+      "local_b_vertex_rest_prefix_equal": true,
+      "local_b_vertex_relief_prefix_equal": true,
+      "preserved_outer_arrays_equal": true
+    }
+  },
+  "actual_png_review": {
+    "global_png_sha256": "8278c09d4a49956df62680501a70efc3460e5813769b70c6812c2c21fef3bcbc",
+    "global_png_observation": "Actual saved equal-axis vessel image shows triangulated cylindrical shell and open interior; it does not isolate or establish the z=2 interior base fan metrics.",
+    "exterior_floor_png_sha256": "3bf5ebbd4113f1a3a2238edf159a83ec6974566dae5160e5da4b6b9bf0a7f148",
+    "exterior_floor_png_observation": "Actual saved z=0 floor image shows a regular near-1 mm triangular lattice and preserved polygon boundary, consistent with saved 2,912 output triangles; no apparent visual needle. It does not cover the unrepaired inner fan."
+  },
+  "decision": {
+    "bounded_local_exterior_floor_improvement_supported": true,
+    "meaningful_global_triangle_quality_improvement_supported": false,
+    "physical_mechanical_qualification": false,
+    "minimum_scope_change_if_global_improvement_wanted": "Retessellate only the distinct 128-face planar inner floor fan at z=2 mm, radius 17 mm, as a second explicit surface/chart patch; preserve its 128-boundary cycle and winding, use the v2 multi-parent area-coverage CSR contract, and preserve all other faces/outer arrays. Then recompute global metrics; remaining outer-side region currently has Qmin 0.2384632727 / max aspect 8.0013721971. No source or algorithm was changed here."
+  }
+}

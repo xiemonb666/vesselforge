@@ -1,0 +1,42 @@
+{
+  "status": "LOCAL_FLOOR_IMPROVED_GLOBAL_WORST_UNRESOLVED",
+  "raw_checker_result": {
+    "focused_checks_pass": true,
+    "passed": 29,
+    "total": 29,
+    "source": "checks.json",
+    "interpretation": "Raw checker outcome only; it is not accepted as robust global improvement."
+  },
+  "floor_quality": {
+    "input_minimum_Q": 0.08488545669419832,
+    "candidate_minimum_Q": 0.6407401783487409,
+    "input_maximum_aspect": 20.38001624709626,
+    "candidate_maximum_aspect": 2.8688104625143938
+  },
+  "global_quality": {
+    "input_minimum_Q": 0.08488545669419832,
+    "candidate_minimum_Q": 0.08488545669419845,
+    "strict_difference_Q": 1.249000902703301e-16,
+    "input_maximum_aspect": 20.38001624709626,
+    "candidate_maximum_aspect": 20.380016247096233,
+    "strict_difference_aspect": 2.842170943040401e-14,
+    "accepted_global_improvement": false,
+    "reason": "Numerically tied; remaining worst-face locations await critic localization."
+  },
+  "candidate_nonfloor_quality": {
+    "minimum_Q": 0.08488545669419845,
+    "maximum_aspect": 20.380016247096233
+  },
+  "lineage": {
+    "floor_patch_records": 8200,
+    "actual_maximum_parent_patches_per_output_face": 22,
+    "fixed_cap": 128
+  },
+  "completion_label": "RECOVERED_CANDIDATE_READBACK_FROM_FAILED_RUN",
+  "original_run02_status": "UNKNOWN_OR_FAIL",
+  "original_run02_receipt_sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184",
+  "checks_sha256": "8c504876cb919649dbb5827f4e8370a6702abad917cb1709332edaaaf063c173",
+  "completion_result_freeze_sha256": "cc003892dbebe4f0bcaec1b826c22c4eca56201b5adfcaa234353bc3f3c09948",
+  "generation_or_solver_run": false,
+  "production_promotion": false
+}

@@ -1,0 +1,3 @@
+Get-FileHash failed while reading the child stdout file after the bounded process wait:
+The process cannot access the file because it is being used by another process.
+The wrapper aborted before persisting child wait completion, timeout state, process id, return code, or elapsed process time.

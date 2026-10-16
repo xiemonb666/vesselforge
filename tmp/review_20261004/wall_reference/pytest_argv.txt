@@ -1,0 +1,1 @@
+third_party/vesselforge-runtime/venv/Scripts/python.exe -m pytest -s -vv vesselforge/tests/test_wall_reference.py

@@ -1,0 +1,129 @@
+{
+  "schema": "vf.geometry_resume.migration_plan.v1",
+  "status": "DRAFT_NOT_EXECUTED_REQUIRES_ROOT_REVIEW",
+  "review_dir": "vesselforge/tmp/review_20261005/geometry_resume",
+  "script": {
+    "path": "vesselforge/tmp/review_20261005/geometry_resume/migrate_v4_identity_asset.py",
+    "sha256": "c6897ba69e32506677e7653c1dbba44a1cf4f9a8ad0b2815616e905badddd3c4",
+    "default": "plan-only",
+    "execution_requires": "explicit --execute after root review"
+  },
+  "source": {
+    "asset_path": "vesselforge/tmp/review_20261004/wall_mesh_binding/v4_run/cylinder_asset_run01",
+    "manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "old_policy_present": false,
+    "producer": {
+      "name": "wall_mesh_binding tiny analytic fixture runner",
+      "version": "review-only",
+      "backend": "CadQuery/OpenCascade",
+      "backend_version": "2.8.0"
+    },
+    "files": [
+      {
+        "path": "manifest.json",
+        "sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+        "bytes": 5108
+      },
+      {
+        "path": "fields/surface_fields.npz",
+        "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d",
+        "bytes": 5320
+      },
+      {
+        "path": "geometry/mesh_lineage.npz",
+        "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+        "bytes": 280
+      },
+      {
+        "path": "geometry/solid.step",
+        "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+        "bytes": 9412
+      },
+      {
+        "path": "geometry/surface.npz",
+        "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+        "bytes": 9722
+      },
+      {
+        "path": "metadata/face_semantics.json",
+        "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+        "bytes": 5709
+      },
+      {
+        "path": "metadata/wall_reference.json",
+        "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76",
+        "bytes": 4717
+      },
+      {
+        "path": "validation/geometry.json",
+        "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61",
+        "bytes": 320
+      }
+    ]
+  },
+  "destination": {
+    "asset_path": "vesselforge/tmp/review_20261005/geometry_resume/migration_copy/cylinder_asset_run01",
+    "exists": false,
+    "result_path": "vesselforge/tmp/review_20261005/geometry_resume/migration_binding_result.json",
+    "result_exists": false,
+    "output_scope": "only this review directory"
+  },
+  "manifest_patch": {
+    "schema_remains": "forge.asset.v1",
+    "policy_field": "provenance.spec.brep_face_bounds_policy",
+    "target_policy": {
+      "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+      "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+      "use_triangulation": false,
+      "use_shape_tolerance": false,
+      "units": "mm",
+      "bounds_order": [
+        "xmin",
+        "xmax",
+        "ymin",
+        "ymax",
+        "zmin",
+        "zmax"
+      ]
+    },
+    "inventory_field": "provenance.spec.brep_face_inventory",
+    "inventory_recomputed_from": "copied canonical STEP using explicit AddOptimal_s(False,False), face index/type/center/area/bounds",
+    "migration_record_path": "provenance.identity_migration",
+    "migration_record_schema": "vf.asset-identity-migration.v1",
+    "ancestry_fields": [
+      "source_manifest_sha256",
+      "source_canonical_step_sha256",
+      "source_bounds_policy_present=false",
+      "source_producer name/version/backend/backend_version",
+      "source_payload_files SHA/bytes"
+    ],
+    "classification": "migration copy; never retroactive original v4 success"
+  },
+  "operation": {
+    "source_write": false,
+    "copies": "manifest plus exactly 7 manifest-listed payloads by explicit paths; no recursive enumeration/copy",
+    "step_imports_expected": 2,
+    "step_exports": 0,
+    "mesh_calls": 0,
+    "native_geometry_rebuilds": 0,
+    "public_binding_api": "build_wall_mesh_binding(copy, metadata/wall_reference.json)",
+    "payload_sha_must_remain_equal_to_source": true,
+    "tolerance_mm": 1E-07,
+    "legacy_asset_result_remains": "UNKNOWN: CANONICAL_BREP_FACE_BOUNDS_POLICY_MISSING_OR_UNSUPPORTED"
+  },
+  "acceptance": {
+    "review_script_and_manifest_record_before_execution": true,
+    "require_copy_only_under_review_dir": true,
+    "require_validation_and_all_payload_sha_equal": true,
+    "report_binding_status_without_relabeling_original_v4": true,
+    "stop_if_any_precondition_or_binding_check_fails": true,
+    "root_decision": "authorize or decline the single explicit --execute invocation"
+  },
+  "no_execution_evidence": {
+    "destination_exists": false,
+    "result_exists": false,
+    "step_imported_for_migration": false,
+    "binding_run": false
+  }
+}

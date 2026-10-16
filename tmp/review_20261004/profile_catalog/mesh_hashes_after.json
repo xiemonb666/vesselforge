@@ -1,0 +1,14 @@
+{
+  "vesselforge/tmp/review_20261004/profile_catalog/meshes/beaker.stl": "9687fa0914aaadcf3d53d3f9cfcf7f566ce9e07e3ef6fb34bc852fbde77f1ae2",
+  "vesselforge/tmp/review_20261004/profile_catalog/run_candidate_meshes.ps1": "e9f001af6596e737cdd970cb67a62aa68fe35a4dcd5cb3a6ac3c389ba99662ac",
+  "vesselforge/tmp/review_20261004/profile_catalog/generate_candidate_meshes.py": "fddbd332c8fd804d26c1cb840b962c4d30642717396052914797d6fa354f5886",
+  "vesselforge/tmp/review_20261004/profile_catalog/candidate_profiles_mesh.png": "d4c210322367406bd33e6568d962a130e7472f21405a5b90a90bd70c92619f76",
+  "vesselforge/src/vesselforge/profile_catalog.py": "ff90a8f1c0528d326fc81bb184cc814cfebb38ae91b0ade82e59d09a7b3ef64f",
+  "vesselforge/tmp/review_20261004/profile_catalog/meshes/jar.stl": "0955465dd5d7e546fb102d3077964fd34838cae8b507007991dce44cfdf94102",
+  "vesselforge/tmp/review_20261004/profile_catalog/mesh_output.txt": "48d303b1da41ce9b77ca12efb82d9c8c319e38f8ae98e7d8379393b25dab57ad",
+  "vesselforge/tmp/review_20261004/profile_catalog/meshes/bowl.stl": "51749d798e84b939a232ebaa890ff0fdc4b48f7a8d0e8e948feef9f33de4f452",
+  "vesselforge/tmp/review_20261004/profile_catalog/candidate_meshes.json": "20de2218ce17b36726969c4e03984ebc3191a2e360a1342fe52c162ccec7f39b",
+  "vesselforge/tmp/review_20261004/profile_catalog/mesh_preflight_receipt.json": "a025e120db17135c34f8f3158e2ed8e0fbe8cccf635c7889ef0db1ca0aad5728",
+  "vesselforge/tmp/review_20261004/profile_catalog/mesh_inputs.json": "4ef81ae0fa85c424fd64da5631dee333474ed6082b6bb5a1fa2f08d447e1faad",
+  "vesselforge/tests/test_profile_catalog.py": "0752755c1e371afa6f5a03db46394d299f9acabc3c1d72dd84911672e2454e2e"
+}

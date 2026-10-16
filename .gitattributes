@@ -13,3 +13,26 @@
 /docs/evidence/20261005/** -text
 
 /docs/backup/20261007/raw_source/** -text
+
+# 2026-10-16: preserve byte-bound evidence and captured project sources across clones.
+/experiments/continuation_20261015/** -text
+/experiments/continuation_20261016/** -text
+/data/continuation_20261015/** -text
+/data/continuation_20261016/** -text
+/docs/handover/20261016/** -text
+/docs/continuation/** -text
+/src/vesselforge/face_witness.py -text
+/src/vesselforge/named_step.py -text
+/src/vesselforge/reference_mesh.py -text
+/src/vesselforge/revolved_profile.py -text
+/src/vesselforge/spherical_bowl.py -text
+/src/vesselforge/step_partition.py -text
+/src/vesselforge/tetra_audit.py -text
+/src/vesselforge/tetra_partition.py -text
+/tests/test_face_witness.py -text
+/tests/test_named_step.py -text
+/tests/test_reference_mesh.py -text
+/tests/test_revolved_profile.py -text
+/tests/test_spherical_bowl.py -text
+/tests/test_step_partition.py -text
+/tests/test_tetra_audit.py -text

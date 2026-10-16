@@ -1,0 +1,14 @@
+{
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "arguments": [
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\native_adapter.py",
+    "--execute"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "command_line": "\"C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe\" -B \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\native_adapter.py\" --execute",
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\tmp\\runner\\single_inner_native_01\\stdout.log",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\smooth_surface_native_adapter_20261005\\tmp\\runner\\single_inner_native_01\\stderr.log",
+  "output_limit_bytes": 20971520,
+  "hard_timeout_seconds": 180
+}

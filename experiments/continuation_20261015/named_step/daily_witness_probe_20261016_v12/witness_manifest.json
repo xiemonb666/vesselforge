@@ -1,0 +1,187 @@
+{
+  "mapping_status": "EXACT_NATIVE_FACE_WITNESSES",
+  "native_body_step_sha256": "bd8a6161b6e79612f715d0c766091186808425c299c2ea2851ab9cda3eca8f39",
+  "native_solid_face_count": 16,
+  "schema": "vesselforge.native_face_witness_manifest.v1",
+  "source_face_lineage_sha256": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+  "source_step_sha256": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e",
+  "witness_count": 16,
+  "witnesses": [
+    {
+      "native_face_child_verified": true,
+      "role": "base",
+      "source_face_id": "original-brep-face-000",
+      "step_entity_name": "VF_FACE_original-brep-face-000__base",
+      "witness_bytes": 2749,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-000.step",
+      "witness_sha256": "3b7450ebd1b4772998e7b4ab1f7051dba9d6c81a65fed871cb1cf6926d9dcade",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_inner",
+      "source_face_id": "original-brep-face-001",
+      "step_entity_name": "VF_FACE_original-brep-face-001__body_inner",
+      "witness_bytes": 4933,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-001.step",
+      "witness_sha256": "563f7e1309919622bac53343d865cde4e18cbd0a90868fc71375a9999acdf94e",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "rim",
+      "source_face_id": "original-brep-face-002",
+      "step_entity_name": "VF_FACE_original-brep-face-002__rim",
+      "witness_bytes": 4584,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-002.step",
+      "witness_sha256": "6ff18a87fa229f65b620a0cdf68279d95d022c6cb0e183ef726e02af4029961a",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_outer",
+      "source_face_id": "original-brep-face-003",
+      "step_entity_name": "VF_FACE_original-brep-face-003__body_outer",
+      "witness_bytes": 5049,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-003.step",
+      "witness_sha256": "631e9be26a3f846616a40671417844d01991942cf0fe409b015d230ca1f87ce1",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_outer",
+      "source_face_id": "original-brep-face-004",
+      "step_entity_name": "VF_FACE_original-brep-face-004__body_outer",
+      "witness_bytes": 5049,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-004.step",
+      "witness_sha256": "96dc1264916cc5bb210b45d9c6104780ff596cc7f67693525ff86739b66d8f1e",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_outer",
+      "source_face_id": "original-brep-face-005",
+      "step_entity_name": "VF_FACE_original-brep-face-005__body_outer",
+      "witness_bytes": 5043,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-005.step",
+      "witness_sha256": "5610aeed8406a5601d3f5aa3fc24ab8a7c9373ca80fd1f3f3e716cad71590087",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_outer",
+      "source_face_id": "original-brep-face-006",
+      "step_entity_name": "VF_FACE_original-brep-face-006__body_outer",
+      "witness_bytes": 5045,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-006.step",
+      "witness_sha256": "eaa9f33148a5098df27b755f9cb53f736fe6f3cb67928f52453717f36c25da99",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "body_outer",
+      "source_face_id": "original-brep-face-007",
+      "step_entity_name": "VF_FACE_original-brep-face-007__body_outer",
+      "witness_bytes": 4921,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-007.step",
+      "witness_sha256": "bdbf336adb5a66d8a797c243960329ad36754ef0f9b24f6033af058eccc11389",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-008",
+      "step_entity_name": "VF_FACE_original-brep-face-008__foot",
+      "witness_bytes": 4757,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-008.step",
+      "witness_sha256": "5f1e06bb1e0c92a9fb09e46ba0e349c5dde500da9ec1649f615c144c71a03dee",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-009",
+      "step_entity_name": "VF_FACE_original-brep-face-009__foot",
+      "witness_bytes": 4480,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-009.step",
+      "witness_sha256": "237cfaec56f833700028484d660166f3edebf14acc014a6e449f22a73b3985f0",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-010",
+      "step_entity_name": "VF_FACE_original-brep-face-010__foot",
+      "witness_bytes": 4372,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-010.step",
+      "witness_sha256": "9078026948598c6c8b7fa916d67c06e53ab8c1d72b6cf4d87d593f9a80564a37",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-011",
+      "step_entity_name": "VF_FACE_original-brep-face-011__foot",
+      "witness_bytes": 4528,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-011.step",
+      "witness_sha256": "68b9259e1f7d2719161b0fc36108c6b0e02fd5565bbd300ac199f054c7cf1cfc",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-012",
+      "step_entity_name": "VF_FACE_original-brep-face-012__foot",
+      "witness_bytes": 3543,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-012.step",
+      "witness_sha256": "9147622634622b99d69b4b127146d1c0f867737d5fa3d6f2c8a69f2139b02d6e",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-013",
+      "step_entity_name": "VF_FACE_original-brep-face-013__foot",
+      "witness_bytes": 4498,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-013.step",
+      "witness_sha256": "09c5c04c79a29f224587f81c63f80b11086b2f8c5259b050781251bf446c51d8",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "foot",
+      "source_face_id": "original-brep-face-014",
+      "step_entity_name": "VF_FACE_original-brep-face-014__foot",
+      "witness_bytes": 4361,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-014.step",
+      "witness_sha256": "d52f2b7440512438a7c555c115492ab97ad477b8196ea86a0150ec5673bd1f48",
+      "witness_solid_count": 0
+    },
+    {
+      "native_face_child_verified": true,
+      "role": "base",
+      "source_face_id": "original-brep-face-015",
+      "step_entity_name": "VF_FACE_original-brep-face-015__base",
+      "witness_bytes": 2750,
+      "witness_face_entity_count": 1,
+      "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v12\\native_face_witnesses\\original-brep-face-015.step",
+      "witness_sha256": "b93a104a3682634ae306a001fa04c8c1df7e48f0ad055393e5e8ab3cef8a76b5",
+      "witness_solid_count": 0
+    }
+  ]
+}

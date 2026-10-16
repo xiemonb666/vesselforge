@@ -1,0 +1,36 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.occt_offset_source_evidence/0.1",
+  "authority": "Open-Cascade-SAS/OCCT official source repository",
+  "version_tag": "V7_9_3",
+  "claims": [
+    {
+      "url": "https://github.com/Open-Cascade-SAS/OCCT/blob/V7_9_3/src/Geom/Geom_OffsetCurve.hxx#L845-L879",
+      "source_location": "src/Geom/Geom_OffsetCurve.hxx, class-level formula, lines 845-879",
+      "observation": "Class-level contract states N=T^V, positive offset follows N, and Value(U)=BasisCurve.Value(U)+Offset*(T^V)/||T^V||."
+    },
+    {
+      "url": "https://github.com/Open-Cascade-SAS/OCCT/blob/V7_9_3/src/Geom/Geom_OffsetCurve.hxx#L929-L967",
+      "source_location": "src/Geom/Geom_OffsetCurve.hxx, constructor comment and declaration, lines 929-967",
+      "observation": "Constructor-specific prose says N=V^T, reversing the class-level prose. Signature is Geom_OffsetCurve(C, Offset, V, isNotCheckC0=false)."
+    },
+    {
+      "url": "https://github.com/Open-Cascade-SAS/OCCT/blob/V7_9_3/src/GeomEvaluator/GeomEvaluator_OffsetCurve.cxx#L1459-L1474",
+      "source_location": "src/GeomEvaluator/GeomEvaluator_OffsetCurve.cxx, CalculateD0, lines 1459-1474",
+      "observation": "Implementation computes theD1.XYZ().Crossed(myOffsetDir.XYZ()), normalizes it, multiplies by myOffset/R, and adds it to the basis point. This is explicitly T cross V with signed offset."
+    }
+  ],
+  "resolved_sign_for_pinned_jar_frame": {
+    "basis_point": "(r,0,z) in global XZ plane; parameter direction is base axis to mouth",
+    "tangent": "(rprime,0,zprime)",
+    "reference_direction_V": "(0,1,0)",
+    "implementation_cross_product": "T cross V = (-zprime,0,rprime)",
+    "matches_certified_inward_rz_normal": true,
+    "signed_offset_mm": "+3",
+    "expected_endpoints_rz_mm": {"axis_base": [0,3], "mouth": [23,120]}
+  },
+  "runtime_caveats": [
+    "This resolves the documented cross-order conflict using the official 7.9.3 implementation expression, not a test construction.",
+    "The Geom_OffsetCurve docs warn that offset singularities are not checked at construction and that an offset may self-intersect; those remain later geometry gates.",
+    "The installed OCP class introspection is a separate read-only check; no CAD constructor is called."
+  ]
+}

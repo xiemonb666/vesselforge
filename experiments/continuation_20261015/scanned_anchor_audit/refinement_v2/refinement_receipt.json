@@ -1,0 +1,333 @@
+{
+  "record_type": "exact-coordinate-weld derivative audit; acceptance depends on topology result",
+  "source": {
+    "item_url": "https://apsida.cut.ac.cy/items/show/49281",
+    "archive_url": "https://apsida.cut.ac.cy/files/original/529/49281/Footed_Bowl_SHM_17946_0047_Obj06.zip",
+    "identifier": "SHM 17946:0047",
+    "title": "Footed bowl",
+    "rights": "CC BY-SA 4.0",
+    "attribution": "Medelhavsmuseet, SHM 17946:0047; via Apsida / Digital Heritage Research Lab",
+    "source_zip_sha256": "7977fe145179160eba1f560f09c75302fcbc9c501e2460b7817311b1860fe35b",
+    "source_obj_sha256": "c03413172398ae5280fae3d1759f505b38bc97a1561e510fcfb4b99d97c57232",
+    "prior_raw_geometry_npz_sha256": "f5044bbb781fcead97dfb73d35755caf24fdb8547341757c6fa329dd938671e2",
+    "parent_v1_candidate_npz_sha256": "a2d1ca82364e693387220b83aebbadaa9bb558d524c7ec4586be72dfc65b11c1",
+    "source_native_units": "UNKNOWN in the OBJ header; no calibration applied"
+  },
+  "method": {
+    "exact_merge": "np.unique over exact float64 XYZ rows; no rounding and no tolerance",
+    "coordinate_order": "Distinct XYZs are serialized in first-occurrence order from the V1 main-component vertex list; positions copied exactly",
+    "faces": "All V1 main-component faces remapped. Only faces with fewer than 3 distinct post-weld indices were removed; no duplicate-face removal, cap, fill, smoothing, decimation, or rescale",
+    "removed_source_face_ids_zero_based": [
+      125490,
+      125512,
+      292495,
+      292503
+    ],
+    "removed_source_face_count": 4,
+    "exact_duplicate_xyz_group_count": 8,
+    "v1_vertices": 321632,
+    "candidate_vertices": 321624,
+    "v1_faces": 643336,
+    "candidate_faces": 643332,
+    "vertex_count_reduction_exact_xyz_only": 8
+  },
+  "topology_before": {
+    "vertex_count_in_file": 321632,
+    "vertex_count_referenced": 321632,
+    "face_count": 643336,
+    "unique_edge_count": 965004,
+    "boundary_edge_count": 0,
+    "nonmanifold_edge_count": 0,
+    "inconsistent_winding_edge_count": 0,
+    "edge_connected_components_including_unused_vertices": 1,
+    "edge_connected_components_of_referenced_mesh": 1,
+    "euler_characteristic_referenced_mesh": -36,
+    "genus_if_closed_oriented_connected_manifold": null,
+    "formal_genus_from_chi_if_assuming_manifold": 19,
+    "exact_zero_area_face_count": 4,
+    "duplicate_unoriented_triangle_group_count": 0,
+    "faces_in_duplicate_unoriented_triangle_groups": 0,
+    "surface_area_source_units2": 0.10360753450427215,
+    "signed_volume_source_units3": 0.00025725761187624796,
+    "bounds_min_xyz_source_units": [
+      -0.027423,
+      -0.086138,
+      0.017478
+    ],
+    "bounds_max_xyz_source_units": [
+      0.133013,
+      0.072108,
+      0.13691
+    ],
+    "bounds_extent_xyz_source_units": [
+      0.160436,
+      0.158246,
+      0.11943200000000001
+    ]
+  },
+  "topology_after": {
+    "vertex_count_in_file": 321624,
+    "vertex_count_referenced": 321624,
+    "face_count": 643332,
+    "unique_edge_count": 964996,
+    "boundary_edge_count": 0,
+    "nonmanifold_edge_count": 2,
+    "inconsistent_winding_edge_count": 0,
+    "edge_connected_components_including_unused_vertices": 1,
+    "edge_connected_components_of_referenced_mesh": 1,
+    "euler_characteristic_referenced_mesh": -40,
+    "genus_if_closed_oriented_connected_manifold": null,
+    "formal_genus_from_chi_if_assuming_manifold": 21,
+    "exact_zero_area_face_count": 0,
+    "duplicate_unoriented_triangle_group_count": 1,
+    "faces_in_duplicate_unoriented_triangle_groups": 2,
+    "surface_area_source_units2": 0.10360753450427215,
+    "signed_volume_source_units3": 0.00025725761187624796,
+    "bounds_min_xyz_source_units": [
+      -0.027423,
+      -0.086138,
+      0.017478
+    ],
+    "bounds_max_xyz_source_units": [
+      0.133013,
+      0.072108,
+      0.13691
+    ],
+    "bounds_extent_xyz_source_units": [
+      0.160436,
+      0.158246,
+      0.11943200000000001
+    ]
+  },
+  "topology_anomaly_detail": {
+    "nonmanifold_edges": [
+      {
+        "candidate_edge_index": 183809,
+        "candidate_vertex_indices": [
+          60535,
+          60542
+        ],
+        "raw_source_vertex_indices": [
+          63886,
+          63893
+        ],
+        "endpoint_xyz_source_units": [
+          [
+            -0.001659,
+            -0.062612,
+            0.108612
+          ],
+          [
+            -0.001738,
+            -0.062634,
+            0.108622
+          ]
+        ],
+        "incident_edge_occurrence_count": 4,
+        "candidate_face_indices": [
+          119578,
+          119647,
+          119666,
+          119579
+        ],
+        "raw_source_face_indices": [
+          125422,
+          125492,
+          125511,
+          125423
+        ],
+        "edge_slots_in_incident_faces": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "incident_winding_faces": [
+          [
+            60539,
+            60535,
+            60542
+          ],
+          [
+            60569,
+            60535,
+            60542
+          ],
+          [
+            60539,
+            60542,
+            60535
+          ],
+          [
+            60535,
+            60532,
+            60542
+          ]
+        ]
+      },
+      {
+        "candidate_edge_index": 183826,
+        "candidate_vertex_indices": [
+          60539,
+          60542
+        ],
+        "raw_source_vertex_indices": [
+          63890,
+          63893
+        ],
+        "endpoint_xyz_source_units": [
+          [
+            -0.00166,
+            -0.062618,
+            0.108501
+          ],
+          [
+            -0.001738,
+            -0.062634,
+            0.108622
+          ]
+        ],
+        "incident_edge_occurrence_count": 4,
+        "candidate_face_indices": [
+          119580,
+          119666,
+          119578,
+          119665
+        ],
+        "raw_source_face_indices": [
+          125424,
+          125511,
+          125422,
+          125510
+        ],
+        "edge_slots_in_incident_faces": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "incident_winding_faces": [
+          [
+            60539,
+            60542,
+            60540
+          ],
+          [
+            60539,
+            60542,
+            60535
+          ],
+          [
+            60539,
+            60535,
+            60542
+          ],
+          [
+            60539,
+            60582,
+            60542
+          ]
+        ]
+      }
+    ],
+    "duplicate_unoriented_face_groups": [
+      {
+        "canonical_vertex_indices": "[60535, 60539, 60542]",
+        "candidate_face_indices": "[119578, 119666]",
+        "source_face_indices": "[125422, 125511]",
+        "winding_variants": "[[60539, 60535, 60542], [60539, 60542, 60535]]",
+        "count": 2,
+        "disposition": "DIAGNOSTIC ONLY; duplicate triangles are retained, not deleted"
+      }
+    ],
+    "interpretation": "These details are diagnostics only. No offending connected faces were removed or repaired; exact welding exposes overlapping opposite-winding triangles and edge incidence 4."
+  },
+  "comparison": {
+    "euler_characteristic_change": -4,
+    "genus_before_valid": null,
+    "genus_after_valid": null,
+    "signed_volume_delta_source_units3": 0.0,
+    "volume_absolute_tolerance_source_units3": 1e-12,
+    "volume_relative_tolerance": 1e-09,
+    "volume_within_tolerance": true,
+    "main_foot_handles_cavity_geometry_retained": "No connected geometry was masked or intentionally removed; only exact-coordinate duplicate IDs were merged and four collapsed zero-area triangles are omitted. See full-shape renders for visual comparison. Rendering normals were recomputed for display only."
+  },
+  "acceptance": {
+    "status": "FAIL_DO_NOT_USE_AS_CLOSED_PHYSICAL_MESH",
+    "requirements": {
+      "zero_area_faces_zero": true,
+      "boundary_edges_zero": true,
+      "nonmanifold_edges_zero": false,
+      "inconsistent_winding_edges_zero": true,
+      "one_referenced_component": true,
+      "no_duplicate_triangles": false,
+      "volume_within_tolerance": true
+    },
+    "scope_limit": "A topology-pass only makes this exact-weld derivative a reviewed mesh candidate. It does not establish native physical units, scan metrology, material, photographic scale, correct real-world wall thickness, or physical truth."
+  },
+  "maps": {
+    "file": "SHM17946_0047_exactweld_maps.npz",
+    "contains": [
+      "raw_source_vertex_to_candidate_vertex (-1 for omitted islands)",
+      "v1_local_vertex_to_candidate_vertex",
+      "candidate_vertex_to_v1_local_vertex",
+      "candidate_vertex_to_raw_source_vertex",
+      "raw_source_face_to_candidate_face (-1 for omitted islands and four collapsed triangles)",
+      "v1_local_face_to_candidate_face",
+      "candidate_face_to_raw_source_face",
+      "removed_v1_local_face_indices",
+      "removed_raw_source_face_indices"
+    ],
+    "duplicate_xyz_groups_csv": "exact_duplicate_xyz_groups.csv",
+    "removed_triangles_csv": "removed_degenerate_faces.csv",
+    "duplicate_faces_csv": "duplicate_faces_diagnostic.csv"
+  },
+  "tool_versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "vtk": "9.6.2",
+    "matplotlib": "3.11.2"
+  },
+  "visual_review": {
+    "render_files_sha256": {
+      "exactweld_bottom.png": "bad7b4daf818f85d589bc34d8e79b7787916116d5464bcb3c71653f6a65c17c8",
+      "exactweld_oblique.png": "bfc9b24a1ade501ffe7f9f7705839be27911a2022174e8f5312badc5510fe34b",
+      "exactweld_side.png": "063388236dc4532c8af7f0b495251d06e76498639d7d35b4d37cf41253908883",
+      "exactweld_top.png": "430ba34d00585ab273be79202723a3fb15c694a0e2a487f006c693af2785745b",
+      "refined_y_section.png": "605563f72ffe2f6a23a52469cbeaba7b9b3c889ea4c75211d1266d2607a5c381"
+    },
+    "views": {
+      "exactweld_side.png": "orthographic Y-axis side with full Z extent and clipping range reset",
+      "exactweld_oblique.png": "oblique view of handles/opening/body/stem/foot",
+      "exactweld_top.png": "opening, inner surface, and handle arrangement",
+      "exactweld_bottom.png": "underside and foot",
+      "refined_y_section.png": "actual candidate mesh Y-center section; no revolve/rotation"
+    },
+    "section_y_joined_polylines": 1,
+    "display_normals": "Recomputed point normals are display-only; connectivity/winding/coordinates in saved mesh are unchanged."
+  },
+  "derivative_files": {
+    "SHM17946_0047_main_component_exactweld_candidate.obj": {
+      "bytes": 26597993,
+      "sha256": "3b50421b7b9bbf36ec2ee848d47d0169d491938bdd9778de0d39b2512c725f39"
+    },
+    "SHM17946_0047_main_component_exactweld_candidate.npz": {
+      "bytes": 9873229,
+      "sha256": "13cb4b7aeb7d6c7c22c057fbba4d3485b91a38ec1298bccaedceca17ae09762b"
+    },
+    "SHM17946_0047_exactweld_maps.npz": {
+      "bytes": 4879177,
+      "sha256": "e3bd68d1bb81015bf0c0e9a60e0b33971abb7a3ffe6b543ecd095465ebc08554"
+    }
+  },
+  "license_and_attribution": "CC BY-SA 4.0 from the Apsida source. Derivatives and images must retain attribution and ShareAlike terms. Attribution: Medelhavsmuseet, SHM 17946:0047; via Apsida / Digital Heritage Research Lab.",
+  "limitations": [
+    "Captured coordinates' native unit is unknown. The 1 raw unit = 1 m (x1000 mm) value is only a scale candidate inferred from model extents and catalog dimensions, not declared calibration.",
+    "Exact coordinate duplicates are merged by index only. This does not prove each seam was a redundant render duplicate or that each source surface is complete.",
+    "Four triangles collapsed to fewer than three unique vertex indices after exact weld and were omitted. They were already exact zero-area faces; no geometric holes were capped or repaired.",
+    "The other 388 indexed disconnected islands remain omitted from this derivative only; raw ZIP/OBJ and V1 receipt are retained, and this is not a claim those islands are nonphysical.",
+    "V1's Euler characteristic is -36, which yields a formal genus of 19 only under a closed orientable manifold assumption; its four degenerate faces make that genus unvalidated. V2 has \u03c7=-40 and formal genus 21 from \u03c7, but it is non-manifold. These mesh cycles/tunnels may be scan/topology artifacts and are not evidence for 19 or 21 real vessel handles or intended object features.",
+    "A closed mesh / topology pass does not establish real wall thickness, object solidity, scan accuracy, or complete capture."
+  ]
+}

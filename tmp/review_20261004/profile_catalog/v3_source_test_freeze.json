@@ -1,0 +1,39 @@
+{
+  "schema": "vesselforge.profile_catalog.v3_review_freeze/0.1.0",
+  "status": "FROZEN_WAITING_MAIN_REVIEW",
+  "v1_preserved": {
+    "result": "14 passed in 1.48s",
+    "source_test_snapshot": "v1_snapshot/"
+  },
+  "v2_preserved": {
+    "test_sha256": "e1400b7ddff53a64e3dc31321481a6a2fb9e21efc1c43a4ca363eeb7e514a9dd",
+    "pytest_receipts_unchanged": true,
+    "module_sha256": "4344283912f4574dd28f3520d04e4b6d5414f37b681b29add7091cd32e44f864",
+    "result": "15 passed in 1.64s",
+    "source_test_snapshot": "v2_snapshot/"
+  },
+  "v2_cad_evidence_unchanged": true,
+  "v3_module_sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+  "v3_test_sha256": "ab890ef3a606becd480911214903013239b5eab98f87da77e0ef15c9cad39c51",
+  "v3_diff_sha256": "59e856126d5717372a0e5b47b4d0b13cc535d140a22d4a85733c1d3be7579ea0",
+  "v3_diff_path": "v3.diff",
+  "changes": [
+    "Reject Python bool and NumPy np.bool_ scalars before numeric conversion; numeric-string coercion is unchanged.",
+    "Add bowl wall-declaration tests for np.bool_(True) and np.bool_(False), requiring the finite-number rejection rather than a later range failure."
+  ],
+  "requested_regression": {
+    "family": "bowl",
+    "wall_thickness_inputs": [
+      "np.bool_(True)",
+      "np.bool_(False)"
+    ],
+    "exception": "ValueError: finite number"
+  },
+  "validation": {
+    "waiting_for_main_review": true,
+    "git_modified": false,
+    "pytest_executed": false,
+    "cad_executed": false,
+    "solver_executed": false
+  }
+}

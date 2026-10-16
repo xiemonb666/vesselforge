@@ -1,0 +1,152 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0 -- C:\Users\xiemo\Desktop\ShardForge\third_party\vesselforge-runtime\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\xiemo\Desktop\ShardForge\vesselforge
+configfile: pyproject.toml
+collecting ... collected 7 items
+
+vesselforge\tests\test_wall_reference.py::test_analytic_hollow_cylinder_records_both_material_outward_wall_directions {
+  "algorithm": "vf.wall-reference/canonical-step-face-stations/1.0.0",
+  "coverage": {
+    "canonical_step_face_count": 4,
+    "coverage_basis": "finite canonical STEP B-rep wall faces; one interior sample per explicitly classified wall face; not area coverage or a global thickness bound",
+    "explicit_body_inner_face_count": 1,
+    "explicit_body_outer_face_count": 1,
+    "semantics_row_count": 4,
+    "station_count": 2,
+    "unknown_or_pending_face_count": 0,
+    "wall_face_station_coverage_fraction": 1.0
+  },
+  "frame": "right_handed_z_up",
+  "qualification": {
+    "fragment_mapping_status": "UNAVAILABLE",
+    "global_minimum_wall_claim": false,
+    "global_minimum_wall_status": "NOT_ESTABLISHED",
+    "mesh_binding_status": "NOT_SUPPLIED",
+    "physics_claim": false,
+    "physics_status": "NOT_ASSESSED",
+    "scope_note": "finite source-face stations only; no source-to-fragment-mesh binding, global minimum wall, or physics qualification",
+    "status": "MOTHER_SOURCE_ONLY"
+  },
+  "schema": "vf.wall-reference.v1",
+  "source_geometry_kind": "canonical_step",
+  "source_geometry_sha256": "ca5ec87016a586c20459f6605924d3ad15463952ac2f1dd00e2e7079f71d3bff",
+  "source_scope": "analytic_fixture_mother",
+  "source_semantics": {
+    "canonical_step_face_count": 4,
+    "canonical_step_sha256": "ca5ec87016a586c20459f6605924d3ad15463952ac2f1dd00e2e7079f71d3bff",
+    "classifier": "vf.canonical-step-face-semantics/1.0.0",
+    "schema": "vf.brep-face-semantics.v1",
+    "status": "PASS",
+    "wall_face_inventory": [
+      {
+        "source_wall_face_index_zero_based": 0,
+        "wall_role": "outer"
+      },
+      {
+        "source_wall_face_index_zero_based": 1,
+        "wall_role": "inner"
+      }
+    ]
+  },
+  "stations": [
+    {
+      "outward_from_material": [
+        -1.0,
+        -2.070680364700439e-13,
+        0.0
+      ],
+      "position_mm": [
+        -10.0,
+        -2.070680364700439e-12,
+        5.0
+      ],
+      "source_classification_evidence": {
+        "canonical_step_sha256": "ca5ec87016a586c20459f6605924d3ad15463952ac2f1dd00e2e7079f71d3bff",
+        "classification_basis": "body-of-revolution support axis is global Z through the vessel axis; face-oriented normal has positive radial dot product",
+        "classification_evidence": {
+          "axis_offset_from_global_z_mm": 0.0,
+          "oriented_radial_normal_dot_mm": 10.0
+        },
+        "classifier": "vf.canonical-step-face-semantics/1.0.0",
+        "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+        "interior_sample": {
+          "oriented_outward_normal": [
+            -1.0,
+            -2.070680364700439e-13,
+            0.0
+          ],
+          "point_mm": [
+            -10.0,
+            -2.070680364700439e-12,
+            5.0
+          ],
+          "u": 3.141592653589586,
+          "uv_state": "IN_OR_ON",
+          "v": -5.0
+        },
+        "region_name": "body_outer",
+        "schema": "vf.brep-face-semantics.v1"
+      },
+      "source_wall_face_index_zero_based": 0,
+      "station_id": "wr1-ca5ec87016a586c2-outer-f00000",
+      "wall_role": "outer"
+    },
+    {
+      "outward_from_material": [
+        1.0,
+        2.0706803647004391e-13,
+        -0.0
+      ],
+      "position_mm": [
+        -8.0,
+        -1.6565442917603513e-12,
+        5.0
+      ],
+      "source_classification_evidence": {
+        "canonical_step_sha256": "ca5ec87016a586c20459f6605924d3ad15463952ac2f1dd00e2e7079f71d3bff",
+        "classification_basis": "body-of-revolution support axis is global Z through the vessel axis; face-oriented normal has negative radial dot product",
+        "classification_evidence": {
+          "axis_offset_from_global_z_mm": 0.0,
+          "oriented_radial_normal_dot_mm": -8.0
+        },
+        "classifier": "vf.canonical-step-face-semantics/1.0.0",
+        "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+        "interior_sample": {
+          "oriented_outward_normal": [
+            1.0,
+            2.0706803647004391e-13,
+            -0.0
+          ],
+          "point_mm": [
+            -8.0,
+            -1.6565442917603513e-12,
+            5.0
+          ],
+          "u": 3.141592653589586,
+          "uv_state": "IN_OR_ON",
+          "v": -5.0
+        },
+        "region_name": "body_inner",
+        "schema": "vf.brep-face-semantics.v1"
+      },
+      "source_wall_face_index_zero_based": 1,
+      "station_id": "wr1-ca5ec87016a586c2-inner-f00001",
+      "wall_role": "inner"
+    }
+  ],
+  "status": "MOTHER_SOURCE_ONLY",
+  "units": {
+    "direction": "dimensionless",
+    "length": "mm"
+  }
+}
+PASSED
+vesselforge\tests\test_wall_reference.py::test_stale_step_file_hash_returns_unknown PASSED
+vesselforge\tests\test_wall_reference.py::test_wrong_length_unit_returns_unknown PASSED
+vesselforge\tests\test_wall_reference.py::test_unknown_wall_role_returns_unknown PASSED
+vesselforge\tests\test_wall_reference.py::test_nonfinite_station_or_direction_returns_unknown[position_mm-value0-STATION_0_POSITION_INVALID] PASSED
+vesselforge\tests\test_wall_reference.py::test_nonfinite_station_or_direction_returns_unknown[outward_from_material-value1-STATION_0_DIRECTION_NONFINITE_OR_INVALID] PASSED
+vesselforge\tests\test_wall_reference.py::test_interface_normal_report_is_not_a_wall_reference_source PASSED
+
+============================== 7 passed in 1.54s ==============================

@@ -1,0 +1,196 @@
+{
+  "algorithm": "exact circular meridian arcs revolved around global Z; canonical STEP import drives mesh, lineage, semantics and sampled QA",
+  "backend": {
+    "cadquery_version": "2.8.0",
+    "name": "CadQuery/OpenCascade",
+    "ocp_distribution_version": "7.9.3.1.1",
+    "ocp_module_version": "7.9.3.1"
+  },
+  "checks": {
+    "all_canonical_faces_classified": true,
+    "analytic_volume_matches_canonical_cad": true,
+    "continuous_paint_coordinates_valid": true,
+    "mesh_to_cad_finite_sample_within_deflection": true,
+    "paint_only_outer_body": true,
+    "per_face_band_coverage": true,
+    "step_one_valid_solid_and_closed_shell": true,
+    "step_round_trip_bounds_and_volume": true,
+    "surface_mesh_watertight_positive_volume": true,
+    "triangle_regions_follow_step_lineage": true
+  },
+  "limitations": [
+    "mechanics values are illustrative and UNVALIDATED_PROTOTYPE",
+    "paint recipe is a procedural candidate; historical style is NOT_VALIDATED",
+    "triangle-centroid albedo is a finite-mesh preview; continuous shader evaluation uses immutable rest-coordinate Z",
+    "sampled mesh deviation is finite deterministic sampling, not a global Hausdorff bound",
+    "solver points are produced separately and are not a fracture result"
+  ],
+  "measurements": {
+    "appearance_coverage": {
+      "bands": [
+        {
+          "center_z_mm": 3.8571428571428568,
+          "color": "red",
+          "covered_face_count": 3148,
+          "covered_triangle_area_mm2": 32.29401481882173,
+          "reason": null,
+          "status": "PASS",
+          "width_mm": 0.42857142857142855
+        },
+        {
+          "center_z_mm": 6.2142857142857135,
+          "color": "dark",
+          "covered_face_count": 1351,
+          "covered_triangle_area_mm2": 16.524208769360445,
+          "reason": null,
+          "status": "PASS",
+          "width_mm": 0.21428571428571427
+        },
+        {
+          "center_z_mm": 8.571428571428571,
+          "color": "red",
+          "covered_face_count": 2250,
+          "covered_triangle_area_mm2": 30.136505592821766,
+          "reason": null,
+          "status": "PASS",
+          "width_mm": 0.42857142857142855
+        }
+      ],
+      "method": "triangle-centroid coverage on outer-body faces; diagnostic approximation only",
+      "per_face_approximation_status": "PASS"
+    },
+    "continuous_paint_coordinate_checks": {
+      "finite": true,
+      "rest_coordinate_z_rule_matches_xyz_evaluator": true,
+      "rgb_bounded": true,
+      "sample_count": 257
+    },
+    "ideal_analytic_wall_mm": 4.0,
+    "mesh_to_canonical_step": {
+      "canonical_step_face_map": {
+        "0": {
+          "canonical_step_face_index_zero_based": 0,
+          "method": "identity: triangle was tessellated from this canonical STEP-imported face",
+          "status": "MATCHED"
+        },
+        "1": {
+          "canonical_step_face_index_zero_based": 1,
+          "method": "identity: triangle was tessellated from this canonical STEP-imported face",
+          "status": "MATCHED"
+        },
+        "2": {
+          "canonical_step_face_index_zero_based": 2,
+          "method": "identity: triangle was tessellated from this canonical STEP-imported face",
+          "status": "MATCHED"
+        }
+      },
+      "face_match_method": "identity triangle lineage on canonical STEP-imported solid",
+      "first_unknown_sample": null,
+      "max_sampled_deviation_mm": 0.0004721755502806211,
+      "periodic_brep_extrema_disagreement_sample_count": 0,
+      "projection_status": "PASS",
+      "sample_count": 602,
+      "sampling_method": "deterministic edge-midpoint and triangle-centroid samples linked to canonical STEP B-rep face; not a full Hausdorff proof",
+      "trim_validation_method": "all GeomAPI projection candidates + periodic shifts + BRepClass_FaceClassifier IN/ON; out-of-trim projections use exact BRepExtrema point-to-trim-edge distance",
+      "unknown_sample_count": 0,
+      "unknown_samples_first_20": [],
+      "valid_sample_count": 602,
+      "worst_valid_sample": {
+        "BRepExtrema_DistShapeShape_step_point_to_trimmed_face_mm": 0.0004721755502806211,
+        "BRepExtrema_note": "diagnostic only; periodic-seam mismatch is recorded when it disagrees with classifier-valid UV projection",
+        "matched_step_face_index_zero_based": 0,
+        "max_valid_trimmed_surface_projection_distance_mm": 0.0004721755502806211,
+        "mesh_triangle_index": 40800,
+        "mesh_triangle_source_brep_face_indices": [
+          0
+        ],
+        "mesh_triangle_vertices_xyz_mm": [
+          [
+            4.465422521887701,
+            11.136973459635517,
+            11.833195142780191
+          ],
+          [
+            4.585278704465866,
+            11.089419245495764,
+            12.0
+          ],
+          [
+            4.620828035942559,
+            11.073397148204116,
+            11.833195142780191
+          ]
+        ],
+        "sample_index": 361,
+        "sample_kind": "triangle_centroid",
+        "sample_xyz_mm": [
+          4.5571764207653755,
+          11.099929951111799,
+          11.888796761853461
+        ],
+        "source_brep_face_index_zero_based": 0,
+        "status": "CANONICAL_STEP_TRIMMED_FACE_DISTANCE_MEASURED",
+        "step_face_match": {
+          "canonical_step_face_index_zero_based": 0,
+          "method": "identity: triangle was tessellated from this canonical STEP-imported face",
+          "status": "MATCHED"
+        },
+        "step_trimmed_projection": {
+          "candidates_in_bounds": [
+            {
+              "distance_mm": 0.0004721755502806211,
+              "periodic_shift": [
+                0,
+                0
+              ],
+              "state": "TopAbs_State.TopAbs_IN",
+              "u": 1.181220613151342,
+              "v": -0.00926743381716195
+            }
+          ],
+          "chosen": {
+            "distance_mm": 0.0004721755502806211,
+            "periodic_shift": [
+              0,
+              0
+            ],
+            "state": "TopAbs_State.TopAbs_IN",
+            "u": 1.181220613151342,
+            "v": -0.00926743381716195
+          },
+          "distance_mm": 0.0004721755502806211,
+          "projection_count": 2,
+          "status": "IN_OR_ON"
+        }
+      }
+    },
+    "step_round_trip": {
+      "analytic_volume_mm3": 2546.7844445101255,
+      "analytic_volume_relative_error": 1.92663494809776e-13,
+      "bbox_max_axis_delta_mm": 5.329070518200751e-15,
+      "canonical_step_sha256": "593b6f8b7dd72de69724348cb28056305660a852b8f44e67ca2a29e8ce77007c",
+      "canonical_step_shell_closed": true,
+      "canonical_step_shell_count": 1,
+      "canonical_step_solid_count": 1,
+      "canonical_step_valid": true,
+      "canonical_step_volume_mm3": 2546.784444509635,
+      "construction_shell_count": 1,
+      "construction_solid_count": 1,
+      "construction_valid": true,
+      "construction_volume_mm3": 2546.7844445101277
+    },
+    "surface_mesh": {
+      "boundary_edges": 0,
+      "minimum_double_area_mm2": 0.000110913890853067,
+      "nonmanifold_edges": 0,
+      "signed_volume_mm3": 2546.5994394221957,
+      "triangles": 204072,
+      "vertices": 102038,
+      "watertight": true
+    },
+    "wall_claim": "exact analytic concentric-sphere design separation; no specimen or material validation"
+  },
+  "scope": "geometry_only",
+  "seed": 20261015,
+  "status": "PASS"
+}

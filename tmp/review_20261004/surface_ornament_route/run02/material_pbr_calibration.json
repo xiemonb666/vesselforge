@@ -1,0 +1,12 @@
+{
+  "material_or_pbr_calibration": "UNKNOWN",
+  "mapping_fixture_only": true,
+  "synthetic_linear_rgb_inputs_are_material_measurements": false,
+  "reflectance_spectrum_measured": false,
+  "material_brdf_calibrated": false,
+  "illumination_calibrated": false,
+  "display_device_calibrated": false,
+  "illustrative_render_shading": "synthetic Lambert factor for visualization only",
+  "color_transfer": "linear RGB encoded to sRGB by the standard piecewise transfer; transfer-function gate PASS",
+  "physics_qualification": "UNKNOWN"
+}

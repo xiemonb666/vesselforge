@@ -1,0 +1,115 @@
+{
+  "status": "INDEPENDENT_SAVED_OFFSET_AUDIT_PASS",
+  "scope": "jar_meridian_2d_only",
+  "result_sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+  "receipt_sha256": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d",
+  "outer_result_sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+  "audit_sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+  "inputs_unchanged": true,
+  "upstream_R9_factor": "PINNED_PREMISE_NOT_RECALCULATED",
+  "span_count": 12,
+  "joins_checked": 11,
+  "sample_count": 300,
+  "sampled_min_inner_radius_mm": 0.0,
+  "max_saved_display_error_mm": 0.0,
+  "spans": [
+    {
+      "span_index": 0,
+      "kind": "flat_base",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 1,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 2,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 3,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 4,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 5,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 6,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 7,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 8,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 9,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 10,
+      "kind": "side",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    },
+    {
+      "span_index": 11,
+      "kind": "straight_neck",
+      "r_zprime_Q_coeff_nonnegative": true,
+      "saved_status": "PASS",
+      "max_display_error_mm": 0.0
+    }
+  ],
+  "false_fixture_1": {
+    "status": "EXACT_COUNTEREXAMPLE",
+    "Q_all": "-8",
+    "witness_u": "0/1"
+  },
+  "false_fixture_2": {
+    "status": "UNKNOWN",
+    "nodes": 8,
+    "limit": 8
+  },
+  "global_wall": "UNKNOWN",
+  "normal_strip_global_injectivity": "UNKNOWN",
+  "physics": "UNKNOWN",
+  "elapsed_seconds": 0.078
+}

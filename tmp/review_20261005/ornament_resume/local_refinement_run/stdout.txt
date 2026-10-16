@@ -1,0 +1,2 @@
+PASS local_a_0p50mm: overall_gate_pass=True, elapsed_seconds=7.555536
+PASS local_b_0p25mm: overall_gate_pass=True, elapsed_seconds=14.370076

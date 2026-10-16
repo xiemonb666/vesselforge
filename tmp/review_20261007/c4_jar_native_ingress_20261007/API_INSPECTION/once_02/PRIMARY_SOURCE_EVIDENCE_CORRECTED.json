@@ -1,0 +1,50 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.primary_source_correction/0.1",
+  "correction_of": {
+    "path": "vesselforge/tmp/review_20261007/c4_jar_native_ingress_20261007/API_INSPECTION/once_01/PRIMARY_SOURCE_EVIDENCE.json",
+    "sha256": "c1a7d2ac6ed917d9bd218270b0af68eeed184a7d830ae6781b74e4267a40016a",
+    "preserved_unchanged": true
+  },
+  "source_version": "Open CASCADE Technology V7_9_3",
+  "retrieved_utc_date": "2026-10-07",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/V7_9_3/src/GeomEvaluator/GeomEvaluator_OffsetCurve.cxx",
+      "official_repository": "Open-Cascade-SAS/OCCT",
+      "file_line_count": 430,
+      "verified_one_based_lines": "180-190",
+      "web_viewer_line_labels_zero_based": "179-189",
+      "evidence": {
+        "line_182": "Ndir = (theD1.XYZ()).Crossed(myOffsetDir.XYZ());",
+        "lines_188_189": "Ndir.Multiply(myOffset / R); then add Ndir to the basis point"
+      },
+      "meaning": "The implementation constructs T cross V and applies the signed scalar offset in that direction."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/V7_9_3/src/Geom/Geom_OffsetCurve.hxx",
+      "official_repository": "Open-Cascade-SAS/OCCT",
+      "verified_one_based_lines": {
+        "class_contract": "38-51",
+        "constructor_prose_and_declaration": "77-97"
+      },
+      "meaning": "The class contract states T cross V, while the constructor prose says V cross T; the evaluator implementation above resolves the actual sign. The constructor declaration takes basis curve, signed distance, reference direction, and optional isNotCheckC0."
+    },
+    {
+      "url": "https://github.com/Open-Cascade-SAS/OCCT/releases/tag/V7_9_3",
+      "official_repository": "Open-Cascade-SAS/OCCT",
+      "meaning": "Official V7_9_3 release tag used to pin the source version."
+    }
+  ],
+  "sign_decision": {
+    "basis_plane": "global XZ, parameter direction from axis/base toward mouth",
+    "reference_direction_xyz": [0, 1, 0],
+    "implementation_cross_product": "T cross V",
+    "positive_offset_mm": 3,
+    "resulting_RZ_displacement_direction": "(-zprime, +rprime), the inward normal for the frozen axis-to-mouth meridian",
+    "expected_endpoint_RZ_mm": [[0, 3], [23, 120]],
+    "decision_status": "ROOT_ACCEPTED",
+    "source_scope_limit": "This establishes the API sign convention only; no geometry was constructed or tested."
+  },
+  "supersedes_wrong_line_anchors": true,
+  "old_record_modified": false
+}

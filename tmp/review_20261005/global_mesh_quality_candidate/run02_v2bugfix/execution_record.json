@@ -1,0 +1,171 @@
+{
+  "run_id": "run02_v2bugfix",
+  "status": "UNKNOWN_OR_FAIL; candidate NPZ saved, focused readback aborted by NameError",
+  "authorization": "Root explicitly authorized one v2bugfix generation with saved-NPZ focused checks and two actual PNGs; no retry or parameter tuning.",
+  "failure_cause": "focused_checks.py references COLOR_FINITE_SAMPLE_TOL at line 637, but defines/imports no such name; candidate.py defines the fixed value 1e-12 at line 73 in a different module namespace.",
+  "source_pins": {
+    "freeze_sha256": "47dbd74954126eecb648b3ee693cf1877150404f4db3aef06d9c338c194867e3",
+    "before": [
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+        "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+        "bytes": 34531
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+        "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+        "bytes": 48948
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+        "sha256": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+        "bytes": 7654
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+        "sha256": "645b7e29821a8a0c6287521984febf9f1f515775ec60a6246132d7b5a8f1a2af",
+        "bytes": 6880
+      }
+    ],
+    "after": [
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate.py",
+        "sha256": "9fa7ed881d30444dba545d3b1f6b3fd12e08faf8bd77cfdd0f124d002499cd5e",
+        "bytes": 34531
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/focused_checks.py",
+        "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+        "bytes": 48948
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/candidate_contract.json",
+        "sha256": "1c565d1341c94759637834c1f162da72a5093562e3ba8e90d70cb847ceb15755",
+        "bytes": 7654
+      },
+      {
+        "path": "vesselforge/experiments/global_mesh_quality_candidate_20261005/SOURCE_REVIEW.md",
+        "sha256": "645b7e29821a8a0c6287521984febf9f1f515775ec60a6246132d7b5a8f1a2af",
+        "bytes": 6880
+      }
+    ],
+    "unchanged": true
+  },
+  "input_pins": {
+    "before": [
+      {
+        "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+        "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+        "bytes": 107589
+      },
+      {
+        "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+        "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+        "bytes": 513724
+      },
+      {
+        "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+        "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+        "bytes": 6110
+      },
+      {
+        "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+        "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+        "bytes": 59865
+      },
+      {
+        "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+        "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+        "bytes": 5555
+      }
+    ],
+    "after": [
+      {
+        "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+        "sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+        "bytes": 107589
+      },
+      {
+        "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+        "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+        "bytes": 513724
+      },
+      {
+        "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+        "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+        "bytes": 6110
+      },
+      {
+        "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+        "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+        "bytes": 59865
+      },
+      {
+        "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+        "sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+        "bytes": 5555
+      }
+    ],
+    "unchanged": true
+  },
+  "candidate_output": {
+    "path": "candidate_arrays.npz",
+    "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9",
+    "present": true
+  },
+  "process": {
+    "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "executable_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+    "argv": [
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import sys\nfrom pathlib import Path\nsys.path.insert(0, r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_mesh_quality_candidate_20261005\")\nimport candidate\ncandidate.REVIEW_ROOT = Path(r\"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\global_mesh_quality_candidate\\run02_v2bugfix\")\nsys.argv = [\"candidate.py\", \"--run\"]\nraise SystemExit(candidate.main())"
+    ],
+    "candidate_entry_argv": [
+      "candidate.py",
+      "--run"
+    ],
+    "python_return_code": 2,
+    "python_return_code_basis": "reconstructed from candidate.main except branch: it writes UNKNOWN_OR_FAIL receipt then returns 2; PowerShell had assigned $LASTEXITCODE before failing during empty-stdout log postprocessing but did not persist it.",
+    "powershell_wrapper_exit_code": 1,
+    "powershell_wrapper_error": "WriteAllText failed because String.Join received null when candidate stdout was empty; this occurred after the Python candidate process and after run_receipt.json was written.",
+    "candidate_started_at_utc": "2026-10-05T10:10:12.165530+00:00",
+    "candidate_finished_at_utc": "2026-10-05T10:10:32.018597+00:00",
+    "candidate_elapsed_seconds": 19.853619399946183,
+    "external_invocation_wall_seconds": null,
+    "stderr_path": "runner_stderr.txt",
+    "stdout_path": "runner_stdout.txt",
+    "external_invocation_wall_note": "Not captured as a standalone process duration; exact candidate.main elapsed time is in run_receipt.json."
+  },
+  "result_files": [
+    {
+      "name": "candidate_arrays.npz",
+      "bytes": 1049265,
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9"
+    },
+    {
+      "name": "run_receipt.json",
+      "bytes": 932,
+      "sha256": "5b8588696346fcb396c2c8eee36365ffccc30bf93c3e4bf36be5195713153184"
+    },
+    {
+      "name": "runner_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "runner_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "missing_expected_outputs": [
+    "checks.json",
+    "candidate_manifest.json",
+    "global_equal_aspect_actual_mesh.png",
+    "floor_equal_aspect_actual_mesh.png"
+  ],
+  "automatic_retry": false,
+  "scope_claim": "No candidate acceptance, geometry/physics quality PASS, production promotion, CAD, or solver claim."
+}

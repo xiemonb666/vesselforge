@@ -1,0 +1,932 @@
+{
+  "schema": "vesselforge.external_geometry_ornament_review/0.1.0",
+  "review_date": "2026-10-04",
+  "external_report": {
+    "path": "C:/Users/xiemo/.codex/attachments/91ec634d-1d25-4a0f-b3d6-8541952e5011/已粘贴的文本.txt",
+    "sha256": "0b3544d4b2a02d8132660834ea5a3d44c71a2054836d3ffeb8ac29756a771bad",
+    "reviewed_issue_ids": [
+      "42-152",
+      "193-201",
+      "202-210"
+    ],
+    "not_reviewed_as_part_of_this_task": [
+      "PG-Frag runtime claims outside geometry/ornament evidence"
+    ]
+  },
+  "method": {
+    "read_only": true,
+    "cad_pytest_solver_or_render_run": false,
+    "dynamic_pg_frag_source_read": false,
+    "saved_profile_v2_pytest": "15 passed; evidence only, not rerun",
+    "saved_ornament_v2_pytest": "6 passed; evidence only, not rerun",
+    "saved_preview_pngs_inspected": true
+  },
+  "overall": {
+    "confirmed_p0_p1_geometry_failure": false,
+    "confirmed_current_gaps": [
+      "profile_catalog has no production caller / production builder integration",
+      "ornament_fields has no production caller or 3D CAD/mesh displacement",
+      "theta+z ornaments have no surface metric/Jacobian correction",
+      "no aggregate stack-level wall/geometry qualification",
+      "extreme parameter CAD/mesh range and v2 narrow-mouth jar regression have no OCC evidence"
+    ],
+    "incorrect_external_inferences": [
+      "0.5 mm is OCC linear deflection, not a maximum edge or tetra size",
+      "mesh sidecar already records watertight edge incidence, boundary/nonmanifold/degenerate counts and OCC-vs-mesh volume",
+      "paint layers are correctly zero-relief; only the raised layer contributes relief in the plot input",
+      "v2 includes a negative scalar-relief numerical test and a value-only theta seam test",
+      "standalone source/input/output SHA-256 values exist in the reviewed evidence"
+    ],
+    "additional_static_issue": {
+      "id": "PROFILE_BOOL_TYPE_GUARD",
+      "priority": "P2",
+      "path": "vesselforge/src/vesselforge/profile_catalog.py:117-125",
+      "sha256": "4344283912f4574dd28f3520d04e4b6d5414f37b681b29add7091cd32e44f864",
+      "counterexample": "build_profile('bowl', wall_thickness_declaration_mm=np.bool_(True))",
+      "basis": "isinstance(value, bool) misses numpy.bool_; float(np.bool_(True)) yields 1.0, which fits default bowl wall and opening/radius constraints",
+      "executed": false
+    }
+  },
+  "claim_groups": [
+    {
+      "ids": "42",
+      "status": [
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "The saved preview and mesh inputs explicitly limit scope to geometry-only; wall, curvature, solver and physical qualification are excluded."
+    },
+    {
+      "ids": "43-45",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "0.5 mm is OCC linear deflection and 0.2 rad angular tolerance, not max edge or tetra spacing; max triangle edge is not recorded."
+    },
+    {
+      "ids": "46",
+      "status": [
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "No tetra mesh is part of the declared preview."
+    },
+    {
+      "ids": "47-49",
+      "status": [
+        "CONFIRMED_CURRENT_GAP",
+        "RISK_NOT_TESTED",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "No wall qualification; radial meridian declarations are explicit; high-curvature/extreme parameter CAD qualification remains untested."
+    },
+    {
+      "ids": "50-52",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "EXISTING_RAW_EVIDENCE"
+      ],
+      "finding": "Three mesh summaries report zero boundary/nonmanifold/vertex-collapsed triangles and watertight edge incidence; boundary loops are not separately counted."
+    },
+    {
+      "ids": "53-57",
+      "status": [
+        "RISK_NOT_TESTED",
+        "EXISTING_RAW_EVIDENCE"
+      ],
+      "finding": "No duplicate-face, area, local orientation, mesh self-intersection or mesh connected-component metrics; OCC shell count is present."
+    },
+    {
+      "ids": "58",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "EXISTING_RAW_EVIDENCE"
+      ],
+      "finding": "OCC and mesh signed volumes and <1% relative deltas are stored for all three defaults."
+    },
+    {
+      "ids": "59-61",
+      "status": [
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Surface area, centroid and inertia errors are not measured."
+    },
+    {
+      "ids": "62-72",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Preview supports qualitative faceting/gradation observations, but aspect ratio and local mesh error are not quantified."
+    },
+    {
+      "ids": "73-83",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "DIAGNOSTIC_SCOPE_NOT_BUG",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Three analytic profiles are axisymmetric single-meridian forms; training shortcut is only conditional because no training dataset evidence exists."
+    },
+    {
+      "ids": "84-87",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Every profile call has finite/range/simple-section checks, but OCC was only built for three defaults; v2 narrow-mouth jar has no OCC evidence."
+    },
+    {
+      "ids": "88-90",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "Wall and base declarations are separate parameters with coupled constraints; no global minimum wall or dedicated realistic reinforcement model is promised."
+    },
+    {
+      "ids": "91-96",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "EXISTING_RAW_EVIDENCE",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "Three paint fields have zero relief by contract; one +0.65 mm raised ring explains the plot difference; code separates channels/effects."
+    },
+    {
+      "ids": "97-99",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "EXISTING_RAW_EVIDENCE",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "Plot has no engraving input and only one positive raised band; v2 has a negative scalar-field numerical test, not a 3D test."
+    },
+    {
+      "ids": "100-104",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Stacking formulas and per-layer masks are present; the image omits layer diagnostics and exact overlapping-output tests are limited."
+    },
+    {
+      "ids": "105-109",
+      "status": [
+        "RISK_NOT_TESTED",
+        "CONFIRMED_CURRENT_GAP"
+      ],
+      "finding": "No gradient/Hessian/cusp or total relief report; no stack-level geometry/wall gate and no 3D output."
+    },
+    {
+      "ids": "110-113",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Nearest-neighbor raster edges do not prove discontinuous example fields; zero softness is allowed in the general API and can produce hard scalar boundaries."
+    },
+    {
+      "ids": "114-122",
+      "status": [
+        "CONFIRMED_CURRENT_GAP",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Cylindrical theta/z coordinates lack surface metric correction; this matters if constant physical surface spacing is required."
+    },
+    {
+      "ids": "123-127",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED",
+        "INCORRECT_INFERENCE"
+      ],
+      "finding": "Value seam tested for all three field families; gradients and mesh seam are not tested; no seam failure is evidenced."
+    },
+    {
+      "ids": "128-142",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "Current deterministic patterns are regular; real-world variation and dataset domain-gap testing are absent, but no training outcome is known."
+    },
+    {
+      "ids": "143-152",
+      "status": [
+        "CONFIRMED_CURRENT_GAP",
+        "RISK_NOT_TESTED",
+        "DIAGNOSTIC_SCOPE_NOT_BUG"
+      ],
+      "finding": "No ornament-to-CAD/mesh integration; resulting 3D watertightness, wall penetration and remesh retention cannot yet be evaluated."
+    },
+    {
+      "ids": "193-201",
+      "status": [
+        "EXISTING_RAW_EVIDENCE",
+        "CONFIRMED_CURRENT_GAP",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Reference catalog is an index, not a qualified measured sample set; no real-vs-synthetic distribution comparison is present."
+    },
+    {
+      "ids": "202-204",
+      "status": [
+        "INCORRECT_INFERENCE",
+        "EXISTING_RAW_EVIDENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "Figures have no metric overlay, but separate mesh JSON and saved test receipts contain scoped measurements/results; ornament physical metrics remain absent."
+    },
+    {
+      "ids": "205-207",
+      "status": [
+        "DIAGNOSTIC_SCOPE_NOT_BUG",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "PG-Frag and cross-system completion semantics are outside this review; local geometry-only and height-field statuses are explicit."
+    },
+    {
+      "ids": "208-210",
+      "status": [
+        "CONFIRMED_CURRENT_GAP",
+        "INCORRECT_INFERENCE",
+        "RISK_NOT_TESTED"
+      ],
+      "finding": "No scoped production bridge/common artifact ID; standalone hashes exist; end-to-end stale-artifact invalidation is not evidenced."
+    }
+  ],
+  "evidence_sha256": {
+    "profile_catalog_v2_source": "4344283912f4574dd28f3520d04e4b6d5414f37b681b29add7091cd32e44f864",
+    "profile_catalog_v2_test": "e1400b7ddff53a64e3dc31321481a6a2fb9e21efc1c43a4ca363eeb7e514a9dd",
+    "geometry_source": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "mesh_generator": "fddbd332c8fd804d26c1cb840b962c4d30642717396052914797d6fa354f5886",
+    "mesh_inputs": "4ef81ae0fa85c424fd64da5631dee333474ed6082b6bb5a1fa2f08d447e1faad",
+    "mesh_summary": "20de2218ce17b36726969c4e03984ebc3191a2e360a1342fe52c162ccec7f39b",
+    "mesh_preview": "d4c210322367406bd33e6568d962a130e7472f21405a5b90a90bd70c92619f76",
+    "ornament_v2_source": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee",
+    "ornament_v2_test": "7cec79dfce6a867d70dbfc786d3d04b38b3cece47be2f6d6fc20f3987bafc022",
+    "ornament_v1_plot_source": "0a9e9e6cce930acc30525f2f39fee454542a465f2dde9de26379fce2f1fd3c63",
+    "ornament_preview": "7f05a6aa3db708afc01b0bfef420e59fcb6084bdcf2eae5594d90d224039fdc1",
+    "reference_catalog_json": "9a93a382003cb4c5809e408ecacfd4125a480bd6bde009b51bb28e1605ecf3e1"
+  },
+  "claim_register": [
+    {
+      "id": 42,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "标题和输入清单都限定 geometry-only coarse preview，明确排除 wall、curvature、solver、real-vessel 与 physical qualification。"
+    },
+    {
+      "id": 43,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "完整脚本/JSON记录 OCC linear deflection=0.5 mm、angular tolerance=0.2 rad；仅凭PNG确实看不出这些参数。"
+    },
+    {
+      "id": 44,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "0.5不是tet size；未运行 tetra mesher，不能从表面预览推断体网格精度。"
+    },
+    {
+      "id": 45,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "linear deflection不是max-edge，视觉上边长超过0.5不代表容差失守；摘要未保存最大边长统计。"
+    },
+    {
+      "id": 46,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "artifact scope就是表面三角化，没有tetra volume mesh，且solver_used=false。"
+    },
+    {
+      "id": 47,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "只有radial meridian wall声明和base datum，没有经几何验证的全局/法向最小壁厚场。"
+    },
+    {
+      "id": 48,
+      "status": "RISK_NOT_TESTED",
+      "finding": "默认三个B-rep各有valid/one-solid/one-shell结果，但没有全参数或正式inner/outer间距资格证明。"
+    },
+    {
+      "id": 49,
+      "status": "RISK_NOT_TESTED",
+      "finding": "未测高曲率局部误差；profile_catalog做同高程径向偏移，旧fixed geometry的杯身则另用meridian normal miter offset，二者不能混称。"
+    },
+    {
+      "id": 50,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "三个mesh sidecar均记录boundary_edges=0及watertight_edge_incidence=true。"
+    },
+    {
+      "id": 51,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "三个mesh sidecar均记录nonmanifold_edges=0。"
+    },
+    {
+      "id": 52,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "没有独立loop字段，但boundary_edges=0足以排除该统计网格中的开放边界环。"
+    },
+    {
+      "id": 53,
+      "status": "RISK_NOT_TESTED",
+      "finding": "candidate mesh summary未做重复三角面/重复face检查。"
+    },
+    {
+      "id": 54,
+      "status": "RISK_NOT_TESTED",
+      "finding": "degenerate计数只测weld后顶点ID重合，不测非重复共线零面积或近零面积。"
+    },
+    {
+      "id": 55,
+      "status": "RISK_NOT_TESTED",
+      "finding": "正signed volume是整体取向信号，不等于逐三角翻转或局部法线一致性检查。"
+    },
+    {
+      "id": 56,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有mesh self-intersection诊断；默认OCC shape valid不能代替该离散网格检查。"
+    },
+    {
+      "id": 57,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "OCC摘要有solid_count=1、shell_count=1；mesh graph connected-component 数仍未统计。"
+    },
+    {
+      "id": 58,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "OCC和mesh signed-volume及相对误差已保存，三例均在1%内。"
+    },
+    {
+      "id": 59,
+      "status": "RISK_NOT_TESTED",
+      "finding": "无OCC与mesh surface-area差异统计。"
+    },
+    {
+      "id": 60,
+      "status": "RISK_NOT_TESTED",
+      "finding": "无CAD/mesh centroid差异统计。"
+    },
+    {
+      "id": 61,
+      "status": "RISK_NOT_TESTED",
+      "finding": "无inertia差异统计。"
+    },
+    {
+      "id": 62,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Beaker长轴向三角形可在保存PNG中定性观察；未量aspect ratio。"
+    },
+    {
+      "id": 63,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Jar肩部triangulation外观可在保存PNG观察；未量长宽比或局部误差。"
+    },
+    {
+      "id": 64,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Jar颈部呈轴向长条分片可定性观察；未量mesh quality。"
+    },
+    {
+      "id": 65,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Bowl网格尺寸/分布变化可见，但未量化其尺度梯度。"
+    },
+    {
+      "id": 66,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有全mesh gradation统计；视觉变化本身不构成失效。"
+    },
+    {
+      "id": 67,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "保存形体可见小底足与主体的轮廓尺度过渡；没有集中误差/应力证据。"
+    },
+    {
+      "id": 68,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Jar底足到腹部有设计轮廓转折；未测曲率连续性或网格误差。"
+    },
+    {
+      "id": 69,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Jar腹部到细颈的快速缩径由分析母线定义；是否曲率过急无资格指标。"
+    },
+    {
+      "id": 70,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "Beaker口沿附近轮廓转折可见；这只是图形观察，不是薄壁失效。"
+    },
+    {
+      "id": 71,
+      "status": "RISK_NOT_TESTED",
+      "finding": "未报告高曲率和直壁区的偏差对照或Hausdorff误差。"
+    },
+    {
+      "id": 72,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "0.2 rad角度请求下口沿多边形化在预览可见，符合coarse preview范围。"
+    },
+    {
+      "id": 73,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "当前三个profile由单母线绕Z轴旋转，轴对称是源定义。"
+    },
+    {
+      "id": 74,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "三个家族当前主要差异在母线，不是非旋转拓扑附件。"
+    },
+    {
+      "id": 75,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "无椭圆截面是当前旋转体starter profile范围限制。"
+    },
+    {
+      "id": 76,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "无偏心是当前固定轴旋转profile的设计结果。"
+    },
+    {
+      "id": 77,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "无倾斜轴是当前固定轴旋转profile的设计结果。"
+    },
+    {
+      "id": 78,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "没有非均匀口沿参数或实测证明；starter profile并未承诺此特征。"
+    },
+    {
+      "id": 79,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前母线没有随机凹陷/鼓包，这属于覆盖范围限制。"
+    },
+    {
+      "id": 80,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前profile明确是analytic envelope而非手工器形重建。"
+    },
+    {
+      "id": 81,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前没有把手、流、盖或复杂非旋转附件生成器。"
+    },
+    {
+      "id": 82,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有训练集或模型结果证明轴对称先验已造成shortcut；只有条件性数据集风险。"
+    },
+    {
+      "id": 83,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "默认三个CAD结果各为一个solid/一个shell，profile母线产生不同表面形态。"
+    },
+    {
+      "id": 84,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "每次build_profile均执行输入范围、2D profile简单性和闭合截面检查；但这不是参数fuzz。"
+    },
+    {
+      "id": 85,
+      "status": "RISK_NOT_TESTED",
+      "finding": "默认三例不覆盖边界组合；v2窄口jar只跑了profile数学测试，没有实际OCC solid证据。"
+    },
+    {
+      "id": 86,
+      "status": "RISK_NOT_TESTED",
+      "finding": "保存证据中没有极端参数fuzz或随机profile CAD构建。"
+    },
+    {
+      "id": 87,
+      "status": "RISK_NOT_TESTED",
+      "finding": "参数声明范围较宽，但CAD摘要只覆盖三个默认尺度。"
+    },
+    {
+      "id": 88,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "height/radius/mouth/wall/base是单独参数，但受mouth/radius和wall/radius比例约束，不能称完全解耦。"
+    },
+    {
+      "id": 89,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "base datum与side radial declaration是分开输入与公式；两者均非实测全局最小厚度。"
+    },
+    {
+      "id": 90,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前有基本lip radius与foot轮廓点，但没有专门的真实器物口沿/足部增厚模型。"
+    },
+    {
+      "id": 91,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "上图pigment与下图relief确实不同，但源输入把paint和raised分开，差异是设计语义。"
+    },
+    {
+      "id": 92,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "点阵field为paint，按contract relief恒为0，不能据此判为点阵数据丢失。"
+    },
+    {
+      "id": 93,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "波带field为paint，未要求产生relief；图中未输入wave raised layer。"
+    },
+    {
+      "id": 94,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "水平paint ring与一个raised ring分属z=18和z=43，只显示raised ring有高度是预期。"
+    },
+    {
+      "id": 95,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "v2 source明示paint/raised/engraved与pigment/mask/relief分通道，代码语义已明确。"
+    },
+    {
+      "id": 96,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "field API区分视觉颜料与signed scalar displacement；图示布局可改进但模块contract不含糊。"
+    },
+    {
+      "id": 97,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "v1 plot只有+0.65 mm raised ring，vmin/vmax是绘图固定范围；该图自然没有负值。"
+    },
+    {
+      "id": 98,
+      "status": "RISK_NOT_TESTED",
+      "finding": "v2单点测试证明negative scalar height数值路径，但没有3D engraving/CAD验证。"
+    },
+    {
+      "id": 99,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "示例只放一个窄raised band，稀疏relief是输入构造结果，不代表全API。"
+    },
+    {
+      "id": 100,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "stack代码定义later-pigment alpha-over、coverage union、signed relief additive并保留layers。"
+    },
+    {
+      "id": 101,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "source已有ordered layer compositing规则；PNG本身没有独立层优先级诊断。"
+    },
+    {
+      "id": 102,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "Per-layer masks/weights保存在FieldStackEvaluation.layers；未画出来不等于数据被覆盖丢失。"
+    },
+    {
+      "id": 103,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前contract定义叠加规则而非冲突状态；交叠数值回归覆盖仍有限。"
+    },
+    {
+      "id": 104,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "每个layer保留region_mask；预览没有逐层显示它们。"
+    },
+    {
+      "id": 105,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "merged boolean mask和region_weight存在于stack输出；未保存单独范围摘要。"
+    },
+    {
+      "id": 106,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "总relief做加法且无stack-level wall gate或总高度限幅；当前只返回height field，不生成几何。"
+    },
+    {
+      "id": 107,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有梯度场/有限差分或几何法向坡度诊断。"
+    },
+    {
+      "id": 108,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有二阶导、曲率或高频平滑性测试。"
+    },
+    {
+      "id": 109,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "无displaced surface，所以当前不能证明最终三维纹饰边缘没有尖点。"
+    },
+    {
+      "id": 110,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "绘图用nearest像素；当前图中field softness为正，像素硬边不证明scalar field硬跳变。"
+    },
+    {
+      "id": 111,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "黑圆点的栅格边缘不能独立证明底层coverage不连续。"
+    },
+    {
+      "id": 112,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "波带边缘外观受nearest raster影响，脚本默认edge_softness=0.35 mm。"
+    },
+    {
+      "id": 113,
+      "status": "RISK_NOT_TESTED",
+      "finding": "若几何端采用允许softness=0的输入，relief会有硬边；当前示例及CAD端均未生成/检查。"
+    },
+    {
+      "id": 114,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "纹样坐标取atan2与z，没有surface arclength/Jacobian映射。"
+    },
+    {
+      "id": 115,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "轴对称面周向弧长为r(z)dtheta，故固定角距的毫米间距随半径变化。"
+    },
+    {
+      "id": 116,
+      "status": "RISK_NOT_TESTED",
+      "finding": "Jar腹/颈实际纹样尺寸畸变未用三维面场量测；只可从公式推出风险。"
+    },
+    {
+      "id": 117,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "斜母线上的表面长度因子为sqrt(1+(dr/dz)^2)，code没有把它用于z宽度。"
+    },
+    {
+      "id": 118,
+      "status": "RISK_NOT_TESTED",
+      "finding": "Jar肩部纹样的最终拉伸/压缩幅度没有surface metric数据。"
+    },
+    {
+      "id": 119,
+      "status": "RISK_NOT_TESTED",
+      "finding": "Bowl曲面实际纹样畸变未量测；coordinate-space限制确定，程度未测。"
+    },
+    {
+      "id": 120,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "没有从rest grid到真实3D surface的Jacobian或局部面映射。"
+    },
+    {
+      "id": 121,
+      "status": "RISK_NOT_TESTED",
+      "finding": "局部面积畸变没有计算或报告。"
+    },
+    {
+      "id": 122,
+      "status": "RISK_NOT_TESTED",
+      "finding": "局部长度畸变没有计算或报告。"
+    },
+    {
+      "id": 123,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "v2 test在±pi邻近点比较三类field的weight/relief/opacity到1e-7。"
+    },
+    {
+      "id": 124,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "图上裁切motif不是 seam失败证据；值seam有单元测试，mesh seam没有。"
+    },
+    {
+      "id": 125,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有gradient seam test；整数频率sine公式周期，但通用zero-softness参数不保证可微。"
+    },
+    {
+      "id": 126,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "同一layer evaluation/weight同时生成pigment opacity与relief，使用相同角周期公式。"
+    },
+    {
+      "id": 127,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有纹样参数seam与真实surface mesh seam的联合测试。"
+    },
+    {
+      "id": 128,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "保存的motif示例规则等距、同参数重复。"
+    },
+    {
+      "id": 129,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "RepeatedMotif源码定义规则重复，不含单独尺寸扰动。"
+    },
+    {
+      "id": 130,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "WavingBand中心线是指定整数repeat_count的正弦。"
+    },
+    {
+      "id": 131,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "GeometricRingBand是固定z中心与宽度的水平环带。"
+    },
+    {
+      "id": 132,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "starter field没有局部尺寸随机化功能；不是当前demo contract。"
+    },
+    {
+      "id": 133,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前模式没有随机线宽。"
+    },
+    {
+      "id": 134,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前plot input没有随机相位扰动。"
+    },
+    {
+      "id": 135,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前plot input没有随机缺失motif。"
+    },
+    {
+      "id": 136,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前field API没有磨损模型。"
+    },
+    {
+      "id": 137,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前field API没有断纹模型。"
+    },
+    {
+      "id": 138,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前field API没有颜料扩散/模糊模拟。"
+    },
+    {
+      "id": 139,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前field API没有人工绘制噪声。"
+    },
+    {
+      "id": 140,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "当前pattern relief振幅不是局部随机深度模型。"
+    },
+    {
+      "id": 141,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有随surface curvature调整pattern或制作误差的模型/验证。"
+    },
+    {
+      "id": 142,
+      "status": "RISK_NOT_TESTED",
+      "finding": "合成器风格shortcut只对未来训练集成立；目前无训练集或模型证据。"
+    },
+    {
+      "id": 143,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "无ornament field到生产CAD surface的调用/位移/remesh集成。"
+    },
+    {
+      "id": 144,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有relief三维化后watertight的mesh可供检查。"
+    },
+    {
+      "id": 145,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有三维内壁穿透/间隙分析。"
+    },
+    {
+      "id": 146,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有三维engraving总深度/负壁厚资格。"
+    },
+    {
+      "id": 147,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有relief面自交检查。"
+    },
+    {
+      "id": 148,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有relief mesh局部法向一致性测试。"
+    },
+    {
+      "id": 149,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有后续volume mesher保留relief的证据。"
+    },
+    {
+      "id": 150,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有细纹样在tetrahedralization后保留的证据。"
+    },
+    {
+      "id": 151,
+      "status": "RISK_NOT_TESTED",
+      "finding": "没有pattern feature size对surface triangle edge size的对照。"
+    },
+    {
+      "id": 152,
+      "status": "RISK_NOT_TESTED",
+      "finding": "当前无最终实体证据排除小纹样只存在于scalar field。"
+    },
+    {
+      "id": 193,
+      "status": "EXISTING_RAW_EVIDENCE",
+      "finding": "当前只保存三类analytic profile与规则field示例；组合空间确实窄。"
+    },
+    {
+      "id": 194,
+      "status": "RISK_NOT_TESTED",
+      "finding": "类间共享生成规则可能造成domain shortcut，但无数据集或模型实测。"
+    },
+    {
+      "id": 195,
+      "status": "RISK_NOT_TESTED",
+      "finding": "合成风格识别风险未由训练/评估实验确认。"
+    },
+    {
+      "id": 196,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "审阅的reference索引无真实样本分布对照数据。"
+    },
+    {
+      "id": 197,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "无真实与合成几何统计对照；source明确profile不是实物测量。"
+    },
+    {
+      "id": 198,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "无真实器物壁厚分布或其qualified measurements。"
+    },
+    {
+      "id": 199,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "无真实纹样尺度数据/分布对比。"
+    },
+    {
+      "id": 200,
+      "status": "RISK_NOT_TESTED",
+      "finding": "fracture morphology分布超出已审几何/ornament证据，没有比对数据。"
+    },
+    {
+      "id": 201,
+      "status": "RISK_NOT_TESTED",
+      "finding": "真实陶片fragment count/area/curvature对照在本证据中未建立。"
+    },
+    {
+      "id": 202,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "PNG图本身没有数值层；侧车JSON/测试仍需与图一起读。"
+    },
+    {
+      "id": 203,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "geometry图上没有PASS/FAIL，但mesh summary旁车已存OCC、topology、volume指标。"
+    },
+    {
+      "id": 204,
+      "status": "RISK_NOT_TESTED",
+      "finding": "ornament图无Jacobian/wall数值；保存field tests不构成3D物理qualification。"
+    },
+    {
+      "id": 205,
+      "status": "DIAGNOSTIC_SCOPE_NOT_BUG",
+      "finding": "PG-Frag recompile状态不是本次分配的geometry/ornament审阅范围，未读取其动态源。"
+    },
+    {
+      "id": 206,
+      "status": "RISK_NOT_TESTED",
+      "finding": "对全系统COMPLETED语义的判断需检查被排除的动态solver路径。"
+    },
+    {
+      "id": 207,
+      "status": "RISK_NOT_TESTED",
+      "finding": "全局跨模块PASS语义本轮未审；本范围内status显式保留geometry-only/height-field语义。"
+    },
+    {
+      "id": 208,
+      "status": "CONFIRMED_CURRENT_GAP",
+      "finding": "已查src没有profile/ornament生产调用点，也没有贯通geometry→ornament→mesh的共同样本ID。"
+    },
+    {
+      "id": 209,
+      "status": "INCORRECT_INFERENCE",
+      "finding": "局部freeze/input/STL/PNG哈希都存在；缺少的是端到端共同ID和派生失效关系。"
+    },
+    {
+      "id": 210,
+      "status": "RISK_NOT_TESTED",
+      "finding": "source版本冻结有hash，但端到端旧资产失效/重认证策略未被证据验证。"
+    }
+  ],
+  "primary_category_counts": {
+    "CONFIRMED_CURRENT_GAP": 11,
+    "RISK_NOT_TESTED": 45,
+    "EXISTING_RAW_EVIDENCE": 34,
+    "DIAGNOSTIC_SCOPE_NOT_BUG": 24,
+    "INCORRECT_INFERENCE": 15
+  },
+  "normal_offset_distinction": {
+    "profile_catalog": "constant radial meridian offset at corresponding z; source lines 317-323",
+    "fixed_geometry": "true meridian normal miter offset; source lines 101-124",
+    "geometry_py_sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+  }
+}

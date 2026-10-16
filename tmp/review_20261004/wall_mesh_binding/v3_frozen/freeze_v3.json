@@ -1,0 +1,57 @@
+{
+  "schema": "vf.wall-mesh-binding-v3-pretest-freeze.v1",
+  "frozen_at_utc": "2026-10-04",
+  "status": "V3_TEST_ONLY_FREEZE_READY_FOR_SINGLE_APPROVED_RUN",
+  "execution": {
+    "v2_pytest_exit": 1,
+    "v2_raw_preserved": true,
+    "v3_pytest": "NOT_RUN",
+    "fixture_cad_step": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED"
+  },
+  "current_frozen": {
+    "production_helper": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "v3_test_source": "7d9a0e76c5c9c0a283d141a2e0b61e6c32ce58c3690aff78f799173db0517e14",
+    "test_only_diff": "fdf93750a1359e6e2ba58f499b19f4c6e46f259b18269232ee4fdbb12ac3eb39",
+    "fixture_input": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "runner_source": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc",
+    "fixture_plan": "b609dd97d1274cfe558aa4f811a0ed493e0622e1f240c65b18f4ad2edf7268a3"
+  },
+  "dependencies": {
+    "asset_py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry_py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema_py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics_py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference_py_v3": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8",
+    "pyproject_toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+  },
+  "v2_raw_evidence": {
+    "receipt_json": "e85de4b9d002e7d2966e428a1d1973c7106045873138ecf1c2b037f8775e2b8d",
+    "stdout": "8dfe9c68f1783e750a2503a7324c7f01d3738aa1e38ed75897585d7429795af3",
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "junit": "6b28285f12287cffb644eba59faa3f1b1b8e229a726906bb6fd4e63e30fdae6d",
+    "v2_source_before_and_after": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "v2_test_before_and_after": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6"
+  },
+  "approved_v3_invocation": {
+    "executable": "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "working_directory": "vesselforge",
+    "environment": {
+      "PYTHONPATH": "src",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "argv": [
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "<v3_run>/pytest_tmp",
+      "--junitxml",
+      "<v3_run>/junit.xml",
+      "tests/test_wall_mesh_binding.py"
+    ]
+  },
+  "note": "Freeze excludes its own hash. Test-only fixture repair; the production helper and runner are unchanged. If pytest fails, stop and do not run the CAD fixture."
+}

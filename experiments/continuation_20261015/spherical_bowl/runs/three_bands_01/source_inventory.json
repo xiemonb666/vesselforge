@@ -1,0 +1,67 @@
+[
+  {
+    "bytes": 233,
+    "path": "src/vesselforge/__init__.py",
+    "sha256": "6d318f53572b600631c71fa9f9efddd98ef21264adb6bec20f44c7ddcec1b61a"
+  },
+  {
+    "bytes": 6141,
+    "path": "src/vesselforge/appearance.py",
+    "sha256": "d46d274528e5d3bfe95be78bbce941ed17586c5f10db39da6a59f688479f55c6"
+  },
+  {
+    "bytes": 20798,
+    "path": "src/vesselforge/asset.py",
+    "sha256": "015c863f3b3215b60a08a6cb36605b3582b846348abd37dd2f7ed1bca0c32804"
+  },
+  {
+    "bytes": 3834,
+    "path": "src/vesselforge/brep_identity.py",
+    "sha256": "a59d0056f4d0ff7bb7bf7932750c33dab773ddc0792f3cfe4bae707bfea53c3a"
+  },
+  {
+    "bytes": 2304,
+    "path": "src/vesselforge/cli.py",
+    "sha256": "18c7c56e8d9c85e44ea8dacdc2e8ce8eb753a9d174bd4ed95b472e6b4c50cf93"
+  },
+  {
+    "bytes": 28698,
+    "path": "src/vesselforge/geometry.py",
+    "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+  },
+  {
+    "bytes": 22394,
+    "path": "src/vesselforge/ornament_fields.py",
+    "sha256": "6f9885f805f78ae4df283bbabd0e4cc1f5b8e3c2e12e606c966a06b5aff096ee"
+  },
+  {
+    "bytes": 16227,
+    "path": "src/vesselforge/profile_catalog.py",
+    "sha256": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f"
+  },
+  {
+    "bytes": 14126,
+    "path": "src/vesselforge/schema.py",
+    "sha256": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9"
+  },
+  {
+    "bytes": 13864,
+    "path": "src/vesselforge/semantics.py",
+    "sha256": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af"
+  },
+  {
+    "bytes": 32105,
+    "path": "src/vesselforge/spherical_bowl.py",
+    "sha256": "70a3d3766e08718581463c0229982bd5bbc3b2675c5f216cbd36add7eb5af93f"
+  },
+  {
+    "bytes": 50769,
+    "path": "src/vesselforge/wall_mesh_binding.py",
+    "sha256": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0"
+  },
+  {
+    "bytes": 29780,
+    "path": "src/vesselforge/wall_reference.py",
+    "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+  }
+]

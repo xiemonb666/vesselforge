@@ -1,0 +1,7 @@
+Frozen review artifacts (SHA-256; paths relative to repository root)
+25740DF9700429E73862A42423DD4E517982685FE280495701069A65C62C3263  vesselforge/experiments/smooth_surface_route_20261004/design.md
+C8A686A6844926880C63C43174CFFBD4278DDE3DC9214638508417DD9295CE11  vesselforge/experiments/smooth_surface_route_20261004/route_source_draft.py
+9AFDFC764C28FC73932598B38A1A36DB56642864F620B0C67E2382AD5DAEF74F  vesselforge/experiments/smooth_surface_route_20261004/fixed_cases.json
+646FE9AC60146EE14058107E6D1163F6EEDE9603CE9EB1D4CF7961DE0608A54C  vesselforge/experiments/smooth_surface_route_20261004/LOCAL_FIXTURE_CHECK_PLAN.md
+
+State: source and fixture plan frozen for main-agent review; Python/CAD/STEP not executed.

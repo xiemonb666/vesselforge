@@ -1,0 +1,825 @@
+{
+  "schema": "vf.geometry_resume.audit_report.v1",
+  "status": "MIGRATED_COPY_MOTHER_STATION_BINDING_PASS_EXIT_CODE_UNCAPTURED",
+  "date": "2026-10-05",
+  "scope": {
+    "git_used": false,
+    "recursive_inventory_used": false,
+    "native_or_cad_rebuild_run": false,
+    "pytest_run": true,
+    "authorized_bounds_diagnostic_run": true,
+    "diagnostic_step_imports": 1,
+    "diagnostic_mesh_calls": 1,
+    "diagnostic_step_exports": 0,
+    "diagnostic_asset_writes": 0,
+    "targeted_pytest_test_count": 57,
+    "synthetic_cad_geometry_unit_case_count": 1,
+    "source_and_test_hashes_unchanged_during_pytest": true,
+    "migration_copy_created": true,
+    "migration_binding_status": "PASS_MOTHER_STATION_BINDING",
+    "migration_stations_requested": 2,
+    "migration_stations_bound": 2,
+    "original_v4_asset_modified": false,
+    "migration_script_invoked_once": true,
+    "migration_python_exit_code_captured": false,
+    "migration_step_exports": 0,
+    "migration_mesh_calls": 0,
+    "migration_native_geometry_rebuilds": 0,
+    "migration_global_wall_status": "UNVERIFIED",
+    "migration_global_minimum_wall_status": "NOT_ESTABLISHED",
+    "migration_physical_qualification_status": "UNKNOWN",
+    "migration_expected_step_imports_from_frozen_code": 2,
+    "migration_step_import_count_instrumented": false
+  },
+  "bounds_diagnostic": {
+    "status": "DIAGNOSTIC_COMPLETE",
+    "runtime": {
+      "cadquery_version": "2.8.0",
+      "no_bytecode_writes": true,
+      "ocp_version": "7.9.3.1",
+      "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "python_version": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]"
+    },
+    "input_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "input_step_sha256_after": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "step_unchanged": true,
+    "per_face": [
+      {
+        "face": 0,
+        "geom_type": "CYLINDER",
+        "manifest_bbox_mm": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "default_bbox_after_mesh_mm": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "default_delta_after_minus_before_mm": [
+          -0.0019768022993460477,
+          0.0019768022993460477,
+          -1.0000000294496658E-07,
+          1.0000000116860974E-07,
+          -0.0019768022993463413,
+          0.0019768022993460477
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_max_delta_mm": 0.0,
+        "default_vs_manifest_max_before_mm": 0.0019768022993463413,
+        "default_vs_manifest_max_after_mm": 0.0,
+        "triangulation_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        },
+        "triangulation_after": {
+          "deflection_mm": 0.0019767022993463414,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        },
+        "area_delta_after_minus_before_mm2": 0.0
+      },
+      {
+        "face": 1,
+        "geom_type": "CYLINDER",
+        "manifest_bbox_mm": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "default_bbox_before_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "default_bbox_after_mesh_mm": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "default_delta_after_minus_before_mm": [
+          -0.0015814618394767166,
+          0.0015814618394767166,
+          -1.0000000294496658E-07,
+          1.0000000116860974E-07,
+          -0.0015814618394767628,
+          0.0015814618394767166
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_max_delta_mm": 0.0,
+        "default_vs_manifest_max_before_mm": 0.0015814618394767628,
+        "default_vs_manifest_max_after_mm": 0.0,
+        "triangulation_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        },
+        "triangulation_after": {
+          "deflection_mm": 0.0015813618394767627,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        },
+        "area_delta_after_minus_before_mm2": 0.0
+      },
+      {
+        "face": 2,
+        "geom_type": "PLANE",
+        "manifest_bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797E-07,
+          1.0000000355444797E-07
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "default_bbox_after_mesh_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797E-07,
+          1.0000000355444797E-07
+        ],
+        "default_delta_after_minus_before_mm": [
+          -1.0000000294496658E-07,
+          1.0000000294496658E-07,
+          0.0019766022993401577,
+          -0.001976602299341934,
+          -1.0000000355444797E-07,
+          1.0000000355444797E-07
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "explicit_geometry_max_delta_mm": 0.0,
+        "default_vs_manifest_max_before_mm": 0.001976602299341934,
+        "default_vs_manifest_max_after_mm": 0.0,
+        "triangulation_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        },
+        "triangulation_after": {
+          "deflection_mm": 3.554447978966673E-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        },
+        "area_delta_after_minus_before_mm2": 0.0
+      },
+      {
+        "face": 3,
+        "geom_type": "PLANE",
+        "manifest_bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "default_bbox_after_mesh_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "default_delta_after_minus_before_mm": [
+          -1.0000000294496658E-07,
+          1.0000000294496658E-07,
+          0.0019766022993401577,
+          -0.001976602299341934,
+          -1.0000000294496658E-07,
+          1.0000000294496658E-07
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "explicit_geometry_max_delta_mm": 0.0,
+        "default_vs_manifest_max_before_mm": 0.001976602299341934,
+        "default_vs_manifest_max_after_mm": 0.0,
+        "triangulation_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        },
+        "triangulation_after": {
+          "deflection_mm": 3.554447978966673E-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        },
+        "area_delta_after_minus_before_mm2": 0.0
+      }
+    ],
+    "summary": {
+      "default_bbox_changed_after_mesh_over_strict_threshold": true,
+      "explicit_geometry_bbox_stable_over_strict_threshold": true,
+      "manifest_matches_default_after_mesh_over_strict_threshold": true,
+      "manifest_matches_default_before_mesh_over_strict_threshold": false,
+      "manifest_matches_explicit_geometry_bbox_over_strict_threshold": false,
+      "max_default_bbox_delta_after_minus_before_mm": 0.0019768022993463413,
+      "max_default_bbox_vs_manifest_mm_after_mesh": 0.0,
+      "max_default_bbox_vs_manifest_mm_before_mesh": 0.0019768022993463413,
+      "max_explicit_geometry_bbox_delta_after_minus_before_mm": 0.0,
+      "max_explicit_geometry_bbox_vs_manifest_mm": 0.0019768022993463413,
+      "per_face": [
+        {
+          "area_delta_after_minus_before_mm2": 0.0,
+          "default_bbox_after_mesh_mm": [
+            -10.001976802299346,
+            10.001976802299346,
+            -10.000000100000003,
+            10.000000100000001,
+            -0.0019768022993463413,
+            10.001976802299346
+          ],
+          "default_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "default_bbox_delta_after_minus_before_mm_by_component": [
+            -0.0019768022993460477,
+            0.0019768022993460477,
+            -1.0000000294496658E-07,
+            1.0000000116860974E-07,
+            -0.0019768022993463413,
+            0.0019768022993460477
+          ],
+          "default_vs_manifest_max_abs_mm_after": 0.0,
+          "default_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+          "explicit_geometry_bbox_after_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+          "explicit_geometry_vs_manifest_max_abs_mm_after": 0.0019768022993463413,
+          "explicit_geometry_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+          "geom_type": "CYLINDER",
+          "index_zero_based": 0,
+          "manifest_bbox_mm": [
+            -10.001976802299346,
+            10.001976802299346,
+            -10.000000100000003,
+            10.000000100000001,
+            -0.0019768022993463413,
+            10.001976802299346
+          ],
+          "surface_area_centroid_delta_after_minus_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "triangulation_cache_after": {
+            "deflection_mm": 0.0019767022993463414,
+            "node_count": 318,
+            "present": true,
+            "triangle_count": 316
+          },
+          "triangulation_cache_before": {
+            "deflection_mm": null,
+            "node_count": 0,
+            "present": false,
+            "triangle_count": 0
+          }
+        },
+        {
+          "area_delta_after_minus_before_mm2": 0.0,
+          "default_bbox_after_mesh_mm": [
+            -8.001581461839477,
+            8.001581461839477,
+            -8.000000100000003,
+            8.000000100000001,
+            -0.0015814618394767628,
+            10.001581461839477
+          ],
+          "default_bbox_before_mesh_mm": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "default_bbox_delta_after_minus_before_mm_by_component": [
+            -0.0015814618394767166,
+            0.0015814618394767166,
+            -1.0000000294496658E-07,
+            1.0000000116860974E-07,
+            -0.0015814618394767628,
+            0.0015814618394767166
+          ],
+          "default_vs_manifest_max_abs_mm_after": 0.0,
+          "default_vs_manifest_max_abs_mm_before": 0.0015814618394767628,
+          "explicit_geometry_bbox_after_mesh_mm": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_before_mesh_mm": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+          "explicit_geometry_vs_manifest_max_abs_mm_after": 0.0015814618394767628,
+          "explicit_geometry_vs_manifest_max_abs_mm_before": 0.0015814618394767628,
+          "geom_type": "CYLINDER",
+          "index_zero_based": 1,
+          "manifest_bbox_mm": [
+            -8.001581461839477,
+            8.001581461839477,
+            -8.000000100000003,
+            8.000000100000001,
+            -0.0015814618394767628,
+            10.001581461839477
+          ],
+          "surface_area_centroid_delta_after_minus_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "triangulation_cache_after": {
+            "deflection_mm": 0.0015813618394767627,
+            "node_count": 318,
+            "present": true,
+            "triangle_count": 316
+          },
+          "triangulation_cache_before": {
+            "deflection_mm": null,
+            "node_count": 0,
+            "present": false,
+            "triangle_count": 0
+          }
+        },
+        {
+          "area_delta_after_minus_before_mm2": 0.0,
+          "default_bbox_after_mesh_mm": [
+            -10.000000100000003,
+            10.000000100000003,
+            -9.99802339770066,
+            9.998023397700658,
+            -1.0000000355444797E-07,
+            1.0000000355444797E-07
+          ],
+          "default_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "default_bbox_delta_after_minus_before_mm_by_component": [
+            -1.0000000294496658E-07,
+            1.0000000294496658E-07,
+            0.0019766022993401577,
+            -0.001976602299341934,
+            -1.0000000355444797E-07,
+            1.0000000355444797E-07
+          ],
+          "default_vs_manifest_max_abs_mm_after": 0.0,
+          "default_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+          "explicit_geometry_bbox_after_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "explicit_geometry_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+          "explicit_geometry_vs_manifest_max_abs_mm_after": 0.001976602299341934,
+          "explicit_geometry_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+          "geom_type": "PLANE",
+          "index_zero_based": 2,
+          "manifest_bbox_mm": [
+            -10.000000100000003,
+            10.000000100000003,
+            -9.99802339770066,
+            9.998023397700658,
+            -1.0000000355444797E-07,
+            1.0000000355444797E-07
+          ],
+          "surface_area_centroid_delta_after_minus_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "triangulation_cache_after": {
+            "deflection_mm": 3.554447978966673E-15,
+            "node_count": 316,
+            "present": true,
+            "triangle_count": 316
+          },
+          "triangulation_cache_before": {
+            "deflection_mm": null,
+            "node_count": 0,
+            "present": false,
+            "triangle_count": 0
+          }
+        },
+        {
+          "area_delta_after_minus_before_mm2": 0.0,
+          "default_bbox_after_mesh_mm": [
+            -10.000000100000003,
+            10.000000100000003,
+            -9.99802339770066,
+            9.998023397700658,
+            9.999999899999997,
+            10.000000100000003
+          ],
+          "default_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "default_bbox_delta_after_minus_before_mm_by_component": [
+            -1.0000000294496658E-07,
+            1.0000000294496658E-07,
+            0.0019766022993401577,
+            -0.001976602299341934,
+            -1.0000000294496658E-07,
+            1.0000000294496658E-07
+          ],
+          "default_vs_manifest_max_abs_mm_after": 0.0,
+          "default_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+          "explicit_geometry_bbox_after_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_before_mesh_mm": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+          "explicit_geometry_vs_manifest_max_abs_mm_after": 0.001976602299341934,
+          "explicit_geometry_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+          "geom_type": "PLANE",
+          "index_zero_based": 3,
+          "manifest_bbox_mm": [
+            -10.000000100000003,
+            10.000000100000003,
+            -9.99802339770066,
+            9.998023397700658,
+            9.999999899999997,
+            10.000000100000003
+          ],
+          "surface_area_centroid_delta_after_minus_before_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "triangulation_cache_after": {
+            "deflection_mm": 3.554447978966673E-15,
+            "node_count": 316,
+            "present": true,
+            "triangle_count": 316
+          },
+          "triangulation_cache_before": {
+            "deflection_mm": null,
+            "node_count": 0,
+            "present": false,
+            "triangle_count": 0
+          }
+        }
+      ],
+      "strict_observation_threshold_mm": 1E-07,
+      "triangulated_face_count_after_mesh": 4,
+      "triangulated_face_count_before_mesh": 0
+    },
+    "conclusion": "Default bounds on this imported shape tracked triangulation cache and matched v4 manifest after one mesh; explicit geometry-only bounds were stable before/after. This demonstrates this preserved fixture failure mode only."
+  },
+  "historical_runs": {
+    "v4": {
+      "status": "FAIL",
+      "exit_code": 1,
+      "native_wire_extrusions": 1,
+      "step_exports": 1,
+      "step_imports": 1,
+      "mesh_shape_calls": 1,
+      "binding_failure": "WALL_REFERENCE_SEMANTICS_FILE_MISMATCH",
+      "geometry_validation_report_status": "PASS",
+      "asset_manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+      "step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    "v5_binding_reuse": {
+      "status": "FAIL",
+      "exit_code": 2,
+      "reason": "CANONICAL_BREP_FACE_BOUNDS_MISMATCH:0",
+      "step_imports": 1,
+      "mesh_generation": 0,
+      "step_exports": 0,
+      "asset_inputs_unchanged": true
+    },
+    "v5_tests": {
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 39,
+      "failures": 0,
+      "scope": "tests/test_wall_mesh_binding.py at pre-source-change hashes only"
+    }
+  },
+  "source_changes": {
+    "schema": "vf.geometry_resume.source_change_hashes.v1",
+    "recorded_at_utc": "2026-10-04T18:58:31.6873046Z",
+    "status": "SOURCE_ONLY_TESTS_PASS_MIGRATION_DRAFT_READY_FOR_ROOT_REVIEW",
+    "policy": {
+      "policy_id": "vf.brep-face-bounds/geometry-only-addoptimal-false-false/v1",
+      "manifest_field": "provenance.spec.brep_face_bounds_policy",
+      "algorithm": "OCP.BRepBndLib.AddOptimal_s",
+      "use_triangulation": false,
+      "use_shape_tolerance": false,
+      "units": "mm",
+      "bounds_order": [
+        "xmin",
+        "xmax",
+        "ymin",
+        "ymax",
+        "zmin",
+        "zmax"
+      ],
+      "legacy_binding": "UNKNOWN: CANONICAL_BREP_FACE_BOUNDS_POLICY_MISSING_OR_UNSUPPORTED",
+      "tolerance_mm": 1E-07
+    },
+    "changed_files": [
+      {
+        "path": "vesselforge/src/vesselforge/brep_identity.py",
+        "role": "new shared explicit AddOptimal(False,False) policy, strict policy validator, empty/nonfinite/range validation",
+        "bytes": 3834,
+        "sha256": "a59d0056f4d0ff7bb7bf7932750c33dab773ddc0792f3cfe4bae707bfea53c3a"
+      },
+      {
+        "path": "vesselforge/src/vesselforge/asset.py",
+        "role": "producer policy record; explicit bounds for face inventory and global STEP/construction dimensions",
+        "bytes": 20798,
+        "sha256": "015c863f3b3215b60a08a6cb36605b3582b846348abd37dd2f7ed1bca0c32804"
+      },
+      {
+        "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+        "role": "early legacy policy gate; explicit bounds inventory comparison; result records verified policy",
+        "bytes": 50769,
+        "sha256": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0"
+      },
+      {
+        "path": "vesselforge/tests/test_brep_identity.py",
+        "role": "unit policy/invalid-box tests and one-shape pre/post triangulation stability regression test; not run",
+        "bytes": 4698,
+        "sha256": "15e007278abe080b9548459f328b8444249c143c6561decf6924c4b8f0b92297"
+      },
+      {
+        "path": "vesselforge/tests/test_wall_mesh_binding.py",
+        "role": "consumer shared-helper, strict-policy, and legacy UNKNOWN tests; not run",
+        "bytes": 21730,
+        "sha256": "dbb1baefa6dc2a4ea1b62b30fe22c6e22fbc6c51d1739afcae37fae92ad2b2f2"
+      }
+    ],
+    "unchanged_geometry_source": {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "bytes": 28698,
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    "previous_test_coverage": {
+      "v5_prechange_wall_mesh_binding_sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45",
+      "v5_prechange_asset_sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+      "v5_prechange_test_wall_mesh_binding_sha256": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072",
+      "v5_unchanged_geometry_sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+      "recorded_v5_pytest": "39 passed; previous bytes only; not coverage of current source/tests"
+    },
+    "validation": {
+      "ast_parse": "PASS",
+      "pytest": "PASS: 57 passed; frozen pre/post source/test/runtime hashes match",
+      "cad_or_native_run": "Migration copy executed once: two STEP reads expected from frozen code; zero export, meshing, or native geometry rebuild. One separate synthetic CadQuery cache-stability unit test passed.",
+      "git": "NOT_USED"
+    },
+    "compatibility": "forge.asset.v1 remains unchanged; schema.py has no provenance.spec allowlist; additive policy field preserves package-reader compatibility while binding fails closed for undeclared legacy inputs"
+  },
+  "smooth_route": {
+    "review_owner": "parallel smooth-candidate review; root requested no duplicate review or freeze",
+    "route_source_path": "vesselforge/experiments/smooth_surface_route_20261004/route_source_draft.py",
+    "route_source_sha256_current_observation": "359dc041b521799c39a08ed1f2a680a192eecc234fd8e47845511cae58048d8e",
+    "earlier_frozen_source_sha256": "c8a686a684926880c63c43174cffbd4278dde3dc9214638508417dd9295ce11",
+    "current_revision_sha256_matches_old_frozen": false,
+    "fixed_cases_path": "vesselforge/experiments/smooth_surface_route_20261004/fixed_cases.json",
+    "fixed_cases_sha256": "9afdfc764c28fc73932598b38a1a36db56642864f620b0c67e2382ad5daef74f",
+    "fixed_cases": "beaker and bowl; source review says stations unchanged",
+    "separate_first_run_plan": "tmp/review_20261005/smooth_candidate/BEAKER_FIRST_RUN_PLAN.md",
+    "first_run_plan_sha256": "666cfcad66baa687544686e4f11bfd7a3bda9acbec0d42006967c18737740bec",
+    "run_status": "NOT_EXECUTED_PER_PLAN_AND_OUTPUT_INVENTORY",
+    "no_cad_step_mesh_or_render_run_stated_in_plan": true,
+    "old_review_output_contains_only_freeze_file": true,
+    "expected_image": "tmp/review_20261005/smooth_candidate/run_beaker/beaker_native_body_and_section.png",
+    "sibling_review_note": "Current draft source was revised by its owner; separate plan records raw-hit refusal and explicit AddOptimal_s(False,False) STEP bounds, 0.01 mm bound and 0.01 mm3 volume thresholds unchanged.",
+    "geometry_claims": "radial control-net setting is not normal thickness; finite meridian curvature samples are not a whole-span bound; global normal minimum, real-vessel match, and physical qualification remain UNKNOWN/NOT_VALIDATED",
+    "run_beaker_output_exists": false,
+    "expected_image_present": false
+  },
+  "root_decisions": [
+    "Review migration copy result; binding covers two frozen mother stations only and does not qualify global wall, fragments, or physics.",
+    "Review and release the single beaker run from the separate first-run plan; keep bowl gated on beaker report and actual section image.",
+    "Keep tolerance at 1e-7 mm and keep global normal-thickness, real-vessel match, and physical qualification claims unknown."
+  ],
+  "artifacts": {
+    "report_md": "vesselforge/tmp/review_20261005/geometry_resume/report.md",
+    "bounds_raw_json": "vesselforge/tmp/review_20261005/geometry_resume/diagnostic_report.json",
+    "preflight": "vesselforge/tmp/review_20261005/geometry_resume/preflight.json",
+    "process_receipt": "vesselforge/tmp/review_20261005/geometry_resume/diagnostic_process.json",
+    "source_hashes": "vesselforge/tmp/review_20261005/geometry_resume/source_change_hashes.json",
+    "test_source_freeze": "vesselforge/tmp/review_20261005/geometry_resume/source_freeze.json",
+    "targeted_pytest_receipt": "vesselforge/tmp/review_20261005/geometry_resume/targeted_pytest_receipt.json",
+    "targeted_pytest_junit": "vesselforge/tmp/review_20261005/geometry_resume/targeted_pytest.junit.xml",
+    "migration_script": "vesselforge/tmp/review_20261005/geometry_resume/migrate_v4_identity_asset.py",
+    "migration_plan": "vesselforge/tmp/review_20261005/geometry_resume/migration_plan.json",
+    "migration_plan_markdown": "vesselforge/tmp/review_20261005/geometry_resume/migration_plan.md",
+    "migration_execution_receipt": "vesselforge/tmp/review_20261005/geometry_resume/migration_execution_receipt.json",
+    "migration_binding_result": "vesselforge/tmp/review_20261005/geometry_resume/migration_binding_result.json",
+    "migration_stdout": "vesselforge/tmp/review_20261005/geometry_resume/migration_execute.stdout.txt",
+    "migration_stderr": "vesselforge/tmp/review_20261005/geometry_resume/migration_execute.stderr.txt",
+    "migration_preflight": "vesselforge/tmp/review_20261005/geometry_resume/migration_execution_preflight.json",
+    "migrated_manifest": "vesselforge/tmp/review_20261005/geometry_resume/migration_copy/cylinder_asset_run01/manifest.json"
+  },
+  "migration_draft": {
+    "status": "EXECUTED_ONCE_BINDING_PASS",
+    "script": "vesselforge/tmp/review_20261005/geometry_resume/migrate_v4_identity_asset.py",
+    "script_sha256": "c6897ba69e32506677e7653c1dbba44a1cf4f9a8ad0b2815616e905badddd3c4",
+    "plan": "vesselforge/tmp/review_20261005/geometry_resume/migration_plan.json",
+    "plan_markdown": "vesselforge/tmp/review_20261005/geometry_resume/migration_plan.md",
+    "destination_exists": true,
+    "expected_step_imports": 2,
+    "step_exports": 0,
+    "mesh_calls": 0,
+    "native_geometry_rebuilds": 0,
+    "binding_result_exists": true,
+    "destination_manifest_sha256": "df781dc6c818512af8d66b164288aa0d5991097ea0166b85556119de2c9fba41",
+    "source_manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "payload_bytes_preserved": true,
+    "python_exit_code_captured": false,
+    "binding_status": "PASS_MOTHER_STATION_BINDING",
+    "stations_bound": "2/2"
+  },
+  "migration_execution": {
+    "status": "PASS_MOTHER_STATION_BINDING",
+    "receipt": "vesselforge/tmp/review_20261005/geometry_resume/migration_execution_receipt.json",
+    "result": "vesselforge/tmp/review_20261005/geometry_resume/migration_binding_result.json",
+    "stdout": "vesselforge/tmp/review_20261005/geometry_resume/migration_execute.stdout.txt",
+    "stderr": "vesselforge/tmp/review_20261005/geometry_resume/migration_execute.stderr.txt",
+    "python_child_completed": true,
+    "actual_exit_code_captured": false,
+    "exit_note": "The Python child completed and emitted the complete result JSON, but the wrapper did not persist LASTEXITCODE: it stalled while serializing its receipt after a depth-truncation warning. No exit code is asserted or inferred.",
+    "source_inputs_unchanged": true,
+    "all_seven_payloads_identical": true,
+    "source_manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "destination_manifest_sha256": "df781dc6c818512af8d66b164288aa0d5991097ea0166b85556119de2c9fba41",
+    "step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "binding_stations": "2/2",
+    "global_wall": "UNVERIFIED",
+    "global_minimum_wall": "NOT_ESTABLISHED",
+    "physical_qualification": "UNKNOWN"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "vesselforge.normal_strip_global_certificate_design.v1",
+  "state": "DESIGN_ONLY_FOR_ROOT_REVIEW",
+  "candidate_scope": "jar outer meridian to exact 3 mm inward-normal inner meridian to explicitly closed mother profile",
+  "execution_performed": false,
+  "decision": {
+    "selected_route": "boundary_jordan_degree_with_exact_boundary_checks",
+    "fallback_route": "exact_interval_patch_cover_with_pairwise_coverage",
+    "local_factor_is_global_proof": false,
+    "local_factor": "1 - t*kappa >= 2/3 on pinned jar side spans; 1 on exact straight base/neck",
+    "local_scope": [
+      "positive normal-map Jacobian and no local focal fold",
+      "existing Q certificate addresses local offset radius only"
+    ],
+    "global_scope_to_prove": [
+      "normal-strip injectivity over the complete closed parameter domain",
+      "simple Jordan boundary and nonlocal patch disjointness",
+      "endpoint/base/lip closure interactions",
+      "nearest-point condition as a separate prerequisite for a 3 mm minimum Euclidean wall claim"
+    ]
+  },
+  "map": {
+    "domain": "D = [u0,u1] x [0,3 mm], including every exact span and seam",
+    "curve": "c(u)=(r(u),z(u)) from frozen rational degree-5 Bezier spans",
+    "speed": "v=sqrt(rprime^2+zprime^2), exact positive lower bound required for interval enclosures",
+    "inward_normal": "N_in=(-zprime/v,rprime/v)",
+    "offset": "F(u,t)=c(u)+t*N_in(u)",
+    "jacobian": "det(F_u,F_t)=(1-t*kappa)*v",
+    "preconditions": [
+      "v>0 on each closed span and across every join",
+      "1-t*kappa>=2/3 on all side spans for all t in [0,3]",
+      "exact straight-span curvature zero, hence factor 1",
+      "orientation of N_in is consistent through the complete profile"
+    ]
+  },
+  "proof_routes": [
+    {
+      "id": "boundary_jordan_degree",
+      "preferred": true,
+      "steps": [
+        "Certify regularity and positive Jacobian on the closed parameter rectangle.",
+        "Certify F(boundary) is an oriented simple Jordan curve: outer, true-normal inner, and both endpoint connectors.",
+        "Include actual base/lip closure patches when they differ from normal endpoint fibres; certify exact seams and nonintersection.",
+        "Apply planar degree: winding is 1 inside and 0 outside; all interior preimages have positive index, so each interior point has exactly one preimage.",
+        "Exclude interior-to-boundary collisions by local openness and exterior degree zero; boundary injectivity handles boundary pairs."
+      ],
+      "result": "global one-to-one normal strip, conditional on all boundary and regularity premises",
+      "boundary_proof": "exact rational Bezier data plus outward rational enclosures for sqrt-based inner/endpoint curves; shared endpoints require exact equality and a local chart",
+      "orientation_check": "positive induced orientation or exact winding witness"
+    },
+    {
+      "id": "exact_interval_patch_cover",
+      "preferred": false,
+      "steps": [
+        "Partition every span x full t-range and every closure patch into rational rectangles.",
+        "Bound q=rprime^2+zprime^2 by exact Bernstein/subdivision bounds; require q_lo>0 and enclose 1/sqrt(q) rationally.",
+        "Prove local injectivity on a finite covering by an exact chart bound sup ||A^-1 DF-I||_infinity < 1 for rational nonsingular A.",
+        "Prove image-enclosure disjointness for all cell pairs outside a common certified chart.",
+        "Emit a complete pair-coverage table; shared seams may meet only at prescribed equal images and must be covered by a joint chart."
+      ],
+      "result": "global injectivity only if the complete finite cover and cell-pair obligations close"
+    }
+  ],
+  "boundary_conditions": {
+    "axis_r_zero": "prove r>=0, list intended axis contacts, and specify collapsed-orbit cap/vertex sewing; otherwise prove strict positive radial lower bound",
+    "flat_base": "curvature factor 1; still included in all global pair and closure checks",
+    "straight_neck": "curvature factor 1; still included in all global pair and closure checks",
+    "lip": "exact geometry, endpoint equality, intended jet continuity, and nonintersection certificate required",
+    "span_seams": "carry exact C4 identity, positive speed, and joint charts for adjacent cells including t=0 and t=3",
+    "closed_profile": "outer + lip + inner + base must form a simple oriented meridian contour in r>=0"
+  },
+  "resource_budget": {
+    "max_interval_cells": 256,
+    "max_refinement_depth": 8,
+    "shared_per_candidate": true,
+    "count_includes": [
+      "interior cells",
+      "boundary and closure cells",
+      "square-root enclosure refinements"
+    ],
+    "on_exhaustion": "UNKNOWN",
+    "finite_point_or_ray_sampling_is_global_proof": false
+  },
+  "status_semantics": {
+    "PASS": "all premises, full pair coverage, boundary/closure checks, and requested scope proved",
+    "EXACT_COUNTEREXAMPLE_GLOBAL_COLLISION": "exact distinct source parameters/depths map to the same point",
+    "UNKNOWN": "unresolved interval, missing boundary model, insufficient speed lower bound, pair-coverage gap, or budget exhaustion",
+    "unknown_is_geometric_failure": false,
+    "optimizer_success_is_geometry_proof": false
+  },
+  "future_fixtures": [
+    {
+      "id": "positive_straight_strip",
+      "specification": "exact rational degree-5 representation of c(u)=(R,H*u), with R>3 mm and H>0",
+      "expected": "PASS; F(u,t)=(R-t,H*u), an embedded rectangle with no axis contact"
+    },
+    {
+      "id": "nonlocal_crossing_with_local_factor_pass",
+      "specification": "exact rational C4 chain with two nonadjacent straight branches, rational gap 0<g<6 mm, inward normals facing, and exact distinct (u1,t1),(u2,t2) with t1+t2=g and equal F values; a remote connector must preserve 1-t*kappa>=2/3 everywhere and the source curve must be simple",
+      "expected": "EXACT_COUNTEREXAMPLE_GLOBAL_COLLISION",
+      "implementation_state": "fixture contract only; rational connector and equality witness not yet authored"
+    }
+  ],
+  "native_brep_prerequisites": [
+    "simple closed meridian contour in r>=0 with explicit outer, inner, base, and lip correspondence",
+    "no unintended patch intersections; exact seam and endpoint correspondence",
+    "consistent face orientation and closed sewing with every non-seam edge paired exactly twice",
+    "matching shared-edge parameterization; no T-junctions or zero-area sliver faces",
+    "explicit collapsed-orbit treatment for every axis contact",
+    "native CAD-kernel validity check on the closed solid"
+  ],
+  "not_proven": [
+    "material properties",
+    "physics readiness",
+    "style calibration",
+    "novelty",
+    "CAD-kernel validity before a native BRep is constructed"
+  ],
+  "source_pins": {
+    "normal_offset_kernel": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+      "lines": 216
+    },
+    "normal_offset_readme": {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/README.md",
+      "sha256": "93f456967f3f7ea31440e1bc5b814380efbe7df90faf422995e6874a17d7a1ef"
+    },
+    "constrained_source": {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/curvature_constrained_meridian.py",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce",
+      "lines": 450
+    },
+    "saved_candidate_result_sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+    "independent_audit_sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+    "frozen_semantic_driver_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3"
+  },
+  "review_limits": {
+    "control_coordinate_payload_read": false,
+    "numerical_geometry_derived": false,
+    "solver_or_kernel_run": false,
+    "tests_run": false,
+    "pending_local_offset_trial_result_required_for_design": false
+  }
+}

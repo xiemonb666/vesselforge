@@ -1,0 +1,75 @@
+{
+  "cad_or_solver": "NOT_RUN",
+  "case_sha256": "4e18dbeaecbf13a54a87b3f1409e1c0f7fe54c3606122a01880689d9e3a6a83c",
+  "control_count_each": 17,
+  "display_samples_per_span": 101,
+  "driver_sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+  "exact_extracted_bezier_spans_each": 12,
+  "families": {
+    "bowl": {
+      "all_control_hulls_proved": true,
+      "all_span_regularities_proved": true,
+      "display_sample_points": 1212,
+      "display_samples_per_span": 101,
+      "exact_C4": true,
+      "exact_feature_checks": true,
+      "global_normal_wall": "UNKNOWN_NOT_COMPUTED",
+      "inner_profile": "NOT_CONSTRUCTED",
+      "label": "R\u22659 mm meridian screen: 5 proved; 4 failing span ends / 2 unique point locations; 1 unknown; 2 straight-meridian exclusions",
+      "screen": {
+        "span_status_counts": {
+          "EXCLUDED_STRAIGHT_MERIDIAN_BASE_OR_NECK": 2,
+          "POINT_COUNTEREXAMPLE_AT_SPAN_ENDPOINT": 4,
+          "PROVED_R9_ON_CLOSED_NONFLAT_SPAN": 5,
+          "UNKNOWN_NOT_CERTIFIED": 1
+        },
+        "unique_endpoint_witnesses": [
+          {
+            "P_R_exact": "-49009905032223775486240971796844923936654554358372073603821822452966088698453708421538463976821145170730372522157855263764858344154036629537275006731480688710386437643491907938600439696845145481457421264668862917640273264405580020799241286023975363730268039491928530799264609406756111861375120562901681169075782183294408492844692551/97207362420471858349058554002569109565322900415919437467588069260793824754531583826990731246317156414258426321978700968092952613753516298180504514241181990617496216915201759806676852785043148624807399826836562685182022685635035667785045412688878576978388886159371318578532230853914403539275462265307941019789910694137856",
+            "span_indices": [
+              2,
+              3
+            ],
+            "u": "1/4"
+          },
+          {
+            "P_R_exact": "-10653624464762494033928618704192958630187675937978162228212817383396711873440890342627234738122703063056561865761822198563561708725714891789426969387855313575793058786102301239709995086457227074675217635212560512933354789863452789785309235836081649231237414405990818731459325840540665821364739824853550211099799131455161031/147054561206784489974846403773820028703296745317385074246838762896376305272275253352838249010640411279149523599301290373627775784063738666494497035744096795855337944569189926882337573823225244530930828759243626942736109788645884441400377513821470212891532878839956263664001831197881084945282094722141346515714175681",
+            "span_indices": [
+              9,
+              10
+            ],
+            "u": "5/6"
+          }
+        ]
+      },
+      "strict_point_checks": true
+    },
+    "jar": {
+      "all_control_hulls_proved": true,
+      "all_span_regularities_proved": true,
+      "display_sample_points": 1212,
+      "display_samples_per_span": 101,
+      "exact_C4": true,
+      "exact_feature_checks": true,
+      "global_normal_wall": "UNKNOWN_NOT_COMPUTED",
+      "inner_profile": "NOT_CONSTRUCTED",
+      "label": "R\u22659 mm meridian screen: 8 proved; 0 failing span ends / 0 unique point locations; 2 unknown; 2 straight-meridian exclusions",
+      "screen": {
+        "span_status_counts": {
+          "EXCLUDED_STRAIGHT_MERIDIAN_BASE_OR_NECK": 2,
+          "PROVED_R9_ON_CLOSED_NONFLAT_SPAN": 8,
+          "UNKNOWN_NOT_CERTIFIED": 2
+        },
+        "unique_endpoint_witnesses": []
+      },
+      "strict_point_checks": true
+    }
+  },
+  "output_cap_bytes": 2097152,
+  "png_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261006\\semantic_base_neck_bspline_20261006\\actual_saved_candidate_render\\semantic_outer_meridians_equal_scale.png",
+  "png_sha256": "e61f2ae8636e9aee29894ac1cc15a83d4e486b0146cf78f3028dd3173f6084fd",
+  "png_size_bytes": 78896,
+  "saved_result_sha256": "1e882451d691430c01653617e997b115291a10996e273434b7fd9c71ab787e11",
+  "status": "SAVED_RESULT_RENDER_ONLY",
+  "total_output_bytes": 232855
+}

@@ -1,0 +1,46 @@
+{
+  "analytic_wall_proxy": {
+    "declared_radial_wall_mm": 3.0,
+    "minimum_radial_separation_mm": 2.9999999999999964,
+    "scope": "fixture only"
+  },
+  "curvature_proxy": {
+    "max_height_times_cylinder_curvature": 0.0225,
+    "scope": "fixture-only scalar proxy; no general offset qualification"
+  },
+  "general_geometry_status": {
+    "curved_or_global_minimum_wall": "NOT_ASSESSED",
+    "fracture_labels": "NONE",
+    "offset_validity": "NOT_ASSESSED",
+    "physics_qualification": "UNKNOWN",
+    "self_intersection": "NOT_ASSESSED"
+  },
+  "height_periodicity": {
+    "maximum_period_error_mm": 0.0,
+    "repeat_count": 8
+  },
+  "surface_displacement": {
+    "maximum_actual_vertex_displacement_mm": 0.4499999999999993,
+    "maximum_height_mm": 0.45,
+    "maximum_normal_projection_error_mm": 1.5937771935536915e-15,
+    "maximum_tangential_residual_mm": 1.5937771935536915e-15
+  },
+  "topology": {
+    "boundary_edge_count": 0,
+    "closed_two_manifold": true,
+    "connected_component_count": 1,
+    "consistent_winding": true,
+    "duplicated_face_count_unoriented": 0,
+    "face_count": 12800,
+    "inconsistent_winding_edge_count": 0,
+    "minimum_double_area_mm2": 0.764868288964093,
+    "non_two_incidence_edge_count": 0,
+    "nonmanifold_edges_count_including_boundary": 0,
+    "positive_signed_volume": true,
+    "repeated_vertex_face_count": 0,
+    "signed_volume_mm3": 10200.291910056922,
+    "unique_undirected_edge_count": 19200,
+    "vertex_count": 6402,
+    "zero_area_face_count_threshold_1e-12_mm2_double_area": 0
+  }
+}

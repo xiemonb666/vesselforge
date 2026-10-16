@@ -1,0 +1,2 @@
+canonical_vertex_indices,candidate_face_indices,source_face_indices,winding_variants,count,disposition
+"[60535, 60539, 60542]","[119578, 119666]","[125422, 125511]","[[60539, 60535, 60542], [60539, 60542, 60535]]",2,"DIAGNOSTIC ONLY; duplicate triangles are retained, not deleted"

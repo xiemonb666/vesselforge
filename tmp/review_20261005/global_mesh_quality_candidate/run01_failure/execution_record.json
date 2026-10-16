@@ -1,0 +1,151 @@
+{
+  "run_id": "run01_failure",
+  "candidate_id": "global_mesh_quality_candidate_20261005",
+  "source_freeze_sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+  "runtime_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "runtime_executable_sha256": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+  "generation": {
+    "argv": [
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\global_mesh_quality_candidate_20261005\\candidate.py",
+      "--run"
+    ],
+    "pid": 16312,
+    "started_at_utc": "2026-10-05T09:51:36.1012591+00:00",
+    "finished_at_utc": "2026-10-05T09:51:38.4018943+00:00",
+    "external_elapsed_seconds": 2.2851212,
+    "receipt_elapsed_seconds": 2.0152110001072288,
+    "watchdog_seconds": 240,
+    "completed_within_watchdog": true,
+    "exit_code": 2,
+    "status": "UNKNOWN_OR_FAIL",
+    "error_type": "CandidateUnknown",
+    "error": "local-B base colors disagree with the frozen continuous field",
+    "receipt_sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+    "stdout_stderr_hashes": [
+      {
+        "name": "generation_stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "name": "generation_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "name": "run_receipt.json",
+        "sha256": "ae9501ec085e5c22419bcc09a99c91d209fe28c54a16035d9de110e8faab3bc9",
+        "bytes": 955
+      }
+    ]
+  },
+  "source_before_run": [
+    {
+      "path": "candidate.py",
+      "sha256": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "match_frozen_source": true
+    },
+    {
+      "path": "focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "match_frozen_source": true
+    },
+    {
+      "path": "candidate_contract.json",
+      "sha256": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "match_frozen_source": true
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "sha256": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "match_frozen_source": true
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+      "match_frozen_source": true
+    }
+  ],
+  "source_after_run_exact_snapshot": [
+    {
+      "path": "candidate.py",
+      "sha256": "3a3a9c5a82cf936d3611ccffdfc6956331f3ba6514114b1905ff76e3254f4445",
+      "match_frozen_source": true
+    },
+    {
+      "path": "focused_checks.py",
+      "sha256": "35ca4504cb161bd5780c0d9f6e7df53eea72b51e7fd0a8486dcea62d92bc5c65",
+      "match_frozen_source": true
+    },
+    {
+      "path": "candidate_contract.json",
+      "sha256": "b804e6089d4553dcc393dfc866f0e92f8f4dd0bf4d38c4bded433103328cd998",
+      "match_frozen_source": true
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "sha256": "efe51794fbe8ef0c25ab0f0390d5375b2ce219c6d47347468b8bf2d92c9bbac5",
+      "match_frozen_source": true
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "09b972cdc1c04698b12f01acd88479a564ce03b0bf1ff68af2e9979e4e104b17",
+      "match_frozen_source": true
+    }
+  ],
+  "inputs_before_run_match_expected": true,
+  "inputs_after_run_and_diagnosis": [
+    {
+      "name": "run02_fixture_arrays",
+      "path": "vesselforge/tmp/review_20261004/surface_ornament_route/run02/fixture_arrays.npz",
+      "sha256_expected": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "sha256_after_run_and_diagnosis": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+      "match": true
+    },
+    {
+      "name": "local_b_candidate_arrays",
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/candidate_arrays.npz",
+      "sha256_expected": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "sha256_after_run_and_diagnosis": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "match": true
+    },
+    {
+      "name": "local_b_checks",
+      "path": "vesselforge/tmp/review_20261005/ornament_resume/local_refinement_run/local_b_0p25mm/checks.json",
+      "sha256_expected": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "sha256_after_run_and_diagnosis": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+      "match": true
+    },
+    {
+      "name": "ornament_refinement_source",
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/refinement_prototype.py",
+      "sha256_expected": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "sha256_after_run_and_diagnosis": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+      "match": true
+    },
+    {
+      "name": "ornament_case_freeze",
+      "path": "vesselforge/experiments/surface_ornament_refinement_20261005/candidate_cases.json",
+      "sha256_expected": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "sha256_after_run_and_diagnosis": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+      "match": true
+    }
+  ],
+  "candidate_npz_written": false,
+  "focused_checks_written": false,
+  "actual_pngs_written": false,
+  "deterministic_delaunay_setup_reached_before_provenance_gate": true,
+  "diagnostic_record": "color_diagnostic_record.json",
+  "failed_diagnostic_command_attempt": {
+    "pid": 122392,
+    "started_at_utc": "2026-10-05T09:55:19.0435426+00:00",
+    "finished_at_utc": "2026-10-05T09:55:19.1370533+00:00",
+    "elapsed_seconds": 0.0935113,
+    "exit_code": 1,
+    "status": "PYTHON_SYNTAX_ERROR_BEFORE_INPUT_READ",
+    "stderr_file": "diagnostic_attempt_01_stderr.txt"
+  },
+  "powershell_parse_error_before_process_launch": true
+}

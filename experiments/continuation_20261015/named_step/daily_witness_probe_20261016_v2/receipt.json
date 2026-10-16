@@ -1,0 +1,523 @@
+{
+  "declared_occ_tolerances": {
+    "bounds_relative_to_body_span": 2e-05,
+    "gmsh_geometry_tolerance_m": 1e-08,
+    "half_volume_relative_to_equal_halves": 5e-05,
+    "interpretation": "declared CAD-kernel comparison tolerances; not metrology bounds",
+    "surface_area_relative": 1e-05,
+    "volume_relative": 5e-08
+  },
+  "failure": {
+    "message": "Unknown model region with tag 1",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\witness_lineage_probe.py\", line 508, in run\n    receipt[\"label_import\"] = _labels_failure_receipt(\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\witness_lineage_probe.py\", line 167, in _labels_failure_receipt\n    abs(int(tag)) for dim, tag in gmsh.model.getBoundary([(3, volumes[0])], oriented=False, recursive=False)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\pgfrag-geometry-runtime\\sdk\\gmsh-4.15.2-Windows64-sdk\\lib\\gmsh.py\", line 1131, in getBoundary\n    raise Exception(logger.getLastError())\nException: Unknown model region with tag 1\n",
+    "type": "Exception"
+  },
+  "label_import": null,
+  "native_face_witness_manifest": {
+    "mapping_status": "EXACT_NATIVE_FACE_WITNESSES",
+    "native_solid_face_count": 16,
+    "schema": "vesselforge.native_face_witness_manifest.v1",
+    "source_face_lineage_sha256": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "source_step_sha256": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e",
+    "witness_count": 16,
+    "witnesses": [
+      {
+        "native_face_child_verified": true,
+        "role": "base",
+        "source_face_id": "original-brep-face-000",
+        "step_entity_name": "VF_FACE_original-brep-face-000__base",
+        "witness_bytes": 2749,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-000.step",
+        "witness_sha256": "ef4cd99f04bd2e5826da56a65bc86bdd122fc0d8b385ad2836d46ac27e1be877",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_inner",
+        "source_face_id": "original-brep-face-001",
+        "step_entity_name": "VF_FACE_original-brep-face-001__body_inner",
+        "witness_bytes": 4933,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-001.step",
+        "witness_sha256": "9423586e942581ca4f4510c01f44861be06d732f94c9966053838fdbc2459aa5",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "rim",
+        "source_face_id": "original-brep-face-002",
+        "step_entity_name": "VF_FACE_original-brep-face-002__rim",
+        "witness_bytes": 4584,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-002.step",
+        "witness_sha256": "5ccf4715c9e3d0f7dbbcf27af5e90a80ef0acc9890f4fec141de42d91be808d8",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-003",
+        "step_entity_name": "VF_FACE_original-brep-face-003__body_outer",
+        "witness_bytes": 5049,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-003.step",
+        "witness_sha256": "f33e7b240586512b7127148e4f0d14c5a11f41761f5930e106c8cbac5d9ee2d5",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-004",
+        "step_entity_name": "VF_FACE_original-brep-face-004__body_outer",
+        "witness_bytes": 5049,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-004.step",
+        "witness_sha256": "22f29bc7eddae11c1c2494266bdb4e073c5c0bd04e8ce601dc4868d3e01c3103",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-005",
+        "step_entity_name": "VF_FACE_original-brep-face-005__body_outer",
+        "witness_bytes": 5043,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-005.step",
+        "witness_sha256": "72edae9663d608de6414b7f09bd818a1a4292e68a806e302e608eb7b7ae17443",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-006",
+        "step_entity_name": "VF_FACE_original-brep-face-006__body_outer",
+        "witness_bytes": 5045,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-006.step",
+        "witness_sha256": "b24ea556707a3ad5291bc34ffa9a20f4895f7e503137e33b2d330a654fa73340",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-007",
+        "step_entity_name": "VF_FACE_original-brep-face-007__body_outer",
+        "witness_bytes": 4921,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-007.step",
+        "witness_sha256": "2c1fa2d54af68a8ecfd1a477f4ed9953be0951ebcd19c960d18edc20cf6bdc54",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-008",
+        "step_entity_name": "VF_FACE_original-brep-face-008__foot",
+        "witness_bytes": 4757,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-008.step",
+        "witness_sha256": "20f8040a9fc50e8b62aa21a926b10bc44612403514c24e6bad61c79ee292ceac",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-009",
+        "step_entity_name": "VF_FACE_original-brep-face-009__foot",
+        "witness_bytes": 4480,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-009.step",
+        "witness_sha256": "bccd49a2cdf4c6fb9653dca46352ca194b3468cc1a79347dee0d4cb203adc0e8",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-010",
+        "step_entity_name": "VF_FACE_original-brep-face-010__foot",
+        "witness_bytes": 4372,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-010.step",
+        "witness_sha256": "506fc9f6c870d111c500f4e800cc3f36f4fa5a1b103986d5c9f7fde2e37a810e",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-011",
+        "step_entity_name": "VF_FACE_original-brep-face-011__foot",
+        "witness_bytes": 4528,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-011.step",
+        "witness_sha256": "14e4f9aed076a1a7516804a5cf2bbe0bce759722d5a029a0d1eb3fb7cfdf3f91",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-012",
+        "step_entity_name": "VF_FACE_original-brep-face-012__foot",
+        "witness_bytes": 3543,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-012.step",
+        "witness_sha256": "f5a9f4693b038dd952c854142d790cb0beb2eaac3a9b7d941a9c81da92a8fa90",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-013",
+        "step_entity_name": "VF_FACE_original-brep-face-013__foot",
+        "witness_bytes": 4498,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-013.step",
+        "witness_sha256": "1dd7232811a9953bd3d42ea9de0001c0b2dfe5ff700298c7b25618bbe66b82a4",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "foot",
+        "source_face_id": "original-brep-face-014",
+        "step_entity_name": "VF_FACE_original-brep-face-014__foot",
+        "witness_bytes": 4361,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-014.step",
+        "witness_sha256": "5bac8fce408c2e5b7038d01ae27c079ef0764c8407e9097c55f25349051a4cd5",
+        "witness_solid_count": 0
+      },
+      {
+        "native_face_child_verified": true,
+        "role": "base",
+        "source_face_id": "original-brep-face-015",
+        "step_entity_name": "VF_FACE_original-brep-face-015__base",
+        "witness_bytes": 2750,
+        "witness_face_entity_count": 1,
+        "witness_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\native_face_witnesses\\original-brep-face-015.step",
+        "witness_sha256": "ab0baafccb5e0674c0fda7833736be72fedf8312a1fb28c335a1d611bb07e1a0",
+        "witness_solid_count": 0
+      }
+    ]
+  },
+  "new_native_body_step": {
+    "complete_solid_transferred_once_before_face_name_assignment": true,
+    "face_names_applied_to_exact_solid_boundary_entities": true,
+    "named_advanced_face_entity_count": 16,
+    "named_face_count": 16,
+    "round_trip": {
+      "advanced_face_count": 16,
+      "maximum_bounds_error": 7.105427357601002e-15,
+      "relative_volume_error": 1.7777562211958106e-13,
+      "round_trip_bounds": [
+        -54.0000001,
+        -54.0000001,
+        -2.22044604925e-16,
+        54.0,
+        54.0000001,
+        53.0000001
+      ],
+      "round_trip_volume": 32987.7728290895,
+      "solid_count": 1,
+      "source_bounds": [
+        -54.000000099999994,
+        -54.000000099999994,
+        -2.220446049250313e-16,
+        53.99999999999999,
+        54.000000099999994,
+        53.0000001
+      ],
+      "source_volume": 32987.77282909537,
+      "transfer_roots": 1,
+      "valid_closed_solid": true
+    },
+    "source_face_entity_bindings": [
+      {
+        "role": "base",
+        "source_face_id": "original-brep-face-000",
+        "step_entity_name": "VF_FACE_original-brep-face-000__base"
+      },
+      {
+        "role": "body_inner",
+        "source_face_id": "original-brep-face-001",
+        "step_entity_name": "VF_FACE_original-brep-face-001__body_inner"
+      },
+      {
+        "role": "rim",
+        "source_face_id": "original-brep-face-002",
+        "step_entity_name": "VF_FACE_original-brep-face-002__rim"
+      },
+      {
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-003",
+        "step_entity_name": "VF_FACE_original-brep-face-003__body_outer"
+      },
+      {
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-004",
+        "step_entity_name": "VF_FACE_original-brep-face-004__body_outer"
+      },
+      {
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-005",
+        "step_entity_name": "VF_FACE_original-brep-face-005__body_outer"
+      },
+      {
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-006",
+        "step_entity_name": "VF_FACE_original-brep-face-006__body_outer"
+      },
+      {
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-007",
+        "step_entity_name": "VF_FACE_original-brep-face-007__body_outer"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-008",
+        "step_entity_name": "VF_FACE_original-brep-face-008__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-009",
+        "step_entity_name": "VF_FACE_original-brep-face-009__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-010",
+        "step_entity_name": "VF_FACE_original-brep-face-010__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-011",
+        "step_entity_name": "VF_FACE_original-brep-face-011__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-012",
+        "step_entity_name": "VF_FACE_original-brep-face-012__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-013",
+        "step_entity_name": "VF_FACE_original-brep-face-013__foot"
+      },
+      {
+        "role": "foot",
+        "source_face_id": "original-brep-face-014",
+        "step_entity_name": "VF_FACE_original-brep-face-014__foot"
+      },
+      {
+        "role": "base",
+        "source_face_id": "original-brep-face-015",
+        "step_entity_name": "VF_FACE_original-brep-face-015__base"
+      }
+    ],
+    "source_face_entity_lookup": "STEPConstruct.FindEntity_s on the complete-solid transfer map",
+    "step_bytes": 40870,
+    "step_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\named_step\\daily_witness_probe_20261016_v2\\daily_native_named.step",
+    "step_sha256": "ad9a0e9f6f8dbd736ed98adff01523ea45cc49d150b1fddc9f0101b2d72c44f9"
+  },
+  "physics_or_mesh": "NOT_RUN",
+  "plane_cut_and_composed_ancestry": null,
+  "schema": "vesselforge.daily_native_face_witness_probe.v1",
+  "source_asset_relative_path": "vesselforge\\experiments\\continuation_20261015\\reference_forms\\outputs\\daily_aberdeen_108x53_v6_final",
+  "source_geometry_validation": {
+    "geometry_report_relative_volume_difference": 0.0,
+    "geometry_report_volume_mm3": 32987.77282909537,
+    "native_face_count": 16,
+    "original_step_metrics": {
+      "bounds_mm": [
+        -54.0000001,
+        -54.0000001,
+        -2.22044604925e-16,
+        54.0,
+        54.0000001,
+        53.0000001
+      ],
+      "volume_mm3": 32987.7728290895
+    },
+    "rebuilt_native_metrics": {
+      "bounds_mm": [
+        -54.000000099999994,
+        -54.000000099999994,
+        -2.220446049250313e-16,
+        53.99999999999999,
+        54.000000099999994,
+        53.0000001
+      ],
+      "volume_mm3": 32987.77282909537
+    },
+    "relative_bounds_difference_to_body_span": 6.579099393002596e-17,
+    "relative_volume_difference": 1.7777562211958106e-13,
+    "source_segment_identity_rows": [
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 0,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-000",
+        "source_original_brep_face_index": 0,
+        "source_segment_indices": [
+          0
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 1,
+        "role": "body_inner",
+        "source_original_brep_face_id": "original-brep-face-001",
+        "source_original_brep_face_index": 1,
+        "source_segment_indices": [
+          1
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 2,
+        "role": "rim",
+        "source_original_brep_face_id": "original-brep-face-002",
+        "source_original_brep_face_index": 2,
+        "source_segment_indices": [
+          2
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 3,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-003",
+        "source_original_brep_face_index": 3,
+        "source_segment_indices": [
+          3
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 4,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-004",
+        "source_original_brep_face_index": 4,
+        "source_segment_indices": [
+          4
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 5,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-005",
+        "source_original_brep_face_index": 5,
+        "source_segment_indices": [
+          5
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 6,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-006",
+        "source_original_brep_face_index": 6,
+        "source_segment_indices": [
+          6
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 7,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-007",
+        "source_original_brep_face_index": 7,
+        "source_segment_indices": [
+          7
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 8,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-008",
+        "source_original_brep_face_index": 8,
+        "source_segment_indices": [
+          8
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 9,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-009",
+        "source_original_brep_face_index": 9,
+        "source_segment_indices": [
+          9
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 10,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-010",
+        "source_original_brep_face_index": 10,
+        "source_segment_indices": [
+          10
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 11,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-011",
+        "source_original_brep_face_index": 11,
+        "source_segment_indices": [
+          11
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 12,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-012",
+        "source_original_brep_face_index": 12,
+        "source_segment_indices": [
+          12
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 13,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-013",
+        "source_original_brep_face_index": 13,
+        "source_segment_indices": [
+          13
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 14,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-014",
+        "source_original_brep_face_index": 14,
+        "source_segment_indices": [
+          14
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 15,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-015",
+        "source_original_brep_face_index": 15,
+        "source_segment_indices": [
+          15
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e"
+  },
+  "status": "FAIL",
+  "witness_imprint": null
+}

@@ -1,0 +1,111 @@
+{
+  "candidate_status": "SIZE_REFERENCE_GEOMETRY_CANDIDATE_ONLY",
+  "design_assumptions": {
+    "body_floor_radius_mm": 10.5,
+    "body_meridian": "cubic Bezier with explicit start-handle fraction 0.60 and end-handle height fraction 0.22, chosen as a rounded daily-use visual candidate",
+    "body_wall_normal_thickness_mm": 2.0,
+    "foot_contact_width_mm": 2.0,
+    "foot_height_mm": 3.0,
+    "inside_floor_z_mm": 5.5,
+    "lip": "circular cap of radius half the assumed wall thickness",
+    "physical_material_properties": "NOT_SPECIFIED; no ceramic density, modulus, Poisson ratio, strength or toughness is inferred",
+    "recessed_underside_z_mm": 1.2,
+    "rim_tangent_angle_degrees": 48.0
+  },
+  "measured_from_record": [
+    "overall height",
+    "rim outer diameter",
+    "foot outer diameter"
+  ],
+  "not_claimed": [
+    "not a specimen scan or exact profile reconstruction",
+    "not a verified match to the maker's exact wall, base, rim or foot construction",
+    "not a calibrated physical material or mechanics model"
+  ],
+  "record": {
+    "collection": "Aberdeen City Museums",
+    "dimension_evidence": "museum catalog dimensions supplied by the reference-catalog review; online page fetch timed out in this run",
+    "object_url": "https://emuseum.aberdeencity.gov.uk/objects/186848/porcelain-small-footed-bowl",
+    "reported_dimensions_mm": {
+      "foot_outer_diameter": 31.0,
+      "overall_height": 53.0,
+      "rim_outer_diameter": 108.0
+    },
+    "title": "Porcelain small footed bowl",
+    "visual_reference_note": "reviewer observed a smooth outward-curving wall and low foot ring in the official catalog photographs"
+  },
+  "reference_images": "No catalog image was downloaded or included in this package.",
+  "section_geometry_details": {
+    "base": {
+      "central_base_thickness_mm": 4.3,
+      "inside_floor_z_mm": 5.5,
+      "recessed_underside_z_mm": 1.2,
+      "status": "DESIGN_ASSUMPTION"
+    },
+    "body_profile": {
+      "curve": "cubic Bezier",
+      "end_handle_height_fraction_of_overall_height": 0.22,
+      "end_handle_length_mm": 11.66,
+      "inner_control_points_rz_mm": [
+        [
+          10.5,
+          5.5
+        ],
+        [
+          35.554113104713565,
+          5.5
+        ],
+        [
+          44.454792304378316,
+          44.004061941292434
+        ],
+        [
+          52.256855174522606,
+          52.669130606358856
+        ]
+      ],
+      "start_handle_fraction_of_floor_to_inner_lip_radial_span": 0.6,
+      "start_handle_length_mm": 25.05411310471356,
+      "status": "DESIGN_ASSUMPTION; adjustable visual profile control, not measured from source"
+    },
+    "foot": {
+      "contact_annulus_radii_mm": [
+        13.125,
+        15.125
+      ],
+      "contact_width_mm": 2.0,
+      "corner_radius_mm": 0.375,
+      "height_mm": 3.0,
+      "outer_diameter_mm": 31.0,
+      "status": "DESIGN_ASSUMPTION unless expressly measured in source record",
+      "underside_recess_z_mm": 1.2
+    },
+    "lip": {
+      "actual_cap_extrema_rz_mm": {
+        "max_radius": 54.0,
+        "max_z": 53.0
+      },
+      "body_inner_endpoint_rz_mm": [
+        52.256855174522606,
+        52.669130606358856
+      ],
+      "body_outer_endpoint_rz_mm": [
+        53.743144825477394,
+        51.330869393641144
+      ],
+      "center_formula": "(D_outer/2 - t/2, H - t/2)",
+      "center_rz_mm": [
+        53.0,
+        52.0
+      ],
+      "construction": "semicircular cap tangent to the inner and outer body at the declared tangent angle",
+      "radius_mm": 1.0,
+      "tangent_angle_degrees": 48.0
+    },
+    "normal_offset_error_scope": "maximum of t=0.25, 0.5 and 0.75 checks per accepted cubic subcurve; no continuous or global error bound is claimed",
+    "normal_offset_fit_acceptance_sample_mm": 0.005,
+    "normal_offset_fit_max_sampled_deviation_mm": 0.004214175359057381,
+    "outer_normal_offset_mm": 2.0,
+    "wall_thickness_status": "DESIGN_ASSUMPTION; exact normal-offset formula supplies cubic control points, with finite sampled fit diagnostics and no continuous/global error certificate"
+  }
+}

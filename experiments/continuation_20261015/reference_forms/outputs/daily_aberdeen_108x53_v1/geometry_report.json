@@ -1,0 +1,71 @@
+{
+  "candidate_geometry_status": "PASS_STRUCTURAL_CAD_ONLY",
+  "checks": {
+    "all_native_faces_have_one_role": true,
+    "cavity_center_is_empty": true,
+    "foot_and_base_are_material": true,
+    "foot_contact_touches_z0": false,
+    "mesh_is_watertight": true,
+    "one_closed_shell": true,
+    "one_valid_solid": true,
+    "outer_dimensions_within_0_1mm": false,
+    "outside_probe_is_empty": true,
+    "positive_volume": true,
+    "step_round_trip_one_solid": true
+  },
+  "interpretation": "Structural geometry checks only; no physical, material, or source-profile match claim.",
+  "measurements": {
+    "brep_bounds": {
+      "diameter_x_mm": 108.35201251995797,
+      "diameter_y_mm": 108.28653477648496,
+      "height_mm": 53.15026560457707,
+      "x_max_mm": 54.17600625997898,
+      "x_min_mm": -54.17600625997898,
+      "y_max_mm": 54.14326738824248,
+      "y_min_mm": -54.143267388242485,
+      "z_max_mm": 53.140605085554235,
+      "z_min_mm": -0.009660519022836114
+    },
+    "independent_meridian_integral_volume_mm3": 29693.928417493677,
+    "max_normal_offset_curve_fit_deviation_mm": 0.004350865746723613,
+    "native_face_count": 19,
+    "native_foot_support_face_indices": [
+      15
+    ],
+    "native_region_counts": {
+      "base": 2,
+      "body_inner": 1,
+      "body_outer": 8,
+      "foot": 7,
+      "rim": 1
+    },
+    "relative_volume_delta": 4.30030861304599e-14,
+    "solid_volume_mm3": 29693.928417494953,
+    "step_round_trip_bounds": {
+      "diameter_x_mm": 108.0000001,
+      "diameter_y_mm": 108.0000002,
+      "height_mm": 53.0000001,
+      "x_max_mm": 54.0,
+      "x_min_mm": -54.0000001,
+      "y_max_mm": 54.0000001,
+      "y_min_mm": -54.0000001,
+      "z_max_mm": 53.0000001,
+      "z_min_mm": 0.0
+    },
+    "step_round_trip_volume_delta_mm3": 1.44427758641541e-09,
+    "surface_mesh": {
+      "boundary_edges": 0,
+      "minimum_double_area_mm2": 0.02278756595437544,
+      "nonmanifold_edges": 0,
+      "signed_volume_mm3": 29768.75147503418,
+      "triangles": 26072,
+      "vertices": 13038,
+      "watertight": true
+    },
+    "triangle_count": 26072,
+    "vertex_count": 13038
+  },
+  "physical_material_validity": "NOT_ASSESSED",
+  "schema": "vf.revolved_profile_geometry_candidate_report.v1",
+  "source_profile_fidelity": "NOT_ESTABLISHED: only catalog dimensions and a photograph were available; the meridian remains assumed."
+}

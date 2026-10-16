@@ -1,0 +1,19 @@
+{
+  "decision": "DEPTH_3_EMBEDDING_ALONE_INSUFFICIENT",
+  "reason": "An interior outer point can lie at F(v, 3+d), 0<d<3; the depth-3 embedding does not exclude it. Endpoint minimizers also need clearance evidence.",
+  "counterexample": {
+    "arcs": "A(x)=(x,0), B(x)=(x,4), both oriented east with left normal north",
+    "strip_images": "A: 0<=y<=3; B: 4<=y<=7; joined remotely with a broad clear connector",
+    "minimum_pair": "B(x) to F_A(x,3) has distance 1"
+  },
+  "candidate_specific_route": {
+    "status": "CONDITIONAL",
+    "required": [
+      "verify the exact Rcurv>=9 and monotone-slice premises through s=6, including base/seam cases and radius nonnegativity",
+      "bind the exact endpoint sign argument or endpoint-to-curve squared-distance certificates",
+      "keep CAD lip, cap, seams, and B-rep validation outside the meridian curve-pair claim"
+    ],
+    "conditional_conclusion": "If the depth-6 meridian embedding and both endpoint bounds are proved, min distance between c and F(.,3) is exactly 3; the same bound transfers to their full surfaces of revolution."
+  },
+  "production_qualification": "NOT_ASSERTED"
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "vesselforge.monotone_normal_strip.scope_alias_fix_review.v1",
+  "pre_fix_source_sha256": "96951a1fa9b188ee5e192f9a05b23f11152a196c37e4824b002737b4b76cfad0",
+  "post_fix_source_sha256": "ae1d34351e113bf08f4de287468b38d5035f4bf1c75f98e3fb84d7b361c851ce",
+  "pre_fix_line_count": 253,
+  "post_fix_line_count": 253,
+  "changed_source_lines": {
+    "removed": [
+      "-    _need(offset[\"status\"] == offset[\"study_certificate_status\"] == offset[\"study\"][\"status\"] == \"INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE\" and offset[\"scope\"] == offset[\"study\"][\"scope\"] == \"jar_meridian_2d_only\", \"unexpected local-offset result scope\")"
+    ],
+    "added": [
+      "+    _need(offset[\"status\"] == offset[\"study_certificate_status\"] == offset[\"study\"][\"status\"] == \"INNER_MERIDIAN_LOCAL_OFFSET_CANDIDATE\" and offset[\"scope\"] == \"jar_meridian_2d_only\" and offset[\"study\"][\"scope\"] == \"jar_meridian_2d_curve_only\", \"unexpected local-offset result scope\")"
+    ]
+  },
+  "pre_fix_scope_assertion_passed": false,
+  "post_fix_scope_assertion_passed": true,
+  "saved_actual_scopes": {
+    "offset.scope": "jar_meridian_2d_only",
+    "offset.study.scope": "jar_meridian_2d_curve_only"
+  },
+  "static_schema_audit": {
+    "field_access_count": 121,
+    "missing_field_accesses": [],
+    "literal_failures": [],
+    "per_span_failures": [],
+    "exact_fraction_or_geometry_check_run": false
+  },
+  "failure_capture_immutable": true,
+  "source_verifier_invoked_after_fix": false,
+  "numeric_retry_authorized": false
+}

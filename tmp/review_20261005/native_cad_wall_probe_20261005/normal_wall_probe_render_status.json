@@ -1,0 +1,8 @@
+{
+  "status": "SUCCESS",
+  "elapsed_seconds": 0.766,
+  "section_png": "normal_wall_probe_section_y0.png",
+  "rays_png": "normal_wall_probe_rays_3d.png",
+  "section_png_sha256": "e22b8c734a6b361f144f97d66c3a28cf67dda24a9e1cd0a3aa98ac03253c0bee",
+  "rays_png_sha256": "b52a454045ee9bbb7fd56ef79742e0b2ff0e52f2ee0f23c81c523ec605a53076"
+}

@@ -1,0 +1,1317 @@
+{
+  "declared_occ_tolerances": {
+    "bounds_relative_to_body_span": 2e-05,
+    "cut_volume_conservation_relative": 1e-06,
+    "gmsh_geometry_tolerance_m": 1e-08,
+    "gmsh_occ_bounds_use_stl": 1,
+    "half_volume_relative_to_equal_halves": 5e-05,
+    "interpretation": "declared CAD-kernel comparison tolerances; not metrology bounds",
+    "surface_area_relative": 1e-05,
+    "volume_relative": 5e-08
+  },
+  "failure": null,
+  "native_body_step_sha256": "bd8a6161b6e79612f715d0c766091186808425c299c2ea2851ab9cda3eca8f39",
+  "native_face_identity_sha256": "b101f3ae3262659f4d3140307ee9473340110a5dfeb23f963379e0040c8dcac3",
+  "native_face_witness_manifest_sha256": "e78fcd150e9d68c4e8d1d128449eb4f8c4884374d975b725a58ad4b6c872a32e",
+  "negative_witness_controls": {
+    "controls": [
+      {
+        "control": "missing_witness",
+        "rejection": "native witness manifest count is inconsistent",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "control": "duplicate_witness_identity",
+        "rejection": "duplicate or semantically inconsistent witness row 'original-brep-face-000'",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "control": "translated_noncoincident_witness",
+        "rejection": "witness original-brep-face-000 has duplicate or non-exterior descendants: [(2, 17)]",
+        "status": "PASS_REJECTED"
+      }
+    ],
+    "status": "PASS_ALL_NEGATIVE_WITNESS_CONTROLS_REJECTED",
+    "translated_witness_sha256": "fa4dc74ba202e132d034533021531d8c816ee3156585fe9b3f5edc4fa75875e7",
+    "translated_witness_translation_mm": [
+      250.0,
+      0.0,
+      0.0
+    ]
+  },
+  "physics_or_mesh": "NOT_RUN",
+  "plane_cut_and_composed_ancestry": {
+    "all_model_surfaces_are_volume_boundaries": true,
+    "composed_source_by_exterior_surface": {
+      "1": "original-brep-face-000",
+      "10": "original-brep-face-006",
+      "11": "original-brep-face-007",
+      "12": "original-brep-face-008",
+      "13": "original-brep-face-009",
+      "14": "original-brep-face-010",
+      "15": "original-brep-face-011",
+      "16": "original-brep-face-012",
+      "17": "original-brep-face-013",
+      "18": "original-brep-face-014",
+      "19": "original-brep-face-015",
+      "2": "original-brep-face-001",
+      "20": "original-brep-face-014",
+      "21": "original-brep-face-013",
+      "22": "original-brep-face-011",
+      "23": "original-brep-face-010",
+      "24": "original-brep-face-009",
+      "25": "original-brep-face-008",
+      "26": "original-brep-face-007",
+      "27": "original-brep-face-006",
+      "28": "original-brep-face-005",
+      "29": "original-brep-face-004",
+      "30": "original-brep-face-003",
+      "31": "original-brep-face-000",
+      "32": "original-brep-face-001",
+      "33": "original-brep-face-002",
+      "34": "original-brep-face-003",
+      "35": "original-brep-face-004",
+      "36": "original-brep-face-005",
+      "37": "original-brep-face-006",
+      "38": "original-brep-face-007",
+      "39": "original-brep-face-008",
+      "4": "original-brep-face-001",
+      "40": "original-brep-face-009",
+      "41": "original-brep-face-010",
+      "42": "original-brep-face-011",
+      "43": "original-brep-face-012",
+      "44": "original-brep-face-013",
+      "45": "original-brep-face-014",
+      "46": "original-brep-face-015",
+      "5": "original-brep-face-002",
+      "6": "original-brep-face-002",
+      "7": "original-brep-face-003",
+      "8": "original-brep-face-004",
+      "9": "original-brep-face-005"
+    },
+    "cut_plane": {
+      "equation": "x=0 m",
+      "interface_surface_tags": [
+        3
+      ],
+      "tool_surface_tag": 33
+    },
+    "cut_volume_m3": [
+      1.6493881634052557e-05,
+      1.649387112675282e-05
+    ],
+    "cut_volume_tags": [
+      1,
+      2
+    ],
+    "exterior_surface_tags": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "interface_area_m2": 0.0003832006293592149,
+    "interface_has_zero_witness_ancestry": true,
+    "raw_cut_parent_map_by_input": [
+      {
+        "input_index": 0,
+        "raw_descendants": [
+          {
+            "dim": 3,
+            "tag": 1
+          },
+          {
+            "dim": 3,
+            "tag": 2
+          }
+        ]
+      },
+      {
+        "input_index": 1,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 1
+          },
+          {
+            "dim": 2,
+            "tag": 31
+          }
+        ]
+      },
+      {
+        "input_index": 2,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 4
+          },
+          {
+            "dim": 2,
+            "tag": 2
+          },
+          {
+            "dim": 2,
+            "tag": 32
+          }
+        ]
+      },
+      {
+        "input_index": 3,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 6
+          },
+          {
+            "dim": 2,
+            "tag": 5
+          },
+          {
+            "dim": 2,
+            "tag": 33
+          }
+        ]
+      },
+      {
+        "input_index": 4,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 7
+          },
+          {
+            "dim": 2,
+            "tag": 30
+          },
+          {
+            "dim": 2,
+            "tag": 34
+          }
+        ]
+      },
+      {
+        "input_index": 5,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 8
+          },
+          {
+            "dim": 2,
+            "tag": 29
+          },
+          {
+            "dim": 2,
+            "tag": 35
+          }
+        ]
+      },
+      {
+        "input_index": 6,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 9
+          },
+          {
+            "dim": 2,
+            "tag": 28
+          },
+          {
+            "dim": 2,
+            "tag": 36
+          }
+        ]
+      },
+      {
+        "input_index": 7,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 10
+          },
+          {
+            "dim": 2,
+            "tag": 27
+          },
+          {
+            "dim": 2,
+            "tag": 37
+          }
+        ]
+      },
+      {
+        "input_index": 8,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 11
+          },
+          {
+            "dim": 2,
+            "tag": 26
+          },
+          {
+            "dim": 2,
+            "tag": 38
+          }
+        ]
+      },
+      {
+        "input_index": 9,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 12
+          },
+          {
+            "dim": 2,
+            "tag": 25
+          },
+          {
+            "dim": 2,
+            "tag": 39
+          }
+        ]
+      },
+      {
+        "input_index": 10,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 13
+          },
+          {
+            "dim": 2,
+            "tag": 24
+          },
+          {
+            "dim": 2,
+            "tag": 40
+          }
+        ]
+      },
+      {
+        "input_index": 11,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 14
+          },
+          {
+            "dim": 2,
+            "tag": 23
+          },
+          {
+            "dim": 2,
+            "tag": 41
+          }
+        ]
+      },
+      {
+        "input_index": 12,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 15
+          },
+          {
+            "dim": 2,
+            "tag": 22
+          },
+          {
+            "dim": 2,
+            "tag": 42
+          }
+        ]
+      },
+      {
+        "input_index": 13,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 16
+          },
+          {
+            "dim": 2,
+            "tag": 43
+          }
+        ]
+      },
+      {
+        "input_index": 14,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 17
+          },
+          {
+            "dim": 2,
+            "tag": 21
+          },
+          {
+            "dim": 2,
+            "tag": 44
+          }
+        ]
+      },
+      {
+        "input_index": 15,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 18
+          },
+          {
+            "dim": 2,
+            "tag": 20
+          },
+          {
+            "dim": 2,
+            "tag": 45
+          }
+        ]
+      },
+      {
+        "input_index": 16,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 19
+          },
+          {
+            "dim": 2,
+            "tag": 46
+          }
+        ]
+      },
+      {
+        "input_index": 17,
+        "raw_descendants": [
+          {
+            "dim": 2,
+            "tag": 47
+          },
+          {
+            "dim": 2,
+            "tag": 3
+          }
+        ]
+      }
+    ],
+    "raw_plane_parent_map": [
+      {
+        "dim": 2,
+        "tag": 47
+      },
+      {
+        "dim": 2,
+        "tag": 3
+      }
+    ],
+    "raw_plane_tool_remainder_surfaces": [
+      {
+        "area_m2": 0.18623939937654996,
+        "bounds_m": [
+          -2.398072728348348e-17,
+          -0.2159991889159394,
+          -0.2159991889159394,
+          2.398072728348348e-17,
+          0.2159991889159394,
+          0.2159991889159394
+        ],
+        "disposition": "removed as non-body remainder of the finite plane tool after preserving its raw parent map",
+        "surface_tag": 47
+      }
+    ],
+    "raw_witness_surface_parent_map_rows": [
+      {
+        "input_imprinted_exterior_surface_tag": 17,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 1
+          },
+          {
+            "dim": 2,
+            "tag": 31
+          }
+        ],
+        "source_face_id": "original-brep-face-000"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 18,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 4
+          },
+          {
+            "dim": 2,
+            "tag": 2
+          },
+          {
+            "dim": 2,
+            "tag": 32
+          }
+        ],
+        "source_face_id": "original-brep-face-001"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 19,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 6
+          },
+          {
+            "dim": 2,
+            "tag": 5
+          },
+          {
+            "dim": 2,
+            "tag": 33
+          }
+        ],
+        "source_face_id": "original-brep-face-002"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 20,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 7
+          },
+          {
+            "dim": 2,
+            "tag": 30
+          },
+          {
+            "dim": 2,
+            "tag": 34
+          }
+        ],
+        "source_face_id": "original-brep-face-003"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 21,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 8
+          },
+          {
+            "dim": 2,
+            "tag": 29
+          },
+          {
+            "dim": 2,
+            "tag": 35
+          }
+        ],
+        "source_face_id": "original-brep-face-004"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 22,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 9
+          },
+          {
+            "dim": 2,
+            "tag": 28
+          },
+          {
+            "dim": 2,
+            "tag": 36
+          }
+        ],
+        "source_face_id": "original-brep-face-005"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 23,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 10
+          },
+          {
+            "dim": 2,
+            "tag": 27
+          },
+          {
+            "dim": 2,
+            "tag": 37
+          }
+        ],
+        "source_face_id": "original-brep-face-006"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 24,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 11
+          },
+          {
+            "dim": 2,
+            "tag": 26
+          },
+          {
+            "dim": 2,
+            "tag": 38
+          }
+        ],
+        "source_face_id": "original-brep-face-007"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 25,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 12
+          },
+          {
+            "dim": 2,
+            "tag": 25
+          },
+          {
+            "dim": 2,
+            "tag": 39
+          }
+        ],
+        "source_face_id": "original-brep-face-008"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 26,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 13
+          },
+          {
+            "dim": 2,
+            "tag": 24
+          },
+          {
+            "dim": 2,
+            "tag": 40
+          }
+        ],
+        "source_face_id": "original-brep-face-009"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 27,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 14
+          },
+          {
+            "dim": 2,
+            "tag": 23
+          },
+          {
+            "dim": 2,
+            "tag": 41
+          }
+        ],
+        "source_face_id": "original-brep-face-010"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 28,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 15
+          },
+          {
+            "dim": 2,
+            "tag": 22
+          },
+          {
+            "dim": 2,
+            "tag": 42
+          }
+        ],
+        "source_face_id": "original-brep-face-011"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 29,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 16
+          },
+          {
+            "dim": 2,
+            "tag": 43
+          }
+        ],
+        "source_face_id": "original-brep-face-012"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 30,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 17
+          },
+          {
+            "dim": 2,
+            "tag": 21
+          },
+          {
+            "dim": 2,
+            "tag": 44
+          }
+        ],
+        "source_face_id": "original-brep-face-013"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 31,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 18
+          },
+          {
+            "dim": 2,
+            "tag": 20
+          },
+          {
+            "dim": 2,
+            "tag": 45
+          }
+        ],
+        "source_face_id": "original-brep-face-014"
+      },
+      {
+        "input_imprinted_exterior_surface_tag": 32,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 19
+          },
+          {
+            "dim": 2,
+            "tag": 46
+          }
+        ],
+        "source_face_id": "original-brep-face-015"
+      }
+    ],
+    "relative_cut_volume_sum_error": 6.083552309738363e-07,
+    "relative_equal_half_volume_error": 6.370422662500763e-07,
+    "status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+    "witness_ancestry_covers_all_exterior": true
+  },
+  "schema": "vesselforge.daily_native_face_witness_probe.v1",
+  "source_geometry_validation": {
+    "geometry_report_relative_volume_difference": 0.0,
+    "geometry_report_volume_mm3": 32987.77282909537,
+    "native_face_count": 16,
+    "original_step_metrics": {
+      "bounds_mm": [
+        -54.0000001,
+        -54.0000001,
+        -2.22044604925e-16,
+        54.0,
+        54.0000001,
+        53.0000001
+      ],
+      "volume_mm3": 32987.7728290895
+    },
+    "rebuilt_native_metrics": {
+      "bounds_mm": [
+        -54.000000099999994,
+        -54.000000099999994,
+        -2.220446049250313e-16,
+        53.99999999999999,
+        54.000000099999994,
+        53.0000001
+      ],
+      "volume_mm3": 32987.77282909537
+    },
+    "relative_bounds_difference_to_body_span": 6.579099393002596e-17,
+    "relative_volume_difference": 1.7777562211958106e-13,
+    "source_segment_identity_rows": [
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 0,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-000",
+        "source_original_brep_face_index": 0,
+        "source_segment_indices": [
+          0
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 1,
+        "role": "body_inner",
+        "source_original_brep_face_id": "original-brep-face-001",
+        "source_original_brep_face_index": 1,
+        "source_segment_indices": [
+          1
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 2,
+        "role": "rim",
+        "source_original_brep_face_id": "original-brep-face-002",
+        "source_original_brep_face_index": 2,
+        "source_segment_indices": [
+          2
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 3,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-003",
+        "source_original_brep_face_index": 3,
+        "source_segment_indices": [
+          3
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 4,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-004",
+        "source_original_brep_face_index": 4,
+        "source_segment_indices": [
+          4
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 5,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-005",
+        "source_original_brep_face_index": 5,
+        "source_segment_indices": [
+          5
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 6,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-006",
+        "source_original_brep_face_index": 6,
+        "source_segment_indices": [
+          6
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 7,
+        "role": "body_outer",
+        "source_original_brep_face_id": "original-brep-face-007",
+        "source_original_brep_face_index": 7,
+        "source_segment_indices": [
+          7
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 8,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-008",
+        "source_original_brep_face_index": 8,
+        "source_segment_indices": [
+          8
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 9,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-009",
+        "source_original_brep_face_index": 9,
+        "source_segment_indices": [
+          9
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 10,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-010",
+        "source_original_brep_face_index": 10,
+        "source_segment_indices": [
+          10
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 11,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-011",
+        "source_original_brep_face_index": 11,
+        "source_segment_indices": [
+          11
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 12,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-012",
+        "source_original_brep_face_index": 12,
+        "source_segment_indices": [
+          12
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 13,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-013",
+        "source_original_brep_face_index": 13,
+        "source_segment_indices": [
+          13
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 14,
+        "role": "foot",
+        "source_original_brep_face_id": "original-brep-face-014",
+        "source_original_brep_face_index": 14,
+        "source_segment_indices": [
+          14
+        ]
+      },
+      {
+        "identity_basis": "unique (role, sorted source_segment_indices) tuple in frozen and rebuilt native lineage",
+        "native_face_index": 15,
+        "role": "base",
+        "source_original_brep_face_id": "original-brep-face-015",
+        "source_original_brep_face_index": 15,
+        "source_segment_indices": [
+          15
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e"
+  },
+  "status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+  "witness_imprint": {
+    "all_exterior_surfaces_have_exactly_one_witness_parent": true,
+    "all_model_surfaces_are_exterior": true,
+    "exterior_surface_tags": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "input_body_bounds_m": [
+      -0.05399979722898485,
+      -0.05399979722898485,
+      -2.22044604925e-19,
+      0.05399979722898484,
+      0.05399979722898485,
+      0.05299979722898485
+    ],
+    "input_body_bounds_method": "Geometry.OCCBoundsUseStl=1; tessellation-derived OCC bounds",
+    "input_body_volume_m3": 3.2987772829089536e-05,
+    "interpretation": "conditional CAD ancestry through STEP-imported exact native-face witnesses and OCC boolean parent maps; not literal TopoDS identity across STEP or exact metrology",
+    "output_body_bounds_m": [
+      -0.05399979722898485,
+      -0.05399979722898485,
+      -2.22044604925e-19,
+      0.05399979722898484,
+      0.05399979722898485,
+      0.05299979722898485
+    ],
+    "output_body_volume_m3": 3.2987772829089536e-05,
+    "output_volume_tags": [
+      1
+    ],
+    "raw_volume_parent_map": [
+      {
+        "dim": 3,
+        "tag": 1
+      }
+    ],
+    "relative_bounds_error_to_body_span": 0.0,
+    "relative_import_bounds_error_vs_native": 1.8784353219534076e-06,
+    "relative_import_volume_error_vs_native": 1.7686440884974464e-13,
+    "relative_volume_error": 0.0,
+    "source_by_exterior_surface": {
+      "17": "original-brep-face-000",
+      "18": "original-brep-face-001",
+      "19": "original-brep-face-002",
+      "20": "original-brep-face-003",
+      "21": "original-brep-face-004",
+      "22": "original-brep-face-005",
+      "23": "original-brep-face-006",
+      "24": "original-brep-face-007",
+      "25": "original-brep-face-008",
+      "26": "original-brep-face-009",
+      "27": "original-brep-face-010",
+      "28": "original-brep-face-011",
+      "29": "original-brep-face-012",
+      "30": "original-brep-face-013",
+      "31": "original-brep-face-014",
+      "32": "original-brep-face-015"
+    },
+    "status": "PASS_CAD_PARENT_MAP_WITHIN_DECLARED_OCC_TOLERANCES",
+    "witness_surface_ancestry": [
+      {
+        "descendant_area_m2": 0.0003463605900582747,
+        "input_area_m2": 0.0003463605900582747,
+        "input_surface_tag": 17,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 17
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "base",
+        "source_face_id": "original-brep-face-000",
+        "witness_step_sha256": "3b7450ebd1b4772998e7b4ab1f7051dba9d6c81a65fed871cb1cf6926d9dcade"
+      },
+      {
+        "descendant_area_m2": 0.014061113637872233,
+        "input_area_m2": 0.014061113637872233,
+        "input_surface_tag": 18,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 18
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_inner",
+        "source_face_id": "original-brep-face-001",
+        "witness_step_sha256": "563f7e1309919622bac53343d865cde4e18cbd0a90868fc71375a9999acdf94e"
+      },
+      {
+        "descendant_area_m2": 0.0010494304825583547,
+        "input_area_m2": 0.0010494304825583547,
+        "input_surface_tag": 19,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 19
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "rim",
+        "source_face_id": "original-brep-face-002",
+        "witness_step_sha256": "6ff18a87fa229f65b620a0cdf68279d95d022c6cb0e183ef726e02af4029961a"
+      },
+      {
+        "descendant_area_m2": 0.004075392331114214,
+        "input_area_m2": 0.004075392331114214,
+        "input_surface_tag": 20,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 20
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-003",
+        "witness_step_sha256": "631e9be26a3f846616a40671417844d01991942cf0fe409b015d230ca1f87ce1"
+      },
+      {
+        "descendant_area_m2": 0.004788881052409136,
+        "input_area_m2": 0.004788881052409136,
+        "input_surface_tag": 21,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 21
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-004",
+        "witness_step_sha256": "96dc1264916cc5bb210b45d9c6104780ff596cc7f67693525ff86739b66d8f1e"
+      },
+      {
+        "descendant_area_m2": 0.003952971307961564,
+        "input_area_m2": 0.003952971307961564,
+        "input_surface_tag": 22,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 22
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-005",
+        "witness_step_sha256": "5610aeed8406a5601d3f5aa3fc24ab8a7c9373ca80fd1f3f3e716cad71590087"
+      },
+      {
+        "descendant_area_m2": 0.0013846628254278765,
+        "input_area_m2": 0.0013846628254278765,
+        "input_surface_tag": 23,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 23
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-006",
+        "witness_step_sha256": "eaa9f33148a5098df27b755f9cb53f736fe6f3cb67928f52453717f36c25da99"
+      },
+      {
+        "descendant_area_m2": 0.0009161021883917243,
+        "input_area_m2": 0.0009161021883917243,
+        "input_surface_tag": 24,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 24
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-007",
+        "witness_step_sha256": "bdbf336adb5a66d8a797c243960329ad36754ef0f9b24f6033af058eccc11389"
+      },
+      {
+        "descendant_area_m2": 0.000370852171540533,
+        "input_area_m2": 0.000370852171540533,
+        "input_surface_tag": 25,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 25
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-008",
+        "witness_step_sha256": "5f1e06bb1e0c92a9fb09e46ba0e349c5dde500da9ec1649f615c144c71a03dee"
+      },
+      {
+        "descendant_area_m2": 7.559282933497036e-05,
+        "input_area_m2": 7.559282933497036e-05,
+        "input_surface_tag": 26,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 26
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-009",
+        "witness_step_sha256": "237cfaec56f833700028484d660166f3edebf14acc014a6e449f22a73b3985f0"
+      },
+      {
+        "descendant_area_m2": 0.0005843362335677401,
+        "input_area_m2": 0.0005843362335677401,
+        "input_surface_tag": 27,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 27
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-010",
+        "witness_step_sha256": "9078026948598c6c8b7fa916d67c06e53ab8c1d72b6cf4d87d593f9a80564a37"
+      },
+      {
+        "descendant_area_m2": 7.559282933496994e-05,
+        "input_area_m2": 7.559282933496994e-05,
+        "input_surface_tag": 28,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 28
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-011",
+        "witness_step_sha256": "68b9259e1f7d2719161b0fc36108c6b0e02fd5565bbd300ac199f054c7cf1cfc"
+      },
+      {
+        "descendant_area_m2": 0.00017592918860102847,
+        "input_area_m2": 0.00017592918860102847,
+        "input_surface_tag": 29,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 29
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-012",
+        "witness_step_sha256": "9147622634622b99d69b4b127146d1c0f867737d5fa3d6f2c8a69f2139b02d6e"
+      },
+      {
+        "descendant_area_m2": 6.258163228028977e-05,
+        "input_area_m2": 6.258163228028977e-05,
+        "input_surface_tag": 30,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 30
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-013",
+        "witness_step_sha256": "09c5c04c79a29f224587f81c63f80b11086b2f8c5259b050781251bf446c51d8"
+      },
+      {
+        "descendant_area_m2": 0.0004712388980384379,
+        "input_area_m2": 0.0004712388980384379,
+        "input_surface_tag": 31,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 31
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "foot",
+        "source_face_id": "original-brep-face-014",
+        "witness_step_sha256": "d52f2b7440512438a7c555c115492ab97ad477b8196ea86a0150ec5673bd1f48"
+      },
+      {
+        "descendant_area_m2": 0.0004908738521234052,
+        "input_area_m2": 0.0004908738521234052,
+        "input_surface_tag": 32,
+        "raw_parent_map_descendants": [
+          {
+            "dim": 2,
+            "tag": 32
+          }
+        ],
+        "relative_area_error": 0.0,
+        "role": "base",
+        "source_face_id": "original-brep-face-015",
+        "witness_step_sha256": "b93a104a3682634ae306a001fa04c8c1df7e48f0ad055393e5e8ab3cef8a76b5"
+      }
+    ],
+    "witness_to_exterior_surface_tags": {
+      "original-brep-face-000": [
+        17
+      ],
+      "original-brep-face-001": [
+        18
+      ],
+      "original-brep-face-002": [
+        19
+      ],
+      "original-brep-face-003": [
+        20
+      ],
+      "original-brep-face-004": [
+        21
+      ],
+      "original-brep-face-005": [
+        22
+      ],
+      "original-brep-face-006": [
+        23
+      ],
+      "original-brep-face-007": [
+        24
+      ],
+      "original-brep-face-008": [
+        25
+      ],
+      "original-brep-face-009": [
+        26
+      ],
+      "original-brep-face-010": [
+        27
+      ],
+      "original-brep-face-011": [
+        28
+      ],
+      "original-brep-face-012": [
+        29
+      ],
+      "original-brep-face-013": [
+        30
+      ],
+      "original-brep-face-014": [
+        31
+      ],
+      "original-brep-face-015": [
+        32
+      ]
+    }
+  }
+}

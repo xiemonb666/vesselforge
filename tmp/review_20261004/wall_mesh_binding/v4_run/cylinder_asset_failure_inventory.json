@@ -1,0 +1,50 @@
+{
+  "schema": "vf.wall-mesh-binding-v4-cad-failure-inventory.v1",
+  "status": "PARTIAL_FIXTURE_PACKAGE_BINDING_FAILED",
+  "runner_receipt": "cylinder_runner_receipt.json",
+  "binding_failure": "WALL_REFERENCE_SEMANTICS_FILE_MISMATCH",
+  "binding_report_present": false,
+  "render": "NOT_RUN_NO_VALID_BINDING_REPORT",
+  "files": [
+    {
+      "path": "fields\\surface_fields.npz",
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    {
+      "path": "geometry\\mesh_lineage.npz",
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    {
+      "path": "geometry\\solid.step",
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    {
+      "path": "geometry\\surface.npz",
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 5108,
+      "sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f"
+    },
+    {
+      "path": "metadata\\face_semantics.json",
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    {
+      "path": "metadata\\wall_reference.json",
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    {
+      "path": "validation\\geometry.json",
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  ]
+}

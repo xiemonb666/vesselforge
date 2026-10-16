@@ -1,0 +1,78 @@
+{
+  "review_id": "global_two_cap_candidate_failure_call_graph_supplement_20261005",
+  "review_type": "read-only static call-graph analysis plus receipt readback; no generation, tests, triangulation, CAD, or solver",
+  "status": "BLOCKING_SOURCE_BUG_BEFORE_RETRY",
+  "supersedes_for_execution": "The earlier no-source-blocker disposition in REVIEW.md/REVIEW.json is historical and must not be used as current run clearance.",
+  "preserved_historical_review": {
+    "md_sha256": "ae3a65cbc455630b2a7232d51a03ac86f67c9e164fd6e4e36346035001dc1be2",
+    "json_sha256": "405e0783f6af0ef19450c6d96e6d51d28b7124e7489b878784b5e6acc365f328",
+    "modified_by_this_supplement": false,
+    "reviewer_miss": "The prior review read the containment predicate but failed to notice that its callee raises on an outside candidate parent before the loop can continue."
+  },
+  "snapshot": {
+    "candidate_path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate.py",
+    "candidate_sha256_read_before_and_after_source_read": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114",
+    "source_freeze_sha256": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+    "run_receipt_sha256": "34eec1b7328dd52854c91efd09f02886d10c4e0b66b2fbba1bf68d2a77e5a2d6",
+    "run_directory_listing": [
+      "parent_runner_combined_output.bin (0 bytes)",
+      "parent_runner_receipt.json",
+      "run_receipt.json"
+    ],
+    "candidate_npz_present": false,
+    "focused_checks_output_present": false
+  },
+  "execution_evidence": {
+    "candidate_status": "UNKNOWN_OR_FAIL",
+    "candidate_error_type": "CandidateUnknown",
+    "candidate_error": "barycentric coordinates escaped their source simplex",
+    "child_elapsed_seconds": 1.1972858998924494,
+    "child_return_code": 2,
+    "parent_runner_status": "CHILD_NONZERO_EXIT",
+    "parent_runner_elapsed_seconds": 1.3910000000614673,
+    "parent_runner_return_code": 1,
+    "timed_out": false,
+    "candidate_generation_invoked": true,
+    "source_and_input_hashes_unchanged": true,
+    "interpretation": "The candidate failed before its NPZ-save/readback stage; no saved mesh exists for independent geometry review."
+  },
+  "call_graph": [
+    {
+      "file": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate.py",
+      "lines": "183-195",
+      "function": "_barycentric_xy",
+      "behavior": "Computes signed weights, then raises CandidateUnknown if any weight falls outside the simplex beyond 1e-10."
+    },
+    {
+      "file": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate.py",
+      "lines": "301-309",
+      "function": "_source_owner",
+      "behavior": "Iterates candidate source faces; calls the raising helper at line 306 before testing containment at line 307, so an outside early face aborts the search instead of allowing a later containing face."
+    },
+    {
+      "file": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate.py",
+      "lines": "337-374",
+      "function": "_triangulate_cap",
+      "behavior": "Creates cap Delaunay triangles, then calls _source_owner for each interior vertex at line 371; this is the lineage-assignment path before candidate save."
+    }
+  ],
+  "minimal_fix_acceptance": {
+    "separate_raw_signed_barycentric_calculation_from_validated_helper": true,
+    "owner_search_uses_raw_weights_only_for_containment_predicate": true,
+    "accepted_owner_still_uses_current_cleaning_normalization": true,
+    "no_change_to_existing_barycentric_tolerances": true,
+    "no_change_to_delaunay_options_or_geometry_method": true,
+    "add_two_parent_outside_then_inside_toy_regression": true,
+    "ensure_shared_edge_tie_remains_lowest_containing_source_id": true,
+    "no_runtime_or_test_performed_by_reviewer": true
+  },
+  "reviewer_actions": {
+    "read_only_source_inspection": true,
+    "read_only_run_receipt_inspection": true,
+    "candidate_generation_by_reviewer": false,
+    "focused_tests_by_reviewer": false,
+    "candidate_npz_audit": false,
+    "cad_or_solver": false
+  }
+}
+

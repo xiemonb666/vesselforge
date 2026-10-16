@@ -1,0 +1,12 @@
+{
+  "old_checker_sha256": "bd4511b51b5ca4683825eca3f2b3e9e5fd51ca74563a8f361322b69bf30d084f",
+  "original_checker_file_sha256": "bd4511b51b5ca4683825eca3f2b3e9e5fd51ca74563a8f361322b69bf30d084f",
+  "old_checker_expected_sha256": "bd4511b51b5ca4683825eca3f2b3e9e5fd51ca74563a8f361322b69bf30d084f",
+  "run02_checker_sha256": "e0f185d01ffa7b7f9239ece90617852aebc418693cef46dcdebb6121f37b75ae",
+  "run02_checker_freeze_file_sha256": "6e6530069e7d850bedf27c8c7d3465ceba092a1175eee521f826e7536b75df62",
+  "one_line_diff_sha256": "e04cf91c36fea91ae973f728c8f69003f1e77b1a97b7fc75ec4dbdb2bd4ab759",
+  "prototype_sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+  "parameters_sha256": "702285e2b311ea3ad7a17e6212d06ab8041faf58cca76e8e4a8a016d7e42c66e",
+  "only_checker_change": "Register spec.name in sys.modules after module_from_spec and before exec_module",
+  "run01_preservation": "Separate output directory and files retained; run01 source failure traceback/stdout/exit unchanged"
+}

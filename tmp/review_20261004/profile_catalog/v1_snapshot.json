@@ -1,0 +1,21 @@
+{
+  "version": "v1",
+  "captured_from": "pre-v2 source and evidence",
+  "pytest_result": "14 passed in 1.48s",
+  "pytest_exit_code": 0,
+  "files_sha256": {
+    "test_profile_catalog.py": "0752755c1e371afa6f5a03db46394d299f9acabc3c1d72dd84911672e2454e2e",
+    "profile_catalog.py": "ff90a8f1c0528d326fc81bb184cc814cfebb38ae91b0ade82e59d09a7b3ef64f",
+    "hashes_after.json": "f85ff5e098f35edb7ebd7f4b845f8d904657d4a66ac5c6370ac2a98cd800184e",
+    "pytest_output.txt": "309e52e5a33528ecc4d115f992929c3a778b8570f0a8b505d9963a8e35c107da",
+    "exit_code.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  "preserved_geometry_preview": {
+    "report_sha256": "20de2218ce17b36726969c4e03984ebc3191a2e360a1342fe52c162ccec7f39b",
+    "report": "candidate_meshes.json",
+    "plot": "candidate_profiles_mesh.png",
+    "receipt": "mesh_preflight_receipt.json",
+    "plot_sha256": "d4c210322367406bd33e6568d962a130e7472f21405a5b90a90bd70c92619f76",
+    "receipt_sha256": "a025e120db17135c34f8f3158e2ed8e0fbe8cccf635c7889ef0db1ca0aad5728"
+  }
+}

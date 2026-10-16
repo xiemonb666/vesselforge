@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "vesselforge/src/vesselforge/profile_catalog.py": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+    "vesselforge/tests/test_profile_catalog.py": "ab890ef3a606becd480911214903013239b5eab98f87da77e0ef15c9cad39c51",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3.diff": "59e856126d5717372a0e5b47b4d0b13cc535d140a22d4a85733c1d3be7579ea0",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/exit_code.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/freeze_v3_pytest.py": "5669d7a709ac781092475cd6cec83dd38afea9621fc5d7f670d10402d39834df",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/junit.xml": "3df2b20b16207857b919dde327b351b7ad052bef59386b3d4d9023d862e91ced",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/prefreeze.json": "e3bb79617e1939d5e4f6ed7583c19d8173fa8456b78e08441ff97d18cf7dd48b",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/run.json": "22217382f1eb20d68b63539834c0b775a21ffa5f55dd87f803d6efbafc45bd2e",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/run_v3_pytest.py": "e9525a093b714949d131e6010e098570ff0aa22343cc15e0e66230c330f20edc",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/stdout.txt": "762668d1d3e20d26cfdf7ffc4a66af90828ec920244455c340b26867ab8d2b01",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_source_test_freeze.json": "7df2ff6804e2fdcaf52c6eec2ebc0e4197ce96ca442c4289b0f1916e523bd15f"
+  },
+  "pytest_exit_code": 0,
+  "recorded_utc": "2026-10-04T14:13:06.556223+00:00"
+}

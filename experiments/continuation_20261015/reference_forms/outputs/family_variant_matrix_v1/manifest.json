@@ -1,0 +1,107 @@
+{
+  "interpretation": "Three independently controlled geometry variations around the daily-use candidate family; not measured specimen profiles.",
+  "matrix_sha256": "e2c52e288762bc4706cdebf6fd6b4cb1a2e36f67ee0f075af2850ecd252c87ae",
+  "panels": [
+    {
+      "artifact_sha256": {
+        "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+        "preview.png": "96d79421fa3d3aa32080582f33aef5ada824e81b0b28388195b036c0d95a5437",
+        "section.json": "92c9585d92bdcec4774e567deb621aad86c0934c2ee05ffe9e6b32cb5768d2df",
+        "solid.step": "24f058aa7fd065359f8d87c1f86b7c3de63406a517c51d86619b6b1f761912a8",
+        "surface.npz": "efbe58712fdeed02c2213f763d63be35f572f311fe3a2efdaa793c059a8e3043"
+      },
+      "candidate_dimensions_mm": {
+        "foot_outer_diameter_mm": 31.0,
+        "overall_height_mm": 62.0,
+        "rim_outer_diameter_mm": 108.0
+      },
+      "candidate_directory": "family_daily_deep_v1",
+      "design_assumptions": {
+        "body_end_handle_height_fraction": 0.22,
+        "body_floor_radius_mm": 10.5,
+        "body_floor_z_mm": 10.0,
+        "body_start_handle_fraction": 0.6,
+        "foot_contact_width_mm": 2.0,
+        "foot_height_mm": 7.0,
+        "foot_outer_diameter_mm": 31.0,
+        "overall_height_mm": 62.0,
+        "rim_outer_diameter_mm": 108.0,
+        "rim_tangent_degrees": 75.0,
+        "underside_recess_z_mm": 6.5,
+        "wall_thickness_mm": 2.0
+      },
+      "label": "DEEPER BODY · H 62 mm",
+      "matrix_view": "crop of the candidate's own VTK orthographic side elevation; no source photographs included",
+      "preview_sha256": "96d79421fa3d3aa32080582f33aef5ada824e81b0b28388195b036c0d95a5437",
+      "structural_geometry_status": "PASS_STRUCTURAL_CAD_ONLY"
+    },
+    {
+      "artifact_sha256": {
+        "face_lineage.json": "1178098e6c661d998bb2abded2262eb839d9b6a45ebd4cd176584b9b58f364f0",
+        "preview.png": "26af9e021e9b04a5cf46131506204465798c291e2fc19fe51c9e635e5bd54e4c",
+        "section.json": "006aa9138461ba453c4b3fbb0d61cf00b5e301471ce74f5dd27a09259345c339",
+        "solid.step": "c2be110ed9108c14225b1f75a7fd26d4f874575075b914ade7e018b1cb18169b",
+        "surface.npz": "212d28a6f40e15fc7da9f127b66315fd0f2094295b67052c65bad811e4c212d9"
+      },
+      "candidate_dimensions_mm": {
+        "foot_outer_diameter_mm": 31.0,
+        "overall_height_mm": 53.0,
+        "rim_outer_diameter_mm": 108.0
+      },
+      "candidate_directory": "family_daily_full_belly_v1",
+      "design_assumptions": {
+        "body_end_handle_height_fraction": 0.18,
+        "body_floor_radius_mm": 10.5,
+        "body_floor_z_mm": 10.0,
+        "body_start_handle_fraction": 0.8,
+        "foot_contact_width_mm": 2.0,
+        "foot_height_mm": 7.0,
+        "foot_outer_diameter_mm": 31.0,
+        "overall_height_mm": 53.0,
+        "rim_outer_diameter_mm": 108.0,
+        "rim_tangent_degrees": 68.0,
+        "underside_recess_z_mm": 6.5,
+        "wall_thickness_mm": 2.0
+      },
+      "label": "FULLER BELLY · H 53 mm",
+      "matrix_view": "crop of the candidate's own VTK orthographic side elevation; no source photographs included",
+      "preview_sha256": "26af9e021e9b04a5cf46131506204465798c291e2fc19fe51c9e635e5bd54e4c",
+      "structural_geometry_status": "PASS_STRUCTURAL_CAD_ONLY"
+    },
+    {
+      "artifact_sha256": {
+        "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+        "preview.png": "0619d73c34d740c91cb40e31c0788ee13e33810629961b668feb8f941e4526e2",
+        "section.json": "2f29724285d5a4ec76048dc374d9027b6ff69cb2ef57110918eedc1fb8112ac7",
+        "solid.step": "b60cfab344f96d58fcf521d027bdf217077cc6116b250a4d56e4df73bddc06f5",
+        "surface.npz": "51b3a40be5051aa3aaa915d1df70c4c6caabea4245e0362d84c6d2e5c01fc50e"
+      },
+      "candidate_dimensions_mm": {
+        "foot_outer_diameter_mm": 34.0,
+        "overall_height_mm": 53.0,
+        "rim_outer_diameter_mm": 108.0
+      },
+      "candidate_directory": "family_daily_broad_foot_v2",
+      "design_assumptions": {
+        "body_end_handle_height_fraction": 0.22,
+        "body_floor_radius_mm": 10.5,
+        "body_floor_z_mm": 10.0,
+        "body_start_handle_fraction": 0.6,
+        "foot_contact_width_mm": 2.0,
+        "foot_height_mm": 7.5,
+        "foot_outer_diameter_mm": 34.0,
+        "overall_height_mm": 53.0,
+        "rim_outer_diameter_mm": 108.0,
+        "rim_tangent_degrees": 75.0,
+        "underside_recess_z_mm": 6.5,
+        "wall_thickness_mm": 2.0
+      },
+      "label": "WIDER FOOT · H 53 mm",
+      "matrix_view": "crop of the candidate's own VTK orthographic side elevation; no source photographs included",
+      "preview_sha256": "0619d73c34d740c91cb40e31c0788ee13e33810629961b668feb8f941e4526e2",
+      "structural_geometry_status": "PASS_STRUCTURAL_CAD_ONLY"
+    }
+  ],
+  "schema": "vf.revolved_profile_family_variant_matrix.v1",
+  "source_images_included": false
+}

@@ -1,0 +1,63 @@
+{
+  "state": "source_only_v2_prepared_waiting_for_root_review",
+  "scope_directory": "vesselforge/tmp/review_20261005/native_cad_wall_probe_20261005",
+  "files": {
+    "source": "normal_wall_probe.v2.py",
+    "runner": "run_normal_wall_probe.v2.ps1",
+    "freeze": "FREEZE.v2.json",
+    "primary_numeric_json": "normal_wall_probe_data.json",
+    "render_status_json": "normal_wall_probe_render_status.json"
+  },
+  "hashes": {
+    "adapter_sha256": "ed035c69a2a70416ce99fd2bea0f36badcf4381f368a6b14230f86ceb70ea921",
+    "runner_sha256": "bbf7e5d59f6d6ca53bc581fdbe11acabbd7fe2bd175aca458525ee438d044919",
+    "previous_adapter_sha256": "86fbd859e96aab60c320d7ba5aa59eb642d52bbe6d12b4aec045984de9f265cd",
+    "previous_runner_sha256": "a4f042c3430667e3ac2ad591f86357318a248fe0ebb7ab4b76ce29607adf4bf8",
+    "previous_freeze_sha256": "095ae7168847d68dd841512a25f24e1cd62db4184509922997f6e3d6fb7feaee",
+    "source_step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "source_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8",
+    "method_doc_sha256": "e8c67c879829db76f96f472b919a2652cc3f09dc35e0aacd37e78519bf70ce2e",
+    "reviewed_method_sources": {
+      "smooth_cad_spike": "a505817d38184b256ff3c2ce2a513560be79486dc4534187a431e3cc01be4661",
+      "semantics": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+      "wall_mesh_binding": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0",
+      "historical_native_probe": "dfdb781ca0549c0914b34c5c974455a2502d6f9215a731fa2475e15546f10019"
+    }
+  },
+  "narrow_changes": [
+    "Initialize nominal rim receipt metadata to null and assign it only after checked_receipt() succeeds.",
+    "Remove the repeated EXIT_FACE_NORMAL_UNDEFINED elif branch.",
+    "Persist completed numerical probe and actual B-rep section JSON before calling render().",
+    "Record render status/error separately in normal_wall_probe_render_status.json and the run receipts; render failure does not alter completed numerical data or probe return code."
+  ],
+  "preflight": {
+    "python_stdlib_ast": "PASS",
+    "receipt_assignment_order": "PASS",
+    "primary_numeric_json_precedes_render": "PASS",
+    "separate_render_status_path": "PASS",
+    "single_source_importStep_call": 1,
+    "powershell_parse": "PASS",
+    "actual_step_imports": 0,
+    "actual_ray_calls": 0,
+    "CAD_operations": 0,
+    "rendered_pngs": 0
+  },
+  "future_run_limits": {
+    "max_rays": 128,
+    "max_total_hits": 512,
+    "max_ray_length_mm": 20,
+    "worker_wall_seconds": 180,
+    "classifier_tolerance_mm": 1e-07,
+    "orientation_offset_mm": 0.025,
+    "ray_start_inside_mm": 0.0001
+  },
+  "deferred_execution": {
+    "actual_argv": null,
+    "actual_rc": null,
+    "solver_runs": 0,
+    "normal_ray_calls": 0,
+    "global_wall_status": "UNKNOWN_FINITE_PROBES_ONLY",
+    "requires_root_review_before_execution": true,
+    "no_probe_or_render_executed_during_v2_preparation": true
+  }
+}

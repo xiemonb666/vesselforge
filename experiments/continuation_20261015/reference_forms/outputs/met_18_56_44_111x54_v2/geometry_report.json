@@ -1,0 +1,125 @@
+{
+  "candidate_geometry_status": "PASS_STRUCTURAL_CAD_ONLY",
+  "candidate_status": "SIZE_REFERENCE_GEOMETRY_CANDIDATE_ONLY",
+  "checks": {
+    "all_native_faces_have_one_role": true,
+    "body_wall_probe_is_material": true,
+    "cavity_center_is_empty": true,
+    "foot_and_base_probes_are_material": true,
+    "foot_contact_touches_z0": true,
+    "mesh_is_watertight": true,
+    "one_closed_shell": true,
+    "one_valid_solid": true,
+    "outer_dimensions_within_0_1mm": true,
+    "outside_probe_is_empty": true,
+    "positive_volume": true,
+    "step_round_trip_one_solid": true
+  },
+  "interpretation": "Structural geometry checks only; no physical, material, or source-profile match claim.",
+  "measurements": {
+    "artifact_sha256": {
+      "face_lineage.json": "754982591224d4c0eaa7133e699778a4de72e4a95a027b8c3f4a2533fdbdc919",
+      "preview.png": "1aaf110bcba5c264bd36382ce98df1da165b4ba47dd6f4bfc7b2c4c252c97c86",
+      "section.json": "b746223798ac00ba7fec781aeec2c4d8fa77d04c2b7cc2c131060fd90de44be8",
+      "solid.step": "570412f9ed35afde35994a2823802769575a0c1abb2acef661f2d324192831e4",
+      "surface.npz": "d52e80fc56f95e1c04a3fcb0b3340fc118910e4d897e2dee1d67a23a062e171c"
+    },
+    "brep_bounds": {
+      "diameter_x_mm": 111.0000002,
+      "diameter_y_mm": 111.0000002,
+      "height_mm": 54.0000001,
+      "x_max_mm": 55.5000001,
+      "x_min_mm": -55.5000001,
+      "y_max_mm": 55.5000001,
+      "y_min_mm": -55.5000001,
+      "z_max_mm": 54.0000001,
+      "z_min_mm": -9.436895709314e-16
+    },
+    "candidate_dimensions_mm": {
+      "foot_outer_diameter_mm": 54.0,
+      "overall_height_mm": 54.0,
+      "rim_outer_diameter_mm": 111.0
+    },
+    "constructed_brep_bounds_before_tessellation": {
+      "diameter_x_mm": 111.0000002,
+      "diameter_y_mm": 111.0000002,
+      "height_mm": 54.0000001,
+      "x_max_mm": 55.5000001,
+      "x_min_mm": -55.5000001,
+      "y_max_mm": 55.5000001,
+      "y_min_mm": -55.5000001,
+      "z_max_mm": 54.0000001,
+      "z_min_mm": -9.43689570931383e-16
+    },
+    "independent_meridian_integral_volume_mm3": 57973.03505950285,
+    "native_face_count": 18,
+    "native_foot_support_face_indices": [
+      14
+    ],
+    "native_region_counts": {
+      "base": 2,
+      "body_inner": 1,
+      "body_outer": 7,
+      "foot": 7,
+      "rim": 1
+    },
+    "normal_offset_fit_error_scope": "Finite diagnostic only: three interior samples per accepted cubic subcurve; no continuous or global error bound is claimed.",
+    "normal_offset_max_sampled_curve_fit_deviation_mm": 0.00393422910716742,
+    "probe_points_mm": {
+      "base_material": [
+        0.0,
+        0.0,
+        4.85
+      ],
+      "body_wall_midpoint": [
+        33.18280200145573,
+        0.0,
+        11.135678272687503
+      ],
+      "cavity_center": [
+        0.0,
+        0.0,
+        30.25
+      ],
+      "foot_material": [
+        25.3625,
+        0.0,
+        1.75
+      ],
+      "outside": [
+        60.5,
+        0.0,
+        27.0
+      ]
+    },
+    "relative_volume_delta": 3.639670936578507e-15,
+    "solid_volume_mm3": 57973.03505950306,
+    "step_round_trip_bounds": {
+      "diameter_x_mm": 111.0000002,
+      "diameter_y_mm": 111.0000002,
+      "height_mm": 54.0000001,
+      "x_max_mm": 55.5000001,
+      "x_min_mm": -55.5000001,
+      "y_max_mm": 55.5000001,
+      "y_min_mm": -55.5000001,
+      "z_max_mm": 54.0000001,
+      "z_min_mm": -9.436895709314e-16
+    },
+    "step_round_trip_volume_delta_mm3": 1.1415977496653795e-08,
+    "surface_mesh": {
+      "boundary_edges": 0,
+      "minimum_double_area_mm2": 0.04946986948853445,
+      "nonmanifold_edges": 0,
+      "signed_volume_mm3": 58060.70308982424,
+      "triangles": 25428,
+      "vertices": 12716,
+      "watertight": true
+    },
+    "triangle_count": 25428,
+    "vertex_count": 12716
+  },
+  "physical_material_validity": "NOT_ASSESSED",
+  "preset": "met",
+  "schema": "vf.revolved_profile_geometry_candidate_report.v1",
+  "source_profile_fidelity": "NOT_ESTABLISHED: catalog dimensions and photographs do not provide the complete meridian or construction."
+}

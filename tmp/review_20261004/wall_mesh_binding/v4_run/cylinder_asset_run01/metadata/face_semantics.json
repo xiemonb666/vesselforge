@@ -1,0 +1,205 @@
+{
+  "backend": {
+    "cadquery_version": "2.8.0",
+    "ocp_distribution_version": "7.9.3.1.1",
+    "ocp_module_version": "7.9.3.1"
+  },
+  "canonical_step_face_count": 4,
+  "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+  "classifier": "vf.canonical-step-face-semantics/1.0.0",
+  "counts": {
+    "base": 1,
+    "body_inner": 1,
+    "body_outer": 1,
+    "natural_rim": 1
+  },
+  "faces": [
+    {
+      "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "classification_basis": "body-of-revolution support axis is global Z through the vessel axis; face-oriented normal has positive radial dot product",
+      "classification_evidence": {
+        "axis_offset_from_global_z_mm": 0.0,
+        "oriented_radial_normal_dot_mm": 10.0
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+      "face_area_mm2": 628.318530718,
+      "face_index_zero_based": 0,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          -1.0,
+          -2.070680364700439e-13,
+          0.0
+        ],
+        "point_mm": [
+          -10.0,
+          -2.070680364700439e-12,
+          5.0
+        ],
+        "u": 3.141592653589586,
+        "uv_state": "IN_OR_ON",
+        "v": -5.0
+      },
+      "reason": null,
+      "region_code": 1,
+      "region_name": "body_outer",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "axis_direction": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "axis_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 10.0
+      },
+      "surface_type": "cylinder"
+    },
+    {
+      "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "classification_basis": "body-of-revolution support axis is global Z through the vessel axis; face-oriented normal has negative radial dot product",
+      "classification_evidence": {
+        "axis_offset_from_global_z_mm": 0.0,
+        "oriented_radial_normal_dot_mm": -8.0
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+      "face_area_mm2": 502.6548245744,
+      "face_index_zero_based": 1,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          1.0,
+          2.0706803647004391e-13,
+          -0.0
+        ],
+        "point_mm": [
+          -8.0,
+          -1.6565442917603513e-12,
+          5.0
+        ],
+        "u": 3.141592653589586,
+        "uv_state": "IN_OR_ON",
+        "v": -5.0
+      },
+      "reason": null,
+      "region_code": 2,
+      "region_name": "body_inner",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "axis_direction": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "axis_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_mm": 8.0
+      },
+      "surface_type": "cylinder"
+    },
+    {
+      "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "classification_basis": "horizontal planar underside at z=0; outward normal is -Z",
+      "classification_evidence": {
+        "normal_z": -1.0,
+        "plane_z_mm": 0.0,
+        "subregion": "underside"
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+      "face_area_mm2": 113.09733552923257,
+      "face_index_zero_based": 2,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "point_mm": [
+          -7.6000000000000005,
+          -5.0,
+          0.0
+        ],
+        "u": -7.6,
+        "uv_state": "IN_OR_ON",
+        "v": -5.0
+      },
+      "reason": null,
+      "region_code": 4,
+      "region_name": "base",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "axis_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -5.469760530158e-16,
+          1.387604533e-16,
+          0.0
+        ]
+      },
+      "surface_type": "plane"
+    },
+    {
+      "canonical_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+      "classification_basis": "horizontal planar annulus at declared open-body lip; outward normal is +Z",
+      "classification_evidence": {
+        "normal_z": 1.0,
+        "plane_z_mm": 10.0
+      },
+      "classifier_version": "vf.canonical-step-face-semantics/1.0.0",
+      "face_area_mm2": 113.09733552923257,
+      "face_index_zero_based": 3,
+      "interior_sample": {
+        "oriented_outward_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "point_mm": [
+          -7.6000000000000005,
+          -5.0,
+          10.0
+        ],
+        "u": -7.6,
+        "uv_state": "IN_OR_ON",
+        "v": -5.0
+      },
+      "reason": null,
+      "region_code": 3,
+      "region_name": "natural_rim",
+      "status": "CLASSIFIED",
+      "surface_parameters": {
+        "axis_direction": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin_mm": [
+          -5.469760530158e-16,
+          1.387604533e-16,
+          10.0
+        ]
+      },
+      "surface_type": "plane"
+    }
+  ],
+  "fracture_reserve_code": 255,
+  "region_codes": {
+    "1": "body_outer",
+    "2": "body_inner",
+    "3": "natural_rim",
+    "4": "base",
+    "5": "handle"
+  },
+  "schema": "vf.brep-face-semantics.v1",
+  "status": "PASS",
+  "unknown_blocks_coloring_and_generation": true,
+  "unknown_face_indices": []
+}

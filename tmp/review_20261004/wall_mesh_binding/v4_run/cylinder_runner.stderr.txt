@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261004\wall_mesh_binding\run_hollow_cylinder_binding.py", line 252, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261004\wall_mesh_binding\run_hollow_cylinder_binding.py", line 226, in main
+    binding_record = _binding_from_loaded_inputs(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\src\vesselforge\wall_mesh_binding.py", line 808, in _binding_from_loaded_inputs
+    raise ValueError("WALL_REFERENCE_SEMANTICS_FILE_MISMATCH")
+ValueError: WALL_REFERENCE_SEMANTICS_FILE_MISMATCH

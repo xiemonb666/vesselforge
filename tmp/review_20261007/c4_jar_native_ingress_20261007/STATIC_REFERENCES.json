@@ -1,0 +1,165 @@
+{
+  "schema": "vesselforge.c4_jar_native_ingress.static_references/0.1",
+  "review_scope": "SOURCE_DESIGN_ONLY",
+  "repository_root": "C:/Users/xiemo/Desktop/ShardForge",
+  "cad_or_step_run": false,
+  "cadquery_or_ocp_imported": false,
+  "constructors_or_tests_run": false,
+  "inspected_runtime_versions": {
+    "cadquery": "2.8.0",
+    "cadquery_ocp": "7.9.3.1.1"
+  },
+  "inspection_note": "CadQuery Python sources show constructor and wrapper call patterns. OCP package __init__.py files only re-export compiled bindings; no OCP signatures were imported or invoked.",
+  "references": [
+    {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/curvature_constrained_meridian_result.json",
+      "role": "pinned outer C4 jar result",
+      "sha256": "839c461cdf0dcae93f362ee7d80d0446cf52b6b1e1f04ed18842e17527673185",
+      "bytes": 491496
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_meridian_20261006/source_pins.json",
+      "role": "outer-result source pins",
+      "sha256": "768411b3a61cd703f4bce149573f589a3ccd1fb66acf2d74e490df32ca335766",
+      "bytes": 2817
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/curvature_constrained_saved_independent/independent_audit.json",
+      "role": "independent saved-candidate audit",
+      "sha256": "fe0c7c0f1af9fda79d2f94b607b58629bf1e04317a3bd22b290ea92340bbdc0b",
+      "bytes": 520952
+    },
+    {
+      "path": "vesselforge/experiments/curvature_constrained_meridian_20261006/curvature_constrained_meridian.py",
+      "role": "outer constrained-meridian source",
+      "sha256": "96875bb6592a6fd57ceef4dc326c35faeb3f96de16607faa816c7d3fed1e08ce",
+      "bytes": 25753
+    },
+    {
+      "path": "vesselforge/experiments/semantic_base_neck_bspline_20261006/semantic_base_neck_driver.py",
+      "role": "frozen spline driver",
+      "sha256": "038974cbbe3965f7f03f1ad0199d0aba00b56294840e411ca9a21fbde42466a3",
+      "bytes": 21048
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_result.json",
+      "role": "3 mm local normal-offset result",
+      "sha256": "96ea35c44d40d12acc4b57a932ebb5194dbccdfd516b1fc2338ec58c51a9956a",
+      "bytes": 435804
+    },
+    {
+      "path": "vesselforge/tmp/review_20261006/normal_offset_meridian_20261006/retry01_after_zprime_fix/normal_offset_meridian_run_receipt.json",
+      "role": "normal-offset run receipt",
+      "sha256": "768c771d1b4a4feea3d8290d63c003afa0d44435175d4b86f1277b9297fa029d",
+      "bytes": 3071
+    },
+    {
+      "path": "vesselforge/experiments/normal_offset_meridian_20261006/normal_offset_meridian_certificate.py",
+      "role": "normal-offset certificate source",
+      "sha256": "48ee9fbc2c69ba97dbeb3f34de298a60571786aaf3359cc784b79d2fbfaa6114",
+      "bytes": 9847
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/result.json",
+      "role": "2D strip result",
+      "sha256": "4b7d019d2c119fb7f5db398f1205bc4830d72702f21a565a0859e1a6282335bf",
+      "bytes": 4355
+    },
+    {
+      "path": "vesselforge/tmp/review_20261007/monotone_normal_strip_decision/once_capture_02_after_scope_fix/receipt.json",
+      "role": "2D strip capture receipt",
+      "sha256": "3ec65b5f54581a5371c2e95eefe87a1a0e83a682965746f6167a780fe3aeb806",
+      "bytes": 10296
+    },
+    {
+      "path": "vesselforge/experiments/monotone_normal_strip_certificate_20261007/monotone_normal_strip_certificate.py",
+      "role": "2D strip certificate source",
+      "sha256": "ae1d34351e113bf08f4de287468b38d5035f4bf1c75f98e3fb84d7b361c851ce",
+      "bytes": 19177
+    },
+    {
+      "path": "vesselforge/experiments/monotone_normal_strip_certificate_20261007/case.json",
+      "role": "2D strip case",
+      "sha256": "9e7b9e7945a14b3dd45517c75a672607cf0923cdac5c723ab614fa0162fc127b",
+      "bytes": 1873
+    },
+    {
+      "path": "vesselforge/experiments/smooth_surface_native_adapter_20261005/native_adapter.py",
+      "role": "prior native adapter workflow reference for a different profile",
+      "sha256": "7d745f48111d24b38a288714b580c0eefe55415b2998351bf6144fa1cf4dab76",
+      "bytes": 41217
+    },
+    {
+      "path": "vesselforge/experiments/smooth_cad_brep/brep_persistence_helper.py",
+      "role": "prior native offset helper reference for a different profile",
+      "sha256": "e88b691385d374a4469be903a43bdf848134d2b7312961be1bc382cbb54e5ec7",
+      "bytes": 12738
+    },
+    {
+      "path": "vesselforge/src/vesselforge/brep_identity.py",
+      "role": "VF geometry-only bounds identity policy",
+      "sha256": "a59d0056f4d0ff7bb7bf7932750c33dab773ddc0792f3cfe4bae707bfea53c3a",
+      "bytes": 3834
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "role": "VF face-inventory comparison implementation",
+      "sha256": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0",
+      "bytes": 50769
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/nurbs.py",
+      "role": "CadQuery direct Geom_BSplineCurve construction source",
+      "sha256": "0464ac65ae0aac9e5519ea9e405fbeb3c96751c5450e3ced811601fb5a62a47e",
+      "bytes": 53221
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/shapes.py",
+      "role": "CadQuery Bezier, offset, revolve, and STEP writer source",
+      "sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94",
+      "bytes": 228103
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/importers/__init__.py",
+      "role": "CadQuery STEP import source",
+      "sha256": "f4f9605e824c59398d78c313bc0ee6d857e9f8ad45604fa3f67341aa59512934",
+      "bytes": 4365
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/BRepOffsetAPI/__init__.py",
+      "role": "OCP generated-package re-export file; signatures live in compiled binding",
+      "sha256": "44ae22db58356b0750f1f1739f92b48045424e4519b6d96caa4fddecdbdd32cf",
+      "bytes": 35
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/OCP/Geom/__init__.py",
+      "role": "OCP generated-package re-export file; signatures live in compiled binding",
+      "sha256": "2bea47c4726e49b72052e03ea9c34082050f3ec7d52582a4e166858586f7beba",
+      "bytes": 26
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery-2.8.0.dist-info/METADATA",
+      "role": "installed CadQuery version metadata",
+      "sha256": "968b7a83a5642212b4032c5fba9a8b61624387fd6ad8b7c56d5aa4a0cd9af6ae",
+      "bytes": 14420
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery_ocp-7.9.3.1.1.dist-info/METADATA",
+      "role": "installed cadquery-ocp version metadata",
+      "sha256": "bd3beda81cf82c2c6eb8453e77c519645f3c9ad6ec51c2c6b54ba8dd8ae7dae6",
+      "bytes": 855
+    },
+    {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/DESIGN.md",
+      "role": "this design deliverable",
+      "sha256": "f2beb8c624986e6fc803e82397dc4a8723d7fbff0204ad6ed3bd0322817188fa",
+      "bytes": 7534
+    },
+    {
+      "path": "vesselforge/experiments/c4_jar_native_ingress_20261007/CASE_DRAFT.json",
+      "role": "this case draft deliverable",
+      "sha256": "62027a35c8d08a6214f7e504a1f5f9820ec4df5c83d885c192b8ffbda50151c5",
+      "bytes": 5582
+    }
+  ]
+}

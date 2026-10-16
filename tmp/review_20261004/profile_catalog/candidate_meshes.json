@@ -1,0 +1,151 @@
+{
+  "backend": {
+    "cadquery_version": "2.8.0",
+    "name": "CadQuery/OpenCascade"
+  },
+  "frozen_input_sha256": "4ef81ae0fa85c424fd64da5631dee333474ed6082b6bb5a1fa2f08d447e1faad",
+  "items": [
+    {
+      "bounds_mm": {
+        "x": 120.48880245248833,
+        "y": 120.52608901945094,
+        "z": 90.29810232958673
+      },
+      "family": "bowl",
+      "mesh_signed_volume_matches_occ_within_1pct": true,
+      "mesh_signed_volume_mm3": 76643.6884629976,
+      "mesh_signed_volume_relative_delta": -0.003779502986536391,
+      "mesh_tessellation_request": {
+        "angular_tolerance_rad": 0.2,
+        "linear_deflection_mm": 0.5
+      },
+      "mesh_topology": {
+        "boundary_edges": 0,
+        "degenerate_triangles": 0,
+        "nonmanifold_edges": 0,
+        "triangles": 2658,
+        "watertight_edge_incidence": true,
+        "welded_vertices": 1331
+      },
+      "mesh_triangles": 2658,
+      "mesh_vertices": 2188,
+      "profile_parameters": {
+        "base_thickness_declaration_mm": 6.0,
+        "height_mm": 90.0,
+        "max_radius_mm": 60.0,
+        "mouth_diameter_mm": 108.0,
+        "wall_thickness_declaration_mm": 3.0
+      },
+      "shell_count": 1,
+      "solid_count": 1,
+      "solid_valid": true,
+      "solid_volume_mm3": 76934.46249376034,
+      "stl": "meshes/bowl.stl",
+      "stl_sha256": "51749d798e84b939a232ebaa890ff0fdc4b48f7a8d0e8e948feef9f33de4f452"
+    },
+    {
+      "bounds_mm": {
+        "x": 84.34832780627362,
+        "y": 84.37442840314743,
+        "z": 110.20707010742177
+      },
+      "family": "beaker",
+      "mesh_signed_volume_matches_occ_within_1pct": true,
+      "mesh_signed_volume_mm3": 65147.44206305066,
+      "mesh_signed_volume_relative_delta": -0.004967712393437609,
+      "mesh_tessellation_request": {
+        "angular_tolerance_rad": 0.2,
+        "linear_deflection_mm": 0.5
+      },
+      "mesh_topology": {
+        "boundary_edges": 0,
+        "degenerate_triangles": 0,
+        "nonmanifold_edges": 0,
+        "triangles": 2154,
+        "watertight_edge_incidence": true,
+        "welded_vertices": 1079
+      },
+      "mesh_triangles": 2154,
+      "mesh_vertices": 1676,
+      "profile_parameters": {
+        "base_thickness_declaration_mm": 4.5,
+        "height_mm": 110.0,
+        "max_radius_mm": 42.0,
+        "mouth_diameter_mm": 70.0,
+        "wall_thickness_declaration_mm": 2.5
+      },
+      "shell_count": 1,
+      "solid_count": 1,
+      "solid_valid": true,
+      "solid_volume_mm3": 65472.69156436668,
+      "stl": "meshes/beaker.stl",
+      "stl_sha256": "9687fa0914aaadcf3d53d3f9cfcf7f566ce9e07e3ef6fb34bc852fbde77f1ae2"
+    },
+    {
+      "bounds_mm": {
+        "x": 108.69790235787411,
+        "y": 108.73146026814045,
+        "z": 120.04843054931078
+      },
+      "family": "jar",
+      "mesh_signed_volume_matches_occ_within_1pct": true,
+      "mesh_signed_volume_mm3": 86574.24546948005,
+      "mesh_signed_volume_relative_delta": -0.0032371969021244987,
+      "mesh_tessellation_request": {
+        "angular_tolerance_rad": 0.2,
+        "linear_deflection_mm": 0.5
+      },
+      "mesh_topology": {
+        "boundary_edges": 0,
+        "degenerate_triangles": 0,
+        "nonmanifold_edges": 0,
+        "triangles": 2782,
+        "watertight_edge_incidence": true,
+        "welded_vertices": 1393
+      },
+      "mesh_triangles": 2782,
+      "mesh_vertices": 2378,
+      "profile_parameters": {
+        "base_thickness_declaration_mm": 5.5,
+        "height_mm": 120.0,
+        "max_radius_mm": 54.0,
+        "mouth_diameter_mm": 46.0,
+        "neck_height_mm": 18.0,
+        "shoulder_height_mm": 28.0,
+        "wall_thickness_declaration_mm": 3.0
+      },
+      "shell_count": 1,
+      "solid_count": 1,
+      "solid_valid": true,
+      "solid_volume_mm3": 86855.41354514113,
+      "stl": "meshes/jar.stl",
+      "stl_sha256": "0955465dd5d7e546fb102d3077964fd34838cae8b507007991dce44cfdf94102"
+    }
+  ],
+  "locked_source_sha256": {
+    "third_party/vesselforge-runtime/venv/Scripts/python.exe": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+    "vesselforge/pyproject.toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad",
+    "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "vesselforge/src/vesselforge/profile_catalog.py": "ff90a8f1c0528d326fc81bb184cc814cfebb38ae91b0ade82e59d09a7b3ef64f",
+    "vesselforge/tests/test_profile_catalog.py": "0752755c1e371afa6f5a03db46394d299f9acabc3c1d72dd84911672e2454e2e",
+    "vesselforge/tmp/review_20261004/profile_catalog/freeze_candidate_mesh_plan.py": "ab99b941470846f9264296daf577e56949456242343e7c0f56d470d2490a49e5",
+    "vesselforge/tmp/review_20261004/profile_catalog/generate_candidate_meshes.py": "fddbd332c8fd804d26c1cb840b962c4d30642717396052914797d6fa354f5886",
+    "vesselforge/tmp/review_20261004/profile_catalog/run_candidate_meshes.ps1": "e9f001af6596e737cdd970cb67a62aa68fe35a4dcd5cb3a6ac3c389ba99662ac",
+    "vesselforge/tmp/review_20261004/profile_catalog/run_freeze_candidate_mesh_plan.ps1": "7a0668a5541c99b73e829ae9bc1069bb79b117790c05fa03d5b9bfb55b1a6c65"
+  },
+  "mesh_plot": {
+    "path": "candidate_profiles_mesh.png",
+    "sha256": "d4c210322367406bd33e6568d962a130e7472f21405a5b90a90bd70c92619f76"
+  },
+  "profile_catalog_schema": "vesselforge.profile_catalog/0.1.0",
+  "qualification": {
+    "historical_type_validation": "NOT_VALIDATED",
+    "material_or_physical_qualification": "NOT_VALIDATED",
+    "real_vessel_match": "NOT_VALIDATED",
+    "solver_used": false
+  },
+  "schema": "vesselforge.profile_catalog.mesh_review/0.1.0",
+  "scope": "three frozen default profile meridians revolved once each and tessellated at low resolution",
+  "status": "PASS_GEOMETRY_ONLY_CANDIDATE_MESHES",
+  "tessellation_notice": "0.5 mm linear deflection is for coarse vessel form preview; it does not qualify thin walls, curvature, or solver readiness."
+}

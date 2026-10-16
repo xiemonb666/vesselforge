@@ -1,0 +1,128 @@
+{
+  "candidate_dimensions_mm": {
+    "foot_outer_diameter_mm": 31.0,
+    "overall_height_mm": 53.0,
+    "rim_outer_diameter_mm": 108.0
+  },
+  "candidate_status": "PARAMETRIC_DAILY_FAMILY_VARIANT_ONLY",
+  "design_assumptions": {
+    "body_end_handle_height_fraction": 0.18,
+    "body_floor_radius_mm": 10.5,
+    "body_floor_z_mm": 10.0,
+    "body_start_handle_fraction": 0.8,
+    "foot_contact_width_mm": 2.0,
+    "foot_height_mm": 7.0,
+    "foot_outer_diameter_mm": 31.0,
+    "overall_height_mm": 53.0,
+    "rim_outer_diameter_mm": 108.0,
+    "rim_tangent_degrees": 68.0,
+    "underside_recess_z_mm": 6.5,
+    "wall_thickness_mm": 2.0
+  },
+  "image_handling": "Catalog images were not copied into or packaged with the candidate.",
+  "measured_from_record": [],
+  "not_claimed": [
+    "not a specimen scan or exact profile reconstruction",
+    "not a verified match to the maker's exact wall, base, rim or foot construction",
+    "not a calibrated physical material or mechanics model"
+  ],
+  "numerical_fit_controls": {
+    "normal_offset_fit_tolerance_mm": 0.005
+  },
+  "parameter_overrides": {},
+  "physical_material_properties": "NOT_SPECIFIED; no ceramic density, modulus, Poisson ratio, strength or toughness is inferred.",
+  "preset": "daily_full_belly",
+  "record": {
+    "collection": "VesselForge design candidate",
+    "dimension_evidence": "Aberdeen dimensions are the family anchor; candidate belly and rim controls are generated design choices.",
+    "object_number": "DESIGN-VARIANT-DAILY-FULL-BELLY",
+    "object_url": "https://emuseum.aberdeencity.gov.uk/objects/186848/porcelain-small-footed-bowl",
+    "reported_dimensions_mm": {
+      "foot_outer_diameter": 31.0,
+      "overall_height": 53.0,
+      "rim_outer_diameter": 108.0
+    },
+    "title": "Parametric daily-use bowl family variant",
+    "visual_reference_note": "Generated fuller belly with altered rim tangent and Bézier handles; candidate dimensions and support match the family anchor."
+  },
+  "schema": "vf.revolved_profile_candidate_provenance.v1",
+  "section_geometry_details": {
+    "base": {
+      "central_base_thickness_mm": 3.5,
+      "inside_floor_z_mm": 10.0,
+      "recessed_underside_z_mm": 6.5,
+      "status": "DESIGN_ASSUMPTION"
+    },
+    "body_profile": {
+      "curve": "cubic Bezier",
+      "end_handle_height_fraction_of_overall_height": 0.18,
+      "end_handle_length_mm": 9.54,
+      "inner_control_points_rz_mm": [
+        [
+          10.5,
+          10.0
+        ],
+        [
+          43.75825291634657,
+          10.0
+        ],
+        [
+          48.49906924424542,
+          43.52927262084876
+        ],
+        [
+          52.072816145433215,
+          52.37460659341591
+        ]
+      ],
+      "start_handle_fraction_of_floor_to_inner_lip_radial_span": 0.8,
+      "start_handle_length_mm": 33.25825291634657,
+      "status": "DESIGN_ASSUMPTION; adjustable visual profile control, not measured from source"
+    },
+    "foot": {
+      "contact_annulus_radii_mm": [
+        13.0,
+        15.0
+      ],
+      "contact_width_mm": 2.0,
+      "corner_radius_mm": 0.5,
+      "height_mm": 7.0,
+      "outer_diameter_mm": 31.0,
+      "status": "DESIGN_ASSUMPTION unless expressly measured in source record",
+      "underside_recess_z_mm": 6.5
+    },
+    "lip": {
+      "actual_cap_extrema_rz_mm": {
+        "max_radius": 54.0,
+        "max_z": 53.0
+      },
+      "body_inner_endpoint_rz_mm": [
+        52.072816145433215,
+        52.37460659341591
+      ],
+      "body_outer_endpoint_rz_mm": [
+        53.927183854566785,
+        51.62539340658409
+      ],
+      "center_formula": "(D_outer/2 - t/2, H - t/2)",
+      "center_rz_mm": [
+        53.0,
+        52.0
+      ],
+      "construction": "semicircular cap tangent to the inner and outer body at the declared tangent angle",
+      "radius_mm": 1.0,
+      "tangent_angle_degrees": 68.0
+    },
+    "normal_offset_error_scope": "maximum of t=0.25, 0.5 and 0.75 checks per accepted cubic subcurve; no continuous or global error bound is claimed",
+    "normal_offset_fit_acceptance_sample_mm": 0.005,
+    "normal_offset_fit_max_sampled_deviation_mm": 0.0038427512094048673,
+    "outer_normal_offset_mm": 2.0,
+    "wall_thickness_status": "DESIGN_ASSUMPTION; exact normal-offset formula supplies cubic control points, with finite sampled fit diagnostics and no continuous/global error certificate"
+  },
+  "source_dimensions_mm": {
+    "foot_outer_diameter": 31.0,
+    "overall_height": 53.0,
+    "rim_outer_diameter": 108.0
+  },
+  "source_profile_fidelity": "NOT_ESTABLISHED; dimensions and photographs do not define the complete meridian or construction."
+}

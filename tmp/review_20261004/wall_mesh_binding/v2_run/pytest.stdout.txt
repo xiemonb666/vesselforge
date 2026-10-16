@@ -1,0 +1,275 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\Users\xiemo\Desktop\ShardForge\vesselforge
+configfile: pyproject.toml
+collected 24 items
+
+tests\test_wall_mesh_binding.py ..............FFFFFFFFF.                 [100%]
+
+================================== FAILURES ===================================
+____________ test_wrong_units_and_bad_triangle_lineage_fail_closed ____________
+
+    def test_wrong_units_and_bad_triangle_lineage_fail_closed() -> None:
+        vertices, faces, lineage = _plane_pair_mesh()
+        with pytest.raises(ValueError, match="requires mm/right_handed_z_up"):
+            binding.parent_mesh_content_sha256(vertices, faces, lineage, units="cm")
+>       assert binding._validate_mesh_arrays(vertices, faces, np.asarray([0, 3]), 2) == \
+            "TRIANGLE_LINEAGE_FACE_INDEX_OUT_OF_RANGE"
+E       AssertionError: assert 'SURFACE_TRIANGLES_INVALID' == 'TRIANGLE_LIN..._OUT_OF_RANGE'
+E         
+E         - TRIANGLE_LINEAGE_FACE_INDEX_OUT_OF_RANGE
+E         + SURFACE_TRIANGLES_INVALID
+
+tests\test_wall_mesh_binding.py:157: AssertionError
+_________ test_wrong_face_lineage_cannot_fall_back_to_global_nearest __________
+
+    def test_wrong_face_lineage_cannot_fall_back_to_global_nearest() -> None:
+        vertices, faces, lineage = _plane_pair_mesh(first_x=0.0, second_x=1.0)
+        # Exchange the source face IDs: the station on face 0 is geometrically closest to triangles
+        # labelled face 1. The exact-face candidate is too far and the other face is never a fallback.
+        lineage = np.asarray([1, 0], dtype=np.int32)
+        row = binding.bind_station_to_parent_mesh(
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            vertices, faces, lineage, canonical_face_count=2, policy=_policy())
+        assert row["status"] == "UNKNOWN"
+>       assert row["reason"] in {
+            "STATION_PROJECTION_ERROR_EXCEEDS_LIMIT",
+            "DIFFERENT_FACE_CLEARLY_NEARER_THAN_DECLARED_FACE",
+        }
+E       AssertionError: assert 'SURFACE_TRIANGLES_INVALID' in {'DIFFERENT_FACE_CLEARLY_NEARER_THAN_DECLARED_FACE', 'STATION_PROJECTION_ERROR_EXCEEDS_LIMIT'}
+
+tests\test_wall_mesh_binding.py:170: AssertionError
+_________ test_nearby_distinct_wall_faces_are_ambiguous_not_combined __________
+
+    def test_nearby_distinct_wall_faces_are_ambiguous_not_combined() -> None:
+        vertices, faces, lineage = _plane_pair_mesh(first_x=0.0, second_x=0.02)
+        row = binding.bind_station_to_parent_mesh(
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            vertices, faces, lineage, canonical_face_count=2, policy=_policy())
+        assert row["status"] == "UNKNOWN"
+>       assert row["reason"] == "AMBIGUOUS_FACE_LINEAGE"
+E       AssertionError: assert 'SURFACE_TRIANGLES_INVALID' == 'AMBIGUOUS_FACE_LINEAGE'
+E         
+E         - AMBIGUOUS_FACE_LINEAGE
+E         + SURFACE_TRIANGLES_INVALID
+
+tests\test_wall_mesh_binding.py:182: AssertionError
+______ test_trimmed_face_boundary_or_outside_uv_is_not_accepted[state0] _______
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000027EF8C13BF0>
+state = <TopAbs_State.TopAbs_ON: 2>
+
+    @pytest.mark.parametrize("state", [TopAbs_ON, TopAbs_OUT])
+    def test_trimmed_face_boundary_or_outside_uv_is_not_accepted(monkeypatch, state) -> None:
+        class FakeClassifier:
+            def __init__(self, *_args):
+                pass
+    
+            def State(self):
+                return state
+    
+        monkeypatch.setattr(binding, "BRepClass_FaceClassifier", FakeClassifier)
+>       row = binding._reevaluate_station_on_step_face(
+            face=object(),
+            station={
+                "station_id": "outer-0",
+                "position_mm": [0.0, 0.0, 0.0],
+                "outward_from_material": [1.0, 0.0, 0.0],
+                "source_classification_evidence": {"interior_sample": {"u": 0.2, "v": 0.4}},
+            },
+            face_index=0,
+            policy=_policy(),
+        )
+
+tests\test_wall_mesh_binding.py:196: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+face = <object object at 0x0000027EF816A250>
+station = {'outward_from_material': [1.0, 0.0, 0.0], 'position_mm': [0.0, 0.0, 0.0], 'source_classification_evidence': {'interior_sample': {'u': 0.2, 'v': 0.4}}, 'station_id': 'outer-0'}
+face_index = 0
+policy = BindingPolicy(target_linear_deflection_mm=0.05, target_angular_deflection_rad=0.05, weld_tolerance_mm=5e-06, cad_numeric_tolerance_mm=1e-07, cad_numeric_angle_tolerance_rad=1e-07)
+
+    def _reevaluate_station_on_step_face(
+        face: cq.Face,
+        station: Mapping[str, Any],
+        face_index: int,
+        policy: BindingPolicy,
+    ) -> dict[str, Any]:
+        station_id = str(station.get("station_id", ""))
+        evidence = station.get("source_classification_evidence")
+        sample = evidence.get("interior_sample") if isinstance(evidence, Mapping) else None
+        if not isinstance(sample, Mapping):
+            return _unknown_station(station_id, "WALL_REFERENCE_UV_SAMPLE_MISSING")
+        try:
+            u = float(sample["u"])
+            v = float(sample["v"])
+            frozen_point = np.asarray(station.get("position_mm"), dtype=np.float64)
+            frozen_normal = np.asarray(station.get("outward_from_material"), dtype=np.float64)
+        except (KeyError, TypeError, ValueError, OverflowError):
+            return _unknown_station(station_id, "WALL_REFERENCE_STATION_VECTOR_INVALID")
+        if (not math.isfinite(u) or not math.isfinite(v) or frozen_point.shape != (3,)
+                or frozen_normal.shape != (3,) or not np.isfinite(frozen_point).all()
+                or not np.isfinite(frozen_normal).all()):
+            return _unknown_station(station_id, "WALL_REFERENCE_STATION_VECTOR_INVALID")
+    
+        classifier = BRepClass_FaceClassifier(
+>           face.wrapped, gp_Pnt2d(u, v), float(policy.cad_numeric_tolerance_mm))
+            ^^^^^^^^^^^^
+E       AttributeError: 'object' object has no attribute 'wrapped'
+
+src\vesselforge\wall_mesh_binding.py:731: AttributeError
+______ test_trimmed_face_boundary_or_outside_uv_is_not_accepted[state1] _______
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000027EF8C12960>
+state = <TopAbs_State.TopAbs_OUT: 1>
+
+    @pytest.mark.parametrize("state", [TopAbs_ON, TopAbs_OUT])
+    def test_trimmed_face_boundary_or_outside_uv_is_not_accepted(monkeypatch, state) -> None:
+        class FakeClassifier:
+            def __init__(self, *_args):
+                pass
+    
+            def State(self):
+                return state
+    
+        monkeypatch.setattr(binding, "BRepClass_FaceClassifier", FakeClassifier)
+>       row = binding._reevaluate_station_on_step_face(
+            face=object(),
+            station={
+                "station_id": "outer-0",
+                "position_mm": [0.0, 0.0, 0.0],
+                "outward_from_material": [1.0, 0.0, 0.0],
+                "source_classification_evidence": {"interior_sample": {"u": 0.2, "v": 0.4}},
+            },
+            face_index=0,
+            policy=_policy(),
+        )
+
+tests\test_wall_mesh_binding.py:196: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+face = <object object at 0x0000027EF816B6C0>
+station = {'outward_from_material': [1.0, 0.0, 0.0], 'position_mm': [0.0, 0.0, 0.0], 'source_classification_evidence': {'interior_sample': {'u': 0.2, 'v': 0.4}}, 'station_id': 'outer-0'}
+face_index = 0
+policy = BindingPolicy(target_linear_deflection_mm=0.05, target_angular_deflection_rad=0.05, weld_tolerance_mm=5e-06, cad_numeric_tolerance_mm=1e-07, cad_numeric_angle_tolerance_rad=1e-07)
+
+    def _reevaluate_station_on_step_face(
+        face: cq.Face,
+        station: Mapping[str, Any],
+        face_index: int,
+        policy: BindingPolicy,
+    ) -> dict[str, Any]:
+        station_id = str(station.get("station_id", ""))
+        evidence = station.get("source_classification_evidence")
+        sample = evidence.get("interior_sample") if isinstance(evidence, Mapping) else None
+        if not isinstance(sample, Mapping):
+            return _unknown_station(station_id, "WALL_REFERENCE_UV_SAMPLE_MISSING")
+        try:
+            u = float(sample["u"])
+            v = float(sample["v"])
+            frozen_point = np.asarray(station.get("position_mm"), dtype=np.float64)
+            frozen_normal = np.asarray(station.get("outward_from_material"), dtype=np.float64)
+        except (KeyError, TypeError, ValueError, OverflowError):
+            return _unknown_station(station_id, "WALL_REFERENCE_STATION_VECTOR_INVALID")
+        if (not math.isfinite(u) or not math.isfinite(v) or frozen_point.shape != (3,)
+                or frozen_normal.shape != (3,) or not np.isfinite(frozen_point).all()
+                or not np.isfinite(frozen_normal).all()):
+            return _unknown_station(station_id, "WALL_REFERENCE_STATION_VECTOR_INVALID")
+    
+        classifier = BRepClass_FaceClassifier(
+>           face.wrapped, gp_Pnt2d(u, v), float(policy.cad_numeric_tolerance_mm))
+            ^^^^^^^^^^^^
+E       AttributeError: 'object' object has no attribute 'wrapped'
+
+src\vesselforge\wall_mesh_binding.py:731: AttributeError
+_______________ test_reversed_parent_triangle_normal_is_unknown _______________
+
+    def test_reversed_parent_triangle_normal_is_unknown() -> None:
+        vertices = np.asarray([
+            [0.0, -1.0, -1.0], [0.0, 0.0, 2.0], [0.0, 1.0, -1.0],
+        ], dtype=np.float64)
+        faces = np.asarray([[0, 1, 2]], dtype=np.int32)  # -X, opposite to the recorded wall normal.
+        lineage = np.asarray([0], dtype=np.int32)
+        row = binding.bind_station_to_parent_mesh(
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            vertices, faces, lineage, canonical_face_count=1, policy=_policy())
+        assert row["status"] == "UNKNOWN"
+>       assert row["reason"] == "MESH_NORMAL_MISMATCH"
+E       AssertionError: assert 'SURFACE_VERTICES_INVALID' == 'MESH_NORMAL_MISMATCH'
+E         
+E         - MESH_NORMAL_MISMATCH
+E         + SURFACE_VERTICES_INVALID
+
+tests\test_wall_mesh_binding.py:222: AssertionError
+_____ test_same_brep_face_edge_tie_is_deterministic_and_keeps_candidates ______
+
+    def test_same_brep_face_edge_tie_is_deterministic_and_keeps_candidates() -> None:
+        vertices = np.asarray([
+            [0.0, -1.0, -1.0], [0.0, 1.0, -1.0], [0.0, 1.0, 1.0], [0.0, -1.0, 1.0],
+        ], dtype=np.float64)
+        faces = np.asarray([[0, 1, 2], [0, 2, 3]], dtype=np.int32)
+        lineage = np.asarray([0, 0], dtype=np.int32)
+        row = binding.bind_station_to_parent_mesh(
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            vertices, faces, lineage, canonical_face_count=1, policy=_policy())
+>       assert row["status"] == "BOUND"
+E       AssertionError: assert 'UNKNOWN' == 'BOUND'
+E         
+E         - BOUND
+E         + UNKNOWN
+
+tests\test_wall_mesh_binding.py:234: AssertionError
+_ test_internal_aggregation_of_bound_outer_and_inner_stations_preserves_opposite_normals _
+
+    def test_internal_aggregation_of_bound_outer_and_inner_stations_preserves_opposite_normals() -> None:
+        vertices = np.asarray([
+            [10.0, -1.0, -1.0], [10.0, 1.0, -1.0], [10.0, 0.0, 2.0],
+            [8.0, -1.0, -1.0], [8.0, 1.0, -1.0], [8.0, 0.0, 2.0],
+        ], dtype=np.float64)
+        faces = np.asarray([[0, 1, 2], [3, 5, 4]], dtype=np.int32)
+        lineage = np.asarray([0, 1], dtype=np.int32)
+        stations = [
+            _station("outer-0", 0, "outer", (10.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            _station("inner-1", 1, "inner", (8.0, 0.0, 0.0), (-1.0, 0.0, 0.0)),
+        ]
+        # The private aggregator tests already-resolved internal rows; it does not authenticate an
+        # external mesh or source. Only build_wall_mesh_binding may use this status in a verified report.
+        record = binding._aggregate_bound_stations(
+            stations, vertices, faces, lineage, canonical_face_count=2,
+            parent_mesh_content_hash="a" * 64, policy=_policy())
+>       assert record["status"] == "PASS_MOTHER_STATION_BINDING"
+E       AssertionError: assert 'UNKNOWN' == 'PASS_MOTHER_STATION_BINDING'
+E         
+E         - PASS_MOTHER_STATION_BINDING
+E         + UNKNOWN
+
+tests\test_wall_mesh_binding.py:256: AssertionError
+____ test_internal_aggregation_keeps_any_unbound_requested_station_unknown ____
+
+    def test_internal_aggregation_keeps_any_unbound_requested_station_unknown() -> None:
+        vertices, faces, lineage = _plane_pair_mesh()
+        stations = [
+            _station("outer-0", 0, "outer", (0.0, 0.0, 0.0), (1.0, 0.0, 0.0)),
+            _station("bad-uv", 1, "inner", (2.0, 0.0, 0.0), (-1.0, 0.0, 0.0), uv_state="ON"),
+        ]
+        record = binding._aggregate_bound_stations(
+            stations, vertices, faces, lineage, canonical_face_count=2,
+            parent_mesh_content_hash="b" * 64, policy=_policy())
+        assert record["status"] == "UNKNOWN"
+        assert record["coverage"]["stations_requested"] == 2
+>       assert record["coverage"]["stations_bound"] == 1
+E       assert 0 == 1
+
+tests\test_wall_mesh_binding.py:279: AssertionError
+- generated xml file: C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261004\wall_mesh_binding\v2_run\junit.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_wall_mesh_binding.py::test_wrong_units_and_bad_triangle_lineage_fail_closed
+FAILED tests/test_wall_mesh_binding.py::test_wrong_face_lineage_cannot_fall_back_to_global_nearest
+FAILED tests/test_wall_mesh_binding.py::test_nearby_distinct_wall_faces_are_ambiguous_not_combined
+FAILED tests/test_wall_mesh_binding.py::test_trimmed_face_boundary_or_outside_uv_is_not_accepted[state0]
+FAILED tests/test_wall_mesh_binding.py::test_trimmed_face_boundary_or_outside_uv_is_not_accepted[state1]
+FAILED tests/test_wall_mesh_binding.py::test_reversed_parent_triangle_normal_is_unknown
+FAILED tests/test_wall_mesh_binding.py::test_same_brep_face_edge_tie_is_deterministic_and_keeps_candidates
+FAILED tests/test_wall_mesh_binding.py::test_internal_aggregation_of_bound_outer_and_inner_stations_preserves_opposite_normals
+FAILED tests/test_wall_mesh_binding.py::test_internal_aggregation_keeps_any_unbound_requested_station_unknown
+======================== 9 failed, 15 passed in 1.74s =========================

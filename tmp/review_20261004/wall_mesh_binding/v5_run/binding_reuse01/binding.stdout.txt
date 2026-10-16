@@ -1,0 +1,13 @@
+{
+  "global_wall_status": "UNVERIFIED",
+  "physical_qualification_status": "UNKNOWN",
+  "reason": "CANONICAL_BREP_FACE_BOUNDS_MISMATCH:0",
+  "report": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v5_run\\binding_reuse01\\metadata\\wall_mesh_binding.json",
+  "station_coverage": {
+    "coverage_semantics": "finite wall-reference station mapping fraction; not area coverage",
+    "station_mapping_fraction": null,
+    "stations_bound": 0,
+    "stations_requested": 0
+  },
+  "status": "UNKNOWN"
+}

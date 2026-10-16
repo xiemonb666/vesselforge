@@ -1,0 +1,5 @@
+python=3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]
+pytest=8.4.2
+pytest_path=C:\Users\xiemo\Desktop\ShardForge\third_party\vesselforge-runtime\venv\Lib\site-packages\pytest\__init__.py
+cadquery=2.8.0
+ocp_path=C:\Users\xiemo\Desktop\ShardForge\third_party\vesselforge-runtime\venv\Lib\site-packages\OCP\__init__.py

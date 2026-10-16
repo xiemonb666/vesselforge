@@ -1,0 +1,81 @@
+{
+  "schema": "vf.wall-mesh-binding-independent-review.v2",
+  "review_date": "2026-10-04",
+  "result": "P2_CLOSURES_ACCEPTED_STATIC_READY_FOR_ONE_TINY_CAD_FIXTURE_AND_TARGET_PYTEST",
+  "execution": {
+    "pytest": "NOT_RUN",
+    "cad_or_step": "NOT_RUN",
+    "ray_query": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED",
+    "actual_generated_step_sha256": null,
+    "actual_generated_step_sha256_reason": "The runner generates and hashes the canonical STEP at execution time; no STEP output exists in the frozen source package."
+  },
+  "v2_findings": [
+    {
+      "prior_finding": "P2-1 terminal BOUND row aggregation bypass",
+      "status": "CLOSED_FOR_PUBLIC_API",
+      "evidence": "The batch aggregator is renamed _aggregate_bound_stations, removed from __all__, and explicitly marks aggregation_scope as internal_station_status_aggregation_only_not_external_source_authentication. The public high-level builder validates package hashes and STEP-bound wall-reference input before emitting a top-level report.",
+      "residual": "A caller deliberately importing the private helper can still aggregate a forged terminal row to PASS; that output is explicitly scoped as unauthenticated internal aggregation."
+    },
+    {
+      "prior_finding": "P2-2 bool accepted as a tessellation policy number",
+      "status": "CLOSED_STATICALLY",
+      "evidence": "All six manifest/report sources reject bool and non-Real, then require finite positive values and angular values below pi. BindingPolicy validates its five fields and finite derived thresholds."
+    }
+  ],
+  "public_station_helper": {
+    "name": "bind_station_to_parent_mesh",
+    "still_exported": true,
+    "status_emitted": "station-row BOUND/UNKNOWN only",
+    "top_level_pass_or_qualification_emitted": false,
+    "precondition_documented": "The station was already rechecked against the canonical STEP B-rep face.",
+    "assessment": "Can return a local BOUND row when called directly with caller-provided inputs that violate the documented precondition; does not itself emit PASS_MOTHER_STATION_BINDING or any qualification object. This is a low-level primitive and does not provide a higher qualification status."
+  },
+  "policy": {
+    "validation": "PASS_STATIC",
+    "rejects_booleans": true,
+    "strict_real_fields": 6,
+    "positive_finite": true,
+    "angular_range": "0 < radians < pi",
+    "binding_policy_self_validation": true,
+    "linear_projection_limit_mm_fixture": 0.0500101,
+    "normal_angle_limit_rad_fixture": 0.16,
+    "normal_angle_limit_degrees_fixture_approx": 9.167324722,
+    "normal_angle_is_labeled_acceptance_threshold_not_measured_error": true
+  },
+  "geometry_and_provenance_checks": {
+    "mesh_hash_separate_from_step_and_file_hashes": "PASS_STATIC",
+    "endian_indexdtype_canonicalization": "PASS_STATIC",
+    "units_mm_frame_right_handed_z_up": "PASS_STATIC",
+    "reimport_backend_and_face_inventory": "PASS_STATIC",
+    "trimmed_uv_must_be_in": "PASS_STATIC",
+    "oriented_outward_normal_recomputed": "PASS_STATIC",
+    "same_face_projection_only": "PASS_STATIC",
+    "other_face_only_ambiguity_or_nearer_probe": "PASS_STATIC",
+    "inner_outer_semantic_role_check": "PASS_STATIC",
+    "mixed_station_status_requires_all_bound": "PASS_STATIC",
+    "global_wall_fragment_physics_nonclaims": "PASS_STATIC"
+  },
+  "runner_review": {
+    "native_nested_wire_solid_extrusion_count": 1,
+    "step_export_count": 1,
+    "step_import_count": 1,
+    "mesh_shape_call_count": 1,
+    "writes_only_to_new_absolute_output_path": true,
+    "boolean_count": 0,
+    "solver_count": 0,
+    "hash_receipt": "Generated STEP and package file SHA values are computed from actual output bytes by the runner; no output receipt exists until execution.",
+    "counts_evidence": "Static source review only; runner has no runtime operation counters."
+  },
+  "readiness": {
+    "one_tiny_cad_fixture": "READY_TO_PROCEED",
+    "target_pytest": "READY_TO_PROCEED",
+    "interpretation": "Run the frozen one-shot fixture and targeted tests as the next evidence step; this report does not assert either has passed."
+  },
+  "files": {
+    "markdown": "vesselforge/tmp/review_20261004/wall_binding_independent_review/v2_review.md",
+    "json": "vesselforge/tmp/review_20261004/wall_binding_independent_review/v2_review.json",
+    "pin": "vesselforge/tmp/review_20261004/wall_binding_independent_review/v2_pin.json"
+  }
+}

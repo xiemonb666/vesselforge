@@ -1,0 +1,7 @@
+{
+  "checker_sha256": "e0f185d01ffa7b7f9239ece90617852aebc418693cef46dcdebb6121f37b75ae",
+  "hash_algorithm": "SHA-256",
+  "parameters_sha256": "702285e2b311ea3ad7a17e6212d06ab8041faf58cca76e8e4a8a016d7e42c66e",
+  "prototype_sha256_actual": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+  "prototype_sha256_expected": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177"
+}

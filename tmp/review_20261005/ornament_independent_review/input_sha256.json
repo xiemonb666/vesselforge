@@ -1,0 +1,34 @@
+{
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\run_receipt.json": {
+    "sha256": "fcbc60fa0de7974bdf125a75aed725a58db3af6c813a5f9858dd09fc7e70af84",
+    "bytes": 802
+  },
+  "vesselforge\\experiments\\surface_ornament_refinement_20261005\\refinement_prototype.py": {
+    "sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "bytes": 59865
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_a_0p50mm\\candidate_arrays.npz": {
+    "sha256": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+    "bytes": 234086
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_a_0p50mm\\checks.json": {
+    "sha256": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106",
+    "bytes": 6103
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_a_0p50mm\\flat_triangle_visual.png": {
+    "sha256": "2931af31de62f710034b1d01b298357a444a3fe283231ac301e83500108ba1a0",
+    "bytes": 512146
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_b_0p25mm\\candidate_arrays.npz": {
+    "sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+    "bytes": 513724
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_b_0p25mm\\checks.json": {
+    "sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8",
+    "bytes": 6110
+  },
+  "vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run\\local_b_0p25mm\\flat_triangle_visual.png": {
+    "sha256": "0cbf8d44c6e19075be91882e7f95ce5fb82ff35e6b935ba98c24712c97dba565",
+    "bytes": 675966
+  }
+}

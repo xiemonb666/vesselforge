@@ -1,0 +1,105 @@
+{
+  "checked_at": "2026-10-04T18:22:57.8453194Z",
+  "source_sha256": [
+    {
+      "path": "vesselforge/tmp/review_20261004/brep_bounds_cache_review/diagnose_face_bounds_cache.py",
+      "bytes": 20337,
+      "sha256": "e1815e0d8fb7a373aa3bb6919f43c9d15dd4e2c9005ba81ec6719f37181b30e5"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/run_hollow_cylinder_binding.py",
+      "bytes": 10722,
+      "sha256": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "bytes": 50317,
+      "sha256": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261004/wall_mesh_binding/v4_frozen/wall_mesh_binding.py",
+      "bytes": 48281,
+      "sha256": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/asset.py",
+      "bytes": 20367,
+      "sha256": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/geometry.py",
+      "bytes": 28698,
+      "sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/schema.py",
+      "bytes": 14126,
+      "sha256": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/semantics.py",
+      "bytes": 13864,
+      "sha256": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af"
+    },
+    {
+      "path": "vesselforge/src/vesselforge/wall_reference.py",
+      "bytes": 29780,
+      "sha256": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/shapes.py",
+      "bytes": 228103,
+      "sha256": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94"
+    },
+    {
+      "path": "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/geom.py",
+      "bytes": 37146,
+      "sha256": "4a32ab0aabb4a045a4eacb3853c2ec126e3675d39357adb38923acc97c08fc6a"
+    }
+  ],
+  "existing_asset_input_sha256": [
+    {
+      "path": "fields/surface_fields.npz",
+      "bytes": 5320,
+      "sha256": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d"
+    },
+    {
+      "path": "geometry/mesh_lineage.npz",
+      "bytes": 280,
+      "sha256": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d"
+    },
+    {
+      "path": "geometry/solid.step",
+      "bytes": 9412,
+      "sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+    },
+    {
+      "path": "geometry/surface.npz",
+      "bytes": 9722,
+      "sha256": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 5108,
+      "sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f"
+    },
+    {
+      "path": "metadata/face_semantics.json",
+      "bytes": 5709,
+      "sha256": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848"
+    },
+    {
+      "path": "metadata/wall_reference.json",
+      "bytes": 4717,
+      "sha256": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76"
+    },
+    {
+      "path": "validation/geometry.json",
+      "bytes": 320,
+      "sha256": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61"
+    }
+  ],
+  "output_dir_before_check": false,
+  "original_report_exists_before_check": false,
+  "note": "Read-only preflight; diagnostic will execute from a byte-identical copy and write under this directory."
+}

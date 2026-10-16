@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\spherical_bowl\\run_case.py",
+    "--case",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\spherical_bowl\\cases\\four_bands.json",
+    "--run-dir",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\spherical_bowl\\runs\\four_bands_01"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge"
+}

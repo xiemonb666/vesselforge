@@ -1,0 +1,18 @@
+{
+  "checker_provenance.json": "802a9c403327e5dd2737caebddfa729f5a5501e489588e9d2b58e5d16ad513f1",
+  "checks.json": "f6ad9aa2d81af863d786eff516fa3a89aaa3e308184f3219aa5c888404e7a114",
+  "display_rgb_values.json": "ecfecb47ac2552c3b321f25de2f347e520ed105370bd3dc40b32d4f23a1efcad",
+  "execution_argv.json": "a00b4d61ee184e2cbe4ba8b9b6451dde4f0ae2c877d4888b1051dd226f8f0bcb",
+  "exit_code.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+  "fixture_arrays.npz": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+  "fixture_parameters.json": "fece3edddf14571d4bfcbe85b2f980465aabaaac753ac9fd56866dc241751612",
+  "geometry_metrics.json": "b8c11f14c6bf0ecf2134337d7c39adb3c09bccc7bdddad9b6aec597356ead71f",
+  "launcher_argv.json": "80077cbce593e86984a22175a2fd107720a8837985693744bb0bda248ffbe02a",
+  "material_pbr_calibration.json": "3a6f68ea84557f79468cd5234c8aac7fa739f6db9d172572acd6275003a89836",
+  "run_status.json": "f85157bd05a5b6276fe979be1e848a1c7f57eb60cef6361a4853c70785429e54",
+  "runtime.json": "dffedd33924a0a84e9f46693639dcc3355589c919afbfebc6c9f877b647582f6",
+  "source_parameter_hashes.json": "eb6a4e80148c75d034c802de7cd1fb78863421eb79871d8ea64ec41a6fe93512",
+  "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout.txt": "2f3c496c9b22d4c7b83fc36ccf9272db84ef53940759444549852500d92149fc",
+  "surface_ornament_fixture.png": "3cf1026178613a74cecc5d177139c6ec25e0134deb682ad61d312eed6bd5ac17"
+}

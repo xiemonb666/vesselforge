@@ -1,0 +1,131 @@
+{
+  "candidate_dimensions_mm": {
+    "foot_outer_diameter_mm": 54.0,
+    "overall_height_mm": 54.0,
+    "rim_outer_diameter_mm": 111.0
+  },
+  "candidate_status": "SIZE_REFERENCE_GEOMETRY_CANDIDATE_ONLY",
+  "design_assumptions": {
+    "body_end_handle_height_fraction": 0.25,
+    "body_floor_radius_mm": 16.5,
+    "body_floor_z_mm": 6.5,
+    "body_start_handle_fraction": 0.4,
+    "foot_contact_width_mm": 2.4,
+    "foot_height_mm": 3.5,
+    "rim_tangent_degrees": 68.0,
+    "underside_recess_z_mm": 3.2,
+    "wall_thickness_mm": 3.2
+  },
+  "image_handling": "Catalog images were not copied into or packaged with the candidate.",
+  "measured_from_record": [
+    "foot_outer_diameter",
+    "overall_height",
+    "rim_outer_diameter"
+  ],
+  "not_claimed": [
+    "not a specimen scan or exact profile reconstruction",
+    "not a verified match to the maker's exact wall, base, rim or foot construction",
+    "not a calibrated physical material or mechanics model"
+  ],
+  "numerical_fit_controls": {
+    "normal_offset_fit_tolerance_mm": 0.005
+  },
+  "parameter_overrides": {},
+  "physical_material_properties": "NOT_SPECIFIED; no ceramic density, modulus, Poisson ratio, strength or toughness is inferred.",
+  "preset": "met",
+  "record": {
+    "collection": "The Metropolitan Museum of Art",
+    "dimension_evidence": "Official Met collection record; listed dimensions are H 5.4 cm, rim diameter 11.1 cm, and foot diameter 5.4 cm.",
+    "medium": "Stoneware with blue-gray glaze (Jun ware)",
+    "object_number": "18.56.44",
+    "object_url": "https://www.metmuseum.org/art/collection/search/52389",
+    "period": "Jin dynasty (1115–1234), 12th–13th century",
+    "reported_dimensions_mm": {
+      "foot_outer_diameter": 54.0,
+      "overall_height": 54.0,
+      "rim_outer_diameter": 111.0
+    },
+    "title": "Bowl",
+    "visual_reference_note": "Reference catalog review describes a continuous round rim, deep rounded body with slight outward rise near the opening, and a low narrow foot ring. The photograph does not establish section, thickness, or foot height."
+  },
+  "schema": "vf.revolved_profile_candidate_provenance.v1",
+  "section_geometry_details": {
+    "base": {
+      "central_base_thickness_mm": 3.3,
+      "inside_floor_z_mm": 6.5,
+      "recessed_underside_z_mm": 3.2,
+      "status": "DESIGN_ASSUMPTION"
+    },
+    "body_profile": {
+      "curve": "cubic Bezier",
+      "end_handle_height_fraction_of_overall_height": 0.25,
+      "end_handle_length_mm": 13.5,
+      "inner_control_points_rz_mm": [
+        [
+          16.5,
+          6.5
+        ],
+        [
+          30.866602333077257,
+          6.5
+        ],
+        [
+          47.35931682157833,
+          40.48238851281383
+        ],
+        [
+          52.41650583269314,
+          52.99937054946546
+        ]
+      ],
+      "start_handle_fraction_of_floor_to_inner_lip_radial_span": 0.4,
+      "start_handle_length_mm": 14.366602333077257,
+      "status": "DESIGN_ASSUMPTION; adjustable visual profile control, not measured from source"
+    },
+    "foot": {
+      "contact_annulus_radii_mm": [
+        24.1625,
+        26.5625
+      ],
+      "contact_width_mm": 2.3999999999999986,
+      "corner_radius_mm": 0.4375,
+      "height_mm": 3.5,
+      "outer_diameter_mm": 54.0,
+      "status": "DESIGN_ASSUMPTION unless expressly measured in source record",
+      "underside_recess_z_mm": 3.2
+    },
+    "lip": {
+      "actual_cap_extrema_rz_mm": {
+        "max_radius": 55.5,
+        "max_z": 54.0
+      },
+      "body_inner_endpoint_rz_mm": [
+        52.41650583269314,
+        52.99937054946546
+      ],
+      "body_outer_endpoint_rz_mm": [
+        55.38349416730686,
+        51.80062945053454
+      ],
+      "center_formula": "(D_outer/2 - t/2, H - t/2)",
+      "center_rz_mm": [
+        53.9,
+        52.4
+      ],
+      "construction": "semicircular cap tangent to the inner and outer body at the declared tangent angle",
+      "radius_mm": 1.6,
+      "tangent_angle_degrees": 68.0
+    },
+    "normal_offset_error_scope": "maximum of t=0.25, 0.5 and 0.75 checks per accepted cubic subcurve; no continuous or global error bound is claimed",
+    "normal_offset_fit_acceptance_sample_mm": 0.005,
+    "normal_offset_fit_max_sampled_deviation_mm": 0.001881217471724993,
+    "outer_normal_offset_mm": 3.2,
+    "wall_thickness_status": "DESIGN_ASSUMPTION; exact normal-offset formula supplies cubic control points, with finite sampled fit diagnostics and no continuous/global error certificate"
+  },
+  "source_dimensions_mm": {
+    "foot_outer_diameter": 54.0,
+    "overall_height": 54.0,
+    "rim_outer_diameter": 111.0
+  },
+  "source_profile_fidelity": "NOT_ESTABLISHED; dimensions and photographs do not define the complete meridian or construction."
+}

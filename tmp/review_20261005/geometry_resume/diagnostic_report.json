@@ -1,0 +1,1031 @@
+{
+  "after_mesh": {
+    "face_count": 4,
+    "faces": [
+      {
+        "area_mm2": 628.318530718,
+        "default_cadquery_bbox_asset_order": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "CYLINDER",
+        "index_zero_based": 0,
+        "surface_area_centroid_mm": [
+          6.608047442568932e-13,
+          -2.3800406090401796e-16,
+          5.0
+        ],
+        "triangulation_cache": {
+          "deflection_mm": 0.0019767022993463414,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        }
+      },
+      {
+        "area_mm2": 502.6548245744,
+        "default_cadquery_bbox_asset_order": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -8.0,
+            -8.0,
+            0.0,
+            8.0,
+            8.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "CYLINDER",
+        "index_zero_based": 1,
+        "surface_area_centroid_mm": [
+          5.266898028821743e-13,
+          -4.531965080989408e-16,
+          4.999999999999999
+        ],
+        "triangulation_cache": {
+          "deflection_mm": 0.0015813618394767627,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        }
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "default_cadquery_bbox_asset_order": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797e-07,
+          1.0000000355444797e-07
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            10.0,
+            0.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "PLANE",
+        "index_zero_based": 2,
+        "surface_area_centroid_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          0.0
+        ],
+        "triangulation_cache": {
+          "deflection_mm": 3.554447978966673e-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        }
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "default_cadquery_bbox_asset_order": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "PLANE",
+        "index_zero_based": 3,
+        "surface_area_centroid_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          10.000000000000002
+        ],
+        "triangulation_cache": {
+          "deflection_mm": 3.554447978966673e-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        }
+      }
+    ],
+    "mesh_node_count": 632,
+    "mesh_triangle_count": 1264,
+    "triangle_source_face_count": 1264
+  },
+  "api_signatures_and_docstrings": {
+    "OCP_BRepBndLib_AddOptimal_s": {
+      "doc": "AddOptimal_s(S: OCP.OCP.TopoDS.TopoDS_Shape, B: OCP.OCP.Bnd.Bnd_Box, useTriangulation: bool = True, useShapeTolerance: bool = False) -> None\n\nAdds the shape S to the bounding box B. This algorithm builds precise bounding box, which differs from exact geometry boundaries of shape only on shape entities tolerances Algorithm is the same as for method Add(..), but uses more precise methods for building boxes for geometry objects. If useShapeTolerance = True, bounding box is enlardged by shape tolerances and these tolerances are used for numerical methods of bounding box size calculations, otherwise bounding box is built according to sizes of uderlined geometrical entities, numerical calculation use tolerance Precision::Confusion().\n",
+      "module": "OCP.OCP.BRepBndLib",
+      "qualname": "PyCapsule.AddOptimal_s",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <built-in method AddOptimal_s of PyCapsule object at 0x000001BCF5E14630>"
+    },
+    "OCP_BRepBndLib_Add_s": {
+      "doc": "Add_s(S: OCP.OCP.TopoDS.TopoDS_Shape, B: OCP.OCP.Bnd.Bnd_Box, useTriangulation: bool = True) -> None\n\nAdds the shape S to the bounding box B. More precisely are successively added to B: - each face of S; the triangulation of the face is used if it exists, - then each edge of S which does not belong to a face, the polygon of the edge is used if it exists - and last each vertex of S which does not belong to an edge. After each elementary operation, the bounding box B is enlarged by the tolerance value of the relative sub-shape. When working with the triangulation of a face this value of enlargement is the sum of the triangulation deflection and the face tolerance. When working with the polygon of an edge this value of enlargement is the sum of the polygon deflection and the edge tolerance. Warning - This algorithm is time consuming if triangulation has not been inserted inside the data structure of the shape S. - The resulting bounding box may be somewhat larger than the object.\n",
+      "module": "OCP.OCP.BRepBndLib",
+      "qualname": "PyCapsule.Add_s",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <built-in method Add_s of PyCapsule object at 0x000001BCF5E145A0>"
+    },
+    "OCP_BRepMesh_IncrementalMesh": {
+      "doc": "Builds the mesh of a shape with respect of their correctly triangulated parts",
+      "module": "OCP.OCP.BRepMesh",
+      "qualname": "BRepMesh_IncrementalMesh",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <built-in method __init__ of PyCapsule object at 0x000001BCF97130C0>"
+    },
+    "OCP_BRepTools_Clean_s": {
+      "doc": "Clean_s(theShape: OCP.OCP.TopoDS.TopoDS_Shape, theForce: bool = False) -> None\n\nRemoves all cached polygonal representation of the shape, i.e. the triangulations of the faces of <S> and polygons on triangulations and polygons 3d of the edges. In case polygonal representation is the only available representation for the shape (shape does not have geometry) it is not removed.\n",
+      "module": "OCP.OCP.BRepTools",
+      "qualname": "PyCapsule.Clean_s",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <built-in method Clean_s of PyCapsule object at 0x000001BCF84BD6E0>"
+    },
+    "OCP_BRep_Tool_Triangulation_s": {
+      "doc": "Triangulation_s(theFace: OCP.OCP.TopoDS.TopoDS_Face, theLocation: OCP.OCP.TopLoc.TopLoc_Location, theMeshPurpose: int = 0) -> OCP.OCP.Poly.Poly_Triangulation\n\nReturns the triangulation of the face according to the mesh purpose.\n",
+      "module": "OCP.OCP.BRep",
+      "qualname": "PyCapsule.Triangulation_s",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <built-in method Triangulation_s of PyCapsule object at 0x000001BCF96EDA70>"
+    },
+    "OCP_Bnd_Box_Get": {
+      "doc": "Get(self: OCP.OCP.Bnd.Bnd_Box) -> tuple[float, float, float, float, float, float]\n\nReturns the bounds of this bounding box. The gap is included. If this bounding box is infinite (i.e. \"open\"), returned values may be equal to +/- Precision::Infinite(). Standard_ConstructionError exception will be thrown if the box is void. if IsVoid()\n",
+      "module": "OCP.OCP.Bnd",
+      "qualname": "PyCapsule.Get",
+      "signature": null,
+      "signature_error": "ValueError: no signature found for builtin <instancemethod Get at 0x000001BCF5F2D7B0>"
+    },
+    "cadquery_boundbox_from_topods": {
+      "doc": "\n        Constructs a bounding box from a TopoDS_Shape\n        ",
+      "module": "cadquery.occ_impl.geom",
+      "qualname": "BoundBox._fromTopoDS",
+      "signature": "(shape: OCP.OCP.TopoDS.TopoDS_Shape, tol: Optional[float] = None, optimal: bool = True)",
+      "signature_error": null
+    },
+    "cadquery_face_BoundingBox": {
+      "doc": "\n        Create a bounding box for this Shape.\n\n        :param tolerance: Tolerance value passed to :class:`BoundBox`\n        :returns: A :class:`BoundBox` object for this Shape\n        ",
+      "module": "cadquery.occ_impl.shapes",
+      "qualname": "Shape.BoundingBox",
+      "signature": "(self, tolerance: 'float | None' = None) -> 'BoundBox'",
+      "signature_error": null
+    }
+  },
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\geometry_resume\\diagnose_face_bounds_cache.py"
+  ],
+  "bbox_order": {
+    "OCP_Bnd_Box_Get_order": [
+      "xmin",
+      "ymin",
+      "zmin",
+      "xmax",
+      "ymax",
+      "zmax"
+    ],
+    "runner_and_helper_inventory_order": [
+      "xmin",
+      "xmax",
+      "ymin",
+      "ymax",
+      "zmin",
+      "zmax"
+    ]
+  },
+  "before_mesh": {
+    "face_count": 4,
+    "faces": [
+      {
+        "area_mm2": 628.318530718,
+        "default_cadquery_bbox_asset_order": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "CYLINDER",
+        "index_zero_based": 0,
+        "surface_area_centroid_mm": [
+          6.608047442568932e-13,
+          -2.3800406090401796e-16,
+          5.0
+        ],
+        "triangulation_cache": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_mm2": 502.6548245744,
+        "default_cadquery_bbox_asset_order": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -8.0,
+            8.0,
+            -8.0,
+            8.0,
+            0.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -8.0,
+            -8.0,
+            0.0,
+            8.0,
+            8.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "CYLINDER",
+        "index_zero_based": 1,
+        "surface_area_centroid_mm": [
+          5.266898028821743e-13,
+          -4.531965080989408e-16,
+          4.999999999999999
+        ],
+        "triangulation_cache": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "default_cadquery_bbox_asset_order": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            10.0,
+            0.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "PLANE",
+        "index_zero_based": 2,
+        "surface_area_centroid_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          0.0
+        ],
+        "triangulation_cache": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "default_cadquery_bbox_asset_order": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "explicit_geometry_bbox": {
+          "asset_inventory_order": [
+            -10.0,
+            10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "bnd_box_get_order_xyz": [
+            -10.0,
+            -10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "call": "BRepBndLib.AddOptimal_s(face.wrapped, box, False, False)",
+          "flags": {
+            "useShapeTolerance": false,
+            "useTriangulation": false
+          },
+          "is_void": false,
+          "is_whole": false
+        },
+        "geom_type": "PLANE",
+        "index_zero_based": 3,
+        "surface_area_centroid_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          10.000000000000002
+        ],
+        "triangulation_cache": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      }
+    ]
+  },
+  "comparisons": {
+    "default_bbox_changed_after_mesh_over_strict_threshold": true,
+    "explicit_geometry_bbox_stable_over_strict_threshold": true,
+    "manifest_matches_default_after_mesh_over_strict_threshold": true,
+    "manifest_matches_default_before_mesh_over_strict_threshold": false,
+    "manifest_matches_explicit_geometry_bbox_over_strict_threshold": false,
+    "max_default_bbox_delta_after_minus_before_mm": 0.0019768022993463413,
+    "max_default_bbox_vs_manifest_mm_after_mesh": 0.0,
+    "max_default_bbox_vs_manifest_mm_before_mesh": 0.0019768022993463413,
+    "max_explicit_geometry_bbox_delta_after_minus_before_mm": 0.0,
+    "max_explicit_geometry_bbox_vs_manifest_mm": 0.0019768022993463413,
+    "per_face": [
+      {
+        "area_delta_after_minus_before_mm2": 0.0,
+        "default_bbox_after_mesh_mm": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "default_bbox_delta_after_minus_before_mm_by_component": [
+          -0.0019768022993460477,
+          0.0019768022993460477,
+          -1.0000000294496658e-07,
+          1.0000000116860974e-07,
+          -0.0019768022993463413,
+          0.0019768022993460477
+        ],
+        "default_vs_manifest_max_abs_mm_after": 0.0,
+        "default_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+        "explicit_geometry_vs_manifest_max_abs_mm_after": 0.0019768022993463413,
+        "explicit_geometry_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+        "geom_type": "CYLINDER",
+        "index_zero_based": 0,
+        "manifest_bbox_mm": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "surface_area_centroid_delta_after_minus_before_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "triangulation_cache_after": {
+          "deflection_mm": 0.0019767022993463414,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        },
+        "triangulation_cache_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_delta_after_minus_before_mm2": 0.0,
+        "default_bbox_after_mesh_mm": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "default_bbox_before_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "default_bbox_delta_after_minus_before_mm_by_component": [
+          -0.0015814618394767166,
+          0.0015814618394767166,
+          -1.0000000294496658e-07,
+          1.0000000116860974e-07,
+          -0.0015814618394767628,
+          0.0015814618394767166
+        ],
+        "default_vs_manifest_max_abs_mm_after": 0.0,
+        "default_vs_manifest_max_abs_mm_before": 0.0015814618394767628,
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -8.0,
+          8.0,
+          -8.0,
+          8.0,
+          0.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+        "explicit_geometry_vs_manifest_max_abs_mm_after": 0.0015814618394767628,
+        "explicit_geometry_vs_manifest_max_abs_mm_before": 0.0015814618394767628,
+        "geom_type": "CYLINDER",
+        "index_zero_based": 1,
+        "manifest_bbox_mm": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "surface_area_centroid_delta_after_minus_before_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "triangulation_cache_after": {
+          "deflection_mm": 0.0015813618394767627,
+          "node_count": 318,
+          "present": true,
+          "triangle_count": 316
+        },
+        "triangulation_cache_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_delta_after_minus_before_mm2": 0.0,
+        "default_bbox_after_mesh_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797e-07,
+          1.0000000355444797e-07
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "default_bbox_delta_after_minus_before_mm_by_component": [
+          -1.0000000294496658e-07,
+          1.0000000294496658e-07,
+          0.0019766022993401577,
+          -0.001976602299341934,
+          -1.0000000355444797e-07,
+          1.0000000355444797e-07
+        ],
+        "default_vs_manifest_max_abs_mm_after": 0.0,
+        "default_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+        "explicit_geometry_vs_manifest_max_abs_mm_after": 0.001976602299341934,
+        "explicit_geometry_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+        "geom_type": "PLANE",
+        "index_zero_based": 2,
+        "manifest_bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797e-07,
+          1.0000000355444797e-07
+        ],
+        "surface_area_centroid_delta_after_minus_before_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "triangulation_cache_after": {
+          "deflection_mm": 3.554447978966673e-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        },
+        "triangulation_cache_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      },
+      {
+        "area_delta_after_minus_before_mm2": 0.0,
+        "default_bbox_after_mesh_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "default_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "default_bbox_delta_after_minus_before_mm_by_component": [
+          -1.0000000294496658e-07,
+          1.0000000294496658e-07,
+          0.0019766022993401577,
+          -0.001976602299341934,
+          -1.0000000294496658e-07,
+          1.0000000294496658e-07
+        ],
+        "default_vs_manifest_max_abs_mm_after": 0.0,
+        "default_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+        "explicit_geometry_bbox_after_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_before_mesh_mm": [
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+        "explicit_geometry_vs_manifest_max_abs_mm_after": 0.001976602299341934,
+        "explicit_geometry_vs_manifest_max_abs_mm_before": 0.001976602299341934,
+        "geom_type": "PLANE",
+        "index_zero_based": 3,
+        "manifest_bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "surface_area_centroid_delta_after_minus_before_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "triangulation_cache_after": {
+          "deflection_mm": 3.554447978966673e-15,
+          "node_count": 316,
+          "present": true,
+          "triangle_count": 316
+        },
+        "triangulation_cache_before": {
+          "deflection_mm": null,
+          "node_count": 0,
+          "present": false,
+          "triangle_count": 0
+        }
+      }
+    ],
+    "strict_observation_threshold_mm": 1e-07,
+    "triangulated_face_count_after_mesh": 4,
+    "triangulated_face_count_before_mesh": 0
+  },
+  "diagnostic_id": "vesselforge.face-bounds-triangulation-cache/2026-10-04",
+  "face_zero_focus": {
+    "area_delta_after_minus_before_mm2": 0.0,
+    "default_bbox_after_mesh_mm": [
+      -10.001976802299346,
+      10.001976802299346,
+      -10.000000100000003,
+      10.000000100000001,
+      -0.0019768022993463413,
+      10.001976802299346
+    ],
+    "default_bbox_before_mesh_mm": [
+      -10.0,
+      10.0,
+      -10.0,
+      10.0,
+      0.0,
+      10.0
+    ],
+    "default_bbox_delta_after_minus_before_mm_by_component": [
+      -0.0019768022993460477,
+      0.0019768022993460477,
+      -1.0000000294496658e-07,
+      1.0000000116860974e-07,
+      -0.0019768022993463413,
+      0.0019768022993460477
+    ],
+    "default_vs_manifest_max_abs_mm_after": 0.0,
+    "default_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+    "explicit_geometry_bbox_after_mesh_mm": [
+      -10.0,
+      10.0,
+      -10.0,
+      10.0,
+      0.0,
+      10.0
+    ],
+    "explicit_geometry_bbox_before_mesh_mm": [
+      -10.0,
+      10.0,
+      -10.0,
+      10.0,
+      0.0,
+      10.0
+    ],
+    "explicit_geometry_bbox_delta_after_minus_before_max_abs_mm": 0.0,
+    "explicit_geometry_vs_manifest_max_abs_mm_after": 0.0019768022993463413,
+    "explicit_geometry_vs_manifest_max_abs_mm_before": 0.0019768022993463413,
+    "geom_type": "CYLINDER",
+    "index_zero_based": 0,
+    "manifest_bbox_mm": [
+      -10.001976802299346,
+      10.001976802299346,
+      -10.000000100000003,
+      10.000000100000001,
+      -0.0019768022993463413,
+      10.001976802299346
+    ],
+    "surface_area_centroid_delta_after_minus_before_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "triangulation_cache_after": {
+      "deflection_mm": 0.0019767022993463414,
+      "node_count": 318,
+      "present": true,
+      "triangle_count": 316
+    },
+    "triangulation_cache_before": {
+      "deflection_mm": null,
+      "node_count": 0,
+      "present": false,
+      "triangle_count": 0
+    }
+  },
+  "finished_utc": "2026-10-04T18:23:38.875208+00:00",
+  "implementation_facts": {
+    "binding_check": "_check_face_inventory recomputes face.BoundingBox() in the same asset inventory order and compares max absolute bound delta against the configured strict tolerance; it also checks face index, geom_type, center and area.",
+    "cadquery_default": "CadQuery BoundBox._fromTopoDS defaults optimal=True and calls BRepBndLib.AddOptimal_s(shape, bbox) without explicit flags; its tolerance default is not used in that optimal branch.",
+    "face_area_and_center": "CadQuery face Area/Center use BRepGProp surface properties; shape_properties_LUT maps TopAbs_FACE to BRepGProp.SurfaceProperties_s.",
+    "mesh_shape": "geometry.mesh_shape calls BRepTools.Clean_s(shape.wrapped, True), then BRepMesh_IncrementalMesh(shape, linear_deflection_mm, False, angular_tolerance_rad, False), then Perform().",
+    "runner_face_bbox": "_face_inventory calls face.BoundingBox() with no arguments and stores [xmin,xmax,ymin,ymax,zmin,zmax].",
+    "runner_order": "run_hollow_cylinder_binding.py imports STEP, calls mesh_shape(canonical, spec), then writes brep_face_inventory using _face_inventory(canonical)."
+  },
+  "input_asset": {
+    "asset_root": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_run\\cylinder_asset_run01",
+    "manifest_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_run\\cylinder_asset_run01\\manifest.json",
+    "manifest_sha256": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "manifest_step_sha256": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "recorded_face_inventory": [
+      {
+        "area_mm2": 628.318530718,
+        "bbox_mm": [
+          -10.001976802299346,
+          10.001976802299346,
+          -10.000000100000003,
+          10.000000100000001,
+          -0.0019768022993463413,
+          10.001976802299346
+        ],
+        "center_mm": [
+          6.608047442568932e-13,
+          -2.3800406090401796e-16,
+          5.0
+        ],
+        "geom_type": "CYLINDER",
+        "index_zero_based": 0
+      },
+      {
+        "area_mm2": 502.6548245744,
+        "bbox_mm": [
+          -8.001581461839477,
+          8.001581461839477,
+          -8.000000100000003,
+          8.000000100000001,
+          -0.0015814618394767628,
+          10.001581461839477
+        ],
+        "center_mm": [
+          5.266898028821743e-13,
+          -4.531965080989408e-16,
+          4.999999999999999
+        ],
+        "geom_type": "CYLINDER",
+        "index_zero_based": 1
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          -1.0000000355444797e-07,
+          1.0000000355444797e-07
+        ],
+        "center_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          0.0
+        ],
+        "geom_type": "PLANE",
+        "index_zero_based": 2
+      },
+      {
+        "area_mm2": 113.09733552923257,
+        "bbox_mm": [
+          -10.000000100000003,
+          10.000000100000003,
+          -9.99802339770066,
+          9.998023397700658,
+          9.999999899999997,
+          10.000000100000003
+        ],
+        "center_mm": [
+          5.329070518200751e-15,
+          -2.109423746787797e-15,
+          10.000000000000002
+        ],
+        "geom_type": "PLANE",
+        "index_zero_based": 3
+      }
+    ],
+    "recorded_tessellation": {
+      "angular_tolerance_rad": 0.08,
+      "linear_chord_deflection_mm": 0.05
+    },
+    "step_bytes_before": 9412,
+    "step_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_mesh_binding\\v4_run\\cylinder_asset_run01\\geometry\\solid.step",
+    "step_relative_path": "geometry/solid.step",
+    "step_sha256_before": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+  },
+  "input_step_unchanged": {
+    "bytes_after": 9412,
+    "same_bytes": true,
+    "sha256_after": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "sha256_before": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e"
+  },
+  "interpretation": {
+    "api_doc_mentions_triangulation_flag": true,
+    "diagnostic_conclusion": "Review raw per-face measurements; this diagnostic does not execute the binding helper or certify the asset.",
+    "evidence_for_runner_manifest_stage": true,
+    "explicit_geometry_bounds_are_same_shape_cache_invariant": true,
+    "identity_limit": "This process imports the STEP once by design. Stable bounds are shown invariant before/after tessellation on the same imported shape; re-import equality is not claimed by this diagnostic.",
+    "minimal_contract_guidance": "For persisted face identity, generate and recheck bounds using the same explicit geometry-only call BRepBndLib.AddOptimal_s(face.wrapped, box, False, False); store the resulting asset-order bounds and the canonical STEP SHA. Treat face.BoundingBox() without recorded cache provenance as a cache-sensitive observation. Keep strict tolerance unchanged.",
+    "not_a_binding_or_physics_pass": true,
+    "observed_cache_effect": true
+  },
+  "purpose": "Observe canonical STEP face bounds on one imported shape before and after exactly one existing mesh_shape call; no binding, asset write, STEP export, or physics qualification.",
+  "runtime": {
+    "cadquery_version": "2.8.0",
+    "no_bytecode_writes": true,
+    "ocp_version": "7.9.3.1",
+    "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "python_version": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "scope": {
+    "asset_write_count": 0,
+    "canonical_step_import_count": 1,
+    "mesh_shape_call_count": 1,
+    "same_imported_shape_used_before_and_after_mesh": true,
+    "step_export_count": 0,
+    "wall_binding_or_physics_pass_claimed": false
+  },
+  "source_sha256": {
+    "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/geom.py": "4a32ab0aabb4a045a4eacb3853c2ec126e3675d39357adb38923acc97c08fc6a",
+    "third_party/vesselforge-runtime/venv/Lib/site-packages/cadquery/occ_impl/shapes.py": "6f6a9136b45177bd9cb00ed1706f90078aab04ea2b1a7eb26ab5b46aa43f6c94",
+    "vesselforge/src/vesselforge/geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "vesselforge/src/vesselforge/wall_mesh_binding.py": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45",
+    "vesselforge/tmp/review_20261004/wall_mesh_binding/run_hollow_cylinder_binding.py": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc",
+    "vesselforge/tmp/review_20261004/wall_mesh_binding/v4_frozen/wall_mesh_binding.py": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "vesselforge/tmp/review_20261004/wall_mesh_binding/v4_run/cylinder_asset_run01/manifest.json": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "vesselforge/tmp/review_20261005/geometry_resume/diagnose_face_bounds_cache.py": "e1815e0d8fb7a373aa3bb6919f43c9d15dd4e2c9005ba81ec6719f37181b30e5"
+  },
+  "started_utc": "2026-10-04T18:23:38.839674+00:00",
+  "status": "DIAGNOSTIC_COMPLETE",
+  "tessellation_call": {
+    "angular_tolerance_rad": 0.08,
+    "function": "vesselforge.geometry.mesh_shape",
+    "is_relative": false,
+    "linear_chord_deflection_mm": 0.05,
+    "parallel": false,
+    "source_file": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\src\\vesselforge\\geometry.py",
+    "source_sha256": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047"
+  },
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+}

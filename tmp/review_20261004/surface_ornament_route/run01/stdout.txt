@@ -1,0 +1,1 @@
+STOP: runtime failure; evidence captured. AttributeError("'NoneType' object has no attribute '__dict__'")

@@ -1,0 +1,8 @@
+{
+  "fixture_id": "analytic_hollow_cylinder_20261004",
+  "note": "analytic fixture construction and canonical STEP import; no global wall or physical qualification",
+  "scope": "geometry_only",
+  "status": "PASS",
+  "tessellation_angular_tolerance_rad": 0.08,
+  "tessellation_chord_deflection_target_mm": 0.05
+}

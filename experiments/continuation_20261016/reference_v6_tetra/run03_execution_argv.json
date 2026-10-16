@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run03_witness_mesh.py"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "driver_sha256": "36b79b63eaab2005c896a2218cd4e9977c7479a511413e4d040356c6dc82b5e5",
+  "timeout_s": 120,
+  "started_utc": "2026-10-16T08:18:16.7713606+00:00"
+}

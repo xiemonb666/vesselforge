@@ -1,0 +1,18 @@
+{
+  "executable": "C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\python.exe",
+  "argv": [
+    "C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\fixture_once_check.py",
+    "--prototype",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\surface_mapping_prototype.py",
+    "--output-dir",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\surface_ornament_route\\run01"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "prototype_sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+  "checker_sha256": "bd4511b51b5ca4683825eca3f2b3e9e5fd51ca74563a8f361322b69bf30d084f",
+  "invocation_count_authorized": 1,
+  "python_invocation_status": "COMPLETED_RUNTIME_FAILURE_BEFORE_FIXTURE",
+  "python_exit_code": 5,
+  "python_invocation_count_actual": 1
+}

@@ -6,3 +6,6 @@ dist/
 build/
 *.egg-info/
 
+# 2026-10-16 pause delivery: local runtime caches and raw histories
+# Retained on disk; see A12 LOCAL_ARTIFACT_DELIVERY_BOUNDARY.json and inventory hashes.
+/tmp/review_20261007/c4_jar_native_ingress_20261007/stubs_7_9_3_1_1/cadquery_ocp_stubs-7.9.3.1.1-py3-none-win_amd64.whl

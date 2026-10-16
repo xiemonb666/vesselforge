@@ -1,0 +1,37 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\experiments\\continuation_20261015\\run_tetra_partition.py",
+    "--worker",
+    "--out",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\bowl_tetra\\run02"
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\experiments\\continuation_20261015\\run_tetra_partition.py",
+      "snapshot": "run_tetra_partition.py",
+      "sha256": "5ffe634cf3333f25ec62bb3e9cccab3bb5cccf6d8007b1890fe9249bfa448ee8",
+      "bytes": 2972
+    },
+    {
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\src\\vesselforge\\tetra_partition.py",
+      "snapshot": "tetra_partition.py",
+      "sha256": "ad7a41ff5d3ad911325bca386ef51c1fe84d62d1b5e9088bd1202b6b8dc9bcca",
+      "bytes": 10928
+    },
+    {
+      "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\pgfrag\\experiments\\cad_volume_spike.py",
+      "snapshot": "cad_volume_spike.py",
+      "sha256": "a0e01c1dcc7ecfb3b87dd05172a44805e82372f3261d07b99941111af636458c",
+      "bytes": 63054
+    }
+  ],
+  "timeout_s": 120,
+  "output_cap_bytes": 134217728,
+  "return_code": 0,
+  "status": "PASS_GEOMETRY_DIAGNOSTIC",
+  "elapsed_s": 2.7040000000015425,
+  "source_unchanged": true,
+  "output_bytes": 442294
+}

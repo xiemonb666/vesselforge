@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\geometry_resume\\diagnose_face_bounds_cache.py"
+  ],
+  "cwd": "C:\\Users\\xiemo\\Desktop\\ShardForge",
+  "started_utc": "2026-10-04T18:23:37.1518993Z",
+  "finished_utc": "2026-10-04T18:23:39.3534721Z",
+  "exit_code": 0,
+  "diagnostic_source_sha256": "e1815e0d8fb7a373aa3bb6919f43c9d15dd4e2c9005ba81ec6719f37181b30e5",
+  "executed_copy_sha256": "e1815e0d8fb7a373aa3bb6919f43c9d15dd4e2c9005ba81ec6719f37181b30e5",
+  "python_bytecode_writes": "disabled",
+  "stdout_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\geometry_resume\\diagnostic.stdout.txt",
+  "stderr_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\geometry_resume\\diagnostic.stderr.txt",
+  "diagnostic_report_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\geometry_resume\\diagnostic_report.json"
+}

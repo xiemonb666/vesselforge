@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+    ".\\vesselforge\\experiments\\surface_ornament_refinement_20261005\\refinement_prototype.py",
+    "--output",
+    ".\\vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run"
+  ],
+  "cases_file": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_refinement_20261005\\candidate_cases.json",
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "output_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261005\\ornament_resume\\local_refinement_run",
+  "python_no_bytecode_requested": false,
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+}

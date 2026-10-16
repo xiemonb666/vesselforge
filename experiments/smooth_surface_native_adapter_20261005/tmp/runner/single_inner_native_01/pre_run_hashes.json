@@ -1,0 +1,17 @@
+{
+  "adapter_sha256": "7d745f48111d24b38a288714b580c0eefe55415b2998351bf6144fa1cf4dab76",
+  "frozen_inputs_record_sha256": "dc1125330064a18ff0936356d20c5289911929a6eed01c46f01f2c3c305c0f02",
+  "approval_sha256": "4e3e1dd952ba16a67dc0eda9298b4427f76e997f28a3375dff973f8a91a233cd",
+  "review_record_sha256": "4be5467f4ba6cad657e4de2eda20d772a9d69fab809aa22d4d294f5a5bd76b4b",
+  "freeze_manifest_sha256": "35fe13502da52b67ae3d7a15ce1b7566f050ab339f04cd9708c7ee56b7ed82f4",
+  "math_diagnostics_report_sha256": "88b09514619fa62e1df1afb4954d4be14275b3907fad76ba13749c066933b550",
+  "frozen_file_sha256_by_role": {
+    "candidate_case": "2d7a0950f870a8663f7e326275e3c666d880e906d04fccbcd0f1ba7d453fd3c0",
+    "wrapper_source": "f3315ac8d1fc112f4dc0af4bb4cea86dddd262052bcbc94c6f776780aefbbec8",
+    "plot_source": "80c9dbbece8c583b63fcabf7c241f56316ff3c0a7af07692573c6cd740014d84",
+    "design_note": "0ef94eca0abc08f3f85461ef9ed6fd3827d2d14af15636dd54119afca1bbd225",
+    "review_budget": "07c2c3a31614828c9570558a2ebfd74790a6334059b03bbbdcd3a205b85d1191",
+    "parent_math_source": "4a90264b83e465af8bdb4dc7771f61ab4cb8314bc8d4d0ef540952310f3cb85b",
+    "parent_case": "7e65d490c5cf1a5fa80d9964b1c89392c06a30290768bf00bfad03b4e757d391"
+  }
+}

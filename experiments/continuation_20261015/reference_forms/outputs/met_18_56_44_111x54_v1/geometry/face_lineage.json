@@ -1,0 +1,159 @@
+{
+  "face_count": 18,
+  "faces": {
+    "0": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "base",
+      "source_segment_indices": [
+        0
+      ],
+      "surface_type_occ_id": 0
+    },
+    "1": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_inner",
+      "source_segment_indices": [
+        1
+      ],
+      "surface_type_occ_id": 7
+    },
+    "10": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        10
+      ],
+      "surface_type_occ_id": 7
+    },
+    "11": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        11
+      ],
+      "surface_type_occ_id": 4
+    },
+    "12": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        12
+      ],
+      "surface_type_occ_id": 1
+    },
+    "13": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        13
+      ],
+      "surface_type_occ_id": 4
+    },
+    "14": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        14
+      ],
+      "surface_type_occ_id": 0
+    },
+    "15": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        15
+      ],
+      "surface_type_occ_id": 4
+    },
+    "16": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "foot",
+      "source_segment_indices": [
+        16
+      ],
+      "surface_type_occ_id": 1
+    },
+    "17": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "base",
+      "source_segment_indices": [
+        17
+      ],
+      "surface_type_occ_id": 0
+    },
+    "2": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "rim",
+      "source_segment_indices": [
+        2
+      ],
+      "surface_type_occ_id": 4
+    },
+    "3": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        3
+      ],
+      "surface_type_occ_id": 7
+    },
+    "4": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        4
+      ],
+      "surface_type_occ_id": 7
+    },
+    "5": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        5
+      ],
+      "surface_type_occ_id": 7
+    },
+    "6": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        6
+      ],
+      "surface_type_occ_id": 7
+    },
+    "7": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        7
+      ],
+      "surface_type_occ_id": 7
+    },
+    "8": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        8
+      ],
+      "surface_type_occ_id": 7
+    },
+    "9": {
+      "lineage_basis": "generated face from source meridian edge; propagated by BRepBuilderAPI_Sewing.Modified",
+      "role": "body_outer",
+      "source_segment_indices": [
+        9
+      ],
+      "surface_type_occ_id": 7
+    }
+  },
+  "region_roles": [
+    "base",
+    "body_inner",
+    "body_outer",
+    "foot",
+    "rim"
+  ],
+  "schema": "vf.native_meridian_face_lineage.v1",
+  "source_revolved_face_count": 18,
+  "status": "PASS"
+}

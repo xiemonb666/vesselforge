@@ -1,0 +1,33 @@
+{
+  "approved_by": "main agent",
+  "argv": [
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_profile_catalog.py",
+    "--junitxml=tmp/review_20261004/profile_catalog/v3_run/junit.xml"
+  ],
+  "environment": {
+    "PYTEST_ADDOPTS": "-p no:cacheprovider",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "src"
+  },
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "expected_case_count": 17,
+  "expected_junit_path": "tmp/review_20261004/profile_catalog/v3_run/junit.xml",
+  "frozen_utc": "2026-10-04T14:10:06.692558+00:00",
+  "locked_source_sha256": {
+    "third_party/vesselforge-runtime/venv/Scripts/python.exe": "2b83f3f84ea2f51132fa1aae73815be54126a799521de85ff6ea70627cde6da7",
+    "vesselforge/pyproject.toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad",
+    "vesselforge/src/vesselforge/profile_catalog.py": "e9d4bc1458a107208e537449d6526f1c0077d6d3afc6953a6200d86512f9c26f",
+    "vesselforge/tests/test_profile_catalog.py": "ab890ef3a606becd480911214903013239b5eab98f87da77e0ef15c9cad39c51",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3.diff": "59e856126d5717372a0e5b47b4d0b13cc535d140a22d4a85733c1d3be7579ea0",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/freeze_v3_pytest.py": "26253915a3d7349caf18075110807c08c962452378ef26d1dd195765ab542234",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_run/run_v3_pytest.py": "e9525a093b714949d131e6010e098570ff0aa22343cc15e0e66230c330f20edc",
+    "vesselforge/tmp/review_20261004/profile_catalog/v3_source_test_freeze.json": "7df2ff6804e2fdcaf52c6eec2ebc0e4197ce96ca442c4289b0f1916e523bd15f"
+  },
+  "schema": "vesselforge.profile_catalog.v3_pytest_prefreeze/0.1.0",
+  "scope": "tests/test_profile_catalog.py only; no other suite, CAD, or solver",
+  "status": "FROZEN_BEFORE_TEST_RUN",
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge"
+}

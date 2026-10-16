@@ -1,0 +1,23 @@
+{
+  "case_id": "spherical_bowl_four_bands_20261015",
+  "output_relative": "data/continuation_20261015/spherical_bowl/four_bands",
+  "pattern": "four_bands",
+  "seed": 20261015,
+  "spec": {
+    "outer_radius_mm": 12.0,
+    "inner_radius_mm": 8.0,
+    "center_xyz_mm": [0.0, 0.0, 12.0],
+    "tessellation_linear_mm": 0.04,
+    "tessellation_angular_rad": 0.02
+  },
+  "expected_mechanics": {
+    "rho_kg_m3": 2300.0,
+    "E_pa": 70000000000.0,
+    "nu": 0.25,
+    "Gc_j_m2": 7.6
+  },
+  "run_bounds": {
+    "wall_seconds_max": 60,
+    "package_bytes_max": 33554432
+  }
+}

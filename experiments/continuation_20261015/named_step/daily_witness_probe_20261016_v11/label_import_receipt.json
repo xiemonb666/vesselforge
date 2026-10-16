@@ -1,0 +1,37 @@
+{
+  "native_body_step_sha256": "756f64bd6538216c1d88a26429706239d5f885eb0895470ca55557fdffb4bc56",
+  "result": {
+    "failure": "Gmsh STEP labels do not provide unique complete boundary coverage: missing=['original-brep-face-000', 'original-brep-face-001', 'original-brep-face-002', 'original-brep-face-003', 'original-brep-face-004', 'original-brep-face-005', 'original-brep-face-006', 'original-brep-face-007', 'original-brep-face-008', 'original-brep-face-009', 'original-brep-face-010', 'original-brep-face-011', 'original-brep-face-012', 'original-brep-face-013', 'original-brep-face-014', 'original-brep-face-015'], unexpected=[{'imported_surface_tag': 1, 'entity_name': ''}, {'imported_surface_tag': 2, 'entity_name': ''}, {'imported_surface_tag': 3, 'entity_name': ''}, {'imported_surface_tag': 4, 'entity_name': ''}, {'imported_surface_tag': 5, 'entity_name': ''}, {'imported_surface_tag': 6, 'entity_name': ''}, {'imported_surface_tag': 7, 'entity_name': ''}, {'imported_surface_tag': 8, 'entity_name': ''}, {'imported_surface_tag': 9, 'entity_name': ''}, {'imported_surface_tag': 10, 'entity_name': ''}, {'imported_surface_tag': 11, 'entity_name': ''}, {'imported_surface_tag': 12, 'entity_name': ''}, {'imported_surface_tag': 13, 'entity_name': ''}, {'imported_surface_tag': 14, 'entity_name': ''}, {'imported_surface_tag': 15, 'entity_name': ''}, {'imported_surface_tag': 16, 'entity_name': ''}], expected=16, bound=0",
+    "gmsh_occ_import_labels": 1,
+    "imported_boundary_surface_count": 16,
+    "imported_surface_entity_names": {
+      "1": "",
+      "10": "",
+      "11": "",
+      "12": "",
+      "13": "",
+      "14": "",
+      "15": "",
+      "16": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": ""
+    },
+    "imported_volume_count": 1,
+    "interpretation": "STEP advanced-face names did not bind to Gmsh OCC boundary surfaces; witness ancestry is evaluated separately",
+    "status": "FAIL_UNRESOLVED_GMSH_FACE_LABELS",
+    "step_sha256": "756f64bd6538216c1d88a26429706239d5f885eb0895470ca55557fdffb4bc56"
+  },
+  "schema": "vesselforge.daily_named_step_label_probe.v1",
+  "source_hashes": {
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e"
+  }
+}

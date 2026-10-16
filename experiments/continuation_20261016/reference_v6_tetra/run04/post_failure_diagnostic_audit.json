@@ -1,0 +1,350 @@
+{
+  "ancestry_diagnostics": {
+    "all_exterior_triangles_have_exact_manifest_id_and_role": true,
+    "cut_parent_map_row_count": 18,
+    "interface_source_FID_count": 0,
+    "per_FID_mesh_surface_area_and_chord_rows": [
+      {
+        "mesh_triangle_area_m2": 0.00034449867117386523,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0003463605900582747,
+        "raw_CAD_pre_cut_area_m2": 0.0003463605900582747,
+        "role": "base",
+        "source_face_id": "original-brep-face-000",
+        "triangle_count": 241,
+        "triangle_edge_chord_mm": {
+          "max": 2.5916087100873395,
+          "median": 1.8576589295913035,
+          "min": 1.310735268788436,
+          "p1": 1.4000990516710807,
+          "p95": 2.115825438204531
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.014058648387250605,
+        "raw_CAD_post_cut_descendant_area_m2": 0.014061116067744493,
+        "raw_CAD_pre_cut_area_m2": 0.014061113637872233,
+        "role": "body_inner",
+        "source_face_id": "original-brep-face-001",
+        "triangle_count": 8695,
+        "triangle_edge_chord_mm": {
+          "max": 3.0753877701488435,
+          "median": 1.9648947100908252,
+          "min": 1.2230188428756337,
+          "p1": 1.482069939031164,
+          "p95": 2.1186740586675765
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0008160527873825353,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0010494304825584644,
+        "raw_CAD_pre_cut_area_m2": 0.0010494304825583547,
+        "role": "rim",
+        "source_face_id": "original-brep-face-002",
+        "triangle_count": 529,
+        "triangle_edge_chord_mm": {
+          "max": 2.7506889320059065,
+          "median": 1.971273599377522,
+          "min": 0.9999999999931758,
+          "p1": 1.00000000000003,
+          "p95": 2.4686805697677237
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.004074904565917956,
+        "raw_CAD_post_cut_descendant_area_m2": 0.004075392331114214,
+        "raw_CAD_pre_cut_area_m2": 0.004075392331114214,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-003",
+        "triangle_count": 2507,
+        "triangle_edge_chord_mm": {
+          "max": 2.6924078572620838,
+          "median": 1.9811561369837265,
+          "min": 1.0825017465755207,
+          "p1": 1.4386594884577721,
+          "p95": 2.24316121159467
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.004788300718149948,
+        "raw_CAD_post_cut_descendant_area_m2": 0.004788881052609002,
+        "raw_CAD_pre_cut_area_m2": 0.004788881052409136,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-004",
+        "triangle_count": 2969,
+        "triangle_edge_chord_mm": {
+          "max": 2.7366719086821103,
+          "median": 1.9706256781881646,
+          "min": 1.3741275672828512,
+          "p1": 1.4529059802962208,
+          "p95": 2.183890044315929
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.003952219787738971,
+        "raw_CAD_post_cut_descendant_area_m2": 0.003952971307961562,
+        "raw_CAD_pre_cut_area_m2": 0.003952971307961564,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-005",
+        "triangle_count": 2486,
+        "triangle_edge_chord_mm": {
+          "max": 2.657628288133851,
+          "median": 1.9445127641983286,
+          "min": 1.355072756588876,
+          "p1": 1.4680412387359172,
+          "p95": 2.1819989153782755
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.001384352108639776,
+        "raw_CAD_post_cut_descendant_area_m2": 0.001384662825427876,
+        "raw_CAD_pre_cut_area_m2": 0.0013846628254278765,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-006",
+        "triangle_count": 925,
+        "triangle_edge_chord_mm": {
+          "max": 2.6431161620036465,
+          "median": 1.9201346423440848,
+          "min": 1.2030689162397648,
+          "p1": 1.3380336114079747,
+          "p95": 2.263306698726613
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0009158012815140341,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0009161021883917243,
+        "raw_CAD_pre_cut_area_m2": 0.0009161021883917243,
+        "role": "body_outer",
+        "source_face_id": "original-brep-face-007",
+        "triangle_count": 631,
+        "triangle_edge_chord_mm": {
+          "max": 2.552875686085932,
+          "median": 1.876524689866182,
+          "min": 1.259640385303419,
+          "p1": 1.3470026979066647,
+          "p95": 2.1942913193644014
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0003698712365432123,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0003708521715175104,
+        "raw_CAD_pre_cut_area_m2": 0.000370852171540533,
+        "role": "foot",
+        "source_face_id": "original-brep-face-008",
+        "triangle_count": 279,
+        "triangle_edge_chord_mm": {
+          "max": 2.5218117118472443,
+          "median": 1.8004412024645153,
+          "min": 1.1769279257851104,
+          "p1": 1.2071598590561825,
+          "p95": 2.1946870356842516
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 6.818623410807319e-05,
+        "raw_CAD_post_cut_descendant_area_m2": 7.55928293349813e-05,
+        "raw_CAD_pre_cut_area_m2": 7.559282933497036e-05,
+        "role": "foot",
+        "source_face_id": "original-brep-face-009",
+        "triangle_count": 105,
+        "triangle_edge_chord_mm": {
+          "max": 2.02163298826486,
+          "median": 1.673069026678116,
+          "min": 0.3826834323650191,
+          "p1": 0.38268343236502883,
+          "p95": 1.9690942073392952
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0005840829349745679,
+        "raw_CAD_post_cut_descendant_area_m2": 0.00058433623356774,
+        "raw_CAD_pre_cut_area_m2": 0.0005843362335677401,
+        "role": "foot",
+        "source_face_id": "original-brep-face-010",
+        "triangle_count": 414,
+        "triangle_edge_chord_mm": {
+          "max": 2.307312092266677,
+          "median": 1.8717334200905134,
+          "min": 1.4780467854562804,
+          "p1": 1.4780659648436811,
+          "p95": 1.9501947938546302
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 6.818623410807323e-05,
+        "raw_CAD_post_cut_descendant_area_m2": 7.559282933497003e-05,
+        "raw_CAD_pre_cut_area_m2": 7.559282933496994e-05,
+        "role": "foot",
+        "source_face_id": "original-brep-face-011",
+        "triangle_count": 105,
+        "triangle_edge_chord_mm": {
+          "max": 2.021632988264844,
+          "median": 1.6730690266781163,
+          "min": 0.3826834323650885,
+          "p1": 0.3826834323650897,
+          "p95": 1.9690942073392983
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.00017580265230861982,
+        "raw_CAD_post_cut_descendant_area_m2": 0.00017592918860102826,
+        "raw_CAD_pre_cut_area_m2": 0.00017592918860102847,
+        "role": "foot",
+        "source_face_id": "original-brep-face-012",
+        "triangle_count": 99,
+        "triangle_edge_chord_mm": {
+          "max": 2.7085981732649436,
+          "median": 2.0169747752584537,
+          "min": 1.2764217403263949,
+          "p1": 1.2806139755583767,
+          "p95": 2.599639393727065
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 5.705816657657233e-05,
+        "raw_CAD_post_cut_descendant_area_m2": 6.258163228029293e-05,
+        "raw_CAD_pre_cut_area_m2": 6.258163228028977e-05,
+        "role": "foot",
+        "source_face_id": "original-brep-face-013",
+        "triangle_count": 89,
+        "triangle_edge_chord_mm": {
+          "max": 2.009705250236096,
+          "median": 1.6181582159112762,
+          "min": 0.3826834323650668,
+          "p1": 0.3826834323650669,
+          "p95": 1.961477393196128
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0004709142096216602,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0004712388980384379,
+        "raw_CAD_pre_cut_area_m2": 0.0004712388980384379,
+        "role": "foot",
+        "source_face_id": "original-brep-face-014",
+        "triangle_count": 326,
+        "triangle_edge_chord_mm": {
+          "max": 2.332240561126187,
+          "median": 1.9535559842896855,
+          "min": 1.5269747604546327,
+          "p1": 1.5285138614109546,
+          "p95": 2.029197857978369
+        }
+      },
+      {
+        "mesh_triangle_area_m2": 0.0004888577032507215,
+        "raw_CAD_post_cut_descendant_area_m2": 0.0004908738521234052,
+        "raw_CAD_pre_cut_area_m2": 0.0004908738521234052,
+        "role": "base",
+        "source_face_id": "original-brep-face-015",
+        "triangle_count": 330,
+        "triangle_edge_chord_mm": {
+          "max": 2.3163369875614213,
+          "median": 1.9162158569371748,
+          "min": 1.332803307255423,
+          "p1": 1.3781339236055425,
+          "p95": 2.1273924288601704
+        }
+      }
+    ],
+    "per_FID_raw_CAD_area_conservation_tolerance": 1e-05,
+    "raw_cut_parent_maps_preserve_signed_tags": true,
+    "raw_cut_plane_ancestry_covers_every_interface_surface": true,
+    "raw_source_face_ancestry_does_not_intersect_interface": true,
+    "source_face_id_count": 16
+  },
+  "diagnostic_files": {
+    "FAILED_GEOMETRY_NOT_FOR_SIMULATION.json": {
+      "bytes": 69515,
+      "sha256": "bd822c12544f0b913cf7916847ad028c6b0700d58708729ea4039129948963df"
+    },
+    "FAILED_GEOMETRY_NOT_FOR_SIMULATION.msh": {
+      "bytes": 2424715,
+      "sha256": "7f2bbdc0ddb3644dc0147f0b149033b95d6ea3d53329bb9c84f0f700fee65c68"
+    },
+    "FAILED_GEOMETRY_NOT_FOR_SIMULATION.npz": {
+      "bytes": 939485,
+      "sha256": "aa9aa97c500853ecae010b5e330392ba277dd2bb21f236efbed1696a6dcac3bb"
+    }
+  },
+  "driver_sha256": "e48ec30ebf93522c8b969f5a99c67ca7f6f74c0d8721854d91861aa978135986",
+  "failure_error": "ValueError: tetrahedral volume differs from imported CAD volume by more than 1%: 1.125% (tetrahedra=31808, mesh_volume_m3=3.2616566867e-05, cad_volume_m3=3.29877728291e-05, cad_partition_volumes_m3=[1.64938711267528e-05, 1.6493883260964347e-05], forecast=82470)",
+  "input_hashes": {
+    "daily_native_named.step": "32b2735010a086eb809674ca07bc4cd0dc5ca499e3adc539eedeca7657e1df9d",
+    "face_lineage.json": "9e6c789989cb0f5f42ed9c37f0264bc02899a9c29f571254938a4781640bcfd2",
+    "geometry_report.json": "6fcd73b5496e2b6936121b3e551a421ffca6de4d892728b863cb6a2afff4a565",
+    "label_import_receipt.json": "6576c96270fa91685865b9dca24210176591f52290b5849cf1255b90298deff4",
+    "native_face_identity.json": "b101f3ae3262659f4d3140307ee9473340110a5dfeb23f963379e0040c8dcac3",
+    "section.json": "668a3843e6454f9a952e4cd02b80ae3fa1b9e94693557cbd36c008a96868e6fb",
+    "solid.step": "1cd34bc5f5b3cf8b6b937afeb7345b982c9de01165f0d570ca11b83f3ea31c0e",
+    "v15_receipt.json": "f7478ea8fc5916bcd2e1e95232f052469f96b09c3a642f9d5aa3ee763e8af5fc",
+    "witness_manifest.json": "f053759bc715758f99e1eb62e2c0da561a96b78e29259e925692b91583c4806d"
+  },
+  "mesh_counts": {
+    "exterior_triangles": 20730,
+    "exterior_unique_source_face_ids": [
+      "original-brep-face-000",
+      "original-brep-face-001",
+      "original-brep-face-002",
+      "original-brep-face-003",
+      "original-brep-face-004",
+      "original-brep-face-005",
+      "original-brep-face-006",
+      "original-brep-face-007",
+      "original-brep-face-008",
+      "original-brep-face-009",
+      "original-brep-face-010",
+      "original-brep-face-011",
+      "original-brep-face-012",
+      "original-brep-face-013",
+      "original-brep-face-014",
+      "original-brep-face-015"
+    ],
+    "interface_triangles": 278,
+    "nodes": 10631,
+    "tetrahedra": 31808
+  },
+  "note": "The diagnostic mesh failed the unchanged 1% tetrahedral-versus-CAD body-volume gate. These arrays are retained only for surface/chord analysis and are not qualified for simulation.",
+  "preflight_sha256": "b94451f72ca392487d9c2c0ba2e973f84ccc27c9eda6378ce3e5d76fac0e48d9",
+  "qualification": "NOT_QUALIFIED",
+  "schema": "vesselforge.reference_v6_failed_mesh_diagnostic_audit.v1",
+  "status": "DIAGNOSTIC_ONLY_FAILED_GEOMETRY_NOT_FOR_SIMULATION",
+  "tetra_geometry_diagnostics": {
+    "CAD_volume_m3": 3.29877728291e-05,
+    "all_signed_tetra_volumes_positive": true,
+    "gmsh_minSICN": {
+      "available": true,
+      "method": "Gmsh 4.15.2 getElementQualities(..., minSICN) on separately reopened diagnostic-only MSH",
+      "quantiles": {
+        "max": 0.997716996248951,
+        "median": 0.8896838706336025,
+        "min": 0.13209068315578468,
+        "p1": 0.3449795912535911,
+        "p95": 0.9655800493720526
+      },
+      "tetrahedra_reopened_from_msh": 31808
+    },
+    "mesh_volume_m3_from_gate": 3.2616566867e-05,
+    "minimum_signed_tetra_volume_m3": 3.193056540901949e-11,
+    "recomputed_tetrahedral_volume_m3": 3.261656686702909e-05,
+    "relative_volume_error": 0.011252834922293946,
+    "tetra_minimum_altitude_mm": {
+      "max": 1.9490365590709455,
+      "median": 1.4119676232076095,
+      "min": 0.14298215065965175,
+      "p1": 0.49896636053678733,
+      "p95": 1.6163021142476328
+    },
+    "unchanged_gate_tolerance": 0.01
+  },
+  "topology_diagnostics": {
+    "CAD_partition_volume_relative_error": 5.590369180012854e-07,
+    "cad_partition_volumes_m3": [
+      1.64938711267528e-05,
+      1.6493883260964347e-05
+    ],
+    "closed_tetra_boundary_topology_verified": true,
+    "declared_CAD_partition_volume_tolerance": 1e-06,
+    "every_interface_triangle_has_two_distinct_parent_cells_from_opposite_partitions": true,
+    "stored_exterior_triangles_match_one_parent_faces": true,
+    "stored_interface_triangles_match_cross_partition_faces": true
+  }
+}

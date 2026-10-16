@@ -1,0 +1,12 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+rootdir: C:\Users\xiemo\Desktop\ShardForge\vesselforge
+configfile: pyproject.toml
+collected 57 items
+
+tests\test_brep_identity.py ...............                              [ 26%]
+tests\test_wall_mesh_binding.py ........................................ [ 96%]
+..                                                                       [100%]
+
+- generated xml file: C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261005\geometry_resume\targeted_pytest.junit.xml -
+============================= 57 passed in 1.80s ==============================

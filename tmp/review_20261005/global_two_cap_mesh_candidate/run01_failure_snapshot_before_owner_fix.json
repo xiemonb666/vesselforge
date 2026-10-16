@@ -1,0 +1,91 @@
+{
+  "snapshot_id": "global_two_cap_run01_failure_before_owner_fix",
+  "captured_at_utc": "2026-10-05T12:17:39.0496739Z",
+  "statement": "Immutable hash inventory of pre-fix source/freeze and the failed run01 artifacts; files themselves are not rewritten.",
+  "prior_freeze_sha256": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5",
+  "prior_source_files": [
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate.py",
+      "bytes": 44079,
+      "sha256": "9f09faf13fb423d1cbf6aeec0f41e4ece7533e648adf0e8b26762669a892c114"
+    },
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/focused_checks.py",
+      "bytes": 48816,
+      "sha256": "e5e4f5cfecf7aa46b6c445083f11686bf5653975993b0e21cfad8c8a0e41c141"
+    },
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/candidate_contract.json",
+      "bytes": 7340,
+      "sha256": "302e0bc626dfb6d9fd62d279bd00c586f4657b187108d324dfdc65c1368eca97"
+    },
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/SOURCE_REVIEW.md",
+      "bytes": 3455,
+      "sha256": "0a5d4165bddd0e7ba6908db33ff306d353b8c3007d86e3d2ad6496a704989b1c"
+    },
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/run_candidate_once.py",
+      "bytes": 16211,
+      "sha256": "eddce6d5b1b8d8cd1b244c7380969e752e7633276aa577118ca9ab9e707d7757"
+    },
+    {
+      "path": "vesselforge/experiments/global_two_cap_mesh_candidate_20261005/SOURCE_FREEZE.json",
+      "bytes": 4699,
+      "sha256": "c4f209b32ae34c7affb7c8699320c9ba6f82665af8bc5777ad68b0f9cb0460a5"
+    }
+  ],
+  "prior_run01_and_review_files": [
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/prewrite_budget_audit.py",
+      "bytes": 16801,
+      "sha256": "8c40323ea35ef534739894a32a6dce26a7056c3c2c0514ea72d590567767c48e"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/prewrite_budget_audit.json",
+      "bytes": 20475,
+      "sha256": "9aa9464977a3d551585182ab2b355b09f4b2f7db8843b9056fe0baf5cba9a5c1"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_two_cap/parent_runner_combined_output.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_two_cap/parent_runner_receipt.json",
+      "bytes": 4510,
+      "sha256": "98a8585612e7ba7227b04978daf3868ccf89bfbf861bcd452f01743396f59a0e"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_two_cap/run_receipt.json",
+      "bytes": 1757,
+      "sha256": "34eec1b7328dd52854c91efd09f02886d10c4e0b66b2fbba1bf68d2a77e5a2d6"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_outer_stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_outer_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_two_cap_mesh_candidate/run01_outer_process_receipt.json",
+      "bytes": 7411,
+      "sha256": "c211d25625ffc95158fbf69634c23f9f39631c192d78268bdf3799e6660cc52d"
+    },
+    {
+      "path": "vesselforge/tmp/review_20261005/global_mesh_quality_candidate/run02_v2bugfix/candidate_arrays.npz",
+      "bytes": 1049265,
+      "sha256": "11f3ddad24e8d8a1aa2d46d6e8be9b28049c87ad6226e47cf84eaff9eae167d9"
+    }
+  ],
+  "prior_run01_artifact_total_bytes": 6267,
+  "prior_run01_file_names": [
+    "parent_runner_combined_output.bin",
+    "parent_runner_receipt.json",
+    "run_receipt.json"
+  ]
+}

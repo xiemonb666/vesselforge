@@ -1,0 +1,14 @@
+{
+  "executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "argv": [
+    "-m",
+    "pytest",
+    "-s",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--junitxml=C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tmp\\review_20261004\\wall_reference\\v3_review\\run3\\test_wall_reference.junit.xml",
+    "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\tests\\test_wall_reference.py"
+  ],
+  "working_directory": "C:\\Users\\xiemo\\Desktop\\ShardForge"
+}

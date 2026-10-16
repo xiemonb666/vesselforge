@@ -1,0 +1,887 @@
+{
+  "run_receipt": {
+    "attempted_case_ids": [
+      "local_a_0p50mm",
+      "local_b_0p25mm"
+    ],
+    "baseline_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+    "case_elapsed_seconds": {
+      "local_a_0p50mm": 7.555535899940878,
+      "local_b_0p25mm": 14.370076199993491
+    },
+    "case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+    "completed_case_ids": [
+      "local_a_0p50mm",
+      "local_b_0p25mm"
+    ],
+    "elapsed_seconds": 21.945334599819034,
+    "ended_at_utc": "2026-10-04T19:11:38.737918+00:00",
+    "exit_code": 0,
+    "not_run_case_ids": [],
+    "source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+    "started_at_utc": "2026-10-04T19:11:16.791804+00:00",
+    "status": "PASS_ALL_CANDIDATES"
+  },
+  "cases": [
+    {
+      "case_id": "local_a_0p50mm",
+      "array_schema": [
+        {
+          "field": "vertices_rest_xyz_mm",
+          "shape": [
+            9490,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "vertices_relief_xyz_mm",
+          "shape": [
+            9490,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "faces",
+          "shape": [
+            18976,
+            3
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "outer_vertex_indices",
+          "shape": [
+            6288
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "outer_theta_rad",
+          "shape": [
+            6288
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_z_mm",
+          "shape": [
+            6288
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_color_linear_rgb",
+          "shape": [
+            6288,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_color_srgb_for_display",
+          "shape": [
+            6288,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_relief_height_mm",
+          "shape": [
+            6288
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_normals_analytic_displaced",
+          "shape": [
+            6288,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_source_face_ids",
+          "shape": [
+            6144
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "source_face_ids",
+          "shape": [
+            18976
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "face_corner_barycentric_to_source",
+          "shape": [
+            18976,
+            3,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "vertex_lineage_source_face_id",
+          "shape": [
+            9490
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "vertex_lineage_barycentric",
+          "shape": [
+            9490,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_base_linear_rgb",
+          "shape": [
+            3200,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_base_srgb",
+          "shape": [
+            3200,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "baseline_fixture_arrays_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "refinement_source_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "case_freeze_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "outer_radius_mm",
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "original_vertex_count",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "original_face_count",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "refinement_rounds",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "target_edge_mm",
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        }
+      ],
+      "array_finite_all_float_fields": true,
+      "indices_valid": true,
+      "outer_all_face_vertices_are_indexed": true,
+      "checks_recorded_pass": true,
+      "topology_independent_relief_xyz": {
+        "vertex_count": 9490,
+        "face_count": 18976,
+        "unique_undirected_edge_count": 28464,
+        "boundary_edge_count": 0,
+        "non_two_incidence_edge_count": 0,
+        "inconsistent_winding_edge_count": 0,
+        "connected_component_count": 1,
+        "euler_characteristic": 2,
+        "duplicate_face_count_unoriented": 0,
+        "repeated_vertex_face_count": 0,
+        "zero_area_face_count_threshold_1e-12_mm2_double_area": 0,
+        "minimum_double_area_mm2": 0.12271760931148541,
+        "signed_volume_mm3": 10202.014178867737,
+        "positive_signed_volume": true
+      },
+      "rest_xyz_signed_volume_mm3": 10182.657587600976,
+      "topology_matches_recorded_checks": {
+        "vertex_count": true,
+        "face_count": true,
+        "unique_undirected_edge_count": true,
+        "boundary_edge_count": true,
+        "non_two_incidence_edge_count": true,
+        "inconsistent_winding_edge_count": true,
+        "connected_component_count": true,
+        "euler_characteristic": true,
+        "signed_volume_mm3": true
+      },
+      "lineage_internal_validation": {
+        "face_source_ids_range_0_to_original_face_count_minus_1": true,
+        "face_corner_barycentric_shape": [
+          18976,
+          3,
+          3
+        ],
+        "face_corner_barycentric_min": 0.0,
+        "face_corner_barycentric_max": 1.0,
+        "face_corner_barycentric_max_sum_error": 0.0,
+        "face_corner_barycentric_simplex_pass": true,
+        "new_vertex_count": 3088,
+        "new_vertex_lineage_source_ids_valid": true,
+        "new_vertex_lineage_barycentric_max_sum_error": 0.0,
+        "new_vertex_lineage_barycentric_simplex_pass": true,
+        "independent_source_triangle_reconstruction": "NOT_REPRODUCIBLE_FROM_CANDIDATE_NPZ_ALONE; source baseline face connectivity is absent",
+        "prototype_check_claims": {
+          "face_source_triangle_lineage_present": true,
+          "face_lineage_chart_max_residual_mm": 1.7763568394002505e-14,
+          "lineage_reconstruction_pass": true,
+          "new_vertex_lineage_chart_max_residual_mm": 1.7763568394002505e-14
+        }
+      },
+      "outer_mesh_independent_metrics": {
+        "outer_triangle_count": 12320,
+        "outer_source_face_ids_count": 6144,
+        "outer_source_face_count_matches_check": true,
+        "support_transition_classification": "outer triangle has at least one vertex with outer_relief_height_mm > 0.0",
+        "support_transition_triangle_count": 2624,
+        "maximum_relief_height_mm": 0.45,
+        "chart_max_edge_support_transition_mm": 0.5,
+        "chart_max_edge_over_global_relief_height": 1.1111111111111112,
+        "displaced_3d_max_chord_edge_support_transition_mm": 0.5225488926868456,
+        "displaced_3d_max_chord_edge_over_global_relief_height": 1.1612197615263236,
+        "chart_max_edge_all_outer_mm": 1.4013666739272455,
+        "chart_max_edge_all_outer_triangle_original_face_id": 164,
+        "chart_max_edge_all_outer_triangle_edges_mm": [
+          0.9817477042468248,
+          1.0,
+          1.4013666739272455
+        ],
+        "target_chart_edge_mm": 0.5,
+        "support_transition_chart_target_pass_independent": true,
+        "max_chart_edge_over_height_vs_record": true,
+        "max_displaced_edge_over_height_vs_record": true,
+        "worst_triangles": {
+          "chart_quality": {
+            "candidate_face_index": 3662,
+            "source_face_id": 2750,
+            "candidate_vertex_indices": [
+              1504,
+              8092,
+              6688
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8579908700641523,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.0371192441091326,
+            "chart_edges_mm": [
+              0.35034166848180204,
+              0.35034166848180204,
+              0.5
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.3503658683613263,
+              0.3503405895473182,
+              0.5000087854722983
+            ],
+            "relief_height_at_vertices_mm": [
+              0.0029640427599611336,
+              0.0,
+              0.0
+            ],
+            "chart_area_mm2": 0.06135923151542322,
+            "displaced_3d_area_mm2": 0.06136331642648048
+          },
+          "chart_aspect": {
+            "candidate_face_index": 3662,
+            "source_face_id": 2750,
+            "candidate_vertex_indices": [
+              1504,
+              8092,
+              6688
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8579908700641523,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.0371192441091326,
+            "chart_edges_mm": [
+              0.35034166848180204,
+              0.35034166848180204,
+              0.5
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.3503658683613263,
+              0.3503405895473182,
+              0.5000087854722983
+            ],
+            "relief_height_at_vertices_mm": [
+              0.0029640427599611336,
+              0.0,
+              0.0
+            ],
+            "chart_area_mm2": 0.06135923151542322,
+            "displaced_3d_area_mm2": 0.06136331642648048
+          },
+          "displaced_3d_quality": {
+            "candidate_face_index": 4806,
+            "source_face_id": 3006,
+            "candidate_vertex_indices": [
+              1632,
+              8336,
+              6892
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8420071738295044,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.1110573550532443,
+            "chart_edges_mm": [
+              0.35034166848180204,
+              0.35034166848180204,
+              0.5
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.36194839097284437,
+              0.3578818171207668,
+              0.5225488926868456
+            ],
+            "relief_height_at_vertices_mm": [
+              0.24105928085519923,
+              0.15701501581109503,
+              0.0892128279883382
+            ],
+            "chart_area_mm2": 0.06135923151542322,
+            "displaced_3d_area_mm2": 0.06467312330350244
+          },
+          "displaced_3d_aspect": {
+            "candidate_face_index": 4806,
+            "source_face_id": 3006,
+            "candidate_vertex_indices": [
+              1632,
+              8336,
+              6892
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8420071738295044,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.1110573550532443,
+            "chart_edges_mm": [
+              0.35034166848180204,
+              0.35034166848180204,
+              0.5
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.36194839097284437,
+              0.3578818171207668,
+              0.5225488926868456
+            ],
+            "relief_height_at_vertices_mm": [
+              0.24105928085519923,
+              0.15701501581109503,
+              0.0892128279883382
+            ],
+            "chart_area_mm2": 0.06135923151542322,
+            "displaced_3d_area_mm2": 0.06467312330350244
+          }
+        },
+        "worst_zone_quality_chart": 0.8579770191690174,
+        "worst_zone_aspect_chart_longest_edge_over_shortest_altitude": 2.037183271576341,
+        "worst_zone_quality_displaced_3d": 0.8420071738295044,
+        "worst_zone_aspect_displaced_3d_longest_edge_over_shortest_altitude": 2.1110573550532443,
+        "worst_zone_quality_chart_source_face_id": 2750,
+        "worst_zone_aspect_chart_source_face_id": 2750,
+        "worst_zone_quality_displaced_3d_source_face_id": 3006,
+        "worst_zone_aspect_displaced_3d_source_face_id": 3006
+      },
+      "finite_geometry_record": {
+        "probe_count_reconstructed_as_four_per_outer_face": 49280,
+        "probe_count_matches_check": true,
+        "scope": "finite barycenter and edge-midpoint probes; not a certified supremum or global Hausdorff bound",
+        "gate_target_mm": 0.02,
+        "max_error_mm": 0.014577259475220927,
+        "max_normal_angle_degrees_report_only": 5.826063000141969,
+        "is_global_bound": false,
+        "all_arrays_finite_independent": true,
+        "check_recorded_finite_geometry_pass": true
+      },
+      "recorded_unknowns": {
+        "global_minimum_normal_wall_thickness": "UNKNOWN",
+        "independent_sample_or_ground_truth": "NO",
+        "material_or_physical_qualification": "NOT_VALIDATED",
+        "physics_qualification": "UNKNOWN",
+        "real_vessel_match": "NOT_VALIDATED",
+        "self_intersection_or_general_offset_validity": "NOT_ASSESSED",
+        "fracture_labels": "NONE"
+      },
+      "candidate_sha256": "ac3c7da3dda89ab2e6d26b997a05d4d693384626f44e0d5154c061824d2e87e6",
+      "checks_sha256": "f302c9383f12a4f35481888b851c1d512fee9fe6e8966efaeceae7ca40526106"
+    },
+    {
+      "case_id": "local_b_0p25mm",
+      "array_schema": [
+        {
+          "field": "vertices_rest_xyz_mm",
+          "shape": [
+            18546,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "vertices_relief_xyz_mm",
+          "shape": [
+            18546,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "faces",
+          "shape": [
+            37088,
+            3
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "outer_vertex_indices",
+          "shape": [
+            15344
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "outer_theta_rad",
+          "shape": [
+            15344
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_z_mm",
+          "shape": [
+            15344
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_color_linear_rgb",
+          "shape": [
+            15344,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_color_srgb_for_display",
+          "shape": [
+            15344,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_relief_height_mm",
+          "shape": [
+            15344
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_normals_analytic_displaced",
+          "shape": [
+            15344,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_source_face_ids",
+          "shape": [
+            6144
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "source_face_ids",
+          "shape": [
+            37088
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "face_corner_barycentric_to_source",
+          "shape": [
+            37088,
+            3,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "vertex_lineage_source_face_id",
+          "shape": [
+            18546
+          ],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "vertex_lineage_barycentric",
+          "shape": [
+            18546,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_base_linear_rgb",
+          "shape": [
+            3200,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "outer_base_srgb",
+          "shape": [
+            3200,
+            3
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "baseline_fixture_arrays_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "refinement_source_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "case_freeze_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "finite": true
+        },
+        {
+          "field": "outer_radius_mm",
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        {
+          "field": "original_vertex_count",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "original_face_count",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "refinement_rounds",
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        {
+          "field": "target_edge_mm",
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        }
+      ],
+      "array_finite_all_float_fields": true,
+      "indices_valid": true,
+      "outer_all_face_vertices_are_indexed": true,
+      "checks_recorded_pass": true,
+      "topology_independent_relief_xyz": {
+        "vertex_count": 18546,
+        "face_count": 37088,
+        "unique_undirected_edge_count": 55632,
+        "boundary_edge_count": 0,
+        "non_two_incidence_edge_count": 0,
+        "inconsistent_winding_edge_count": 0,
+        "connected_component_count": 1,
+        "euler_characteristic": 2,
+        "duplicate_face_count_unoriented": 0,
+        "repeated_vertex_face_count": 0,
+        "zero_area_face_count_threshold_1e-12_mm2_double_area": 0,
+        "minimum_double_area_mm2": 0.03067956240534959,
+        "signed_volume_mm3": 10202.175145733467,
+        "positive_signed_volume": true
+      },
+      "rest_xyz_signed_volume_mm3": 10182.815042529963,
+      "topology_matches_recorded_checks": {
+        "vertex_count": true,
+        "face_count": true,
+        "unique_undirected_edge_count": true,
+        "boundary_edge_count": true,
+        "non_two_incidence_edge_count": true,
+        "inconsistent_winding_edge_count": true,
+        "connected_component_count": true,
+        "euler_characteristic": true,
+        "signed_volume_mm3": true
+      },
+      "lineage_internal_validation": {
+        "face_source_ids_range_0_to_original_face_count_minus_1": true,
+        "face_corner_barycentric_shape": [
+          37088,
+          3,
+          3
+        ],
+        "face_corner_barycentric_min": 0.0,
+        "face_corner_barycentric_max": 1.0,
+        "face_corner_barycentric_max_sum_error": 0.0,
+        "face_corner_barycentric_simplex_pass": true,
+        "new_vertex_count": 12144,
+        "new_vertex_lineage_source_ids_valid": true,
+        "new_vertex_lineage_barycentric_max_sum_error": 0.0,
+        "new_vertex_lineage_barycentric_simplex_pass": true,
+        "independent_source_triangle_reconstruction": "NOT_REPRODUCIBLE_FROM_CANDIDATE_NPZ_ALONE; source baseline face connectivity is absent",
+        "prototype_check_claims": {
+          "face_source_triangle_lineage_present": true,
+          "face_lineage_chart_max_residual_mm": 1.7763568394002505e-14,
+          "lineage_reconstruction_pass": true,
+          "new_vertex_lineage_chart_max_residual_mm": 1.7763568394002505e-14
+        }
+      },
+      "outer_mesh_independent_metrics": {
+        "outer_triangle_count": 30432,
+        "outer_source_face_ids_count": 6144,
+        "outer_source_face_count_matches_check": true,
+        "support_transition_classification": "outer triangle has at least one vertex with outer_relief_height_mm > 0.0",
+        "support_transition_triangle_count": 10048,
+        "maximum_relief_height_mm": 0.45,
+        "chart_max_edge_support_transition_mm": 0.25,
+        "chart_max_edge_over_global_relief_height": 0.5555555555555556,
+        "displaced_3d_max_chord_edge_support_transition_mm": 0.2623566153709168,
+        "displaced_3d_max_chord_edge_over_global_relief_height": 0.5830147008242595,
+        "chart_max_edge_all_outer_mm": 1.4013666739272455,
+        "chart_max_edge_all_outer_triangle_original_face_id": 164,
+        "chart_max_edge_all_outer_triangle_edges_mm": [
+          0.9817477042468248,
+          1.0,
+          1.4013666739272455
+        ],
+        "target_chart_edge_mm": 0.25,
+        "support_transition_chart_target_pass_independent": true,
+        "max_chart_edge_over_height_vs_record": true,
+        "max_displaced_edge_over_height_vs_record": true,
+        "worst_triangles": {
+          "chart_quality": {
+            "candidate_face_index": 3386,
+            "source_face_id": 2561,
+            "candidate_vertex_indices": [
+              8120,
+              12890,
+              8123
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8579769749288126,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.037183476063689,
+            "chart_edges_mm": [
+              0.17517083424090102,
+              0.17517083424090102,
+              0.25
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.17517069937374172,
+              0.1751709903066976,
+              0.25000002744311534
+            ],
+            "relief_height_at_vertices_mm": [
+              0.0,
+              0.0,
+              0.00011713905588067108
+            ],
+            "chart_area_mm2": 0.015339807878855805,
+            "displaced_3d_area_mm2": 0.015339809706861295
+          },
+          "chart_aspect": {
+            "candidate_face_index": 3386,
+            "source_face_id": 2561,
+            "candidate_vertex_indices": [
+              8120,
+              12890,
+              8123
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8579769749288126,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.037183476063689,
+            "chart_edges_mm": [
+              0.17517083424090102,
+              0.17517083424090102,
+              0.25
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.17517069937374172,
+              0.1751709903066976,
+              0.25000002744311534
+            ],
+            "relief_height_at_vertices_mm": [
+              0.0,
+              0.0,
+              0.00011713905588067108
+            ],
+            "chart_area_mm2": 0.015339807878855805,
+            "displaced_3d_area_mm2": 0.015339809706861295
+          },
+          "displaced_3d_quality": {
+            "candidate_face_index": 10267,
+            "source_face_id": 3038,
+            "candidate_vertex_indices": [
+              1648,
+              14448,
+              9435
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8408557477137146,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.1165040681302707,
+            "chart_edges_mm": [
+              0.17517083424090102,
+              0.17517083424090102,
+              0.25
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.1809249663045767,
+              0.18003704564271522,
+              0.2623566153709168
+            ],
+            "relief_height_at_vertices_mm": [
+              0.24105928085519923,
+              0.19964171516752052,
+              0.16149173955296406
+            ],
+            "chart_area_mm2": 0.015339807878855805,
+            "displaced_3d_area_mm2": 0.01626053893902713
+          },
+          "displaced_3d_aspect": {
+            "candidate_face_index": 10267,
+            "source_face_id": 3038,
+            "candidate_vertex_indices": [
+              1648,
+              14448,
+              9435
+            ],
+            "chart_quality": 0.8579770191690174,
+            "chart_aspect_longest_edge_over_shortest_altitude": 2.037183271576341,
+            "displaced_3d_quality": 0.8408557477137146,
+            "displaced_3d_aspect_longest_edge_over_shortest_altitude": 2.1165040681302707,
+            "chart_edges_mm": [
+              0.17517083424090102,
+              0.17517083424090102,
+              0.25
+            ],
+            "displaced_3d_chord_edges_mm": [
+              0.1809249663045767,
+              0.18003704564271522,
+              0.2623566153709168
+            ],
+            "relief_height_at_vertices_mm": [
+              0.24105928085519923,
+              0.19964171516752052,
+              0.16149173955296406
+            ],
+            "chart_area_mm2": 0.015339807878855805,
+            "displaced_3d_area_mm2": 0.01626053893902713
+          }
+        },
+        "worst_zone_quality_chart": 0.8579770191690174,
+        "worst_zone_aspect_chart_longest_edge_over_shortest_altitude": 2.037183271576341,
+        "worst_zone_quality_displaced_3d": 0.8408557477137146,
+        "worst_zone_aspect_displaced_3d_longest_edge_over_shortest_altitude": 2.1165040681302707,
+        "worst_zone_quality_chart_source_face_id": 2561,
+        "worst_zone_aspect_chart_source_face_id": 2561,
+        "worst_zone_quality_displaced_3d_source_face_id": 3038,
+        "worst_zone_aspect_displaced_3d_source_face_id": 3038
+      },
+      "finite_geometry_record": {
+        "probe_count_reconstructed_as_four_per_outer_face": 121728,
+        "probe_count_matches_check": true,
+        "scope": "finite barycenter and edge-midpoint probes; not a certified supremum or global Hausdorff bound",
+        "gate_target_mm": 0.02,
+        "max_error_mm": 0.00602362607591951,
+        "max_normal_angle_degrees_report_only": 3.276867202526798,
+        "is_global_bound": false,
+        "all_arrays_finite_independent": true,
+        "check_recorded_finite_geometry_pass": true
+      },
+      "recorded_unknowns": {
+        "global_minimum_normal_wall_thickness": "UNKNOWN",
+        "independent_sample_or_ground_truth": "NO",
+        "material_or_physical_qualification": "NOT_VALIDATED",
+        "physics_qualification": "UNKNOWN",
+        "real_vessel_match": "NOT_VALIDATED",
+        "self_intersection_or_general_offset_validity": "NOT_ASSESSED",
+        "fracture_labels": "NONE"
+      },
+      "candidate_sha256": "8a2539dff0a05444951ecae6bd66ba2d849c753764dc635a4bacdf8382c6cfdf",
+      "checks_sha256": "4e4c08b96bd6e7dd47a3285377979fc93fc3865a0bc1fcdd48d79397c23e14e8"
+    }
+  ]
+}

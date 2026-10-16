@@ -1,0 +1,21 @@
+{
+  "checker_sha256": "bd4511b51b5ca4683825eca3f2b3e9e5fd51ca74563a8f361322b69bf30d084f",
+  "checks_so_far": [
+    {
+      "evidence": {
+        "actual": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+        "expected": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+        "path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\surface_mapping_prototype.py"
+      },
+      "name": "frozen_prototype_sha256",
+      "status": "PASS"
+    }
+  ],
+  "exception": "AttributeError(\"'NoneType' object has no attribute '__dict__'\")",
+  "fixture_arrays_exist": false,
+  "parameters_sha256": "702285e2b311ea3ad7a17e6212d06ab8041faf58cca76e8e4a8a016d7e42c66e",
+  "prototype_sha256": "0f624f8482d4d6540a0594ca1cbebebf1d02179d15a1e9fa05d3924107b12177",
+  "rerun_policy": "NO_RERUN",
+  "status": "STOP_FAIL_RUNTIME",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\fixture_once_check.py\", line 439, in main\n    spec.loader.exec_module(prototype)\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\surface_ornament_route_20261004\\surface_mapping_prototype.py\", line 20, in <module>\n    @dataclass(frozen=True)\n     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\Lib\\dataclasses.py\", line 1265, in wrap\n    return _process_class(cls, init, repr, eq, order, unsafe_hash,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\Lib\\dataclasses.py\", line 983, in _process_class\n    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\xiemo\\.conda\\envs\\hand_py312\\Lib\\dataclasses.py\", line 749, in _is_type\n    ns = sys.modules.get(cls.__module__).__dict__\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?\n"
+}

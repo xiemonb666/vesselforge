@@ -1,0 +1,20 @@
+{
+  "code_hashes": {},
+  "declared_resource_caps": {
+    "max_forecast_memory_bytes": 2147483648,
+    "max_step_bytes": 33554432,
+    "max_tetrahedra": 100000,
+    "mesh_size_m": 0.0025,
+    "process_wall_cap_s": 120
+  },
+  "driver_wall_cap_s": 120,
+  "executed_driver_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261016\\reference_v6_tetra\\run02_witness_mesh.py",
+  "executed_driver_sha256": "57c7403fe8d26f115785e931344d224d34dd7f227adb8ce1a5126a60e7dec11f",
+  "execution_environment": null,
+  "independent_mesh_audit": null,
+  "python_executable": "C:\\Users\\xiemo\\Desktop\\ShardForge\\third_party\\vesselforge-runtime\\venv\\Scripts\\python.exe",
+  "python_version": "3.12.14",
+  "schema": "vesselforge.reference_v6_witness_tetra_run.v1",
+  "source_geometry_and_lineage": null,
+  "status": "RUNNING"
+}

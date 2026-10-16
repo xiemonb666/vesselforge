@@ -1,0 +1,14 @@
+{
+  "display_notes": [
+    "THE METROPOLITAN MUSEUM OF ART",
+    "H 54 · rim Ø111",
+    "Foot Ø54 · wall* 3.2",
+    "Foot H* 3.5 · θ* 68°",
+    "*Design assumption · not reconstruction"
+  ],
+  "geometry_source": "same saved candidate B-rep and meridian section",
+  "projection": "orthographic for side, top, bottom and section; perspective for the lit 3D view",
+  "render_is_measurement": false,
+  "renderer": "VTK 9.6.2 offscreen with surface lighting",
+  "view_count": 5
+}

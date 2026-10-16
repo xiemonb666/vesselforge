@@ -1,0 +1,14 @@
+{
+  "display_notes": [
+    "GENERATED FAMILY VARIATION",
+    "H 62 · rim Ø108",
+    "Foot Ø31 · wall* 2",
+    "Foot H* 7 · θ* 75°",
+    "*Design assumption · not source measurement"
+  ],
+  "geometry_source": "same saved candidate B-rep and meridian section",
+  "projection": "orthographic for side, top, bottom and section; perspective for the lit 3D view",
+  "render_is_measurement": false,
+  "renderer": "VTK 9.6.2 offscreen with surface lighting",
+  "view_count": 5
+}

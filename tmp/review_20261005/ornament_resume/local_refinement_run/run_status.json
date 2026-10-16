@@ -1,0 +1,23 @@
+{
+  "attempted_case_ids": [
+    "local_a_0p50mm",
+    "local_b_0p25mm"
+  ],
+  "baseline_fixture_arrays_sha256": "b44bb78176e690d8bc92ab2fc10f0803e142a0311acee8ff3944d4e324b9b974",
+  "case_elapsed_seconds": {
+    "local_a_0p50mm": 7.555535899940878,
+    "local_b_0p25mm": 14.370076199993491
+  },
+  "case_freeze_sha256": "ab89a0832366d0391b9539248cfbfab62e7ea770f3cf9b1499ee6b39b0b533c1",
+  "completed_case_ids": [
+    "local_a_0p50mm",
+    "local_b_0p25mm"
+  ],
+  "elapsed_seconds": 21.945334599819034,
+  "ended_at_utc": "2026-10-04T19:11:38.737918+00:00",
+  "exit_code": 0,
+  "not_run_case_ids": [],
+  "source_sha256": "5e946c205fb233e9354dfdde10d562597484ee38193e7930f93ce999f5840f74",
+  "started_at_utc": "2026-10-04T19:11:16.791804+00:00",
+  "status": "PASS_ALL_CANDIDATES"
+}

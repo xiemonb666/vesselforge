@@ -1,0 +1,87 @@
+{
+  "schema": "vf.wall-binding-independent-review.v1",
+  "review_date": "2026-10-04",
+  "result": "V1_REVIEWED_WITH_P2_FINDINGS; AUTHORIZED_CANDIDATE_REVISION_PENDING_REVIEW",
+  "execution": {
+    "tests": "NOT_RUN",
+    "python_imports": "NOT_RUN",
+    "cad_or_step": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED",
+    "source_step_sha256": null,
+    "source_step_sha256_reason": "No .step or .stp asset currently exists under vesselforge; the one-shot runner creates and hashes the STEP only after export."
+  },
+  "freeze_hashes": {
+    "wall_mesh_binding.py": "516b2a1d3c6956aadd83485beb0c272b2df56a3c30cb578040849312b7341e9d",
+    "test_wall_mesh_binding.py": "db4f9c7abbb2e045086fbde5ba79fd04adccef58cea952926e436defcd48d1d7",
+    "fixture_input.json": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "implementation_plan.md": "b609dd97d1274cfe558aa4f811a0ed493e0622e1f240c65b18f4ad2edf7268a3",
+    "run_hollow_cylinder_binding.py": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc",
+    "asset.py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry.py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema.py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics.py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference.py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+  },
+  "findings": [
+    {
+      "id": "P2-1",
+      "severity": "P2",
+      "title": "Exported station aggregator trusts terminal BOUND rows",
+      "file": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "lines": [
+        38,
+        45,
+        461,
+        475
+      ],
+      "production_public_builder_affected": false,
+      "description": "bind_stations_to_parent_mesh is exported and copies any input row already marked BOUND without validating station identity, geometry, arrays, or parent_mesh_content_hash. If every row is so marked, it returns PASS_MOTHER_STATION_BINDING. A single {station_id: x, status: BOUND} row can pass with malformed arrays and a fabricated hash. The production build_wall_mesh_binding path validates the package/reference and creates its own rows before aggregation, so this is the separately exported low-level API surface.",
+      "recommendation": "Keep the aggregator private or validate terminal rows/provenance before allowing them to contribute to top-level PASS."
+    },
+    {
+      "id": "P2-2",
+      "severity": "P2",
+      "title": "Boolean tessellation targets are accepted as numeric policy values",
+      "file": "vesselforge/src/vesselforge/wall_mesh_binding.py",
+      "lines": [
+        624,
+        648
+      ],
+      "production_public_builder_affected": true,
+      "description": "_load_binding_policy converts each provenance/report value with float() and has no bool rejection. Matching JSON true values convert to 1.0, pass the positivity/equality checks, and produce a 1.0000201 mm linear projection limit and 15 degree normal-angle limit. This can admit a malformed package with a much looser budget than intended. validate_asset does not strictly type-check these provenance tessellation fields.",
+      "recommendation": "Reject booleans and non-numeric JSON types before conversion; add finite/positive/type validation to BindingPolicy construction if exported low-level functions remain public."
+    }
+  ],
+  "static_checks": {
+    "hash_slots_and_content_identity": "PASS_STATIC",
+    "endian_and_index_width_normalization": "PASS_STATIC",
+    "units_and_frame_checks": "PASS_STATIC",
+    "face_order_backend_and_inventory_checks": "PASS_STATIC",
+    "trimmed_uv_in_and_oriented_normal_recheck": "PASS_STATIC",
+    "same_face_projection_no_cross_face_fallback": "PASS_STATIC",
+    "outer_inner_semantic_role_checks": "PASS_STATIC",
+    "mixed_station_status_aggregation": "PASS_STATIC_WITH_TERMINAL_ROW_BYPASS_FINDING",
+    "global_wall_and_stage2_claims": "PASS_STATIC_NONCLAIMS",
+    "runner_single_export_import_mesh_shape_call": "PASS_STATIC_SOURCE_REVIEW_ONLY",
+    "runtime_counts_residuals_receipt": "UNVERIFIED_NOT_RUN"
+  },
+  "tolerance_values_from_frozen_fixture": {
+    "linear_projection_limit_mm": 0.0500101,
+    "normal_angle_limit_rad": 0.16,
+    "normal_angle_limit_degrees_approx": 9.167324722,
+    "weld_tolerance_mm": 5E-06,
+    "cad_numeric_tolerance_mm": 1E-07
+  },
+  "output": {
+    "report_markdown": "vesselforge/tmp/review_20261004/wall_binding_independent_review/report.md",
+    "report_json": "vesselforge/tmp/review_20261004/wall_binding_independent_review/report.json"
+  },
+  "reviewed_snapshot": "v1_frozen originals, rehashed against freeze_v1.json",
+  "authorized_candidate_revision": {
+    "status": "AUTHORIZED_CANDIDATE_REVISION_PENDING_REVIEW",
+    "wall_mesh_binding_py_sha256_at_final_scan": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "test_wall_mesh_binding_py_sha256_at_final_scan": "65b67107858a351e83edddd6fccd97dcb585b7f0afd7d2b94d076f0878e1a7e6",
+    "freeze_pending": true
+  }
+}

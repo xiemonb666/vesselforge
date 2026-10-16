@@ -1,0 +1,60 @@
+{
+  "schema": "vf.wall-mesh-binding-v4-pretest-freeze.v1",
+  "frozen_at_utc": "2026-10-04",
+  "status": "V4_SINGLE_TEST_RUN_APPROVED",
+  "production_scope": "test-only assertion update; helper is unchanged",
+  "execution": {
+    "v3_pytest_exit": 1,
+    "v3_raw_preserved": true,
+    "v4_pytest": "NOT_RUN",
+    "v4_analytic_fixture": "NOT_RUN",
+    "render": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED"
+  },
+  "current_frozen": {
+    "production_helper": "a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "v4_test_source": "b3e6e96fa76843f1856c1fa3bdee28f4d0a3222d89e855cfd994df7d6b686a31",
+    "v4_test_patch": "e18976901d6a1ae25e08e206d59429d0a2f946f59cdde5cc4377b600478b3060",
+    "fixture_input": "706cefe1127c46f75889931eda68d963d08577638e0d962a6041e132226a323b",
+    "runner_source": "37a4f438c6eae507a6fc02ed1aaf59fbc625bd1dab7c536ef28bf2a4683925dc"
+  },
+  "preserved_v3": {
+    "v3_test": "7d9a0e76c5c9c0a283d141a2e0b61e6c32ce58c3690aff78f799173db0517e14",
+    "v3_diff": "fdf93750a1359e6e2ba58f499b19f4c6e46f259b18269232ee4fdbb12ac3eb39",
+    "v3_freeze": "7e51561d9cda0605fef846c5a1820ad47012920a39eb4382ff1193592fea39ae",
+    "v3_receipt": "bb4a3dcb79c5db9458cf414e64246a1c2f6d6d3831ae80bcd04adcb71db7bd73",
+    "v3_stdout": "395228125fe0a405b613d3e7bcd5ab6553995b57b9b474e2ac0469b8c515fb15",
+    "v3_stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v3_junit": "b6fd4c901d81c45ab7910e27b15d3d4c4211ace58a7c09915fe03c22f3e049eb"
+  },
+  "dependencies": {
+    "asset_py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry_py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema_py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics_py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference_py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8",
+    "pyproject_toml": "e7c72c4fdd4cfeb4cca4a8d7c880769b334951c72a00c488749acd7ed36bafad"
+  },
+  "approved_v4_invocation": {
+    "executable": "C:/Users/xiemo/Desktop/ShardForge/third_party/vesselforge-runtime/venv/Scripts/python.exe",
+    "working_directory": "vesselforge",
+    "environment": {
+      "PYTHONPATH": "src",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "argv": [
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "<v4_run>/pytest_tmp",
+      "--junitxml",
+      "<v4_run>/junit.xml",
+      "tests/test_wall_mesh_binding.py"
+    ],
+    "expected_case_count": 24
+  },
+  "note": "Freeze excludes its own hash. Only the reviewed reversed-normal test reason/diagnostics changed; no production behavior changed."
+}

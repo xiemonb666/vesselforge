@@ -1,0 +1,49 @@
+{
+  "state": "source_only_prepared_waiting_for_root_review",
+  "scope_directory": "vesselforge/tmp/review_20261005/native_cad_wall_probe_20261005",
+  "hashes": {
+    "adapter_sha256": "86fbd859e96aab60c320d7ba5aa59eb642d52bbe6d12b4aec045984de9f265cd",
+    "wrapper_sha256": "a4f042c3430667e3ac2ad591f86357318a248fe0ebb7ab4b76ce29607adf4bf8",
+    "method_sha256": {
+      "smooth_cad_spike": "a505817d38184b256ff3c2ce2a513560be79486dc4534187a431e3cc01be4661",
+      "semantics": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+      "wall_mesh_binding": "395c78c72f4df0748dd9e05b5ef2b742cffe1d115bd7dc87a1624ea17b4edac0",
+      "historical_native_probe": "dfdb781ca0549c0914b34c5c974455a2502d6f9215a731fa2475e15546f10019"
+    },
+    "source_step_sha256": "9a6ac86efb2d714e5d2d737263307014487fe2e45979c4181f6071c6f0cf6c71",
+    "source_receipt_sha256": "4c17fe03c74a6fe4474d98b3de9305916572910247c64bd144189ca2c3f711c8",
+    "method_doc_sha256": "e8c67c879829db76f96f472b919a2652cc3f09dc35e0aacd37e78519bf70ce2e"
+  },
+  "reviewed_source_locations": {
+    "existing_normal_probe": "vesselforge/experiments/smooth_cad_spike.py:204,211",
+    "trim_uv_reversed_normal": "vesselforge/src/vesselforge/semantics.py:47",
+    "cad_numeric_tolerance": "vesselforge/src/vesselforge/wall_mesh_binding.py:58",
+    "historical_radial_probe_and_section": "vesselforge/experiments/smooth_cad_brep/executed_source_snapshot/build_brep_candidate.py:202,210,257"
+  },
+  "preflight": {
+    "stdlib_ast": "PASS",
+    "python_static_caps": "PASS",
+    "powershell_parse": "PASS",
+    "step_imports": 0,
+    "ray_calls": 0,
+    "CAD_operations": 0,
+    "rendered_pngs": 0
+  },
+  "future_run_limits": {
+    "max_rays": 128,
+    "max_total_hits": 512,
+    "max_ray_length_mm": 20,
+    "worker_wall_seconds": 180,
+    "classifier_tolerance_mm": 1E-07,
+    "orientation_offset_mm": 0.025,
+    "ray_start_inside_mm": 0.0001
+  },
+  "deferred_execution": {
+    "actual_argv": null,
+    "actual_rc": null,
+    "solver_runs": 0,
+    "normal_ray_calls": 0,
+    "global_wall_status": "UNKNOWN_FINITE_PROBES_ONLY",
+    "requires_root_review_before_execution": true
+  }
+}

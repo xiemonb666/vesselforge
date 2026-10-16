@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\continuation_20261016\reference_v6_tetra\run02_witness_mesh.py", line 540, in <module>
+    main()
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\continuation_20261016\reference_v6_tetra\run02_witness_mesh.py", line 463, in main
+    result = partition_step_at_x(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xiemo\Desktop\ShardForge\vesselforge\src\vesselforge\step_partition.py", line 754, in partition_step_at_x
+    raise ResourceCapError(
+vesselforge.step_partition.ResourceCapError: conservative tetrahedron or memory forecast exceeds caller-supplied resource caps

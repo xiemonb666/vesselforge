@@ -1,0 +1,47 @@
+{
+  "schema": "vf.wall-mesh-binding-v5-review-freeze.v1",
+  "frozen_at_utc": "2026-10-04",
+  "status": "COMPACT_SEMANTICS_FIX_READY_FOR_REVIEW",
+  "execution": {
+    "v5_pytest": "NOT_RUN",
+    "binding_reuse": "NOT_RUN",
+    "cad_step_export": "NOT_RUN",
+    "solver": "NOT_RUN",
+    "git": "NOT_USED"
+  },
+  "current_v5": {
+    "production_helper": "81668d278f165e2fa75b874fccfaef726024d249605d324f6e1acbe1ca96be45",
+    "test_source": "b43ab22758f4888c2171357bff72289e7d544876cee2788441dc587843d9c072",
+    "diff_note": "293627c0816131a4b00344618160ca6377bd3877aaa04ee2a0e1d523dc2604ce"
+  },
+  "v2_source_and_v4_test_preserved": {
+    "v2_source": "v2_frozen/wall_mesh_binding.py:a8e3094dbaef8f4545e76826c6ea440c0ae2b2a67fcc1335df5b0f7ce7d65b39",
+    "v4_test": "v4_frozen/test_wall_mesh_binding.py:b3e6e96fa76843f1856c1fa3bdee28f4d0a3222d89e855cfd994df7d6b686a31",
+    "v4_freeze": "v4_frozen/freeze_v4.json:6227797f109766fe146189444d27bf35869d7229f34b43257c0a6e7e19a6a6e6",
+    "v4_pytest_receipt": "v4_frozen/pytest_receipt_v4.json:05a408a01de8573ce6ec826d28811f5c9cb8bee919c1af776789415e721f7fc1",
+    "v4_cad_receipt": "v4_frozen/cylinder_runner_receipt_v4.json:5ed95d156146dfac6529d202af400b5065864e1e48690f307981e77feec122e7",
+    "v4_failure_inventory": "v4_frozen/cylinder_asset_failure_inventory_v4.json:6c606df68e1d4c384e1c500e1fa9021893a299fc7672e2ec688237382ba601f2",
+    "v4_runner_stdout": "v4_frozen/cylinder_runner.stdout_v4.txt:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v4_runner_stderr": "v4_frozen/cylinder_runner.stderr_v4.txt:2819fe5d496251488329d202af400b5065864e1e48690f307981e77feec122e7"
+  },
+  "v4_preserved_actual_package": {
+    "root": "v4_run/cylinder_asset_run01",
+    "step": "5c68bbc29b2b0bc684cc6c551c2769872c4c490d588b9a3ea2cbb98e7f74135e",
+    "surface_npz": "79e05b8470a9f327cb9c015e6fea873a286e16d2a3c88d9756be0d9d9fcd3117",
+    "lineage_npz": "3c68077ea376e26dc0710068d9deab22423f07f1e04386f1d0ec51271afcad8d",
+    "fields_npz": "3526d706c83a37667edefe965c9f9c92d550bdfbd090a88b5b10539a98e0835d",
+    "manifest": "31a6d35ff2ae28780a5c9ec8ca330398039f509ffc69c0f66522e7e0a4ac4d0f",
+    "face_semantics": "a5c6a26ba37f02dae51c2a8083a38b3548a457fe8555452a3959df8a7101b848",
+    "wall_reference": "a7033bc9f3742677931b6be142d5ed42fd871bc6cbb1f08a12682288e6d06b76",
+    "geometry_report": "b3972c50aa99d10f104471fd69280128a90980e15a8dcbb290be171beac6bd61",
+    "binding_report": "ABSENT_FAILURE_BEFORE_BINDING_REPORT"
+  },
+  "unchanged_dependencies": {
+    "asset_py": "f9c11a60beed1d165431b8ea590c52db382b780479ad262fee1cc5a7be3274d0",
+    "geometry_py": "0c48940d9ef22aabb068a2e7c6e89b4249a7e724d0ade1c8933a6c951e086047",
+    "schema_py": "b58ae7b3bc5e09b699a36fe57fada12dd969759cf9991bf2749660d6cfbbdfe9",
+    "semantics_py": "dfcc366d868c65313bcd5a43faf91d482b89848c2b15d4d9e66158ac291231af",
+    "wall_reference_py": "a4f06671fc138fcf6912d9d075841fa958185b44a1d9c7e93b0b62e2fe29e8c8"
+  },
+  "note": "freeze excludes its own hash. v5 fixes only the strict compact wall_reference source_semantics producer contract; raw v4 failure remains preserved."
+}

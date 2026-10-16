@@ -1,0 +1,12 @@
+[
+  {
+    "path": "vesselforge/src/vesselforge/wall_reference.py",
+    "exists": false,
+    "sha256": null
+  },
+  {
+    "path": "vesselforge/tests/test_wall_reference.py",
+    "exists": false,
+    "sha256": null
+  }
+]

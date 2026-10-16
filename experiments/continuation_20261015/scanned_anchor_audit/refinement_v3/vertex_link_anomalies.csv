@@ -1,0 +1,8 @@
+candidate_vertex_index,raw_source_vertex_index,xyz_source_units,link_node_count,link_component_count,link_node_degrees,interpretation
+25666,26065,"[-0.023177, 0.012611, 0.135208]",8,2,"[2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+60542,63893,"[-0.001738, -0.062634, 0.108622]",8,2,"[2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+95344,98913,"[-0.0206, -0.054147, 0.108166]",8,2,"[2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+161058,165181,"[0.125881, 0.014859, 0.13555]",9,2,"[2, 2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+260100,265022,"[0.118868, 0.028537, 0.106551]",8,2,"[2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+263884,268889,"[0.10914, 0.039997, 0.103087]",10,2,"[2, 2, 2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.
+274052,279057,"[0.071884, -0.010088, 0.049903]",9,2,"[2, 2, 2, 2, 2, 2, 2, 2, 2]",Vertex link must be a single connected cycle; multiple cycles indicate a pinched/non-manifold vertex.

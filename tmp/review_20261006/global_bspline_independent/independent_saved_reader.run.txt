@@ -1,0 +1,38 @@
+Independent saved reader run record — corrected metadata
+
+Correction: The prior copy is preserved as independent_saved_reader.run.prior.txt. Its manually transcribed fixed_cases.json digest contained one extra “e”; this was a metadata typo, not a source or candidate data edit. The corrected digest below was computed by hashlib reading the actual fixed_cases.json bytes.
+
+Actual reader ARGV
+C:\Users\xiemo\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\xiemo\Desktop\ShardForge\vesselforge\tmp\review_20261006\global_bspline_independent\independent_saved_reader.py
+
+Actual reader STDOUT
+audit=PASS_RECONSTRUCTION exit=0 geometry=ENDPOINT_RADIUS_COUNTEREXAMPLE_PRESENT input_sha256=06c714ff30e8f36c60e586e07670510d539b844ec434772a5d93b749612a6f65
+
+Actual reader STDERR
+(empty)
+
+Actual reader process exit code
+0
+Elapsed time
+NOT_PERSISTED
+
+Candidate SHA-256 before and after
+06c714ff30e8f36c60e586e07670510d539b844ec434772a5d93b749612a6f65
+
+Source SHA-256 pins
+bspline_constraint_source.py e2d978bb817fa83918d2a494e1a084863fe413b8e176411038e9a8ba757f15d9
+bspline_minimum_jerk_driver.py e69d7b937f1e4810e60d89852d3cf8a82a049721ea59ba04f4a03462d664e4b9
+fixed_cases.json 47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908
+independent_saved_reader.py 05089ba906567852c8a0911f9ecdc56a0445365f4c3f5dcd067038bfef0c80f0
+
+Digest recomputation ARGV
+C:\Users\xiemo\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe -B -c "import hashlib; from pathlib import Path; p=Path(r'C:\Users\xiemo\Desktop\ShardForge\vesselforge\experiments\global_bspline_meridian_20261006\fixed_cases.json'); print(hashlib.sha256(p.read_bytes()).hexdigest())"
+Digest recomputation stdout
+47aa718e1feae7005db0b5d7fd77393c308d9d1eefa0faa43212dc077a865908
+Digest recomputation exit code
+0
+
+Review outputs
+independent_saved_audit.json 70707 bytes
+bowl_outer_only.png 14787 bytes
+jar_outer_only.png 14499 bytes

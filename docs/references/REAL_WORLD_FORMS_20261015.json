@@ -1,0 +1,577 @@
+{
+  "catalog_title": "Real-World Vessel Forms: Working Reference Supplement",
+  "created_date": "2026-10-15",
+  "purpose": "A source-backed, explicitly incomplete catalogue of real everyday and archaeological vessel examples to replace analytic test geometry as the design anchor. This is a reference index, not a reconstruction dataset or historical authenticity claim.",
+  "scope": {
+    "families": ["bowl", "beaker", "jar", "handled_vessel", "plate", "bottle", "jug"],
+    "priority": "Everyday and archaeological references are recorded separately. Unknown is retained where a source was not found or does not report a feature.",
+    "not_in_scope": ["editing code or the 2026-10-04 reference catalog", "downloading paid content", "contacting institutions or sellers", "claiming a full profile from a product photograph"]
+  },
+  "evidence_contract": {
+    "REPORTED_FACT": "A field directly stated by the cited museum, archaeological archive, product maker, or retailer record. Unit and wording/source location are retained.",
+    "CALCULATED_RATIO": "Arithmetic from published measurements. It is a scale cue, not an additional measurement.",
+    "VISUAL_INFERENCE": "A broad observation based on the page's photographs or captions. It is not a measured profile, thickness, curvature, or foot dimension.",
+    "DESIGN_ASSUMPTION": "A provisional generator choice. It is not evidence about the cited physical object and must remain labeled as an assumption.",
+    "UNKNOWN": "Not stated in the reviewed source. Do not fill this field from an uncalibrated photograph."
+  },
+  "workspace_support_snapshot": {
+    "readme": "vesselforge/README.md describes the first supported specimen as one open turned vessel with a swept, boolean-fused handle, and says later bowl/cup/plate/jar/bottle/jug models need sourced references.",
+    "profile_catalog": "vesselforge/src/vesselforge/profile_catalog.py exposes only bowl, beaker, and jar. Its module header calls the forms analytic starter candidates not matched to real vessels. The bowl foot-radius rule is a fixed fraction of max radius, not source-derived.",
+    "geometry_model": "No models.py was found. VesselSpec is in src/vesselforge/geometry.py: the current fixed prototype has body width 41 mm, height 56 mm, wall 4 mm and a swept handle; validation constrains width to 36–48 mm, height to 50–62 mm, and wall to 3.5–5 mm. These are prototype bounds, not measured vessel data.",
+    "family_coverage": {
+      "supported_profile_catalog": ["bowl", "beaker", "jar"],
+      "generic_current_handle": "A swept handle exists on the prototype, but the current shape is not a sourced handled-vessel family model.",
+      "not_yet_profile_families": ["plate", "bottle", "jug", "handled_vessel as an archaeological typology"]
+    }
+  },
+  "family_coverage": [
+    {
+      "family": "bowl",
+      "everyday_examples": ["ikea-365-20278351", "time-style-ame-rice-bowl", "aberdeen-abdms095708-121"],
+      "archaeological_or_historical_examples": ["met-18-56-44", "met-18-56-47", "apsida-shm-17946-0047"],
+      "best_use": "Use Aberdeen for a contemporary footed daily bowl envelope/foot, Ame for explicit qualitative thinness, and IKEA for a larger daily scale. Met 18.56.44 is the clearest plain circular ceramic bowl with reported rim, foot, and height for a first rotational analog; Met 18.56.47 is a distinct lobed-rim type and should remain a separate future non-axisymmetric target. No cited source supplies a calibrated complete section."
+    },
+    {
+      "family": "beaker",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN: no directly verified everyday object confidently classified as an unhandled beaker in this short pass. A maker's cup page is listed separately as a possible near-neighbor, not relabeled as a beaker.",
+      "archaeological_or_historical_examples": ["met-50-61-8"]
+    },
+    {
+      "family": "jar",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN: no directly verified daily ceramic jar with useful section evidence was selected.",
+      "archaeological_or_historical_examples": ["met-1975-268-184"]
+    },
+    {
+      "family": "handled_vessel",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN: no daily ceramic handled vessel with a source-backed handle section and attachment geometry was selected.",
+      "archaeological_or_historical_examples": ["met-36-20-25", "apsida-shm-17946-0047"]
+    },
+    {
+      "family": "plate",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN in this short pass; the currently inspected everyday sources do not provide a separate plate object with useful side-profile data.",
+      "archaeological_or_historical_examples": ["met-1971-27"],
+      "caution": "Met 1971.27 is formally titled Bowl; the curatorial text calls the decorated surface a plate. Retain that distinction."
+    },
+    {
+      "family": "bottle",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN: no daily ceramic bottle was selected.",
+      "archaeological_or_historical_examples": ["met-1975-268-184"],
+      "caution": "Met formally titles this object Jar but explicitly describes it as a small bulbous bottle with narrow neck."
+    },
+    {
+      "family": "jug",
+      "everyday_examples": [],
+      "everyday_status": "UNKNOWN: no daily jug/pitcher with published geometric details was selected.",
+      "archaeological_or_historical_examples": ["met-36-20-25"],
+      "caution": "Met formally titles this object Ewer and calls it an earthenware pitcher in its description; the record does not describe a spout contour."
+    }
+  ],
+  "records": [
+    {
+      "record_id": "ikea-365-20278351",
+      "official_title": "IKEA 365+ bowl, rounded sides white, 16 cm",
+      "institution_or_publisher": "IKEA UK",
+      "source_url": "https://www.ikea.com/gb/en/p/ikea-365-bowl-rounded-sides-white-20278351/",
+      "source_domain": "ikea.com",
+      "source_kind": "Current manufacturer/retailer product record",
+      "family": "bowl",
+      "use_context": "everyday household tableware",
+      "object_id": "202.783.51",
+      "reported_facts": [
+        {"field": "material", "value": "Feldspar porcelain, glaze", "source_location": "Product details / material"},
+        {"field": "height", "value": 7, "unit": "cm", "source_location": "Weight & measurements"},
+        {"field": "diameter", "value": 16, "unit": "cm", "source_location": "Weight & measurements"},
+        {"field": "brim_volume", "value": 0.8, "unit": "L", "source_location": "Weight & measurements"},
+        {"field": "everyday_use", "value": "Suitable for serving and eating; series is described for use every day", "source_location": "Product description"},
+        {"field": "images", "value": 4, "unit": "page image entries", "source_location": "Product image gallery; entries are product/use/table-setting views, not labeled orthographic views"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_diameter", "value": 0.4375, "calculation": "7 cm / 16 cm", "interpretation": "overall envelope ratio only"}
+      ],
+      "visual_inference": [
+        "The page/gallery names the item as a rounded-side bowl and shows product and use photographs. The reviewed gallery labels do not identify an underside, calibrated side profile, or foot-ring view."
+      ],
+      "geometry_evidence": {
+        "rim": "UNKNOWN: diameter is reported, but the page does not label it as a rim measurement or report rim cross-section.",
+        "foot_or_base": "UNKNOWN: no foot-ring/base dimensions or underside profile are reported.",
+        "wall_thickness": "UNKNOWN: general text says feldspar porcelain as a material can allow thinner products than earthenware/stoneware, but does not measure or characterize this bowl's wall.",
+        "handles_neck_spout": "Not described as features; exact feature absence is not established by the dimensional table.",
+        "section_or_scan": "No technical section or 3D scan linked on the reviewed product page."
+      },
+      "license_and_access": {
+        "read_access": "Open product page",
+        "image_or_model_license": "No open reuse license for product images or geometry was identified on the reviewed page.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["foot diameter", "exact rim diameter", "wall/floor thickness", "Bezier/control points", "interior and exterior curves", "material mechanical properties"],
+      "source_access_review": "Direct official page opened and checked on 2026-10-15. Package-details weight is 0.44 kg; it is packaging metadata and is not treated as measured bowl mass."
+    },
+    {
+      "record_id": "time-style-ame-rice-bowl",
+      "official_title": "Ame - Ceramic Brown - Rice Bowl",
+      "institution_or_publisher": "Time & Style online store; page says the bowl is produced by a Mashiko ware potter",
+      "source_url": "https://shopping.timeandstyle.com/en/products/ame-ceramic-brown-rice-bowl",
+      "source_domain": "shopping.timeandstyle.com",
+      "source_kind": "Current product-maker/retailer record with maker and process description",
+      "family": "bowl",
+      "use_context": "everyday rice bowl/tableware",
+      "object_id": "SKU TSOM00201 (shown for M variant)",
+      "reported_facts": [
+        {"field": "manufacture", "value": "Produced by a Mashiko ware potter using a potter's wheel; clay described as soft Mashiko clay mixed with sand", "source_location": "Product description"},
+        {"field": "thin_body_qualitative", "value": "The page calls it a thin bowl and says Ame daily basics are made thinner and lighter for modern lifestyles", "source_location": "Product description; qualitative only"},
+        {"field": "size_S_width", "value": 120, "unit": "mm", "source_location": "Specifications: W 120 mm"},
+        {"field": "size_S_depth", "value": 120, "unit": "mm", "source_location": "Specifications: D 120 mm"},
+        {"field": "size_S_height", "value": 55, "unit": "mm", "source_location": "Specifications: H 55 mm"},
+        {"field": "size_M_width", "value": 135, "unit": "mm", "source_location": "Specifications: W 135 mm"},
+        {"field": "size_M_depth", "value": 135, "unit": "mm", "source_location": "Specifications: D 135 mm"},
+        {"field": "size_M_height", "value": 75, "unit": "mm", "source_location": "Specifications: H 75 mm"},
+        {"field": "material_and_finish", "value": "Ceramic; brown finish; ame glaze", "source_location": "Specifications and description"},
+        {"field": "images", "value": 9, "unit": "page image entries", "source_location": "Product page gallery links; no view labels or scale bars"}
+      ],
+      "calculated_ratios": [
+        {"name": "S_height_over_equal_width_depth", "value": 0.4583, "calculation": "55 mm / 120 mm", "interpretation": "computed from equal width/depth; equal axes suggest a circular plan but do not themselves constitute a published rim diameter"},
+        {"name": "M_height_over_equal_width_depth", "value": 0.5556, "calculation": "75 mm / 135 mm", "interpretation": "computed envelope ratio only"}
+      ],
+      "visual_inference": [
+        "The page supplies product photographs but does not label them as calibrated side, rim-section, or underside views. A foot ring and any specific wall curvature are not established by the textual specifications."
+      ],
+      "geometry_evidence": {
+        "rim": "UNKNOWN: page dimensions say width/depth, not rim diameter; rim edge shape is not dimensioned.",
+        "foot_or_base": "UNKNOWN: no foot-ring presence, dimensions, or section reported in text.",
+        "wall_thickness": "Qualitatively called thin; numeric wall thickness is UNKNOWN.",
+        "base_thickness": "UNKNOWN",
+        "neck_spout_handle": "Not reported",
+        "section_or_scan": "Product photographs only; no technical drawing or scan located on the reviewed page."
+      },
+      "license_and_access": {
+        "read_access": "Open product page",
+        "image_or_model_license": "No open reuse license identified on the product page; the page footer reserves copyright.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["numeric wall thickness", "foot-ring diameter/height", "base profile", "exact inner/outer meridian", "rim thickness", "firing shrinkage"],
+      "source_access_review": "Direct product page opened and checked on 2026-10-15. This is the clearest object-specific modern daily thin-body wording found in this pass, but it is not a measured section."
+    },
+    {
+      "record_id": "aberdeen-abdms095708-121",
+      "official_title": "Porcelain Small Footed Bowl",
+      "institution_or_publisher": "Aberdeen City Museums and Galleries, eMuseum collection record",
+      "source_url": "https://emuseum.aberdeencity.gov.uk/objects/186848/porcelain-small-footed-bowl",
+      "source_domain": "emuseum.aberdeencity.gov.uk",
+      "source_kind": "Museum collection record for a contemporary physical tableware object",
+      "family": "bowl",
+      "use_context": "Tableware; food service; utility (museum classifications)",
+      "object_id": "ABDMS095708.121",
+      "reported_facts": [
+        {"field": "maker", "value": "Chris Keenan", "source_location": "Maker field"},
+        {"field": "date", "value": "2007–2009", "source_location": "Date field"},
+        {"field": "material", "value": "Limoges porcelain and celadon", "source_location": "Medium field"},
+        {"field": "overall_height", "value": 53, "unit": "mm", "source_location": "Dimensions: overall height x diameter"},
+        {"field": "overall_diameter", "value": 108, "unit": "mm", "source_location": "Dimensions: overall height x diameter"},
+        {"field": "foot_ring_diameter", "value": 31, "unit": "mm", "source_location": "Base: diameter of foot ring"},
+        {"field": "images", "value": 5, "unit": "museum image entries", "source_location": "Collection page"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_diameter", "value": 0.4907, "calculation": "53 mm / 108 mm"},
+        {"name": "foot_ring_over_diameter", "value": 0.287, "calculation": "31 mm / 108 mm"}
+      ],
+      "visual_inference": ["Directly inspected the official main photograph: it shows a small circular foot ring and smoothly rounded bowl walls rising outward to the rim. The rim looks light relative to the body in the photograph, but this is only visual impression and is not a wall-thickness measurement. No calibrated section is identified."],
+      "geometry_evidence": {
+        "foot": "Foot-ring outside diameter reported as 31 mm; ring height and cross-section UNKNOWN.",
+        "rim": "UNKNOWN",
+        "wall_thickness": "UNKNOWN; a light-looking rim/body is only a visual impression, not a reported thin-wall claim or numeric measurement.",
+        "scan_or_section": "Five photographs listed; no 3D scan or technical section identified."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page; directly opened in the in-app browser and inspected on 2026-10-15.",
+        "image_or_model_license": "Page search result states copyright © Chris Keenan; image reuse permission not established.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["wall thickness", "foot-ring height/width section", "complete profile", "exact curvature"],
+      "source_access_review": "Official museum record and primary image were directly opened and inspected in the in-app browser on 2026-10-15."
+    },
+    {
+      "record_id": "met-18-56-44",
+      "official_title": "Bowl",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52389",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record; historical ceramic bowl",
+      "family": "bowl",
+      "use_context": "Historical/archaeological typology comparator; no excavation context stated on the reviewed record",
+      "object_id": "18.56.44",
+      "reported_facts": [
+        {"field": "period", "value": "Jin dynasty (1115–1234); 12th–13th century", "source_location": "Object information"},
+        {"field": "culture", "value": "China", "source_location": "Object information"},
+        {"field": "medium", "value": "Stoneware with blue-gray glaze (Jun ware)", "source_location": "Object information"},
+        {"field": "height", "value": 5.4, "unit": "cm", "source_display": "H. 2 1/8 in. (5.4 cm)"},
+        {"field": "rim_diameter", "value": 11.1, "unit": "cm", "source_display": "Diam. of rim 4 3/8 in. (11.1 cm)"},
+        {"field": "foot_diameter", "value": 5.4, "unit": "cm", "source_display": "Diam. of foot 2 1/8 in. (5.4 cm)"},
+        {"field": "images", "value": 1, "unit": "page image entry", "source_location": "Object page; no section drawing"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_rim_diameter", "value": 0.4865, "calculation": "5.4 cm / 11.1 cm"},
+        {"name": "foot_over_rim_diameter", "value": 0.4865, "calculation": "5.4 cm / 11.1 cm"}
+      ],
+      "visual_inference": ["Directly inspected the official main photograph (IIIF image 74400): smooth continuous circular rim with no visible lobing, deep rounded bowl walls that rise with a slight outward flare near the opening, and a visible low foot ring. The photograph supports a plain axisymmetric bowl family match, not a measured meridian."],
+      "geometry_evidence": {
+        "rim": "Rim diameter explicitly reported as 111 mm; lip cross-section and rim thickness UNKNOWN.",
+        "foot": "Foot diameter explicitly reported as 54 mm; foot height, ring cross-section, and underside cavity UNKNOWN.",
+        "wall_thickness": "UNKNOWN",
+        "full_profile": "UNKNOWN; no section drawing or scan linked on the reviewed record."
+      },
+      "license_and_access": {
+        "read_access": "Open official collection page; main image directly viewed.",
+        "image_or_model_license": "Public Domain badge; Met Open Access data and public-domain images available for commercial and non-commercial reuse without permission or fee.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["full interior/exterior meridian", "wall/base thickness", "foot height or section", "exact lip curve", "whether the bowl is perfectly rotationally symmetric from one oblique photograph"],
+      "source_access_review": "Direct official Met page and main photograph checked on 2026-10-15. Main image: https://collectionapi.metmuseum.org/api/collection/v1/iiif/52389/74400/main-image."
+    },
+    {
+      "record_id": "met-18-56-47",
+      "official_title": "Lobed bowl",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52680",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record; historic ceramic object",
+      "family": "bowl",
+      "use_context": "Historical/archaeological typology comparator; specific excavation context not stated on this record",
+      "object_id": "18.56.47",
+      "reported_facts": [
+        {"field": "period", "value": "Yuan to early Ming; 14th century", "source_location": "Object information"},
+        {"field": "culture", "value": "China", "source_location": "Object information"},
+        {"field": "medium", "value": "Stoneware with crackled glaze (Ge ware)", "source_location": "Object information"},
+        {"field": "height", "value": 7.3, "unit": "cm", "source_display": "H. 2 7/8 in. (7.3 cm)"},
+        {"field": "diameter", "value": 19.1, "unit": "cm", "source_display": "Diam. 7 1/2 in. (19.1 cm)"},
+        {"field": "rim_diameter", "value": 19.1, "unit": "cm", "source_display": "Diam. of rim 7 1/2 in. (19.1 cm)"},
+        {"field": "foot_diameter", "value": 7.0, "unit": "cm", "source_display": "Diam. of foot 2 3/4 in. (7 cm)"},
+        {"field": "images", "value": 4, "unit": "museum image entries", "source_location": "Object page image slider"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_rim_diameter", "value": 0.3822, "calculation": "7.3 cm / 19.1 cm"},
+        {"name": "foot_over_rim_diameter", "value": 0.3665, "calculation": "7.0 cm / 19.1 cm"}
+      ],
+      "visual_inference": ["Directly inspected the official main photograph (IIIF image 1375845; 1200 x 800 px): a broad, shallow rounded bowl rises outward from a narrow, low circular foot ring to a visibly lobed/wavy rim. The body is not a smooth hemisphere; the silhouette reads as a rounded lower transition with outward-flaring upper walls. No clear lotus-petal body or rolled/inverted lip is visible in this view. The page's other images are not labeled orthographic views or a calibrated profile."],
+      "geometry_evidence": {
+        "rim": "Rim diameter is explicitly reported; photographed rim is visibly lobed/wavy, but the rim section and lobe count/amplitude are UNKNOWN.",
+        "foot": "Foot diameter is explicitly reported; foot height, ring cross-section, and underside cavity UNKNOWN.",
+        "wall_thickness": "UNKNOWN",
+        "full_profile": "UNKNOWN; no section drawing or scan linked on the reviewed record. The available main photo supports only the qualitative side-silhouette description above."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page",
+        "image_or_model_license": "Public Domain badge; Met page states Open Access data and public-domain images may be used commercially and non-commercially without permission or fee.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["complete interior/exterior profile", "wall/base thickness", "foot height/section", "exact lobing amplitude/count or whether rim scallops are fully periodic", "material mechanics"],
+      "source_access_review": "Direct official Met page and main photograph opened and checked on 2026-10-15. Main image: https://collectionapi.metmuseum.org/api/collection/v1/iiif/52680/1375845/main-image. Its current record is Lobed bowl, 14th century; an earlier search snippet with a Song-era label was inconsistent and is not used."
+    },
+    {
+      "record_id": "apsida-shm-17946-0047",
+      "official_title": "SHM 17946:0047 :: Footed bowl",
+      "institution_or_publisher": "Medelhavsmuseet object record, served by Αψίδα / UNESCO Chair on Digital Cultural Heritage, Cyprus University of Technology",
+      "source_url": "https://apsida.cut.ac.cy/items/show/49281",
+      "source_domain": "apsida.cut.ac.cy",
+      "source_kind": "Museum-derived archaeological collection record with 3D resource metadata",
+      "family": "bowl; also a handled footed vessel",
+      "use_context": "Archaeological/historical ceramic comparator",
+      "object_id": "SHM 17946:0047 (Världskultur Museerna Database reference)",
+      "reported_facts": [
+        {"field": "date", "value": "Cypro-Geometric III, 850–700 BCE", "source_location": "Dublin Core Date"},
+        {"field": "material", "value": "Earthenware; clay; pottery", "source_location": "VRA Core Material"},
+        {"field": "shape_description", "value": "Slightly convex conical foot with conical cavity underneath; tapering stem; convex lower and mid-body; ridge; cylindrical upper body; sharp rim; round horizontal handles on the mid-body", "source_location": "Dublin Core Description"},
+        {"field": "height", "value": 11.9, "unit": "cm", "source_location": "VRA Core Measurements"},
+        {"field": "base_diameter", "value": 7.0, "unit": "cm", "source_location": "VRA Core Measurements"},
+        {"field": "rim_diameter", "value": 16.0, "unit": "cm", "source_location": "VRA Core Measurements"},
+        {"field": "geometry_resource", "value": "3D Viewer; OBJ", "source_location": "Relation and Format metadata"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_rim_diameter", "value": 0.7438, "calculation": "11.9 cm / 16.0 cm"},
+        {"name": "base_over_rim_diameter", "value": 0.4375, "calculation": "7.0 cm / 16.0 cm"}
+      ],
+      "visual_inference": ["The shape description itself reports a distinct stem, foot, body ridge, and handles; this is not a simple rotational bowl profile."],
+      "geometry_evidence": {
+        "rim": "Diameter is reported; rim section UNKNOWN.",
+        "foot": "Base diameter and cavity presence/shape description are reported; foot section dimensions UNKNOWN.",
+        "handles": "Two round horizontal handles are stated in the description; handle diameter and attachment sections UNKNOWN.",
+        "wall_thickness": "UNKNOWN",
+        "scan": "3D Viewer and OBJ format are listed; no download was made. Mesh scale calibration and internal-surface completeness were not independently checked."
+      },
+      "license_and_access": {
+        "read_access": "Indexed object record and metadata readable; direct open timed out during this pass.",
+        "resource_license": "CC BY-SA 4.0 as stated in the object metadata; preserve attribution and share-alike terms for derivatives.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["numeric wall thickness", "complete section from page dimensions alone", "whether OBJ captures the inside and foot cavity with equal completeness", "surface quality or fracture edges"],
+      "source_access_review": "Search-indexed content from the exact item page was checked on 2026-10-15; direct page fetch returned a timeout/502. Treat the stated 3D resource as available in metadata, not as locally inspected geometry."
+    },
+    {
+      "record_id": "met-1971-27",
+      "official_title": "Bowl (curatorial text calls it a plate)",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/452209",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record; shallow historical ceramic comparator",
+      "family": "bowl; shallow plate-like form",
+      "use_context": "Historical comparator; not stated as excavated in the object record",
+      "object_id": "1971.27",
+      "reported_facts": [
+        {"field": "date", "value": "Early 11th century", "source_location": "Object information"},
+        {"field": "geography", "value": "Attributed to Egypt", "source_location": "Object information"},
+        {"field": "medium", "value": "Earthenware; luster-painted", "source_location": "Object information"},
+        {"field": "height", "value": 6.7, "unit": "cm", "source_display": "H. 2 5/8 in. (6.7 cm)"},
+        {"field": "diameter", "value": 24.9, "unit": "cm", "source_display": "Diam. 9 13/16 in. (24.9 cm)"},
+        {"field": "curatorial_note", "value": "The page calls the decorated object surface a plate; formal title is Bowl.", "source_location": "Curatorial description"},
+        {"field": "images", "value": 2, "unit": "museum image entries", "source_location": "Object page"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_diameter", "value": 0.2691, "calculation": "6.7 cm / 24.9 cm", "interpretation": "shallow envelope cue only"}
+      ],
+      "visual_inference": ["The published H/D ratio is much shallower than a rounded hemispherical bowl. It does not determine the basin curvature or interior depth."],
+      "geometry_evidence": {
+        "rim_foot_base": "UNKNOWN: no rim, foot, or base dimensions reported.",
+        "wall_thickness": "UNKNOWN",
+        "full_profile": "UNKNOWN; collection photographs do not provide a calibrated section."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page",
+        "image_or_model_license": "Public Domain badge; Met Open Access reuse statement on page.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["exact plate/bowl profile", "foot/base geometry", "thickness", "surface color values or luster thickness"],
+      "source_access_review": "Direct official Met page opened and checked on 2026-10-15."
+    },
+    {
+      "record_id": "met-50-61-8",
+      "official_title": "Beaker",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52532",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record; Neolithic ceramic comparator",
+      "family": "beaker",
+      "use_context": "Archaeological/historical type comparator; exact excavation context not stated on this record",
+      "object_id": "50.61.8",
+      "reported_facts": [
+        {"field": "period", "value": "Neolithic Longshan culture, c. 3000–1900 BCE", "source_location": "Object information"},
+        {"field": "material", "value": "Burnished black earthenware", "source_location": "Object information"},
+        {"field": "height", "value": 18.6, "unit": "cm", "source_display": "H. 7 5/16 in. (18.6 cm)"},
+        {"field": "top_diameter", "value": 14.9, "unit": "cm", "source_display": "Diam. (at top) 5 7/8 in. (14.9 cm)"},
+        {"field": "images", "value": 2, "unit": "museum image entries", "source_location": "Object page"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_top_diameter", "value": 1.2483, "calculation": "18.6 cm / 14.9 cm"}
+      ],
+      "visual_inference": ["The listed vertical extent exceeds the top opening width; the two measurements alone do not establish a straight, flared, or footed wall."],
+      "geometry_evidence": {
+        "rim": "Top diameter reported; rim section UNKNOWN.",
+        "foot_base": "UNKNOWN",
+        "wall_thickness": "UNKNOWN",
+        "full_profile": "UNKNOWN; two page images are not labeled calibrated sections."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page",
+        "image_or_model_license": "Public Domain badge and Met Open Access reuse statement.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["foot diameter", "wall profile", "wall thickness", "instrumental color or polish metrics"],
+      "source_access_review": "Direct official Met page opened and checked on 2026-10-15."
+    },
+    {
+      "record_id": "met-1975-268-184",
+      "official_title": "Jar; curatorial text describes a small bulbous bottle",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50165",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record; Late Jōmon ceramic comparator",
+      "family": "jar; bottle-like narrow-neck form",
+      "use_context": "Archaeological-period ceramic comparator; specific excavation context is not stated",
+      "object_id": "1975.268.184",
+      "reported_facts": [
+        {"field": "period", "value": "Late Jōmon, ca. 2500–1000 BCE", "source_location": "Object information"},
+        {"field": "medium", "value": "Earthenware with incised decoration", "source_location": "Object information"},
+        {"field": "shape", "value": "Small bulbous-shaped bottle with narrow neck", "source_location": "Curatorial description"},
+        {"field": "qualitative_wall", "value": "Thin walls", "source_location": "Curatorial description; no numeric value"},
+        {"field": "suspension_holes", "value": "Two sets of apertures at shoulders and lower section for a thin suspension cord", "source_location": "Curatorial description"},
+        {"field": "height", "value": 20, "unit": "cm", "source_display": "H. 7 7/8 in. (20 cm)"},
+        {"field": "diameter", "value": 16.5, "unit": "cm", "source_display": "Diam. 6 1/2 in. (16.5 cm)"},
+        {"field": "images", "value": 3, "unit": "museum image entries", "source_location": "Object page"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_listed_diameter", "value": 1.2121, "calculation": "20 cm / 16.5 cm", "interpretation": "overall envelope; diameter location not labeled"}
+      ],
+      "visual_inference": ["Bulbous body and narrow neck are curatorial words, not digitized control points."],
+      "geometry_evidence": {
+        "neck": "Narrow neck described; neck opening diameter and length UNKNOWN.",
+        "shoulder_holes": "Presence/location zones described; aperture dimensions and coordinates UNKNOWN.",
+        "foot_base": "UNKNOWN",
+        "wall_thickness": "Qualitatively thin only; numeric thickness UNKNOWN.",
+        "full_profile": "UNKNOWN; no scan or measured section linked."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page",
+        "image_or_model_license": "Public Domain badge; Met Open Access reuse statement.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["numeric wall thickness", "neck opening", "foot diameter", "full meridian", "hole size/coordinates", "pigment measurement"],
+      "source_access_review": "Direct official Met page opened and checked on 2026-10-15."
+    },
+    {
+      "record_id": "met-36-20-25",
+      "official_title": "Ewer; described as an earthenware pitcher",
+      "institution_or_publisher": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/449058",
+      "source_domain": "metmuseum.org",
+      "source_kind": "Museum collection record for an excavated ceramic object",
+      "family": "handled_vessel; ewer/pitcher; jug-adjacent comparator",
+      "use_context": "Excavated in Nishapur, Iran; 12th–13th century",
+      "object_id": "36.20.25",
+      "reported_facts": [
+        {"field": "medium", "value": "Earthenware; molded decoration, unglazed", "source_location": "Object information"},
+        {"field": "body_construction", "value": "Body cast from two stamped hemispherical molds; halves joined with wet clay; smoothed seam band visible", "source_location": "Curatorial description"},
+        {"field": "attached_parts", "value": "Undecorated neck and handle thrown on the wheel and attached to molded body", "source_location": "Curatorial description"},
+        {"field": "height", "value": 27.9, "unit": "cm", "source_display": "H. 11 in. (27.9 cm)"},
+        {"field": "diameter_location_unspecified", "value": 14.6, "unit": "cm", "source_display": "Diam. 5 3/4 in. (14.6 cm); location not identified"},
+        {"field": "images", "value": 4, "unit": "museum image entries", "source_location": "Object page"}
+      ],
+      "calculated_ratios": [
+        {"name": "height_over_listed_diameter", "value": 1.911, "calculation": "27.9 cm / 14.6 cm", "interpretation": "coarse ratio only; diameter location unspecified"}
+      ],
+      "visual_inference": ["The object page describes ewer and pitcher functions but supplies no spout contour in the text. Do not make a jug spout from the title alone."],
+      "geometry_evidence": {
+        "body": "Two-part molded body and central seam directly described; full profile and relief dimensions UNKNOWN.",
+        "neck_handle": "Presence and manufacturing sequence described; cross-sections and attachment coordinates UNKNOWN.",
+        "spout": "UNKNOWN in the text; no exact spout profile stated.",
+        "wall_thickness": "UNKNOWN",
+        "scan_or_section": "Four collection images; no scan or section linked on the reviewed record."
+      },
+      "license_and_access": {
+        "read_access": "Open collection page",
+        "image_or_model_license": "Public Domain badge; Met Open Access reuse statement.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["spout geometry", "handle section/coordinates", "body meridian", "which diameter was measured", "wall thickness", "relief dimensions"],
+      "source_access_review": "Direct official Met page opened and checked on 2026-10-15."
+    },
+    {
+      "record_id": "asakano-slim-line-mug-cup",
+      "official_title": "Slim line mug cup",
+      "institution_or_publisher": "Asakano-gama, maker's web catalog",
+      "source_url": "https://asakano.net/catalog/product120.php?pd=26&pl=en",
+      "source_domain": "asakano.net",
+      "source_kind": "Maker product catalog; everyday ceramic cup near-neighbor",
+      "family": "cup analogue; exact beaker/handled-vessel crosswalk UNKNOWN",
+      "use_context": "Maker describes products as practical everyday-use goods",
+      "object_id": "SL-MUG-SL",
+      "reported_facts": [
+        {"field": "height", "value": 88, "unit": "mm", "source_location": "Size"},
+        {"field": "diameter", "value": 82, "unit": "mm", "source_location": "Size"},
+        {"field": "capacity", "value": 260, "unit": "ml", "source_location": "Capacity"},
+        {"field": "material", "value": "Ceramic; red clay with white glaze; lower part unglazed", "source_location": "Product description"},
+        {"field": "manufacture", "value": "Handmade by kiln craftsmen; size/color/shape may vary slightly between lots", "source_location": "Product description and supplemental note"},
+        {"field": "weight", "value": 190, "unit": "g", "source_location": "Product record"}
+      ],
+      "calculated_ratios": [{"name": "height_over_diameter", "value": 1.0732, "calculation": "88 mm / 82 mm"}],
+      "visual_inference": ["The page contains product image links but the text does not specify handle presence or a measured foot; do not classify it as a handled vessel or beaker without checking the physical image/object further."],
+      "geometry_evidence": {
+        "rim": "Diameter reported, rim cross-section UNKNOWN.",
+        "foot_base": "Lower part is unglazed; geometry and foot-ring dimensions UNKNOWN.",
+        "wall_thickness": "UNKNOWN",
+        "handle_status": "UNKNOWN from the text reviewed; title says mug cup but no handle specification is given.",
+        "section_or_scan": "No technical section or scan linked."
+      },
+      "license_and_access": {
+        "read_access": "Open maker catalog page",
+        "image_or_model_license": "Page states all rights reserved; no open image/model license identified.",
+        "downloaded_assets": false
+      },
+      "cannot_infer": ["exact profile", "handle presence/geometry", "foot ring", "wall thickness", "inner section"],
+      "source_access_review": "Direct maker page opened and checked on 2026-10-15. Included as an everyday cup source only, not forced into a vessel family."
+    }
+  ],
+  "candidate_bowl_design": {
+    "status": "DESIGN_CANDIDATE_NOT_RECONSTRUCTION",
+    "purpose": "A concrete first family candidate for a modern, small daily footed bowl, with its reported envelope and foot separated from the unmeasured profile and wall.",
+    "source_basis": ["aberdeen-abdms095708-121", "time-style-ame-rice-bowl", "ikea-365-20278351", "met-18-56-47"],
+    "parameters": [
+      {
+        "name": "overall_plan_size_mm",
+        "candidate": "108 mm overall diameter for the small footed-bowl variant",
+        "evidence": "Aberdeen City Museums reports overall height x diameter = 53 x 108 mm.",
+        "status": "REPORTED_ENVELOPE_WITH_RIM_MAPPING_ASSUMPTION",
+        "note": "The source reports overall diameter, not separately rim diameter. A rotational generator may map 108 mm to its maximum opening/outer diameter as a DESIGN_ASSUMPTION. Ame provides another daily scale, W=D=120 mm, H55 mm; IKEA reports D160 mm, H70 mm."
+      },
+      {
+        "name": "overall_height_mm",
+        "candidate": "53 mm small footed-bowl variant",
+        "evidence": "Aberdeen City Museums reports overall height 53 mm.",
+        "status": "REPORTED_FACT_FOR_THAT_PRODUCT"
+      },
+      {
+        "name": "height_to_plan_width_ratio",
+        "candidate": 0.4907,
+        "evidence": "53/108 from Aberdeen City Museums overall height and diameter.",
+        "status": "CALCULATED_RATIO_NOT_PROFILE"
+      },
+      {
+        "name": "foot_outer_diameter_mm",
+        "candidate": "31 mm",
+        "evidence": "Aberdeen City Museums reports a 31 mm diameter foot ring on the same 53 x 108 mm bowl.",
+        "status": "REPORTED_FACT_FOR_THAT_PRODUCT",
+        "note": "This is the foot-ring diameter only; foot height and section remain UNKNOWN. Met 18.56.47 independently reports a historical foot diameter of 70 mm on a 191 mm rim (ratio 0.3665), a visibly different proportion."
+      },
+      {
+        "name": "wall_thickness_mm",
+        "candidate": "UNKNOWN; leave unset until object measurement or section/scan exists",
+        "evidence": "Time & Style calls its separate Ame bowl thin, but Aberdeen gives no wall measurement or thin-wall statement. The Aberdeen photo's light-looking rim is VISUAL_INFERENCE only.",
+        "status": "UNKNOWN"
+      },
+      {
+        "name": "foot_height_and_section",
+        "candidate": "UNKNOWN",
+        "evidence": "No selected target source reports it.",
+        "status": "UNKNOWN"
+      },
+      {
+        "name": "inner_and_outer_meridian",
+        "candidate": "UNKNOWN; a smooth axisymmetric curve from rounded lower body to outward-rising rim would be a DESIGN_ASSUMPTION for a prototype",
+        "evidence": "Aberdeen photographs show a rounded footed bowl silhouette, but no published calibrated side profile is supplied.",
+        "status": "UNKNOWN_WITH_OPTIONAL_DESIGN_ASSUMPTION"
+      },
+      {
+        "name": "rim_section_and_base_thickness",
+        "candidate": "UNKNOWN",
+        "evidence": "No numeric section data found.",
+        "status": "UNKNOWN"
+      }
+    ],
+    "guardrail": "Do not label a generated meridian as an exact Aberdeen object reconstruction. Its overall height, overall diameter, and foot-ring diameter are reported facts; rim mapping, rotational symmetry, curve control points, foot section, and any numeric wall offset remain DESIGN_ASSUMPTION or UNKNOWN. Ame and IKEA provide separate everyday size variants, not evidence for Aberdeen's section."
+  },
+  "candidate_archaeological_axisymmetric_bowl": {
+    "status": "ROTATIONAL_ANALOGUE_NOT_RECONSTRUCTION",
+    "source_basis": "met-18-56-44",
+    "purpose": "First historical ceramic bowl candidate for a plain rotational body builder, separate from the lobed-rim Met 18.56.47 type.",
+    "parameters": [
+      {"name": "rim_diameter_mm", "candidate": 111, "evidence": "Met reports rim diameter 11.1 cm.", "status": "REPORTED_FACT_FOR_THAT_PRODUCT"},
+      {"name": "overall_height_mm", "candidate": 54, "evidence": "Met reports height 5.4 cm.", "status": "REPORTED_FACT_FOR_THAT_PRODUCT"},
+      {"name": "foot_diameter_mm", "candidate": 54, "evidence": "Met reports foot diameter 5.4 cm.", "status": "REPORTED_FACT_FOR_THAT_PRODUCT"},
+      {"name": "height_over_rim_diameter", "candidate": 0.4865, "evidence": "54/111.", "status": "CALCULATED_RATIO_NOT_PROFILE"},
+      {"name": "foot_over_rim_diameter", "candidate": 0.4865, "evidence": "54/111.", "status": "CALCULATED_RATIO_NOT_PROFILE"},
+      {"name": "rim_and_body_type", "candidate": "Continuous circular rim; rounded deep bowl walls with slight outward rise near opening; low visible ring foot.", "evidence": "Visual inspection of Met main image 74400.", "status": "VISUAL_INFERENCE"},
+      {"name": "axisymmetry_for_builder", "candidate": "May use a rotational meridian as a first analogue.", "evidence": "One oblique catalog image visibly presents an unlobed circular bowl; exact rotational symmetry is not measured.", "status": "DESIGN_ASSUMPTION"},
+      {"name": "meridian_control_points", "candidate": "UNKNOWN; smooth rounded-body curve is only a design choice.", "evidence": "No profile drawing/scan is linked.", "status": "UNKNOWN_WITH_OPTIONAL_DESIGN_ASSUMPTION"},
+      {"name": "wall_base_and_foot_section", "candidate": "UNKNOWN; do not infer from the photograph.", "evidence": "Not reported in the Met record.", "status": "UNKNOWN"}
+    ],
+    "guardrail": "Use dimensions and broad silhouette as constraints, not as a claim of exact restoration. Keep this plain rotational analog separate from the lobed 18.56.47 comparator."
+  },
+  "source_review_notes": {
+    "primary_sources_checked": ["Met official collection pages", "IKEA UK official product page", "Time & Style product page", "Asakano-gama maker catalog", "museum-indexed Aberdeen and Apsida records"],
+    "open_access": "Met selected pages identify Public Domain and Met Open Access usage. Apsida item metadata states CC BY-SA 4.0 for its OBJ resource. Aberdeen page result states image copyright © Chris Keenan. Commercial product page imagery has no open license identified in this pass.",
+    "image_scan_handling": "No image, OBJ, CAD, or mesh downloaded. Image counts are not treated as multi-view geometric coverage. The Apsida OBJ is listed in metadata but not locally inspected.",
+    "evidence_boundary": "Reported dimensions support envelopes and ratios only. Photographs are not used to estimate unreported wall thickness, foot diameter, rim section, base curvature, neck diameter, handle section, or precise control points."
+  }
+}

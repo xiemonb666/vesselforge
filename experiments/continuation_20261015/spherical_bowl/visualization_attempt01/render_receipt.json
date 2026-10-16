@@ -1,0 +1,78 @@
+{
+  "checks": {
+    "all_faces_rendered": true,
+    "both_assets_share_identical_rest_mesh": true,
+    "long_edge_at_least_1400px": true,
+    "minimum_displayed_pixels": 2016000
+  },
+  "image_bytes": 621823,
+  "image_dimensions_px": [
+    1800,
+    1120
+  ],
+  "image_path": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\spherical_bowl\\visualization\\spherical_bowl_two_patterns.png",
+  "image_sha256": "56100d21259023b49dce717f9e7a10420ccfbd8093c97e0539c5fccd065f0949",
+  "inputs": {
+    "four_bands": {
+      "band_count": 4,
+      "color_source": "fields/surface.npz:albedo_linear_rgb, derived from triangle rest-coordinate centroids",
+      "face_regions": {
+        "1": 101407,
+        "2": 101407,
+        "3": 1258
+      },
+      "fields_surface_sha256": "c70736cdf68494ad2aa5a2d2fb79d59a0d79130c7473bbf0e4d665bd5b9f374e",
+      "geometry_surface_sha256": "7589a1ca799c6b563c4db34d0a0e7b0ea26ffdd678d45354f794a9b3da073cdf",
+      "manifest_sha256": "2fc26967acb7eb9e635080a056d6e96d23f3635579d367be57fe4258214c897e",
+      "package": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\data\\continuation_20261015\\spherical_bowl\\four_bands",
+      "rest_coordinates_equal_mesh_vertices": true,
+      "triangle_count": 204072,
+      "vertex_count": 102038
+    },
+    "three_bands": {
+      "band_count": 3,
+      "color_source": "fields/surface.npz:albedo_linear_rgb, derived from triangle rest-coordinate centroids",
+      "face_regions": {
+        "1": 101407,
+        "2": 101407,
+        "3": 1258
+      },
+      "fields_surface_sha256": "9452d7126510473b6a5ffbf435c9450e6b3f1036651d985278b4e8ceda932d65",
+      "geometry_surface_sha256": "7589a1ca799c6b563c4db34d0a0e7b0ea26ffdd678d45354f794a9b3da073cdf",
+      "manifest_sha256": "0b33ba3dc1bdd12c05b65f73c4c570ab6e4b566702dcb5b33958b426e756ee67",
+      "package": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\data\\continuation_20261015\\spherical_bowl\\three_bands",
+      "rest_coordinates_equal_mesh_vertices": true,
+      "triangle_count": 204072,
+      "vertex_count": 102038
+    }
+  },
+  "render_wall_seconds": 1.1870000000000118,
+  "renderer": {
+    "name": "VTK offscreen z-buffer rasterization",
+    "version": "9.6.2"
+  },
+  "renderer_source": "C:\\Users\\xiemo\\Desktop\\ShardForge\\vesselforge\\experiments\\continuation_20261015\\spherical_bowl\\render_saved_assets.py",
+  "renderer_source_sha256": "581a3abfa44ed3f870f3a262c7bf108f74e15a16b426ea1b9a5b44aec8c0925c",
+  "schema": "vf.spherical_bowl_visualization_receipt.v1",
+  "status": "PASS",
+  "visual_method": {
+    "camera_focal_point_mm": [
+      0.0,
+      0.0,
+      6.0
+    ],
+    "camera_position_mm": [
+      38.0,
+      -54.0,
+      70.0
+    ],
+    "color": "per-face albedo read from each asset fields/surface.npz, transformed linear RGB to sRGB for display",
+    "disclaimer": "illustrative procedural paint and unvalidated prototype material; geometry preview only",
+    "framing": "side-by-side, same orientation and equal mm scale; no geometry or color downsampling",
+    "geometry": "all saved canonical surface vertices and triangles; no downsampling",
+    "lighting": "fixed neutral ambient/diffuse display lighting; no material calibration or physical inference",
+    "parallel_scale_mm": 15.0,
+    "projection": "orthographic parallel camera; both panes share focal point, view direction, and parallel scale",
+    "rest_coordinates": "verified vertices_material_xyz_mm is bytewise array-equal to geometry/surface.npz vertices_mm"
+  }
+}
